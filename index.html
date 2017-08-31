@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mozilla Public Specification Positions</title>
+    <link href="components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet">
+    <style type="text/css">
+      .space dt {
+        padding-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <br>
+      <div class="jumbotron">
+        <h1><img src="asset/Firefox.svg" height="75" alt="Firefox"> Public Spec Positions</h1>
+
+        <p>This page tracks Mozilla's positions on open Web and Web-related specifications submitted to standards
+        bodies like the <a href="https://www.ietf.org/">IETF</a>, <a href="https://w3.org/">W3C</a>,
+        and <a href="https://tc39.github.io/">ECMA TC39</a>.</p>
+
+       <p>Please remember, this isn't a commitment to implement or participate;
+       <strong>it's just what we think right now</strong>. See <a
+       href="https://platform-status.mozilla.com">Firefox Platform Status</a>
+       to find out what we're implementing.</p>
+
+      <p><mark>Want Mozilla's position on your spec? <a href="https://github.com/mozila/standards-positions/">Find out more</a>.</mark></p>
+
+      </div>
+
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <table id="mozPositions" class="table table-hover dataTable">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="sorting">Specification</th>
+              <th class="sorting">Mozilla Position</th>
+              <th>Details</th>
+              <th>More Info</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-1"></div>
+
+      <div class="clearfix"></div>
+      <h3>legend</h3>
+
+      <p>The possible positions are:</p>
+
+      <dl class="dl-horizontal space">
+        <dt><button class="btn btn-default btn-xs">under consideration</button></dt><dd>Mozilla's position on this specification is being discussed.</dd>
+        <dt><button class="btn btn-info btn-xs">undecided</button></dt><dd>There is no Mozilla position on this specification yet; more information, experimentation or deployment experience might help.</dd>
+        <dt><button class="btn btn-primary btn-xs">important</button></dt><dd>This specification is important to Mozilla.</dd>
+        <dt><button class="btn btn-success btn-xs">mozilla sponsored</button></dt><dd>Mozilla is one of the proponents of this specification.</dd>
+        <dt><button class="btn btn-xs">defer</button></dt><dd>Mozilla does not intend to look at this specification at all in the near future.</dd>
+        <dt><button class="btn btn-warning btn-xs">alternative preferred</button></dt><dd>Mozilla prefers another specification addressing this area.</dd>
+        <dt><button class="btn btn-danger btn-xs">harmful</button></dt><dd>Mozilla considers this specification to be harmful in its current state.</dd>
+      </dl>
+
+    </div>
+
+    <script src="components/jquery/dist/jquery.min.js"></script>
+    <script src="components/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        var status_styles = {
+          "under consideration": "default",
+          "undecided": "info",
+          "important": "primary",
+          "mozilla sponsored": "success",
+          "alternative preferred": "warning",
+          "harmful": "danger"
+        }
+        var REPO_OWNER = "mozilla"
+        var REPO_NAME = "standards-positions"
+
+        var ptable = $('#mozPositions').DataTable({
+          "paging": false,
+          "ajax": {
+              url: 'activities.json',
+              dataSrc: ''
+          },
+          dom: 'ilfrtip',
+          "order": [[2, "asc"]],
+          "columns": [
+              {
+                "data": "org",
+                "render": function (data, type, row) {
+                  if (data !== "") {
+                    var extension = ".svg"
+                    if (data === "IETF") {
+                      extension = ".gif"
+                    }
+                    return "<img src='asset/" + data + extension + "' height='18px' alt='" + data + "'>"
+                  } else {
+                    return ""
+                  }
+                },
+                "orderable": false,
+                "searchable": false
+              },
+              {
+                "data": "title",
+                "render": function (data, type, row) {
+                   return "<a href='" + row.url + "'>" + data + "</a>"
+                },
+                "orderable": true,
+                "searchable": true
+              },
+              {
+                "data": "mozPosition",
+                "render": function (data, type, row) {
+                  if (data !== "" && ! status_styles.hasOwnProperty(data)) {
+                    console.log("WARNING: unrecognised position '" + data + "' on " + row.name)
+                  }
+                  return "<button type='button' class='btn btn-" + status_styles[data] + " btn-xs'>" + data + "</button>"
+                }
+              },
+              {
+                "className":      'details-control',
+                "orderable":      false,
+                "data":           null,
+                "defaultContent": '',
+                "render": function (data, type, row) {
+                  if ((row.description && row.description !== "") ||
+                      (row.details && row.details !== "")) {
+                    return "<a href='#'><span class='glyphicon glyphicon-info-sign' aria-hidden='true'></span><span class='sr-only'>details</span></a>"
+                  } else {
+                    return ""
+                  }
+                }
+              },
+              {
+                "data": "null",
+                "render": function ( data, type, row) {
+                  var out = ""
+                  if (row.mozPositionIssue && row.mozPositionIssue !== "") {
+                    out += "<a href='https://github.com/" + REPO_OWNER + "/" + REPO_NAME + "/issues/" + row.mozPositionIssue + "' title='position discussion'><span class='glyphicon glyphicon-book' aria-hidden='true'></span><span class='sr-only'>position discussion</span></a> "
+                  }
+                  if (row.mozBugUrl && row.mozBugUrl !== "") {
+                    out += "<a href='" + row.mozBugUrl + "' title='mozilla bug'><span class='glyphicon glyphicon-link' aria-hidden='true'></span><span class='sr-only'>mozilla bug</span></a> "
+                  }
+                  if (row.ciuName && row.ciuName !== "") {
+                    out += "<a href='https://caniuse.com/#feat=" + row.ciuName + "' title='caniuse'><span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span><span class='sr-only'>caniuse</span></a> "
+                  }
+                  return out
+                },
+                "orderable": false,
+                "searchable": false
+              }
+          ]
+        })
+
+        function format ( d ) {
+          // `d` is the original data object for the row
+          var out = [];
+          if (d.description && d.description !== "") {
+            out.push('<dt>Description</dt>' +
+                     '<dd>' + d.description + '</dd>')
+          }
+          if (d.mozPositionDetails && d.mozPositionDetails !== "") {
+            out.push('<dt>Mozilla\'s Position</dt>' +
+                     '<dd>' + d.mozPositionDetails + '</dd>')
+          }
+          if (out.length > 0) {
+            return '<dl class="dl-horizontal">' + out.join("\n")+ '</dl>'
+          }
+        }
+
+        // Add event listener for opening and closing details
+        $('#mozPositions').find('tbody').on('click', 'td', function () {
+          var tr = $(this).closest('tr');
+          var row = ptable.row( tr );
+          if ( row.child.isShown() ) {
+            // This row is already open - close it
+            row.child.hide();
+            tr.removeClass('shown');
+          }
+          else {
+            // Open this row
+            var extra_data = format(row.data());
+            if (extra_data !== "") {
+              row.child( format(row.data()) ).show();
+              tr.addClass('shown');
+            }
+          }
+        } );
+    })
+    </script>
+  </body>
+</html>
