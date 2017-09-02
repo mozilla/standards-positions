@@ -26,7 +26,7 @@ try:
 except ImportError:
     sys.stderr.write("ERROR: Dependency not available. Try:\n")
     sys.stderr.write("       > pip install beautifulsoup4 requests html5lib\n\n")
-    sys.exit(0)
+    sys.exit(1)
 
 
 # Github repo configuration
