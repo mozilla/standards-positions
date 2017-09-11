@@ -23,6 +23,7 @@ The currently possible positions are:
 
 - `under consideration` - Mozilla's position on this specification is being discussed.
 - `undecided` - There is no Mozilla position on this specification yet; more information, experimentation or deployment experience might help.
+- `involved` - Mozilla is one of the parties working on this specification.
 - `important` - This specification is important to Mozilla.
 - `mozilla sponsored` - Mozilla is one of the proponents of this specification.
 - `defer` - Mozilla does not intend to look at this specification at all in the near future.
