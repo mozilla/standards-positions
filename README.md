@@ -2,9 +2,7 @@
 
 ~~_See [the dashboard](https://mozilla.github.io/standards-positions/) for Mozilla's current positions._~~
 
-**NOTE: we will only publish the above site after the stakeholders have agreed on this process.  Until then, clone this repo locally and play with it:**
-
-    git clone https://github.com/mozilla/standards-positions.git
+**NOTE: we will only publish the above site after the stakeholders have agreed on this process.  Until then, clone this repo locally and play with it.**
 
 ## What is this Repository?
 
