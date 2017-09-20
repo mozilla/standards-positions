@@ -31,7 +31,7 @@ currently includes:
 * IETF RFCs and Internet-Drafts
 * W3C drafts, Recommendations and Notes (including Community Group documents, specifically the WICG)
 
-If a specification has been abandoned or deprecated by its publishing body, this generally
+If a specification has been abandoned, deprecated, or obsoleted by its publishing body, this generally
 indicates that it is not under consideration.
 
 If a specification is already implemented by Mozilla (or is in the development process), it
@@ -54,7 +54,7 @@ If successful, it will modify `activities.json` with the new specification. Chec
 
 ```
 {
-  "ciuName": "The short tagname from caniuse.com for the feature, if avaialable", 
+  "ciuName": "The short tagname from caniuse.com for the feature, if available", 
   "description": "A textual description; often, the spec's abstract", 
   "mozBugUrl": "The URL of the Mozilla bug tracking this specification, if available", 
   "mozPosition": "under consideration", 
