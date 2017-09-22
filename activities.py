@@ -51,7 +51,7 @@ class ActivitiesJson(object):
         ("title", True, StringType),
         ("description", True, StringType),
         ("ciuName", False, StringType),
-        ("org", True, ["W3C", "IETF", "ECMA", "Other"]),
+        ("org", True, ["W3C", "IETF", "Ecma", "Other"]),
         ("group", False, StringType),
         ("url", True, UrlType),
         ("mozBugUrl", False, UrlType),
@@ -468,8 +468,8 @@ USAGE: %s verb [args]
          format   - Return the entry as JSON on STDOUT; requires a URL argument
          validate - Validate activities.json; no arguments
 
-To create Github Issues, GH_USER and GH_TOKEN must be in the environment; 
-to generate a token, see: <https://github.com/settings/tokens>. The 
+To create Github Issues, GH_USER and GH_TOKEN must be in the environment;
+to generate a token, see: <https://github.com/settings/tokens>. The
 'repo' permission is required.
 
 """)

@@ -10,7 +10,7 @@ please open a new issue, filling out the template appropriately.
 
 Normally, the appropriate granularity for an issue is a single specification; however, if an effort
 involves multiple, tightly integrated specs, one can be created for the "main" document, and include
-the others in the description. 
+the others in the description.
 
 Please understand that this repository is **only** for requests to determine a Mozilla position on
 a technical specification. For all other issues, see [bugzilla](https://bugzilla.mozilla.org) or
@@ -54,14 +54,14 @@ If successful, it will modify `activities.json` with the new specification. Chec
 
 ```
 {
-  "ciuName": "The short tagname from caniuse.com for the feature, if available", 
-  "description": "A textual description; often, the spec's abstract", 
-  "mozBugUrl": "The URL of the Mozilla bug tracking this specification, if available", 
-  "mozPosition": "under consideration", 
-  "mozPositionIssue": the number of the issue in this repo, if available, 
+  "ciuName": "The short tagname from caniuse.com for the feature, if available",
+  "description": "A textual description; often, the spec's abstract",
+  "mozBugUrl": "The URL of the Mozilla bug tracking this specification, if available",
+  "mozPosition": "under consideration",
+  "mozPositionIssue": the number of the issue in this repo, if available,
   "mozPositionDetail": "more information about Mozilla's position",
-  "org": one of ['IETF', 'W3C', 'WHATWG', 'ECMA', 'Other'], 
-  "title": "The spec's title", 
+  "org": one of ['IETF', 'W3C', 'WHATWG', 'Ecma', 'Other'],
+  "title": "The spec's title",
   "url": "The canonical URL for the most recent version of the spec"
 }
 ```
