@@ -11,7 +11,7 @@
 This repo is where [Mozilla](https://mozilla.org/) decides and documents what it thinks about
 emerging technical specifications for the Web. Typically they're draft documents in the
 [IETF](https://ietf.org/), [W3C](https://w3.org/) (including the [WICG](https://wicg.github.io/)),
-[WHATWG](https://whatwg.org/), and [ECMA TC39](https://github.com/tc39), but they could come from
+[WHATWG](https://whatwg.org/), and [Ecma TC39](https://github.com/tc39), but they could come from
 elsewhere too.
 
 Having a clear Mozilla position on these specifications helps us align our thinking and communicate
