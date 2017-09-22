@@ -470,7 +470,7 @@ USAGE: %s verb [args]
 
 To create Github Issues, GH_USER and GH_TOKEN must be in the environment; 
 to generate a token, see: <https://github.com/settings/tokens>. The 
-'repo' permission is required.
+'public_repo' permission is required.
 
 """)
     sys.exit(1)
