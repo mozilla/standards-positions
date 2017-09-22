@@ -1,2 +1,13 @@
 [
+  {
+    "ciuName": null, 
+    "description": "This document specifies the ORIGIN frame for HTTP/2, to indicate what origins are available on a given connection.  Note to Readers Discussion of this draft takes place on the HTTP working group mailing list (ietf-http-wg@w3.org), which is archived at https://lists.w3.org/Archives/Public/ietf-http-wg/.  Working Group information can be found at http://httpwg.github.io/; source code and issues list for this draft can be found at https://github.com/httpwg /http-extensions/labels/origin-frame.", 
+    "mozBugUrl": null, 
+    "mozPosition": "under consideration", 
+    "mozPositionDetail": null, 
+    "mozPositionIssue": null, 
+    "org": "IETF", 
+    "title": "The ORIGIN HTTP/2 Frame", 
+    "url": "https://tools.ietf.org/html/draft-ietf-httpbis-origin-frame"
+  }
 ]
