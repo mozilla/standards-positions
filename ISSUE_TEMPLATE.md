@@ -2,7 +2,7 @@
 ## Request for Mozilla Position on an Emerging Web Specification
 
 * Specification Title: 
-* Specification URL: 
+* Specification or proposal URL: 
 * Caniuse.com URL (optional): 
 * Bugzilla URL (optional): 
 
