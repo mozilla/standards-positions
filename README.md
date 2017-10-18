@@ -26,12 +26,8 @@ Implementation status (or even intention) isn't tracked here; see [Firefox Platf
 The currently possible positions are:
 
 - `under consideration` - Mozilla's position on this specification is being discussed.
-- `undecided` - There is no Mozilla position on this specification yet; more information, experimentation or deployment experience might help.
-- `involved` - Mozilla is one of the parties working on this specification.
-- `important` - This specification is important to Mozilla.
-- `mozilla sponsored` - Mozilla is one of the proponents of this specification.
+- `participating` - Mozilla is one of the parties working on this specification.
 - `defer` - Mozilla does not intend to look at this specification at all in the near future.
-- `alternative preferred` - Mozilla prefers another specification addressing this area.
 - `harmful` - Mozilla considers this specification to be harmful in its current state.
 
 Note that these positions do not address whether Mozilla will commit resources to a specification,

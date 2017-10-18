@@ -59,12 +59,8 @@
 
       <dl class="dl-horizontal space">
         <dt><button class="btn btn-default btn-xs">under consideration</button></dt><dd>Mozilla's position on this specification is being discussed.</dd>
-        <dt><button class="btn btn-info btn-xs">undecided</button></dt><dd>There is no Mozilla position on this specification yet; more information, experimentation or deployment experience might help.</dd>
-        <dt><button class="btn btn-primary btn-xs">involved</button></dt><dd>Mozilla is one of the parties working on this specification.</dd>
-        <dt><button class="btn btn-success btn-xs">important</button></dt><dd>This specification is important to Mozilla.</dd>
-        <dt><button class="btn btn-success btn-xs">mozilla sponsored</button></dt><dd>Mozilla is one of the proponents of this specification.</dd>
+        <dt><button class="btn btn-primary btn-xs">participating</button></dt><dd>Mozilla is one of the parties working on this specification.</dd>
         <dt><button class="btn btn-warning btn-xs">defer</button></dt><dd>Mozilla does not intend to look at this specification at all in the near future.</dd>
-        <dt><button class="btn btn-warning btn-xs">alternative preferred</button></dt><dd>Mozilla prefers another specification addressing this area.</dd>
         <dt><button class="btn btn-danger btn-xs">harmful</button></dt><dd>Mozilla considers this specification to be harmful in its current state.</dd>
       </dl>
 
@@ -77,12 +73,9 @@
     $(document).ready(function(){
         var status_styles = {
           "under consideration": "default",
-          "undecided": "info",
-          "involved": "primary",
-          "important": "success",
-          "mozilla sponsored": "success",
+          "participating": "primary",
+          // note: there's also a currently-unused "success" style
           "defer": "warning",
-          "alternative preferred": "warning",
           "harmful": "danger"
         }
 
