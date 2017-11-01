@@ -70,7 +70,8 @@ If successful, it will modify `activities.json` with the new specification. Chec
 ## Discussing Mozilla's Position on a Web Specification
 
 We welcome discussion members of the wider Mozilla community -- including the public -- but ask
-that it be on-topic.
+that it be on-topic, and that it follow [Mozilla's Community Participation
+Guidelines](https://www.mozilla.org/about/governance/policies/participation/).
 
 Specifically, the primary purpose of this repository is to determine Mozilla's postions on
 specifications. That is distinct from the larger Web community's position; the best place to
