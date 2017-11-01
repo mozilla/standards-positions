@@ -6,6 +6,8 @@
 
 ## What is this Repository?
 
+**This is now a _pilot_ of a process to decide and document what it thinks about emerging technical specifications for the Web (see below).  We are currently trying this process on a small number of specifications, so we can see how it works and make adjustments as needed before putting it in wider use.**
+
 This repo is where [Mozilla](https://mozilla.org/) decides and documents what it thinks about
 emerging technical specifications for the Web. Typically they're draft documents in the
 [IETF](https://ietf.org/), [W3C](https://w3.org/) (including the [WICG](https://wicg.github.io/)),
