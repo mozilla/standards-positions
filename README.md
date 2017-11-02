@@ -1,8 +1,6 @@
 # Mozilla's Positions on Emerging Web Specifications
 
-~~_See [the dashboard](https://mozilla.github.io/standards-positions/) for Mozilla's current positions._~~
-
-**NOTE: we will only publish the above site after the stakeholders have agreed on this process.  Until then, clone this repo locally and play with it.**
+_See [the dashboard](https://mozilla.github.io/standards-positions/) for Mozilla's current positions._
 
 ## What is this Repository?
 
