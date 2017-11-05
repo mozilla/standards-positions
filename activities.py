@@ -346,11 +346,16 @@ class W3CParser(SpecParser):
         try:
             data['title'] = spec.h1.string
         except AttributeError:
-            sys.stderr.write("* Can't find the specification's title.\n")
-            sys.exit(1)
+            try:
+                data['title'] = spec.title.string
+            except AttributeError:
+                sys.stderr.write("* Can't find the specification's title.\n")
+                sys.exit(1)
         try:
-            data['description'] = self.clean_tag(
-                spec.find(id='abstract').find_next_sibling(["p", "div"]))
+            abstract_element = spec.find(id='abstract')
+            if abstract_element.name != "section":
+                abstract_element = abstract_element.find_next_sibling(["p", "div"])
+            data['description'] = self.clean_tag(abstract_element)
         except AttributeError:
             sys.stderr.write("* Can't find the specification's description.\n")
             sys.exit(1)
