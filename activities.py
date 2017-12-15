@@ -58,12 +58,8 @@ class ActivitiesJson(object):
         ("mozPositionIssue", False, int),
         ("mozPosition", True, [
             "under consideration",
-            "undecided",
-            "involved",
-            "important",
-            "mozilla sponsored",
+            "participating",
             "defer",
-            "alternative preferred",
             "harmful"
         ]),
         ("mozPositionDetail", False, StringType)
