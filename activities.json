@@ -3,7 +3,7 @@
     "ciuName": null, 
     "description": "This document describes a common data model and API for the Web of Things. The Web Thing Description provides a vocabulary for describing physical devices connected to the World Wide Web in a machine readable format with a default JSON encoding. The Web Thing REST API and Web Thing WebSocket API allow a web client to access the properties of devices, request the execution of actions and subscribe to events representing a change in state. Some basic Web Thing Types are provided and additional types can be defined using semantic extensions with JSON-LD. In addition to this specification there is a note on Web Thing API Protocol Bindings which proposes non-normative bindings of the Web Thing API to various existing IoT protocols. There is also a document describing Web of Things Integration Patterns which provides advice on different design patterns for integrating connected devices with the Web of Things, and where each pattern is most appropriate.", 
     "mozBugUrl": null, 
-    "mozPosition": "participating", 
+    "mozPosition": "worth prototyping", 
     "mozPositionDetail": null, 
     "mozPositionIssue": 44, 
     "org": "W3C", 

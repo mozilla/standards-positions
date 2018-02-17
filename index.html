@@ -69,8 +69,10 @@
       <p>The possible positions are:</p>
 
       <dl class="dl-horizontal space">
-        <dt><button class="btn btn-default btn-xs">under consideration</button></dt><dd>Mozilla's position on this specification is being discussed.</dd>
-        <dt><button class="btn btn-primary btn-xs">participating</button></dt><dd>Mozilla is one of the parties working on this specification.</dd>
+        <dt><button class="btn btn-dark btn-xs">under consideration</button></dt><dd>Mozilla's position on this specification is being discussed.</dd>
+        <dt><button class="btn btn-primary btn-xs">important</button></dt><dd>This specification is important to Mozilla.</dd>
+        <dt><button class="btn btn-success btn-xs">worth prototyping</button></dt><dd>Mozilla is one of the proponents of this specification.</dd>
+        <dt><button class="btn btn-default btn-xs">non-harmful</button></dt><dd>Mozilla does not see this specification as harmful, but is not convinced that it is worth working on.</dd>
         <dt><button class="btn btn-warning btn-xs">defer</button></dt><dd>Mozilla does not intend to look at this specification at all in the near future.</dd>
         <dt><button class="btn btn-danger btn-xs">harmful</button></dt><dd>Mozilla considers this specification to be harmful in its current state.</dd>
       </dl>
@@ -83,9 +85,10 @@
     <script>
     $(document).ready(function(){
         var status_styles = {
-          "under consideration": "default",
-          "participating": "primary",
-          // note: there's also a currently-unused "success" style
+          "under consideration": "dark",
+          "important": "primary",
+          "worth prototyping": "success",
+          "non-harmful": "default",
           "defer": "warning",
           "harmful": "danger"
         }

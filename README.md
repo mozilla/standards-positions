@@ -24,7 +24,9 @@ Implementation status (or even intention) isn't tracked here; see [Firefox Platf
 The currently possible positions are:
 
 - `under consideration` - Mozilla's position on this specification is being discussed.
-- `participating` - Mozilla is one of the parties working on this specification.
+- `important` - This specification is important to Mozilla.
+- `worth prototyping` - Mozilla sees this specification as likely enough to be important that it is worth prototyping and iterating on.
+- `non-harmful` - Mozilla does not see this specification as harmful, but is not convinced that it is worth working on.
 - `defer` - Mozilla does not intend to look at this specification at all in the near future.
 - `harmful` - Mozilla considers this specification to be harmful in its current state.
 

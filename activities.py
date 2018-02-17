@@ -62,7 +62,9 @@ class ActivitiesJson(object):
         ("mozPositionIssue", False, int),
         ("mozPosition", True, [
             "under consideration",
-            "participating",
+            "important",
+            "worth prototyping",
+            "non-harmful",
             "defer",
             "harmful"
         ]),
