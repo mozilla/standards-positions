@@ -9,5 +9,16 @@
     "org": "W3C", 
     "title": "Web Thing API", 
     "url": "https://iot.mozilla.org/wot/"
+  }, 
+  {
+    "ciuName": null, 
+    "description": "This specification defines the ::part() and ::theme() pseudo-elements on shadow hosts, allowing shadow hosts to selectively expose chosen elements from their shadow tree to the outside page for styling purposes.", 
+    "mozBugUrl": null, 
+    "mozPosition": "worth prototyping", 
+    "mozPositionDetail": null, 
+    "mozPositionIssue": 59, 
+    "org": "W3C", 
+    "title": "CSS Shadow Parts", 
+    "url": "http://drafts.csswg.org/css-shadow-parts"
   }
 ]
