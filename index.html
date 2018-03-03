@@ -180,9 +180,9 @@
             out.push('<dt>Description</dt>' +
                      '<dd>' + d.description + '</dd>')
           }
-          if (d.mozPositionDetails && d.mozPositionDetails !== "") {
+          if (d.mozPositionDetail && d.mozPositionDetail !== "") {
             out.push('<dt>Mozilla\'s Position</dt>' +
-                     '<dd>' + d.mozPositionDetails + '</dd>')
+                     '<dd>' + d.mozPositionDetail + '</dd>')
           }
           if (out.length > 0) {
             return '<dl class="dl-horizontal">' + out.join("\n")+ '</dl>'
