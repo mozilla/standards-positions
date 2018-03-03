@@ -1,6 +1,17 @@
 [
   {
     "ciuName": null, 
+    "description": "This document specifies how a server can send an HTTP request/ response pair, known as an exchange, with signatures that vouch for that exchange's authenticity. These signatures can be verified against an origin's certificate to establish that the exchange is authoritative for an origin even if it was transferred over a connection that isn't. The signatures can also be used in other ways described in the appendices. These signatures contain countermeasures against downgrade and protocol-confusion attacks.", 
+    "mozBugUrl": null, 
+    "mozPosition": "harmful", 
+    "mozPositionDetail": "Mozilla has concerns about the shift in the web security model required for handling web-packaged information. Specifically, the ability for an origin to act on behalf of another without a client ever contacting the authoritative server is worrisome, as is the removal of a guarantee of confidentiality from the web security model (the host serving the web package has access to plain text). We recognise that the use cases satisfied by web packaging are useful, and would be likely to support an approach that enabled such use cases so long as the foregoing concerns could be addressed.",
+    "mozPositionIssue": 29, 
+    "org": "IETF", 
+    "title": "Signed HTTP Exchanges", 
+    "url": "https://tools.ietf.org/html/draft-yasskin-http-origin-signed-responses"
+  },
+  {
+    "ciuName": null, 
     "description": "This document describes a common data model and API for the Web of Things. The Web Thing Description provides a vocabulary for describing physical devices connected to the World Wide Web in a machine readable format with a default JSON encoding. The Web Thing REST API and Web Thing WebSocket API allow a web client to access the properties of devices, request the execution of actions and subscribe to events representing a change in state. Some basic Web Thing Types are provided and additional types can be defined using semantic extensions with JSON-LD. In addition to this specification there is a note on Web Thing API Protocol Bindings which proposes non-normative bindings of the Web Thing API to various existing IoT protocols. There is also a document describing Web of Things Integration Patterns which provides advice on different design patterns for integrating connected devices with the Web of Things, and where each pattern is most appropriate.", 
     "mozBugUrl": null, 
     "mozPosition": "worth prototyping", 
