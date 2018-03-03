@@ -1,14 +1,14 @@
 [
   {
     "ciuName": null, 
-    "description": "Web Packages provide a way to bundle up groups of web resources to transmit them together. These bundles can then be signed to establish their authenticity.", 
+    "description": "This document specifies how a server can send an HTTP request/ response pair, known as an exchange, with signatures that vouch for that exchange's authenticity. These signatures can be verified against an origin's certificate to establish that the exchange is authoritative for an origin even if it was transferred over a connection that isn't. The signatures can also be used in other ways described in the appendices. These signatures contain countermeasures against downgrade and protocol-confusion attacks.", 
     "mozBugUrl": null, 
-    "mozPosition": "under consideration", 
-    "mozPositionDetail": null, 
+    "mozPosition": "harmful", 
+    "mozPositionDetail": "Mozilla has concerns about the shift in the web security model required for handling web-packaged infformation. Specifically, the ability for an origin to act on behalf of another without a client ever contacting the authoritative server is worrisome, as is the removal of a guarantee of confidentiality from the web security model (the host serving the webpackage has access to plaintext). We recognise that the use cases satisfied by web packaging are useful, and would be likely to support an approach that enabled such use cases so long as the foregoing concerns could be addressed.",
     "mozPositionIssue": 29, 
     "org": "IETF", 
-    "title": "Web Packaging", 
-    "url": "https://tools.ietf.org/html/draft-yasskin-dispatch-web-packaging"
+    "title": "Signed HTTP Exchanges", 
+    "url": "https://tools.ietf.org/html/draft-yasskin-http-origin-signed-responses"
   },
   {
     "ciuName": null, 
