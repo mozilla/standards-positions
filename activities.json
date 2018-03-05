@@ -4,12 +4,12 @@
     "description": "This document specifies how a server can send an HTTP request/ response pair, known as an exchange, with signatures that vouch for that exchange's authenticity. These signatures can be verified against an origin's certificate to establish that the exchange is authoritative for an origin even if it was transferred over a connection that isn't. The signatures can also be used in other ways described in the appendices. These signatures contain countermeasures against downgrade and protocol-confusion attacks.", 
     "mozBugUrl": null, 
     "mozPosition": "harmful", 
-    "mozPositionDetail": "Mozilla has concerns about the shift in the web security model required for handling web-packaged information. Specifically, the ability for an origin to act on behalf of another without a client ever contacting the authoritative server is worrisome, as is the removal of a guarantee of confidentiality from the web security model (the host serving the web package has access to plain text). We recognise that the use cases satisfied by web packaging are useful, and would be likely to support an approach that enabled such use cases so long as the foregoing concerns could be addressed.",
+    "mozPositionDetail": "Mozilla has concerns about the shift in the web security model required for handling web-packaged information. Specifically, the ability for an origin to act on behalf of another without a client ever contacting the authoritative server is worrisome, as is the removal of a guarantee of confidentiality from the web security model (the host serving the web package has access to plain text). We recognise that the use cases satisfied by web packaging are useful, and would be likely to support an approach that enabled such use cases so long as the foregoing concerns could be addressed.", 
     "mozPositionIssue": 29, 
     "org": "IETF", 
     "title": "Signed HTTP Exchanges", 
     "url": "https://tools.ietf.org/html/draft-yasskin-http-origin-signed-responses"
-  },
+  }, 
   {
     "ciuName": null, 
     "description": "This document describes a common data model and API for the Web of Things. The Web Thing Description provides a vocabulary for describing physical devices connected to the World Wide Web in a machine readable format with a default JSON encoding. The Web Thing REST API and Web Thing WebSocket API allow a web client to access the properties of devices, request the execution of actions and subscribe to events representing a change in state. Some basic Web Thing Types are provided and additional types can be defined using semantic extensions with JSON-LD. In addition to this specification there is a note on Web Thing API Protocol Bindings which proposes non-normative bindings of the Web Thing API to various existing IoT protocols. There is also a document describing Web of Things Integration Patterns which provides advice on different design patterns for integrating connected devices with the Web of Things, and where each pattern is most appropriate.", 
@@ -31,5 +31,60 @@
     "org": "W3C", 
     "title": "CSS Shadow Parts", 
     "url": "http://drafts.csswg.org/css-shadow-parts"
+  }, 
+  {
+    "ciuName": "midi", 
+    "description": "This specification defines an API supporting the MIDI (Musical Instrument Digital Interface) protocol, enabling web applications to enumerate and select MIDI input and output devices on the client system and send and receive MIDI messages. It is intended to enable non-music MIDI applications as well as music ones, by providing low-level access to the MIDI devices available on the users' systems.", 
+    "mozBugUrl": null, 
+    "mozPosition": "under consideration", 
+    "mozPositionDetail": null, 
+    "mozPositionIssue": 58, 
+    "org": "W3C", 
+    "title": "Web MIDI API", 
+    "url": "https://webaudio.github.io/web-midi-api"
+  }, 
+  {
+    "ciuName": "web-share", 
+    "description": "This specification defines an API for sharing text, links and other content to an arbitrary destination of the user's choice.The available share targets are not specified here; they are provided by the user agent. They could, for example, be apps, websites or contacts.", 
+    "mozBugUrl": null, 
+    "mozPosition": "under consideration", 
+    "mozPositionDetail": null, 
+    "mozPositionIssue": 27, 
+    "org": "W3C", 
+    "title": "Web Share API", 
+    "url": "https://wicg.github.io/web-share"
+  }, 
+  {
+    "ciuName": null, 
+    "description": "This specification defines an API that allows websites to declare themselves asweb share targets, which can receive shared content from either the Web Share API, or system events (e.g., shares from native apps).This is a similar mechanism to navigator.registerProtocolHandler, in that it works by registering the website with the user agent, to later be invoked from another site or native application via the user agent (possibly at the discretion of the user). The difference is that registerProtocolHandler registers the handler via a programmatic API, whereas a Web Share Target is declared in the Web App Manifest, to be registered at a time of the user agent or user's choosing.", 
+    "mozBugUrl": null, 
+    "mozPosition": "under consideration", 
+    "mozPositionDetail": null, 
+    "mozPositionIssue": 27, 
+    "org": "W3C", 
+    "title": "Web Share Target API", 
+    "url": "https://wicg.github.io/web-share-target"
+  }, 
+  {
+    "ciuName": null, 
+    "description": "This specification defines a mechanism that allows developers to selectively enable and disable use of various browser features and APIs.", 
+    "mozBugUrl": null, 
+    "mozPosition": "under consideration", 
+    "mozPositionDetail": null, 
+    "mozPositionIssue": 24, 
+    "org": "W3C", 
+    "title": "Feature Policy", 
+    "url": "https://wicg.github.io/feature-policy"
+  }, 
+  {
+    "ciuName": "permissions-api", 
+    "description": "The Permissions Standard defines common infrastructure for other specifications that need to interact with browser permissions. It also defines an API to allow web applications to query and request changes to the status of a given permission.", 
+    "mozBugUrl": null, 
+    "mozPosition": "under consideration", 
+    "mozPositionDetail": null, 
+    "mozPositionIssue": 19, 
+    "org": "W3C", 
+    "title": "Permissions", 
+    "url": "https://w3c.github.io/permissions"
   }
 ]
