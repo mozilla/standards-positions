@@ -35,7 +35,7 @@
   {
     "ciuName": "midi", 
     "description": "This specification defines an API supporting the MIDI (Musical Instrument Digital Interface) protocol, enabling web applications to enumerate and select MIDI input and output devices on the client system and send and receive MIDI messages. It is intended to enable non-music MIDI applications as well as music ones, by providing low-level access to the MIDI devices available on the users' systems.", 
-    "mozBugUrl": null, 
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=836897", 
     "mozPosition": "under consideration", 
     "mozPositionDetail": null, 
     "mozPositionIssue": 58, 
@@ -46,7 +46,7 @@
   {
     "ciuName": "web-share", 
     "description": "This specification defines an API for sharing text, links and other content to an arbitrary destination of the user's choice.The available share targets are not specified here; they are provided by the user agent. They could, for example, be apps, websites or contacts.", 
-    "mozBugUrl": null, 
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1312422", 
     "mozPosition": "under consideration", 
     "mozPositionDetail": null, 
     "mozPositionIssue": 27, 
@@ -68,7 +68,7 @@
   {
     "ciuName": null, 
     "description": "This specification defines a mechanism that allows developers to selectively enable and disable use of various browser features and APIs.", 
-    "mozBugUrl": null, 
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1390801", 
     "mozPosition": "under consideration", 
     "mozPositionDetail": null, 
     "mozPositionIssue": 24, 
