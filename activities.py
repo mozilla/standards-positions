@@ -37,6 +37,9 @@ except ImportError:
 OWNER = "mozilla"
 REPO = "standards-positions"
 
+# Use a single encoder object so that we set it up with the single correct configuration for
+# writing activities.json.
+JSON_ENCODER = json.JSONEncoder(sort_keys=True, indent=2, separators=(',', ': '))
 
 class UrlType(object):
     "indicates a URL."
@@ -49,7 +52,6 @@ class ActivitiesJson(object):
     """
     A JSON file for activity tracking.
     """
-    json_indent = 2
     expected_entry_items = [  # (name, required?, type)
         ("cui_name", False, StringType),
         ("title", True, StringType),
@@ -90,7 +92,8 @@ class ActivitiesJson(object):
         "Save self.data into self.filename"
         try:
             with open(self.filename, 'w') as wfh:
-                json.dump(self.data, wfh, indent=self.json_indent, sort_keys=True)
+                wfh.write(JSON_ENCODER.encode(self.data))
+                wfh.write("\n")
         except (OSError, IOError, ValueError) as why:
             sys.stderr.write("* ERROR: Can't write %s: %s\n" % (self.filename, why))
             sys.exit(1)
@@ -167,14 +170,13 @@ class ActivitiesJson(object):
         return errors
 
     def __str__(self):
-        return json.dumps(self.data, indent=self.json_indent, sort_keys=True)
+        return JSON_ENCODER.encode(self.data)
 
 
 class SpecEntry(object):
     """
     Represents an entry for a single specification.
     """
-    json_indent = 2
     def __init__(self, spec_url):
         self.orig_url = spec_url
         self.data = {
@@ -259,7 +261,7 @@ class SpecEntry(object):
             sys.stderr.write("* Created Github Issue %s\n" % issue_num)
 
     def __str__(self):
-        return json.dumps(self.data, indent=self.json_indent, sort_keys=True)
+        return JSON_ENCODER.encode(self.data)
 
 
 class BetterUrl(Exception):
