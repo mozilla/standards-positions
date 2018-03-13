@@ -28,8 +28,10 @@ specifications (while great for the Web) are not, and will be marked `invalid`.
 To be considered, a specification needs to be published under well-understood IPR terms. This
 currently includes:
 
+* Ecma TC39 proposals
 * IETF RFCs and Internet-Drafts
 * W3C drafts, Recommendations and Notes (including Community Group documents, specifically the WICG)
+* WHATWG Living Standards (typically we consider change proposals)
 
 If a specification has been abandoned, deprecated, or obsoleted by its publishing body, this generally
 indicates that it is not under consideration.
