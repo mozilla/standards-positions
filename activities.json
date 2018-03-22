@@ -86,5 +86,16 @@
     "org": "W3C",
     "title": "Permissions",
     "url": "https://w3c.github.io/permissions"
+  },
+  {
+    "ciuName": null,
+    "description": "This specification describes an API that can be used to retrieve the amount of budget an origin has available for resource consuming background operations, as well as the cost associated with doing such an operation.",
+    "mozBugUrl": null,
+    "mozPosition": "not-harmful",
+    "mozPositionDetail": "This specification is being abandoned.",
+    "mozPositionIssue": 73,
+    "org": "W3C",
+    "title": "Web Budget API",
+    "url": "https://wicg.github.io/budget-api"
   }
 ]
