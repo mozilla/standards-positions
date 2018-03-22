@@ -91,7 +91,7 @@
     "ciuName": null,
     "description": "This specification describes an API that can be used to retrieve the amount of budget an origin has available for resource consuming background operations, as well as the cost associated with doing such an operation.",
     "mozBugUrl": null,
-    "mozPosition": "not-harmful",
+    "mozPosition": "non-harmful",
     "mozPositionDetail": "This specification is being abandoned.",
     "mozPositionIssue": 73,
     "org": "W3C",
