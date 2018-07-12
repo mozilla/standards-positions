@@ -503,7 +503,7 @@ if __name__ == "__main__":
 
     if VERB in ['format', 'add']:
         try:
-            SPEC_URL = sys.argv[2].decode('ascii')
+            SPEC_URL = sys.argv[2]
         except IndexError:
             usage()
         ENTRY = SpecEntry(SPEC_URL)
@@ -512,7 +512,7 @@ if __name__ == "__main__":
         elif VERB == 'add':
             try:
                 ACTIVITIES.entry_unique(ENTRY)
-            except ValueError, unique_errors:
+            except ValueError as unique_errors:
                 sys.stderr.write("* ERROR: %s\n" % unique_errors[0][0])
                 sys.exit(1)
             ENTRY.create_issue()
