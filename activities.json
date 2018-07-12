@@ -97,5 +97,16 @@
     "org": "W3C",
     "title": "Web Budget API",
     "url": "https://wicg.github.io/budget-api"
+  },
+  {
+    "ciuName": null,
+    "description": "In Transport Layer Security (TLS) handshakes, certificate chains often take up the majority of the bytes transmitted.  This document describes how certificate chains can be compressed to reduce the amount of data transmitted and avoid some round trips.",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "Compression of certificates should provide some performance advantages.",
+    "mozPositionIssue": 96,
+    "org": "IETF",
+    "title": "Transport Layer Security (TLS) Certificate Compression",
+    "url": "https://tools.ietf.org/html/draft-ietf-tls-certificate-compression"
   }
 ]
