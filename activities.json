@@ -114,7 +114,7 @@
     "description": "This document defines a web platform API that lets websites gain write access to the native file system. It builds on [FILE-API], but adds lots of new functionality on top.",
     "mozBugUrl": null,
     "mozPosition": "defer",
-    "mozPositionDetail": null,
+    "mozPositionDetail": "The ability to read and write from the filesystem is potentially very dangerous.  We will need to carefully consider any solution in light of the security and privacy implications.  We recognize that the spec authors take this issue seriously, but we are concerned that any solution will increase the risk of security incidents more than we are willing to tolerate.  Right now, there isn't enough detail in the specification to make an assessment of these risks, so we will defer our decision until we have more information.",
     "mozPositionIssue": 110,
     "org": "W3C",
     "title": "Writable Files",
