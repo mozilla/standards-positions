@@ -348,7 +348,7 @@ class W3CParser(SpecParser):
             data['url'] = self.clean_url(url_string)
         data['org'] = self.org
         try:
-            data['title'] = spec.h1.string
+            data['title'] = self.clean_tag(spec.h1)
         except AttributeError:
             try:
                 data['title'] = self.clean_tag(spec.title)
