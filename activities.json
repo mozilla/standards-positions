@@ -119,5 +119,27 @@
     "org": "W3C",
     "title": "Writable Files",
     "url": "https://wicg.github.io/writable-files"
+  },
+  {
+    "ciuName": null,
+    "description": "This specification defines an API allowing web applications to set an application-wide badge, shown in an operating-system-specific place associated with the application (such as the shelf or home screen), for the purpose of notifying the user when the state of the application has changed (e.g., when new messages have arrived), without showing a more heavyweight notification.",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": null,
+    "mozPositionIssue": 108,
+    "org": "W3C",
+    "title": "Badging API",
+    "url": "https://wicg.github.io/badging"
+  },
+  {
+    "ciuName": null,
+    "description": "This draft defines additions to CSSOM to make CSSStyleSheet objects directly constructable, along with a way to use them in DocumentOrShadowRoots.",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": null,
+    "mozPositionIssue": 103,
+    "org": "W3C",
+    "title": "Constructable Stylesheet Objects",
+    "url": "https://wicg.github.io/construct-stylesheets/"
   }
 ]
