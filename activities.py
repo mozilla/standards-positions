@@ -289,7 +289,7 @@ class SpecParser(object):
         """
         Return a BeautifulSoup's tag contents as a string.
         """
-        return re.sub("\n\s*", " ", "".join(tag.strings)).strip()
+        return re.sub("\n\s*", " ", tag.get_text()).strip()
 
     @staticmethod
     def clean_url(url):
