@@ -289,7 +289,7 @@ class SpecParser(object):
         """
         Return a BeautifulSoup's tag contents as a string.
         """
-        return "".join(tag.stripped_strings).replace("\n", " ")
+        return re.sub("\n\s*", " ", tag.get_text()).strip()
 
     @staticmethod
     def clean_url(url):
@@ -348,10 +348,10 @@ class W3CParser(SpecParser):
             data['url'] = self.clean_url(url_string)
         data['org'] = self.org
         try:
-            data['title'] = spec.h1.string
+            data['title'] = self.clean_tag(spec.h1)
         except AttributeError:
             try:
-                data['title'] = spec.title.string
+                data['title'] = self.clean_tag(spec.title)
             except AttributeError:
                 sys.stderr.write("* Can't find the specification's title.\n")
                 sys.exit(1)
