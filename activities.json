@@ -144,7 +144,7 @@
   },
   {
     "ciuName": null,
-    "description": "This document defines an imperative mechanism which allows web developers to instruct a user agent to clear a site\u2019s locally stored data related to a host.",
+    "description": "This document defines an imperative mechanism which allows web developers to instruct a user agent to clear a site's locally stored data related to a host.",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1268889",
     "mozPosition": "worth prototyping",
     "mozPositionDetail": "This feature is useful for sites to be able to recover from mistakes in deployment of certain web technologies like Service Workers, and thus makes them more confident about deploying such technology.",
