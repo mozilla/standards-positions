@@ -457,6 +457,8 @@ URL2ORG = {
     'dev.w3.org': W3CParser,
     'dvcs.w3.org': W3CParser,
     'drafts.csswg.org': W3CParser,
+    'drafts.css-houdini.org': W3CParser,
+    'drafts.fxtf.org': W3CParser,
     'w3ctag.github.io': W3CParser,
     'datatracker.ietf.org': IETFParser,
     'www.ietf.org': IETFParser,
