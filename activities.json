@@ -141,5 +141,16 @@
     "org": "W3C",
     "title": "Constructable Stylesheet Objects",
     "url": "https://wicg.github.io/construct-stylesheets/"
-  }
+  },
+  {
+    "ciuName": null,
+    "description": "This draft defines additions to CSS Grid, primarily for the subgrid feature.",
+    "mozBugUrl": 1349043,
+    "mozPosition": "important",
+    "mozPositionDetail": null,
+    "mozPositionIssue": null,
+    "org": "W3C",
+    "title": "CSS Grid Layout Module Level 2",
+    "url": "https://drafts.csswg.org/css-grid-2/"
+  }  
 ]
