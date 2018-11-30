@@ -152,5 +152,60 @@
     "org": "W3C",
     "title": "Clear Site Data",
     "url": "https://w3c.github.io/webappsec-clear-site-data"
+  },
+  {
+    "ciuName": null,
+    "description": "This specification defines an API for running scripts in stages of the rendering pipeline independent of the main javascript execution environment.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1315239",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This specification is essential for allowing features like the CSS Paint API and CSS Layout API to be implemented in a safe way.",
+    "mozPositionIssue": 93,
+    "org": "W3C",
+    "title": "Worklets",
+    "url": "https://drafts.css-houdini.org/worklets"
+  },
+  {
+    "ciuName": null,
+    "description": "Converting CSSOM value strings into meaningfully typed JavaScript representations and back can incur a significant performance overhead. This specification exposes CSS values as typed JavaScript objects to facilitate their performant manipulation.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1278697",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This specification provides an easier way to manipulate the CSS object model.",
+    "mozPositionIssue": 93,
+    "org": "W3C",
+    "title": "CSS Typed OM",
+    "url": "https://drafts.css-houdini.org/css-typed-om-1"
+  },
+  {
+    "ciuName": null,
+    "description": "This CSS module defines an API for registering new CSS properties. Properties registered using this API are provided with a parse syntax that defines a type, inheritance behaviour, and an initial value.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1273706",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This specification makes it significantly easier to use CSS custom properties in ways that are more like regular CSS properties.",
+    "mozPositionIssue": 93,
+    "org": "W3C",
+    "title": "CSS Properties and Values API",
+    "url": "https://drafts.css-houdini.org/css-properties-values-api-1"
+  },
+  {
+    "ciuName": "css-paint-api",
+    "description": "An API for allowing web developers to define a custom CSS <image> with javascript, which will respond to style and size changes.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1302328",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This specification allows developing prototypes of new graphical CSS features and provides an escape hatch for developers when the existing features aren't good enough for a particular piece of a web page.",
+    "mozPositionIssue": 93,
+    "org": "W3C",
+    "title": "CSS Painting API",
+    "url": "https://drafts.css-houdini.org/css-paint-api-1"
+  },
+  {
+    "ciuName": null,
+    "description": "An API for allowing web developers to define their own layout modes with javascript.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1302337",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This specification allows developing prototypes of new CSS layout systems and provides an escape hatch for developers when the existing systems aren't good enough for a particular piece of a web page.",
+    "mozPositionIssue": 93,
+    "org": "W3C",
+    "title": "CSS Layout API",
+    "url": "https://drafts.css-houdini.org/css-layout-api-1"
   }
 ]
