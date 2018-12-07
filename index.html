@@ -22,6 +22,10 @@
         font-weight: bold;
         font-family: "Zilla Slab", serif;
       }
+      /* align sizes with bootstrap's grid snapping of .container */
+      @media (min-width: 768px) { .jumbotron h1 { font-size: 42px; } }
+      @media (min-width: 992px) { .jumbotron h1 { font-size: 58px; } }
+      @media (min-width: 1200px) { .jumbotron h1 { font-size: 72px; } }
       .space dt {
         padding-bottom: 5px;
       }
