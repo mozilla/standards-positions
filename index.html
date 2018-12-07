@@ -13,6 +13,15 @@
     <link href="components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet">
     <style type="text/css">
+      @font-face {
+         font-family: "Zilla Slab";
+         font-weight: bold;
+         src: url("asset/ZillaSlab-Bold.woff2") format("woff2");
+      }
+      .jumbotron h1 {
+        font-weight: bold;
+        font-family: "Zilla Slab", serif;
+      }
       .space dt {
         padding-bottom: 5px;
       }
@@ -23,7 +32,7 @@
     <div class="container">
       <br>
       <div class="jumbotron">
-        <h1><img src="asset/Mozilla.svg" height="72" style="vertical-align: -14.8px;" alt="Mozilla"> Specification Positions</h1>
+        <h1><img src="asset/Mozilla.svg" style="height: 1.04em; vertical-align: -0.23em;" alt="Mozilla"> Specification Positions</h1>
 
         <p class="alert-warning">This is now a <strong>pilot</strong> of a process to decide and document
         what it thinks about emerging technical specifications for the Web (see below).
