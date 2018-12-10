@@ -1,0 +1,10 @@
+{
+	"name": "datatables.net-plugins",
+	"license": "MIT",
+	"main": [],
+	"ignore": [],
+	"dependencies": {
+		"jquery": ">=1.7.0",
+		"datatables": ">=1.10.15"
+	}
+}
