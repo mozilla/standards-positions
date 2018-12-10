@@ -94,6 +94,7 @@
 
     <script src="components/jquery/dist/jquery.min.js"></script>
     <script src="components/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="components/datatables-plugins/sorting/enum.js"></script>
     <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
     $(document).ready(function(){
@@ -109,6 +110,9 @@
         var REPO_OWNER = "mozilla"
         var REPO_NAME = "standards-positions"
 
+        $.fn.dataTable.enum( [ "under consideration", "important",
+                               "worth prototyping", "non-harmful",
+                               "defer", "harmful" ] );
         var ptable = $('#mozPositions').DataTable({
           "paging": false,
           "ajax": {
@@ -121,6 +125,9 @@
               {
                 "data": "org",
                 "render": function (data, type, row) {
+                  if (type !== "display") {
+                    return data;
+                  }
                   if (data !== "") {
                     var extension = ".svg"
                     if (data === "IETF") {
@@ -137,19 +144,27 @@
               {
                 "data": "title",
                 "render": function (data, type, row) {
-                   return "<a href='" + row.url + "'>" + data + "</a>"
+                  if (type !== "display") {
+                    return data;
+                  }
+                  return "<a href='" + row.url + "'>" + data + "</a>"
                 },
                 "orderable": true,
                 "searchable": true
               },
               {
                 "data": "mozPosition",
+                "type": "enum-0",
                 "render": function (data, type, row) {
+                  if (type !== "display") {
+                    return data;
+                  }
                   if (data !== "" && ! status_styles.hasOwnProperty(data)) {
                     console.log("WARNING: unrecognised position '" + data + "' on " + row.name)
                   }
                   return "<button type='button' class='btn btn-" + status_styles[data] + " btn-xs'>" + data + "</button>"
-                }
+                },
+                "orderable": true
               },
               {
                 "className":      'details-control',
