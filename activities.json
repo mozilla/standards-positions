@@ -207,5 +207,16 @@
     "org": "W3C",
     "title": "CSS Layout API",
     "url": "https://drafts.css-houdini.org/css-layout-api-1"
+  },
+  {
+    "ciuName": "client-hints-dpr-width-viewport",
+    "description": "An increasing diversity of Web-connected devices and software capabilities has created a need to deliver optimized content for each device.  This specification defines an extensible and configurable set of HTTP request header fields, colloquially known as Client Hints, to address this. They are intended to be used as input to proactive content negotiation; just as the Accept header field allows user agents to indicate what formats they prefer, Client Hints allow user agents to indicate device and agent specific preferences.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=935216",
+    "mozPosition": "non-harmful",
+    "mozPositionDetail": "Architecturally, Mozilla prefers client-side solutions for retrieving alternate versions of content, such as the HTML &lt;picture> tag.  Despite these architectural preferences, we find that Client-Hints do not present a concrete harm to the web or to its users.  ",
+    "mozPositionIssue": 79,
+    "org": "IETF",
+    "title": "HTTP Client Hints",
+    "url": "https://tools.ietf.org/html/draft-ietf-httpbis-client-hints"
   }
 ]
