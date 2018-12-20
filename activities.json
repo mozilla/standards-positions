@@ -240,5 +240,16 @@
     "org": "IETF",
     "title": "Zstandard Compression and the application/zstd Media Type",
     "url": "https://tools.ietf.org/html/rfc8478"
+  },
+   {
+    "ciuName": null,
+    "description": "This draft defines additions to CSS Grid, primarily for the subgrid feature.",
+    "mozBugUrl": 1349043,
+    "mozPosition": "important",
+    "mozPositionDetail": "Subgrid adds a critical enhancement to CSS Grid, in particular for many CSS Grid use-cases that require alignment across nested semantic elements.",
+    "mozPositionIssue": 125,
+    "org": "W3C",
+    "title": "CSS Grid Layout Module Level 2",
+    "url": "https://drafts.csswg.org/css-grid-2/"
   }
 ]
