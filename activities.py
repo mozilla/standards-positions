@@ -91,6 +91,7 @@ class ActivitiesJson(object):
     def save(self):
         "Save self.data into self.filename"
         try:
+            self.data.sort(key=lambda entry: entry['title'])
             with open(self.filename, 'w') as wfh:
                 wfh.write(JSON_ENCODER.encode(self.data))
                 wfh.write("\n")
