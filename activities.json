@@ -244,7 +244,7 @@
    {
     "ciuName": null,
     "description": "This draft defines additions to CSS Grid, primarily for the subgrid feature.",
-    "mozBugUrl": 1349043,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1349043",
     "mozPosition": "important",
     "mozPositionDetail": "Subgrid adds a critical enhancement to CSS Grid, in particular for many CSS Grid use-cases that require alignment across nested semantic elements.",
     "mozPositionIssue": 125,
