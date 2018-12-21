@@ -1,25 +1,58 @@
 [
   {
     "ciuName": null,
-    "description": "This document specifies how a server can send an HTTP request/ response pair, known as an exchange, with signatures that vouch for that exchange's authenticity. These signatures can be verified against an origin's certificate to establish that the exchange is authoritative for an origin even if it was transferred over a connection that isn't. The signatures can also be used in other ways described in the appendices. These signatures contain countermeasures against downgrade and protocol-confusion attacks.",
-    "mozBugUrl": null,
-    "mozPosition": "harmful",
-    "mozPositionDetail": "Mozilla has concerns about the shift in the web security model required for handling web-packaged information. Specifically, the ability for an origin to act on behalf of another without a client ever contacting the authoritative server is worrisome, as is the removal of a guarantee of confidentiality from the web security model (the host serving the web package has access to plain text). We recognise that the use cases satisfied by web packaging are useful, and would be likely to support an approach that enabled such use cases so long as the foregoing concerns could be addressed.",
-    "mozPositionIssue": 29,
-    "org": "IETF",
-    "title": "Signed HTTP Exchanges",
-    "url": "https://tools.ietf.org/html/draft-yasskin-http-origin-signed-responses"
-  },
-  {
-    "ciuName": null,
-    "description": "This document describes a common data model and API for the Web of Things. The Web Thing Description provides a vocabulary for describing physical devices connected to the World Wide Web in a machine readable format with a default JSON encoding. The Web Thing REST API and Web Thing WebSocket API allow a web client to access the properties of devices, request the execution of actions and subscribe to events representing a change in state. Some basic Web Thing Types are provided and additional types can be defined using semantic extensions with JSON-LD. In addition to this specification there is a note on Web Thing API Protocol Bindings which proposes non-normative bindings of the Web Thing API to various existing IoT protocols. There is also a document describing Web of Things Integration Patterns which provides advice on different design patterns for integrating connected devices with the Web of Things, and where each pattern is most appropriate.",
+    "description": "This specification defines an API allowing web applications to set an application-wide badge, shown in an operating-system-specific place associated with the application (such as the shelf or home screen), for the purpose of notifying the user when the state of the application has changed (e.g., when new messages have arrived), without showing a more heavyweight notification.",
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
     "mozPositionDetail": null,
-    "mozPositionIssue": 44,
+    "mozPositionIssue": 108,
     "org": "W3C",
-    "title": "Web Thing API",
-    "url": "https://iot.mozilla.org/wot/"
+    "title": "Badging API",
+    "url": "https://wicg.github.io/badging"
+  },
+  {
+    "ciuName": null,
+    "description": "This draft defines additions to CSS Grid, primarily for the subgrid feature.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1349043",
+    "mozPosition": "important",
+    "mozPositionDetail": "Subgrid adds a critical enhancement to CSS Grid, in particular for many CSS Grid use-cases that require alignment across nested semantic elements.",
+    "mozPositionIssue": 125,
+    "org": "W3C",
+    "title": "CSS Grid Layout Module Level 2",
+    "url": "https://drafts.csswg.org/css-grid-2/"
+  },
+  {
+    "ciuName": null,
+    "description": "An API for allowing web developers to define their own layout modes with javascript.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1302337",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This specification allows developing prototypes of new CSS layout systems and provides an escape hatch for developers when the existing systems aren't good enough for a particular piece of a web page.",
+    "mozPositionIssue": 93,
+    "org": "W3C",
+    "title": "CSS Layout API",
+    "url": "https://drafts.css-houdini.org/css-layout-api-1"
+  },
+  {
+    "ciuName": "css-paint-api",
+    "description": "An API for allowing web developers to define a custom CSS <image> with javascript, which will respond to style and size changes.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1302328",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This specification allows developing prototypes of new graphical CSS features and provides an escape hatch for developers when the existing features aren't good enough for a particular piece of a web page.",
+    "mozPositionIssue": 93,
+    "org": "W3C",
+    "title": "CSS Painting API",
+    "url": "https://drafts.css-houdini.org/css-paint-api-1"
+  },
+  {
+    "ciuName": null,
+    "description": "This CSS module defines an API for registering new CSS properties. Properties registered using this API are provided with a parse syntax that defines a type, inheritance behaviour, and an initial value.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1273706",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This specification makes it significantly easier to use CSS custom properties in ways that are more like regular CSS properties.",
+    "mozPositionIssue": 93,
+    "org": "W3C",
+    "title": "CSS Properties and Values API",
+    "url": "https://drafts.css-houdini.org/css-properties-values-api-1"
   },
   {
     "ciuName": null,
@@ -31,6 +64,116 @@
     "org": "W3C",
     "title": "CSS Shadow Parts",
     "url": "http://drafts.csswg.org/css-shadow-parts"
+  },
+  {
+    "ciuName": null,
+    "description": "Converting CSSOM value strings into meaningfully typed JavaScript representations and back can incur a significant performance overhead. This specification exposes CSS values as typed JavaScript objects to facilitate their performant manipulation.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1278697",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This specification provides an easier way to manipulate the CSS object model.",
+    "mozPositionIssue": 93,
+    "org": "W3C",
+    "title": "CSS Typed OM",
+    "url": "https://drafts.css-houdini.org/css-typed-om-1"
+  },
+  {
+    "ciuName": null,
+    "description": "This document defines an imperative mechanism which allows web developers to instruct a user agent to clear a site's locally stored data related to a host.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1268889",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This feature is useful for sites to be able to recover from mistakes in deployment of certain web technologies like Service Workers, and thus makes them more confident about deploying such technology.",
+    "mozPositionIssue": 90,
+    "org": "W3C",
+    "title": "Clear Site Data",
+    "url": "https://w3c.github.io/webappsec-clear-site-data"
+  },
+  {
+    "ciuName": null,
+    "description": "This draft defines additions to CSSOM to make CSSStyleSheet objects directly constructable, along with a way to use them in DocumentOrShadowRoots.",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": null,
+    "mozPositionIssue": 103,
+    "org": "W3C",
+    "title": "Constructable Stylesheet Objects",
+    "url": "https://wicg.github.io/construct-stylesheets/"
+  },
+  {
+    "ciuName": null,
+    "description": "This specification defines a mechanism that allows developers to selectively enable and disable use of various browser features and APIs.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1390801",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This specification allows finer-grained control over certain features; some of these features require user consent, and some have privacy and/or security implications.  Allowing this control could allow pages that use these features (in many cases, following user consent) to prevent cross-origin subframes (which are often ads, and which often do tracking) from getting the same permission as the toplevel page.  Having the control also makes it easier for future specifications to be designed so that this behavior is the default, but can be overridden in the other direction to allow the subframe to use the feature.  The control provided by this specification also allows sites to exercise CSP-like control over their own content's use of these features.",
+    "mozPositionIssue": 24,
+    "org": "W3C",
+    "title": "Feature Policy",
+    "url": "https://wicg.github.io/feature-policy"
+  },
+  {
+    "ciuName": "client-hints-dpr-width-viewport",
+    "description": "An increasing diversity of Web-connected devices and software capabilities has created a need to deliver optimized content for each device.  This specification defines an extensible and configurable set of HTTP request header fields, colloquially known as Client Hints, to address this. They are intended to be used as input to proactive content negotiation; just as the Accept header field allows user agents to indicate what formats they prefer, Client Hints allow user agents to indicate device and agent specific preferences.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=935216",
+    "mozPosition": "non-harmful",
+    "mozPositionDetail": "Architecturally, Mozilla prefers client-side solutions for retrieving alternate versions of content, such as the HTML &lt;picture> tag.  Despite these architectural preferences, we find that Client-Hints do not present a concrete harm to the web or to its users.  ",
+    "mozPositionIssue": 79,
+    "org": "IETF",
+    "title": "HTTP Client Hints",
+    "url": "https://tools.ietf.org/html/draft-ietf-httpbis-client-hints"
+  },
+  {
+    "ciuName": null,
+    "description": "This document updates RFC 6761 with the goal of ensuring that \"localhost\" can be safely relied upon as a name for the local host's loopback interface. To that end, stub resolvers are required to resolve localhost names to loopback addresses. Recursive DNS servers are required to return \"NXDOMAIN\" when queried for localhost names, making non-conformant stub resolvers more likely to fail and produce problem reports that result in updates. Together, these requirements would allow applications and specifications to join regular users in drawing the common-sense conclusions that \"localhost\" means \"localhost\", and doesn't resolve to somewhere else on the network.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1220810",
+    "mozPosition": "under consideration",
+    "mozPositionDetail": null,
+    "mozPositionIssue": 121,
+    "org": "IETF",
+    "title": "Let 'localhost' be localhost.",
+    "url": "https://tools.ietf.org/html/draft-west-let-localhost-be-localhost"
+  },
+  {
+    "ciuName": "permissions-api",
+    "description": "The Permissions Standard defines common infrastructure for other specifications that need to interact with browser permissions. It also defines an API to allow web applications to query and request changes to the status of a given permission.",
+    "mozBugUrl": null,
+    "mozPosition": "important",
+    "mozPositionDetail": "Mozilla believes that the ability to work with user permissions is critical for user agency.  There are certain aspects of the API that are not suitable for the permissions model used in Firefox and so we would like to work on improving several aspects of the API.  In particular, we think that the way that status of permissions needs to more accurately reflect the different states that exist or could exist.  We also think that the interactions with Feature Policy need to be better clarified.  We're committed to fixing this, because permissions has become critical in making the web a more capable platform and it is important to ensure that we preserve user control over their online experience.",
+    "mozPositionIssue": 19,
+    "org": "W3C",
+    "title": "Permissions",
+    "url": "https://w3c.github.io/permissions"
+  },
+  {
+    "ciuName": null,
+    "description": "This document specifies how a server can send an HTTP request/ response pair, known as an exchange, with signatures that vouch for that exchange's authenticity. These signatures can be verified against an origin's certificate to establish that the exchange is authoritative for an origin even if it was transferred over a connection that isn't. The signatures can also be used in other ways described in the appendices. These signatures contain countermeasures against downgrade and protocol-confusion attacks.",
+    "mozBugUrl": null,
+    "mozPosition": "harmful",
+    "mozPositionDetail": "Mozilla has concerns about the shift in the web security model required for handling web-packaged information. Specifically, the ability for an origin to act on behalf of another without a client ever contacting the authoritative server is worrisome, as is the removal of a guarantee of confidentiality from the web security model (the host serving the web package has access to plain text). We recognise that the use cases satisfied by web packaging are useful, and would be likely to support an approach that enabled such use cases so long as the foregoing concerns could be addressed.",
+    "mozPositionIssue": 29,
+    "org": "IETF",
+    "title": "Signed HTTP Exchanges",
+    "url": "https://tools.ietf.org/html/draft-yasskin-http-origin-signed-responses"
+  },
+  {
+    "ciuName": null,
+    "description": "In Transport Layer Security (TLS) handshakes, certificate chains often take up the majority of the bytes transmitted.  This document describes how certificate chains can be compressed to reduce the amount of data transmitted and avoid some round trips.",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "Compression of certificates should provide some performance advantages.",
+    "mozPositionIssue": 96,
+    "org": "IETF",
+    "title": "Transport Layer Security (TLS) Certificate Compression",
+    "url": "https://tools.ietf.org/html/draft-ietf-tls-certificate-compression"
+  },
+  {
+    "ciuName": null,
+    "description": "This specification describes an API that can be used to retrieve the amount of budget an origin has available for resource consuming background operations, as well as the cost associated with doing such an operation.",
+    "mozBugUrl": null,
+    "mozPosition": "non-harmful",
+    "mozPositionDetail": "This specification is being abandoned.",
+    "mozPositionIssue": 73,
+    "org": "W3C",
+    "title": "Web Budget API",
+    "url": "https://wicg.github.io/budget-api"
   },
   {
     "ciuName": "midi",
@@ -67,91 +210,14 @@
   },
   {
     "ciuName": null,
-    "description": "This specification defines a mechanism that allows developers to selectively enable and disable use of various browser features and APIs.",
-    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1390801",
-    "mozPosition": "worth prototyping",
-    "mozPositionDetail": "This specification allows finer-grained control over certain features; some of these features require user consent, and some have privacy and/or security implications.  Allowing this control could allow pages that use these features (in many cases, following user consent) to prevent cross-origin subframes (which are often ads, and which often do tracking) from getting the same permission as the toplevel page.  Having the control also makes it easier for future specifications to be designed so that this behavior is the default, but can be overridden in the other direction to allow the subframe to use the feature.  The control provided by this specification also allows sites to exercise CSP-like control over their own content's use of these features.",
-    "mozPositionIssue": 24,
-    "org": "W3C",
-    "title": "Feature Policy",
-    "url": "https://wicg.github.io/feature-policy"
-  },
-  {
-    "ciuName": "permissions-api",
-    "description": "The Permissions Standard defines common infrastructure for other specifications that need to interact with browser permissions. It also defines an API to allow web applications to query and request changes to the status of a given permission.",
-    "mozBugUrl": null,
-    "mozPosition": "important",
-    "mozPositionDetail": "Mozilla believes that the ability to work with user permissions is critical for user agency.  There are certain aspects of the API that are not suitable for the permissions model used in Firefox and so we would like to work on improving several aspects of the API.  In particular, we think that the way that status of permissions needs to more accurately reflect the different states that exist or could exist.  We also think that the interactions with Feature Policy need to be better clarified.  We're committed to fixing this, because permissions has become critical in making the web a more capable platform and it is important to ensure that we preserve user control over their online experience.",
-    "mozPositionIssue": 19,
-    "org": "W3C",
-    "title": "Permissions",
-    "url": "https://w3c.github.io/permissions"
-  },
-  {
-    "ciuName": null,
-    "description": "This specification describes an API that can be used to retrieve the amount of budget an origin has available for resource consuming background operations, as well as the cost associated with doing such an operation.",
-    "mozBugUrl": null,
-    "mozPosition": "non-harmful",
-    "mozPositionDetail": "This specification is being abandoned.",
-    "mozPositionIssue": 73,
-    "org": "W3C",
-    "title": "Web Budget API",
-    "url": "https://wicg.github.io/budget-api"
-  },
-  {
-    "ciuName": null,
-    "description": "In Transport Layer Security (TLS) handshakes, certificate chains often take up the majority of the bytes transmitted.  This document describes how certificate chains can be compressed to reduce the amount of data transmitted and avoid some round trips.",
-    "mozBugUrl": null,
-    "mozPosition": "worth prototyping",
-    "mozPositionDetail": "Compression of certificates should provide some performance advantages.",
-    "mozPositionIssue": 96,
-    "org": "IETF",
-    "title": "Transport Layer Security (TLS) Certificate Compression",
-    "url": "https://tools.ietf.org/html/draft-ietf-tls-certificate-compression"
-  },
-  {
-    "ciuName": null,
-    "description": "This document defines a web platform API that lets websites gain write access to the native file system. It builds on [FILE-API], but adds lots of new functionality on top.",
-    "mozBugUrl": null,
-    "mozPosition": "defer",
-    "mozPositionDetail": "The ability to read and write from the filesystem is potentially very dangerous.  We will need to carefully consider any solution in light of the security and privacy implications.  We recognize that the spec authors take this issue seriously, but we are concerned that any solution will increase the risk of security incidents more than we are willing to tolerate.  Right now, there isn't enough detail in the specification to make an assessment of these risks, so we will defer our decision until we have more information.",
-    "mozPositionIssue": 110,
-    "org": "W3C",
-    "title": "Writable Files",
-    "url": "https://wicg.github.io/writable-files"
-  },
-  {
-    "ciuName": null,
-    "description": "This specification defines an API allowing web applications to set an application-wide badge, shown in an operating-system-specific place associated with the application (such as the shelf or home screen), for the purpose of notifying the user when the state of the application has changed (e.g., when new messages have arrived), without showing a more heavyweight notification.",
+    "description": "This document describes a common data model and API for the Web of Things. The Web Thing Description provides a vocabulary for describing physical devices connected to the World Wide Web in a machine readable format with a default JSON encoding. The Web Thing REST API and Web Thing WebSocket API allow a web client to access the properties of devices, request the execution of actions and subscribe to events representing a change in state. Some basic Web Thing Types are provided and additional types can be defined using semantic extensions with JSON-LD. In addition to this specification there is a note on Web Thing API Protocol Bindings which proposes non-normative bindings of the Web Thing API to various existing IoT protocols. There is also a document describing Web of Things Integration Patterns which provides advice on different design patterns for integrating connected devices with the Web of Things, and where each pattern is most appropriate.",
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
     "mozPositionDetail": null,
-    "mozPositionIssue": 108,
+    "mozPositionIssue": 44,
     "org": "W3C",
-    "title": "Badging API",
-    "url": "https://wicg.github.io/badging"
-  },
-  {
-    "ciuName": null,
-    "description": "This draft defines additions to CSSOM to make CSSStyleSheet objects directly constructable, along with a way to use them in DocumentOrShadowRoots.",
-    "mozBugUrl": null,
-    "mozPosition": "worth prototyping",
-    "mozPositionDetail": null,
-    "mozPositionIssue": 103,
-    "org": "W3C",
-    "title": "Constructable Stylesheet Objects",
-    "url": "https://wicg.github.io/construct-stylesheets/"
-  },
-  {
-    "ciuName": null,
-    "description": "This document defines an imperative mechanism which allows web developers to instruct a user agent to clear a site's locally stored data related to a host.",
-    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1268889",
-    "mozPosition": "worth prototyping",
-    "mozPositionDetail": "This feature is useful for sites to be able to recover from mistakes in deployment of certain web technologies like Service Workers, and thus makes them more confident about deploying such technology.",
-    "mozPositionIssue": 90,
-    "org": "W3C",
-    "title": "Clear Site Data",
-    "url": "https://w3c.github.io/webappsec-clear-site-data"
+    "title": "Web Thing API",
+    "url": "https://iot.mozilla.org/wot/"
   },
   {
     "ciuName": null,
@@ -166,69 +232,14 @@
   },
   {
     "ciuName": null,
-    "description": "Converting CSSOM value strings into meaningfully typed JavaScript representations and back can incur a significant performance overhead. This specification exposes CSS values as typed JavaScript objects to facilitate their performant manipulation.",
-    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1278697",
-    "mozPosition": "worth prototyping",
-    "mozPositionDetail": "This specification provides an easier way to manipulate the CSS object model.",
-    "mozPositionIssue": 93,
+    "description": "This document defines a web platform API that lets websites gain write access to the native file system. It builds on [FILE-API], but adds lots of new functionality on top.",
+    "mozBugUrl": null,
+    "mozPosition": "defer",
+    "mozPositionDetail": "The ability to read and write from the filesystem is potentially very dangerous.  We will need to carefully consider any solution in light of the security and privacy implications.  We recognize that the spec authors take this issue seriously, but we are concerned that any solution will increase the risk of security incidents more than we are willing to tolerate.  Right now, there isn't enough detail in the specification to make an assessment of these risks, so we will defer our decision until we have more information.",
+    "mozPositionIssue": 110,
     "org": "W3C",
-    "title": "CSS Typed OM",
-    "url": "https://drafts.css-houdini.org/css-typed-om-1"
-  },
-  {
-    "ciuName": null,
-    "description": "This CSS module defines an API for registering new CSS properties. Properties registered using this API are provided with a parse syntax that defines a type, inheritance behaviour, and an initial value.",
-    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1273706",
-    "mozPosition": "worth prototyping",
-    "mozPositionDetail": "This specification makes it significantly easier to use CSS custom properties in ways that are more like regular CSS properties.",
-    "mozPositionIssue": 93,
-    "org": "W3C",
-    "title": "CSS Properties and Values API",
-    "url": "https://drafts.css-houdini.org/css-properties-values-api-1"
-  },
-  {
-    "ciuName": "css-paint-api",
-    "description": "An API for allowing web developers to define a custom CSS <image> with javascript, which will respond to style and size changes.",
-    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1302328",
-    "mozPosition": "worth prototyping",
-    "mozPositionDetail": "This specification allows developing prototypes of new graphical CSS features and provides an escape hatch for developers when the existing features aren't good enough for a particular piece of a web page.",
-    "mozPositionIssue": 93,
-    "org": "W3C",
-    "title": "CSS Painting API",
-    "url": "https://drafts.css-houdini.org/css-paint-api-1"
-  },
-  {
-    "ciuName": null,
-    "description": "An API for allowing web developers to define their own layout modes with javascript.",
-    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1302337",
-    "mozPosition": "worth prototyping",
-    "mozPositionDetail": "This specification allows developing prototypes of new CSS layout systems and provides an escape hatch for developers when the existing systems aren't good enough for a particular piece of a web page.",
-    "mozPositionIssue": 93,
-    "org": "W3C",
-    "title": "CSS Layout API",
-    "url": "https://drafts.css-houdini.org/css-layout-api-1"
-  },
-  {
-    "ciuName": "client-hints-dpr-width-viewport",
-    "description": "An increasing diversity of Web-connected devices and software capabilities has created a need to deliver optimized content for each device.  This specification defines an extensible and configurable set of HTTP request header fields, colloquially known as Client Hints, to address this. They are intended to be used as input to proactive content negotiation; just as the Accept header field allows user agents to indicate what formats they prefer, Client Hints allow user agents to indicate device and agent specific preferences.",
-    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=935216",
-    "mozPosition": "non-harmful",
-    "mozPositionDetail": "Architecturally, Mozilla prefers client-side solutions for retrieving alternate versions of content, such as the HTML &lt;picture> tag.  Despite these architectural preferences, we find that Client-Hints do not present a concrete harm to the web or to its users.  ",
-    "mozPositionIssue": 79,
-    "org": "IETF",
-    "title": "HTTP Client Hints",
-    "url": "https://tools.ietf.org/html/draft-ietf-httpbis-client-hints"
-  },
-  {
-    "ciuName": null,
-    "description": "This document updates RFC 6761 with the goal of ensuring that \"localhost\" can be safely relied upon as a name for the local host's loopback interface. To that end, stub resolvers are required to resolve localhost names to loopback addresses. Recursive DNS servers are required to return \"NXDOMAIN\" when queried for localhost names, making non-conformant stub resolvers more likely to fail and produce problem reports that result in updates. Together, these requirements would allow applications and specifications to join regular users in drawing the common-sense conclusions that \"localhost\" means \"localhost\", and doesn't resolve to somewhere else on the network.",
-    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1220810",
-    "mozPosition": "under consideration",
-    "mozPositionDetail": null,
-    "mozPositionIssue": 121,
-    "org": "IETF",
-    "title": "Let 'localhost' be localhost.",
-    "url": "https://tools.ietf.org/html/draft-west-let-localhost-be-localhost"
+    "title": "Writable Files",
+    "url": "https://wicg.github.io/writable-files"
   },
   {
     "ciuName": null,
@@ -240,16 +251,5 @@
     "org": "IETF",
     "title": "Zstandard Compression and the application/zstd Media Type",
     "url": "https://tools.ietf.org/html/rfc8478"
-  },
-   {
-    "ciuName": null,
-    "description": "This draft defines additions to CSS Grid, primarily for the subgrid feature.",
-    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1349043",
-    "mozPosition": "important",
-    "mozPositionDetail": "Subgrid adds a critical enhancement to CSS Grid, in particular for many CSS Grid use-cases that require alignment across nested semantic elements.",
-    "mozPositionIssue": 125,
-    "org": "W3C",
-    "title": "CSS Grid Layout Module Level 2",
-    "url": "https://drafts.csswg.org/css-grid-2/"
   }
 ]
