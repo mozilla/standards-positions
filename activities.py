@@ -29,7 +29,7 @@ try:
     from requests.auth import HTTPBasicAuth
 except ImportError:
     sys.stderr.write("ERROR: Dependency not available. Try:\n")
-    sys.stderr.write("       > pip install beautifulsoup4 requests html5lib\n\n")
+    sys.stderr.write("       > pip install --user beautifulsoup4 requests html5lib\n\n")
     sys.exit(1)
 
 
@@ -166,7 +166,7 @@ class ActivitiesJson(object):
                     raise ValueError("Unrecognized value type %s" % value_type)
             extra_items = set(entry.keys()) - set([i[0] for i in self.expected_entry_items])
             if extra_items:
-                errors.append("%s includes unrecoginsed members: %s" % (
+                errors.append("%s includes unrecognized members: %s" % (
                     title, " ".join(extra_items)))
         return errors
 
@@ -484,7 +484,7 @@ To create Github Issues, GH_USER and GH_TOKEN must be in the environment;
 to generate a token, see: <https://github.com/settings/tokens>. The
 'public_repo' permission is required.
 
-""")
+""" % sys.argv[0])
     sys.exit(1)
 
 
@@ -505,10 +505,12 @@ if __name__ == "__main__":
             sys.exit(1)
 
     if VERB in ['format', 'add']:
-        try:
-            SPEC_URL = sys.argv[2]
-        except IndexError:
+        if len(sys.argv) < 3:
             usage()
+        try:
+            SPEC_URL = unicode(sys.argv[2]) # python2
+        except NameError:
+            SPEC_URL = sys.argv[2]
         ENTRY = SpecEntry(SPEC_URL)
         if VERB == 'format':
             print(ENTRY)
