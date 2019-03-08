@@ -68,6 +68,12 @@ If successful, it will modify `activities.json` with the new specification. Chec
 }
 ```
 
+### Asking Mozilla to Update a Position
+
+Specifications might updated after a position is decided. Updates might be in response to
+feedback provided by Mozilla. If you think that changes to a proposal warrant an updated
+position from Mozilla, please request another review by opening a new issue. Please include
+a summary of the changes that you believe to be relevant.
 
 ## Discussing Mozilla's Position on a Web Specification
 
