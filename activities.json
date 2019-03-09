@@ -78,6 +78,17 @@
   },
   {
     "ciuName": null,
+    "description": "This specification defines a HTTP/2 frame type to allow clients to inform the server of their cache's contents. Servers can then use this to inform their choices of what to push to clients.",
+    "mozBugUrl": null,
+    "mozPosition": "non-harmful",
+    "mozPositionDetail": "This is experimental technology that might improve the use of server push by giving servers information about what is cached.  It is still unclear how much this might improve performance; more experimentation is likely necessary to prove this out.",
+    "mozPositionIssue": 131,
+    "org": "IETF",
+    "title": "Cache Digests for HTTP/2",
+    "url": "https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest"
+  },
+  {
+    "ciuName": null,
     "description": "This document defines an imperative mechanism which allows web developers to instruct a user agent to clear a site's locally stored data related to a host.",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1268889",
     "mozPosition": "worth prototyping",
