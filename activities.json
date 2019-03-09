@@ -110,6 +110,17 @@
     "url": "https://wicg.github.io/feature-policy"
   },
   {
+    "ciuName": null,
+    "description": "An extension of the ES6 Script Modules system to include HTML Modules. These will allow web developers to package and access declarative content from script in a way that allows for good componentization and reusability, and integrates well into the existing ES6 Modules infrastructure.",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": null,
+    "mozPositionIssue": 137,
+    "org": "W3C",
+    "title": "HTML Modules",
+    "url": "https://github.com/w3c/webcomponents/blob/gh-pages/proposals/html-modules-explainer.md"
+  },
+  {
     "ciuName": "client-hints-dpr-width-viewport",
     "description": "An increasing diversity of Web-connected devices and software capabilities has created a need to deliver optimized content for each device.  This specification defines an extensible and configurable set of HTTP request header fields, colloquially known as Client Hints, to address this. They are intended to be used as input to proactive content negotiation; just as the Accept header field allows user agents to indicate what formats they prefer, Client Hints allow user agents to indicate device and agent specific preferences.",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=935216",
