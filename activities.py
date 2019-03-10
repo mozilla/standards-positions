@@ -479,6 +479,8 @@ USAGE: %s verb [args]
                     requires a URL argument
          format   - Return the entry as JSON on STDOUT; requires a URL argument
          validate - Validate activities.json; no arguments
+         sort     - Validate activities.json and write it out again in the
+                    canonical sorted order.
 
 To create Github Issues, GH_USER and GH_TOKEN must be in the environment;
 to generate a token, see: <https://github.com/settings/tokens>. The
@@ -494,10 +496,10 @@ if __name__ == "__main__":
     except IndexError:
         usage()
 
-    if VERB not in ['validate', 'add', 'format']:
+    if VERB not in ['validate', 'add', 'format', 'sort']:
         usage()
 
-    if VERB in ['validate', 'add']:
+    if VERB in ['validate', 'add', 'sort']:
         ACTIVITIES = ActivitiesJson("activities.json")
         ERRORS = ACTIVITIES.validate()
         if ERRORS:
@@ -522,4 +524,6 @@ if __name__ == "__main__":
                 sys.exit(1)
             ENTRY.create_issue()
             ACTIVITIES.append(ENTRY)
-            ACTIVITIES.save()
+
+    if VERB in ['add', 'sort']:
+        ACTIVITIES.save()
