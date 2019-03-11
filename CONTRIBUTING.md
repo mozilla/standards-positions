@@ -76,11 +76,9 @@ changes to a proposal warrant an updated position from Mozilla, please request
 another review by commenting on the original issue for the specification. Please
 include a summary of the changes that you believe to be relevant.
 
-When asking for an update you may reopen the issue. However, we ask that people
-don't reopen issues unless the situation has changed significantly. If you
-believe that you have new information that might cause Mozilla to reconsider a
-position, provide that information and ask. A coordinator will reopen the issue
-if they believe that the position might need to be revised.
+If you believe that you have new information that might cause Mozilla to
+reconsider a position, provide that information and ask a coordinator to reopen
+the issue.
 
 ## Discussing Mozilla's Position on a Web Specification
 
