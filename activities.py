@@ -57,7 +57,7 @@ class ActivitiesJson(object):
         ("title", True, StringType),
         ("description", True, StringType),
         ("ciuName", False, StringType),
-        ("org", True, ["W3C", "IETF", "Ecma", "Other"]),
+        ("org", True, ["W3C", "IETF", "Ecma", "WHATWG", "Other"]),
         ("group", False, StringType),
         ("url", True, UrlType),
         ("mozBugUrl", False, UrlType),
