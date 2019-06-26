@@ -111,6 +111,17 @@
   },
   {
     "ciuName": null,
+    "description": "This document defines a simple mechanism for encrypting the Server Name Indication for TLS 1.3.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1494901",
+    "mozPosition": "important",
+    "mozPositionDetail": "This feature enables encryption of the server name in connection attempts. It provides much-needed protection against attempts by network observers to see what people are doing. This work is complementary with efforts to encrypt DNS requests that we are also driving.",
+    "mozPositionIssue": 139,
+    "org": "IETF",
+    "title": "Encrypted Server Name Indication for TLS 1.3",
+    "url": "https://tools.ietf.org/html/draft-ietf-tls-esni"
+  },
+  {
+    "ciuName": null,
     "description": "This specification defines a mechanism that allows developers to selectively enable and disable use of various browser features and APIs.",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1390801",
     "mozPosition": "worth prototyping",
