@@ -70,8 +70,9 @@ If successful, it will modify `activities.json` with the new specification. Chec
 
 ### Asking Mozilla to Update a Position
 
-Specifications might be updated after a position is decided. Especially if those
-updates are in response to feedback provided by Mozilla.
+Specifications might be updated after a position is decided. Updates to a
+specification could justify a new position, especially if those updates are in
+response to feedback provided by Mozilla.
 
 If you think that changes to a proposal warrant an updated position from
 Mozilla, please request another review by commenting on the original issue for
