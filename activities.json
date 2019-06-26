@@ -177,6 +177,17 @@
   },
   {
     "ciuName": null,
+    "description": "A use of TLS Exported Authenticators is described which enables HTTP/2 clients and servers to offer additional certificate-based credentials after the connection is established. The means by which these credentials are used with requests is defined.",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This specification enables client authentication in HTTP/2, which is of some benefit. However, it is the server authentication that is most interesting from a privacy perspective. There are some challenges that would need to be worked through before this could be deployed in anything other than an experiment.",
+    "mozPositionIssue": 175,
+    "org": "IETF",
+    "title": "Secondary Certificate Authentication in HTTP/2",
+    "url": "https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs"
+  },
+  {
+    "ciuName": null,
     "description": "This document specifies how a server can send an HTTP request/ response pair, known as an exchange, with signatures that vouch for that exchange's authenticity. These signatures can be verified against an origin's certificate to establish that the exchange is authoritative for an origin even if it was transferred over a connection that isn't. The signatures can also be used in other ways described in the appendices. These signatures contain countermeasures against downgrade and protocol-confusion attacks.",
     "mozBugUrl": null,
     "mozPosition": "harmful",
