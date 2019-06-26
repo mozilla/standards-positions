@@ -71,14 +71,13 @@ If successful, it will modify `activities.json` with the new specification. Chec
 ### Asking Mozilla to Update a Position
 
 Specifications might be updated after a position is decided. Especially if those
-updates are in response to feedback provided by Mozilla. If you think that
-changes to a proposal warrant an updated position from Mozilla, please request
-another review by commenting on the original issue for the specification. Please
-include a summary of the changes that you believe to be relevant.
+updates are in response to feedback provided by Mozilla.
 
-If you believe that you have new information that might cause Mozilla to
-reconsider a position, provide that information and ask a coordinator to reopen
-the issue.
+If you think that changes to a proposal warrant an updated position from
+Mozilla, please request another review by commenting on the original issue for
+the specification. Please include a summary of the changes that you believe to
+be relevant. A closed issue will be reopened if Mozilla agrees to make another
+assessment.
 
 ## Discussing Mozilla's Position on a Web Specification
 
