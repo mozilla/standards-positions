@@ -221,6 +221,17 @@
   },
   {
     "ciuName": null,
+    "description": "This specification defines an API enabling the creation and use of strong, attested, scoped, public key-based credentials by web applications, for the purpose of strongly authenticating users. Conceptually, one or more public key credentials, each scoped to a given WebAuthn Relying Party, are created by and bound to authenticators as requested by the web application. The user agent mediates access to authenticators and their public key credentials in order to preserve user privacy. Authenticators are responsible for ensuring that no operation is performed without user consent. Authenticators provide cryptographic proof of their properties to Relying Parties via attestation. This specification also describes the functional model for WebAuthn conformant authenticators, including their signature and attestation functionality.",
+    "mozBugUrl": null,
+    "mozPosition": "important",
+    "mozPositionDetail": "Public key cryptographic authentication is a major improvement in the fight against phishing, and we encourage all security-concious web applications to implement and innovate authentication flows around Web Authentication in the future.",
+    "mozPositionIssue": 163,
+    "org": "W3C",
+    "title": "Web Authentication: An API for accessing Public Key Credentials",
+    "url": "https://w3c.github.io/webauthn"
+  },
+  {
+    "ciuName": null,
     "description": "This specification describes an API that can be used to retrieve the amount of budget an origin has available for resource consuming background operations, as well as the cost associated with doing such an operation.",
     "mozBugUrl": null,
     "mozPosition": "non-harmful",
