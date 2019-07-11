@@ -188,6 +188,17 @@
   },
   {
     "ciuName": null,
+    "description": "This specification intends to provide APIs to allow websites to create a floating video window always on top of other windows so that users may continue consuming media while they interact with other content sites, or applications on their device.",
+    "mozBugUrl": null,
+    "mozPosition": "defer",
+    "mozPositionDetail": "We ship Picture-in-Picture (PiP) as a feature in Firefox, but without exposing a JavaScript API. We are evaluating if our PiP UI affordances are sufficient for users and web applications. In the future, we may reconsider exposing the API, which is why we have chosen to 'defer'.",
+    "mozPositionIssue": 72,
+    "org": "W3C",
+    "title": "Picture-in-Picture",
+    "url": "https://wicg.github.io/picture-in-picture"
+  },
+  {
+    "ciuName": null,
     "description": "A use of TLS Exported Authenticators is described which enables HTTP/2 clients and servers to offer additional certificate-based credentials after the connection is established. The means by which these credentials are used with requests is defined.",
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
