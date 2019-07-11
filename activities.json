@@ -256,7 +256,7 @@
     "ciuName": "web-share",
     "description": "This specification defines an API for sharing text, links and other content to an arbitrary destination of the user's choice.The available share targets are not specified here; they are provided by the user agent. They could, for example, be apps, websites or contacts.",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1312422",
-    "mozPosition": "under consideration",
+    "mozPosition": "worth prototyping",
     "mozPositionDetail": null,
     "mozPositionIssue": 27,
     "org": "W3C",
