@@ -286,6 +286,17 @@
     "url": "https://iot.mozilla.org/wot/"
   },
   {
+    "ciuName": "webusb",
+    "description": "This document describes an API for securely providing access to Universal Serial Bus devices from web pages.",
+    "mozBugUrl": null,
+    "mozPosition": "harmful",
+    "mozPositionDetail": "Because many USB devices are not designed to handle potentially-malicious interactions over the USB protocols and because those devices can have significant effects on the computer they're connected to, we believe that the security risks of exposing USB devices to the Web are too broad to risk exposing users to them or to explain properly to end users to obtain meaningful informed consent.",
+    "mozPositionIssue": 100,
+    "org": "W3C",
+    "title": "WebUSB API",
+    "url": "https://wicg.github.io/webusb"
+  },
+  {
     "ciuName": null,
     "description": "This specification defines an API for running scripts in stages of the rendering pipeline independent of the main javascript execution environment.",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1315239",
