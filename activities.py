@@ -18,6 +18,7 @@ import json
 import os
 import re
 import sys
+
 try:
     from urllib.parse import urlsplit, urlunsplit
 except ImportError:
@@ -39,11 +40,13 @@ REPO = "standards-positions"
 
 # Use a single encoder object so that we set it up with the single correct configuration for
 # writing activities.json.
-JSON_ENCODER = json.JSONEncoder(sort_keys=True, indent=2, separators=(',', ': '))
+JSON_ENCODER = json.JSONEncoder(sort_keys=True, indent=2, separators=(",", ": "))
+
 
 class UrlType(object):
     "indicates a URL."
     pass
+
 
 StringType = type(u"")
 
@@ -52,6 +55,7 @@ class ActivitiesJson(object):
     """
     A JSON file for activity tracking.
     """
+
     expected_entry_items = [  # (name, required?, type)
         ("cui_name", False, StringType),
         ("title", True, StringType),
@@ -62,15 +66,19 @@ class ActivitiesJson(object):
         ("url", True, UrlType),
         ("mozBugUrl", False, UrlType),
         ("mozPositionIssue", False, int),
-        ("mozPosition", True, [
-            "under consideration",
-            "important",
-            "worth prototyping",
-            "non-harmful",
-            "defer",
-            "harmful"
-        ]),
-        ("mozPositionDetail", False, StringType)
+        (
+            "mozPosition",
+            True,
+            [
+                "under consideration",
+                "important",
+                "worth prototyping",
+                "non-harmful",
+                "defer",
+                "harmful",
+            ],
+        ),
+        ("mozPositionDetail", False, StringType),
     ]
 
     def __init__(self, filename):
@@ -82,7 +90,7 @@ class ActivitiesJson(object):
     def load(self):
         "Load self.filename into self.data"
         try:
-            with open(self.filename, 'r') as rfh:
+            with open(self.filename, "r") as rfh:
                 self.data = json.load(rfh)
         except (OSError, IOError, ValueError) as why:
             sys.stderr.write("* ERROR: Can't load %s: %s\n" % (self.filename, why))
@@ -91,8 +99,8 @@ class ActivitiesJson(object):
     def save(self):
         "Save self.data into self.filename"
         try:
-            self.data.sort(key=lambda entry: entry['title'])
-            with open(self.filename, 'w') as wfh:
+            self.data.sort(key=lambda entry: entry["title"])
+            with open(self.filename, "w") as wfh:
                 wfh.write(JSON_ENCODER.encode(self.data))
                 wfh.write("\n")
         except (OSError, IOError, ValueError) as why:
@@ -109,10 +117,14 @@ class ActivitiesJson(object):
     def entry_unique(self, spec_entry):
         "Checks to see if there's a duplicate entry; raises ValueError if so."
         entry = spec_entry.data
-        if entry['title'].lower().strip() in [e['title'].lower().strip() for e in self.data]:
-            raise ValueError(["%s already contains %s" % (self.filename, entry['title'])])
-        if entry['url'] in [e['url'] for e in self.data]:
-            raise ValueError(["%s already contains %s" % (self.filename, entry['url'])])
+        if entry["title"].lower().strip() in [
+            e["title"].lower().strip() for e in self.data
+        ]:
+            raise ValueError(
+                ["%s already contains %s" % (self.filename, entry["title"])]
+            )
+        if entry["url"] in [e["url"] for e in self.data]:
+            raise ValueError(["%s already contains %s" % (self.filename, entry["url"])])
 
     def validate(self):
         """
@@ -150,24 +162,28 @@ class ActivitiesJson(object):
                     pass
                 elif value_type == UrlType:
                     if not isinstance(entry_value, StringType):
-                        errors.append("%s's %s isn't a URL string." % (
-                            title, name))
+                        errors.append("%s's %s isn't a URL string." % (title, name))
                     else:
-                        pass # FIXME
+                        pass  # FIXME
                 elif isinstance(value_type, type):
                     if not isinstance(entry_value, value_type):
-                        errors.append("%s's %s isn't a %s" % (
-                            title, name, value_type))
+                        errors.append("%s's %s isn't a %s" % (title, name, value_type))
                 elif isinstance(value_type, list):
                     if not entry_value in value_type:
-                        errors.append("%s's %s isn't one of [%s]" % (
-                            title, name, ", ".join(value_type)))
+                        errors.append(
+                            "%s's %s isn't one of [%s]"
+                            % (title, name, ", ".join(value_type))
+                        )
                 else:
                     raise ValueError("Unrecognized value type %s" % value_type)
-            extra_items = set(entry.keys()) - set([i[0] for i in self.expected_entry_items])
+            extra_items = set(entry.keys()) - set(
+                [i[0] for i in self.expected_entry_items]
+            )
             if extra_items:
-                errors.append("%s includes unrecognized members: %s" % (
-                    title, " ".join(extra_items)))
+                errors.append(
+                    "%s includes unrecognized members: %s"
+                    % (title, " ".join(extra_items))
+                )
         return errors
 
     def __str__(self):
@@ -178,6 +194,7 @@ class SpecEntry(object):
     """
     Represents an entry for a single specification.
     """
+
     def __init__(self, spec_url):
         self.orig_url = spec_url
         self.data = {
@@ -189,7 +206,7 @@ class SpecEntry(object):
             "mozBugUrl": None,
             "mozPositionIssue": None,
             "mozPosition": u"under consideration",
-            "mozPositionDetail": None
+            "mozPositionDetail": None,
         }
         self.parser = None
         self.figure_out_org()
@@ -209,7 +226,9 @@ class SpecEntry(object):
         elif host.endswith(".spec.whatwg.org"):
             self.parser = WHATWGParser
         else:
-            sys.stderr.write("* ERROR: Can't figure out what organisation %s belongs to!\n" % host)
+            sys.stderr.write(
+                "* ERROR: Can't figure out what organisation %s belongs to!\n" % host
+            )
             sys.exit(1)
 
     def fetch_spec_data(self, url):
@@ -220,9 +239,11 @@ class SpecEntry(object):
         """
         res = requests.get(url)
         if res.status_code != 200:
-            sys.stderr.write("* Fetching spec resulted in %s HTTP status.\n" % res.status_code)
+            sys.stderr.write(
+                "* Fetching spec resulted in %s HTTP status.\n" % res.status_code
+            )
             raise FetchError
-        soup = BeautifulSoup(res.text, 'html5lib')
+        soup = BeautifulSoup(res.text, "html5lib")
         try:
             spec_data = self.parser().parse(soup, url)
         except BetterUrl as why:
@@ -238,27 +259,34 @@ class SpecEntry(object):
         Create a Github Issue for the entry. Returns the issue number if successful.
         """
         issue = {
-            "title": self.data['title'],
+            "title": self.data["title"],
             "body": """\
 * Specification Title: {title}
 * Specification URL: {url}
 * Caniuse.com URL (optional): {ciuName}
 * Bugzilla URL (optional): {mozBugUrl}
-""".format(**self.data)
+""".format(
+                **self.data
+            ),
         }
         gh_user = os.environ.get("GH_USER", None)
         gh_token = os.environ.get("GH_TOKEN", None)
         if not gh_user or not gh_token:
-            sys.stderr.write("* Cannot find GH_USER or GH_TOKEN; not creating an issue.\n")
+            sys.stderr.write(
+                "* Cannot find GH_USER or GH_TOKEN; not creating an issue.\n"
+            )
             return
-        res = requests.post('https://api.github.com/repos/%s/%s/issues' % (OWNER, REPO),
-                            data=json.dumps(issue), auth=HTTPBasicAuth(gh_token, gh_token))
+        res = requests.post(
+            "https://api.github.com/repos/%s/%s/issues" % (OWNER, REPO),
+            data=json.dumps(issue),
+            auth=HTTPBasicAuth(gh_token, gh_token),
+        )
         if res.status_code != 201:
             sys.stderr.write("* Failed to create issue; status %s" % res.status_code)
             sys.exit(1)
         else:
-            issue_num = res.json()['number']
-            self.data['mozPositionIssue'] = issue_num
+            issue_num = res.json()["number"]
+            self.data["mozPositionIssue"] = issue_num
             sys.stderr.write("* Created Github Issue %s\n" % issue_num)
 
     def __str__(self):
@@ -269,6 +297,7 @@ class BetterUrl(Exception):
     """
     We found a better URL for the specification.
     """
+
     pass
 
 
@@ -276,6 +305,7 @@ class FetchError(Exception):
     """
     We encountered a problem fetching the URL.
     """
+
     pass
 
 
@@ -283,6 +313,7 @@ class SpecParser(object):
     """
     Abstract Class for a Specification Parser.
     """
+
     org = None
 
     @staticmethod
@@ -312,7 +343,6 @@ class SpecParser(object):
         raise NotImplementedError
 
 
-
 class W3CParser(SpecParser):
     "Parser for W3C specs"
     org = "W3C"
@@ -326,7 +356,9 @@ class W3CParser(SpecParser):
         title_exp = re.compile(title, re.IGNORECASE)
         metadata = spec.find("dl")
         try:
-            link = metadata.find("dt", string=title_exp).find_next_sibling("dd").a.string
+            link = (
+                metadata.find("dt", string=title_exp).find_next_sibling("dd").a.string
+            )
         except (TypeError, AttributeError):
             return None
         return self.clean_url(link)
@@ -335,7 +367,9 @@ class W3CParser(SpecParser):
         data = {}
         refresh = spec.select('meta[http-equiv="Refresh"]')
         if refresh:
-            raise BetterUrl(refresh[0].get('content').split(";", 1)[1].split("=", 1)[1].strip())
+            raise BetterUrl(
+                refresh[0].get("content").split(";", 1)[1].split("=", 1)[1].strip()
+            )
         this_url = self.get_link(spec, "^This version")
         latest_url = self.get_link(spec, "^Latest version")
         ed_url = self.get_link(spec, "^Editor's draft")
@@ -344,23 +378,23 @@ class W3CParser(SpecParser):
         elif latest_url and latest_url != this_url:
             raise BetterUrl(latest_url)
         elif this_url:
-            data['url'] = this_url
+            data["url"] = this_url
         else:
-            data['url'] = self.clean_url(url_string)
-        data['org'] = self.org
+            data["url"] = self.clean_url(url_string)
+        data["org"] = self.org
         try:
-            data['title'] = self.clean_tag(spec.h1)
+            data["title"] = self.clean_tag(spec.h1)
         except AttributeError:
             try:
-                data['title'] = self.clean_tag(spec.title)
+                data["title"] = self.clean_tag(spec.title)
             except AttributeError:
                 sys.stderr.write("* Can't find the specification's title.\n")
                 sys.exit(1)
         try:
-            abstract_element = spec.find(id='abstract')
+            abstract_element = spec.find(id="abstract")
             if abstract_element.name != "section":
                 abstract_element = abstract_element.find_next_sibling(["p", "div"])
-            data['description'] = self.clean_tag(abstract_element)
+            data["description"] = self.clean_tag(abstract_element)
         except AttributeError:
             sys.stderr.write("* Can't find the specification's description.\n")
             sys.exit(1)
@@ -375,6 +409,7 @@ class WHATWGParser(W3CParser):
 class IETFParser(SpecParser):
     "Parser for IETF specs"
     org = "IETF"
+
     def get_meta(self, spec, names):
         """
         Get the `content` of a <meta> tag in the <head>.
@@ -386,7 +421,9 @@ class IETFParser(SpecParser):
         except IndexError:
             return None
         try:
-            return spec.head.find("meta", attrs={"name": name})['content'].replace("\n", " ")
+            return spec.head.find("meta", attrs={"name": name})["content"].replace(
+                "\n", " "
+            )
         except (TypeError, AttributeError):
             return self.get_meta(spec, names)
 
@@ -395,21 +432,23 @@ class IETFParser(SpecParser):
         path_components = url.path.split("/")
         if path_components[-1] == "":
             path_components.pop()
-        if url.netloc.lower() == 'tools.ietf.org':
-            if path_components[1] in ['html']:
+        if url.netloc.lower() == "tools.ietf.org":
+            if path_components[1] in ["html"]:
                 identifier = self.get_meta(spec, ["DC.Identifier"])
                 if identifier.lower().startswith("urn:ietf:rfc"):
                     new_url = self.html_url("rfc%s" % identifier.rsplit(":", 1)[1])
                     if self.clean_url(url_string) != self.clean_url(new_url):
-                        raise BetterUrl(self.html_url("rfc%s" % identifier.rsplit(":", 1)[1]))
+                        raise BetterUrl(
+                            self.html_url("rfc%s" % identifier.rsplit(":", 1)[1])
+                        )
                 draft_name, draft_number = self.parse_draft_name(path_components[-1])
                 if draft_number:
                     raise BetterUrl(self.html_url(draft_name))
-            elif path_components[1] in ['id', 'pdf']:
+            elif path_components[1] in ["id", "pdf"]:
                 raise BetterUrl(self.html_url(path_components[2]))
             else:
                 raise FetchError("I don't think that's a specification.")
-        elif url.netloc.lower() == 'www.ietf.org' and path_components[1] == 'id':
+        elif url.netloc.lower() == "www.ietf.org" and path_components[1] == "id":
             if path_components[1] in ["id", "pdf"]:
                 try:
                     draft_name = path_components[2].rsplit(".", 1)[0]
@@ -419,17 +458,21 @@ class IETFParser(SpecParser):
                 raise BetterUrl(self.html_url(draft_name))
             else:
                 raise FetchError("I don't think that's a specification.")
-        elif url.netloc.lower() == 'datatracker.ietf.org':
-            if path_components[1] == 'doc':
+        elif url.netloc.lower() == "datatracker.ietf.org":
+            if path_components[1] == "doc":
                 raise BetterUrl(self.html_url(path_components[2]))
             else:
                 raise FetchError("I don't think that's a specification.")
         data = {}
-        data['title'] = self.get_meta(spec, ["DC.Title"]) or spec.head.title.string
-        data['description'] = self.get_meta(
-            spec, ["description", "dcterms.abstract", "DC.Description.Abstract"]) or ""
-        data['org'] = self.org
-        data['url'] = self.clean_url(url_string)
+        data["title"] = self.get_meta(spec, ["DC.Title"]) or spec.head.title.string
+        data["description"] = (
+            self.get_meta(
+                spec, ["description", "dcterms.abstract", "DC.Description.Abstract"]
+            )
+            or ""
+        )
+        data["org"] = self.org
+        data["url"] = self.clean_url(url_string)
         return data
 
     @staticmethod
@@ -447,32 +490,33 @@ class IETFParser(SpecParser):
     def html_url(doc_name):
         "Return the canonical URL for a document name."
         path = "/".join(["html", doc_name])
-        return urlunsplit(["https", "tools.ietf.org", path, '', ''])
+        return urlunsplit(["https", "tools.ietf.org", path, "", ""])
 
 
 # Map of URL hostnames to org-specific parsers.
 URL2ORG = {
-    'www.w3.org': W3CParser,
-    'w3c.github.io': W3CParser,
-    'wicg.github.io': W3CParser,
-    'dev.w3.org': W3CParser,
-    'dvcs.w3.org': W3CParser,
-    'drafts.csswg.org': W3CParser,
-    'drafts.css-houdini.org': W3CParser,
-    'drafts.fxtf.org': W3CParser,
-    'w3ctag.github.io': W3CParser,
-    'datatracker.ietf.org': IETFParser,
-    'www.ietf.org': IETFParser,
-    'tools.ietf.org': IETFParser,
-    'http2.github.io': IETFParser,
-    'httpwg.github.io': IETFParser,
-    'httpwg.org': IETFParser,
+    "www.w3.org": W3CParser,
+    "w3c.github.io": W3CParser,
+    "wicg.github.io": W3CParser,
+    "dev.w3.org": W3CParser,
+    "dvcs.w3.org": W3CParser,
+    "drafts.csswg.org": W3CParser,
+    "drafts.css-houdini.org": W3CParser,
+    "drafts.fxtf.org": W3CParser,
+    "w3ctag.github.io": W3CParser,
+    "datatracker.ietf.org": IETFParser,
+    "www.ietf.org": IETFParser,
+    "tools.ietf.org": IETFParser,
+    "http2.github.io": IETFParser,
+    "httpwg.github.io": IETFParser,
+    "httpwg.org": IETFParser,
 }
 
 
 def usage():
     "Display usage instructions and quit."
-    sys.stderr.write("""\
+    sys.stderr.write(
+        """\
 USAGE: %s verb [args]
        Verbs:
          add      - Add an entry to activities.json and creates a Github issue;
@@ -486,7 +530,9 @@ To create Github Issues, GH_USER and GH_TOKEN must be in the environment;
 to generate a token, see: <https://github.com/settings/tokens>. The
 'public_repo' permission is required.
 
-""" % sys.argv[0])
+"""
+        % sys.argv[0]
+    )
     sys.exit(1)
 
 
@@ -496,27 +542,27 @@ if __name__ == "__main__":
     except IndexError:
         usage()
 
-    if VERB not in ['validate', 'add', 'format', 'sort']:
+    if VERB not in ["validate", "add", "format", "sort"]:
         usage()
 
-    if VERB in ['validate', 'add', 'sort']:
+    if VERB in ["validate", "add", "sort"]:
         ACTIVITIES = ActivitiesJson("activities.json")
         ERRORS = ACTIVITIES.validate()
         if ERRORS:
             sys.stderr.write("\n".join(["* ERROR: %s" % E for E in ERRORS]))
             sys.exit(1)
 
-    if VERB in ['format', 'add']:
+    if VERB in ["format", "add"]:
         if len(sys.argv) < 3:
             usage()
         try:
-            SPEC_URL = unicode(sys.argv[2]) # python2
+            SPEC_URL = unicode(sys.argv[2])  # python2
         except NameError:
             SPEC_URL = sys.argv[2]
         ENTRY = SpecEntry(SPEC_URL)
-        if VERB == 'format':
+        if VERB == "format":
             print(ENTRY)
-        elif VERB == 'add':
+        elif VERB == "add":
             try:
                 ACTIVITIES.entry_unique(ENTRY)
             except ValueError as unique_errors:
@@ -525,5 +571,5 @@ if __name__ == "__main__":
             ENTRY.create_issue()
             ACTIVITIES.append(ENTRY)
 
-    if VERB in ['add', 'sort']:
+    if VERB in ["add", "sort"]:
         ACTIVITIES.save()
