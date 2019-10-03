@@ -256,12 +256,23 @@
     "ciuName": "web-share",
     "description": "This specification defines an API for sharing text, links and other content to an arbitrary destination of the user's choice.The available share targets are not specified here; they are provided by the user agent. They could, for example, be apps, websites or contacts.",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1312422",
-    "mozPosition": "worth prototyping",
+    "mozPosition": "important",
     "mozPositionDetail": null,
     "mozPositionIssue": 27,
     "org": "W3C",
     "title": "Web Share API",
-    "url": "https://wicg.github.io/web-share"
+    "url": "https://w3c.github.io/web-share/"
+  },
+  {
+    "ciuName": "web-share-target",
+    "description": "This specification defines an API that allows websites to declare themselves as web share targets, which can receive shared content from either the Web Share API, or system events (e.g., shares from native apps).",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1476515",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": null,
+    "mozPositionIssue": 176,
+    "org": "W3C",
+    "title": "Web Share API",
+    "url": "https://wicg.github.io/web-share-target/"
   },
   {
     "ciuName": null,
