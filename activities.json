@@ -294,7 +294,7 @@
     "mozPositionIssue": 100,
     "org": "W3C",
     "title": "WebUSB API",
-    "url": "https://wicg.github.io/webusb"
+    "url": "https://wicg.github.io/webusb/"
   },
   {
     "ciuName": null,
