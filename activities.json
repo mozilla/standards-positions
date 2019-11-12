@@ -308,6 +308,17 @@
     "url": "https://wicg.github.io/webusb/"
   },
   {
+    "ciuName": "webxr",
+    "description": "This specification describes support for accessing virtual reality (VR) and augmented reality (AR) devices, including sensors and head-mounted displays, on the Web.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1419190",
+    "mozPosition": "important",
+    "mozPositionDetail": "WebXR is a core feature of the Firefox Reality Web Browser. The WebXR Device API replaces the now deprecated WebVR API, which was shipped in Firefox 55. Other UA's will be dropping support of WebVR in the transition to WebXR. WebXR enables immersive VR and AR experiences within the browser. Support for WebXR has already landed in frameworks used by many web sites, such as aframe, threejs, and Amazon Sumerian. Several sites created by Mozilla support WebXR, such as Mozilla Hubs. We must enable support for WebXR in Firefox in order to continue providing access to VR experiences on the web and to pave the way for future AR capabilities. WebXR improves on WebVR in ways that reflect Mozilla values, such as reduced fingerprinting for tracking protection.",
+    "mozPositionIssue": 218,
+    "org": "W3C",
+    "title": "WebXR Device API",
+    "url": "https://immersive-web.github.io/webxr"
+  },
+  {
     "ciuName": null,
     "description": "This specification defines an API for running scripts in stages of the rendering pipeline independent of the main javascript execution environment.",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1315239",
