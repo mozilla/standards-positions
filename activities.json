@@ -14,7 +14,7 @@
     "ciuName": null,
     "description": "This proposal adds arbitrary-precision integers to ECMAScript.",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1366287",
-    "mozPosition": "important",
+    "mozPosition": "worth prototyping",
     "mozPositionDetail": "Shipping in Firefox.",
     "mozPositionIssue": 65,
     "org": "Ecma",
