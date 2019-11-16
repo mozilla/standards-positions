@@ -242,6 +242,17 @@
     "url": "https://tools.ietf.org/html/draft-ietf-tls-certificate-compression"
   },
   {
+    "ciuName": null,
+    "description": "An API that allows applications to lock down DOM XSS injection sinks to only accept non-spoofable, typed values in place of strings.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1508286",
+    "mozPosition": "defer",
+    "mozPositionDetail": null,
+    "mozPositionIssue": 20,
+    "org": "W3C",
+    "title": "Trusted Types",
+    "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec"
+  },
+  {
     "ciuName": "webauthn",
     "description": "This specification defines an API enabling the creation and use of strong, attested, scoped, public key-based credentials by web applications, for the purpose of strongly authenticating users. Conceptually, one or more public key credentials, each scoped to a given WebAuthn Relying Party, are created by and bound to authenticators as requested by the web application. The user agent mediates access to authenticators and their public key credentials in order to preserve user privacy. Authenticators are responsible for ensuring that no operation is performed without user consent. Authenticators provide cryptographic proof of their properties to Relying Parties via attestation. This specification also describes the functional model for WebAuthn conformant authenticators, including their signature and attestation functionality.",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1294514",
