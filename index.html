@@ -132,11 +132,10 @@
                     var extension = ".svg"
                     if (data === "IETF") {
                       extension = ".gif"
-                    }
-                    else if (data === "Ecma") {
+                    } else if (data === "Ecma") {
                       data = "JS"
                     }
-                    return "<img src='asset/" + data + extension + "' height='18px' alt='" + data + "'>"
+                    return `<img src='asset/${data}${extension}' height='18px' alt='${data}'>`
                   } else {
                     return ""
                   }
