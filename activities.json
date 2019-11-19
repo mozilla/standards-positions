@@ -242,6 +242,17 @@
     "url": "https://tools.ietf.org/html/draft-yasskin-http-origin-signed-responses"
   },
   {
+    "ciuName": "streams",
+    "description": "This specification provides APIs for creating, composing, and consuming streams of data that map efficiently to low-level I/O primitives.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1128959",
+    "mozPosition": "important",
+    "mozPositionDetail": "Streams are an important building block for many APIs, in particular around networking and media.",
+    "mozPositionIssue": 70,
+    "org": "WHATWG",
+    "title": "Streams",
+    "url": "https://streams.spec.whatwg.org"
+  },
+  {
     "ciuName": null,
     "description": "In Transport Layer Security (TLS) handshakes, certificate chains often take up the majority of the bytes transmitted.  This document describes how certificate chains can be compressed to reduce the amount of data transmitted and avoid some round trips.",
     "mozBugUrl": null,
