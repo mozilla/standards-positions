@@ -147,7 +147,7 @@
     "description": "This document defines a set of Fetch metadata request headers that aim to provide servers with enough information to make a priori decisions about whether or not to service a request based on the way it was made, and the context in which it will be used.",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1508292",
     "mozPosition": "worth prototyping",
-    "mozPositionDetail": "This gives servers useful context about requests that can be used to mitigate various security issues. There are some thorny issues around embed/object that made agreeing on a design more complicated than expected.",
+    "mozPositionDetail": "This gives servers useful context about requests that can be used to mitigate various security issues. The existing setup for embed/object elements gave some tough design challenges for this feature that were satisfactorily resolved. (There's also a reasonable expectation to be able to simplify these elements going forward.)",
     "mozPositionIssue": 88,
     "org": "W3C",
     "title": "Fetch Metadata Request Headers",
