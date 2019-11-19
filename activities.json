@@ -187,6 +187,17 @@
     "url": "https://wicg.github.io/native-file-system"
   },
   {
+    "ciuName": null,
+    "description": "This specification defines a delivery mechanism for a number of policies which are to be applied to an entire origin. It compliments header-based delivery mechanisms for existing policies (Content Security Policy, Referrer Policy, etc).",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1508290",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "Giving developers the ability to set policies for an entire origin is a powerful new primitive that will benefit security of applications as well as performance due to the ability to bypass CORS preflights. The renewed effort to make this happen takes a strong anti-tracking stance that is in line with our efforts around isolating the HTTP cache et al. Given this, it seems worth figuring out if this can be made viable.",
+    "mozPositionIssue": 160,
+    "org": "W3C",
+    "title": "Origin Policy",
+    "url": "https://wicg.github.io/origin-policy"
+  },
+  {
     "ciuName": "permissions-api",
     "description": "The Permissions Standard defines common infrastructure for other specifications that need to interact with browser permissions. It also defines an API to allow web applications to query and request changes to the status of a given permission.",
     "mozBugUrl": null,
