@@ -144,6 +144,17 @@
   },
   {
     "ciuName": null,
+    "description": "This document defines a set of Fetch metadata request headers that aim to provide servers with enough information to make a priori decisions about whether or not to service a request based on the way it was made, and the context in which it will be used.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1508292",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This gives servers useful context about requests that can be used to mitigate various security issues. There are some thorny issues around embed/object that made agreeing on a design more complicated than expected.",
+    "mozPositionIssue": 88,
+    "org": "W3C",
+    "title": "Fetch Metadata Request Headers",
+    "url": "https://github.com/w3c/webappsec-fetch-metadata"
+  },
+  {
+    "ciuName": null,
     "description": "An extension of the ES6 Script Modules system to include HTML Modules. These will allow web developers to package and access declarative content from script in a way that allows for good componentization and reusability, and integrates well into the existing ES6 Modules infrastructure.",
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
