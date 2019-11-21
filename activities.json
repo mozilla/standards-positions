@@ -198,6 +198,17 @@
     "url": "https://tools.ietf.org/html/draft-ietf-httpbis-client-hints"
   },
   {
+    "ciuName": "loading-lazy-attr",
+    "description": "Enabling images to be fetched at a later time, when the user is likely to look at them.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1542784",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "As currently scoped in the HTML pull request this is a reasonable addition to how images are fetched. (Note that the scope on Can I use is slightly bigger. Frames are likely a reasonable addition, but have their own set of design challenges.)",
+    "mozPositionIssue": 151,
+    "org": "WHATWG",
+    "title": "Lazy loading (of images)",
+    "url": "https://github.com/whatwg/html/pull/3752"
+  },
+  {
     "ciuName": null,
     "description": "This document updates RFC 6761 with the goal of ensuring that \"localhost\" can be safely relied upon as a name for the local host's loopback interface. To that end, stub resolvers are required to resolve localhost names to loopback addresses. Recursive DNS servers are required to return \"NXDOMAIN\" when queried for localhost names, making non-conformant stub resolvers more likely to fail and produce problem reports that result in updates. Together, these requirements would allow applications and specifications to join regular users in drawing the common-sense conclusions that \"localhost\" means \"localhost\", and doesn't resolve to somewhere else on the network.",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1220810",
