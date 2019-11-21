@@ -298,6 +298,17 @@
   },
   {
     "ciuName": null,
+    "description": "Serializing and deserializing JavaScript Error objects.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1556604",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "Good extension to the object serialization algorithm (StructuredSerializeInternal) as currently there is no way to serialize errors.",
+    "mozPositionIssue": 165,
+    "org": "WHATWG",
+    "title": "Structured cloning of errors",
+    "url": "https://github.com/whatwg/html/issues/4268"
+  },
+  {
+    "ciuName": null,
     "description": "The WebTransport Protocol Framework enables clients constrained by the Web security model to communicate with a remote server using a secure multiplexed transport. It consists of a set of individual protocols that are safe to expose to untrusted applications, combined with a model that allows them to be used interchangeably. This document defines the overall requirements on the protocols used in WebTransport, as well as the common features of the protocols, support for some of which may be optional.",
     "mozBugUrl": null,
     "mozPosition": "under consideration",
