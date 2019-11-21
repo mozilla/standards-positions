@@ -133,6 +133,17 @@
   },
   {
     "ciuName": null,
+    "description": "This will allow custom elements to have \"default\" accessibility semantics, analogous to how built-in elements have \"implicit\" or \"native\" semantics.",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This is an important addition to custom elements as otherwise they'd have to publicly expose their internals in order to get accessibility correct.",
+    "mozPositionIssue": 201,
+    "org": "WHATWG",
+    "title": "Default Accessibility Semantics for Custom Elements",
+    "url": "https://github.com/whatwg/html/pull/4658"
+  },
+  {
+    "ciuName": null,
     "description": "This document defines a simple mechanism for encrypting the Server Name Indication for TLS 1.3.",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1494901",
     "mozPosition": "important",
