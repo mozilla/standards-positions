@@ -253,6 +253,17 @@
     "url": "https://tools.ietf.org/html/draft-ietf-tls-certificate-compression"
   },
   {
+    "ciuName": null,
+    "description": "This document defines a set of Client Hints that aim to provide developers with the ability to perform agent-based content negotiation when necessary, while avoiding the historical baggage and passive fingerprinting surface exposed by the venerable \"User-Agent\" header.",
+    "mozBugUrl": null,
+    "mozPosition": "non-harmful",
+    "mozPositionDetail": "Using Client Hints to deliver info derived from the User Agent header field for servers that specifically request this information may reduce the number of parties that can use this information for passively fingerprinting users. However, we could reduce this even further by freezing the User Agent string and requiring resources to actively request this information via the proposed NavigatorUAData interface JS APIs. This would also allow us to audit the callers. At this time, freezing the User Agent string without any client hints (which is not this proposal)seems worth-prototyping. We look forward to learning from other vendors who implement the \"GREASE-like UA Strings\" proposal and its effects on site compatibility.",
+    "mozPositionIssue": 202,
+    "org": "IETF",
+    "title": "User Agent Client Hints",
+    "url": "https://tools.ietf.org/html/draft-west-ua-client-hints"
+  },
+  {
     "ciuName": "webauthn",
     "description": "This specification defines an API enabling the creation and use of strong, attested, scoped, public key-based credentials by web applications, for the purpose of strongly authenticating users. Conceptually, one or more public key credentials, each scoped to a given WebAuthn Relying Party, are created by and bound to authenticators as requested by the web application. The user agent mediates access to authenticators and their public key credentials in order to preserve user privacy. Authenticators are responsible for ensuring that no operation is performed without user consent. Authenticators provide cryptographic proof of their properties to Relying Parties via attestation. This specification also describes the functional model for WebAuthn conformant authenticators, including their signature and attestation functionality.",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1294514",
