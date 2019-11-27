@@ -1,6 +1,17 @@
 [
   {
     "ciuName": null,
+    "description": "This memo introduces an informational HTTP status code that can be used to convey hints that help a client make preparations for processing the final response.",
+    "mozBugUrl": null,
+    "mozPosition": "under consideration",
+    "mozPositionDetail": null,
+    "mozPositionIssue": 134,
+    "org": "IETF",
+    "title": "An HTTP Status Code for Indicating Hints",
+    "url": "https://tools.ietf.org/html/rfc8297"
+  },
+  {
+    "ciuName": null,
     "description": "This specification defines an API allowing web applications to set an application-wide badge, shown in an operating-system-specific place associated with the application (such as the shelf or home screen), for the purpose of notifying the user when the state of the application has changed (e.g., when new messages have arrived), without showing a more heavyweight notification.",
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
@@ -154,6 +165,17 @@
     "url": "https://github.com/w3c/webcomponents/blob/gh-pages/proposals/html-modules-explainer.md"
   },
   {
+    "ciuName": null,
+    "description": "This document defines two independent HTTP Cache-Control extensions that allow control over the use of stale responses by caches. This document is not an Internet Standards Track specification; it is published for informational purposes.",
+    "mozBugUrl": null,
+    "mozPosition": "under consideration",
+    "mozPositionDetail": null,
+    "mozPositionIssue": 144,
+    "org": "IETF",
+    "title": "HTTP Cache-Control Extensions for Stale Content",
+    "url": "https://tools.ietf.org/html/rfc5861"
+  },
+  {
     "ciuName": "client-hints-dpr-width-viewport",
     "description": "An increasing diversity of Web-connected devices and software capabilities has created a need to deliver optimized content for each device.  This specification defines an extensible and configurable set of HTTP request header fields, colloquially known as Client Hints, to address this. They are intended to be used as input to proactive content negotiation; just as the Accept header field allows user agents to indicate what formats they prefer, Client Hints allow user agents to indicate device and agent specific preferences.",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=935216",
@@ -232,6 +254,17 @@
   },
   {
     "ciuName": null,
+    "description": "This document specifies the \"SVCB\" and \"HTTPSSVC\" DNS resource record types to facilitate the lookup of information needed to make connections for origin resources, such as for HTTPS URLs. SVCB records allow an origin to be served from multiple network locations, each with associated parameters (such as transport protocol configuration and keying material for encrypting TLS SNI). They also enable aliasing of apex domains, which is not possible with CNAME. The HTTPSSVC DNS RR is a variation of SVCB for HTTPS and HTTP origins. By providing more information to the client before it attempts to establish a connection, these records offer potential benefits to both performance and privacy.  TO BE REMOVED: This proposal is inspired by and based on recent DNS usage proposals such as ALTSVC, ANAME, and ESNIKEYS (as well as long standing desires to have SRV or a functional equivalent implemented for HTTP). These proposals each provide an important function but are potentially incompatible with each other, such as when an origin is load-balanced across multiple hosting providers (multi-CDN). Furthermore, these each add potential cases for adding additional record lookups in-addition to AAAA/A lookups. This design attempts to provide a unified framework that encompasses the key functionality of these proposals, as well as providing some extensibility for addressing similar future challenges.  TO BE REMOVED: The specific name for this RR type is an open topic for discussion. \"SVCB\" and \"HTTPSSVC\" are meant as placeholders as they are easy to replace. Other names might include \"B\", \"SRV2\", \"SVCHTTPS\", \"HTTPS\", and \"ALTSVC\".",
+    "mozBugUrl": null,
+    "mozPosition": "under consideration",
+    "mozPositionDetail": null,
+    "mozPositionIssue": 208,
+    "org": "IETF",
+    "title": "Service binding and parameter specification via the DNS (DNS SVCB and HTTPSSVC)",
+    "url": "https://tools.ietf.org/html/draft-nygren-dnsop-svcb-httpssvc"
+  },
+  {
+    "ciuName": null,
     "description": "This document specifies how a server can send an HTTP request/ response pair, known as an exchange, with signatures that vouch for that exchange's authenticity. These signatures can be verified against an origin's certificate to establish that the exchange is authoritative for an origin even if it was transferred over a connection that isn't. The signatures can also be used in other ways described in the appendices. These signatures contain countermeasures against downgrade and protocol-confusion attacks.",
     "mozBugUrl": null,
     "mozPosition": "harmful",
@@ -240,6 +273,17 @@
     "org": "IETF",
     "title": "Signed HTTP Exchanges",
     "url": "https://tools.ietf.org/html/draft-yasskin-http-origin-signed-responses"
+  },
+  {
+    "ciuName": null,
+    "description": "The WebTransport Protocol Framework enables clients constrained by the Web security model to communicate with a remote server using a secure multiplexed transport. It consists of a set of individual protocols that are safe to expose to untrusted applications, combined with a model that allows them to be used interchangeably. This document defines the overall requirements on the protocols used in WebTransport, as well as the common features of the protocols, support for some of which may be optional.",
+    "mozBugUrl": null,
+    "mozPosition": "under consideration",
+    "mozPositionDetail": null,
+    "mozPositionIssue": 167,
+    "org": "IETF",
+    "title": "The WebTransport Protocol Framework",
+    "url": "https://tools.ietf.org/html/draft-vvv-webtransport-overview"
   },
   {
     "ciuName": null,
@@ -354,7 +398,7 @@
   {
     "ciuName": null,
     "description": "Zstandard, or \"zstd\" (pronounced \"zee standard\"), is a data compression mechanism.  This document describes the mechanism and registers a media type and content encoding to be used when transporting zstd-compressed content via Multipurpose Internet Mail Extensions (MIME). Despite use of the word \"standard\" as part of its name, readers are advised that this document is not an Internet Standards Track specification; it is being published for informational purposes only.",
-    "mozBugUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1301878",
     "mozPosition": "under consideration",
     "mozPositionDetail": null,
     "mozPositionIssue": 105,
