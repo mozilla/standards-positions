@@ -180,7 +180,7 @@
     "description": "HTML Imports are a way to include and reuse HTML documents in other HTML documents.",
     "mozBugUrl": null,
     "mozPosition": "harmful",
-    "mozPositionDetail": "Mozilla anticipated that JavaScript modules would change the landscape here and rather invests in evolving that, e.g., through HTML Modules.",
+    "mozPositionDetail": "Mozilla anticipated that JavaScript modules would change the landscape here and would rather invest in evolving that, e.g., through HTML Modules. Having a single mechanism to deal with dependencies rather than several, potentially conflicting systems, seems preferable.",
     "mozPositionIssue": 60,
     "org": "W3C",
     "title": "HTML Imports",
