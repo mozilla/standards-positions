@@ -438,5 +438,16 @@
     "org": "IETF",
     "title": "Zstandard Compression and the application/zstd Media Type",
     "url": "https://tools.ietf.org/html/rfc8478"
+  },
+  {
+    "ciuName": null,
+    "description": "The enterkeyhint attribute specifies what action label (or icon) to present for the enter key on virtual keyboards.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1490661",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": null,
+    "mozPositionIssue": 68,
+    "org": "WHATWG",
+    "title": "enterkeyhint attribute",
+    "url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint"
   }
 ]
