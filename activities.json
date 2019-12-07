@@ -176,17 +176,6 @@
     "url": "https://wicg.github.io/feature-policy"
   },
   {
-    "ciuName": "imports",
-    "description": "HTML Imports are a way to include and reuse HTML documents in other HTML documents.",
-    "mozBugUrl": null,
-    "mozPosition": "harmful",
-    "mozPositionDetail": "Mozilla anticipated that JavaScript modules would change the landscape here and would rather invest in evolving that, e.g., through HTML Modules. Having a single mechanism to deal with dependencies rather than several, potentially conflicting systems, seems preferable.",
-    "mozPositionIssue": 60,
-    "org": "W3C",
-    "title": "HTML Imports",
-    "url": "http://www.w3.org/TR/2016/WD-html-imports-20160225"
-  },
-  {
     "ciuName": null,
     "description": "This document defines a set of Fetch metadata request headers that aim to provide servers with enough information to make a priori decisions about whether or not to service a request based on the way it was made, and the context in which it will be used.",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1508292",
@@ -196,6 +185,17 @@
     "org": "W3C",
     "title": "Fetch Metadata Request Headers",
     "url": "https://github.com/w3c/webappsec-fetch-metadata"
+  },
+  {
+    "ciuName": "imports",
+    "description": "HTML Imports are a way to include and reuse HTML documents in other HTML documents.",
+    "mozBugUrl": null,
+    "mozPosition": "harmful",
+    "mozPositionDetail": "Mozilla anticipated that JavaScript modules would change the landscape here and would rather invest in evolving that, e.g., through HTML Modules. Having a single mechanism to deal with dependencies rather than several, potentially conflicting systems, seems preferable.",
+    "mozPositionIssue": 60,
+    "org": "W3C",
+    "title": "HTML Imports",
+    "url": "http://www.w3.org/TR/2016/WD-html-imports-20160225"
   },
   {
     "ciuName": null,
