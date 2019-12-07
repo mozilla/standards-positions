@@ -133,6 +133,17 @@
   },
   {
     "ciuName": null,
+    "description": "A way to create new HTML elements implemented through JavaScript.",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "A welcome successor to XBL!",
+    "mozPositionIssue": 60,
+    "org": "WHATWG",
+    "title": "Custom elements",
+    "url": "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements"
+  },
+  {
+    "ciuName": null,
     "description": "This will allow custom elements to have \"default\" accessibility semantics, analogous to how built-in elements have \"implicit\" or \"native\" semantics.",
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
@@ -163,6 +174,17 @@
     "org": "W3C",
     "title": "Feature Policy",
     "url": "https://wicg.github.io/feature-policy"
+  },
+  {
+    "ciuName": "imports",
+    "description": "HTML Imports are a way to include and reuse HTML documents in other HTML documents.",
+    "mozBugUrl": null,
+    "mozPosition": "harmful",
+    "mozPositionDetail": "Mozilla anticipated that JavaScript modules would change the landscape here and would rather invest in evolving that, e.g., through HTML Modules. Having a single mechanism to deal with dependencies rather than several, potentially conflicting systems, seems preferable.",
+    "mozPositionIssue": 60,
+    "org": "W3C",
+    "title": "HTML Imports",
+    "url": "http://www.w3.org/TR/2016/WD-html-imports-20160225"
   },
   {
     "ciuName": null,
@@ -295,6 +317,17 @@
     "org": "IETF",
     "title": "Service binding and parameter specification via the DNS (DNS SVCB and HTTPSSVC)",
     "url": "https://tools.ietf.org/html/draft-nygren-dnsop-svcb-httpssvc"
+  },
+  {
+    "ciuName": null,
+    "description": "A way to give a node in the DOM a hidden subtree in which the children of the node can be inserted.",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "A welcome successor to XBL!",
+    "mozPositionIssue": 60,
+    "org": "WHATWG",
+    "title": "Shadow trees (formerly known as Shadow DOM)",
+    "url": "https://dom.spec.whatwg.org/#shadow-trees"
   },
   {
     "ciuName": null,
@@ -460,5 +493,16 @@
     "org": "WHATWG",
     "title": "enterkeyhint attribute",
     "url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint"
+  },
+  {
+    "ciuName": null,
+    "description": "The template element is used to declare fragments of HTML that can be cloned and inserted in the document by script.",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "A reasonable addition to HTML (and XML), if not somewhat taxing on the parser.",
+    "mozPositionIssue": 60,
+    "org": "WHATWG",
+    "title": "template element",
+    "url": "https://html.spec.whatwg.org/multipage/scripting.html#the-template-element"
   }
 ]
