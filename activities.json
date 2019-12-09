@@ -2,12 +2,12 @@
   {
     "ciuName": null,
     "description": "This memo introduces an informational HTTP status code that can be used to convey hints that help a client make preparations for processing the final response.",
-    "mozBugUrl": null,
-    "mozPosition": "under consideration",
-    "mozPositionDetail": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1407355",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "We believe that experimentation with the 103 response code is worthwhile, while at the same time noting that its primary benefit comes from using it with rel=preload, which Firefox does not yet implement. We do have some concerns about the lack of clear interaction with Fetch, which we hope will be specified before the mechanism is put into widespread use.",
     "mozPositionIssue": 134,
     "org": "IETF",
-    "title": "An HTTP Status Code for Indicating Hints",
+    "title": "An HTTP Status Code for Indicating Hints (103)",
     "url": "https://tools.ietf.org/html/rfc8297"
   },
   {
