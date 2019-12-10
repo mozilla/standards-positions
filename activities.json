@@ -245,7 +245,7 @@
     "ciuName": "streams",
     "description": "This specification provides APIs for creating, composing, and consuming streams of data that map efficiently to low-level I/O primitives.",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1128959",
-    "mozPosition": "important",
+    "mozPosition": "worth prototyping",
     "mozPositionDetail": "Streams are an important building block for many APIs, in particular around networking and media.",
     "mozPositionIssue": 70,
     "org": "WHATWG",
