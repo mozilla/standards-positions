@@ -275,6 +275,17 @@
     "url": "https://wicg.github.io/origin-policy"
   },
   {
+    "ciuName": null,
+    "description": "This specification describes a method that enables web applications to synchronize data in the background.",
+    "mozBugUrl": null,
+    "mozPosition": "harmful",
+    "mozPositionDetail": "We're concerned that this feature would allow users to be tracked across networks (leaking private information about location and IP address and how they change over time), and that it would allow script execution and resource consumption when it isn't clear to the user that they're interacting with the site.  We might reconsider this position given evidence that these concerns can be safely addressed, however, addressing them for periodic background sync appears substantially harder than doing so for one-off background sync.",
+    "mozPositionIssue": 214,
+    "org": "W3C",
+    "title": "Periodic Background Synchronization",
+    "url": "https://github.com/WICG/BackgroundSync/blob/master/explainers/periodicsync-explainer.md"
+  },
+  {
     "ciuName": "permissions-api",
     "description": "The Permissions Standard defines common infrastructure for other specifications that need to interact with browser permissions. It also defines an API to allow web applications to query and request changes to the status of a given permission.",
     "mozBugUrl": null,
@@ -405,6 +416,17 @@
     "org": "W3C",
     "title": "Web Authentication: An API for accessing Public Key Credentials",
     "url": "https://w3c.github.io/webauthn"
+  },
+  {
+    "ciuName": "background-sync",
+    "description": "This specification describes a method that enables web applications to synchronize data in the background.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1547906",
+    "mozPosition": "harmful",
+    "mozPositionDetail": "We're concerned that this feature would allow users to be tracked across networks (leaking private information about location and IP address and how they change over time), and that it would allow script execution and resource consumption when it isn't clear to the user that they're interacting with the site.  We might reconsider this position given evidence that these concerns can be safely addressed.",
+    "mozPositionIssue": 173,
+    "org": "W3C",
+    "title": "Web Background Synchronization",
+    "url": "https://wicg.github.io/BackgroundSync/spec"
   },
   {
     "ciuName": null,
