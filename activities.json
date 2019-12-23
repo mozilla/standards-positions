@@ -309,6 +309,17 @@
   },
   {
     "ciuName": null,
+    "description": "A proposal for extending URL fragment syntax with a list of text bits to highlight and scroll to",
+    "mozBugUrl": null,
+    "mozPosition": "non-harmful",
+    "mozPositionDetail": "We feel that some of the use cases this proposal addresses are very important to address, but that this specific proposal introduces various harmful aspects in the process of addressing them.  We feel that it would be worth prototyping a proposal with those harmful aspects removed.  More details are in the position issue.  See also the position on Fragmention, which aims to address similar use cases.",
+    "mozPositionIssue": 194,
+    "org": "W3C",
+    "title": "Scroll to Text Fragment",
+    "url": "https://github.com/WICG/ScrollToTextFragment"
+  },
+  {
+    "ciuName": null,
     "description": "A use of TLS Exported Authenticators is described which enables HTTP/2 clients and servers to offer additional certificate-based credentials after the connection is established. The means by which these credentials are used with requests is defined.",
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
