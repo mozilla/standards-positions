@@ -1,17 +1,6 @@
 [
   {
     "ciuName": null,
-    "description": "The QID Emoji Tag Sequences (or QID emoji, for short) have been proposed to provide a well-defined mechanism for implementations to support additional valid emoji that are not representable by Unicode characters or emoji zwj sequences. This mechanism allows for the interchange of emoji whose meaning is discoverable, and which should be correctly parsed by all conformant implementations (although only displayed by implementations that support it). The meaning of each of these valid emoji is established by reference to a Wikidata QID.",
-    "mozBugUrl": null,
-    "mozPosition": "under consideration",
-    "mozPositionDetail": null,
-    "mozPositionIssue": 233,
-    "org": "Unicode",
-    "title": "Unicode Emoji QID",
-    "url": "https://www.unicode.org/review/pri408/pri408-tr51-QID.html"
-  },
-  {
-    "ciuName": null,
     "description": "This memo introduces an informational HTTP status code that can be used to convey hints that help a client make preparations for processing the final response.",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1407355",
     "mozPosition": "worth prototyping",
@@ -405,6 +394,17 @@
     "org": "IETF",
     "title": "Transport Layer Security (TLS) Certificate Compression",
     "url": "https://tools.ietf.org/html/draft-ietf-tls-certificate-compression"
+  },
+  {
+    "ciuName": null,
+    "description": "The QID Emoji Tag Sequences (or QID emoji, for short) have been proposed to provide a well-defined mechanism for implementations to support additional valid emoji that are not representable by Unicode characters or emoji zwj sequences. This mechanism allows for the interchange of emoji whose meaning is discoverable, and which should be correctly parsed by all conformant implementations (although only displayed by implementations that support it). The meaning of each of these valid emoji is established by reference to a Wikidata QID.",
+    "mozBugUrl": null,
+    "mozPosition": "under consideration",
+    "mozPositionDetail": null,
+    "mozPositionIssue": 233,
+    "org": "Unicode",
+    "title": "Unicode Emoji QID",
+    "url": "https://www.unicode.org/review/pri408/pri408-tr51-QID.html"
   },
   {
     "ciuName": null,
