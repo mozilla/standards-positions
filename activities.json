@@ -30,7 +30,7 @@
     "mozPositionIssue": 65,
     "org": "Ecma",
     "title": "BigInt",
-    "url": "http://tc39.github.io/proposal-bigint"
+    "url": "https://tc39.github.io/proposal-bigint"
   },
   {
     "ciuName": null,
@@ -85,7 +85,7 @@
     "mozPositionIssue": 59,
     "org": "W3C",
     "title": "CSS Shadow Parts",
-    "url": "http://drafts.csswg.org/css-shadow-parts"
+    "url": "https://drafts.csswg.org/css-shadow-parts"
   },
   {
     "ciuName": null,
@@ -206,7 +206,7 @@
     "mozPositionIssue": 60,
     "org": "W3C",
     "title": "HTML Imports",
-    "url": "http://www.w3.org/TR/2016/WD-html-imports-20160225"
+    "url": "https://www.w3.org/TR/2016/WD-html-imports-20160225"
   },
   {
     "ciuName": null,
