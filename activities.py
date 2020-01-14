@@ -146,6 +146,11 @@ class ActivitiesJson(object):
                 errors.append("Entry %i is not a dictionary." % i)
             title = entry.get("title", "entry %i" % i)
             errors = errors + self.validate_entry(entry, title)
+            # This is *outside* validate_entry so that "add" can add an
+            # entry with an empty ID (which must then be filled in), but
+            # it will cause a validation error for other operations.
+            if entry.get("id", "") == "":
+                errors.append("{} includes has empty id".format(title))
         return errors
 
     def validate_entry(self, entry, title=None):
