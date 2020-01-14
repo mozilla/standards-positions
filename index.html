@@ -107,6 +107,8 @@
     <script src="components/datatables-plugins/sorting/enum.js"></script>
     <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
+    var gFirstTableRender = true;
+
     $(document).ready(function(){
         var status_styles = {
           "under consideration": "dark",
@@ -267,6 +269,23 @@
               row.child( format(row.data()) ).show();
               tr.addClass('shown');
             }
+          }
+        } );
+
+        // Work around bugs in both Chrome and Firefox relating to
+        // anchor scrolling and :target selection.
+        $('#mozPositions').on('order.dt', function() {
+          if (gFirstTableRender) {
+            gFirstTableRender = false;
+            setTimeout(function() {
+              var hash = location.hash;
+              if (hash != "") {
+                // just "location.hash = location.hash" would be enough for
+                // Firefox, but not Chrome.
+                location.hash = "";
+                location.hash = hash;
+              }
+            }, 0);
           }
         } );
     })
