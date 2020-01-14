@@ -29,6 +29,15 @@
       .space dt {
         padding-bottom: 5px;
       }
+
+      table.dataTable > tbody > tr:target,
+      table.dataTable > tbody > tr.shown:target + tr {
+        background: #fd0;
+      }
+
+      tr:not(:hover):not(:focus-within) > .link-control > a {
+        visibility: hidden;
+      }
     </style>
   </head>
   <body>
@@ -62,6 +71,7 @@
         <table id="mozPositions" class="table table-hover dataTable">
           <thead>
             <tr>
+              <th></th>
               <th></th>
               <th class="sorting">Specification</th>
               <th class="sorting">Mozilla Position</th>
@@ -120,8 +130,23 @@
               dataSrc: ''
           },
           dom: 'ilfrtip',
-          "order": [[2, "asc"]],
+          rowId: 'id',
+          "order": [[3, "asc"]],
           "columns": [
+              {
+                "className": 'link-control',
+                "data": null,
+                "defaultContent": '',
+                "render": function (data, type, row) {
+                  var id = data.id;
+                  if (id != "") {
+                    return "<a href='#" + id + "'><span class='glyphicon glyphicon-link' aria-hidden='true'></span><span class='sr-only'>link</span></a>";
+                  }
+                  return "";
+                },
+                "orderable": false,
+                "searchable": false
+              },
               {
                 "data": "org",
                 "render": function (data, type, row) {
