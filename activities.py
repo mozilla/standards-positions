@@ -57,7 +57,7 @@ class ActivitiesJson(object):
     """
 
     expected_entry_items = [  # (name, required?, type)
-        ("cui_name", False, StringType),
+        ("id", True, StringType),
         ("title", True, StringType),
         ("description", True, StringType),
         ("ciuName", False, StringType),
@@ -121,10 +121,14 @@ class ActivitiesJson(object):
             e["title"].lower().strip() for e in self.data
         ]:
             raise ValueError(
-                ["%s already contains %s" % (self.filename, entry["title"])]
+                ["%s already contains title %s" % (self.filename, entry["title"])]
+            )
+        if entry["id"] in [e["id"] for e in self.data]:
+            raise ValueError(
+                ["%s already contains id %s" % (self.filename, entry["id"])]
             )
         if entry["url"] in [e["url"] for e in self.data]:
-            raise ValueError(["%s already contains %s" % (self.filename, entry["url"])])
+            raise ValueError(["%s already contains url %s" % (self.filename, entry["url"])])
 
     def validate(self):
         """
@@ -198,6 +202,7 @@ class SpecEntry(object):
     def __init__(self, spec_url):
         self.orig_url = spec_url
         self.data = {
+            "id": u"",
             "title": None,
             "description": None,
             "ciuName": None,
