@@ -422,7 +422,7 @@
   {
     "ciuName": null,
     "description": "This document describes a set of data types and associated algorithms that are intended to make it easier and safer to define and handle HTTP header fields. It is intended for use by specifications of new HTTP header fields that wish to use a common syntax that is more restrictive than traditional HTTP field values.",
-    "id": "",
+    "id": "structured-headers",
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
     "mozPositionDetail": "Use of structured headers promises to improve consistency and interoperability of new HTTP header fields.",
