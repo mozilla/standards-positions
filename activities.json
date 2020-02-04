@@ -425,7 +425,7 @@
     "id": "structured-headers",
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
-    "mozPositionDetail": "Use of structured headers promises to improve consistency and interoperability of new HTTP header fields.",
+    "mozPositionDetail": "Use of structured headers promises to improve consistency and interoperability of new HTTP header fields. Depending on further security analysis, we may upgrade this feature to 'important' in the future.",
     "mozPositionIssue": 256,
     "org": "IETF",
     "title": "Structured Headers for HTTP",
