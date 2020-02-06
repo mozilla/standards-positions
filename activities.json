@@ -445,6 +445,18 @@
   },
   {
     "ciuName": null,
+    "description": "This document specifies the Privacy Pass protocol for anonymously authorizing clients with services on the Internet.  Note to Readers Source for this draft and an issue tracker can be found at https://github.com/grittygrease/draft-privacy-pass [1].",
+    "id": "privacy-pass",
+    "mozBugUrl": null,
+    "mozPosition": "defer",
+    "mozPositionDetail": "This protocol provides a way to achieve certain important goals, such as denial of service mitigation, without also creating tracking mechanisms.  As such, we are very supportive of the goal.  However, we will defer making a firm position until the protocol and the novel cryptographic primitives it relies on have had more thorough security analysis.",
+    "mozPositionIssue": null,
+    "org": "IETF",
+    "title": "The Privacy Pass Protocol",
+    "url": "https://tools.ietf.org/html/draft-privacy-pass"
+  },
+  {
+    "ciuName": null,
     "description": "The WebTransport Protocol Framework enables clients constrained by the Web security model to communicate with a remote server using a secure multiplexed transport. It consists of a set of individual protocols that are safe to expose to untrusted applications, combined with a model that allows them to be used interchangeably. This document defines the overall requirements on the protocols used in WebTransport, as well as the common features of the protocols, support for some of which may be optional.",
     "id": "webtransport",
     "mozBugUrl": null,
@@ -466,6 +478,18 @@
     "org": "IETF",
     "title": "Transport Layer Security (TLS) Certificate Compression",
     "url": "https://tools.ietf.org/html/draft-ietf-tls-certificate-compression"
+  },
+  {
+    "ciuName": null,
+    "description": "This document is an explainer for a potential future web platform API that allows propagating trust across sites, using the Privacy Pass protocol as an underlying primitive.",
+    "id": "trust-token",
+    "mozBugUrl": null,
+    "mozPosition": "defer",
+    "mozPositionDetail": "This API depends on the Privacy Pass protocol, for which we have deferred our position statement.",
+    "mozPositionIssue": null,
+    "org": "W3C",
+    "title": "Trust Token API",
+    "url": "https://github.com/WICG/trust-token-api/blob/master/README.md"
   },
   {
     "ciuName": null,
