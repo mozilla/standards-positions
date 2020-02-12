@@ -514,6 +514,7 @@ URL2ORG = {
     "drafts.css-houdini.org": W3CParser,
     "drafts.fxtf.org": W3CParser,
     "w3ctag.github.io": W3CParser,
+    "immersive-web.github.io": W3CParser,
     "datatracker.ietf.org": IETFParser,
     "www.ietf.org": IETFParser,
     "tools.ietf.org": IETFParser,
