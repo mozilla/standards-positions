@@ -41,7 +41,7 @@
     "id": "contact-picker",
     "mozBugUrl": null,
     "mozPosition": "defer",
-    "mozPositionDetail": "This API innnovates in some ways beyond several previous Contacts APIs, though leaves their source unspecified, and uses different properties than HTML autofill field names.",
+    "mozPositionDetail": "This API innnovates in some ways beyond several previous Contacts APIs, though uses different properties than HTML autofill field names.",
     "mozPositionIssue": 153,
     "org": "WICG",
     "title": "Contact Picker API",
