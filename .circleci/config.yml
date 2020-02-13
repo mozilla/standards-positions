@@ -7,6 +7,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "Setup"
+          command: pip3 install --user beautifulsoup4 requests html5lib
+      - run:
           name: "Validate JSON"
           command: python3 ./activities.py validate
 
