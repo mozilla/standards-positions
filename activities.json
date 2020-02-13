@@ -37,6 +37,18 @@
   },
   {
     "ciuName": null,
+    "description": "This proposal adds an API for prompting and querying the user’s contacts for one or more items with a handful of contact properties.",
+    "id": "contact-picker",
+    "mozBugUrl": null,
+    "mozPosition": "defer",
+    "mozPositionDetail": "This API innnovates in some ways beyond several previous Contacts APIs, though uses different properties than HTML autofill field names.",
+    "mozPositionIssue": 153,
+    "org": "WICG",
+    "title": "Contact Picker API",
+    "url": "https://wicg.github.io/contact-api/spec/"
+  },
+  {
+    "ciuName": null,
     "description": "This draft defines additions to CSS Grid, primarily for the subgrid feature.",
     "id": "subgrid",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1349043",
