@@ -625,6 +625,18 @@
   },
   {
     "ciuName": null,
+    "description": "Describes a method for performing hit tests against real world geometry to be used with the WebXR Device API.",
+    "id": "webxr-hit-test",
+    "mozBugUrl": null,
+    "mozPosition": "defer",
+    "mozPositionDetail": "We believe that (as of February 2020) more iteration on the specification draft is needed before we can establish a position.",
+    "mozPositionIssue": 259,
+    "org": "W3C",
+    "title": "WebXR Hit Test Module",
+    "url": "https://immersive-web.github.io/hit-test"
+  },
+  {
+    "ciuName": null,
     "description": "This specification defines an API for running scripts in stages of the rendering pipeline independent of the main javascript execution environment.",
     "id": "worklets",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1315239",
