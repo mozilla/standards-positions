@@ -43,7 +43,7 @@
     "mozPosition": "defer",
     "mozPositionDetail": "This API innnovates in some ways beyond several previous Contacts APIs, though uses different properties than HTML autofill field names.",
     "mozPositionIssue": 153,
-    "org": "WICG",
+    "org": "W3C",
     "title": "Contact Picker API",
     "url": "https://wicg.github.io/contact-api/spec/"
   },
