@@ -6,7 +6,11 @@ We welcome contributions from the Mozilla community about its position on Web sp
 ## Requesting a Mozilla Position on a Web Specification
 
 If there is a public, Web-related specification that you think Mozilla might be interested in,
-please open a new issue, filling out the template appropriately.
+please 
+[open a new issue](https://github.com/mozilla/standards-positions/issues/new), 
+filling out the auto-included template appropriately. (If posting via GitHub API, please copy the 
+[template](https://github.com/mozilla/standards-positions/blob/master/ISSUE_TEMPLATE.md) 
+and fill it out).
 
 Normally, the appropriate granularity for an issue is a single specification; however, if an effort
 involves multiple, tightly integrated specs, one can be created for the "main" document, and include
