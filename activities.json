@@ -1,6 +1,18 @@
 [
   {
     "ciuName": null,
+    "description": "",
+    "id": "aria-annotations",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1608975",
+    "mozPosition": "important",
+    "mozPositionDetail": "This contains changes needed to support screen reader accessibility of comments, suggestions, and other annotations in published documents and online word processing applications.",
+    "mozPositionIssue": 253,
+    "org": "W3C",
+    "title": "ARIA Annotations",
+    "url": "https://github.com/aleventhal/aria-annotations"
+  },
+  {
+    "ciuName": null,
     "description": "This memo introduces an informational HTTP status code that can be used to convey hints that help a client make preparations for processing the final response.",
     "id": "http-early-hints",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1407355",
