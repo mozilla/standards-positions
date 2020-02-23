@@ -139,6 +139,7 @@ class ActivitiesJson(object):
         if not isinstance(self.data, list):
             return ["Top-level data structure is not a list."]
         errors = []
+        prevTitle = None
         i = 0
         for entry in self.data:
             i += 1
@@ -151,6 +152,11 @@ class ActivitiesJson(object):
             # it will cause a validation error for other operations.
             if entry.get("id", "") == "":
                 errors.append("{} includes has empty id".format(title))
+
+            # Check that the entries are sorted by title, as save writes them.
+            if prevTitle is not None and prevTitle > title:
+                errors.append("{} is sorted incorrectly (it should not be after {})".format(title, prevTitle))
+            prevTitle = title
         return errors
 
     def validate_entry(self, entry, title=None):
@@ -560,7 +566,7 @@ if __name__ == "__main__":
         ACTIVITIES = ActivitiesJson("activities.json")
         ERRORS = ACTIVITIES.validate()
         if ERRORS:
-            sys.stderr.write("\n".join(["* ERROR: %s" % E for E in ERRORS]))
+            sys.stderr.write("\n".join(["* ERROR: %s" % E for E in ERRORS]) + "\n")
             sys.exit(1)
 
     if VERB in ["format", "add"]:
