@@ -154,9 +154,8 @@ class ActivitiesJson(object):
                 errors.append("{} includes has empty id".format(title))
 
             # Check that the entries are sorted by title, as save writes them.
-            if i != 1:
-                if prevTitle > title:
-                    errors.append("{} is sorted incorrectly (it should not be after {})".format(title, prevTitle))
+            if prevTitle is not None and prevTitle > title:
+                errors.append("{} is sorted incorrectly (it should not be after {})".format(title, prevTitle))
             prevTitle = title
         return errors
 
