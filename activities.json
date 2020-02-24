@@ -145,6 +145,18 @@
   },
   {
     "ciuName": null,
+    "description": "This document defines a set of JavaScript APIs to compress and decompress streams of binary data.",
+    "id": "compression-streams",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This provides a small API wrapper around compression formats implementations already have to support and hopefully leads to more things being compressed due to ease-of-use.",
+    "mozPositionIssue": 207,
+    "org": "W3C",
+    "title": "Compression Streams",
+    "url": "https://wicg.github.io/compression/"
+  },
+  {
+    "ciuName": null,
     "description": "This draft defines additions to CSSOM to make CSSStyleSheet objects directly constructable, along with a way to use them in DocumentOrShadowRoots.",
     "id": "construct-stylesheets",
     "mozBugUrl": null,
