@@ -61,7 +61,7 @@ class ActivitiesJson(object):
         ("title", True, StringType),
         ("description", True, StringType),
         ("ciuName", False, StringType),
-        ("org", True, ["W3C", "IETF", "Ecma", "WHATWG", "Unicode", "Other"]),
+        ("org", True, ["W3C", "W3C-CG", "IETF", "Ecma", "WHATWG", "Unicode", "Other"]),
         ("group", False, StringType),
         ("url", True, UrlType),
         ("mozBugUrl", False, UrlType),
@@ -416,6 +416,9 @@ class W3CParser(SpecParser):
             sys.exit(1)
         return data
 
+class W3CCGParser(W3CParser):
+    "Parser for W3C community group specs"
+    org = "W3C-CG"
 
 class WHATWGParser(W3CParser):
     "Parser for WHATWG specs"
@@ -513,14 +516,14 @@ class IETFParser(SpecParser):
 URL2ORG = {
     "www.w3.org": W3CParser,
     "w3c.github.io": W3CParser,
-    "wicg.github.io": W3CParser,
+    "wicg.github.io": W3CCGParser,
     "dev.w3.org": W3CParser,
     "dvcs.w3.org": W3CParser,
     "drafts.csswg.org": W3CParser,
     "drafts.css-houdini.org": W3CParser,
     "drafts.fxtf.org": W3CParser,
     "w3ctag.github.io": W3CParser,
-    "immersive-web.github.io": W3CParser,
+    "immersive-web.github.io": W3CCGParser,
     "datatracker.ietf.org": IETFParser,
     "www.ietf.org": IETFParser,
     "tools.ietf.org": IETFParser,
