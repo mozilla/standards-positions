@@ -169,6 +169,18 @@
   },
   {
     "ciuName": null,
+    "description": "This specification describes an imperative API enabling a website to request a user\u2019s credentials from a user agent, and to help the user agent correctly store user credentials for future use.",
+    "id": "credman",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1156047",
+    "mozPosition": "defer",
+    "mozPositionDetail": "Development of the specification seems to have stalled and it's also not a priority for Mozilla.",
+    "mozPositionIssue": 172,
+    "org": "W3C",
+    "title": "Credential Management Level 1",
+    "url": "https://w3c.github.io/webappsec-credential-management"
+  },
+  {
+    "ciuName": null,
     "description": "A way to create new HTML elements implemented through JavaScript.",
     "id": "custom-elements",
     "mozBugUrl": null,
