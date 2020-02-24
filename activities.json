@@ -325,6 +325,18 @@
   },
   {
     "ciuName": null,
+    "description": "Origin isolation refers to segregating cross-origin documents into separate agent clusters.",
+    "id": "domenic-origin-isolation",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "Letting developers opt out of document.domain and reduce the potential size of their agent cluster allows user agents to balance security, performance, and resource management.",
+    "mozPositionIssue": 244,
+    "org": "Other",
+    "title": "Origin Isolation",
+    "url": "https://github.com/domenic/origin-isolation"
+  },
+  {
+    "ciuName": null,
     "description": "This specification defines a delivery mechanism for a number of policies which are to be applied to an entire origin. It compliments header-based delivery mechanisms for existing policies (Content Security Policy, Referrer Policy, etc).",
     "id": "origin-policy",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1508290",
