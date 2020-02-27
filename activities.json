@@ -355,9 +355,9 @@
     "mozPosition": "worth prototyping",
     "mozPositionDetail": "Letting developers opt out of document.domain and reduce the potential size of their agent cluster allows user agents to balance security, performance, and resource management.",
     "mozPositionIssue": 244,
-    "org": "Other",
+    "org": "W3C",
     "title": "Origin Isolation",
-    "url": "https://github.com/domenic/origin-isolation"
+    "url": "https://github.com/WICG/origin-isolation"
   },
   {
     "ciuName": null,
