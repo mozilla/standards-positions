@@ -151,6 +151,9 @@
                   }
                   if (data !== "") {
                     var extension = ".svg"
+                    if (data === "Proposal") {
+                      return "<a href='javascript:void(0)'><span class='glyphicon glyphicon-user' aria-hidden='true'></span><span class='sr-only'>Proposal</span></a>"
+                    }
                     if (data === "Ecma") {
                       data = "JS"
                     }
