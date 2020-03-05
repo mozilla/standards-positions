@@ -333,7 +333,7 @@
     "mozPositionIssue": 121,
     "org": "IETF",
     "title": "Let 'localhost' be localhost.",
-    "url": "https://tools.ietf.org/html/draft-west-let-localhost-be-localhost"
+    "url": "https://tools.ietf.org/html/draft-ietf-dnsop-let-localhost-be-localhost"
   },
   {
     "ciuName": null,
@@ -441,7 +441,7 @@
     "mozPositionIssue": 208,
     "org": "IETF",
     "title": "Service binding and parameter specification via the DNS (DNS SVCB and HTTPSSVC)",
-    "url": "https://tools.ietf.org/html/draft-nygren-dnsop-svcb-httpssvc"
+    "url": "https://tools.ietf.org/html/draft-ietf-dnsop-svcb-httpssvc"
   },
   {
     "ciuName": null,
