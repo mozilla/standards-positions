@@ -424,7 +424,6 @@ class WHATWGParser(W3CParser):
 
 class IETFParser(SpecParser):
     "Parser for IETF specs"
-    org = "IETF"
 
     def get_meta(self, spec, names):
         """
@@ -487,7 +486,8 @@ class IETFParser(SpecParser):
             )
             or ""
         )
-        data["org"] = self.org
+        is_ietf = draft_name.startswith("rfc") or draft_name.startswith("draft-ietf-") or draft_name.startswith("draft-irtf-")
+        data["org"] = self.org = "IETF" if is_ietf else "Proposal"
         data["url"] = self.clean_url(url_string)
         return data
 

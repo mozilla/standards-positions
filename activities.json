@@ -463,7 +463,7 @@
     "mozPosition": "harmful",
     "mozPositionDetail": "Mozilla has concerns about the shift in the web security model required for handling web-packaged information. Specifically, the ability for an origin to act on behalf of another without a client ever contacting the authoritative server is worrisome, as is the removal of a guarantee of confidentiality from the web security model (the host serving the web package has access to plain text). We recognise that the use cases satisfied by web packaging are useful, and would be likely to support an approach that enabled such use cases so long as the foregoing concerns could be addressed.",
     "mozPositionIssue": 29,
-    "org": "IETF",
+    "org": "Proposal",
     "title": "Signed HTTP Exchanges",
     "url": "https://tools.ietf.org/html/draft-yasskin-http-origin-signed-responses"
   },
@@ -511,7 +511,7 @@
     "mozPosition": "defer",
     "mozPositionDetail": "This protocol provides a way to achieve certain important goals, such as denial of service mitigation, without also creating tracking mechanisms.  As such, we are very supportive of the goal.  However, we will defer making a firm position until the protocol and the novel cryptographic primitives it relies on have had more thorough security analysis.",
     "mozPositionIssue": null,
-    "org": "IETF",
+    "org": "Proposal",
     "title": "The Privacy Pass Protocol",
     "url": "https://tools.ietf.org/html/draft-privacy-pass"
   },
@@ -523,7 +523,7 @@
     "mozPosition": "worth prototyping",
     "mozPositionDetail": "We are generally in support of a mechanism that addresses the use cases implied by this solution document. While major questions remain open at this time -- notably, multiplexing, the API surface, and available statistics -- we think that prototyping the proposed solution as details become more firm would be worthwhile. We would like see the new WebSocketStream and WebTransport stream APIs to be developed in concert with each other, so as to share as much design as possible.",
     "mozPositionIssue": 167,
-    "org": "IETF",
+    "org": "Proposal",
     "title": "The WebTransport Protocol Framework",
     "url": "https://tools.ietf.org/html/draft-vvv-webtransport-overview"
   },
@@ -571,7 +571,7 @@
     "mozPosition": "non-harmful",
     "mozPositionDetail": "Using Client Hints to deliver info derived from the User Agent header field for servers that specifically request this information may reduce the number of parties that can use this information for passively fingerprinting users. However, we could reduce this even further by freezing the User Agent string and requiring resources to actively request this information via the proposed NavigatorUAData interface JS APIs. This would also allow us to audit the callers. At this time, freezing the User Agent string without any client hints (which is not this proposal)seems worth-prototyping. We look forward to learning from other vendors who implement the \"GREASE-like UA Strings\" proposal and its effects on site compatibility.",
     "mozPositionIssue": 202,
-    "org": "IETF",
+    "org": "Proposal",
     "title": "User Agent Client Hints",
     "url": "https://tools.ietf.org/html/draft-west-ua-client-hints"
   },
