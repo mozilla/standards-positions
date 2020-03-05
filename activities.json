@@ -31,7 +31,7 @@
     "mozPosition": "worth prototyping",
     "mozPositionDetail": null,
     "mozPositionIssue": 108,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "Badging API",
     "url": "https://wicg.github.io/badging"
   },
@@ -151,7 +151,7 @@
     "mozPosition": "worth prototyping",
     "mozPositionDetail": "This provides a small API wrapper around compression formats implementations already have to support and hopefully leads to more things being compressed due to ease-of-use.",
     "mozPositionIssue": 207,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "Compression Streams",
     "url": "https://wicg.github.io/compression/"
   },
@@ -163,7 +163,7 @@
     "mozPosition": "worth prototyping",
     "mozPositionDetail": null,
     "mozPositionIssue": 103,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "Constructable Stylesheet Objects",
     "url": "https://wicg.github.io/construct-stylesheets/"
   },
@@ -175,7 +175,7 @@
     "mozPosition": "defer",
     "mozPositionDetail": "This API innnovates in some ways beyond several previous Contacts APIs, though uses different properties than HTML autofill field names.",
     "mozPositionIssue": 153,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "Contact Picker API",
     "url": "https://wicg.github.io/contact-api/spec/"
   },
@@ -235,7 +235,7 @@
     "mozPosition": "worth prototyping",
     "mozPositionDetail": "Mozilla's primary interest in this specification is in the delegation of permissions to third-party contexts, and in particular permissions that might require the user to make a choice. To that end we are willing to prototype and ship the allow attribute, but given this reduction in scope the remaining functionality needs to be reevaluated in terms of naming and applicability.",
     "mozPositionIssue": 24,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "Feature Policy",
     "url": "https://wicg.github.io/feature-policy"
   },
@@ -343,7 +343,7 @@
     "mozPosition": "defer",
     "mozPositionDetail": "The ability to read and write from the filesystem is potentially very dangerous. We will need to carefully consider any solution in light of the security and privacy implications. We recognize that the spec authors take this issue seriously, but we are concerned that any solution will increase the risk of security incidents more than we are willing to tolerate. Right now, there isn't enough detail in the specification to make an assessment of these risks, so we will defer our decision until we have more information.",
     "mozPositionIssue": 154,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "Native File System",
     "url": "https://wicg.github.io/native-file-system"
   },
@@ -355,7 +355,7 @@
     "mozPosition": "worth prototyping",
     "mozPositionDetail": "Letting developers opt out of document.domain and reduce the potential size of their agent cluster allows user agents to balance security, performance, and resource management.",
     "mozPositionIssue": 244,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "Origin Isolation",
     "url": "https://github.com/WICG/origin-isolation"
   },
@@ -367,7 +367,7 @@
     "mozPosition": "worth prototyping",
     "mozPositionDetail": "Giving developers the ability to set policies for an entire origin is a powerful new primitive that will benefit security of applications as well as performance due to the ability to bypass CORS preflights. The renewed effort to make this happen takes a strong anti-tracking stance that is in line with our efforts around privacy in Fetch, such as isolating the HTTP cache. Given this, it seems worth figuring out if this can be made viable.",
     "mozPositionIssue": 160,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "Origin Policy",
     "url": "https://wicg.github.io/origin-policy"
   },
@@ -379,7 +379,7 @@
     "mozPosition": "harmful",
     "mozPositionDetail": "We're concerned that this feature would allow users to be tracked across networks (leaking private information about location and IP address and how they change over time), and that it would allow script execution and resource consumption when it isn't clear to the user that they're interacting with the site.  We might reconsider this position given evidence that these concerns can be safely addressed, however, addressing them for periodic background sync appears substantially harder than doing so for one-off background sync.",
     "mozPositionIssue": 214,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "Periodic Background Synchronization",
     "url": "https://github.com/WICG/BackgroundSync/blob/master/explainers/periodicsync-explainer.md"
   },
@@ -403,7 +403,7 @@
     "mozPosition": "defer",
     "mozPositionDetail": "We ship Picture-in-Picture (PiP) as a feature in Firefox, but without exposing a JavaScript API. We are evaluating if our PiP UI affordances are sufficient for users and web applications. In the future, we may reconsider exposing the API, which is why we have chosen to 'defer'.",
     "mozPositionIssue": 72,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "Picture-in-Picture",
     "url": "https://wicg.github.io/picture-in-picture"
   },
@@ -415,7 +415,7 @@
     "mozPosition": "non-harmful",
     "mozPositionDetail": "We feel that some of the use cases this proposal addresses are very important to address, but that this specific proposal introduces various harmful aspects in the process of addressing them.  We feel that it would be worth prototyping a proposal with those harmful aspects removed.  More details are in the position issue.  See also the position on Fragmention, which aims to address similar use cases.",
     "mozPositionIssue": 194,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "Scroll to Text Fragment",
     "url": "https://github.com/WICG/ScrollToTextFragment"
   },
@@ -547,7 +547,7 @@
     "mozPosition": "defer",
     "mozPositionDetail": "This API depends on the Privacy Pass protocol, for which we have deferred our position statement.",
     "mozPositionIssue": null,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "Trust Token API",
     "url": "https://github.com/WICG/trust-token-api/blob/master/README.md"
   },
@@ -595,7 +595,7 @@
     "mozPosition": "harmful",
     "mozPositionDetail": "We're concerned that this feature would allow users to be tracked across networks (leaking private information about location and IP address and how they change over time), and that it would allow script execution and resource consumption when it isn't clear to the user that they're interacting with the site.  We might reconsider this position given evidence that these concerns can be safely addressed.",
     "mozPositionIssue": 173,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "Web Background Synchronization",
     "url": "https://wicg.github.io/BackgroundSync/spec"
   },
@@ -607,7 +607,7 @@
     "mozPosition": "non-harmful",
     "mozPositionDetail": "This specification is being abandoned.",
     "mozPositionIssue": 73,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "Web Budget API",
     "url": "https://wicg.github.io/budget-api"
   },
@@ -631,7 +631,7 @@
     "mozPosition": "under consideration",
     "mozPositionDetail": null,
     "mozPositionIssue": 27,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "Web Share API",
     "url": "https://wicg.github.io/web-share"
   },
@@ -643,7 +643,7 @@
     "mozPosition": "under consideration",
     "mozPositionDetail": null,
     "mozPositionIssue": 27,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "Web Share Target API",
     "url": "https://wicg.github.io/web-share-target"
   },
@@ -667,7 +667,7 @@
     "mozPosition": "harmful",
     "mozPositionDetail": "Because many USB devices are not designed to handle potentially-malicious interactions over the USB protocols and because those devices can have significant effects on the computer they're connected to, we believe that the security risks of exposing USB devices to the Web are too broad to risk exposing users to them or to explain properly to end users to obtain meaningful informed consent. It also poses risks that sites could use USB device identity or data stored on USB devices as tracking identifiers.",
     "mozPositionIssue": 100,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "WebUSB API",
     "url": "https://wicg.github.io/webusb/"
   },
@@ -679,7 +679,7 @@
     "mozPosition": "defer",
     "mozPositionDetail": "We believe that (as of February 2020) more iteration on the specification draft is needed before we can establish a position.",
     "mozPositionIssue": 259,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "WebXR Hit Test Module",
     "url": "https://immersive-web.github.io/hit-test"
   },
