@@ -409,6 +409,18 @@
   },
   {
     "ciuName": null,
+    "description": "This document defines a generic reporting framework which allows web developers to associate a set of named reporting endpoints with an origin. Various platform features can use these endpoints to deliver feature-specific reports in a consistent manner.",
+    "id": "reporting",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1620573",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This is a reasonable generalization of the CSP reporting mechanism that allows more features to adopt it.",
+    "mozPositionIssue": 104,
+    "org": "W3C",
+    "title": "Reporting API",
+    "url": "https://w3c.github.io/reporting"
+  },
+  {
+    "ciuName": null,
     "description": "A proposal for extending URL fragment syntax with a list of text bits to highlight and scroll to",
     "id": "scroll-to-text-fragment",
     "mozBugUrl": null,
