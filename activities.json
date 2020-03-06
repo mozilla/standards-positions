@@ -569,7 +569,7 @@
     "id": "ua-client-hints",
     "mozBugUrl": null,
     "mozPosition": "non-harmful",
-    "mozPositionDetail": "Using Client Hints to deliver info derived from the User Agent header field for servers that specifically request this information may reduce the number of parties that can use this information for passively fingerprinting users. However, we could reduce this even further by freezing the User Agent string and requiring resources to actively request this information via the proposed NavigatorUAData interface JS APIs. This would also allow us to audit the callers. At this time, freezing the User Agent string without any client hints (which is not this proposal)seems worth-prototyping. We look forward to learning from other vendors who implement the \"GREASE-like UA Strings\" proposal and its effects on site compatibility.",
+    "mozPositionDetail": "Using Client Hints to deliver info derived from the User Agent header field for servers that specifically request this information may reduce the number of parties that can use this information for passively fingerprinting users. However, we could reduce this even further by freezing the User Agent string and requiring resources to actively request this information via the proposed NavigatorUAData interface JS APIs. This would also allow us to audit the callers. At this time, freezing the User Agent string without any client hints (which is not this proposal) seems worth prototyping. We look forward to learning from other vendors who implement the \"GREASE-like UA Strings\" proposal and its effects on site compatibility.",
     "mozPositionIssue": 202,
     "org": "Proposal",
     "title": "User Agent Client Hints",
