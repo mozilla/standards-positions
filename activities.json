@@ -293,9 +293,9 @@
     "id": "http-stale-controls",
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
-    "mozPositionDetail": " The stale-while-revalidate cache control extension appears to provide improved user experience with no obvious drawbacks. We take no position on the other mechanisms in RFC 5861 at this time.",
+    "mozPositionDetail": "The stale-while-revalidate cache control extension appears to provide improved user experience with no obvious drawbacks. We take no position on the other mechanisms in RFC 5861 at this time.",
     "mozPositionIssue": 144,
-    "org": "IETF",
+    "org": "Proposal",
     "title": "HTTP Cache-Control Extensions for Stale Content",
     "url": "https://tools.ietf.org/html/rfc5861"
   },
