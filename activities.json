@@ -553,6 +553,18 @@
   },
   {
     "ciuName": null,
+    "description": "An API that allows applications to lock down powerful APIs to only accept non-spoofable, typed values in place of strings to prevent vulnerabilities caused by using these APIs with attacker-controlled inputs.",
+    "id": "trusted-types",
+    "mozBugUrl": null,
+    "mozPosition": "non-harmful",
+    "mozPositionDetail": "The API does not seem suitable for the long tail of sites.",
+    "mozPositionIssue": 20,
+    "org": "W3C",
+    "title": "Trusted Types",
+    "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec"
+  },
+  {
+    "ciuName": null,
     "description": "The QID Emoji Tag Sequences (or QID emoji, for short) have been proposed to provide a well-defined mechanism for implementations to support additional valid emoji that are not representable by Unicode characters or emoji zwj sequences. This mechanism allows for the interchange of emoji whose meaning is discoverable, and which should be correctly parsed by all conformant implementations (although only displayed by implementations that support it). The meaning of each of these valid emoji is established by reference to a Wikidata QID.",
     "id": "unicode-emoji-qid",
     "mozBugUrl": null,
