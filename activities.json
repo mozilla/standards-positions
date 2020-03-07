@@ -557,7 +557,7 @@
     "id": "trusted-types",
     "mozBugUrl": null,
     "mozPosition": "non-harmful",
-    "mozPositionDetail": "The API does not seem suitable for the long tail of sites.",
+    "mozPositionDetail": "The API could be used to harden sites against certain cross-site scripting issues, but it is sufficiently complex that we are concerned that it will not be suitable for many sites.",
     "mozPositionIssue": 20,
     "org": "W3C",
     "title": "Trusted Types",
