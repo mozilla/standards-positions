@@ -181,6 +181,18 @@
   },
   {
     "ciuName": null,
+    "description": "This document defines a mechanism for reporting browser crashes to site owners through the use of the Reporting API.",
+    "id": "crash-reporting",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1607364",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This seems like it could be a useful addition to the reporting API.  We're not yet confident what level of user consent is needed, but we can experiment with that without changes to the specification.",
+    "mozPositionIssue": 288,
+    "org": "Proposal",
+    "title": "Crash Reporting",
+    "url": "https://wicg.github.io/crash-reporting"
+  },
+  {
+    "ciuName": null,
     "description": "This specification describes an imperative API enabling a website to request a user\u2019s credentials from a user agent, and to help the user agent correctly store user credentials for future use.",
     "id": "credman",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1156047",
