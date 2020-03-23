@@ -130,7 +130,7 @@ class ActivitiesJson(object):
         if entry["url"] in [e["url"] for e in self.data]:
             raise ValueError(["%s already contains url %s" % (self.filename, entry["url"])])
 
-    def validate(self):
+    def validate(self, check_sorting):
         """
         Validate self.data for conformance to what we expect activities to be.
 
@@ -154,7 +154,7 @@ class ActivitiesJson(object):
                 errors.append("{} includes has empty id".format(title))
 
             # Check that the entries are sorted by title, as save writes them.
-            if prevTitle is not None and prevTitle > title:
+            if check_sorting and prevTitle is not None and prevTitle > title:
                 errors.append("{} is sorted incorrectly (it should not be after {})".format(title, prevTitle))
             prevTitle = title
         return errors
@@ -567,7 +567,7 @@ if __name__ == "__main__":
 
     if VERB in ["validate", "add", "sort"]:
         ACTIVITIES = ActivitiesJson("activities.json")
-        ERRORS = ACTIVITIES.validate()
+        ERRORS = ACTIVITIES.validate(check_sorting = (VERB != "sort"))
         if ERRORS:
             sys.stderr.write("\n".join(["* ERROR: %s" % E for E in ERRORS]) + "\n")
             sys.exit(1)
