@@ -205,6 +205,18 @@
   },
   {
     "ciuName": null,
+    "description": "Add support for Curve25519 algorithms in the Web Cryptography API, namely the signature algorithm Ed25519 and the key agreement algorithm X25519.",
+    "id": "webcrypto-curve25519",
+    "mozBugUrl": "",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "We are in favor of this work, but would like to see it have a path to standardization.  When doing that, it may be worth reconsidering some of the \"no seatbelts\" aspects of WebCrypto more generally, and perhaps adding other algorithms as well.",
+    "mozPositionIssue": 271,
+    "org": "Proposal",
+    "title": "Curve25519 in the Web Cryptography API",
+    "url": "https://github.com/tQsW/webcrypto-curve25519"
+  },
+  {
+    "ciuName": null,
     "description": "A way to create new HTML elements implemented through JavaScript.",
     "id": "custom-elements",
     "mozBugUrl": null,
