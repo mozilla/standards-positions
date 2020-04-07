@@ -445,6 +445,18 @@
   },
   {
     "ciuName": null,
+    "description": "A way to force an embedded document and descendants (regardless of origin) into each having their own agent/event loop.",
+    "id": "documentaccess",
+    "mozBugUrl": null,
+    "mozPosition": "harmful",
+    "mozPositionDetail": "Changing control flow of cross-origin documents without their consent is not something we should expand upon (i.e., beyond what sandboxing allows) as it could enable attack vectors. Furthermore, forcing same-origin documents in the same browsing context group to be in different agents is a major architectural change and this does not offer enough advantages to make such a change.",
+    "mozPositionIssue": 197,
+    "org": "Proposal",
+    "title": "Restricting Document Access of Same Origin Documents",
+    "url": "https://github.com/dtapuska/documentaccess"
+  },
+  {
+    "ciuName": null,
     "description": "This document specifies an API that allows web applications to request a screen wake lock. Under the right conditions, and if allowed, the screen wake lock prevents the system from turning off a device's screen.",
     "id": "screen-wake-lock",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=158955",
