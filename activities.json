@@ -457,6 +457,18 @@
   },
   {
     "ciuName": null,
+    "description": "Reducing the scope of cookies by including the URL scheme in their keying material as well as reducing the lifetime of non-secure cookies.",
+    "id": "scheming-cookies",
+    "mozBugUrl": null,
+    "mozPosition": "important",
+    "mozPositionDetail": "Reducing the scope of cookies along this axis is a major win.",
+    "mozPositionIssue": 298,
+    "org": "Proposal",
+    "title": "Scheme-Bound Cookies",
+    "url": "https://github.com/mikewest/scheming-cookies"
+  },
+  {
+    "ciuName": null,
     "description": "This document specifies an API that allows web applications to request a screen wake lock. Under the right conditions, and if allowed, the screen wake lock prevents the system from turning off a device's screen.",
     "id": "screen-wake-lock",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=158955",
