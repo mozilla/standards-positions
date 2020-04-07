@@ -277,6 +277,18 @@
   },
   {
     "ciuName": null,
+    "description": "This proposal gives web applications a way to register their ability to handle (read, stream, edit) files with given MIME types and/or file extensions.",
+    "id": "wicg-file-handling",
+    "mozBugUrl": null,
+    "mozPosition": "defer",
+    "mozPositionDetail": "Not far enough along to properly evaluate.",
+    "mozPositionIssue": 158,
+    "org": "Proposal",
+    "title": "File Handling",
+    "url": "https://github.com/WICG/file-handling/blob/master/explainer.md"
+  },
+  {
+    "ciuName": null,
     "description": "A proposal for using URL fragments with spaces in them to select a bit of text to highlight and scroll to",
     "id": "fragmentation",
     "mozBugUrl": null,
