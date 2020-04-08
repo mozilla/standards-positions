@@ -756,6 +756,18 @@
     "url": "https://iot.mozilla.org/wot/"
   },
   {
+    "ciuName": "",
+    "description": "Use cases about providing guarantees to users about the privacy of their WebRTC videoconferencing when the servers are not trusted but the JavaScript is.",
+    "id": "webrtc-nv-use-cases-trusted-js",
+    "mozBugUrl": null,
+    "mozPosition": "harmful",
+    "mozPositionDetail": "We believe the \"Untrusted JS\" alternative would allow browsers to provide useful guarantees to users about the security of their videoconferencing, but the \"Trusted JS\" variant would not, and seems likely to add unnecessary complexity.",
+    "mozPositionIssue": 205,
+    "org": "Proposal",
+    "title": "WebRTC Next Version Use Cases: Trusted JavaScript",
+    "url": "https://github.com/w3c/webrtc-nv-use-cases/pull/49/files"
+  },
+  {
     "ciuName": "webusb",
     "description": "This document describes an API for securely providing access to Universal Serial Bus devices from web pages.",
     "id": "webusb",
