@@ -564,6 +564,18 @@
     "url": "https://tools.ietf.org/html/draft-yasskin-http-origin-signed-responses"
   },
   {
+    "ciuName": "",
+    "description": "The Storage Access API provides a means for authenticated cross-site embeds to check their blocking status and request access to storage if they are blocked.",
+    "id": "storage-access-api",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1469714",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "In our current efforts to limit the impact of cross-site tracking there are cases where we may unintentionally break parts of web pages that users depend on. The storage access API provides a programmatic way for affected embedded content to fix these types of broken experiences for the user.  Also, in our upcoming efforts to limit the potential capabilities for unknown third-parties to track the user, we would like to continue to restrict the storage capabilities of the third-party context. The storage access API similarly provides a programmatic path for the embedded widgets which cannot work correctly without access to their data.  It isn't an ideal solution, for example our implementation falls back to prompting the user if it cannot automatically determine whether access should be granted or not, but it is a step in the right direction in the game of reversing the current defaults of the web, that is granting permissive storage access rights to all third-party contexts unconditionally.",
+    "mozPositionIssue": 280,
+    "org": "Proposal",
+    "title": "Storage Access API",
+    "url": "https://github.com/privacycg/storage-access"
+  },
+  {
     "ciuName": "streams",
     "description": "This specification provides APIs for creating, composing, and consuming streams of data that map efficiently to low-level I/O primitives.",
     "id": "streams",
