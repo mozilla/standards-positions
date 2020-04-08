@@ -300,6 +300,18 @@
     "url": "https://indieweb.org/fragmention"
   },
   {
+    "ciuName": null,
+    "description": "The Get Installed Related Apps API allows web apps to detect if related apps are installed on the current device.",
+    "id": "get-installed-related-apps",
+    "mozBugUrl": null,
+    "mozPosition": "harmful",
+    "mozPositionDetail": "This feature increases the fingerprinting surface of browsers without sufficient safeguards.",
+    "mozPositionIssue": 213,
+    "org": "Proposal",
+    "title": "Get Installed Related Apps API",
+    "url": "https://wicg.github.io/get-installed-related-apps/spec"
+  },
+  {
     "ciuName": "imports",
     "description": "HTML Imports are a way to include and reuse HTML documents in other HTML documents.",
     "id": "html-imports",
