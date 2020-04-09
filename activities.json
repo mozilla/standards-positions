@@ -862,5 +862,17 @@
     "org": "WHATWG",
     "title": "template element",
     "url": "https://html.spec.whatwg.org/multipage/scripting.html#the-template-element"
+  },
+  {
+    "ciuName": null,
+    "description": "An event that fires when the user's timezone changes.",
+    "id": "timezonechange-event",
+    "mozBugUrl": null,
+    "mozPosition": "defer",
+    "mozPositionDetail": "Whether and how the event is deferred in order to make it harder to track users across sites using the timing of this event has not yet been decided, and that decision is likely to influence our position.",
+    "mozPositionIssue": 241,
+    "org": "WHATWG",
+    "title": "timezonechange event",
+    "url": "https://github.com/whatwg/html/pull/3047"
   }
 ]
