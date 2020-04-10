@@ -349,6 +349,18 @@
   },
   {
     "ciuName": null,
+    "description": "<video>.requestVideoFrameCallback() allows web authors to be notified when a frame has been presented for composition.",
+    "id": "requestVideoFrameCallback",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This is intended to allow web authors to do efficient per-video-frame processing of video, such as video processing and painting to a canvas, video analysis, or synchronization with external audio sources.",
+    "mozPositionIssue": 250,
+    "org": "Proposal",
+    "title": "HTMLVideoElement.requestVideoFrameCallback()",
+    "url": "https://wicg.github.io/video-rvfc"
+  },
+  {
+    "ciuName": null,
     "description": "This document defines two independent HTTP Cache-Control extensions that allow control over the use of stale responses by caches. This document is not an Internet Standards Track specification; it is published for informational purposes.",
     "id": "http-stale-controls",
     "mozBugUrl": null,
