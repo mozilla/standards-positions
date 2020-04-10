@@ -360,6 +360,18 @@
     "url": "https://tools.ietf.org/html/draft-ietf-httpbis-client-hints"
   },
   {
+    "ciuName": null,
+    "description": "This specification defines an API that allows websites to convert from a given code value to a valid key value that can be shown to the user to identify the given key. The conversion from code to key is based on the user\u2019s currently selected keyboard layout. It is intended to be used by web applications that want to treat the keyboard as a set of buttons and need to describe those buttons to the user.",
+    "id": "keyboard-map",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1469017",
+    "mozPosition": "harmful",
+    "mozPositionDetail": "We're concerned that this exposes keyboard layouts, which seem likely to be a significant source of fingerprinting data, in a way that does not require any user interaction.",
+    "mozPositionIssue": 300,
+    "org": "Proposal",
+    "title": "Keyboard Map",
+    "url": "https://wicg.github.io/keyboard-map"
+  },
+  {
     "ciuName": "loading-lazy-attr",
     "description": "Enabling images to be fetched at a later time, when the user is likely to look at them.",
     "id": "loading-lazy-attr",
