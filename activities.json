@@ -853,7 +853,7 @@
   },
   {
     "ciuName": null,
-    "description": "The new scroll events introduced in this document provides web developers a way to listen to the state of the scrolling and when their content is being overscrolled or when the scrolling has finished. This information will be useful for the effects such as pull to refresh or history swipe navigations in the web apps.",
+    "description": "The new scroll events introduced in this document provide web developers a way to listen to the state of the scrolling and when their content is being overscrolled or when the scrolling has finished. This information will be useful for the effects such as pull to refresh or history swipe navigations in the web apps.",
     "id": "scrollend and overscroll events",
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
