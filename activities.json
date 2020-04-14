@@ -749,7 +749,7 @@
     "id": "web-nfc",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1308614",
     "mozPosition": "harmful",
-    "mozPositionDetail": "We believe WebNFC poses risks to users security and privacy because of both the wide range of functionality of the existing NFC devices on which it would be supported, and because of the difficulty of meaningfully asking the user for permission to share or write data when the browser cannot explain to the user what is being shared or written.",
+    "mozPositionDetail": "We believe WebNFC poses risks to users security and privacy because of the wide range of functionality of the existing NFC devices on which it would be supported, because there is no system for ensuring that private information is not accidentally exposed other than relying on user consent, and because of the difficulty of meaningfully asking the user for permission to share or write data when the browser cannot explain to the user what is being shared or written.",
     "mozPositionIssue": 238,
     "org": "Proposal",
     "title": "Web NFC",
