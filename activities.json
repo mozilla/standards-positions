@@ -469,6 +469,18 @@
   },
   {
     "ciuName": null,
+    "description": "Powerful web applications would like to exchange data with native applications via the OS clipboard (copy-paste). The existing Web Platform has a high-level API that supports the most popular standardized data types (text, image, rich text) across all platforms. However, this API does not scale to the long tail of specialized formats. In particular, non-web-standard formats like TIFF (a large image format), and proprietary formats like .docx (a document format), are not supported by the current Web Platform. Raw Clipboard Access aims to provide a low-level API solution to this problem, by implementing copying and pasting of data with any arbitrary Clipboard type, without encoding and decoding.",
+    "id": "raw-clipboard-access",
+    "mozBugUrl": null,
+    "mozPosition": "harmful",
+    "mozPositionDetail": "The current proposal has significant risks of attacks on native applications.  Some of these attacks may be mitigated by pickling or other similar solutions.  If such a solution is incorporated, we would be willing to reevaluate this proposal.",
+    "mozPositionIssue": 206,
+    "org": "Proposal",
+    "title": "Raw Clipboard Access",
+    "url": "https://github.com/WICG/raw-clipboard-access/"
+  },
+  {
+    "ciuName": null,
     "description": "This document defines a generic reporting framework which allows web developers to associate a set of named reporting endpoints with an origin. Various platform features can use these endpoints to deliver feature-specific reports in a consistent manner.",
     "id": "reporting",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1620573",
