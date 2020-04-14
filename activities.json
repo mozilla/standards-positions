@@ -13,6 +13,18 @@
   },
   {
     "ciuName": null,
+    "description": "This document describes an API providing access to accelerated shape detectors (e.g. human faces) for still images and/or live image feeds.",
+    "id": "shape-detection-api",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1553738",
+    "mozPosition": "defer",
+    "mozPositionDetail": "We're concerned about possible complexity, variations in support between operating systems, and possible fingerprinting surface, but we'd like to wait and see how this proposal evolves.",
+    "mozPositionIssue": 21,
+    "org": "Proposal",
+    "title": "Accelerated Shape Detection in Images",
+    "url": "https://wicg.github.io/shape-detection-api"
+  },
+  {
+    "ciuName": null,
     "description": "This memo introduces an informational HTTP status code that can be used to convey hints that help a client make preparations for processing the final response.",
     "id": "http-early-hints",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1407355",
