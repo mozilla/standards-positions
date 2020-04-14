@@ -49,6 +49,18 @@
   },
   {
     "ciuName": null,
+    "description": "Bundled exchanges provide a way to bundle up groups of HTTP request+response pairs to transmit or store them together. They can include multiple top-level resources with one identified as the default by a manifest, provide random access to their component exchanges, and efficiently store 8-bit resources.",
+    "id": "bundled-exchanges",
+    "mozBugUrl": null,
+    "mozPosition": "under consideration",
+    "mozPositionDetail": null,
+    "mozPositionIssue": 264,
+    "org": "Proposal",
+    "title": "Bundled HTTP Exchanges",
+    "url": "https://tools.ietf.org/html/draft-yasskin-wpack-bundled-exchanges"
+  },
+  {
+    "ciuName": null,
     "description": "This draft defines additions to CSS Grid, primarily for the subgrid feature.",
     "id": "subgrid",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1349043",
