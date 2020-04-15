@@ -219,7 +219,7 @@
                       bugArray = [bugArray];
                     }
                     for (var bug of bugArray) {
-                      out += "<a href='" + bug + "' title='mozilla bug'><span class='glyphicon glyphicon-link' aria-hidden='true'></span><span class='sr-only'>mozilla bug</span></a> "
+                      out += `<a href='${bug}' title='mozilla bug'><span class='glyphicon glyphicon-link' aria-hidden='true'></span><span class='sr-only'>mozilla bug</span></a> `;
                     }
                   }
                   if (row.ciuName && row.ciuName !== "") {

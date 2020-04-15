@@ -305,7 +305,7 @@
     "id": "form-participation-api",
     "mozBugUrl": [ "https://bugzilla.mozilla.org/show_bug.cgi?id=1518442", "https://bugzilla.mozilla.org/show_bug.cgi?id=1552327" ],
     "mozPosition": "worth prototyping",
-    "mozPositionDetail": "These propose what seems likely to be a useful addition to allow costom controls to participate in form validation and submission.",
+    "mozPositionDetail": "These propose what seems likely to be a useful addition to allow custom controls to participate in form validation and submission.",
     "mozPositionIssue": 150,
     "org": "WHATWG",
     "title": "Form Particpation API",
