@@ -326,12 +326,12 @@
   {
     "ciuName": null,
     "description": "A proposal for using URL fragments with spaces in them to select a bit of text to highlight and scroll to",
-    "id": "fragmentation",
+    "id": "fragmention",
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
     "mozPositionDetail": "We feel that some of the use cases this proposal addresses are very important to address, but worry about the lack of a clear processing model and about possible compat constraints that may need implementation experience to fully understand.  More details are in the position issue.  See also the position on Scroll to Text Fragment, which aims to address similar use cases.",
     "mozPositionIssue": 234,
-    "org": "Other",
+    "org": "Proposal",
     "title": "Fragmention",
     "url": "https://indieweb.org/fragmention"
   },
