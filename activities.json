@@ -45,7 +45,7 @@
     "mozPositionIssue": 108,
     "org": "Proposal",
     "title": "Badging API",
-    "url": "https://wicg.github.io/badging"
+    "url": "https://wicg.github.io/badging/"
   },
   {
     "ciuName": null,
@@ -57,7 +57,7 @@
     "mozPositionIssue": 65,
     "org": "Ecma",
     "title": "BigInt",
-    "url": "https://tc39.github.io/proposal-bigint"
+    "url": "https://tc39.github.io/proposal-bigint/"
   },
   {
     "ciuName": null,
@@ -165,7 +165,7 @@
     "mozPositionIssue": 90,
     "org": "W3C",
     "title": "Clear Site Data",
-    "url": "https://w3c.github.io/webappsec-clear-site-data"
+    "url": "https://w3c.github.io/webappsec-clear-site-data/"
   },
   {
     "ciuName": null,
@@ -213,7 +213,7 @@
     "mozPositionIssue": 288,
     "org": "Proposal",
     "title": "Crash Reporting",
-    "url": "https://wicg.github.io/crash-reporting"
+    "url": "https://wicg.github.io/crash-reporting/"
   },
   {
     "ciuName": null,
@@ -225,7 +225,7 @@
     "mozPositionIssue": 172,
     "org": "W3C",
     "title": "Credential Management Level 1",
-    "url": "https://w3c.github.io/webappsec-credential-management"
+    "url": "https://w3c.github.io/webappsec-credential-management/"
   },
   {
     "ciuName": null,
@@ -285,7 +285,7 @@
     "mozPositionIssue": 24,
     "org": "Proposal",
     "title": "Feature Policy",
-    "url": "https://wicg.github.io/feature-policy"
+    "url": "https://wicg.github.io/feature-policy/"
   },
   {
     "ciuName": null,
@@ -405,7 +405,7 @@
     "mozPositionIssue": 300,
     "org": "Proposal",
     "title": "Keyboard Map",
-    "url": "https://wicg.github.io/keyboard-map"
+    "url": "https://wicg.github.io/keyboard-map/"
   },
   {
     "ciuName": "loading-lazy-attr",
@@ -441,7 +441,7 @@
     "mozPositionIssue": 154,
     "org": "Proposal",
     "title": "Native File System",
-    "url": "https://wicg.github.io/native-file-system"
+    "url": "https://wicg.github.io/native-file-system/"
   },
   {
     "ciuName": null,
@@ -465,7 +465,7 @@
     "mozPositionIssue": 160,
     "org": "Proposal",
     "title": "Origin Policy",
-    "url": "https://wicg.github.io/origin-policy"
+    "url": "https://wicg.github.io/origin-policy/"
   },
   {
     "ciuName": null,
@@ -513,7 +513,7 @@
     "mozPositionIssue": 19,
     "org": "W3C",
     "title": "Permissions",
-    "url": "https://w3c.github.io/permissions"
+    "url": "https://w3c.github.io/permissions/"
   },
   {
     "ciuName": null,
@@ -525,7 +525,7 @@
     "mozPositionIssue": 72,
     "org": "Proposal",
     "title": "Picture-in-Picture",
-    "url": "https://wicg.github.io/picture-in-picture"
+    "url": "https://wicg.github.io/picture-in-picture/"
   },
   {
     "ciuName": null,
@@ -549,7 +549,7 @@
     "mozPositionIssue": 104,
     "org": "W3C",
     "title": "Reporting API",
-    "url": "https://w3c.github.io/reporting"
+    "url": "https://w3c.github.io/reporting/"
   },
   {
     "ciuName": null,
@@ -789,7 +789,7 @@
     "mozPositionIssue": 163,
     "org": "W3C",
     "title": "Web Authentication: An API for accessing Public Key Credentials",
-    "url": "https://w3c.github.io/webauthn"
+    "url": "https://w3c.github.io/webauthn/"
   },
   {
     "ciuName": "background-sync",
@@ -813,7 +813,7 @@
     "mozPositionIssue": 73,
     "org": "Proposal",
     "title": "Web Budget API",
-    "url": "https://wicg.github.io/budget-api"
+    "url": "https://wicg.github.io/budget-api/"
   },
   {
     "ciuName": null,
@@ -837,7 +837,7 @@
     "mozPositionIssue": 58,
     "org": "W3C",
     "title": "Web MIDI API",
-    "url": "https://webaudio.github.io/web-midi-api"
+    "url": "https://webaudio.github.io/web-midi-api/"
   },
   {
     "ciuName": null,
@@ -849,7 +849,7 @@
     "mozPositionIssue": 238,
     "org": "Proposal",
     "title": "Web NFC",
-    "url": "https://w3c.github.io/web-nfc"
+    "url": "https://w3c.github.io/web-nfc/"
   },
   {
     "ciuName": "web-share",
@@ -861,7 +861,7 @@
     "mozPositionIssue": 27,
     "org": "W3C",
     "title": "Web Share API",
-    "url": "https://w3c.github.io/web-share"
+    "url": "https://w3c.github.io/web-share/"
   },
   {
     "ciuName": null,
@@ -873,7 +873,7 @@
     "mozPositionIssue": 27,
     "org": "Proposal",
     "title": "Web Share Target API",
-    "url": "https://wicg.github.io/web-share-target"
+    "url": "https://wicg.github.io/web-share-target/"
   },
   {
     "ciuName": null,
@@ -921,7 +921,7 @@
     "mozPositionIssue": 259,
     "org": "Proposal",
     "title": "WebXR Hit Test Module",
-    "url": "https://immersive-web.github.io/hit-test"
+    "url": "https://immersive-web.github.io/hit-test/"
   },
   {
     "ciuName": null,
