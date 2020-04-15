@@ -325,6 +325,18 @@
   },
   {
     "ciuName": null,
+    "description": "An API to enable objects other than built-in form control elements to participate in form submission, form validation, and so on.",
+    "id": "form-participation-api",
+    "mozBugUrl": [ "https://bugzilla.mozilla.org/show_bug.cgi?id=1518442", "https://bugzilla.mozilla.org/show_bug.cgi?id=1552327" ],
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "These propose what seems likely to be a useful addition to allow custom controls to participate in form validation and submission.",
+    "mozPositionIssue": 150,
+    "org": "WHATWG",
+    "title": "Form Particpation API",
+    "url": "https://github.com/whatwg/html/pull/4383"
+  },
+  {
+    "ciuName": null,
     "description": "A proposal for using URL fragments with spaces in them to select a bit of text to highlight and scroll to",
     "id": "fragmention",
     "mozBugUrl": null,
