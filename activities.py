@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -8,7 +8,7 @@
 Validate and add entries to activities.json, a file containing standards efforts that
 are interesting to Mozilla.
 
-Requires Python 2 or 3, and BeautifulSoup 4, requests and html5lib; e.g.,
+Requires Python 3, BeautifulSoup 4, requests and html5lib; e.g.,
 
 > pip install beautifulsoup4 requests html5lib
 """
@@ -30,7 +30,7 @@ try:
     from requests.auth import HTTPBasicAuth
 except ImportError:
     sys.stderr.write("ERROR: Dependency not available. Try:\n")
-    sys.stderr.write("       > pip install --user beautifulsoup4 requests html5lib\n\n")
+    sys.stderr.write("       > pip3 install --user beautifulsoup4 requests html5lib\n\n")
     sys.exit(1)
 
 
