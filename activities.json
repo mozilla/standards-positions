@@ -1,6 +1,18 @@
 [
   {
     "ciuName": null,
+    "description": "Adds imagesrcset and imagesizes attributes to <link> which correspond to the srcset and sizes attributes of <img> respectively, for the purposes of preloading.",
+    "id": "image-preload",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1515760",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "A relevant aspect of <link rel=preload> support.",
+    "mozPositionIssue": 130,
+    "org": "WHATWG",
+    "title": "<link>'s imagesrcset and imagesizes attributes",
+    "url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset"
+  },
+  {
+    "ciuName": null,
     "description": "",
     "id": "aria-annotations",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1608975",
