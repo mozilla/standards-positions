@@ -780,6 +780,18 @@
     "url": "https://wicg.github.io/budget-api"
   },
   {
+    "ciuName": null,
+    "description": "An API that allows web applications to encode and decode audio and video",
+    "id": "web-codecs",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This proposes a coherent set of APIs to address encoding and decoding of video and audio, which is designed to be extensible, composable, and address real use cases with good performance.",
+    "mozPositionIssue": 209,
+    "org": "Proposal",
+    "title": "Web Codecs",
+    "url": "https://github.com/WICG/web-codecs"
+  },
+  {
     "ciuName": "midi",
     "description": "This specification defines an API supporting the MIDI (Musical Instrument Digital Interface) protocol, enabling web applications to enumerate and select MIDI input and output devices on the client system and send and receive MIDI messages. It is intended to enable non-music MIDI applications as well as music ones, by providing low-level access to the MIDI devices available on the users' systems.",
     "id": "webmidi",
