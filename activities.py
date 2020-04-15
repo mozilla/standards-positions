@@ -47,8 +47,13 @@ class UrlType(object):
     "indicates a URL."
     pass
 
+class UrlArrayType(object):
+    "indicates a URL or array of URLs."
+    pass
+
 
 StringType = type(u"")
+ArrayType = type([])
 
 
 class ActivitiesJson(object):
@@ -64,7 +69,7 @@ class ActivitiesJson(object):
         ("org", True, ["W3C", "IETF", "Ecma", "WHATWG", "Unicode", "Proposal", "Other"]),
         ("group", False, StringType),
         ("url", True, UrlType),
-        ("mozBugUrl", False, UrlType),
+        ("mozBugUrl", False, UrlArrayType),
         ("mozPositionIssue", False, int),
         (
             "mozPosition",
@@ -176,10 +181,21 @@ class ActivitiesJson(object):
                 if entry_value is None:
                     pass
                 elif value_type == UrlType:
-                    if not isinstance(entry_value, StringType):
-                        errors.append("%s's %s isn't a URL string." % (title, name))
+                    if isinstance(entry_value, StringType):
+                        pass # FIXME: validate URL more?
                     else:
-                        pass  # FIXME
+                        errors.append("%s's %s isn't a URL string." % (title, name))
+                elif value_type == UrlArrayType:
+                    if isinstance(entry_value, StringType):
+                        pass # FIXME: validate URL more?
+                    elif isinstance(entry_value, ArrayType):
+                        for url in entry_value:
+                            if isinstance(url, StringType):
+                                pass # FIXME: validate URL more?
+                            else:
+                                errors.append("%s's %s isn't a URL string or array of them." % (title, name))
+                    else:
+                        errors.append("%s's %s isn't a URL string or array of them." % (title, name))
                 elif isinstance(value_type, type):
                     if not isinstance(entry_value, value_type):
                         errors.append("%s's %s isn't a %s" % (title, name, value_type))

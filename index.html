@@ -213,7 +213,14 @@
                     out += "<a href='https://github.com/" + REPO_OWNER + "/" + REPO_NAME + "/issues/" + row.mozPositionIssue + "' title='position discussion'><span class='glyphicon glyphicon-book' aria-hidden='true'></span><span class='sr-only'>position discussion</span></a> "
                   }
                   if (row.mozBugUrl && row.mozBugUrl !== "") {
-                    out += "<a href='" + row.mozBugUrl + "' title='mozilla bug'><span class='glyphicon glyphicon-link' aria-hidden='true'></span><span class='sr-only'>mozilla bug</span></a> "
+                    // Allow either a string or an array of strings.
+                    var bugArray = row.mozBugUrl;
+                    if (!Array.isArray(bugArray)) {
+                      bugArray = [bugArray];
+                    }
+                    for (var bug of bugArray) {
+                      out += "<a href='" + bug + "' title='mozilla bug'><span class='glyphicon glyphicon-link' aria-hidden='true'></span><span class='sr-only'>mozilla bug</span></a> "
+                    }
                   }
                   if (row.ciuName && row.ciuName !== "") {
                     out += "<a href='https://caniuse.com/#feat=" + row.ciuName + "' title='caniuse'><span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span><span class='sr-only'>caniuse</span></a> "
