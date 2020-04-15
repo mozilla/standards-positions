@@ -18,11 +18,7 @@ import json
 import os
 import re
 import sys
-
-try:
-    from urllib.parse import urlsplit, urlunsplit
-except ImportError:
-    from urlparse import urlsplit, urlunsplit
+from urllib.parse import urlsplit, urlunsplit
 
 try:
     from bs4 import BeautifulSoup
