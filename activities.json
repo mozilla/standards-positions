@@ -426,7 +426,7 @@
     "mozBugUrl": null,
     "mozPosition": "harmful",
     "mozPositionDetail": "This API provides information about a client's network connection, which allows sites to obtain additional information about clients and their environment. It is better that sites use methods that dynamically adapt to available bandwidth, as that is more accurate and likely to be applicable in the moment.",
-    "mozPositionIssue": null,
+    "mozPositionIssue": 117,
     "org": "Proposal",
     "title": "Network Information API",
     "url": "https://wicg.github.io/netinfo"
