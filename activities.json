@@ -445,6 +445,30 @@
   },
   {
     "ciuName": null,
+    "description": "This specification defines capabilities that enable Web applications to handle requests for payment.",
+    "id": "payment-handler",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1465682",
+    "mozPosition": "defer",
+    "mozPositionDetail": "We believe this is worth working on because it is an important part of making an open and secure payments ecosystem for the web.  At the same time, we're quite concerned about the tradeoffs being made between extensibility and the user interface that is best for users' security, and we might take a substantially different position from the current direction of that work, such as by limiting the ability for payment handlers to show UI when invoked from another page, or even by standardizing a set of handlers instead of having an extensible handler mechanism.  So our eventual position will depend on how these tradeoffs are made.",
+    "mozPositionIssue": 23,
+    "org": "W3C",
+    "title": "Payment Handler API",
+    "url": "https://w3c.github.io/payment-handler"
+  },
+  {
+    "ciuName": null,
+    "description": "This specification defines the machine-readable manifest file, known as a payment method manifest, describing how a payment method participates in the Web Payments ecosystem, and how such files are to be used.",
+    "id": "payment-method-manifest",
+    "mozBugUrl": null,
+    "mozPosition": "defer",
+    "mozPositionDetail": "We'd like to defer this for the same reasons as Payment Handler, given that it is closely related.",
+    "mozPositionIssue": 22,
+    "org": "W3C",
+    "title": "Payment Method Manifest",
+    "url": "https://w3c.github.io/payment-method-manifest"
+  },
+  {
+    "ciuName": null,
     "description": "This specification describes a method that enables web applications to synchronize data in the background.",
     "id": "periodic-background-sync",
     "mozBugUrl": null,
