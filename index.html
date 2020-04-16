@@ -113,8 +113,14 @@
           "harmful": "danger"
         }
 
-        var REPO_OWNER = "mozilla"
-        var REPO_NAME = "standards-positions"
+        var REPO_OWNER = "mozilla";
+        var REPO_NAME = "standards-positions";
+
+        function iconLink(url, text, icon) {
+          return `<a href='${url || "javascript:void(0)"}' title='${text}'>`
+            + `<span class='glyphicon glyphicon-${icon}' aria-hidden='true'></span>`
+            + `<span class='sr-only'>${text}</span></a> `;
+        }
 
         $.fn.dataTable.enum( [ "under consideration", "important",
                                "worth prototyping", "non-harmful",
@@ -136,7 +142,7 @@
                 "render": function (data, type, row) {
                   var id = data.id;
                   if (id != "") {
-                    return "<a href='#" + id + "'><span class='glyphicon glyphicon-link' aria-hidden='true'></span><span class='sr-only'>link</span></a>";
+                    return iconLink('#' + id, 'link', 'link');
                   }
                   return "";
                 },
@@ -153,7 +159,7 @@
                   if (data !== "") {
                     var extension = ".svg"
                     if (data === "Proposal") {
-                      return "<a href='javascript:void(0)'><span class='glyphicon glyphicon-user' aria-hidden='true'></span><span class='sr-only'>Proposal</span></a>"
+                      return iconLink(null, 'Proposal', 'user');
                     }
                     if (data === "Ecma") {
                       data = "JS"
@@ -199,7 +205,7 @@
                 "render": function (data, type, row) {
                   if ((row.description && row.description !== "") ||
                       (row.details && row.details !== "")) {
-                    return "<a href='javascript:void(0)'><span class='glyphicon glyphicon-info-sign' aria-hidden='true'></span><span class='sr-only'>details</span></a>"
+                    return iconLink(null, 'details', 'info-sign');
                   } else {
                     return ""
                   }
@@ -207,10 +213,10 @@
               },
               {
                 "data": "null",
-                "render": function ( data, type, row) {
-                  var out = ""
+                "render": function (data, type, row) {
+                  var out = "";
                   if (row.mozPositionIssue && row.mozPositionIssue !== "") {
-                    out += "<a href='https://github.com/" + REPO_OWNER + "/" + REPO_NAME + "/issues/" + row.mozPositionIssue + "' title='position discussion'><span class='glyphicon glyphicon-book' aria-hidden='true'></span><span class='sr-only'>position discussion</span></a> "
+                    out += iconLink(`https://github.com/${REPO_OWNER}/${REPO_NAME}/issues/${row.mozPositionIssue}`, 'position discussion', 'comment');
                   }
                   if (row.mozBugUrl && row.mozBugUrl !== "") {
                     // Allow either a string or an array of strings.
@@ -219,13 +225,13 @@
                       bugArray = [bugArray];
                     }
                     for (var bug of bugArray) {
-                      out += `<a href='${bug}' title='mozilla bug'><span class='glyphicon glyphicon-link' aria-hidden='true'></span><span class='sr-only'>mozilla bug</span></a> `;
+                      out += iconLink(bug, 'mozilla bug', 'wrench');
                     }
                   }
                   if (row.ciuName && row.ciuName !== "") {
-                    out += "<a href='https://caniuse.com/#feat=" + row.ciuName + "' title='caniuse'><span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span><span class='sr-only'>caniuse</span></a> "
+                    out += iconLink(`https://caniuse.com/#feat=${row.ciuName}`, 'caniuse', 'question-sign');
                   }
-                  return out
+                  return out;
                 },
                 "orderable": false,
                 "searchable": false
