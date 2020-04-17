@@ -204,7 +204,7 @@
                 "defaultContent": '',
                 "render": function (data, type, row) {
                   if ((row.description && row.description !== "") ||
-                      (row.details && row.details !== "")) {
+                      (row.mozPositionDetail && row.mozPositionDetail !== "")) {
                     return iconLink(null, 'details', 'info-sign');
                   } else {
                     return ""
