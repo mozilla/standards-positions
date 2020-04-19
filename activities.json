@@ -1009,6 +1009,18 @@
   },
   {
     "ciuName": null,
+    "description": "The new scroll events introduced in this document provide web developers a way to listen to the state of the scrolling and when their content is being overscrolled or when the scrolling has finished. This information will be useful for the effects such as pull to refresh or history swipe navigations in the web apps.",
+    "id": "scrollend and overscroll events",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "We believe these are likely to provide frequently-requested functionality that is useful for many web applications.",
+    "mozPositionIssue": 240,
+    "org": "Proposal",
+    "title": "scrollend and overscroll events",
+    "url": "https://github.com/w3c/csswg-drafts/pull/4537"
+  },
+  {
+    "ciuName": null,
     "description": "The template element is used to declare fragments of HTML that can be cloned and inserted in the document by script.",
     "id": "template-element",
     "mozBugUrl": null,
