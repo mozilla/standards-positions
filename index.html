@@ -255,6 +255,19 @@
           }
         }
 
+        function open_row(row, tr) {
+          var extra_data = format(row.data());
+          if (extra_data !== "") {
+            row.child( extra_data ).show();
+            tr.classList.add('shown');
+          }
+        }
+
+        function close_row(row, tr) {
+          row.child.hide();
+          tr.classList.remove('shown');
+        }
+
         // Add event listener for opening and closing details
         $('#mozPositions').find('tbody').on('click', 'td', function (event) {
           var a = $(event.target).closest('a');
@@ -266,20 +279,15 @@
             return;
           }
 
-          var tr = $(this).closest('tr');
+          var tr = $(this).closest('tr')[0];
           var row = ptable.row( tr );
           if ( row.child.isShown() ) {
             // This row is already open - close it
-            row.child.hide();
-            tr.removeClass('shown');
+            close_row(row, tr);
           }
           else {
             // Open this row
-            var extra_data = format(row.data());
-            if (extra_data !== "") {
-              row.child( format(row.data()) ).show();
-              tr.addClass('shown');
-            }
+            open_row(row, tr);
           }
         } );
 
@@ -299,6 +307,22 @@
             }, 0);
           }
         } );
+
+        window.addEventListener("hashchange", function (event) {
+          var hash = location.hash.slice(1);
+          if (hash == "") {
+            return;
+          }
+
+          var tr = document.getElementById(hash);
+          if (!tr) {
+            return;
+          }
+
+          // Open the row that is now the target.
+          var row = ptable.row( tr );
+          open_row(row, tr);
+        });
     })
     </script>
   </body>
