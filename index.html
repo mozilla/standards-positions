@@ -258,7 +258,7 @@
         function open_row(row, tr) {
           var extra_data = format(row.data());
           if (extra_data !== "") {
-            row.child( format(row.data()) ).show();
+            row.child( extra_data ).show();
             tr.classList.add('shown');
           }
         }
