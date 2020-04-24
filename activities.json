@@ -133,6 +133,18 @@
   },
   {
     "ciuName": null,
+    "description": "The @property rule represents a custom property registration directly in a stylesheet without having to run any JS.",
+    "id": "at-property",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "Having a declarative registration mechanism for custom properties is a good addition to CSS Properties and Values API.",
+    "mozPositionIssue": 331,
+    "org": "W3C",
+    "title": "CSS Properties and Values API: @property",
+    "url": "https://drafts.css-houdini.org/css-properties-values-api-1#at-property-rule"
+  },
+  {
+    "ciuName": null,
     "description": "This specification defines the ::part() and ::theme() pseudo-elements on shadow hosts, allowing shadow hosts to selectively expose chosen elements from their shadow tree to the outside page for styling purposes.",
     "id": "css-shadow-parts",
     "mozBugUrl": null,
