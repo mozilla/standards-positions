@@ -676,6 +676,18 @@
   },
   {
     "ciuName": null,
+    "description": "The Serial API provides a way for websites to read and write from a serial device through script. Such an API would bridge the web and the physical world, by allowing documents to communicate with devices such as microcontrollers, 3D printers, and other serial devices. There is also a companion explainer document.",
+    "id": "webserial",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=webserial",
+    "mozPosition": "harmful",
+    "mozPositionDetail": "Devices that offer serial interfaces often expose powerful, low-level functions over the interface with little or no authentication. Exposing that sort of capability to the web without adequate safeguards presents a significant threat to those devices.",
+    "mozPositionIssue": 336,
+    "org": "Proposal",
+    "title": "Serial API",
+    "url": "https://wicg.github.io/serial"
+  },
+  {
+    "ciuName": null,
     "description": "This document specifies the \"SVCB\" and \"HTTPSSVC\" DNS resource record types to facilitate the lookup of information needed to make connections for origin resources, such as for HTTPS URLs. SVCB records allow an origin to be served from multiple network locations, each with associated parameters (such as transport protocol configuration and keying material for encrypting TLS SNI). They also enable aliasing of apex domains, which is not possible with CNAME. The HTTPSSVC DNS RR is a variation of SVCB for HTTPS and HTTP origins. By providing more information to the client before it attempts to establish a connection, these records offer potential benefits to both performance and privacy.",
     "id": "dnsop-svcb-httpssvc",
     "mozBugUrl": null,
