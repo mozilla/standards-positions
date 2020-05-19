@@ -1070,4 +1070,15 @@
     "title": "timezonechange event",
     "url": "https://github.com/whatwg/html/pull/3047"
   }
+  {
+    "ciuName": "webgpu",
+    "description": "This specification describes support for accessing modern 3D graphics and GPU computation capabilities on the Web.",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602129",
+    "mozPosition": "important",
+    "mozPositionDetail": "We believe that WebGPU is a key to enable more interactive and content-rich applications on the Web than currently possible with WebGL. It's an API that is future-looking and can scale better to the capabilities of the GPUs, with less overhead for the users. Firefox Nightly has a prototype implementation behind a pref that was able to run the WebGPU examples as of April 2020.",
+    "mozPositionIssue": 239,
+    "org": "W3C",
+    "title": "WebGPU API",
+    "url": "https://gpuweb.github.io/gpuweb/"
+  },
 ]
