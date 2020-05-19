@@ -1077,7 +1077,7 @@
     "mozPosition": "important",
     "mozPositionDetail": "We believe that WebGPU is key to enable more interactive and content-rich applications on the Web than currently possible with WebGL. It's an API that is future-looking and can scale better to the capabilities of GPUs, with less overhead for users. Firefox Nightly has a prototype implementation behind a pref that was able to run the WebGPU examples as of April 2020.",
     "mozPositionIssue": 239,
-    "org": "W3C",
+    "org": "proposal",
     "title": "WebGPU API",
     "url": "https://gpuweb.github.io/gpuweb/"
   }
