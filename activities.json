@@ -903,6 +903,18 @@
     "url": "https://github.com/WICG/web-codecs"
   },
   {
+    "ciuName": "webgpu",
+    "description": "This specification describes support for accessing modern 3D graphics and GPU computation capabilities on the Web.",
+    "id": "webgpu",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602129",
+    "mozPosition": "important",
+    "mozPositionDetail": "We believe that WebGPU is key to enable more interactive and content-rich applications on the Web than currently possible with WebGL. WebGPU can scale better to the capabilities of GPUs with less overhead for users because it's modelled after the intersection of the modern native GPU APIs, so allows developers to express the GPU workloads more explicitly.",
+    "mozPositionIssue": 239,
+    "org": "Proposal",
+    "title": "Web GPU API",
+    "url": "https://gpuweb.github.io/gpuweb/"
+  },
+  {
     "ciuName": "midi",
     "description": "This specification defines an API supporting the MIDI (Musical Instrument Digital Interface) protocol, enabling web applications to enumerate and select MIDI input and output devices on the client system and send and receive MIDI messages. It is intended to enable non-music MIDI applications as well as music ones, by providing low-level access to the MIDI devices available on the users' systems.",
     "id": "webmidi",
@@ -1069,17 +1081,5 @@
     "org": "WHATWG",
     "title": "timezonechange event",
     "url": "https://github.com/whatwg/html/pull/3047"
-  },
-  {
-    "ciuName": "webgpu",
-    "description": "This specification describes support for accessing modern 3D graphics and GPU computation capabilities on the Web.",
-    "id": "webgpu",
-    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602129",
-    "mozPosition": "important",
-    "mozPositionDetail": "We believe that WebGPU is key to enable more interactive and content-rich applications on the Web than currently possible with WebGL. WebGPU can scale better to the capabilities of GPUs with less overhead for users because it's modelled after the intersection of the modern native GPU APIs, so it allows developers to express the GPU workloads more explicitly.",
-    "mozPositionIssue": 239,
-    "org": "proposal",
-    "title": "Web GPU API",
-    "url": "https://gpuweb.github.io/gpuweb/"
   }
 ]
