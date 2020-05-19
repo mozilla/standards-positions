@@ -1073,12 +1073,13 @@
   {
     "ciuName": "webgpu",
     "description": "This specification describes support for accessing modern 3D graphics and GPU computation capabilities on the Web.",
+    "id": "webgpu",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602129",
     "mozPosition": "important",
-    "mozPositionDetail": "We believe that WebGPU is key to enable more interactive and content-rich applications on the Web than currently possible with WebGL. It's an API that is future-looking and can scale better to the capabilities of GPUs, with less overhead for users. Firefox Nightly has a prototype implementation behind a pref that was able to run the WebGPU examples as of April 2020.",
+    "mozPositionDetail": "We believe that WebGPU is key to enable more interactive and content-rich applications on the Web than currently possible with WebGL. WebGPU can scale better to the capabilities of GPUs with less overhead for users because it's modelled after the intersection of the modern native GPU APIs, allows the users to express the GPU workloads more explicitly.",
     "mozPositionIssue": 239,
     "org": "proposal",
-    "title": "WebGPU API",
+    "title": "Web GPU API",
     "url": "https://gpuweb.github.io/gpuweb/"
   }
 ]
