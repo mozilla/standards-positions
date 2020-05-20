@@ -1,14 +1,14 @@
 [
   {
     "ciuName": null,
-    "description": "Adds imagesrcset and imagesizes attributes to <link> which correspond to the srcset and sizes attributes of <img> respectively, for the purposes of preloading.",
+    "description": "Adds imagesrcset and imagesizes attributes to &lt;link> which correspond to the srcset and sizes attributes of &lt;img> respectively, for the purposes of preloading.",
     "id": "image-preload",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1515760",
     "mozPosition": "worth prototyping",
-    "mozPositionDetail": "A relevant aspect of <link rel=preload> support.",
+    "mozPositionDetail": "A relevant aspect of &lt;link rel=preload> support.",
     "mozPositionIssue": 130,
     "org": "WHATWG",
-    "title": "<link>'s imagesrcset and imagesizes attributes",
+    "title": "&lt;link>'s imagesrcset and imagesizes attributes",
     "url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset"
   },
   {
@@ -109,7 +109,7 @@
   },
   {
     "ciuName": "css-paint-api",
-    "description": "An API for allowing web developers to define a custom CSS <image> with javascript, which will respond to style and size changes.",
+    "description": "An API for allowing web developers to define a custom CSS &lt;image> with javascript, which will respond to style and size changes.",
     "id": "css-paint-api",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1302328",
     "mozPosition": "worth prototyping",
@@ -269,7 +269,7 @@
     "id": "corb",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1459357",
     "mozPosition": "non-harmful",
-    "mozPositionDetail": "While this is an important aspect of a robust Spectre-defense, we would like to see a safelist-based approach pursued.",
+    "mozPositionDetail": "While this is an important aspect of a robust Spectre-defense, we would like to see a safelist-based approach pursued, e.g., <a href=\"https://github.com/annevk/orb\">Opaque Response Blocking</a>.",
     "mozPositionIssue": 81,
     "org": "Proposal",
     "title": "Cross-Origin Read Blocking (CORB)",
@@ -424,7 +424,7 @@
   },
   {
     "ciuName": null,
-    "description": "<video>.requestVideoFrameCallback() allows web authors to be notified when a frame has been presented for composition.",
+    "description": "&lt;video>.requestVideoFrameCallback() allows web authors to be notified when a frame has been presented for composition.",
     "id": "requestVideoFrameCallback",
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
