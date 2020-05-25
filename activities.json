@@ -49,6 +49,18 @@
   },
   {
     "ciuName": null,
+    "description": "This API will help by improving the audio-mixing of websites with native apps, so they can play on top of each other, or play exclusively.",
+    "id": "audio-focus",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1579791",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This proposes a straightforward API for improving mixing of audio produced by website.",
+    "mozPositionIssue": 203,
+    "org": "Proposal",
+    "title": "Audio Focus API",
+    "url": "https://wicg.github.io/audio-focus/explainer"
+  },
+  {
+    "ciuName": null,
     "description": "This specification defines an API allowing web applications to set an application-wide badge, shown in an operating-system-specific place associated with the application (such as the shelf or home screen), for the purpose of notifying the user when the state of the application has changed (e.g., when new messages have arrived), without showing a more heavyweight notification.",
     "id": "badging",
     "mozBugUrl": null,
