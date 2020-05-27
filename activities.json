@@ -337,18 +337,6 @@
   },
   {
     "ciuName": null,
-    "description": "This specification defines a mechanism that allows developers to selectively enable and disable use of various browser features and APIs.",
-    "id": "feature-policy",
-    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1390801",
-    "mozPosition": "worth prototyping",
-    "mozPositionDetail": "Mozilla's primary interest in this specification is in the delegation of permissions to third-party contexts, and in particular permissions that might require the user to make a choice. To that end we are willing to prototype and ship the allow attribute, but given this reduction in scope the remaining functionality needs to be reevaluated in terms of naming and applicability.",
-    "mozPositionIssue": 24,
-    "org": "Proposal",
-    "title": "Feature Policy",
-    "url": "https://wicg.github.io/feature-policy/"
-  },
-  {
-    "ciuName": null,
     "description": "This document defines a set of Fetch metadata request headers that aim to provide servers with enough information to make a priori decisions about whether or not to service a request based on the way it was made, and the context in which it will be used.",
     "id": "fetch-metadata",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1508292",
@@ -613,6 +601,18 @@
     "org": "W3C",
     "title": "Permissions",
     "url": "https://w3c.github.io/permissions/"
+  },
+  {
+    "ciuName": null,
+    "description": "This specification defines a mechanism that allows developers to selectively enable and disable use of various browser features and APIs.",
+    "id": "feature-policy",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1390801",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "Mozilla's primary interest in this specification is in the delegation of permissions to third-party contexts, and in particular permissions that might require the user to make a choice. To that end we are willing to prototype and ship the allow attribute, but given this reduction in scope the remaining functionality needs to be reevaluated in terms of naming and applicability.",
+    "mozPositionIssue": 24,
+    "org": "W3C",
+    "title": "Permissions Policy",
+    "url": "https://w3c.github.io/webappsec-feature-policy/"
   },
   {
     "ciuName": null,
