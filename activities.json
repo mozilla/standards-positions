@@ -608,7 +608,7 @@
     "id": "portals",
     "mozBugUrl": null,
     "mozPosition": "defer",
-    "mozPositionDetail": "While this proposal is in the early stages of development and it is too early to evaluate fully, there are concerns that we would like to see addressed as it develops.  Most significantly, it needs to explain its interaction with the Web's storage mechanisms in a way that doesn't contribute to third-party tracking or reduce the effectiveness of proposals designed to mitigate such tracking (such as those that partition storage based on toplevel origins).  It also needs to justify the (still undetermined) amount of complexity that it adds to the web platform with sufficiently valuable use cases to justify that complexity.",
+    "mozPositionDetail": "While we are deferring evaluation of this proposal, because per <a href=\"https://github.com/mozilla/standards-positions/issues/157#issuecomment-636217042\">Domenic's comment</a> it is in the early stages of development and it is too early to evaluate fully, there are concerns (serious enough to mark it as harmful) that we would like to see addressed as it develops.  Most significantly, it needs to explain its interaction with the Web's storage mechanisms in a way that doesn't contribute to third-party tracking or reduce the effectiveness of proposals designed to mitigate such tracking (such as those that partition storage based on toplevel origins).  It also needs to justify the (still undetermined) amount of complexity that it adds to the web platform with sufficiently valuable use cases to justify that complexity.",
     "mozPositionIssue": 157,
     "org": "Proposal",
     "title": "Portals",
