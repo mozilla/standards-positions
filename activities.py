@@ -358,8 +358,6 @@ class SpecParser(object):
         """
         link = urlsplit(url)
         path = link.path
-        if path[-1] == "/":
-            path = path[:-1]
         return "%s://%s%s" % (link.scheme, link.netloc.lower(), path)
 
     def parse(self, spec, url_string):
