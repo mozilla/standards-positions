@@ -357,8 +357,7 @@ class SpecParser(object):
         Canonicalise a URL.
         """
         link = urlsplit(url)
-        path = link.path
-        return "%s://%s%s" % (link.scheme, link.netloc.lower(), path)
+        return "%s://%s%s" % (link.scheme, link.netloc.lower(), link.path)
 
     def parse(self, spec, url_string):
         """
