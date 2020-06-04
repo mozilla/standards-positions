@@ -286,29 +286,6 @@
           tr.classList.remove('shown');
         }
 
-        // Add event listener for opening and closing details
-        $('#mozPositions').find('tbody').on('click', 'td', function (event) {
-          var a = $(event.target).closest('a');
-          if (a.length > 0 && !a[0].parentNode.classList.contains("details-control")) {
-            // Do nothing if the click was on a link, except for the
-            // details-control.
-            // FIXME: This is really a bad way to handle the
-            // details-control link!
-            return;
-          }
-
-          var tr = $(this).closest('tr')[0];
-          var row = ptable.row( tr );
-          if ( row.child.isShown() ) {
-            // This row is already open - close it
-            close_row(tr);
-          }
-          else {
-            // Open this row
-            open_row(tr);
-          }
-        } );
-
         // Work around bugs in both Chrome and Firefox relating to
         // anchor scrolling and :target selection.
         $('#mozPositions').on('order.dt', function() {
