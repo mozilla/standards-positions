@@ -67,9 +67,9 @@
             <tr>
               <th></th>
               <th></th>
+              <th></th>
               <th class="sorting">Specification</th>
               <th class="sorting">Mozilla Position</th>
-              <th>Details</th>
               <th>More Info</th>
             </tr>
           </thead>
@@ -117,6 +117,7 @@
         var REPO_NAME = "standards-positions";
 
         function iconLink(url, text, icon) {
+          /* glyphicons documented at https://getbootstrap.com/docs/3.3/components/#glyphicons */
           return `<a href='${url || "javascript:void(0)"}' title='${text}'>`
             + `<span class='glyphicon glyphicon-${icon}' aria-hidden='true'></span>`
             + `<span class='sr-only'>${text}</span></a> `;
@@ -133,13 +134,31 @@
           },
           dom: 'ilfrtip',
           rowId: 'id',
-          "order": [[3, "asc"]],
+          "order": [[4, "asc"]],
           "columns": [
+              {
+                "className":      'expand-control',
+                "orderable":      false,
+                "data":           null,
+                "defaultContent": '',
+                "render": function (data, type, row, meta) {
+                  if ((row.description && row.description !== "") ||
+                      (row.mozPositionDetail && row.mozPositionDetail !== "")) {
+                    if (row.shown) {
+                      return iconLink(`javascript:close_row(${meta.row})`, "Collapse", "triangle-bottom");
+                    } else {
+                      return iconLink(`javascript:open_row(${meta.row})`, 'Expand', 'triangle-right');
+                    }
+                  } else {
+                    return ""
+                  }
+                }
+              },
               {
                 "className": 'link-control',
                 "data": null,
                 "defaultContent": '',
-                "render": function (data, type, row) {
+                "render": function (data, type, row, meta) {
                   var id = data.id;
                   if (id != "") {
                     return iconLink('#' + id, 'link', 'link');
@@ -152,7 +171,7 @@
               {
                 "className": "dt-body-center",
                 "data": "org",
-                "render": function (data, type, row) {
+                "render": function (data, type, row, meta) {
                   if (type !== "display") {
                     return data;
                   }
@@ -174,7 +193,7 @@
               },
               {
                 "data": "title",
-                "render": function (data, type, row) {
+                "render": function (data, type, row, meta) {
                   if (type !== "display") {
                     return data;
                   }
@@ -186,7 +205,7 @@
               {
                 "data": "mozPosition",
                 "type": "enum-0",
-                "render": function (data, type, row) {
+                "render": function (data, type, row, meta) {
                   if (type !== "display") {
                     return data;
                   }
@@ -198,22 +217,8 @@
                 "orderable": true
               },
               {
-                "className":      'details-control',
-                "orderable":      false,
-                "data":           null,
-                "defaultContent": '',
-                "render": function (data, type, row) {
-                  if ((row.description && row.description !== "") ||
-                      (row.mozPositionDetail && row.mozPositionDetail !== "")) {
-                    return iconLink(null, 'details', 'info-sign');
-                  } else {
-                    return ""
-                  }
-                }
-              },
-              {
                 "data": "null",
-                "render": function (data, type, row) {
+                "render": function (data, type, row, meta) {
                   var out = "";
                   if (row.mozPositionIssue && row.mozPositionIssue !== "") {
                     out += iconLink(`https://github.com/${REPO_OWNER}/${REPO_NAME}/issues/${row.mozPositionIssue}`, 'position discussion', 'comment');
@@ -255,15 +260,28 @@
           }
         }
 
-        function open_row(row, tr) {
-          var extra_data = format(row.data());
+        window.open_row = function(row_selector) {
+          var row = ptable.row(row_selector);
+          var data = row.data();
+          var extra_data = format(data);
           if (extra_data !== "") {
+            var tr = row.node();
+            data.shown = true;
+            ptable.cell(tr, 0).invalidate();
+
             row.child( extra_data ).show();
             tr.classList.add('shown');
           }
         }
 
-        function close_row(row, tr) {
+        window.close_row = function(row_selector) {
+          var row = ptable.row(row_selector);
+          var data = row.data();
+          var tr = row.node();
+
+          data.shown = false;
+          ptable.cell(tr, 0).invalidate();
+
           row.child.hide();
           tr.classList.remove('shown');
         }
@@ -283,11 +301,11 @@
           var row = ptable.row( tr );
           if ( row.child.isShown() ) {
             // This row is already open - close it
-            close_row(row, tr);
+            close_row(tr);
           }
           else {
             // Open this row
-            open_row(row, tr);
+            open_row(tr);
           }
         } );
 
@@ -320,8 +338,7 @@
           }
 
           // Open the row that is now the target.
-          var row = ptable.row( tr );
-          open_row(row, tr);
+          open_row(tr);
         });
     })
     </script>
