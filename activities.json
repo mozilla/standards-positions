@@ -992,7 +992,7 @@
     "id": "web-share-target",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1476515",
     "mozPosition": "worth prototyping",
-    "mozPositionDetail": null,
+    "mozPositionDetail": "This specification affords web applications the ability to handle user-initiated 'share' actions (e.g., sharing a link, image, text, or other media) in contexts that have traditionally been the exclusive domain of native and/or system applications. We believe this API is worth prototyping because it enhances the utility of web applications to end-users, and allows us to explore ways that web applications can more effectively integrate with the underlying operating system.",
     "mozPositionIssue": 27,
     "org": "Proposal",
     "title": "Web Share Target API",
