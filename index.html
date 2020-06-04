@@ -62,6 +62,12 @@
 
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
+
+        <div>
+          <a class="btn btn-primary" href="javascript:open_all()">Expand All</a>
+          <a class="btn btn-primary" href="javascript:close_all()">Collapse All</a>
+        </div>
+
         <table id="mozPositions" class="table table-hover dataTable">
           <thead>
             <tr>
@@ -260,6 +266,12 @@
           }
         }
 
+        window.open_all = function() {
+          ptable.rows().every( function(rowIndex, tableLoop, rowLoop) {
+            open_row(rowIndex);
+          });
+        }
+
         window.open_row = function(row_selector) {
           var row = ptable.row(row_selector);
           var data = row.data();
@@ -272,6 +284,12 @@
             row.child( extra_data ).show();
             tr.classList.add('shown');
           }
+        }
+
+        window.close_all = function() {
+          ptable.rows().every( function(rowIndex, tableLoop, rowLoop) {
+            close_row(rowIndex);
+          });
         }
 
         window.close_row = function(row_selector) {
