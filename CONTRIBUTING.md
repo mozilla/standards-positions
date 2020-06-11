@@ -108,24 +108,25 @@ issue might be locked.
 
 ### For Mozilla's Subject-Matter Experts
 
-You might be asked for your opinion
+The purpose of this repository is to help
+Mozilla's technical leaders reach a consensus position
+about new Web features being proposed.
+Therefore, you might be asked for your opinion
 on specifications where you are one of the experts within the Mozilla community,
 or feel like you have valuable contributions to make
 to issues on other specifications even where you haven't explicitly been asked to do so.
-This is the purpose of this repository:
-to help the relevant people in Mozilla's technical leadership come to a conclusion.
 
 The goal of the discussions in this repository is
 to figure out what we think about a proposal or specification.
 The key factors to consider are:
 
-* how useful we think the proposed feature is likely to be (or how important the use case it's trying to address is), relative to the likely cost of implementing it and maintaining that implementation
-* whether there are any critical problems we see in the current proposal.
+* how useful we think the proposed feature is likely to be (or how important the use case it's trying to address is), relative to the likely costs to users (e.g., security or privacy risks), developers (e.g., increased complexity and cognitive load), and implementers (cost of implementing it and maintaining that implementation)
+* whether there are any critical problems we see in the current proposal that we should try to get fixed (e.g., around security, privacy, or ability to implement across multiple browser engines)
 
 It's useful to discuss these in the relevant issue in this repository.
 
 At the same time,
-we should avoid doing things that move
+we should avoid doing things to move
 discussions that should happen in the standards body's normal discussion mechanisms
 from happening instead in the standards-positions issue.
 When it makes sense to do so,
