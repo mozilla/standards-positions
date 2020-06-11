@@ -87,6 +87,25 @@ assessment.
 
 ## Discussing Mozilla's Position on a Web Specification
 
+### For the Broader Community
+
+We welcome discussion members of the wider Mozilla community -- including the public -- but ask
+that it be on-topic, and that it follow [Mozilla's Community Participation
+Guidelines](https://www.mozilla.org/about/governance/policies/participation/).
+
+Specifically, the primary purpose of this repository is to determine Mozilla's postions on
+specifications. That is distinct from the larger Web community's position; the best place to
+advocate for a specification is using the appropriate standards body's discussion mechanisms, not
+here.
+
+So, please focus your comments on bringing new information about a specification; if you want to
+express support for adopting a specification, the best way to do that is using [Github
+reactions](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments) on the
+issue or a specific comment.
+
+If an issue becomes overwhelmed by excessive advocacy, comments might be deleted, and the
+issue might be locked.
+
 ### For Mozilla's Subject-Matter Experts
 
 You might be asked for your opinion
@@ -130,21 +149,3 @@ happening in the issue
 and limit the discussion in the pull request
 to the details of making the change to `activities.json`.
 
-### For the Broader Community
-
-We welcome discussion members of the wider Mozilla community -- including the public -- but ask
-that it be on-topic, and that it follow [Mozilla's Community Participation
-Guidelines](https://www.mozilla.org/about/governance/policies/participation/).
-
-Specifically, the primary purpose of this repository is to determine Mozilla's postions on
-specifications. That is distinct from the larger Web community's position; the best place to
-advocate for a specification is using the appropriate standards body's discussion mechanisms, not
-here.
-
-So, please focus your comments on bringing new information about a specification; if you want to
-express support for adopting a specification, the best way to do that is using [Github
-reactions](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments) on the
-issue or a specific comment.
-
-If an issue becomes overwhelmed by excessive advocacy, comments might be deleted, and the
-issue might be locked.
