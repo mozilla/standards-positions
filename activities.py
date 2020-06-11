@@ -526,6 +526,7 @@ URL2ORG = {
     "www.w3.org": W3CParser,
     "w3c.github.io": W3CParser,
     "wicg.github.io": W3CCGParser,
+    "privacycg.github.io": W3CCGParser,
     "dev.w3.org": W3CParser,
     "dvcs.w3.org": W3CParser,
     "drafts.csswg.org": W3CParser,
