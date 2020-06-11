@@ -87,7 +87,7 @@ assessment.
 
 ## Discussing Mozilla's Position on a Web Specification
 
-### For Mozilla's subject-matter experts
+### For Mozilla's Subject-Matter Experts
 
 You might be asked for your opinion
 on specifications where you are one of the experts within the Mozilla community,
@@ -130,7 +130,7 @@ happening in the issue
 and limit the discussion in the pull request
 to the details of making the change to `activities.json`.
 
-### For the broader community
+### For the Broader Community
 
 We welcome discussion members of the wider Mozilla community -- including the public -- but ask
 that it be on-topic, and that it follow [Mozilla's Community Participation
@@ -148,4 +148,3 @@ issue or a specific comment.
 
 If an issue becomes overwhelmed by excessive advocacy, comments might be deleted, and the
 issue might be locked.
-
