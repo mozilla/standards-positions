@@ -361,6 +361,18 @@
   },
   {
     "ciuName": null,
+    "description": "This document proposes a new web platform mechanism to declare a collection of related domains as being in a First-Party Set.",
+    "id": "first-party-sets",
+    "mozBugUrl": null,
+    "mozPosition": "harmful",
+    "mozPositionDetail": "We believe the definition of first party should be clear and understandable to users, web developers, and publishers, and thus ideally it should be based only on the top-level URL.  While we can't quite do that today because it isn't compatible with all sites, we'd like to move towards doing that, rather than standardizing a mechanism that moves away from that.  See <a href=\"https://github.com/privacycg/proposals/issues/17#issuecomment-641687052\">more details</a>.",
+    "mozPositionIssue": 350,
+    "org": "Proposal",
+    "title": "First Party Sets",
+    "url": "https://github.com/WICG/first-party-sets"
+  },
+  {
+    "ciuName": null,
     "description": "An API to enable objects other than built-in form control elements to participate in form submission, form validation, and so on.",
     "id": "form-participation-api",
     "mozBugUrl": [
