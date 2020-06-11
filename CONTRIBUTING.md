@@ -34,7 +34,7 @@ currently includes:
 
 * Ecma TC39 proposals
 * IETF RFCs and Internet-Drafts
-* W3C drafts, Recommendations and Notes (including Community Group documents, specifically the WICG)
+* W3C drafts, Recommendations and Notes (including Community Group documents, e.g. WICG)
 * WHATWG Living Standards (typically we consider change proposals)
 
 If a specification has been abandoned, deprecated, or obsoleted by its publishing body, this generally
@@ -89,7 +89,7 @@ assessment.
 
 ### For the Broader Community
 
-We welcome discussion members of the wider Mozilla community -- including the public -- but ask
+We welcome discussion from members of the wider Mozilla community -- including the public -- but ask
 that it be on-topic, and that it follow [Mozilla's Community Participation
 Guidelines](https://www.mozilla.org/about/governance/policies/participation/).
 
@@ -98,7 +98,7 @@ specifications. That is distinct from the larger Web community's position; the b
 advocate for a specification is using the appropriate standards body's discussion mechanisms, not
 here.
 
-So, please focus your comments on bringing new information about a specification; if you want to
+Please focus your comments on bringing new information about a specification; if you want to
 express support for adopting a specification, the best way to do that is using [Github
 reactions](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments) on the
 issue or a specific comment.
@@ -120,18 +120,18 @@ The goal of the discussions in this repository is
 to figure out what we think about a proposal or specification.
 The key factors to consider are:
 
-* how useful we think the proposed feature is likely to be (or how important the use case it's trying to address is), relative to the likely costs to users (e.g., security or privacy risks), developers (e.g., increased complexity and cognitive load), and implementers (cost of implementing it and maintaining that implementation)
+* how useful we think the proposed feature is likely to be (or how important the use-cases it's trying to address are), relative to the likely costs to users (e.g., security or privacy risks), developers (e.g., increased complexity and cognitive load), and implementers (cost of implementing it and maintaining that implementation)
 * whether there are any critical problems we see in the current proposal that we should try to get fixed (e.g., around security, privacy, or ability to implement across multiple browser engines)
 
 It's useful to discuss these in the relevant issue in this repository.
 
 At the same time,
-we should avoid doing things to move
+we should avoid causing
 discussions that should happen in the standards body's normal discussion mechanisms
-from happening instead in the standards-positions issue.
+to happen instead in the standards-positions issue.
 When it makes sense to do so,
 it's good to raise issues through the normal issue trackers for the proposal.
-However, when doing so, it's worth being careful to avoid giving a *mistaken* impression
+However, when doing so, it's worth being careful to avoid giving a *misimpression*
 that engagement in the discussion constitutes support.
 In some cases, avoiding this impression may require having some of the discussion in the standards-positions issue.
 However, in many cases that can be avoided
@@ -144,9 +144,10 @@ Members of the Mozilla community are
 welcome to judge that we've come to sufficient consensus in the issue,
 and make a pull request to document that consensus by changing `activities.json`.
 When this happens, we'd like to try to keep the technical discussion
-about what the position is
-happening in the issue
+about the position 
+in the issue itself
 (so that it stays in one place),
 and limit the discussion in the pull request
-to the details of making the change to `activities.json`.
+to the details of making the change to `activities.json`, 
+and accurately communicating the consensus in the issue.
 
