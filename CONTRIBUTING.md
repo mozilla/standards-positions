@@ -97,10 +97,10 @@ This is the purpose of this repository:
 to help the relevant people in Mozilla's technical leadership come to a conclusion.
 
 The goal of the discussions in this repository is
-to figure out what we think about a specification.
+to figure out what we think about a proposal or specification.
 The key factors to consider are:
 
-* how useful we think the specification is likely to be (or how important the use case it's trying to address is), relative to the likely cost of implementing it and maintaining that implementation
+* how useful we think the proposed feature is likely to be (or how important the use case it's trying to address is), relative to the likely cost of implementing it and maintaining that implementation
 * whether there are any critical problems we see in the current proposal.
 
 It's useful to discuss these in the relevant issue in this repository.
@@ -110,7 +110,7 @@ we should avoid doing things that move
 discussions that should happen in the standards body's normal discussion mechanisms
 from happening instead in the standards-positions issue.
 When it makes sense to do so,
-it's good to raise issues through the normal issue trackers for the specification.
+it's good to raise issues through the normal issue trackers for the proposal.
 However, when doing so, it's worth being careful to avoid giving a *mistaken* impression
 that engagement in the discussion constitutes support.
 In some cases, avoiding this impression may require having some of the discussion in the standards-positions issue.
