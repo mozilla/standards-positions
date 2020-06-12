@@ -939,6 +939,18 @@
     "url": "https://wicg.github.io/BackgroundSync/spec"
   },
   {
+    "ciuName": "mdn-api_bluetooth",
+    "description": "This document describes an API to discover and communicate with devices over the Bluetooth 4 wireless standard using the Generic Attribute Profile (GATT).",
+    "id": "web-bluetooth",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=674737",
+    "mozPosition": "harmful",
+    "mozPositionDetail": "This API provides access to the Generic Attribute Profile (GATT) of Bluetooth, which is not the lowest level of access that the specifications allow, but its generic nature make it impossible to clearly. Like <a href=\"#webusb\">WebUSB</a> there is significant uncertainty regarding how well prepared devices are to receive requests from arbitrary sites. The generic nature of the API means that this risk is difficult to manage. The Web Bluetooth CG has opted for weaker protections than those in WebUSB, which require active consent to communicate from the device. This proposal uses a blocklist, which will require constant and active maintenance so that vulnerable devices aren't exploited. This model is unsustainable and presents a signficant risk to users and their devices.",
+    "mozPositionIssue": 95,
+    "org": "Proposal",
+    "title": "Web Bluetooth",
+    "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+  },
+  {
     "ciuName": null,
     "description": "This specification describes an API that can be used to retrieve the amount of budget an origin has available for resource consuming background operations, as well as the cost associated with doing such an operation.",
     "id": "budget-api",
