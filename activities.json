@@ -328,7 +328,7 @@
     "description": "Document policy allows content to define a policy that constrains embedded content.",
     "id": "document-policy",
     "mozBugUrl": null,
-    "mozPosition": "not harmful",
+    "mozPosition": "non-harmful",
     "mozPositionDetail": "The mechanism described provides sites greater control over embedded content. Constraints are accepted by content or the browser does not load the content. This ensures that policies are effective without risk of content breaking in inexplicable ways due to those policies. The specification needs a lot more work, but no significant problems are apparent or anticipated.",
     "mozPositionIssue": 327,
     "org": "W3C",
