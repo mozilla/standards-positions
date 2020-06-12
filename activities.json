@@ -241,6 +241,18 @@
   },
   {
     "ciuName": null,
+    "description": "This document defines a mechanism by which a web page can embed a nested browsing context if and only if it agrees to enforce a particular set of restrictions upon itself.",
+    "id": "cspee",
+    "mozBugUrl": null,
+    "mozPosition": "non-harmful",
+    "mozPositionDetail": "This specification allows sites to specify minimum CSP policies for embedded content. The risk of problems arising from misalignment between different policies is managed well. The resulting complexity is not trivial, but it is balanced against the security improvements.",
+    "mozPositionIssue": 326,
+    "org": "W3C",
+    "title": "Content Security Policy: Embedded Enforcement",
+    "url": "https://w3c.github.io/webappsec-cspee/"
+  },
+  {
+    "ciuName": null,
     "description": "An asynchronous Javascript cookies API for documents and workers",
     "id": "cookie-store",
     "mozBugUrl": null,
