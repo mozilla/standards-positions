@@ -1096,6 +1096,18 @@
   },
   {
     "ciuName": null,
+    "description": "Proposal to add various output attributes on HTML's <input> elements that would allow developers to declare some conversions the browser could do to, for example, images and videos.",
+    "id": "input-file-output-attributes",
+    "mozBugUrl": null,
+    "mozPosition": "non-harmful",
+    "mozPositionDetail": "While this seems like it could be a useful capability to expose, we'd rather see it exposed in a way that can be composed with other existing APIs, and we're concerned that there's a risk of runaway complexity through adding more and more features to it.",
+    "mozPositionIssue": 237,
+    "org": "Proposal",
+    "title": "output attributes on &lt;input type=file> element",
+    "url": "https://discourse.wicg.io/t/proposal-native-media-optimization-and-basic-editing-support/4068"
+  },
+  {
+    "ciuName": null,
     "description": "The new scroll events introduced in this document provide web developers a way to listen to the state of the scrolling and when their content is being overscrolled or when the scrolling has finished. This information will be useful for the effects such as pull to refresh or history swipe navigations in the web apps.",
     "id": "scrollend and overscroll events",
     "mozBugUrl": null,
