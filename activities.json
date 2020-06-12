@@ -1132,7 +1132,7 @@
   },
   {
     "ciuName": null,
-    "description": "Proposal to add various output attributes on HTML's &lt;input&gt; elements that would allow developers to declare some conversions the browser could do to, for example, images and videos.",
+    "description": "Proposal to add various output attributes on HTML's &lt;input> elements that would allow developers to declare some conversions the browser could do to, for example, images and videos.",
     "id": "input-file-output-attributes",
     "mozBugUrl": null,
     "mozPosition": "non-harmful",
