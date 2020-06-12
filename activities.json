@@ -368,7 +368,7 @@
     "mozPositionDetail": "We believe the definition of first party should be clear and understandable to users, web developers, and publishers, and thus ideally it should be based only on the top-level URL.  While we can't quite do that today because it isn't compatible with all sites, we'd like to move towards doing that, rather than standardizing a mechanism that moves away from that.  See <a href=\"https://github.com/privacycg/proposals/issues/17#issuecomment-641687052\">more details</a>.",
     "mozPositionIssue": 350,
     "org": "Proposal",
-    "title": "First Party Sets",
+    "title": "First-Party Sets",
     "url": "https://github.com/WICG/first-party-sets"
   },
   {
