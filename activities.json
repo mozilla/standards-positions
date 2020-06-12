@@ -325,6 +325,18 @@
   },
   {
     "ciuName": null,
+    "description": "Document policy allows content to define a policy that constrains embedded content.",
+    "id": "document-policy",
+    "mozBugUrl": null,
+    "mozPosition": "not harmful",
+    "mozPositionDetail": "The mechanism described provides sites greater control over embedded content. Constraints are accepted by content or the browser does not load the content. This ensures that policies are effective without risk of content breaking in inexplicable ways due to those policies. The specification needs a lot more work, but no significant problems are apparent or anticipated.",
+    "mozPositionIssue": 327,
+    "org": "W3C",
+    "title": "Document Policy",
+    "url": "https://w3c.github.io/webappsec-feature-policy/document-policy.html"
+  },
+  {
+    "ciuName": null,
     "description": "This document defines a simple mechanism for encrypting the Server Name Indication for TLS 1.3.",
     "id": "tls-esni",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1494901",
