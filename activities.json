@@ -1156,6 +1156,18 @@
   },
   {
     "ciuName": null,
+    "description": "A descriptor for CSS @page rules that changes the orientation of the page in generated PDF output (or similar) without otherwise affecing layout.",
+    "id": "page-orientation-descriptor",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This is a simple addition (to a relatively complex existing feature, <a href=\"https://drafts.csswg.org/css-page-3/#using-named-pages\">named pages</a>) that can improve the experience of producing printed PDF output from web-based word processors or similar systems that largely do their own page layout.",
+    "mozPositionIssue": 346,
+    "org": "W3C",
+    "title": "page-orientation descriptor",
+    "url": "https://drafts.csswg.org/css-page-3/#page-orientation-prop"
+  },
+  {
+    "ciuName": null,
     "description": "The new scroll events introduced in this document provide web developers a way to listen to the state of the scrolling and when their content is being overscrolled or when the scrolling has finished. This information will be useful for the effects such as pull to refresh or history swipe navigations in the web apps.",
     "id": "scrollend and overscroll events",
     "mozBugUrl": null,
