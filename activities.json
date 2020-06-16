@@ -508,6 +508,18 @@
   },
   {
     "ciuName": null,
+    "description": "",
+    "id": "cookie-incrementalism",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "Any approach that reduces the scope of cookie use is a security and privacy win. Because some such changes can break websites that rely on the broader scope, we would like to proceed with caution, but believe that the feature is worth experimenting with and collecting data about.",
+    "mozPositionIssue": 260,
+    "org": "Proposal",
+    "title": "Incrementally Better Cookies",
+    "url": "https://tools.ietf.org/html/draft-west-cookie-incrementalism"
+  },
+  {
+    "ciuName": null,
     "description": "This specification defines an API that allows websites to convert from a given code value to a valid key value that can be shown to the user to identify the given key. The conversion from code to key is based on the user\u2019s currently selected keyboard layout. It is intended to be used by web applications that want to treat the keyboard as a set of buttons and need to describe those buttons to the user.",
     "id": "keyboard-map",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1469017",
