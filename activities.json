@@ -508,7 +508,7 @@
   },
   {
     "ciuName": null,
-    "description": "",
+    "description": "This document proposes a few changes to cookies inspired by the properties of the HTTP State Tokens mechanism.  First, cookies should be treated as \"SameSite=Lax\" by default.  Second, cookies that explicitly assert \"SameSite=None\" in order to enable cross-site delivery should also be marked as \"Secure\".  Third, same-site should take the scheme of the sites into account.  Fourth, cookies should respect schemes.  Fifth, cookies associated with non-secure schemes should be removed at the end of a user's session.  Sixth, the definition of a session should be tightened.",
     "id": "cookie-incrementalism",
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
