@@ -1156,6 +1156,18 @@
   },
   {
     "ciuName": null,
+    "description": "Allow arbitrary DOM subtrees to become inert",
+    "id": "inert-attr",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "A high-level tool for authors to achieve some of these use cases while getting a11y right seems useful",
+    "mozPositionIssue": 174,
+    "org": "WHATWG",
+    "title": "inert attribute",
+    "url": "https://github.com/whatwg/html/pull/4288"
+  },
+  {
+    "ciuName": null,
     "description": "Proposal to add various output attributes on HTML's &lt;input> elements that would allow developers to declare some conversions the browser could do to, for example, images and videos.",
     "id": "input-file-output-attributes",
     "mozBugUrl": null,
