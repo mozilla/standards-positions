@@ -13,6 +13,18 @@
   },
   {
     "ciuName": null,
+    "description": "This specification defines a well-known URL that sites can use to make their change password forms discoverable by tools. This simple affordance provides a way for software to help the user find the way to change their password.",
+    "id": "change-password-url",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": null,
+    "mozPositionIssue": 372,
+    "org": "Proposal",
+    "title": "A Well-Known URL for Changing Passwords",
+    "url": "https://wicg.github.io/change-password-url/"
+  },
+  {
+    "ciuName": null,
     "description": "",
     "id": "aria-annotations",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1608975",
