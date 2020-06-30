@@ -774,7 +774,7 @@
     "ciuName": null,
     "description": "This document specifies an API that allows web applications to request a screen wake lock. Under the right conditions, and if allowed, the screen wake lock prevents the system from turning off a device's screen.",
     "id": "screen-wake-lock",
-    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=158955",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589554",
     "mozPosition": "worth prototyping",
     "mozPositionDetail": "As the scope of the specification has been reduced to screen wake locks, it's worth prototyping this API in a manner that restricts it to foreground first-party content. Additionally, the API appears flexible enough that a permission grant can be performed asynchronously, allowing us to evaluate the most appropriate permission model should we choose to ship this API in the future. As the API allows the capability to be revoked at any time, we can also prototype eagerly granting, notifying the user what's going on, and allowing users to disable the capability entirely - either per origin, or globally through a browser setting. There is a risk that sites could abuse the API for the sake of engagement, which could unnecessarily drain a device's battery. It could also be a nuisance or be used for social engineering attacks: such as disabling the system's ability to password-lock a device when the screen doesn't switch off if the user leaves their device unattended. Prototyping this capability would allow us to further evaluate how to best mitigate the aforementioned concerns.",
     "mozPositionIssue": 210,
