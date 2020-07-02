@@ -66,7 +66,7 @@ class ActivitiesJson(object):
         ("group", False, StringType),
         ("url", True, UrlType),
         ("mozBugUrl", False, UrlArrayType),
-        ("mozPositionIssue", False, int),
+        ("mozPositionIssue", True, int),
         (
             "mozPosition",
             True,
