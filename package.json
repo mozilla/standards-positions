@@ -3,7 +3,7 @@
     "repository": "github:mozilla/standards-positions",
     "license": "MPL-2.0",
     "dependencies": {
-        "bootstrap": "3.3.7",
+        "bootstrap": "3.4.1",
         "datatables": "DataTables/DataTables#1.10.15",
         "jquery": "3.2.1"
     }
