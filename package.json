@@ -3,8 +3,8 @@
     "repository": "github:mozilla/standards-positions",
     "license": "MPL-2.0",
     "dependencies": {
-        "bootstrap": "3.3.7",
+        "bootstrap": "3.4.1",
         "datatables": "1.10.18",
-        "jquery": "3.2.1"
+        "jquery": "3.5.1"
     }
 }

@@ -909,7 +909,7 @@
     "mozBugUrl": null,
     "mozPosition": "defer",
     "mozPositionDetail": "This protocol provides a way to achieve certain important goals, such as denial of service mitigation, without also creating tracking mechanisms.  As such, we are very supportive of the goal.  However, we will defer making a firm position until the protocol and the novel cryptographic primitives it relies on have had more thorough security analysis.",
-    "mozPositionIssue": null,
+    "mozPositionIssue": 261,
     "org": "Proposal",
     "title": "The Privacy Pass Protocol",
     "url": "https://tools.ietf.org/html/draft-privacy-pass"
@@ -945,7 +945,7 @@
     "mozBugUrl": null,
     "mozPosition": "defer",
     "mozPositionDetail": "This API depends on the Privacy Pass protocol, for which we have deferred our position statement.",
-    "mozPositionIssue": null,
+    "mozPositionIssue": 262,
     "org": "Proposal",
     "title": "Trust Token API",
     "url": "https://github.com/WICG/trust-token-api/blob/master/README.md"
