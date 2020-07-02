@@ -4,7 +4,7 @@
     "license": "MPL-2.0",
     "dependencies": {
         "bootstrap": "3.3.7",
-        "datatables": "DataTables/DataTables#1.10.15",
+        "datatables": "1.10.18",
         "jquery": "3.2.1"
     }
 }
