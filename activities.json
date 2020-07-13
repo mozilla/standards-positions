@@ -1172,7 +1172,7 @@
     "id": "dialog-element",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=840640",
     "mozPosition": "worth prototyping",
-    "mozPositionDetail": "A high-level HTML feature for authors to achieve these use cases while getting a11y right seems useful and we have an implementation.",
+    "mozPositionDetail": "A high-level HTML feature for authors to achieve these use cases while getting a11y right seems useful, and we have an implementation.",
     "mozPositionIssue": 388,
     "org": "WHATWG",
     "title": "dialog element",
