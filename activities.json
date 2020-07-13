@@ -580,6 +580,18 @@
   },
   {
     "ciuName": null,
+    "description": "Media Queries Level 5 describes the mechanism and syntax of media queries, media types, and media features. It extends and supersedes the features defined in Media Queries Level 4.",
+    "id": "mediaqueries-5",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1434491",
+    "mozPosition": "defer",
+    "mozPositionDetail": "It's possible the scope of mediaqueries-5 may change over time (either due to additional new features being added or to features being moved between levels), and thus we should defer evaluating it overall until it reaches CR.",
+    "mozPositionIssue": 389,
+    "org": "W3C",
+    "title": "Media Queries Level 5",
+    "url": "https://drafts.csswg.org/mediaqueries-5/"
+  },
+  {
+    "ciuName": null,
     "description": "This document defines a web platform API that lets websites gain write access to the native file system. It builds on [FILE-API], but adds lots of new functionality on top.",
     "id": "native-file-system",
     "mozBugUrl": null,
