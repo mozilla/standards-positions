@@ -38,6 +38,18 @@
       tr:not(:hover):not(:focus-within) > .link-control > a {
         visibility: hidden;
       }
+
+      .clipicon {
+        width: 1em;
+        height: 1em;
+        background: currentColor;
+      }
+
+      .clipicon-MDN {
+        -webkit-mask: url(asset/MDN.svg) center no-repeat;
+        mask: url(asset/MDN.svg) center no-repeat;
+        width: 1.20833em;
+      }
     </style>
   </head>
   <body>
@@ -122,10 +134,16 @@
         var REPO_OWNER = "mozilla";
         var REPO_NAME = "standards-positions";
 
-        function iconLink(url, text, icon) {
+        function iconLink(url, text, icon, options) {
+          var iconClasses;
+          if (options && options.custom) {
+            iconClasses = `glyphicon clipicon clipicon-${icon}`;
+          } else {
+            iconClasses = `glyphicon glyphicon-${icon}`;
+          }
           /* glyphicons documented at https://getbootstrap.com/docs/3.3/components/#glyphicons */
           return `<a href='${url || "javascript:void(0)"}' title='${text}'>`
-            + `<span class='glyphicon glyphicon-${icon}' aria-hidden='true'></span>`
+            + `<span class='${iconClasses}' aria-hidden='true'></span>`
             + `<span class='sr-only'>${text}</span></a> `;
         }
 
@@ -237,6 +255,16 @@
                     }
                     for (var bug of bugArray) {
                       out += iconLink(bug, 'mozilla bug', 'wrench');
+                    }
+                  }
+                  if (row.mdnUrl && row.mdnUrl !== "") {
+                    // Allow either a string or an array of strings.
+                    var mdnArray = row.mdnUrl;
+                    if (!Array.isArray(mdnArray)) {
+                      mdnArray = [mdnArray];
+                    }
+                    for (var mdn of mdnArray) {
+                      out += iconLink(mdn, 'MDN', "MDN", { custom: true });
                     }
                   }
                   if (row.ciuName && row.ciuName !== "") {
