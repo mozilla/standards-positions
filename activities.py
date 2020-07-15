@@ -110,7 +110,7 @@ class ActivitiesJson(object):
 
     def append(self, spec_entry):
         "Append a SpecEntry to self.data. Raises ValueError if it's malformed."
-        errors = self.validate_entry(spec_entry.data)
+        errors = self.validate_entry(spec_entry.data, is_adding=True)
         if errors:
             raise ValueError(errors)
         self.data.append(spec_entry.data)
@@ -160,7 +160,7 @@ class ActivitiesJson(object):
             prevTitle = title
         return errors
 
-    def validate_entry(self, entry, title=None):
+    def validate_entry(self, entry, title=None, is_adding=False):
         """
         Validate a single entry.
 
@@ -171,7 +171,7 @@ class ActivitiesJson(object):
         errors = []
         for (name, required, value_type) in self.expected_entry_items:
             entry_value = entry.get(name, None)
-            if required and entry_value is None:
+            if required and not is_adding and entry_value is None:
                 errors.append("%s doesn't have required member %s" % (title, name))
             else:
                 if entry_value is None:
