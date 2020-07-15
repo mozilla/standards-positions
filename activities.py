@@ -65,6 +65,7 @@ class ActivitiesJson(object):
         ("org", True, ["W3C", "IETF", "Ecma", "WHATWG", "Unicode", "Proposal", "Other"]),
         ("group", False, StringType),
         ("url", True, UrlType),
+        ("mdnUrl", False, UrlArrayType),
         ("mozBugUrl", False, UrlArrayType),
         ("mozPositionIssue", True, int),
         (
@@ -231,6 +232,7 @@ class SpecEntry(object):
             "ciuName": None,
             "org": None,
             "url": None,
+            "mdnUrl": None,
             "mozBugUrl": None,
             "mozPositionIssue": None,
             "mozPosition": u"under consideration",
