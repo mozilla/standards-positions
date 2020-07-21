@@ -450,6 +450,19 @@
   },
   {
     "ciuName": null,
+    "description": "This specification defines the GeolocationSensor interface for obtaining the geolocation of the hosting device.",
+    "id": "geolocation-sensor",
+    "mdnUrl": "",
+    "mozBugUrl": null,
+    "mozPosition": "harmful",
+    "mozPositionDetail": "Given that the web already has a geolocation API, any additional API for the same purpose would have to meet a high bar as both will need to be maintained forever. While the document claims to improve security and privacy, there is no evidence that is the case. And as it can be largely polyfilled on top of the existing API, it seems better to invest in web platform geolocation additions there, if any.",
+    "mozPositionIssue": 36,
+    "org": "W3C",
+    "title": "Geolocation Sensor",
+    "url": "https://w3c.github.io/geolocation-sensor/"
+  },
+  {
+    "ciuName": null,
     "description": "The Get Installed Related Apps API allows web apps to detect if related apps are installed on the current device.",
     "id": "get-installed-related-apps",
     "mozBugUrl": null,
