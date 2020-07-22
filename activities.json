@@ -442,7 +442,7 @@
     "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs",
     "mozBugUrl": null,
     "mozPosition": "harmful",
-    "mozPositionDetail": "There is no known way of relaying the risk of most sensors to users.",
+    "mozPositionDetail": "The purpose of most sensors and their associated risks are incredibly hard to convey to users, which means we cannot get informed consent. We are interested in addressing the use cases websites need sensors for in ways that do not give websites access to the sensors directly as that is rife with security and privacy issues.",
     "mozPositionIssue": 35,
     "org": "W3C",
     "title": "Generic Sensor API",
