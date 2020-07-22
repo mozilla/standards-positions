@@ -765,6 +765,18 @@
   },
   {
     "ciuName": null,
+    "description": "The Sanitizer API allows turning supplied HTML into a safe HTML DOM tree",
+    "id": "sanitizer-api",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1650370",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This could be useful, since libraries exists and the browser could do it better.",
+    "mozPositionIssue": 106,
+    "org": "Proposal",
+    "title": "Sanitizer API",
+    "url": "https://wicg.github.io/sanitizer-api/"
+  },
+  {
+    "ciuName": null,
     "description": "Reducing the scope of cookies by including the URL scheme in their keying material as well as reducing the lifetime of non-secure cookies.",
     "id": "scheming-cookies",
     "mozBugUrl": null,
