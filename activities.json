@@ -1265,6 +1265,18 @@
   },
   {
     "ciuName": null,
+    "description": "An attribute that specifies the rules for generating acceptable passwords.",
+    "id": "passwordrules-attribute",
+    "mozBugUrl": null,
+    "mozPosition": "harmful",
+    "mozPositionDetail": "We believe this proposal, as drafted, encourages bad practices around passwords without encouraging good practices (such as minimum password length), and further has ambiguous and conflicting overlap with existing input validity attributes.  We believe the existing input validity attributes and API are sufficient for expressing password requirements.",
+    "mozPositionIssue": 61,
+    "org": "WHATWG",
+    "title": "passwordrules attribute",
+    "url": "https://github.com/whatwg/html/issues/3518"
+  },
+  {
+    "ciuName": null,
     "description": "The new scroll events introduced in this document provide web developers a way to listen to the state of the scrolling and when their content is being overscrolled or when the scrolling has finished. This information will be useful for the effects such as pull to refresh or history swipe navigations in the web apps.",
     "id": "scrollend and overscroll events",
     "mozBugUrl": null,
@@ -1298,17 +1310,5 @@
     "org": "WHATWG",
     "title": "timezonechange event",
     "url": "https://github.com/whatwg/html/pull/3047"
-  },
-  {
-    "ciuName": null,
-    "description": "An attribute that specifies the rules for generating acceptable passwords.",
-    "id": "passwordrules-attribute",
-    "mozBugUrl": null,
-    "mozPosition": "harmful",
-    "mozPositionDetail": "We believe this proposal, as drafted, encourages bad practices around passwords without encouraging good practices (such as minimum password length), and further has ambiguous and conflicting overlap with existing input validity attributes.  We believe the existing input validity attributes and API are sufficient for expressing password requirements.",
-    "mozPositionIssue": 61,
-    "org": "WHATWG",
-    "title": "passwordrules attribute",
-    "url": "https://github.com/whatwg/html/issues/3518"
   }
 ]
