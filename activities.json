@@ -1068,6 +1068,19 @@
     "url": "https://github.com/WICG/web-codecs"
   },
   {
+    "ciuName": null,
+    "description": "This document defines a web platform API that allows script to asynchronously acquire a lock over a resource, hold it while work is performed, then release it. While held, no other script in the origin can acquire a lock over the same resource. This allows contexts (windows, workers) within a web application to coordinate the usage of resources.",
+    "id": "web-locks",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Locks_API",
+    "mozBugUrl": "",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "The specification provides important web platform primitives for same-global and cross-global coordination and avoids requiring other APIs to grow their own transaction abstractions (ex: the Service Worker spec's Cache API).",
+    "mozPositionIssue": 64,
+    "org": "Proposal",
+    "title": "Web Locks API",
+    "url": "https://wicg.github.io/web-locks/"
+  },
+  {
     "ciuName": "midi",
     "description": "This specification defines an API supporting the MIDI (Musical Instrument Digital Interface) protocol, enabling web applications to enumerate and select MIDI input and output devices on the client system and send and receive MIDI messages. It is intended to enable non-music MIDI applications as well as music ones, by providing low-level access to the MIDI devices available on the users' systems.",
     "id": "webmidi",
