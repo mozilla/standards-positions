@@ -18,6 +18,7 @@ import json
 import os
 import re
 import sys
+import string
 from urllib.parse import urlsplit, urlunsplit
 
 try:
@@ -39,6 +40,10 @@ REPO = "standards-positions"
 JSON_ENCODER = json.JSONEncoder(sort_keys=True, indent=2, separators=(",", ": "))
 
 
+class IdType(object):
+    "indicates an ID attribute."
+    pass
+
 class UrlType(object):
     "indicates a URL."
     pass
@@ -58,7 +63,7 @@ class ActivitiesJson(object):
     """
 
     expected_entry_items = [  # (name, required?, type)
-        ("id", True, StringType),
+        ("id", True, IdType),
         ("title", True, StringType),
         ("description", True, StringType),
         ("ciuName", False, StringType),
@@ -177,6 +182,13 @@ class ActivitiesJson(object):
             else:
                 if entry_value is None:
                     pass
+                elif value_type == IdType:
+                    if isinstance(entry_value, StringType):
+                        for char in entry_value:
+                            if char in string.whitespace:
+                                errors.append("%s's %s contains whitespace" % (title, name))
+                    else:
+                        errors.append("%s's %s isn't a string." % (title, name))
                 elif value_type == UrlType:
                     if isinstance(entry_value, StringType):
                         pass # FIXME: validate URL more?
