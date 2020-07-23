@@ -437,6 +437,19 @@
   },
   {
     "ciuName": null,
+    "description": "This specification defines a framework for exposing sensor data to the Open Web Platform in a consistent way. It does so by defining a blueprint for writing specifications of concrete sensors along with an abstract Sensor interface that can be extended to accommodate different sensor types.",
+    "id": "generic-sensor",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs",
+    "mozBugUrl": null,
+    "mozPosition": "harmful",
+    "mozPositionDetail": "The purpose of most sensors and their associated risks are incredibly hard to convey to users, which means we cannot get informed consent. We are interested in addressing the use cases websites need sensors for in ways that do not give websites access to the sensors directly as that is rife with security and privacy issues.",
+    "mozPositionIssue": 35,
+    "org": "W3C",
+    "title": "Generic Sensor API",
+    "url": "https://w3c.github.io/sensors/"
+  },
+  {
+    "ciuName": null,
     "description": "The Get Installed Related Apps API allows web apps to detect if related apps are installed on the current device.",
     "id": "get-installed-related-apps",
     "mozBugUrl": null,
