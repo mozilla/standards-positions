@@ -583,6 +583,19 @@
   },
   {
     "ciuName": null,
+    "description": "This specification enables web developers to show personalized media recommendations on the browser UI.",
+    "id": "media-feeds",
+    "mdnUrl": null,
+    "mozBugUrl": null,
+    "mozPosition": "harmful",
+    "mozPositionDetail": "Media feeds uses harmful technologies to amplify a harmful feature. Many of the capabilities this enables are available to sites in other ways. For those capabilities that are not, extensions to the <a href=\"https://w3c.github.io/mediasession/\">Media Session API</a> would be preferable.",
+    "mozPositionIssue": 370,
+    "org": "Proposal",
+    "title": "Media Feeds",
+    "url": "https://wicg.github.io/media-feeds/"
+  },
+  {
+    "ciuName": null,
     "description": "This document defines a web platform API that lets websites gain write access to the native file system. It builds on [FILE-API], but adds lots of new functionality on top.",
     "id": "native-file-system",
     "mozBugUrl": null,
