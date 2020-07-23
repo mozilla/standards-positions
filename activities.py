@@ -41,7 +41,7 @@ JSON_ENCODER = json.JSONEncoder(sort_keys=True, indent=2, separators=(",", ": ")
 
 
 class IdType(object):
-    "indicates a ID attribute."
+    "indicates an ID attribute."
     pass
 
 class UrlType(object):
