@@ -548,15 +548,15 @@
   },
   {
     "ciuName": null,
-    "description": "The Import Conditions and JSON modules proposal adds an inline syntax for module import statements to pass on more information alongside the module specifier, and an initial application for such attributes in supporting JSON modules in a common way across JavaScript environments.",
+    "description": "The Import Assertions and JSON modules proposal adds an inline syntax for module import statements to pass on more information alongside the module specifier, and an initial application for such attributes in supporting JSON modules in a common way across JavaScript environments.",
     "id": "import-attributes",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1648614",
     "mozPosition": "worth prototyping",
     "mozPositionDetail": "This proposal enables the importing of JSON content into a JS module. This mechanism is a prerequisite for HTML/CSS/JSON modules.",
     "mozPositionIssue": 373,
     "org": "Ecma",
-    "title": "Import Conditions",
-    "url": "https://tc39.es/proposal-import-conditions/"
+    "title": "Import Assertions",
+    "url": "https://tc39.es/proposal-import-assertions/"
   },
   {
     "ciuName": null,
