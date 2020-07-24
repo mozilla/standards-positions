@@ -262,7 +262,7 @@
     "mozPositionDetail": "Content Hints is a welcome higher-level abstraction that does not require broad knowledge and tuning of video encoder, audio-processing, and congestion controls directly. Early concerns over lack of specificity around how hints interact with the lower-level controls they complement have been addressed.",
     "mozPositionIssue": 101,
     "org": "W3C",
-    "title": "Content Hints",
+    "title": "MediaStreamTrack Content Hints",
     "url": "https://w3c.github.io/mst-content-hint/"
   },
   {
