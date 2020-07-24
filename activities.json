@@ -255,7 +255,7 @@
   {
     "ciuName": null,
     "description": "This specification extends MediaStreamTrack to let web applications provide an optional media-content hint attribute. This helps sinks like RTCPeerConnection or MediaRecorder select encoder parameters and processing algorithms appropriately based on a hint about the nature of the content being consumed without having to examine the actual content.",
-    "id": "content-hints",
+    "id": "mst-content-hint",
     "mdnUrl": null,
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
