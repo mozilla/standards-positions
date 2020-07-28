@@ -622,6 +622,18 @@
   },
   {
     "ciuName": null,
+    "description": "prefers-reduced-motion, prefers-contrast, and prefers-color-scheme are several accessibility features of Media Queries Level 5",
+    "id": "mediaqueries-prefers-features-1",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1365045",
+    "mozPosition": "important",
+    "mozPositionDetail": "These features enhance accessibility features of the platform, we have implemented them, and thus consider these three as a whole to be important.",
+    "mozPositionIssue": 393,
+    "org": "W3C",
+    "title": "Media Queries Level 5: prefers-reduced-motion, prefers-contrast, prefers-color-scheme",
+    "url": "https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-motion"
+  },
+  {
+    "ciuName": null,
     "description": "This specification extends MediaStreamTrack to let web applications provide an optional media-content hint attribute. This helps sinks like RTCPeerConnection or MediaRecorder select encoder parameters and processing algorithms appropriately based on a hint about the nature of the content being consumed without having to examine the actual content.",
     "id": "mst-content-hint",
     "mdnUrl": null,
