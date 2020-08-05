@@ -305,7 +305,6 @@ class SpecEntry(object):
             "body": """\
 * Specification Title: {title}
 * Specification URL: {url}
-* Caniuse.com URL (optional): {ciuName}
 * MDN URL (optional): {mdnUrl}
 * Bugzilla URL (optional): {mozBugUrl}
 """.format(
