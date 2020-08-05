@@ -63,6 +63,7 @@ If successful, it will modify `activities.json` with the new specification. Chec
   "ciuName": "The short tagname from caniuse.com for the feature, if available",
   "description": "A textual description; often, the spec's abstract",
   "id": "A fragment identifier for the positions table",
+  "mdnUrl": "The URL of the MDN page documenting this specification or feature, if available",
   "mozBugUrl": "The URL of the Mozilla bug tracking this specification, if available",
   "mozPosition": "under consideration",
   "mozPositionIssue": the number of the issue in this repo, if available,
