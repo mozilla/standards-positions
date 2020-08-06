@@ -6,10 +6,10 @@ We welcome contributions from the Mozilla community about its position on Web sp
 ## Requesting a Mozilla Position on a Web Specification
 
 If there is a public, Web-related specification that you think Mozilla might be interested in,
-please 
-[open a new issue](https://github.com/mozilla/standards-positions/issues/new), 
-filling out the auto-included template appropriately. (If posting via GitHub API, please copy the 
-[template](https://github.com/mozilla/standards-positions/blob/master/ISSUE_TEMPLATE.md) 
+please
+[open a new issue](https://github.com/mozilla/standards-positions/issues/new),
+filling out the auto-included template appropriately. (If posting via GitHub API, please copy the
+[template](https://github.com/mozilla/standards-positions/blob/master/ISSUE_TEMPLATE.md)
 and fill it out).
 
 Normally, the appropriate granularity for an issue is a single specification; however, if an effort
@@ -72,6 +72,10 @@ If successful, it will modify `activities.json` with the new specification. Chec
   "title": "The spec's title",
   "url": "The canonical URL for the most recent version of the spec"
 }
+```
+`activities.json` is sorted by the title field. Once again, the `activities.py` script can help:
+```
+    > ./activities.py sort
 ```
 
 ### Asking Mozilla to Update a Position
@@ -145,10 +149,10 @@ Members of the Mozilla community are
 welcome to judge that we've come to sufficient consensus in the issue,
 and make a pull request to document that consensus by changing `activities.json`.
 When this happens, we'd like to try to keep the technical discussion
-about the position 
+about the position
 in the issue itself
 (so that it stays in one place),
 and limit the discussion in the pull request
-to the details of making the change to `activities.json`, 
+to the details of making the change to `activities.json`,
 and accurately communicating the consensus in the issue.
 
