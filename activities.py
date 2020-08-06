@@ -162,7 +162,7 @@ class ActivitiesJson(object):
 
             # Check that the entries are sorted by title, as save writes them.
             if check_sorting and prevTitle is not None and prevTitle > title:
-                errors.append("{} is sorted incorrectly (it should not be after {})".format(title, prevTitle))
+                errors.append("{} is sorted incorrectly based on its title (it should not be after {})".format(title, prevTitle))
             prevTitle = title
         return errors
 
