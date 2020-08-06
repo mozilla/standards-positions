@@ -239,11 +239,11 @@ class SpecEntry(object):
         self.orig_url = spec_url
         self.data = {
             "id": u"",
-            "title": None,
+            "title": "",
             "description": None,
             "ciuName": None,
             "org": None,
-            "url": None,
+            "url": spec_url,
             "mdnUrl": None,
             "mozBugUrl": None,
             "mozPositionIssue": None,
@@ -252,11 +252,12 @@ class SpecEntry(object):
         }
         self.parser = None
         self.figure_out_org()
-        try:
-            new_entry = self.fetch_spec_data(spec_url)
-        except FetchError:
-            sys.exit(1)
-        self.data.update(**new_entry)
+        if self.parser:
+            try:
+                new_entry = self.fetch_spec_data(spec_url)
+            except FetchError:
+                sys.exit(1)
+            self.data.update(**new_entry)
 
     def figure_out_org(self):
         """
@@ -269,9 +270,9 @@ class SpecEntry(object):
             self.parser = WHATWGParser
         else:
             sys.stderr.write(
-                "* ERROR: Can't figure out what organisation %s belongs to!\n" % host
+                "* ERROR: Can't figure out what organisation %s belongs to! Using Proposal.\n" % host
             )
-            sys.exit(1)
+            self.data["org"] = "Proposal"
 
     def fetch_spec_data(self, url):
         """
