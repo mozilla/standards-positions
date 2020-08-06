@@ -242,7 +242,7 @@ class SpecEntry(object):
             "title": "",
             "description": None,
             "ciuName": None,
-            "org": None,
+            "org": "Proposal",
             "url": spec_url,
             "mdnUrl": None,
             "mozBugUrl": None,
@@ -272,7 +272,6 @@ class SpecEntry(object):
             sys.stderr.write(
                 "* ERROR: Can't figure out what organisation %s belongs to! Using Proposal.\n" % host
             )
-            self.data["org"] = "Proposal"
 
     def fetch_spec_data(self, url):
         """
