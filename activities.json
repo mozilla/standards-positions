@@ -132,6 +132,19 @@
     "url": "https://drafts.css-houdini.org/css-layout-api-1"
   },
   {
+    "ciuName": null,
+    "description": "overflow:clip is a feature of CSS Overflow Module Level 3 that is similar to overflow:hidden except without a formatting context or programmatic scrollability.",
+    "id": "css-overflow-clip",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1531609",
+    "mozPosition": "important",
+    "mozPositionDetail": "This feature is both a useful declarative presentational feature for web developers and one that standardizes a non-standard -moz prefixed value (-moz-hidden-unscrollable).",
+    "mozPositionIssue": 418,
+    "org": "W3C",
+    "title": "CSS overflow clip",
+    "url": "https://drafts.csswg.org/css-overflow-3/#valdef-overflow-clip"
+  },
+  {
     "ciuName": "css-paint-api",
     "description": "An API for allowing web developers to define a custom CSS &lt;image> with javascript, which will respond to style and size changes.",
     "id": "css-paint-api",
