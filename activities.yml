@@ -1199,9 +1199,9 @@ Payment Handler API:
     This specification defines capabilities that enable Web applications to handle requests for payment.
   id: payment-handler
   issue: 23
-  position: positive
+  position: defer
   rationale: |
-    The Payment Handler API has the potential to enable an open and secure payments ecosystem for the Web. At the same time, we remain concerned about some of the user interface requirements, and by the privacy and security assumptions made in the specification. We've raised our concerns at the W3C, and are working with the Payments working group to address those concerns. We hope that by prototyping the API we will actively address the privacy, security, and UI concerns; and fix those in the specification too. Additionally, having a working prototype will allow us to closely collaborate with the developer community and financial industry. By doing so, we will gain a better understanding of how we can solve the challenges we'll face, were we to eventually ship this API.
+    The Payment Handler API has the potential to enable an open and secure payments ecosystem for the Web. Despite taking an active role in this work in the past, Mozilla is no longer taking an active role in the W3C's Web Payments Working Group and is therefore not able to take a position on this API.
   url: https://w3c.github.io/payment-handler
   venues:
   - W3C
