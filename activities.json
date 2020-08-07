@@ -548,6 +548,18 @@
   },
   {
     "ciuName": null,
+    "description": "The imperative slotting API allows the developer to explicitly set the assigned nodes for a slot element.",
+    "id": "imperative-shadow-dom",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "The proposal is a relatively small addition to the existing Shadow DOM API and can make it easier to use Shadow DOM.",
+    "mozPositionIssue": 409,
+    "org": "WHATWG",
+    "title": "Imperative Shadow DOM Distribution API",
+    "url": "https://github.com/w3c/webcomponents/blob/gh-pages/proposals/Imperative-Shadow-DOM-Distribution-API.md"
+  },
+  {
+    "ciuName": null,
     "description": "The Import Assertions and JSON modules proposal adds an inline syntax for module import statements to pass on more information alongside the module specifier, and an initial application for such attributes in supporting JSON modules in a common way across JavaScript environments.",
     "id": "import-attributes",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1648614",
