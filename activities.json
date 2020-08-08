@@ -600,7 +600,7 @@
     "id": "layout-instability",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1651528",
     "mozPosition": "worth prototyping",
-    "mozPositionDetail": "We're somewhat uneasy about the potential burden that this feature imposes on sites that don't use it, due to the requirements of the \"buffered\" flag. However, setting that reservation aside, we think this sort of feature is worth exploring.  We've filed spec issues on that reservation and on some other points that need clarity.",
+    "mozPositionDetail": "We're somewhat uneasy about the potential burden that this feature imposes on sites that don't use it, due to the requirements of the \"buffered\" flag.  However, setting that reservation aside, we think this sort of feature is worth exploring.  We've filed spec issues on that reservation and on some other points that need clarity.",
     "mozPositionIssue": 374,
     "org": "Proposal",
     "title": "Layout Instability API",
