@@ -103,6 +103,9 @@ specifications. That is distinct from the larger Web community's position; the b
 advocate for a specification is using the appropriate standards body's discussion mechanisms, not
 here.
 
+In particular, use-cases should be documented elsewhere (e.g. blog posts), 
+and cited in the respective Explainers (if any) of applicable proposals, rather than this repo.
+
 Please focus your comments on bringing new information about a specification; if you want to
 express support for adopting a specification, the best way to do that is using [Github
 reactions](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments) on the
