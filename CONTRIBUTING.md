@@ -103,8 +103,13 @@ specifications. That is distinct from the larger Web community's position; the b
 advocate for a specification is using the appropriate standards body's discussion mechanisms, not
 here.
 
-In particular, use-cases should be documented elsewhere (e.g. blog posts), 
-and cited in the respective Explainers (if any) of applicable proposals, rather than this repo.
+We expect that cited resources (such as an explainer or proposed specification) 
+include all the information necessary to understand the proposal: 
+the problem that is being addressed or use-cases of interest; 
+the shape of the proposed solution; 
+an explanation of how the proposal addresses the problem; 
+and how the proposal might affect the system as a whole.
+Issues should only provide a high-level summary of this information in a couple of sentences at most.
 
 Please focus your comments on bringing new information about a specification; if you want to
 express support for adopting a specification, the best way to do that is using [Github
