@@ -103,6 +103,14 @@ specifications. That is distinct from the larger Web community's position; the b
 advocate for a specification is using the appropriate standards body's discussion mechanisms, not
 here.
 
+We expect that cited resources (such as an explainer or proposed specification) 
+include all the information necessary to understand the proposal: 
+the problem that is being addressed or use-cases of interest; 
+the shape of the proposed solution; 
+an explanation of how the proposal addresses the problem; 
+and how the proposal might affect the system as a whole.
+Issues should only provide a high-level summary of this information in a couple of sentences at most.
+
 Please focus your comments on bringing new information about a specification; if you want to
 express support for adopting a specification, the best way to do that is using [Github
 reactions](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments) on the
