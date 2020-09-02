@@ -1232,6 +1232,19 @@
     "url": "https://wicg.github.io/webusb/"
   },
   {
+    "ciuName": "webxr",
+    "description": "This specification describes support for accessing virtual reality (VR) and augmented reality (AR) devices, including sensors and head-mounted displays, on the Web.",
+    "id": "webxr",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1419190",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "The WebXR Device API is the basis for VR, MR, and AR on the web.  This is a significant and large suite of features.  There is the potential for XR to provide significant benefits, but also a number of risks to individual privacy and security due to the way that XR relies on sensors and environmental data.  Developing new interaction models also presents challenges and considerable work is required before new norms are established.  Mozilla is actively working on WebXR and supportive of its overall goals.  Our participation in and implementation of this API is critical to understanding the feature and learning how to empower users in managing the associated risks.",
+    "mozPositionIssue": 218,
+    "org": "Proposal",
+    "title": "WebXR Device API",
+    "url": "https://immersive-web.github.io/webxr/"
+  },
+  {
     "ciuName": null,
     "description": "Describes a method for performing hit tests against real world geometry to be used with the WebXR Device API.",
     "id": "webxr-hit-test",
