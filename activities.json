@@ -194,6 +194,19 @@
   },
   {
     "ciuName": null,
+    "description": "overflow:clip is a feature of CSS Overflow Module Level 3 that is similar to overflow:hidden except without a formatting context or programmatic scrollability.",
+    "id": "css-overflow-clip",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1531609",
+    "mozPosition": "important",
+    "mozPositionDetail": "This feature is both a useful declarative presentational feature for web developers and standardizes a non-standard -moz prefixed value.",
+    "mozPositionIssue": 418,
+    "org": "W3C",
+    "title": "CSS overflow clip",
+    "url": "https://drafts.csswg.org/css-overflow-3/#valdef-overflow-clip"
+  },
+  {
+    "ciuName": null,
     "description": "This specification defines a HTTP/2 frame type to allow clients to inform the server of their cache's contents. Servers can then use this to inform their choices of what to push to clients.",
     "id": "http-cache-digest",
     "mozBugUrl": null,
