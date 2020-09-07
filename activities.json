@@ -61,6 +61,18 @@
   },
   {
     "ciuName": null,
+    "description": "A proposal for an 'asynchronous atomic wait' for ECMAScript, primarily for use in agents that are not allowed to block.",
+    "id": "atomics-wait-async",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1467846",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "Represents a meaningful way for the main thread to interact with blocking concurrent patterns in workers and other off-thread work.",
+    "mozPositionIssue": 433,
+    "org": "Ecma",
+    "title": "Atomics.waitAsync",
+    "url": "https://tc39.es/proposal-atomics-wait-async/"
+  },
+  {
+    "ciuName": null,
     "description": "This API will help by improving the audio-mixing of websites with native apps, so they can play on top of each other, or play exclusively.",
     "id": "audio-focus",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1579791",
