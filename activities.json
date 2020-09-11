@@ -658,6 +658,19 @@
   },
   {
     "ciuName": null,
+    "description": "This describes APIs for TCP and UDP communication with arbitrary hosts",
+    "id": "low-level-sockets",
+    "mdnUrl": null,
+    "mozBugUrl": null,
+    "mozPosition": "harmful",
+    "mozPositionDetail": "This API creates a way to circumvent protections, in particular the same-origin policy, that have been developed to protect these services. The safeguards outlined in the explainer are inadequate and incomplete. Relying on user consent is not a sufficient safeguard if this capability were to be exposed to the web.",
+    "mozPositionIssue": 431,
+    "org": "Proposal",
+    "title": "Low-level (Raw) Sockets API",
+    "url": "https://github.com/WICG/raw-sockets/blob/master/docs/explainer.md"
+  },
+  {
+    "ciuName": null,
     "description": "This specification enables web developers to show personalized media recommendations on the browser UI.",
     "id": "media-feeds",
     "mdnUrl": null,
