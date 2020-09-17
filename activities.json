@@ -724,13 +724,13 @@
     "ciuName": null,
     "description": "Origin isolation refers to segregating cross-origin documents into separate agent clusters.",
     "id": "domenic-origin-isolation",
-    "mozBugUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1665474",
     "mozPosition": "worth prototyping",
     "mozPositionDetail": "Letting developers opt out of document.domain and reduce the potential size of their agent cluster allows user agents to balance security, performance, and resource management.",
     "mozPositionIssue": 244,
-    "org": "Proposal",
+    "org": "WHATWG",
     "title": "Origin Isolation",
-    "url": "https://github.com/WICG/origin-isolation"
+    "url": "https://html.spec.whatwg.org/multipage/origin.html#origin-isolation"
   },
   {
     "ciuName": null,
