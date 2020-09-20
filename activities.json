@@ -96,7 +96,7 @@
     "url": "https://wicg.github.io/badging/"
   },
   {
-    "ciuName": null,
+    "ciuName": "bigint",
     "description": "This proposal adds arbitrary-precision integers to ECMAScript.",
     "id": "bigint",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1366287",
@@ -374,7 +374,7 @@
     "url": "https://github.com/whatwg/html/pull/4658"
   },
   {
-    "ciuName": null,
+    "ciuName": "document-policy",
     "description": "Document policy allows content to define a policy that constrains embedded content.",
     "id": "document-policy",
     "mozBugUrl": null,
@@ -696,7 +696,7 @@
     "url": "https://w3c.github.io/mst-content-hint/"
   },
   {
-    "ciuName": null,
+    "ciuName": "native-filesystem-api",
     "description": "This document defines a web platform API that lets websites gain write access to the native file system. It builds on [FILE-API], but adds lots of new functionality on top.",
     "id": "native-file-system",
     "mozBugUrl": null,
@@ -794,7 +794,7 @@
     "url": "https://w3c.github.io/permissions/"
   },
   {
-    "ciuName": null,
+    "ciuName": "permissions-policy",
     "description": "This specification defines a mechanism that allows developers to selectively enable and disable use of various browser features and APIs.",
     "id": "feature-policy",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1390801",
@@ -902,7 +902,7 @@
     "url": "https://github.com/mikewest/scheming-cookies"
   },
   {
-    "ciuName": null,
+    "ciuName": "wake-lock",
     "description": "This document specifies an API that allows web applications to request a screen wake lock. Under the right conditions, and if allowed, the screen wake lock prevents the system from turning off a device's screen.",
     "id": "screen-wake-lock",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589554",
@@ -914,7 +914,7 @@
     "url": "https://w3c.github.io/wake-lock/"
   },
   {
-    "ciuName": null,
+    "ciuName": "url-scroll-to-text-fragment",
     "description": "A proposal for extending URL fragment syntax with a list of text bits to highlight and scroll to",
     "id": "scroll-to-text-fragment",
     "mozBugUrl": null,
@@ -1083,7 +1083,7 @@
     "url": "https://github.com/WICG/trust-token-api/blob/master/README.md"
   },
   {
-    "ciuName": null,
+    "ciuName": "trusted-types",
     "description": "An API that allows applications to lock down powerful APIs to only accept non-spoofable, typed values in place of strings to prevent vulnerabilities caused by using these APIs with attacker-controlled inputs.",
     "id": "trusted-types",
     "mozBugUrl": null,
@@ -1208,7 +1208,7 @@
     "url": "https://webaudio.github.io/web-midi-api/"
   },
   {
-    "ciuName": null,
+    "ciuName": "webnfc",
     "description": "Near Field Communication (NFC) enables wireless communication between two devices at close proximity, usually less than a few centimeters. This document defines an API to enable selected use cases based on NFC technology. The current scope of this specification is NDEF. Low-level I/O operations (e.g. ISO-DEP, NFC-A/B, NFC-F) and Host-based Card Emulation (HCE) are not supported within the current scope.",
     "id": "web-nfc",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1308614",
