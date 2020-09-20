@@ -293,7 +293,7 @@
     "ciuName": null,
     "description": "An asynchronous Javascript cookies API for documents and workers",
     "id": "cookie-store",
-    "mozBugUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1475599",
     "mozPosition": "defer",
     "mozPositionDetail": "This API provides better access to cookies. However, the improvements also expand access to cookie metadata and the interactions with privacy features like the Storage Access API are unclear. Work on improving cookie interoperability, which is ongoing, might be needed before an assessment can be made.",
     "mozPositionIssue": 94,
