@@ -1,0 +1,17 @@
+name: Validate
+on:
+  pull_request:
+    branches:
+    - master
+  push:
+    branches:
+    - master
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+    - run: pip install -r requirements.txt
+    - run: python ./activities.py validate
