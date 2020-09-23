@@ -697,7 +697,7 @@
   },
   {
     "ciuName": "file-system-access-api",
-    "description": "This document defines a web platform API that lets websites gain write access to the local file system. It builds on [FILE-API], but adds lots of new functionality on top.",
+    "description": "This document defines a web platform API that lets websites gain write access to the local file system. It builds on [File API], but adds lots of new functionality on top.",
     "id": "native-file-system",
     "mozBugUrl": null,
     "mozPosition": "defer",
