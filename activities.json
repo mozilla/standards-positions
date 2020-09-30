@@ -1060,6 +1060,18 @@
   },
   {
     "ciuName": null,
+    "description": "Top-level await enables modules to act as big async functions: With top-level await, ECMAScript Modules (ESM) can await resources, causing other modules who import them to wait before they start evaluating their body.",
+    "id": "top-level-await",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1519100",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "An ergonomic way of handling modules that contain top level asynchronous work.",
+    "mozPositionIssue": 444,
+    "org": "Ecma",
+    "title": "Top-Level Await",
+    "url": "https://github.com/tc39/proposal-top-level-await"
+  },
+  {
+    "ciuName": null,
     "description": "In Transport Layer Security (TLS) handshakes, certificate chains often take up the majority of the bytes transmitted. This document describes how certificate chains can be compressed to reduce the amount of data transmitted and avoid some round trips.",
     "id": "tls-certificate-compression",
     "mozBugUrl": null,
