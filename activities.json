@@ -271,7 +271,7 @@
     "id": "contact-picker",
     "mozBugUrl": null,
     "mozPosition": "defer",
-    "mozPositionDetail": "This API innnovates in some ways beyond several previous Contacts APIs, though uses different properties than HTML autofill field names.",
+    "mozPositionDetail": "This API innovates in some ways beyond several previous Contacts APIs, though uses different properties than HTML autofill field names.",
     "mozPositionIssue": 153,
     "org": "Proposal",
     "title": "Contact Picker API",
@@ -445,7 +445,7 @@
     "mozPositionDetail": "These propose what seems likely to be a useful addition to allow custom controls to participate in form validation and submission.",
     "mozPositionIssue": 150,
     "org": "WHATWG",
-    "title": "Form Particpation API",
+    "title": "Form Participation API",
     "url": "https://github.com/whatwg/html/pull/4383"
   },
   {
@@ -1380,7 +1380,7 @@
   },
   {
     "ciuName": null,
-    "description": "A descriptor for CSS @page rules that changes the orientation of the page in generated PDF output (or similar) without otherwise affecing layout.",
+    "description": "A descriptor for CSS @page rules that changes the orientation of the page in generated PDF output (or similar) without otherwise affecting layout.",
     "id": "page-orientation-descriptor",
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
