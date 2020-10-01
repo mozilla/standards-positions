@@ -1380,7 +1380,7 @@
   },
   {
     "ciuName": null,
-    "description": "A descriptor for CSS @page rules that changes the orientation of the page in generated PDF output (or similar) without otherwise effecting layout.",
+    "description": "A descriptor for CSS @page rules that changes the orientation of the page in generated PDF output (or similar) without otherwise affecting layout.",
     "id": "page-orientation-descriptor",
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
