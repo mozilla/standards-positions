@@ -422,6 +422,18 @@
     "url": "https://github.com/WICG/file-handling/blob/master/explainer.md"
   },
   {
+    "ciuName": "file-system-access-api",
+    "description": "This document defines a web platform API that lets websites gain write access to the local file system. It builds on File API, but adds lots of new functionality on top.",
+    "id": "native-file-system",
+    "mozBugUrl": null,
+    "mozPosition": "defer",
+    "mozPositionDetail": "The ability to read and write from the filesystem is potentially very dangerous. We will need to carefully consider any solution in light of the security and privacy implications. We recognize that the spec authors take this issue seriously, but we are concerned that any solution will increase the risk of security incidents more than we are willing to tolerate. Right now, there isn't enough detail in the specification to make an assessment of these risks, so we will defer our decision until we have more information.",
+    "mozPositionIssue": 154,
+    "org": "Proposal",
+    "title": "File System Access",
+    "url": "https://wicg.github.io/file-system-access/"
+  },
+  {
     "ciuName": null,
     "description": "This document proposes a new web platform mechanism to declare a collection of related domains as being in a First-Party Set.",
     "id": "first-party-sets",
@@ -694,18 +706,6 @@
     "org": "W3C",
     "title": "MediaStreamTrack Content Hints",
     "url": "https://w3c.github.io/mst-content-hint/"
-  },
-  {
-    "ciuName": "native-filesystem-api",
-    "description": "This document defines a web platform API that lets websites gain write access to the native file system. It builds on [FILE-API], but adds lots of new functionality on top.",
-    "id": "native-file-system",
-    "mozBugUrl": null,
-    "mozPosition": "defer",
-    "mozPositionDetail": "The ability to read and write from the filesystem is potentially very dangerous. We will need to carefully consider any solution in light of the security and privacy implications. We recognize that the spec authors take this issue seriously, but we are concerned that any solution will increase the risk of security incidents more than we are willing to tolerate. Right now, there isn't enough detail in the specification to make an assessment of these risks, so we will defer our decision until we have more information.",
-    "mozPositionIssue": 154,
-    "org": "Proposal",
-    "title": "Native File System",
-    "url": "https://wicg.github.io/native-file-system/"
   },
   {
     "ciuName": "netinfo",
