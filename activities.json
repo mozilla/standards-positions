@@ -803,7 +803,7 @@
     "mozPositionIssue": 24,
     "org": "W3C",
     "title": "Permissions Policy",
-    "url": "https://w3c.github.io/webappsec-feature-policy/"
+    "url": "https://w3c.github.io/webappsec-permissions-policy/"
   },
   {
     "ciuName": null,
