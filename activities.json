@@ -799,7 +799,7 @@
     "id": "feature-policy",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1390801",
     "mozPosition": "worth prototyping",
-    "mozPositionDetail": "Mozilla's primary interest in this specification is in the delegation of permissions to third-party contexts, and in particular permissions that might require the user to make a choice. To that end we are willing to prototype and ship the allow attribute, but given this reduction in scope the remaining functionality needs to be reevaluated in terms of naming and applicability.",
+    "mozPositionDetail": "Mozilla's primary interest in this specification is in the delegation of permissions to third-party contexts that are not granted there by default. To that end we have shipped the allow attribute. The recently revised Permissions-Policy header seems worth prototyping and would allow for sites to impose restrictions on themselves. We hope that the API can be folded into the Permissions API and have not evaluated the reporting functionality as of yet.",
     "mozPositionIssue": 24,
     "org": "W3C",
     "title": "Permissions Policy",
