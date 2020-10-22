@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# This is a pre-commit hook that validates code formatting.
+#
+# Install this by running the script with an argument of "install",
+# which adds a symlink at .git/hooks/precommit; or run the equivalent:
+#
+# $ ln -s ../../hooks/pre-commit .git/pre-commit
+
+root="$(git rev-parse --show-toplevel 2>/dev/null)"
+
+# Some sanity checking.
+hash python3 || exit 1
+[[ -n "$root" ]] || exit 1
+
+# Installation.
+if [[ "$1" == "install" ]]; then
+    hook="$root"/.git/hooks/pre-commit
+    if [[ -e "$hook" ]]; then
+        echo "Hook already installed:"
+	ls -l "$hook"
+    else
+        ln -s ../../pre-commit "$hook"
+        echo "Installed git pre-commit hook at $hook"
+    fi
+    exit
+fi
+
+exec 1>&2
+
+# Perform validation.
+trap 'git stash pop -q' EXIT
+git stash push -k -u -q -m "pre-commit stash from $(date '+%FT%T%z')"
+if ! python3 activities.py validate; then
+    echo "Validation failed; \`git commit --no-verify\` to suppress validation."
+    exit 1
+fi
