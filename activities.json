@@ -1275,8 +1275,8 @@
     "mdnUrl": null,
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
-    "mozPositionDetail": "This approach provides sites a way to offer a form of end-to-end protection for media, especially in those very common cases where media for group sessions is managed by a central service. The proposed API, together with the SFrame proposal, provides sites the ability to limit the information that is exposed to the central service. Mozilla would prefer to include better key management than this approach proposes, perhaps using <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-mls-architecture\">MLS</a>, which might guarantee certain security and privacy gains for users. However, we recognizes that this is not yet feasible and this API can provide security and privacy gains if carefully applied by sites.",
-    "mozPositionIssue": null,
+    "mozPositionDetail": "This approach provides sites a way to offer a form of end-to-end protection for media, especially in those very common cases where media for group sessions is managed by a central service. The proposed API, together with the SFrame proposal, provides sites the ability to limit the information that is exposed to the central service. Mozilla would prefer to include better key management than this approach proposes, perhaps using <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-mls-architecture\">MLS</a>, which might guarantee certain security and privacy gains for users. However, we recognize that this is not yet feasible and this API can provide security and privacy gains if carefully applied by sites.",
+    "mozPositionIssue": 330,
     "org": "W3C",
     "title": "WebRTC Insertable Media using Streams",
     "url": "https://w3c.github.io/webrtc-insertable-streams/"
