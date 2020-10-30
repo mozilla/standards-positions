@@ -613,7 +613,7 @@
     "id": "import-maps",
     "mozBugUrl": null,
     "mozPosition": "worth prototyping",
-    "mozPositionDetail": "We support the overal intent of the proposal and consider it worth prototyping. There are a few technical details that may require some care, in particular the relationship between speculative parsing and dynamic import maps.",
+    "mozPositionDetail": "We support the overall intent of the proposal and consider it worth prototyping. There are a few technical details that may require some care, in particular the relationship between speculative parsing and dynamic import maps.",
     "mozPositionIssue": 146,
     "org": "Proposal",
     "title": "Import Maps",
