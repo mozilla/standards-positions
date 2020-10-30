@@ -609,6 +609,18 @@
   },
   {
     "ciuName": null,
+    "description": "Import maps allow web pages to control the behavior of JavaScript imports.",
+    "id": "import-maps",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "We support the overal intent of the proposal and consider it worth prototyping. There are a few technical details that may require some care, in particular the relationship between speculative parsing and dynamic import maps.",
+    "mozPositionIssue": 146,
+    "org": "Proposal",
+    "title": "Import Maps",
+    "url": "https://wicg.github.io/import-maps/"
+  },
+  {
+    "ciuName": null,
     "description": "This document proposes a few changes to cookies inspired by the properties of the HTTP State Tokens mechanism.  First, cookies should be treated as \"SameSite=Lax\" by default.  Second, cookies that explicitly assert \"SameSite=None\" in order to enable cross-site delivery should also be marked as \"Secure\".  Third, same-site should take the scheme of the sites into account.  Fourth, cookies should respect schemes.  Fifth, cookies associated with non-secure schemes should be removed at the end of a user's session.  Sixth, the definition of a session should be tightened.",
     "id": "cookie-incrementalism",
     "mozBugUrl": null,
