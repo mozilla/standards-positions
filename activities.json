@@ -368,7 +368,7 @@
     "mdnUrl": null,
     "mozBugUrl": null,
     "mozPosition": "non-harmful",
-    "mozPositionDetail": "We're not convinced that the complexity this feature introduces upon the HTML parser carries its weight in terms of usefulness for web developers. There's also a risk that the processing model is not compatible with a future declarative custom elements feature as it was developed in isolation. Having said that, the proposal is a reasonable approach for this functionality that takes into account the various constrains and security considerations that come with changing the HTML parser.",
+    "mozPositionDetail": "We're not convinced that the complexity this feature introduces upon the HTML parser carries its weight in terms of usefulness for web developers. There's also a risk that the processing model is not compatible with a future declarative custom elements feature as it was developed in isolation. Having said that, the proposal is a reasonable approach for this functionality that takes into account the various constraints and security considerations that come with changing the HTML parser.",
     "mozPositionIssue": 335,
     "org": "Proposal",
     "title": "Declarative Shadow DOM",
