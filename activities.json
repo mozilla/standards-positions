@@ -120,6 +120,19 @@
     "url": "https://tools.ietf.org/html/draft-yasskin-wpack-bundled-exchanges"
   },
   {
+    "ciuName": "byte-streams",
+    "description": "Byte streams are a specialization of <a href=\"#streams\">Streams</a> that are designed to deal with raw bytes.",
+    "id": "byte-streams",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Streams_API#ByteStream-related_interfaces",
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "Byte streams are a useful specialization of streams that is well suited to performant I/O and they are well integrated with Typed Arrays.",
+    "mozPositionIssue": 457,
+    "org": "WHATWG",
+    "title": "Byte Streams",
+    "url": "https://streams.spec.whatwg.org/"
+  },
+  {
     "ciuName": null,
     "description": "This draft defines additions to CSS Grid, primarily for the subgrid feature.",
     "id": "subgrid",
