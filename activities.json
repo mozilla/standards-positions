@@ -760,18 +760,6 @@
   },
   {
     "ciuName": null,
-    "description": "This feature allows for an agent cluster to be keyed by origin rather than site.",
-    "id": "domenic-origin-isolation",
-    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1665474",
-    "mozPosition": "worth prototyping",
-    "mozPositionDetail": "Letting developers opt out of document.domain and reduce the potential size of their agent cluster allows user agents to balance security, performance, and resource management.",
-    "mozPositionIssue": 244,
-    "org": "WHATWG",
-    "title": "Origin-keyed Agent Clusters",
-    "url": "https://html.spec.whatwg.org/multipage/origin.html#origin-isolation"
-  },
-  {
-    "ciuName": null,
     "description": "This specification defines a delivery mechanism for a number of policies which are to be applied to an entire origin. It compliments header-based delivery mechanisms for existing policies (Content Security Policy, Referrer Policy, etc).",
     "id": "origin-policy",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1508290",
@@ -781,6 +769,18 @@
     "org": "Proposal",
     "title": "Origin Policy",
     "url": "https://wicg.github.io/origin-policy/"
+  },
+  {
+    "ciuName": null,
+    "description": "This feature allows for an agent cluster to be keyed by origin rather than site.",
+    "id": "domenic-origin-isolation",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1665474",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "Letting developers opt out of document.domain and reduce the potential size of their agent cluster allows user agents to balance security, performance, and resource management.",
+    "mozPositionIssue": 244,
+    "org": "WHATWG",
+    "title": "Origin-keyed Agent Clusters",
+    "url": "https://html.spec.whatwg.org/multipage/origin.html#origin-isolation"
   },
   {
     "ciuName": null,
