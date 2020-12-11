@@ -779,7 +779,7 @@
     "mozPositionDetail": "Letting developers opt out of document.domain and reduce the potential size of their agent cluster allows user agents to balance security, performance, and resource management.",
     "mozPositionIssue": 244,
     "org": "WHATWG",
-    "title": "Origin-keyed Agent Clusters",
+    "title": "Origin-Keyed Agent Clusters",
     "url": "https://html.spec.whatwg.org/multipage/origin.html#origin-isolation"
   },
   {
