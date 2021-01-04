@@ -10,7 +10,7 @@ are interesting to Mozilla.
 
 Requires Python 3, BeautifulSoup 4, requests and html5lib; e.g.,
 
-> pip install beautifulsoup4 requests html5lib
+> pip3 install -r requirements.txt
 """
 
 from __future__ import print_function
