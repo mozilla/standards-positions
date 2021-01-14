@@ -898,7 +898,7 @@
     "mdnUrl": null,
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1658308",
     "mozPosition": "worth prototyping",
-    "mozPositionDetail": "Relative indexing is useful for typed arrays and arrays and will be a quality of life improvement for developers",
+    "mozPositionDetail": "Relative indexing is useful for typed arrays and arrays and will be a quality of life improvement for developers.",
     "mozPositionIssue": 458,
     "org": "Ecma",
     "title": "Relative indexing method",
