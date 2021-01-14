@@ -893,6 +893,19 @@
   },
   {
     "ciuName": null,
+    "description": "A TC39 proposal to add an .at() method to all the basic indexable classes (Array, String, TypedArray) which allows relative indexing of collection.",
+    "id": "relative-indexing-method",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1658308",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "Relative indexing is useful for typed arrays and arrays and will be a quality of life improvement for developers",
+    "mozPositionIssue": 458,
+    "org": "Ecma",
+    "title": "Relative indexing method",
+    "url": "https://github.com/tc39/proposal-relative-indexing-method"
+  },
+  {
+    "ciuName": null,
     "description": "This document defines a generic reporting framework which allows web developers to associate a set of named reporting endpoints with an origin. Various platform features can use these endpoints to deliver feature-specific reports in a consistent manner.",
     "id": "reporting",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1620573",
