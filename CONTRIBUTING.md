@@ -9,7 +9,7 @@ If there is a public, Web-related specification that you think Mozilla might be 
 please
 [open a new issue](https://github.com/mozilla/standards-positions/issues/new),
 filling out the auto-included template appropriately. (If posting via GitHub API, please copy the
-[template](https://github.com/mozilla/standards-positions/blob/master/ISSUE_TEMPLATE.md)
+[template](https://github.com/mozilla/standards-positions/blob/main/ISSUE_TEMPLATE.md)
 and fill it out).
 
 Normally, the appropriate granularity for an issue is a single specification; however, if an effort
@@ -103,11 +103,11 @@ specifications. That is distinct from the larger Web community's position; the b
 advocate for a specification is using the appropriate standards body's discussion mechanisms, not
 here.
 
-We expect that cited resources (such as an explainer or proposed specification) 
-include all the information necessary to understand the proposal: 
-the problem that is being addressed or use-cases of interest; 
-the shape of the proposed solution; 
-an explanation of how the proposal addresses the problem; 
+We expect that cited resources (such as an explainer or proposed specification)
+include all the information necessary to understand the proposal:
+the problem that is being addressed or use-cases of interest;
+the shape of the proposed solution;
+an explanation of how the proposal addresses the problem;
 and how the proposal might affect the system as a whole.
 Issues should only provide a high-level summary of this information in a couple of sentences at most.
 
