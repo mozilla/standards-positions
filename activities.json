@@ -134,19 +134,6 @@
   },
   {
     "ciuName": null,
-    "description": "This document specifies modifications to Fetch which are intended to mitigate the risks associated with unintentional exposure of devices and servers on a client\u2019s internal network to the web at large.",
-    "id": "cors-and-rfc1918",
-    "mdnUrl": null,
-    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1481298",
-    "mozPosition": "worth prototyping",
-    "mozPositionDetail": "While imperfect and arguably at odds with Internet architecture, localhost and local networks of end users are vulnerable to attacks that this protocol will help mitigate.",
-    "mozPositionIssue": 143,
-    "org": "Proposal",
-    "title": "CORS and RFC1918",
-    "url": "https://wicg.github.io/cors-rfc1918/"
-  },
-  {
-    "ciuName": null,
     "description": "This draft defines additions to CSS Grid, primarily for the subgrid feature.",
     "id": "subgrid",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1349043",
@@ -891,6 +878,19 @@
     "org": "Proposal",
     "title": "Private Click Measurement",
     "url": "https://privacycg.github.io/private-click-measurement/"
+  },
+  {
+    "ciuName": null,
+    "description": "This document specifies modifications to Fetch which are intended to mitigate the risks associated with unintentional exposure of devices and servers on a client\u2019s internal network to the web at large.",
+    "id": "cors-and-rfc1918",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1481298",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "While imperfect and arguably at odds with Internet architecture, localhost and local networks of end users are vulnerable to attacks that this protocol will help mitigate.",
+    "mozPositionIssue": 143,
+    "org": "Proposal",
+    "title": "Private Network Access",
+    "url": "https://wicg.github.io/private-network-access/"
   },
   {
     "ciuName": null,
