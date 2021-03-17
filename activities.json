@@ -120,7 +120,7 @@
     "url": "https://tools.ietf.org/html/draft-yasskin-wpack-bundled-exchanges"
   },
   {
-    "ciuName": "byte-streams",
+    "ciuName": "streams",
     "description": "Byte streams are a specialization of <a href=\"#streams\">Streams</a> that are designed to deal with raw bytes.",
     "id": "byte-streams",
     "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Streams_API#ByteStream-related_interfaces",
@@ -133,7 +133,7 @@
     "url": "https://streams.spec.whatwg.org/"
   },
   {
-    "ciuName": null,
+    "ciuName": "css-subgrid",
     "description": "This draft defines additions to CSS Grid, primarily for the subgrid feature.",
     "id": "subgrid",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1349043",
@@ -182,7 +182,7 @@
     "url": "https://drafts.css-houdini.org/css-properties-values-api-1"
   },
   {
-    "ciuName": null,
+    "ciuName": "mdn-css_at-rules_property",
     "description": "The @property rule represents a custom property registration directly in a stylesheet without having to run any JS.",
     "id": "at-property",
     "mozBugUrl": null,
@@ -218,7 +218,7 @@
     "url": "https://drafts.css-houdini.org/css-typed-om-1"
   },
   {
-    "ciuName": null,
+    "ciuName": "mdn-css_properties_overflow_clip",
     "description": "overflow:clip is a feature of CSS Overflow Module Level 3 that is similar to overflow:hidden except without a formatting context or programmatic scrollability.",
     "id": "css-overflow-clip",
     "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
@@ -303,7 +303,7 @@
     "url": "https://w3c.github.io/webappsec-cspee/"
   },
   {
-    "ciuName": null,
+    "ciuName": "cookie-store-api",
     "description": "An asynchronous Javascript cookies API for documents and workers",
     "id": "cookie-store",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1475599",
@@ -327,7 +327,7 @@
     "url": "https://wicg.github.io/crash-reporting/"
   },
   {
-    "ciuName": null,
+    "ciuName": "credential-management",
     "description": "This specification describes an imperative API enabling a website to request a user\u2019s credentials from a user agent, and to help the user agent correctly store user credentials for future use.",
     "id": "credman",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1156047",
@@ -363,7 +363,7 @@
     "url": "https://github.com/tQsW/webcrypto-curve25519"
   },
   {
-    "ciuName": null,
+    "ciuName": "custom-elementsv1",
     "description": "A way to create new HTML elements implemented through JavaScript.",
     "id": "custom-elements",
     "mozBugUrl": null,
@@ -448,7 +448,7 @@
     "url": "https://github.com/WICG/file-handling/blob/master/explainer.md"
   },
   {
-    "ciuName": "file-system-access-api",
+    "ciuName": "native-filesystem-api",
     "description": "This document defines a web platform API that lets websites gain write access to the local file system. It builds on File API, but adds lots of new functionality on top.",
     "id": "native-file-system",
     "mozBugUrl": null,
@@ -525,7 +525,7 @@
     "url": "https://w3c.github.io/geolocation-sensor/"
   },
   {
-    "ciuName": null,
+    "ciuName": "mdn-api_navigator_getinstalledrelatedapps",
     "description": "The Get Installed Related Apps API allows web apps to detect if related apps are installed on the current device.",
     "id": "get-installed-related-apps",
     "mozBugUrl": null,
@@ -573,7 +573,7 @@
     "url": "https://github.com/whatwg/html/pull/4763"
   },
   {
-    "ciuName": null,
+    "ciuName": "mdn-api_htmlvideoelement_requestvideoframecallback",
     "description": "&lt;video>.requestVideoFrameCallback() allows web authors to be notified when a frame has been presented for composition.",
     "id": "requestVideoFrameCallback",
     "mozBugUrl": null,
@@ -634,7 +634,7 @@
     "url": "https://tc39.es/proposal-import-assertions/"
   },
   {
-    "ciuName": null,
+    "ciuName": "import-maps",
     "description": "Import maps allow web pages to control the behavior of JavaScript imports.",
     "id": "import-maps",
     "mozBugUrl": null,
@@ -658,7 +658,7 @@
     "url": "https://tools.ietf.org/html/draft-west-cookie-incrementalism"
   },
   {
-    "ciuName": null,
+    "ciuName": "mdn-api_keyboardlayoutmap",
     "description": "This specification defines an API that allows websites to convert from a given code value to a valid key value that can be shown to the user to identify the given key. The conversion from code to key is based on the user\u2019s currently selected keyboard layout. It is intended to be used by web applications that want to treat the keyboard as a set of buttons and need to describe those buttons to the user.",
     "id": "keyboard-map",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1469017",
@@ -733,7 +733,7 @@
     "url": "https://wicg.github.io/media-feeds/"
   },
   {
-    "ciuName": null,
+    "ciuName": "mdn-api_mediastreamtrack_contenthint",
     "description": "This specification extends MediaStreamTrack to let web applications provide an optional media-content hint attribute. This helps sinks like RTCPeerConnection or MediaRecorder select encoder parameters and processing algorithms appropriately based on a hint about the nature of the content being consumed without having to examine the actual content.",
     "id": "mst-content-hint",
     "mdnUrl": null,
@@ -807,7 +807,7 @@
     "url": "https://w3c.github.io/payment-method-manifest"
   },
   {
-    "ciuName": null,
+    "ciuName": "background-sync",
     "description": "This specification describes a method that enables web applications to synchronize data in the background.",
     "id": "periodic-background-sync",
     "mozBugUrl": null,
@@ -844,7 +844,7 @@
     "url": "https://w3c.github.io/webappsec-permissions-policy/"
   },
   {
-    "ciuName": null,
+    "ciuName": "picture-in-picture",
     "description": "This specification intends to provide APIs to allow websites to create a floating video window always on top of other windows so that users may continue consuming media while they interact with other content sites, or applications on their device.",
     "id": "picture-in-picture",
     "mozBugUrl": null,
@@ -856,7 +856,7 @@
     "url": "https://wicg.github.io/picture-in-picture/"
   },
   {
-    "ciuName": null,
+    "ciuName": "portals",
     "description": "This specification defines a mechanism that allows for rendering of, and seamless navigation to, embedded content.",
     "id": "portals",
     "mozBugUrl": null,
@@ -942,7 +942,7 @@
     "url": "https://github.com/dtapuska/documentaccess"
   },
   {
-    "ciuName": null,
+    "ciuName": "mdn-api_sanitizer",
     "description": "The Sanitizer API allows turning supplied HTML into a safe HTML DOM tree",
     "id": "sanitizer-api",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1650370",
@@ -1002,7 +1002,7 @@
     "url": "https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs"
   },
   {
-    "ciuName": null,
+    "ciuName": "mdn-api_serial",
     "description": "The Serial API provides a way for websites to read and write from a serial device through script. Such an API would bridge the web and the physical world, by allowing documents to communicate with devices such as microcontrollers, 3D printers, and other serial devices. There is also a companion explainer document.",
     "id": "webserial",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=webserial",
@@ -1026,7 +1026,7 @@
     "url": "https://tools.ietf.org/html/draft-ietf-dnsop-svcb-httpssvc"
   },
   {
-    "ciuName": null,
+    "ciuName": "shadowdomv1",
     "description": "A way to give a node in the DOM a hidden subtree in which the children of the node can be inserted.",
     "id": "shadow-trees",
     "mozBugUrl": null,
@@ -1038,7 +1038,7 @@
     "url": "https://dom.spec.whatwg.org/#shadow-trees"
   },
   {
-    "ciuName": null,
+    "ciuName": "sxg",
     "description": "This document specifies how a server can send an HTTP request/ response pair, known as an exchange, with signatures that vouch for that exchange's authenticity. These signatures can be verified against an origin's certificate to establish that the exchange is authoritative for an origin even if it was transferred over a connection that isn't. The signatures can also be used in other ways described in the appendices. These signatures contain countermeasures against downgrade and protocol-confusion attacks.",
     "id": "http-origin-signed-responses",
     "mozBugUrl": null,
@@ -1123,7 +1123,7 @@
     "url": "https://tools.ietf.org/html/draft-vvv-webtransport-overview"
   },
   {
-    "ciuName": null,
+    "ciuName": "mdn-javascript_operators_await_top_level",
     "description": "Top-level await enables modules to act as big async functions: With top-level await, ECMAScript Modules (ESM) can await resources, causing other modules who import them to wait before they start evaluating their body.",
     "id": "top-level-await",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1519100",
@@ -1445,7 +1445,7 @@
     "url": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element"
   },
   {
-    "ciuName": null,
+    "ciuName": "mdn-html_global_attributes_enterkeyhint",
     "description": "The enterkeyhint attribute specifies what action label (or icon) to present for the enter key on virtual keyboards.",
     "id": "enterkeyhint-attr",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1490661",
@@ -1481,7 +1481,7 @@
     "url": "https://discourse.wicg.io/t/proposal-native-media-optimization-and-basic-editing-support/4068"
   },
   {
-    "ciuName": null,
+    "ciuName": "mdn-css_at-rules_page_page-orientation",
     "description": "A descriptor for CSS @page rules that changes the orientation of the page in generated PDF output (or similar) without otherwise affecting layout.",
     "id": "page-orientation-descriptor",
     "mozBugUrl": null,
