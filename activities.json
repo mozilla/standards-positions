@@ -637,7 +637,7 @@
     "ciuName": "import-maps",
     "description": "Import maps allow web pages to control the behavior of JavaScript imports.",
     "id": "import-maps",
-    "mozBugUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1688879",
     "mozPosition": "worth prototyping",
     "mozPositionDetail": "We support the overall intent of the proposal and consider it worth prototyping. There are a few technical details that may require some care, in particular the relationship between speculative parsing and dynamic import maps.",
     "mozPositionIssue": 146,
