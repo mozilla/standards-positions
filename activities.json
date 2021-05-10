@@ -1539,5 +1539,17 @@
     "org": "WHATWG",
     "title": "timezonechange event",
     "url": "https://github.com/whatwg/html/pull/3047"
+  },
+  {
+    "ciuName": null,
+    "description": "An image format that supports lossless transcoding from traditional JPEG files.",
+    "id": "image-jxl",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1539075",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": null,
+    "mozPositionIssue": 522,
+    "org": "JPEG",
+    "title": "JPEG XL image format support",
+    "url": "https://gitlab.com/wg1/jpeg-xl"
   }
 ]
