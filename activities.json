@@ -53,7 +53,7 @@
     "id": "http-early-hints",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1407355",
     "mozPosition": "worth prototyping",
-    "mozPositionDetail": "We believe that experimentation with the 103 response code is worthwhile, while at the same time noting that its primary benefit comes from using it with rel=preload, which Firefox does not yet implement. We do have some concerns about the lack of clear interaction with Fetch, which we hope will be specified before the mechanism is put into widespread use.",
+    "mozPositionDetail": "We believe that experimentation with the 103 response code is worthwhile. We do have some concerns about the lack of clear interaction with Fetch, which we hope will be specified before the mechanism is put into widespread use.",
     "mozPositionIssue": 134,
     "org": "IETF",
     "title": "An HTTP Status Code for Indicating Hints (103)",
