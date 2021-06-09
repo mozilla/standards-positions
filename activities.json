@@ -1,19 +1,6 @@
 [
   {
     "ciuName": null,
-    "description": "Stage 3 proposals add new features to the JavaScript language. Stage 3 indicates that a proposal has been accepted by implementations and other delegates as ready to implement, as per the TC39 staging process.",
-    "id": "tc39-stage-3",
-    "mdnUrl": null,
-    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1435811",
-    "mozPosition": "worth prototyping",
-    "mozPositionDetail": "Due to the structure of TC39, stage 3 signifies that a proposal is ready to implement. Stage 3 proposals have been reviewed by the SpiderMonkey team and more broadly within Gecko. Stage 2 proposals which require security/privacy review or host integration require their own Mozilla Standards Position.",
-    "mozPositionIssue": 527,
-    "org": "Ecma",
-    "title": "",
-    "url": "https://github.com/tc39/proposals#stage-3"
-  },
-  {
-    "ciuName": null,
     "description": "Adds imagesrcset and imagesizes attributes to &lt;link> which correspond to the srcset and sizes attributes of &lt;img> respectively, for the purposes of preloading.",
     "id": "image-preload",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1515760",
@@ -1110,6 +1097,19 @@
     "org": "WHATWG",
     "title": "Structured cloning of errors",
     "url": "https://github.com/whatwg/html/issues/4268"
+  },
+  {
+    "ciuName": null,
+    "description": "Stage 3 proposals add new features to the JavaScript language. Stage 3 indicates that a proposal has been accepted by implementations and other delegates as ready to implement, as per the TC39 staging process.",
+    "id": "tc39-stage-3",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1435811",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "Due to the structure of TC39, stage 3 signifies that a proposal is ready to implement. Stage 3 proposals have been reviewed by the SpiderMonkey team and more broadly within Gecko. Stage 2 proposals which require security/privacy review or host integration require their own Mozilla Standards Position.",
+    "mozPositionIssue": 527,
+    "org": "Ecma",
+    "title": "TC39 Stage 3 Proposals",
+    "url": "https://github.com/tc39/proposals#stage-3"
   },
   {
     "ciuName": null,
