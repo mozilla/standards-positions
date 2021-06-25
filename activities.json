@@ -453,7 +453,7 @@
     "id": "native-file-system",
     "mozBugUrl": null,
     "mozPosition": "harmful",
-    "mozPositionDetail": "There's a large subset of this API we're quite enthusiastic about (in particular providing a read/write API for files and directories as alternative storage endpoint), but it is wrapped together with aspects for which we do not think meaningful end user consent is possible to obtain (in particular cross-site access to the end user's local file system). Overall we consider this harmful therefore, but Mozilla could be supportive of parts, provided this were segmented better.",
+    "mozPositionDetail": "There's a subset of this API we're quite enthusiastic about (in particular providing a read/write API for files and directories as alternative storage endpoint), but it is wrapped together with aspects for which we do not think meaningful end user consent is possible to obtain (in particular cross-site access to the end user's local file system). Overall we consider this harmful therefore, but Mozilla could be supportive of parts, provided this were segmented better.",
     "mozPositionIssue": 154,
     "org": "Proposal",
     "title": "File System Access",
