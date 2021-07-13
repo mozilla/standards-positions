@@ -1200,12 +1200,12 @@
     "description": "This document defines a set of Client Hints that aim to provide developers with the ability to perform agent-based content negotiation when necessary, while avoiding the historical baggage and passive fingerprinting surface exposed by the venerable \"User-Agent\" header.",
     "id": "ua-client-hints",
     "mozBugUrl": null,
-    "mozPosition": "non-harmful",
-    "mozPositionDetail": "Using Client Hints to deliver info derived from the User Agent header field for servers that specifically request this information may reduce the number of parties that can use this information for passively fingerprinting users. However, we could reduce this even further by freezing the User Agent string and requiring resources to actively request this information via the proposed NavigatorUAData interface JS APIs. This would also allow us to audit the callers. At this time, freezing the User Agent string without any client hints (which is not this proposal) seems worth prototyping. We look forward to learning from other vendors who implement the \"GREASE-like UA Strings\" proposal and its effects on site compatibility.",
+    "mozPosition": "harmful",
+    "mozPositionDetail": "UA Client Hints proposes that information derived from the User Agent header field could only be sent to servers that specifically request that information, specifically to reduce the number of parties that can passively fingerprint users using that information. We find that the addition of new information about the UA, OS, and device to be harmful as it increases the information provided to sites for fingerprinting, without a commensurate improvements in functionality or accountability to justify that.  In addition to not including this information, we would prefer freezing the User Agent string and only providing limited information via the proposed NavigatorUAData interface JS APIs. This would also allow us to audit the callers. At this time, freezing the User Agent string without any client hints (which is not this proposal) seems worth prototyping. We look forward to learning from other vendors who implement the \"GREASE-like UA Strings\" proposal and its effects on site compatibility.",
     "mozPositionIssue": 202,
     "org": "Proposal",
     "title": "User Agent Client Hints",
-    "url": "https://tools.ietf.org/html/draft-west-ua-client-hints"
+    "url": "https://wicg.github.io/ua-client-hints/"
   },
   {
     "ciuName": "webauthn",
