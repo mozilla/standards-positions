@@ -611,6 +611,18 @@
   },
   {
     "ciuName": null,
+    "description": "This document defines a web platform API for observing system-wide user presence signals.",
+    "id": "idle-detection-api",
+    "mozBugUrl": "",
+    "mozPosition": "harmful",
+    "mozPositionDetail": "We are concerned about the user-surveillance, user-manipulation, and abuse of user resources potential of this API, despite the required 60 second mitigation. Additionally it seems to be an unnecessarily powerful approach for the motivating use-cases, which themselves are not even clear they are worth solving, as pointed out in <a href=\"https://lists.webkit.org/pipermail/webkit-dev/2020-October/031562.html\">https://lists.webkit.org/pipermail/webkit-dev/2020-October/031562.html</a>",
+    "mozPositionIssue": 453,
+    "org": "Proposal",
+    "title": "Idle Detection API",
+    "url": "https://wicg.github.io/idle-detection/"
+  },
+  {
+    "ciuName": null,
     "description": "The imperative slotting API allows the developer to explicitly set the assigned nodes for a slot element.",
     "id": "imperative-shadow-dom",
     "mozBugUrl": null,
