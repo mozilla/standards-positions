@@ -1371,6 +1371,19 @@
     "url": "https://github.com/webassembly/simd/"
   },
   {
+    "ciuName": "https://caniuse.com/webhid",
+    "description": "This document describes an API for providing access to devices that support the Human Interface Device (HID) protocol.",
+    "id": "webhid",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HID",
+    "mozBugUrl": null,
+    "mozPosition": "harmful",
+    "mozPositionDetail": "This API, like <a href=#webusb>WebUSB</a>, provides access to generic devices. Though this API is limited to human interface devices (HID), the same concerns apply as WebUSB, namely that devices are generally not designed with access from arbitrary websites in their threat model.",
+    "mozPositionIssue": 459,
+    "org": "Proposal",
+    "title": "WebHID API",
+    "url": "https://wicg.github.io/webhid/"
+  },
+  {
     "ciuName": null,
     "description": "This API defines an API surface for manipulating the bits on MediaStreamTracks being sent via an RTCPeerConnection.",
     "id": "webrtc-insertable-streams",
