@@ -1283,6 +1283,18 @@
     "url": "https://github.com/WICG/web-codecs"
   },
   {
+    "ciuName": "webgpu",
+    "description": "This specification describes support for accessing modern 3D graphics and GPU computation capabilities on the Web.",
+    "id": "webgpu",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602129",
+    "mozPosition": "important",
+    "mozPositionDetail": "We believe that WebGPU is key to enable more interactive and content-rich applications on the Web than currently possible with WebGL. WebGPU can scale better to the capabilities of GPUs with less overhead for users because it's modelled after the intersection of the modern native GPU APIs, so allows developers to express the GPU workloads more explicitly.",
+    "mozPositionIssue": 239,
+    "org": "Proposal",
+    "title": "Web GPU API",
+    "url": "https://gpuweb.github.io/gpuweb/"
+  },
+  {
     "ciuName": null,
     "description": "This document defines a web platform API that allows script to asynchronously acquire a lock over a resource, hold it while work is performed, then release it. While held, no other script in the origin can acquire a lock over the same resource. This allows contexts (windows, workers) within a web application to coordinate the usage of resources.",
     "id": "web-locks",
