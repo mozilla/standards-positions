@@ -134,7 +134,7 @@
   },
   {
     "ciuName": "",
-    "description": "CSS Cascade Layers provides a structured way to organize and balance concerns using style rules within a single origin.",
+    "description": "CSS Cascade Layers provides a structured way to organize related style rules within a single origin. Rules within a single cascade layer cascade together, without interleaving with style rules outside the layer.",
     "id": "css-cascade-layers",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1699214",
     "mozPosition": "worth prototyping",
