@@ -133,6 +133,18 @@
     "url": "https://streams.spec.whatwg.org/"
   },
   {
+    "ciuName": "",
+    "description": "CSS Cascade Layers provides a structured way to organize related style rules within a single origin. Rules within a single cascade layer cascade together, without interleaving with style rules outside the layer.",
+    "id": "css-cascade-layers",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1699214",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This feature provides a way to abstract CSS rules in style sheets, supported in popular CSS frameworks/pre-processors, and a frequent web developer request. Though the specification is in early stages, the goal is worth pursuing.",
+    "mozPositionIssue": 471,
+    "org": "W3C",
+    "title": "CSS Cascade Layers",
+    "url": "https://drafts.csswg.org/css-cascade-5/#layering"
+  },
+  {
     "ciuName": "css-subgrid",
     "description": "This draft defines additions to CSS Grid, primarily for the subgrid feature.",
     "id": "subgrid",
