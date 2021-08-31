@@ -1395,6 +1395,19 @@
     "url": "https://github.com/webassembly/simd/"
   },
   {
+    "ciuName": null,
+    "description": "exception propagation and handling for webassembly",
+    "id": "wasm-exceptions",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1695715",
+    "mozPosition": "important",
+    "mozPositionDetail": "Exception handling is important to C++ programs targeting the web, and to other languages in the future.",
+    "mozPositionIssue": 573,
+    "org": "W3C",
+    "title": "WebAssembly Exception Handling",
+    "url": "https://github.com/webassembly/exception-handling/"
+  },
+  {
     "ciuName": "https://caniuse.com/webhid",
     "description": "This document describes an API for providing access to devices that support the Human Interface Device (HID) protocol.",
     "id": "webhid",
