@@ -1390,7 +1390,7 @@
     "mozPosition": "important",
     "mozPositionDetail": "Exception handling is important to C++ programs targeting the web, and to other languages in the future.",
     "mozPositionIssue": 573,
-    "org": "W3C",
+    "org": "Proposal",
     "title": "WebAssembly Exception Handling",
     "url": "https://github.com/webassembly/exception-handling/"
   },
