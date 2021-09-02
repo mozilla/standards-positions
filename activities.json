@@ -1383,6 +1383,19 @@
   },
   {
     "ciuName": null,
+    "description": "exception propagation and handling for webassembly",
+    "id": "wasm-exceptions",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1695715",
+    "mozPosition": "important",
+    "mozPositionDetail": "Exception handling is important to C++ programs targeting the web, and to other languages in the future.",
+    "mozPositionIssue": 573,
+    "org": "Proposal",
+    "title": "WebAssembly Exception Handling",
+    "url": "https://github.com/webassembly/exception-handling/"
+  },
+  {
+    "ciuName": null,
     "description": "128-bit vector data type and operations for webassembly",
     "id": "wasm-simd",
     "mdnUrl": null,
