@@ -437,6 +437,18 @@
   },
   {
     "ciuName": null,
+    "description": "This specification defines APIs for observing latency of certain events triggered by user interaction.",
+    "id": "event-timing-api",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1667836",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This feature grants web authors insights about the latency of certain events triggered by user interaction. This API reports the timestamp of when the event was created, when the browser started to process the event, when the browser finished to process the event and the next frame rendering time (which represented when the content of the event was presented on screen). We believe this is useful for web authors to learn more about user engagement.",
+    "mozPositionIssue": 283,
+    "org": "Proposal",
+    "title": "Event Timing API",
+    "url": "https://wicg.github.io/event-timing/"
+  },
+  {
+    "ciuName": null,
     "description": "This document defines a set of Fetch metadata request headers that aim to provide servers with enough information to make a priori decisions about whether or not to service a request based on the way it was made, and the context in which it will be used.",
     "id": "fetch-metadata",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1508292",
