@@ -116,8 +116,6 @@ express support for adopting a specification, the best way to do that is using [
 reactions](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments) on the
 issue or a specific comment.
 
-Mozilla Standards Positions is not Twitter, Hacker News, or Reddit.
-
 If an issue becomes overwhelmed by excessive advocacy or other off-topic comments, 
 comments might be edited or deleted, and the issue might be locked.
 
