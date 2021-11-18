@@ -133,6 +133,18 @@
     "url": "https://streams.spec.whatwg.org/"
   },
   {
+    "ciuName": null,
+    "description": "Extends the COLR table in OpenType fonts with a new format supporting richer graphical capabilities for emoji (and similar) glyph design.",
+    "id": "font-colrv1",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1740525",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "Provides comparable design capabilities to OpenType-SVG, but in a more compact and lightweight form that integrates better into font rendering pipelines. Has the potential to supersede OpenType-SVG fonts in web use.",
+    "mozPositionIssue": 497,
+    "org": "Proposal",
+    "title": "COLR v1 Fonts",
+    "url": "https://github.com/googlefonts/colr-gradients-spec/"
+  },
+  {
     "ciuName": "",
     "description": "CSS Cascade Layers provides a structured way to organize related style rules within a single origin. Rules within a single cascade layer cascade together, without interleaving with style rules outside the layer.",
     "id": "css-cascade-layers",
