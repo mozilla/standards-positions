@@ -15,7 +15,7 @@ it clearly to these standards bodies, as well as other browsers.
 
 *See our [contribution guidelines](CONTRIBUTING.md) for information about how you can participate.*
 
-Implementation status (or even intention) isn't tracked here; see [Firefox Platform Status](https://platform-status.mozilla.org).
+Implementation status (or even intention) isn't tracked here; see [dev-platform](https://groups.google.com/a/mozilla.org/g/dev-platform/).
 
 ### Possible Specification Positions
 
