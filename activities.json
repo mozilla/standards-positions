@@ -719,6 +719,18 @@
   },
   {
     "ciuName": null,
+    "description": "This specification defines an API that allows web page authors to monitor the largest paint an element triggered on screen.",
+    "id": "largest-contentful-paint",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1722322",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "We are aware the concerns about this API such as the heuristic isn't perfect, however, we believe this is the area we should explore and there are positive signs from this API such that it has the best correlation with SpeedIndex.",
+    "mozPositionIssue": 191,
+    "org": "Proposal",
+    "title": "Largest Contentful Paint API",
+    "url": "https://wicg.github.io/largest-contentful-paint/"
+  },
+  {
+    "ciuName": null,
     "description": "This specification defines an API that provides web page authors with insights into the stability of their pages based on movements of the elements on the page.",
     "id": "layout-instability",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1651528",
