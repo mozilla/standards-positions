@@ -111,10 +111,14 @@ an explanation of how the proposal addresses the problem;
 and how the proposal might affect the system as a whole.
 Issues should only provide a high-level summary of this information in a couple of sentences at most.
 
-Please focus your comments on bringing new information about a specification; if you want to
-express support for adopting a specification, the best way to do that is using [Github
+Please focus your comments on bringing new information about a specification. 
+
+If you want to express support for a specification, the best way to do that is using [Github
 reactions](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments) on the
 issue or a specific comment.
+
+If you want to ask about (or contribute to) Firefox support for a specification, please use 
+the respective Bugzilla bug, linked with a wrench 🔧 icon in the standards-position dashboard entry.
 
 If an issue becomes overwhelmed by excessive advocacy or other off-topic comments, 
 comments might be edited or deleted, and the issue might be locked.
