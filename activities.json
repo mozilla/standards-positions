@@ -1050,18 +1050,6 @@
     "url": "https://w3c.github.io/wake-lock/"
   },
   {
-    "ciuName": "url-scroll-to-text-fragment",
-    "description": "A proposal for extending URL fragment syntax with a list of text bits to highlight and scroll to",
-    "id": "scroll-to-text-fragment",
-    "mozBugUrl": null,
-    "mozPosition": "non-harmful",
-    "mozPositionDetail": "We feel that some of the use cases this proposal addresses are very important to address, but that this specific proposal introduces various harmful aspects in the process of addressing them.  We feel that it would be worth prototyping a proposal with those harmful aspects removed.  More details are in the position issue.  See also the <a href=\"#fragmention\">position on Fragmention</a>, which aims to address similar use cases.",
-    "mozPositionIssue": 194,
-    "org": "Proposal",
-    "title": "Scroll to Text Fragment",
-    "url": "https://github.com/WICG/ScrollToTextFragment"
-  },
-  {
     "ciuName": null,
     "description": "A use of TLS Exported Authenticators is described which enables HTTP/2 clients and servers to offer additional certificate-based credentials after the connection is established. The means by which these credentials are used with requests is defined.",
     "id": "http2-secondary-certs",
@@ -1182,6 +1170,18 @@
     "org": "Ecma",
     "title": "TC39 Stage 3 Proposals",
     "url": "https://github.com/tc39/proposals#stage-3"
+  },
+  {
+    "ciuName": "url-scroll-to-text-fragment",
+    "description": "A proposal for extending URL fragment syntax with a list of text bits to highlight and scroll to.",
+    "id": "scroll-to-text-fragment",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1753933",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This is an important use case to address and the proposal does a good job at mitigating the compatibility and security issues. As a result the syntax is a tad inelegant, but workable. (See also the <a href=\"#fragmention\">position on Fragmention</a>, which aims to address similar use cases.)",
+    "mozPositionIssue": 194,
+    "org": "Proposal",
+    "title": "Text Fragments",
+    "url": "https://wicg.github.io/scroll-to-text-fragment/"
   },
   {
     "ciuName": null,
