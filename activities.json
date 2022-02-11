@@ -484,6 +484,19 @@
     "url": "https://github.com/WICG/file-handling/blob/master/explainer.md"
   },
   {
+    "ciuName": null,
+    "description": "File System defines infrastructure for file systems as well as their API.",
+    "id": "fs",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1748667",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "A storage endpoint with a POSIX-like file system API is a valuable addition to the web platform.",
+    "mozPositionIssue": 562,
+    "org": "WHATWG",
+    "title": "File System",
+    "url": "https://fs.spec.whatwg.org/"
+  },
+  {
     "ciuName": "native-filesystem-api",
     "description": "This document defines a web platform API that lets websites gain write access to the local file system. It builds on File API, but adds lots of new functionality on top.",
     "id": "native-file-system",
