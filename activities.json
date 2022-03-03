@@ -954,6 +954,19 @@
   },
   {
     "ciuName": null,
+    "description": "Specification of the Priority Hints feature.",
+    "id": "priority-hints",
+    "mdnUrl": null,
+    "mozBugUrl": null,
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "Priority hints allow sites to provide information about how subresources on a page might be prioritized for fetching. This can allow the browser to override parts of the internal prioritization heuristics that are used for resource fetching, which could improve page load performance.",
+    "mozPositionIssue": 606,
+    "org": "Proposal",
+    "title": "Priority Hints",
+    "url": "https://wicg.github.io/priority-hints/"
+  },
+  {
+    "ciuName": null,
     "description": "This specification defines a privacy preserving way to attribute a conversion, such as a purchase or a sign-up, to a previous ad click.",
     "id": "private-click-measurement",
     "mozBugUrl": null,
