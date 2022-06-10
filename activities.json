@@ -1482,6 +1482,19 @@
     "url": "https://github.com/webassembly/simd/"
   },
   {
+    "ciuName": null,
+    "description": "The BiDirectional WebDriver Protocol, a mechanism for remote control of user agents.",
+    "id": "webdriver-bidi",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1690255",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "Automation is an important capability for the web platform - for example, reliable automated testing makes it easier for websites to offer a functional user experience. The current standard protocol for building these tools has fallen behind demonstrated needs, which has in part led to new tools being built on Chrome DevTools Protocol. This makes it harder to automate across multiple browsers and versions of browsers - it’d be better for the standard protocol to support these needs.",
+    "mozPositionIssue": 632,
+    "org": "W3C",
+    "title": "WebDriver BiDi",
+    "url": "https://w3c.github.io/webdriver-bidi/"
+  },
+  {
     "ciuName": "https://caniuse.com/webhid",
     "description": "This document describes an API for providing access to devices that support the Human Interface Device (HID) protocol.",
     "id": "webhid",
