@@ -1488,7 +1488,7 @@
     "mdnUrl": null,
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1690255",
     "mozPosition": "worth prototyping",
-    "mozPositionDetail": "Automation is an important capability for the web platform - for example, reliable automated testing makes it easier for websites to offer a functional user experience. The current standard protocol for building these tools has fallen behind demonstrated needs, which has in part led to new tools being built on CDP. This makes it harder to automate across multiple browsers and versions of browsers - it’d be better for the standard protocol to support these needs.",
+    "mozPositionDetail": "Automation is an important capability for the web platform - for example, reliable automated testing makes it easier for websites to offer a functional user experience. The current standard protocol for building these tools has fallen behind demonstrated needs, which has in part led to new tools being built on Chrome DevTools Protocol. This makes it harder to automate across multiple browsers and versions of browsers - it’d be better for the standard protocol to support these needs.",
     "mozPositionIssue": 632,
     "org": "W3C",
     "title": "WebDriver BiDi",
