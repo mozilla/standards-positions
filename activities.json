@@ -157,6 +157,19 @@
     "url": "https://drafts.csswg.org/css-cascade-5/#layering"
   },
   {
+    "ciuName": "css-container-queries",
+    "description": "CSS container queries allow conditional CSS based on aspects of elements within the document (such as box dimensions or computed styles).",
+    "id": "css-container-queries",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1744221",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This feature addresses a long-standing request from web developers. It allows web content to be declaratively styled to make it context-aware and responsive, to a much greater degree than would be possible otherwise.  We think this is a challenge that's worth solving, and we think this feature is a good way to address it.",
+    "mozPositionIssue": 118,
+    "org": "W3C",
+    "title": "CSS Container Queries",
+    "url": "https://drafts.csswg.org/css-contain-3/#container-queries"
+  },
+  {
     "ciuName": "css-subgrid",
     "description": "This draft defines additions to CSS Grid, primarily for the subgrid feature.",
     "id": "subgrid",
