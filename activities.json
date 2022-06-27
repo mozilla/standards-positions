@@ -821,11 +821,11 @@
   {
     "ciuName": null,
     "description": "This specification enables web developers to show customized media metadata on platform UI, customize available platform media controls, and access platform media keys such as hardware keys found on keyboards, headsets, remote controls, and software keys found in notification areas and on lock screens of mobile devices.",
-    "id": "media-session-standard",
+    "id": "media-session",
     "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Media_Session_API",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1112032",
     "mozPosition": "worth prototyping",
-    "mozPositionDetail": "The usecase for customize media controls is well estabilished. In addtion, the use of the dedicated keyboard keys to control media elements is an expected user interaction.",
+    "mozPositionDetail": "This API allows sites to offer users common media controls, which improves usability of media playback sites.",
     "mozPositionIssue": 28,
     "org": "W3C",
     "title": "Media Session Standard",
