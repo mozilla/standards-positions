@@ -688,7 +688,7 @@
     "id": "payment-handler",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1465682",
     "mozPosition": "defer",
-    "mozPositionDetail": "The Payment Handler API has the potential to enable an open and secure payments ecosystem for the Web. At the same time, we remain concerned about some of the user interface requirements, and by the privacy and security assumptions made in the specification. We've raised our concerns at the W3C, and are working with the Payments working group to address those concerns. After some prototyping, we've decided to defer on this specification. However, we remain committed to exploring more secure and privacy preserving payment methods as part of our participation in the W3C's Web Payments Working Group.",
+    "mozPositionDetail": "The Payment Handler API has the potential to enable an open and secure payments ecosystem for the Web. Despite taking an active role in this work in the past, Mozilla is no longer taking an active role in the W3C's Web Payments Working Group and is therefore not able to take a position on this API.",
     "mozPositionIssue": 23,
     "org": "W3C",
     "title": "Payment Handler API",
