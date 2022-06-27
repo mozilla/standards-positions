@@ -819,6 +819,19 @@
     "url": "https://wicg.github.io/media-feeds/"
   },
   {
+    "ciuName": null,
+    "description": "This specification enables web developers to show customized media metadata on platform UI, customize available platform media controls, and access platform media keys such as hardware keys found on keyboards, headsets, remote controls, and software keys found in notification areas and on lock screens of mobile devices.",
+    "id": "media-session",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Media_Session_API",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1112032",
+    "mozPosition": "worth prototyping",
+    "mozPositionDetail": "This API allows sites to offer users common media controls, which improves usability of media playback sites.",
+    "mozPositionIssue": 28,
+    "org": "W3C",
+    "title": "Media Session Standard",
+    "url": "https://w3c.github.io/mediasession/"
+  },
+  {
     "ciuName": "mdn-api_mediastreamtrack_contenthint",
     "description": "This specification extends MediaStreamTrack to let web applications provide an optional media-content hint attribute. This helps sinks like RTCPeerConnection or MediaRecorder select encoder parameters and processing algorithms appropriately based on a hint about the nature of the content being consumed without having to examine the actual content.",
     "id": "mst-content-hint",
