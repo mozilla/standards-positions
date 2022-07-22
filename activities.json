@@ -851,7 +851,7 @@
     "mdnUrl": null,
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1779757",
     "mozPosition": "important",
-    "mozPositionDetail": "Mixed Content Blocking, has long since been an important cornerstone of the HTTP/HTTPS security model. The newer spec text is an important step towards more HTTPS adoption and has the potential to also improve the user experience on sites with accidentally mixed content.",
+    "mozPositionDetail": "Managing mixed content has been an important cornerstone of the migration to more HTTPS. The level 2 spec is an important step towards more HTTPS adoption and has the potential to also improve the user experience on sites with accidentally mixed content.",
     "mozPositionIssue": 668,
     "org": "W3C",
     "title": "Mixed Content",
