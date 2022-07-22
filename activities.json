@@ -845,6 +845,19 @@
     "url": "https://w3c.github.io/mst-content-hint/"
   },
   {
+    "ciuName": null,
+    "description": "This specification describes how a user agent should handle fetching of content over unencrypted or unauthenticated connections in the context of an encrypted and authenticated document.",
+    "id": "mixed-content",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1779757",
+    "mozPosition": "important",
+    "mozPositionDetail": "Managing mixed content has been an important cornerstone of the migration to more HTTPS. The level 2 spec is an important step towards more HTTPS adoption and has the potential to also improve the user experience on sites with accidentally mixed content.",
+    "mozPositionIssue": 668,
+    "org": "W3C",
+    "title": "Mixed Content",
+    "url": "https://w3c.github.io/webappsec-mixed-content/"
+  },
+  {
     "ciuName": "netinfo",
     "description": "The Network Information API enables web applications to access information about the network connection in use by the device.",
     "id": "netinfo",
