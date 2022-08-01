@@ -121,7 +121,7 @@ If you want to ask about (or contribute to) Firefox support for a specification,
 the respective Bugzilla bug, linked with a wrench 🔧 icon in the standards-position dashboard entry.
 
 If an issue becomes overwhelmed by excessive advocacy or other off-topic comments, 
-comments might be edited or deleted, and the issue might be locked.
+comments might be hidden, edited, or deleted, and the issue might be locked.
 
 ### For Mozilla's Subject-Matter Experts
 
