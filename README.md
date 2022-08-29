@@ -25,7 +25,7 @@ We will seek to apply one of three labels to new specifications:
 
 These positions will be based on our best assessment of the current state of the specification and
 the potential for it to benefit our users and the web as a whole.  We consider the intended purpose
-and the design fundamentals of each specification.  Incomplete documentation, minor issues, or lack
+and the design fundamentals of each specification.  Incomplete documentation, minor issues, or lack of
 interoperability testing are not reasons for a negative position, provided that intent is clear.
 
 We might also use the following labels for specifications where we do not have enough information or
