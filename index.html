@@ -104,12 +104,11 @@
       <p>The possible positions are:</p>
 
       <dl class="dl-horizontal space">
-        <dt><button class="btn btn-dark btn-xs">under consideration</button></dt><dd>Mozilla's position on this specification is being discussed.</dd>
-        <dt><button class="btn btn-primary btn-xs">important</button></dt><dd>This specification is conceptually good and is important to Mozilla.</dd>
-        <dt><button class="btn btn-success btn-xs">worth prototyping</button></dt><dd>Mozilla sees this specification as conceptually good, and worth prototyping, getting feedback on its value, and iterating.</dd>
-        <dt><button class="btn btn-default btn-xs">non-harmful</button></dt><dd>Mozilla does not see this specification as harmful, but is not convinced that it is a good approach or worth working on.</dd>
-        <dt><button class="btn btn-warning btn-xs">defer</button></dt><dd>Mozilla does not intend to look at this specification at all in the near future.</dd>
-        <dt><button class="btn btn-danger btn-xs">harmful</button></dt><dd>Mozilla considers this specification to be harmful in its current state.</dd>
+        <dt><button class="btn btn-success btn-xs">positive</button></dt><dd>Mozilla regards this work as a potential improvement to the web.</dd>
+        <dt><button class="btn btn-default btn-xs">neutral</button></dt><dd>Mozilla is not convinced of the merits of this work, but does not see any significant negative potential.</dd>
+        <dt><button class="btn btn-danger btn-xs">negative</button></dt><dd>Mozilla believes that pursuing this work in its current form would not be good for the web.</dd>
+        <dt><button class="btn btn-warning btn-xs">defer</button></dt><dd>Mozilla takes no position on this work.</dd>
+        <dt><button class="btn btn-dark btn-xs">under consideration</button></dt><dd>Mozilla has not taken a position on this work and is gathering more information.</dd>
       </dl>
 
     </div>
@@ -123,12 +122,11 @@
 
     $(document).ready(function(){
         var status_styles = {
-          "under consideration": "dark",
-          "important": "primary",
-          "worth prototyping": "success",
-          "non-harmful": "default",
+          "positive": "success",
+          "neutral": "default",
+          "negative": "danger",
           "defer": "warning",
-          "harmful": "danger"
+          "under consideration": "dark",
         }
 
         var REPO_OWNER = "mozilla";
@@ -147,9 +145,8 @@
             + `<span class='sr-only'>${text}</span></a> `;
         }
 
-        $.fn.dataTable.enum( [ "under consideration", "important",
-                               "worth prototyping", "non-harmful",
-                               "defer", "harmful" ] );
+        $.fn.dataTable.enum( [ "under consideration", "positive",
+                               "neutral", "negative", "defer" ] );
         var ptable = $('#mozPositions').DataTable({
           "paging": false,
           "ajax": {
