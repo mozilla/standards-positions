@@ -28,8 +28,7 @@ the potential for it to benefit our users and the web as a whole.  We consider t
 and the design fundamentals of each specification.  Incomplete documentation, minor issues, or lack of
 interoperability testing are not reasons for a negative position, provided that intent is clear.
 
-We might also use the following labels for specifications where we do not have enough information or
-where the specification does not contain enough detail to make a good assessment:
+We might also use the following labels for specifications where we have not formed a position:
 
 - `defer` - Mozilla takes no position on this work.
 - `under consideration` - Mozilla has not taken a position on this work and is gathering more information.
