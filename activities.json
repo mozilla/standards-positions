@@ -317,7 +317,7 @@
   },
   {
     "ciuName": null,
-    "description": "This proposal adds an API for prompting and querying the user’s contacts for one or more items with a handful of contact properties.",
+    "description": "This proposal adds an API for prompting and querying the user\u2019s contacts for one or more items with a handful of contact properties.",
     "id": "contact-picker",
     "mozBugUrl": null,
     "mozPosition": "defer",
@@ -365,7 +365,7 @@
   },
   {
     "ciuName": "credential-management",
-    "description": "This specification describes an imperative API enabling a website to request a user’s credentials from a user agent, and to help the user agent correctly store user credentials for future use.",
+    "description": "This specification describes an imperative API enabling a website to request a user\u2019s credentials from a user agent, and to help the user agent correctly store user credentials for future use.",
     "id": "credman",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1156047",
     "mozPosition": "defer",
@@ -733,7 +733,7 @@
   },
   {
     "ciuName": "mdn-api_keyboardlayoutmap",
-    "description": "This specification defines an API that allows websites to convert from a given code value to a valid key value that can be shown to the user to identify the given key. The conversion from code to key is based on the user’s currently selected keyboard layout. It is intended to be used by web applications that want to treat the keyboard as a set of buttons and need to describe those buttons to the user.",
+    "description": "This specification defines an API that allows websites to convert from a given code value to a valid key value that can be shown to the user to identify the given key. The conversion from code to key is based on the user\u2019s currently selected keyboard layout. It is intended to be used by web applications that want to treat the keyboard as a set of buttons and need to describe those buttons to the user.",
     "id": "keyboard-map",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1469017",
     "mozPosition": "negative",
@@ -1018,7 +1018,7 @@
   },
   {
     "ciuName": null,
-    "description": "This document specifies modifications to Fetch which are intended to mitigate the risks associated with unintentional exposure of devices and servers on a client’s internal network to the web at large.",
+    "description": "This document specifies modifications to Fetch which are intended to mitigate the risks associated with unintentional exposure of devices and servers on a client\u2019s internal network to the web at large.",
     "id": "cors-and-rfc1918",
     "mdnUrl": null,
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1481298",
@@ -1527,7 +1527,7 @@
     "mdnUrl": null,
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1690255",
     "mozPosition": "positive",
-    "mozPositionDetail": "Automation is an important capability for the web platform - for example, reliable automated testing makes it easier for websites to offer a functional user experience. The current standard protocol for building these tools has fallen behind demonstrated needs, which has in part led to new tools being built on Chrome DevTools Protocol. This makes it harder to automate across multiple browsers and versions of browsers - it’d be better for the standard protocol to support these needs.",
+    "mozPositionDetail": "Automation is an important capability for the web platform - for example, reliable automated testing makes it easier for websites to offer a functional user experience. The current standard protocol for building these tools has fallen behind demonstrated needs, which has in part led to new tools being built on Chrome DevTools Protocol. This makes it harder to automate across multiple browsers and versions of browsers - it\u2019d be better for the standard protocol to support these needs.",
     "mozPositionIssue": 632,
     "org": "W3C",
     "title": "WebDriver BiDi",
