@@ -13,20 +13,32 @@ elsewhere too.
 Having a clear Mozilla position on these specifications helps us align our thinking and communicate
 it clearly to these standards bodies, as well as other browsers.
 
-*See our [contribution guidelines](CONTRIBUTING.md) for information about how you can participate.*
-
 Implementation status (or even intention) isn't tracked here; see [dev-platform](https://groups.google.com/a/mozilla.org/g/dev-platform/).
 
 ### Possible Specification Positions
 
-The currently possible positions are:
+We will seek to apply one of three labels to new specifications:
 
-- `under consideration` - Mozilla's position on this specification is being discussed.
-- `important` - This specification is conceptually good and is important to Mozilla.
-- `worth prototyping` - Mozilla sees this specification as conceptually good, and worth prototyping, getting feedback on its value, and iterating.
-- `non-harmful` - Mozilla does not see this specification as harmful, but is not convinced that it is a good approach or worth working on.
-- `defer` - Mozilla does not intend to look at this specification at all in the near future.
-- `harmful` - Mozilla considers this specification to be harmful in its current state.
+- `positive` - Mozilla regards this work as a potential improvement to the web.
+- `neutral` - Mozilla is not convinced of the merits of this work, but does not see any significant negative potential.
+- `negative` - Mozilla believes that pursuing this work in its current form would not be good for the web.
 
-Note that these positions do not address whether Mozilla will commit resources to a specification,
-nor does it commit Mozilla to implementing them.
+These positions will be based on our best assessment of the current state of the specification and
+the potential for it to benefit our users and the web as a whole.  We consider the intended purpose
+and the design fundamentals of each specification.  Incomplete documentation, minor issues, or lack of
+interoperability testing are not reasons for a negative position, provided that intent is clear.
+
+We might also use the following labels for specifications where we have not formed a position:
+
+- `defer` - Mozilla takes no position on this work.
+- `under consideration` - Mozilla has not taken a position on this work and is gathering more information.
+
+### What about Firefox?
+
+A position here does not address whether Mozilla will commit resources to developing a
+specification. In particular, taking a position does not commit Mozilla to implementing a
+specification in Firefox.
+
+## Requesting a Position
+
+*See our [contribution guidelines](CONTRIBUTING.md) for information about how you can participate.*

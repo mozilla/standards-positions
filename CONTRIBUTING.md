@@ -1,4 +1,3 @@
-
 # How Can I Help?
 
 We welcome contributions from the Mozilla community about its position on Web specifications.
@@ -111,16 +110,16 @@ an explanation of how the proposal addresses the problem;
 and how the proposal might affect the system as a whole.
 Issues should only provide a high-level summary of this information in a couple of sentences at most.
 
-Please focus your comments on bringing new information about a specification. 
+Please focus your comments on bringing new information about a specification.
 
 If you want to express support for a specification, the best way to do that is using [Github
 reactions](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments) on the
 issue or a specific comment.
 
-If you want to ask about (or contribute to) Firefox support for a specification, please use 
+If you want to ask about (or contribute to) Firefox support for a specification, please use
 the respective Bugzilla bug, linked with a wrench 🔧 icon in the standards-position dashboard entry.
 
-If an issue becomes overwhelmed by excessive advocacy or other off-topic comments, 
+If an issue becomes overwhelmed by excessive advocacy or other off-topic comments,
 comments might be hidden, edited, or deleted, and the issue might be locked.
 
 ### For Mozilla's Subject-Matter Experts
@@ -148,7 +147,7 @@ discussions that should happen in the standards body's normal discussion mechani
 to happen instead in the standards-positions issue.
 When it makes sense to do so,
 it's good to raise issues through the normal issue trackers for the proposal.
-However, when doing so, it's worth being careful to avoid giving a *misimpression*
+However, when doing so, it's worth being careful to avoid giving a *false impression*
 that engagement in the discussion constitutes support.
 In some cases, avoiding this impression may require having some of the discussion in the standards-positions issue.
 However, in many cases that can be avoided
@@ -167,4 +166,3 @@ in the issue itself
 and limit the discussion in the pull request
 to the details of making the change to `activities.json`,
 and accurately communicating the consensus in the issue.
-
