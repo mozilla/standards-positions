@@ -353,6 +353,18 @@
   },
   {
     "ciuName": null,
+    "description": "Defines the Partitioned cookie attribute. This attribute will indicate to user agents that these cross-site cookies should only be available in the same top-level site that the cookie was created in.",
+    "id": "chips",
+    "mozBugUrl": null,
+    "mozPosition": "positive",
+    "mozPositionDetail": "This spec provides an opt-in mechanism to enable partitioned cookies. This allows more browsers to support partitioned cookies, and once adopted by sites can facilitate the default blocking of third-party cookies. Importantly to us, the behavior of a cookie when the Partitioned attribute is not provided is left up to the implementer. This allows us to continue deployment of partitioning by default while not forcing other browsers to change their default cookie behavior immediately.",
+    "mozPositionIssue": 678,
+    "org": "W3C",
+    "title": "Cookies Having Independent Partitioned State",
+    "url": "https://github.com/privacycg/CHIPS"
+  },
+  {
+    "ciuName": null,
     "description": "This document defines a mechanism for reporting browser crashes to site owners through the use of the Reporting API.",
     "id": "crash-reporting",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1607364",
