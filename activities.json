@@ -353,7 +353,7 @@
   },
   {
     "ciuName": null,
-    "description": "Defines the Partitioned cookie attribute. This attribute will indicate to user agents that these cross-site cookies should only be available in the same top-level site that the cookie was created in.",
+    "description": "Defines the Partitioned cookierattribute. This attribute will indicate to user agents that these cross-site cookies should only be available in the same top-level context that the cookie was created in.",
     "id": "chips",
     "mozBugUrl": null,
     "mozPosition": "positive",
