@@ -5,12 +5,14 @@ _See [the dashboard](https://mozilla.github.io/standards-positions/) for Mozilla
 ## What is this Repository?
 
 This repo is where [Mozilla](https://mozilla.org/) decides and documents what it thinks about
-emerging technical specifications for the Web. Typically they're standards-track drafts in the
+emerging technical specifications for the Web. Typically such specs are standards-track drafts in the
 [IETF](https://ietf.org/), [W3C](https://w3.org/),
-[WHATWG](https://whatwg.org/), and [Ecma TC39](https://github.com/tc39), 
-but they could come from elsewhere such as proposals 
-from W3C Community Groups (like [WICG](https://wicg.github.io/)) 
-or other community incubation efforts with well-understood IPR terms.
+[WHATWG](https://whatwg.org/), and [Ecma TC39](https://github.com/tc39).
+We may also provide positions on documents located outside a standards process, 
+e.g. those in W3C Community Groups such as [WICG](https://wicg.github.io/) 
+or other community incubation efforts with well-understood IPR terms, 
+but as a general rule believe that any such work must be moved to a formal standards track 
+before it’s appropriate for adoption as part of the web platform.
 
 Having a clear Mozilla position on these specifications helps us align our thinking and communicate
 it clearly to these standards bodies, as well as other browsers.
