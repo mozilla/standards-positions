@@ -1176,6 +1176,19 @@
     "url": "https://dom.spec.whatwg.org/#shadow-trees"
   },
   {
+    "ciuName": null,
+    "description": "Shared storage is storage for an origin that is intentionally not partitioned by top-frame site. Storage may only be read in a restricted environment that has carefully constructed output gates.",
+    "id": "shared-storage",
+    "mdnUrl": null,
+    "mozBugUrl": null,
+    "mozPosition": "negative",
+    "mozPositionDetail": "Mozilla has significant concerns about the viability of the isolation components of this design. The use cases presented do not, at this time, justify the complexity and privacy risks associated with this proposal.",
+    "mozPositionIssue": 646,
+    "org": "Proposal",
+    "title": "Shared Storage",
+    "url": "https://github.com/WICG/shared-storage"
+  },
+  {
     "ciuName": "sxg",
     "description": "This document specifies how a server can send an HTTP request/ response pair, known as an exchange, with signatures that vouch for that exchange's authenticity. These signatures can be verified against an origin's certificate to establish that the exchange is authoritative for an origin even if it was transferred over a connection that isn't. The signatures can also be used in other ways described in the appendices. These signatures contain countermeasures against downgrade and protocol-confusion attacks.",
     "id": "http-origin-signed-responses",
