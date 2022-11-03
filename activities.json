@@ -499,6 +499,19 @@
   },
   {
     "ciuName": null,
+    "description": "A Permissions Policy-controlled feature that determines whether any content in that document is allowed to obtain an IdentityCredential object using the Browser API.",
+    "id": "fedcm-permissions-policy",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1798971",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Given our positive position on FedCM as a whole, the question at heart here is whether a top-level window should be able to delegate its ability to use FedCM to iframes. A planned use case of FedCM is a 'Login with Foo' button and that these buttons exist in iframes in many uses today. This is a use case we wish to support and a good application of a policy controlled feature.",
+    "mozPositionIssue": 701,
+    "org": "Proposal",
+    "title": "Federated Credential Management API, Permissions Policy Integration",
+    "url": "https://fedidcg.github.io/FedCM/#permissions-policy-integration"
+  },
+  {
+    "ciuName": null,
     "description": "This document defines a set of Fetch metadata request headers that aim to provide servers with enough information to make a priori decisions about whether or not to service a request based on the way it was made, and the context in which it will be used.",
     "id": "fetch-metadata",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1508292",
