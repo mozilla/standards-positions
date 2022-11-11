@@ -1477,7 +1477,7 @@
     "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIAccess",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=836897",
     "mozPosition": "positive",
-    "mozPositionDetail": "This specification is a reasonable technical design for exposing MIDI devices to JavaScript, which has some demonstrated use-cases in the market. MIDI devices are not universally hardened against adversarial input (especially when sysex is involved) so we don't believe this API is safe to expose in the casual and low-trust context of ordinary websites. We therefore only expose it in Firefox if the user has installed a site-specific add-on to explicitly extend the base web platform with high-trust capabilities ordinarily reserved for installed software.”,
+    "mozPositionDetail": "This specification is a reasonable technical design for exposing MIDI devices to JavaScript, which has some demonstrated use-cases in the market. MIDI devices are not universally hardened against adversarial input (especially when sysex is involved) so we don't believe this API is safe to expose in the casual and low-trust context of ordinary websites. We therefore only expose it in Firefox if the user has installed a site-specific add-on to explicitly extend the base web platform with high-trust capabilities ordinarily reserved for installed software.",
     "mozPositionIssue": 58,
     "org": "W3C",
     "title": "Web MIDI API (Add-On Gated)",
