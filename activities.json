@@ -1299,16 +1299,16 @@
     "url": "https://tools.ietf.org/html/draft-privacy-pass"
   },
   {
-    "ciuName": null,
+    "ciuName": "webtransport",
     "description": "The WebTransport Protocol Framework enables clients constrained by the Web security model to communicate with a remote server using a secure multiplexed transport. It consists of a set of individual protocols that are safe to expose to untrusted applications, combined with a model that allows them to be used interchangeably. This document defines the overall requirements on the protocols used in WebTransport, as well as the common features of the protocols, support for some of which may be optional.",
     "id": "webtransport",
-    "mozBugUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1709355",
     "mozPosition": "positive",
     "mozPositionDetail": "We are generally in support of a mechanism that addresses the use cases implied by this solution document. While major questions remain open at this time -- notably, multiplexing, the API surface, and available statistics -- we think that prototyping the proposed solution as details become more firm would be worthwhile. We would like see the new WebSocketStream and WebTransport stream APIs to be developed in concert with each other, so as to share as much design as possible.",
     "mozPositionIssue": 167,
     "org": "Proposal",
     "title": "The WebTransport Protocol Framework",
-    "url": "https://tools.ietf.org/html/draft-vvv-webtransport-overview"
+    "url": "https://tools.ietf.org/html/draft-ietf-webtrans-overview"
   },
   {
     "ciuName": "mdn-javascript_operators_await_top_level",
