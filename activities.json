@@ -1299,6 +1299,19 @@
     "url": "https://tools.ietf.org/html/draft-privacy-pass"
   },
   {
+    "ciuName": null,
+    "description": "The goal of the Topics API is to provide callers with coarse-grained advertising topics that the page visitor might currently be interested in.",
+    "id": "topics",
+    "mdnUrl": null,
+    "mozBugUrl": null,
+    "mozPosition": "negative",
+    "mozPositionDetail": "Mozilla is unable to see a way to make the Topics API work from a privacy standpoint. Though the information the API provides is small, our belief is that this is more likely to reduce the usefulness of the information for advertisers than it provides meaningful protection for privacy.  Unfortunately, it is hard to identify concrete ways in which this might be improved.",
+    "mozPositionIssue": 622,
+    "org": "Proposal",
+    "title": "The Topics API",
+    "url": "https://github.com/patcg-individual-drafts/topics"
+  },
+  {
     "ciuName": "webtransport",
     "description": "The WebTransport Protocol Framework enables clients constrained by the Web security model to communicate with a remote server using a secure multiplexed transport. It consists of a set of individual protocols that are safe to expose to untrusted applications, combined with a model that allows them to be used interchangeably. This document defines the overall requirements on the protocols used in WebTransport, as well as the common features of the protocols, support for some of which may be optional.",
     "id": "webtransport",
