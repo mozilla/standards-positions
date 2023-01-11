@@ -1288,6 +1288,19 @@
   },
   {
     "ciuName": null,
+    "description": "Adds the global popover attribute to declaratively make an element be rendered on top of all other content and allow closing by the user (light dismiss).",
+    "id": "popover",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1808823",
+    "mozPosition": "positive",
+    "mozPositionDetail": "A common paradigm on the web which would be good for accessibility and developer ergonomics to support as a feature in HTML.",
+    "mozPositionIssue": 698,
+    "org": "WHATWG",
+    "title": "The Popover API",
+    "url": "https://github.com/whatwg/html/pull/8221"
+  },
+  {
+    "ciuName": null,
     "description": "This document specifies the Privacy Pass protocol for anonymously authorizing clients with services on the Internet.  Note to Readers Source for this draft and an issue tracker can be found at https://github.com/grittygrease/draft-privacy-pass [1].",
     "id": "privacy-pass",
     "mozBugUrl": null,
