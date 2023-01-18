@@ -1492,9 +1492,9 @@
     "mozPosition": "positive",
     "mozPositionDetail": "The specification provides important web platform primitives for same-global and cross-global coordination and avoids requiring other APIs to grow their own transaction abstractions (ex: the Service Worker spec's Cache API).",
     "mozPositionIssue": 64,
-    "org": "Proposal",
+    "org": "W3C",
     "title": "Web Locks API",
-    "url": "https://wicg.github.io/web-locks/"
+    "url": "https://www.w3.org/TR/web-locks/"
   },
   {
     "ciuName": "midi",
