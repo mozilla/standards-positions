@@ -1494,7 +1494,7 @@
     "mozPositionIssue": 64,
     "org": "W3C",
     "title": "Web Locks API",
-    "url": "https://www.w3.org/TR/web-locks/"
+    "url": "https://w3c.github.io/web-locks/"
   },
   {
     "ciuName": "midi",
