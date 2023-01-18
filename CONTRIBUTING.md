@@ -166,3 +166,6 @@ in the issue itself
 and limit the discussion in the pull request
 to the details of making the change to `activities.json`,
 and accurately communicating the consensus in the issue.
+
+Tips:
+* Specification URLs should link to a living standard or editor’s draft if available.
