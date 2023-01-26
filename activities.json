@@ -434,7 +434,7 @@
     "mozPositionIssue": 335,
     "org": "WHATWG",
     "title": "Declarative Shadow DOM",
-    "url": "https://github.com/mfreed7/declarative-shadow-dom/blob/master/README.md"
+    "url": "https://github.com/whatwg/html/pull/5465"
   },
   {
     "ciuName": null,
