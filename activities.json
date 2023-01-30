@@ -757,6 +757,19 @@
     "url": "https://tools.ietf.org/html/draft-west-cookie-incrementalism"
   },
   {
+    "ciuName": "jpegxl",
+    "description": "The JPEG XL Image Coding System (ISO/IEC 18181) has a rich feature set and is particularly optimised for responsive web environments, so that content renders well on a wide range of devices. Moreover, it includes several features that help transition from the legacy JPEG format.",
+    "id": "jpegxl",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1539075",
+    "mozPosition": "neutral",
+    "mozPositionDetail": "JPEG-XL includes features and performance that might differentiate it from other formats, but the benefits it provides are not significant enough on their own to justify the cost of adding another raster image format to the Web.",
+    "mozPositionIssue": 522,
+    "org": "Other",
+    "title": "JPEG-XL",
+    "url": "https://www.iso.org/standard/77977.html?browse=tc"
+  },
+  {
     "ciuName": "mdn-api_keyboardlayoutmap",
     "description": "This specification defines an API that allows websites to convert from a given code value to a valid key value that can be shown to the user to identify the given key. The conversion from code to key is based on the user\u2019s currently selected keyboard layout. It is intended to be used by web applications that want to treat the keyboard as a set of buttons and need to describe those buttons to the user.",
     "id": "keyboard-map",
