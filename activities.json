@@ -85,6 +85,18 @@
   },
   {
     "ciuName": null,
+    "description": "Allow authors to omit the 'sizes' attribute, use the keyword 'auto', for responsive lazy images in HTML to let the browser use the layout size from CSS or width/height attributes.",
+    "id": "img-auto-sizes",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=18166153",
+    "mozPosition": "positive",
+    "mozPositionDetail": "This proposal makes it easier for web developers to use responsive images. There is some risk that the behavior of cached images can cause flicker in some cases.",
+    "mozPositionIssue": 650,
+    "org": "WHATWG",
+    "title": "Auto-sizes for lazy-loaded images",
+    "url": "https://github.com/whatwg/html/pull/8008"
+  },
+  {
+    "ciuName": null,
     "description": "This specification defines an API allowing web applications to set an application-wide badge, shown in an operating-system-specific place associated with the application (such as the shelf or home screen), for the purpose of notifying the user when the state of the application has changed (e.g., when new messages have arrived), without showing a more heavyweight notification.",
     "id": "badging",
     "mozBugUrl": null,
