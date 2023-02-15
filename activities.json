@@ -87,7 +87,7 @@
     "ciuName": null,
     "description": "Allow authors to omit the 'sizes' attribute, use the keyword 'auto', for responsive lazy images in HTML to let the browser use the layout size from CSS or width/height attributes.",
     "id": "img-auto-sizes",
-    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=18166153",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1816615",
     "mozPosition": "positive",
     "mozPositionDetail": "This proposal makes it easier for web developers to use responsive images. There is some risk that the behavior of cached images can cause flicker in some cases.",
     "mozPositionIssue": 650,
