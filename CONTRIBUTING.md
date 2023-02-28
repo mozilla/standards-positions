@@ -11,9 +11,10 @@ filling out the auto-included template appropriately. (If posting via GitHub API
 [template](https://github.com/mozilla/standards-positions/blob/main/ISSUE_TEMPLATE.md)
 and fill it out).
 
-Normally, the appropriate granularity for an issue is a single specification; however, if an effort
-involves multiple, tightly integrated specs, one can be created for the "main" document, and include
-the others in the description.
+Normally, the appropriate granularity for an issue is a distinct web platform feature. This could
+be a section of a specification, a single specification, or crossing multiple specifications. If an
+effort involves multiple, tightly integrated specs, one can be created for the "main" document, and
+include the others in the description.
 
 Please understand that this repository is **only** for requests to determine a Mozilla position on
 a technical specification. For all other issues, see [bugzilla](https://bugzilla.mozilla.org) or
