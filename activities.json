@@ -97,6 +97,19 @@
   },
   {
     "ciuName": null,
+    "description": "This specification provides web developers the ability to detect if automatically starting the playback of a media file is allowed in different situations.",
+    "id": "autoplay-policy-detection",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/getAutoplayPolicy",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1773551",
+    "mozPosition": "positive",
+    "mozPositionDetail": "This API provides a convenient and synchronous answer to whether a particular kind of media can autoplay, which is something web developers are currently detecting either with various hacks or through UA detection. This doesn't expose new information for fingerprinting (see w3c/autoplay#24) as media elements already expose through events which media will autoplay by trying to autoplay.",
+    "mozPositionIssue": 675,
+    "org": "W3C",
+    "title": "Autoplay Policy Detection",
+    "url": "https://w3c.github.io/autoplay/"
+  },
+  {
+    "ciuName": null,
     "description": "This specification defines an API allowing web applications to set an application-wide badge, shown in an operating-system-specific place associated with the application (such as the shelf or home screen), for the purpose of notifying the user when the state of the application has changed (e.g., when new messages have arrived), without showing a more heavyweight notification.",
     "id": "badging",
     "mozBugUrl": null,
