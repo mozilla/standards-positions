@@ -318,6 +318,19 @@
   },
   {
     "ciuName": null,
+    "description": "This document describes APIs for accessing data on the system clipboard. It provides operations for overriding the default clipboard actions (cut, copy and paste), and for directly accessing the clipboard contents.",
+    "id": "clipboard-apis",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1619251",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Async Clipboard API is an improvement over execCommand for accessing the clipboard. Security concerns are addressed by gating on user activation and a non-modal dialog.",
+    "mozPositionIssue": 89,
+    "org": "W3C",
+    "title": "Clipboard API and events",
+    "url": "https://w3c.github.io/clipboard-apis/"
+  },
+  {
+    "ciuName": null,
     "description": "This document defines a set of JavaScript APIs to compress and decompress streams of binary data.",
     "id": "compression-streams",
     "mozBugUrl": null,
