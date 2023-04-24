@@ -27,7 +27,9 @@ try:
     from requests.auth import HTTPBasicAuth
 except ImportError:
     sys.stderr.write("ERROR: Dependency not available. Try:\n")
-    sys.stderr.write("       > pip3 install --user beautifulsoup4 requests html5lib\n\n")
+    sys.stderr.write(
+        "       > pip3 install --user beautifulsoup4 requests html5lib\n\n"
+    )
     sys.exit(1)
 
 
@@ -44,16 +46,18 @@ class IdType(object):
     "indicates an ID attribute."
     pass
 
+
 class UrlType(object):
     "indicates a URL."
     pass
+
 
 class UrlArrayType(object):
     "indicates a URL or array of URLs."
     pass
 
 
-StringType = type(u"")
+StringType = type("")
 ArrayType = type([])
 
 
@@ -67,7 +71,11 @@ class ActivitiesJson(object):
         ("title", True, StringType),
         ("description", True, StringType),
         ("ciuName", False, StringType),
-        ("org", True, ["W3C", "IETF", "Ecma", "WHATWG", "Unicode", "Proposal", "Other"]),
+        (
+            "org",
+            True,
+            ["W3C", "IETF", "Ecma", "WHATWG", "Unicode", "Proposal", "Other"],
+        ),
         ("group", False, StringType),
         ("url", True, UrlType),
         ("mdnUrl", False, UrlArrayType),
@@ -134,7 +142,9 @@ class ActivitiesJson(object):
                 ["%s already contains id %s" % (self.filename, entry["id"])]
             )
         if entry["url"] in [e["url"] for e in self.data]:
-            raise ValueError(["%s already contains url %s" % (self.filename, entry["url"])])
+            raise ValueError(
+                ["%s already contains url %s" % (self.filename, entry["url"])]
+            )
 
     def validate(self, check_sorting):
         """
@@ -161,7 +171,11 @@ class ActivitiesJson(object):
 
             # Check that the entries are sorted by title, as save writes them.
             if check_sorting and prevTitle is not None and prevTitle > title:
-                errors.append("{} is sorted incorrectly based on its title (it should not be after {})".format(title, prevTitle))
+                errors.append(
+                    "{} is sorted incorrectly based on its title (it should not be after {})".format(
+                        title, prevTitle
+                    )
+                )
             prevTitle = title
         return errors
 
@@ -174,7 +188,7 @@ class ActivitiesJson(object):
         if not title:
             title = "Entry"
         errors = []
-        for (name, required, value_type) in self.expected_entry_items:
+        for name, required, value_type in self.expected_entry_items:
             entry_value = entry.get(name, None)
             if required and not is_adding and entry_value is None:
                 errors.append("%s doesn't have required member %s" % (title, name))
@@ -185,25 +199,33 @@ class ActivitiesJson(object):
                     if isinstance(entry_value, StringType):
                         for char in entry_value:
                             if char in string.whitespace:
-                                errors.append("%s's %s contains whitespace" % (title, name))
+                                errors.append(
+                                    "%s's %s contains whitespace" % (title, name)
+                                )
                     else:
                         errors.append("%s's %s isn't a string." % (title, name))
                 elif value_type == UrlType:
                     if isinstance(entry_value, StringType):
-                        pass # FIXME: validate URL more?
+                        pass  # FIXME: validate URL more?
                     else:
                         errors.append("%s's %s isn't a URL string." % (title, name))
                 elif value_type == UrlArrayType:
                     if isinstance(entry_value, StringType):
-                        pass # FIXME: validate URL more?
+                        pass  # FIXME: validate URL more?
                     elif isinstance(entry_value, ArrayType):
                         for url in entry_value:
                             if isinstance(url, StringType):
-                                pass # FIXME: validate URL more?
+                                pass  # FIXME: validate URL more?
                             else:
-                                errors.append("%s's %s isn't a URL string or array of them." % (title, name))
+                                errors.append(
+                                    "%s's %s isn't a URL string or array of them."
+                                    % (title, name)
+                                )
                     else:
-                        errors.append("%s's %s isn't a URL string or array of them." % (title, name))
+                        errors.append(
+                            "%s's %s isn't a URL string or array of them."
+                            % (title, name)
+                        )
                 elif isinstance(value_type, type):
                     if not isinstance(entry_value, value_type):
                         errors.append("%s's %s isn't a %s" % (title, name, value_type))
@@ -237,7 +259,7 @@ class SpecEntry(object):
     def __init__(self, spec_url):
         self.orig_url = spec_url
         self.data = {
-            "id": u"",
+            "id": "",
             "title": "",
             "description": None,
             "ciuName": None,
@@ -246,7 +268,7 @@ class SpecEntry(object):
             "mdnUrl": None,
             "mozBugUrl": None,
             "mozPositionIssue": None,
-            "mozPosition": u"under consideration",
+            "mozPosition": "under consideration",
             "mozPositionDetail": None,
         }
         self.parser = None
@@ -269,7 +291,8 @@ class SpecEntry(object):
             self.parser = WHATWGParser
         else:
             sys.stderr.write(
-                "* ERROR: Can't figure out what organisation %s belongs to! Using Proposal.\n" % host
+                "* ERROR: Can't figure out what organisation %s belongs to! Using Proposal.\n"
+                % host
             )
 
     def fetch_spec_data(self, url):
@@ -438,9 +461,11 @@ class W3CParser(SpecParser):
             sys.exit(1)
         return data
 
+
 class W3CCGParser(W3CParser):
     "Parser for W3C community group specs"
     org = "Proposal"
+
 
 class WHATWGParser(W3CParser):
     "Parser for WHATWG specs"
@@ -511,7 +536,11 @@ class IETFParser(SpecParser):
             )
             or ""
         )
-        is_ietf = draft_name.startswith("rfc") or draft_name.startswith("draft-ietf-") or draft_name.startswith("draft-irtf-")
+        is_ietf = (
+            draft_name.startswith("rfc")
+            or draft_name.startswith("draft-ietf-")
+            or draft_name.startswith("draft-irtf-")
+        )
         data["org"] = self.org = "IETF" if is_ietf else "Proposal"
         data["url"] = self.clean_url(url_string)
         return data
@@ -591,7 +620,7 @@ if __name__ == "__main__":
 
     if VERB in ["validate", "add", "sort"]:
         ACTIVITIES = ActivitiesJson("activities.json")
-        ERRORS = ACTIVITIES.validate(check_sorting = (VERB != "sort"))
+        ERRORS = ACTIVITIES.validate(check_sorting=(VERB != "sort"))
         if ERRORS:
             sys.stderr.write("\n".join(["* ERROR: %s" % E for E in ERRORS]) + "\n")
             sys.exit(1)
