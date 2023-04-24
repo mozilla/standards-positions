@@ -7,6 +7,9 @@
 # $ ln -s ../../hooks/pre-commit .git/pre-commit
 
 root="$(git rev-parse --show-toplevel 2>/dev/null)"
+venv="$root/.venv"
+pip="$venv/bin/pip"
+python="$venv/bin/python"
 
 # Some sanity checking.
 hash python3 || exit 1
@@ -30,7 +33,9 @@ exec 1>&2
 # Perform validation.
 trap 'git stash pop -q' EXIT
 git stash push -k -u -q -m "pre-commit stash from $(date '+%FT%T%z')"
-if ! python3 activities.py validate; then
+python3 -m venv "$venv"
+"$pip" install -q beautifulsoup4 requests html5lib
+if ! "$python" activities.py validate; then
     echo "Validation failed; \`git commit --no-verify\` to suppress validation."
     exit 1
 fi
