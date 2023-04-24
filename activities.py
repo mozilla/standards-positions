@@ -311,8 +311,11 @@ class SpecEntry(object):
         try:
             spec_data = self.parser().parse(soup, url)
         except BetterUrl as why:
-            new_url = why[0]
-            sys.stderr.write("* Trying <%s>...\n" % new_url)
+            if why.args[0] == url:
+                sys.stderr.write("*** BUG: proposing the same URL as better.\n")
+                raise why
+            new_url = why.args[0]
+            sys.stderr.write("* Using better URL: <%s>...\n" % new_url)
             spec_data = self.fetch_spec_data(new_url)
         except FetchError:
             sys.stderr.write("* Falling back.\n")
@@ -434,9 +437,9 @@ class W3CParser(SpecParser):
         this_url = self.get_link(spec, "^This version")
         latest_url = self.get_link(spec, "^Latest version")
         ed_url = self.get_link(spec, "^Editor's draft")
-        if ed_url and ed_url != this_url:
+        if ed_url and ed_url != url_string:
             raise BetterUrl(ed_url)
-        elif latest_url and latest_url != this_url:
+        elif latest_url and latest_url != url_string:
             raise BetterUrl(latest_url)
         elif this_url:
             data["url"] = this_url
