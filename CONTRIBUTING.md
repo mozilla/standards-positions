@@ -6,10 +6,8 @@ We welcome contributions from the Mozilla community about its position on Web sp
 
 If there is a public, Web-related specification that you think Mozilla might be interested in,
 please
-[open a new issue](https://github.com/mozilla/standards-positions/issues/new),
-filling out the auto-included template appropriately. (If posting via GitHub API, please copy the
-[template](https://github.com/mozilla/standards-positions/blob/main/ISSUE_TEMPLATE.md)
-and fill it out).
+[open a new issue](https://github.com/mozilla/standards-positions/issues/new?template=request-for-position.yml),
+filling out the auto-included template appropriately.
 
 Normally, the appropriate granularity for an issue is a distinct web platform feature. This could
 be a section of a specification, a single specification, or crossing multiple specifications. If an
