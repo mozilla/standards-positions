@@ -934,6 +934,19 @@
     "url": "https://w3c.github.io/webappsec-mixed-content/"
   },
   {
+    "ciuName": null,
+    "description": "The Network Error Logging spec enables website to declare a reporting policy that can be used to report encountered network errors that prevented it from successfully loading its requested resources.",
+    "id": "network-error-logging",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Network_Error_Logging",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1145235",
+    "mozPosition": "negative",
+    "mozPositionDetail": "The API enables the collection of user-specific information that sites might not otherwise be able to observe, which includes information that might be private under some circumstance. Furthermore, the specification does not seem to track changes to the Reporting API it builds upon and seems effectively unmaintained.",
+    "mozPositionIssue": 99,
+    "org": "W3C",
+    "title": "Network Error Logging",
+    "url": "https://w3c.github.io/network-error-logging/"
+  },
+  {
     "ciuName": "netinfo",
     "description": "The Network Information API enables web applications to access information about the network connection in use by the device.",
     "id": "netinfo",
