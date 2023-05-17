@@ -940,7 +940,7 @@
     "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Network_Error_Logging",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1145235",
     "mozPosition": "negative",
-    "mozPositionDetail": "The API enables the collection of user-specific information that sites might not otherwise be able to observe, which includes information that might be private under some circumstance. Furthermore, the specification does not seem to track changes to the Reporting API it builds upon and seems effectively unmaintained.",
+    "mozPositionDetail": "The API enables the collection of user-specific information that sites might not otherwise be able to observe, which includes information that might be private under some circumstances. Furthermore, the specification does not seem to track changes to the Reporting API it builds upon and seems effectively unmaintained.",
     "mozPositionIssue": 99,
     "org": "W3C",
     "title": "Network Error Logging",
