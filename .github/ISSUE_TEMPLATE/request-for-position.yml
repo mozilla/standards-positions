@@ -9,7 +9,7 @@ body:
     attributes:
       label: "Mozillians"
       description: "Who from the Mozilla community do you think is best positioned to review this spec? It's okay if you don't know."
-      placeholder: "@zcorpan @dbaron @tantek"
+      placeholder: "@zcorpan @tantek"
   - type: markdown
     attributes:
       value: "## Information about the specification or proposal"
