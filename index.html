@@ -30,9 +30,8 @@
         padding-bottom: 5px;
       }
 
-      table.dataTable > tbody > tr:target,
-      table.dataTable > tbody > tr.shown:target + tr {
-        background: #fd0;
+      table.dataTable > tbody > tr:is(:target, .shown:target + tr) {
+        background: #fdeb8b;
       }
 
       tr:not(:hover):not(:focus-within) > .link-control > a {
@@ -44,11 +43,43 @@
         height: 1em;
         background: currentColor;
       }
-
       .clipicon-MDN {
         -webkit-mask: url(asset/MDN.svg) center no-repeat;
         mask: url(asset/MDN.svg) center no-repeat;
         width: 1.20833em;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          color-scheme: dark;
+        }
+        :root, body {
+          background-color: #111;
+          color: white;
+        }
+        .jumbotron {
+          background-color: #333;
+          color: white;
+        }
+        a {
+          color: #6db5f2;
+        }
+        .dataTables_wrapper :is(.dataTables_length, .dataTables_filter,
+            .dataTables_info, .dataTables_processing, .dataTables_paginate) {
+          color: #ccc;
+        }
+        table.dataTable > tbody > tr:is(:target, .shown:target + tr) {
+          background: #443103;
+        }
+        .table > :is(thead, tbody, tfoot) > tr > :is(td, th) {
+          border-top-color: #333;
+        }
+        table.dataTable tbody tr {
+          background-color: #111;
+        }
+        table.dataTable.no-footer {
+          border-bottom-color: #ccc;
+        }
       }
     </style>
   </head>
@@ -108,7 +139,7 @@
         <dt><button class="btn btn-default btn-xs">neutral</button></dt><dd>Mozilla is not convinced of the merits of this work, but does not see any significant negative potential.</dd>
         <dt><button class="btn btn-danger btn-xs">negative</button></dt><dd>Mozilla believes that pursuing this work in its current form would not be good for the web.</dd>
         <dt><button class="btn btn-warning btn-xs">defer</button></dt><dd>Mozilla takes no position on this work.</dd>
-        <dt><button class="btn btn-dark btn-xs">under consideration</button></dt><dd>Mozilla has not taken a position on this work and is gathering more information.</dd>
+        <dt><button class="btn btn-info btn-xs">under consideration</button></dt><dd>Mozilla has not taken a position on this work and is gathering more information.</dd>
       </dl>
 
     </div>
@@ -126,7 +157,7 @@
           "neutral": "default",
           "negative": "danger",
           "defer": "warning",
-          "under consideration": "dark",
+          "under consideration": "info",
         }
 
         var REPO_OWNER = "mozilla";
