@@ -104,11 +104,11 @@
       <p>The possible positions are:</p>
 
       <dl class="dl-horizontal space">
-        <dt><button class="btn btn-success btn-xs">positive</button></dt><dd>Mozilla regards this work as a potential improvement to the web.</dd>
-        <dt><button class="btn btn-default btn-xs">neutral</button></dt><dd>Mozilla is not convinced of the merits of this work, but does not see any significant negative potential.</dd>
-        <dt><button class="btn btn-danger btn-xs">negative</button></dt><dd>Mozilla believes that pursuing this work in its current form would not be good for the web.</dd>
-        <dt><button class="btn btn-warning btn-xs">defer</button></dt><dd>Mozilla takes no position on this work.</dd>
-        <dt><button class="btn btn-dark btn-xs">under consideration</button></dt><dd>Mozilla has not taken a position on this work and is gathering more information.</dd>
+        <dt><button class="btn btn-success btn-xs position">positive</button></dt><dd>Mozilla regards this work as a potential improvement to the web.</dd>
+        <dt><button class="btn btn-default btn-xs position">neutral</button></dt><dd>Mozilla is not convinced of the merits of this work, but does not see any significant negative potential.</dd>
+        <dt><button class="btn btn-danger btn-xs position">negative</button></dt><dd>Mozilla believes that pursuing this work in its current form would not be good for the web.</dd>
+        <dt><button class="btn btn-warning btn-xs position">defer</button></dt><dd>Mozilla takes no position on this work.</dd>
+        <dt><button class="btn btn-dark btn-xs position">under consideration</button></dt><dd>Mozilla has not taken a position on this work and is gathering more information.</dd>
       </dl>
 
     </div>
@@ -224,6 +224,7 @@
                 "searchable": true
               },
               {
+                "name": "mozPosition",
                 "data": "mozPosition",
                 "type": "enum-0",
                 "render": function (data, type, row, meta) {
@@ -231,9 +232,10 @@
                     return data;
                   }
                   if (data !== "" && ! status_styles.hasOwnProperty(data)) {
-                    console.log("WARNING: unrecognised position '" + data + "' on " + row.name)
+                    console.log("WARNING: unrecognised position '" + data + "' on " + row.name);
                   }
-                  return "<button type='button' class='btn btn-" + status_styles[data] + " btn-xs'>" + data + "</button>"
+                  return "<button type='button' class='btn btn-xs position btn-" + status_styles[data] +
+                    "' onclick='filterPosition'>" + data + "</button>";
                 },
                 "orderable": true
               },
@@ -329,6 +331,14 @@
           tr.classList.remove('shown');
         }
 
+        window.filterPosition = function(e) {
+          e.preventDefault();
+          ptable.columns('mozPosition:name').search(e.target.innerText).draw();
+        }
+        ptable.on('draw', function() {
+          $('button.position').click(window.filterPosition);
+        });
+
         // Work around bugs in both Chrome and Firefox relating to
         // anchor scrolling and :target selection.
         $('#mozPositions').on('order.dt', function() {
@@ -344,7 +354,7 @@
               }
             }, 0);
           }
-        } );
+        });
 
         window.addEventListener("hashchange", function (event) {
           var hash = location.hash.slice(1);
