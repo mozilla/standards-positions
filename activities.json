@@ -1342,6 +1342,7 @@
     "ciuName": "url-scroll-to-text-fragment",
     "description": "A proposal for extending URL fragment syntax with a list of text bits to highlight and scroll to.",
     "id": "scroll-to-text-fragment",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/Text_fragments",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1753933",
     "mozPosition": "positive",
     "mozPositionDetail": "This is an important use case to address and the proposal does a good job at mitigating the compatibility and security issues. As a result the syntax is a tad inelegant, but workable. (See also the <a href=\"#fragmention\">position on Fragmention</a>, which aims to address similar use cases.)",
