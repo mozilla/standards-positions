@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"  data-bs-theme="auto">
+<html lang="en">
   <head>
     <meta charset="utf-8">
 
@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mozilla Specification Positions</title>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="node_modules/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet">
     <style>
       @font-face {
@@ -116,7 +116,7 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
     <script src="components/datatables-plugins/sorting/enum.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
     var gFirstTableRender = true;
 
@@ -363,86 +363,26 @@
     })
     </script>
     <script>
-      // https://github.com/orgs/twbs/discussions/37727
+// https://github.com/orgs/twbs/discussions/37727
 /*!
- * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
+ * Based on color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under the Creative Commons Attribution 3.0 Unported License.
  */
 
 (() => {
   'use strict'
-
-  const getStoredTheme = () => localStorage.getItem('theme')
-  const setStoredTheme = theme => localStorage.setItem('theme', theme)
-
-  const getPreferredTheme = () => {
-    const storedTheme = getStoredTheme()
-    if (storedTheme) {
-      return storedTheme
-    }
-
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-  }
-
-  const setTheme = theme => {
-    if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  const setTheme = () => {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.documentElement.setAttribute('data-bs-theme', 'dark')
     } else {
-      document.documentElement.setAttribute('data-bs-theme', theme)
+      document.documentElement.setAttribute('data-bs-theme', "auto")
     }
   }
-
-  setTheme(getPreferredTheme())
-
-  const showActiveTheme = (theme, focus = false) => {
-    const themeSwitcher = document.querySelector('#bd-theme')
-
-    if (!themeSwitcher) {
-      return
-    }
-
-    const themeSwitcherText = document.querySelector('#bd-theme-text')
-    const activeThemeIcon = document.querySelector('.theme-icon-active use')
-    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
-    const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
-
-    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
-      element.classList.remove('active')
-      element.setAttribute('aria-pressed', 'false')
-    })
-
-    btnToActive.classList.add('active')
-    btnToActive.setAttribute('aria-pressed', 'true')
-    activeThemeIcon.setAttribute('href', svgOfActiveBtn)
-    const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
-    themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
-
-    if (focus) {
-      themeSwitcher.focus()
-    }
-  }
-
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-    const storedTheme = getStoredTheme()
-    if (storedTheme !== 'light' && storedTheme !== 'dark') {
-      setTheme(getPreferredTheme())
-    }
-  })
-
-  window.addEventListener('DOMContentLoaded', () => {
-    showActiveTheme(getPreferredTheme())
-
-    document.querySelectorAll('[data-bs-theme-value]')
-      .forEach(toggle => {
-        toggle.addEventListener('click', () => {
-          const theme = toggle.getAttribute('data-bs-theme-value')
-          setStoredTheme(theme)
-          setTheme(theme)
-          showActiveTheme(theme, true)
-        })
-      })
-  })
+    setTheme();
+  });
+  setTheme();
 })()
     </script>
   </body>
