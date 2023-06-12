@@ -280,6 +280,19 @@
     "url": "https://drafts.css-houdini.org/css-typed-om-1"
   },
   {
+    "ciuName": "view-transitions",
+    "description": "The View Transitions API allows developers to create animated visual transitions representing changes in the document state.",
+    "id": "view-transitions",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1823896",
+    "mozPosition": "positive",
+    "mozPositionDetail": "View Transitions allows developers to create animated transitions between states within one document as well as transitions when navigating across documents. The latter is a new capability for the web. We think the API design should be consistent between these cases where possible. As of mid-2023, the specification and implementation experience for this feature for same-document transitions is further along than for cross-document transitions.",
+    "mozPositionIssue": 677,
+    "org": "W3C",
+    "title": "CSS View Transitions Module Level 1",
+    "url": "https://drafts.csswg.org/css-view-transitions/"
+  },
+  {
     "ciuName": "mdn-css_properties_overflow_clip",
     "description": "overflow:clip is a feature of CSS Overflow Module Level 3 that is similar to overflow:hidden except without a formatting context or programmatic scrollability.",
     "id": "css-overflow-clip",
