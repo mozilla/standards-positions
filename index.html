@@ -50,6 +50,8 @@
         mask: url(asset/MDN.svg) center no-repeat;
         width: 1.20833em;
       }
+
+      #showall { display: none; }
     </style>
   </head>
   <body>
@@ -78,6 +80,7 @@
         <div>
           <a class="btn btn-primary" href="javascript:open_all()">Expand All</a>
           <a class="btn btn-primary" href="javascript:close_all()">Collapse All</a>
+          <a class="btn btn-primary" href="javascript:show_all()" id="showall">Show All</a>
         </div>
 
         <table id="mozPositions" class="table table-hover dataTable">
@@ -334,10 +337,18 @@
         window.filterPosition = function(e) {
           e.preventDefault();
           ptable.columns('mozPosition:name').search(e.target.innerText).draw();
+          // Calling .show() sets display to 'inline', which styles inconsistently.
+          $('#showall')[0].style.display = 'inline-block';
         }
         ptable.on('draw', function() {
           $('button.position').click(window.filterPosition);
         });
+        window.show_all = function(e) {
+          $('#mozPositions_filter input')[0].value = '';
+          // Reset both the global and per-column search.
+          ptable.search('').column('mozPosition:name').search('').draw();
+          $('#showall').hide();
+        }
 
         // Work around bugs in both Chrome and Firefox relating to
         // anchor scrolling and :target selection.
