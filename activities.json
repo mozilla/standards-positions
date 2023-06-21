@@ -948,6 +948,19 @@
   },
   {
     "ciuName": null,
+    "description": "The navigation API provides a web application-focused way of managing same-origin same-frame history entries and navigations.",
+    "id": "navigation-api",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Navigation_API",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1777171",
+    "mozPosition": "positive",
+    "mozPositionDetail": "This API is a good improvement for implementing SPAs over the status quo. There are various details that we're not sure about in the spec and we'd like to continue reviewing and submit feedback about issues we find.",
+    "mozPositionIssue": 543,
+    "org": "WHATWG",
+    "title": "Navigation API",
+    "url": "https://github.com/whatwg/html/pull/8502"
+  },
+  {
+    "ciuName": null,
     "description": "The Network Error Logging spec enables website to declare a reporting policy that can be used to report encountered network errors that prevented it from successfully loading its requested resources.",
     "id": "network-error-logging",
     "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Network_Error_Logging",
