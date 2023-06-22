@@ -219,6 +219,19 @@
     "url": "https://drafts.css-houdini.org/css-layout-api-1"
   },
   {
+    "ciuName": "css-nesting",
+    "description": "This module introduces the ability to nest one style rule inside another, with the selector of the child rule relative to the selector of the parent rule.  This increases the modularity and maintainability of CSS stylesheets.",
+    "id": "css-nesting",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1648037",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Nesting is a valuable tool for simplifying CSS authoring. Many authoring formats include the capability in some form, but native support will make the capability consistent and more widely available.",
+    "mozPositionIssue": 695,
+    "org": "W3C",
+    "title": "CSS Nesting",
+    "url": "https://drafts.csswg.org/css-nesting/"
+  },
+  {
     "ciuName": "css-paint-api",
     "description": "An API for allowing web developers to define a custom CSS &lt;image> with javascript, which will respond to style and size changes.",
     "id": "css-paint-api",
