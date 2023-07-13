@@ -909,6 +909,19 @@
   },
   {
     "ciuName": null,
+    "description": "This proposal extends Media Source Extension objects with a number of features that allow web applications to be more efficient in terms of power usage and memory.",
+    "id": "managed-media-source",
+    "mdnUrl": null,
+    "mozBugUrl": null,
+    "mozPosition": "positive",
+    "mozPositionDetail": "This opt-in feature of Media Source Extension allows implementations to reclaim memory when needed, and to allows scheduling download of media data when it's best to do so in terms of power usage. This is especialy important on mobile. This has the potential to improve the experience of media playback on low-power devices, but also generally allows web applications to use resources more efficiently.",
+    "mozPositionIssue": 845,
+    "org": "W3C",
+    "title": "Managed Media Source",
+    "url": "https://github.com/w3c/media-source/issues/320"
+  },
+  {
+    "ciuName": null,
     "description": "This specification enables web developers to show personalized media recommendations on the browser UI.",
     "id": "media-feeds",
     "mdnUrl": null,
