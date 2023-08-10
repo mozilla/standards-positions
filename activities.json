@@ -1013,6 +1013,18 @@
   },
   {
     "ciuName": null,
+    "description": "Safelist certain opaque responses based on MIME type and block everything else.",
+    "id": "orb",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1532642",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Our preferred approach to handle opaque responses when defending against Spectre attacks.",
+    "mozPositionIssue": 860,
+    "org": "Proposal",
+    "title": "Opaque Response Blocking (ORB)",
+    "url": "https://github.com/annevk/orb"
+  },
+  {
+    "ciuName": null,
     "description": "This specification defines a delivery mechanism for a number of policies which are to be applied to an entire origin. It compliments header-based delivery mechanisms for existing policies (Content Security Policy, Referrer Policy, etc).",
     "id": "origin-policy",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1508290",
