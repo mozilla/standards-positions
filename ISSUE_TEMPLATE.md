@@ -1,3 +1,4 @@
+<!-- Please use only the specification title as the issue title. -->
 
 ## Request for Mozilla Position on an Emerging Web Specification
 
