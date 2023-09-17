@@ -5,7 +5,7 @@
 * Specification title: 
 * Specification or proposal URL (if available): 
 * Explainer URL (if available):
-* Proposal author(s) (comma-separated GitHub accounts): 
+* Proposal author(s) (`@`-mention GitHub accounts): 
 * Caniuse.com URL (optional): 
 * Bugzilla URL (optional): 
 * Mozillians who can provide input (optional): 
