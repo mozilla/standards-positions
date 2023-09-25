@@ -691,7 +691,9 @@
     "ciuName": null,
     "description": "This spec defines a signal that conveys a person's request to websites and services to not sell or share their personal information with third parties.",
     "id": "gpc",
-    "mdnUrl": ["https://developer.mozilla.org/en-US/docs/Web/API/Navigator/globalPrivacyControl"],
+    "mdnUrl": [
+      "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/globalPrivacyControl"
+    ],
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1848951",
     "mozPosition": "positive",
     "mozPositionDetail": "This signal defined in this specification provides users with a way to opt-out of the disclosure of their information to third parties once per profile in a way that is legally enforced in some jurisdictions, and is being considered in future regulations.",
