@@ -1955,6 +1955,12 @@ WebAssembly SIMD:
   url: https://github.com/webassembly/simd/
   venues:
   - W3C
+WebAssembly Relaxed SIMD:
+  description: |
+    New 'relaxed' SIMD instructions for WebAssembly that have local non-determinism that depends on the platform.
+  issue: 651
+  rationale: |
+    These new instructions can have greatly improved performance making compute heavy tasks feasible on the web.
 WebDriver BiDi:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1690255
   description: |
