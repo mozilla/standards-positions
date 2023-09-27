@@ -1394,6 +1394,19 @@
     "url": "https://github.com/privacycg/storage-access"
   },
   {
+    "ciuName": null,
+    "description": "The Storage Buckets API provides a way for sites to organize locally stored data into groupings called \"storage buckets\". This allows the user agent or sites to manage and delete buckets independently rather than applying the same treatment to all the data from a single origin.",
+    "id": "storage-buckets",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1594740",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Data clearing on storage pressure is fundamentally limited by the current single \"default\" storage bucket per origin and an all-or-nothing persistent flag for that bucket.  As use of ServiceWorkers continues to increase and sites store or cache more data, a primitive that makes it easier for sites to store their data more granularly and for browsers to clear it more granularly is essential, especially for devices with limited storage and/or heavy storage uses outside of the browser's own needs.",
+    "mozPositionIssue": 475,
+    "org": "Proposal",
+    "title": "Storage Buckets API",
+    "url": "https://wicg.github.io/storage-buckets/"
+  },
+  {
     "ciuName": "streams",
     "description": "This specification provides APIs for creating, composing, and consuming streams of data that map efficiently to low-level I/O primitives.",
     "id": "streams",
