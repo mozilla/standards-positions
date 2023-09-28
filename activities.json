@@ -1529,6 +1529,19 @@
     "url": "https://w3c.github.io/trusted-types/dist/spec/"
   },
   {
+    "ciuName": "mdn-api_urlpattern",
+    "description": "The URLPattern API provides a web platform primitive for matching URLs based on a convenient pattern syntax.",
+    "id": "urlpattern",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/URLPattern",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1731418",
+    "mozPosition": "positive",
+    "mozPositionDetail": "URLPattern is an important primitive for the evolution of ServiceWorkers through the introduction of the Static Routing API.  Similar to Web Locks which evolved out of the ServiceWorkers Cache API, it is appropriate that URLPattern be distinct from the Service Workers spec and WG as it is useful in other contexts as well.",
+    "mozPositionIssue": 566,
+    "org": "Proposal",
+    "title": "URLPattern API",
+    "url": "https://wicg.github.io/urlpattern/"
+  },
+  {
     "ciuName": null,
     "description": "The QID Emoji Tag Sequences (or QID emoji, for short) have been proposed to provide a well-defined mechanism for implementations to support additional valid emoji that are not representable by Unicode characters or emoji zwj sequences. This mechanism allows for the interchange of emoji whose meaning is discoverable, and which should be correctly parsed by all conformant implementations (although only displayed by implementations that support it). The meaning of each of these valid emoji is established by reference to a Wikidata QID.",
     "id": "unicode-emoji-qid",
