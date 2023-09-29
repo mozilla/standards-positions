@@ -1319,6 +1319,19 @@
     "url": "https://tools.ietf.org/html/draft-ietf-dnsop-svcb-httpssvc"
   },
   {
+    "ciuName": null,
+    "description": "The initial proposal allows ServiceWorkers to define routes using URLPattern to bypass the ServiceWorker, avoiding spurious ServiceWorker wake-ups and avoiding the additional latency of sending requests to the ServiceWorker that it will not handle.  Longer term, the mechanism could also support consulting the Cache API without needing to wake up a ServiceWorker.",
+    "id": "service-worker-static-routing-api",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1855580",
+    "mozPosition": "positive",
+    "mozPositionDetail": "A longstanding performance concern for ServiceWorkers and the sites using them is that there is no way to skip going to a ServiceWorker for a controlled page when there is a \"fetch\" handler present.  The Static Routing API has been recognized as an ideal solution to address the problem versus other proposals like adding new attributes to HTML tags or arguments to the fetch API.  The static routing API had been discussed extensively in ServiceWorker WG meetings as a reasonable option but very complex to implement and specify, which is why it was not part of the original spec.  With the introduction of the URLPattern API, the Static Routing API is thankfully even easier to implement and specify.  The evolutionary approach where the Static Routing API will only start with a network source that bypasses the ServiceWorker is appropriately pragmatic.",
+    "mozPositionIssue": 828,
+    "org": "Proposal",
+    "title": "ServiceWorker Static Routing API",
+    "url": "https://github.com/WICG/service-worker-static-routing-api/"
+  },
+  {
     "ciuName": "shadowdomv1",
     "description": "A way to give a node in the DOM a hidden subtree in which the children of the node can be inserted.",
     "id": "shadow-trees",
