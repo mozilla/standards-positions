@@ -1579,6 +1579,19 @@
     "url": "https://wicg.github.io/ua-client-hints/"
   },
   {
+    "ciuName": null,
+    "description": "The UserActivation API provides the ability to query whether the window currently has or has previously had real user interaction.",
+    "id": "user-activation",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/UserActivation",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1791079",
+    "mozPosition": "positive",
+    "mozPositionDetail": "This API exposes the sticky activation and transient activation concepts which browsers use internally for, e.g., allowing popups. These concepts are useful for web apps as well.",
+    "mozPositionIssue": 838,
+    "org": "WHATWG",
+    "title": "UserActivation",
+    "url": "https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface"
+  },
+  {
     "ciuName": "webauthn",
     "description": "This specification defines an API enabling the creation and use of strong, attested, scoped, public key-based credentials by web applications, for the purpose of strongly authenticating users. Conceptually, one or more public key credentials, each scoped to a given WebAuthn Relying Party, are created by and bound to authenticators as requested by the web application. The user agent mediates access to authenticators and their public key credentials in order to preserve user privacy. Authenticators are responsible for ensuring that no operation is performed without user consent. Authenticators provide cryptographic proof of their properties to Relying Parties via attestation. This specification also describes the functional model for WebAuthn conformant authenticators, including their signature and attestation functionality.",
     "id": "webauthn",
