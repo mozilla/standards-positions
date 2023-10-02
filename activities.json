@@ -1580,7 +1580,7 @@
   },
   {
     "ciuName": null,
-    "description": "The UserActivation API provides ability to query the state of user activation.",
+    "description": "The UserActivation API provides the ability to query whether the window currently has or has previously had real user interaction.",
     "id": "user-activation",
     "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/UserActivation",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1791079",
