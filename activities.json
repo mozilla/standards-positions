@@ -886,16 +886,16 @@
   },
   {
     "ciuName": "loading-lazy-attr",
-    "description": "Enabling images to be fetched at a later time, when the user is likely to look at them.",
+    "description": "Enabling images and iframes to be fetched at a later time, when the user is likely to look at them.",
     "id": "loading-lazy-attr",
     "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1542784",
     "mozPosition": "positive",
-    "mozPositionDetail": "As currently scoped in the HTML pull request this is a reasonable addition to how images are fetched. (Note that the scope on Can I use is slightly bigger. Frames are likely a reasonable addition, but have their own set of design challenges.)",
+    "mozPositionDetail": "As currently specified in HTML this is a reasonable addition to how images and iframes are fetched. ",
     "mozPositionIssue": 151,
     "org": "WHATWG",
-    "title": "Lazy loading (of images)",
-    "url": "https://github.com/whatwg/html/pull/3752"
+    "title": "Lazy loading",
+    "url": "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#lazy-loading-attributes"
   },
   {
     "ciuName": null,
