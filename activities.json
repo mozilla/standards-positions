@@ -888,7 +888,7 @@
     "ciuName": "loading-lazy-attr",
     "description": "Enabling images and iframes to be fetched at a later time, when the user is likely to look at them.",
     "id": "loading-lazy-attr",
-    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading#images_and_iframes",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1542784",
     "mozPosition": "positive",
     "mozPositionDetail": "As currently specified in HTML this is a reasonable addition to how images and iframes are fetched. ",
