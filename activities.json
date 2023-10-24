@@ -1211,6 +1211,19 @@
   },
   {
     "ciuName": null,
+    "description": "Relative color syntax (RCS) allows developers to create a range of dynamic colors, starting from a base color, that will change as the base color changes. Great for creating color palettes and schemes.",
+    "id": "css-relative-color-syntax",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1701488",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Enables more freedom for developers to make use of the new forms and spaces introduced in CSS Color Module Level 4.",
+    "mozPositionIssue": 841,
+    "org": "W3C",
+    "title": "Relative color syntax (CSS Color Module Level 5)",
+    "url": "https://drafts.csswg.org/css-color-5/#relative-colors"
+  },
+  {
+    "ciuName": null,
     "description": "A TC39 proposal to add an .at() method to all the basic indexable classes (Array, String, TypedArray) which allows relative indexing of collection.",
     "id": "relative-indexing-method",
     "mdnUrl": null,
