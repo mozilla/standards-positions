@@ -1,6 +1,19 @@
 [
   {
     "ciuName": null,
+    "description": "The TC39 Decimal proposal aims to extend JavaScript to represent base-10 decimal numbers and provide basic mathematical operations on them.",
+    "id": "",
+    "mdnUrl": null,
+    "mozBugUrl": null,
+    "mozPosition": "under consideration",
+    "mozPositionDetail": null,
+    "mozPositionIssue": null,
+    "org": "Ecma",
+    "title": "Ecma TC39 proposal-decimal",
+    "url": "https://github.com/tc39/proposal-decimal"
+  },
+  {
+    "ciuName": null,
     "description": "Adds imagesrcset and imagesizes attributes to &lt;link> which correspond to the srcset and sizes attributes of &lt;img> respectively, for the purposes of preloading.",
     "id": "image-preload",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1515760",
