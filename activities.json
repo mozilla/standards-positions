@@ -836,6 +836,19 @@
     "url": "https://tools.ietf.org/html/draft-west-cookie-incrementalism"
   },
   {
+    "ciuName": null,
+    "description": "Invokers allow authors to assign behaviour to buttons in a more accessible and declarative way.",
+    "id": "invokers",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1856430",
+    "mozPosition": "positive",
+    "mozPositionDetail": "This proposal reduces the need for JavaScript for pages to build interactive elements, and is more likely to result in good accessibility and device-independence.",
+    "mozPositionIssue": 902,
+    "org": "WHATWG",
+    "title": "Invokers",
+    "url": "https://github.com/whatwg/html/pull/9841"
+  },
+  {
     "ciuName": "jpegxl",
     "description": "The JPEG XL Image Coding System (ISO/IEC 18181) has a rich feature set and is particularly optimised for responsive web environments, so that content renders well on a wide range of devices. Moreover, it includes several features that help transition from the legacy JPEG format.",
     "id": "jpegxl",
