@@ -842,7 +842,7 @@
     "mdnUrl": null,
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1856430",
     "mozPosition": "positive",
-    "mozPositionDetail": "This proposal reduces the need for JavaScript for pages to build interactive elements, and is more likely to result in good accessibility and device-independence.",
+    "mozPositionDetail": "This proposal reduces the need for JavaScript for pages to build interactive elements. Using invokers is more likely to result in good accessibility and device-independence than existing methods.",
     "mozPositionIssue": 902,
     "org": "WHATWG",
     "title": "Invokers",
