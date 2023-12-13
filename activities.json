@@ -1574,7 +1574,7 @@
     "id": "trusted-types",
     "mozBugUrl": null,
     "mozPosition": "positive",
-    "mozPositionDetail": "Mozilla believes that preventing DOM-based XSS is an important security goal. The track record of preventing DOM-based XSS is convincing. That being said, the Trusted Types specification is also providing API methods with little or unknown value and uptake, like getPropertyType, getAttributeType. Additionally, there are features in the Chrome implementations that are not yet standardized, like the beforepolicycreation event. These should ideally be properly standardized (based on a proven need) or deprecated and removed. Dealing with inscrutable third-party dependencies or external JavaScript has been a major concern of security and enforcing reasonable boundaries is a promising approach. We believe that runtime checking of untrusted HTML might pair well with a Sanitizer API that should be complementary.",
+    "mozPositionDetail": "Mozilla believes that preventing DOM-based XSS is an important security goal. The track record of preventing DOM-based XSS is convincing. Dealing with inscrutable third-party dependencies or external JavaScript has been a major concern of security and enforcing reasonable boundaries is a promising approach. We have some reservations about some features in the Chromium implementation, which need to be validated and standardized or removed.",
     "mozPositionIssue": 20,
     "org": "W3C",
     "title": "Trusted Types",
