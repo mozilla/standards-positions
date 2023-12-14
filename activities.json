@@ -1795,6 +1795,19 @@
   },
   {
     "ciuName": null,
+    "description": "New instructions for WebAssembly SIMD that have improved performance at the cost of local non-determinism that depends on the platform.",
+    "id": "wasm-relaxed-simd",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1706922",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Improving performance of SIMD in WebAssembly aids porting high-performance applications to the web.",
+    "mozPositionIssue": 651,
+    "org": "W3C",
+    "title": "WebAssembly Relaxed SIMD",
+    "url": "https://github.com/webassembly/relaxed-simd/"
+  },
+  {
+    "ciuName": null,
     "description": "128-bit vector data type and operations for webassembly",
     "id": "wasm-simd",
     "mdnUrl": null,
