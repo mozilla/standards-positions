@@ -1795,6 +1795,19 @@
   },
   {
     "ciuName": null,
+    "description": "",
+    "id": "wasm-js-promise-integration",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1850627",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Addresses a major paint point for developers porting existing applications that assume synchronous I/O to the web.",
+    "mozPositionIssue": 944,
+    "org": "Proposal",
+    "title": "WebAssembly JS Promise Integration",
+    "url": "https://github.com/WebAssembly/js-promise-integration/"
+  },
+  {
+    "ciuName": null,
     "description": "128-bit vector data type and operations for webassembly",
     "id": "wasm-simd",
     "mdnUrl": null,
