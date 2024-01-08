@@ -7,6 +7,7 @@
 # $ ln -s ../../hooks/pre-commit .git/pre-commit
 
 root="$(git rev-parse --show-toplevel 2>/dev/null)"
+venv="$root/venv"
 
 # Some sanity checking.
 hash python3 || exit 1
@@ -17,12 +18,25 @@ if [[ "$1" == "install" ]]; then
     hook="$root"/.git/hooks/pre-commit
     if [[ -e "$hook" ]]; then
         echo "Hook already installed:"
-	ls -l "$hook"
+        ls -l "$hook"
     else
         ln -s ../../pre-commit "$hook"
         echo "Installed git pre-commit hook at $hook"
     fi
     exit
+fi
+
+# venv setup
+if [ ! -d "$venv" ]; then
+    echo "Setting up python venv"
+    python3 -m venv "$venv"
+    source "$venv/bin/activate"
+    pip3 install -r requirements.txt
+elif [ requirements.txt -nt "$venv" ]; then
+    source "$venv/bin/activate"
+    pip3 install --upgrade --upgrade-stategy eager -r requirements.txt
+else
+    source "$venv/bin/activate"
 fi
 
 exec 1>&2
