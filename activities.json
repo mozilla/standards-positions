@@ -1226,15 +1226,14 @@
   {
     "ciuName": null,
     "description": "The Private State Token API is a web platform API that allows propagating a limited amount of signals across sites, using the Privacy Pass protocol as an underlying primitive.",
-    "id": "",
-    "mdnUrl": null,
+    "id": "private-state-token",
     "mozBugUrl": null,
-    "mozPosition": "under consideration",
-    "mozPositionDetail": null,
-    "mozPositionIssue": null,
+    "mozPosition": "negative",
+    "mozPositionDetail": "Private State Tokens provides sites with the means to exchange information about visitors, using Privacy Pass to ensure that there are very tight bounds on the rate of information transfer. We conclude that the usage constraints in the design are insufficient to effectively safeguard privacy.",
+    "mozPositionIssue": 262,
     "org": "Proposal",
     "title": "Private State Token API",
-    "url": "https://wicg.github.io/trust-token-api/"
+    "url": "https://github.com/WICG/trust-token-api/blob/master/README.md"
   },
   {
     "ciuName": null,
@@ -1569,18 +1568,6 @@
     "org": "IETF",
     "title": "Transport Layer Security (TLS) Certificate Compression",
     "url": "https://tools.ietf.org/html/draft-ietf-tls-certificate-compression"
-  },
-  {
-    "ciuName": null,
-    "description": "This document is an explainer for a potential future web platform API that allows propagating trust across sites, using the Privacy Pass protocol as an underlying primitive.",
-    "id": "private-state-token",
-    "mozBugUrl": null,
-    "mozPosition": "negative",
-    "mozPositionDetail": "Private State Tokens provides sites with the means to exchange information about visitors, using Privacy Pass to ensure that there are very tight bounds on the rate of information transfer. We conclude that the usage constraints in the design are insufficient to effectively safeguard privacy.",
-    "mozPositionIssue": 262,
-    "org": "Proposal",
-    "title": "Private State Token API",
-    "url": "https://github.com/WICG/trust-token-api/blob/master/README.md"
   },
   {
     "ciuName": "trusted-types",
