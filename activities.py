@@ -27,7 +27,9 @@ try:
     from requests.auth import HTTPBasicAuth
 except ImportError:
     sys.stderr.write("ERROR: Dependency not available. Try:\n")
-    sys.stderr.write("       > pip3 install --user beautifulsoup4 requests html5lib\n\n")
+    sys.stderr.write(
+        "       > pip3 install --user beautifulsoup4 requests html5lib\n\n"
+    )
     sys.exit(1)
 
 
@@ -44,16 +46,18 @@ class IdType(object):
     "indicates an ID attribute."
     pass
 
+
 class UrlType(object):
     "indicates a URL."
     pass
+
 
 class UrlArrayType(object):
     "indicates a URL or array of URLs."
     pass
 
 
-StringType = type(u"")
+StringType = type("")
 ArrayType = type([])
 
 
@@ -67,7 +71,11 @@ class ActivitiesJson(object):
         ("title", True, StringType),
         ("description", True, StringType),
         ("ciuName", False, StringType),
-        ("org", True, ["W3C", "IETF", "Ecma", "WHATWG", "Unicode", "Proposal", "Other"]),
+        (
+            "org",
+            True,
+            ["W3C", "IETF", "Ecma", "WHATWG", "Unicode", "Proposal", "Other"],
+        ),
         ("group", False, StringType),
         ("url", True, UrlType),
         ("mdnUrl", False, UrlArrayType),
@@ -134,7 +142,9 @@ class ActivitiesJson(object):
                 ["%s already contains id %s" % (self.filename, entry["id"])]
             )
         if entry["url"] in [e["url"] for e in self.data]:
-            raise ValueError(["%s already contains url %s" % (self.filename, entry["url"])])
+            raise ValueError(
+                ["%s already contains url %s" % (self.filename, entry["url"])]
+            )
 
     def validate(self, check_sorting):
         """
@@ -161,7 +171,11 @@ class ActivitiesJson(object):
 
             # Check that the entries are sorted by title, as save writes them.
             if check_sorting and prevTitle is not None and prevTitle > title:
-                errors.append("{} is sorted incorrectly based on its title (it should not be after {})".format(title, prevTitle))
+                errors.append(
+                    "{} is sorted incorrectly based on its title (it should not be after {})".format(
+                        title, prevTitle
+                    )
+                )
             prevTitle = title
         return errors
 
@@ -174,7 +188,7 @@ class ActivitiesJson(object):
         if not title:
             title = "Entry"
         errors = []
-        for (name, required, value_type) in self.expected_entry_items:
+        for name, required, value_type in self.expected_entry_items:
             entry_value = entry.get(name, None)
             if required and not is_adding and entry_value is None:
                 errors.append("%s doesn't have required member %s" % (title, name))
@@ -185,25 +199,33 @@ class ActivitiesJson(object):
                     if isinstance(entry_value, StringType):
                         for char in entry_value:
                             if char in string.whitespace:
-                                errors.append("%s's %s contains whitespace" % (title, name))
+                                errors.append(
+                                    "%s's %s contains whitespace" % (title, name)
+                                )
                     else:
                         errors.append("%s's %s isn't a string." % (title, name))
                 elif value_type == UrlType:
                     if isinstance(entry_value, StringType):
-                        pass # FIXME: validate URL more?
+                        pass  # FIXME: validate URL more?
                     else:
                         errors.append("%s's %s isn't a URL string." % (title, name))
                 elif value_type == UrlArrayType:
                     if isinstance(entry_value, StringType):
-                        pass # FIXME: validate URL more?
+                        pass  # FIXME: validate URL more?
                     elif isinstance(entry_value, ArrayType):
                         for url in entry_value:
                             if isinstance(url, StringType):
-                                pass # FIXME: validate URL more?
+                                pass  # FIXME: validate URL more?
                             else:
-                                errors.append("%s's %s isn't a URL string or array of them." % (title, name))
+                                errors.append(
+                                    "%s's %s isn't a URL string or array of them."
+                                    % (title, name)
+                                )
                     else:
-                        errors.append("%s's %s isn't a URL string or array of them." % (title, name))
+                        errors.append(
+                            "%s's %s isn't a URL string or array of them."
+                            % (title, name)
+                        )
                 elif isinstance(value_type, type):
                     if not isinstance(entry_value, value_type):
                         errors.append("%s's %s isn't a %s" % (title, name, value_type))
@@ -237,7 +259,7 @@ class SpecEntry(object):
     def __init__(self, spec_url):
         self.orig_url = spec_url
         self.data = {
-            "id": u"",
+            "id": "",
             "title": "",
             "description": None,
             "ciuName": None,
@@ -246,7 +268,7 @@ class SpecEntry(object):
             "mdnUrl": None,
             "mozBugUrl": None,
             "mozPositionIssue": None,
-            "mozPosition": u"under consideration",
+            "mozPosition": "under consideration",
             "mozPositionDetail": None,
         }
         self.parser = None
@@ -269,7 +291,8 @@ class SpecEntry(object):
             self.parser = WHATWGParser
         else:
             sys.stderr.write(
-                "* ERROR: Can't figure out what organisation %s belongs to! Using Proposal.\n" % host
+                "* ERROR: Can't figure out what organisation %s belongs to! Using Proposal.\n"
+                % host
             )
 
     def fetch_spec_data(self, url):
@@ -288,7 +311,7 @@ class SpecEntry(object):
         try:
             spec_data = self.parser().parse(soup, url)
         except BetterUrl as why:
-            new_url = why[0]
+            new_url = str(why)
             sys.stderr.write("* Trying <%s>...\n" % new_url)
             spec_data = self.fetch_spec_data(new_url)
         except FetchError:
@@ -438,9 +461,11 @@ class W3CParser(SpecParser):
             sys.exit(1)
         return data
 
+
 class W3CCGParser(W3CParser):
     "Parser for W3C community group specs"
     org = "Proposal"
+
 
 class WHATWGParser(W3CParser):
     "Parser for WHATWG specs"
@@ -456,16 +481,20 @@ class IETFParser(SpecParser):
 
         Takes a list of names that are tried in sequence; if none are present, None is returned.
         """
-        try:
-            name = names.pop(0)
-        except IndexError:
-            return None
-        try:
-            return spec.head.find("meta", attrs={"name": name})["content"].replace(
-                "\n", " "
-            )
-        except (TypeError, AttributeError):
-            return self.get_meta(spec, names)
+        for name in names:
+            try:
+                return spec.head.find("meta", attrs={"name": name})["content"].replace(
+                    "\n", " "
+                )
+            except (TypeError, AttributeError):
+                pass
+            try:
+                return spec.head.find("meta", attrs={"property": name})[
+                    "content"
+                ].replace("\n", " ")
+            except (TypeError, AttributeError):
+                pass
+        return None
 
     def parse(self, spec, url_string):
         url = urlsplit(url_string)
@@ -482,16 +511,15 @@ class IETFParser(SpecParser):
                             self.html_url("rfc%s" % identifier.rsplit(":", 1)[1])
                         )
                 draft_name, draft_number = self.parse_draft_name(path_components[-1])
-                if draft_number:
-                    raise BetterUrl(self.html_url(draft_name))
+                raise BetterUrl(self.html_url(draft_name))
             elif path_components[1] in ["id", "pdf"]:
                 raise BetterUrl(self.html_url(path_components[2]))
             else:
                 raise FetchError("I don't think that's a specification.")
         elif url.netloc.lower() == "www.ietf.org" and path_components[1] == "id":
-            if path_components[1] in ["id", "pdf"]:
+            if path_components[1] in ["archive", "id", "pdf"]:
                 try:
-                    draft_name = path_components[2].rsplit(".", 1)[0]
+                    draft_name = path_components[-1].rsplit(".", 1)[0]
                 except ValueError:
                     draft_name = path_components[2]
                 draft_name = self.parse_draft_name(draft_name)[0]
@@ -500,18 +528,34 @@ class IETFParser(SpecParser):
                 raise FetchError("I don't think that's a specification.")
         elif url.netloc.lower() == "datatracker.ietf.org":
             if path_components[1] == "doc":
-                raise BetterUrl(self.html_url(path_components[2]))
+                draft_name, draft_number = self.parse_draft_name(path_components[-1])
+                if draft_number or path_components[2] != "html":
+                    raise BetterUrl(self.html_url(draft_name))
+            elif path_components[1] in ["archive", "id", "pdf"]:
+                raise BetterUrl(self.html_url(path_components[-1]))
             else:
                 raise FetchError("I don't think that's a specification.")
         data = {}
-        data["title"] = self.get_meta(spec, ["DC.Title"]) or spec.head.title.string
+        data["title"] = self.get_meta(
+            spec, ["og:title", "DC.Title"]
+        ) or spec.head.title.string.replace("\n", " ")
         data["description"] = (
             self.get_meta(
-                spec, ["description", "dcterms.abstract", "DC.Description.Abstract"]
+                spec,
+                [
+                    "og:description",
+                    "description",
+                    "dcterms.abstract",
+                    "DC.Description.Abstract",
+                ],
             )
             or ""
         )
-        is_ietf = draft_name.startswith("rfc") or draft_name.startswith("draft-ietf-") or draft_name.startswith("draft-irtf-")
+        is_ietf = (
+            draft_name.startswith("rfc")
+            or draft_name.startswith("draft-ietf-")
+            or draft_name.startswith("draft-irtf-")
+        )
         data["org"] = self.org = "IETF" if is_ietf else "Proposal"
         data["url"] = self.clean_url(url_string)
         return data
@@ -530,8 +574,8 @@ class IETFParser(SpecParser):
     @staticmethod
     def html_url(doc_name):
         "Return the canonical URL for a document name."
-        path = "/".join(["html", doc_name])
-        return urlunsplit(["https", "tools.ietf.org", path, "", ""])
+        path = "/".join(["doc", "html", doc_name])
+        return urlunsplit(["https", "datatracker.ietf.org", path, "", ""])
 
 
 # Map of URL hostnames to org-specific parsers.
@@ -591,7 +635,7 @@ if __name__ == "__main__":
 
     if VERB in ["validate", "add", "sort"]:
         ACTIVITIES = ActivitiesJson("activities.json")
-        ERRORS = ACTIVITIES.validate(check_sorting = (VERB != "sort"))
+        ERRORS = ACTIVITIES.validate(check_sorting=(VERB != "sort"))
         if ERRORS:
             sys.stderr.write("\n".join(["* ERROR: %s" % E for E in ERRORS]) + "\n")
             sys.exit(1)

@@ -57,7 +57,7 @@
     "mozPositionIssue": 134,
     "org": "IETF",
     "title": "An HTTP Status Code for Indicating Hints (103)",
-    "url": "https://tools.ietf.org/html/rfc8297"
+    "url": "https://datatracker.ietf.org/doc/html/rfc8297"
   },
   {
     "ciuName": null,
@@ -142,7 +142,7 @@
     "mozPositionIssue": 264,
     "org": "Proposal",
     "title": "Bundled HTTP Exchanges",
-    "url": "https://tools.ietf.org/html/draft-yasskin-wpack-bundled-exchanges"
+    "url": "https://datatracker.ietf.org/doc/html/draft-yasskin-wpack-bundled-exchanges"
   },
   {
     "ciuName": "streams",
@@ -328,7 +328,7 @@
     "mozPositionIssue": 131,
     "org": "IETF",
     "title": "Cache Digests for HTTP/2",
-    "url": "https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest"
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cache-digest"
   },
   {
     "ciuName": null,
@@ -534,7 +534,7 @@
     "mozPositionIssue": 139,
     "org": "IETF",
     "title": "Encrypted Server Name Indication for TLS 1.3",
-    "url": "https://tools.ietf.org/html/draft-ietf-tls-esni"
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-tls-esni"
   },
   {
     "ciuName": null,
@@ -760,7 +760,7 @@
     "mozPositionIssue": 144,
     "org": "Proposal",
     "title": "HTTP Cache-Control Extensions for Stale Content",
-    "url": "https://tools.ietf.org/html/rfc5861"
+    "url": "https://datatracker.ietf.org/doc/html/rfc5861"
   },
   {
     "ciuName": "client-hints-dpr-width-viewport",
@@ -773,7 +773,7 @@
     "mozPositionIssue": 79,
     "org": "IETF",
     "title": "HTTP Client Hints",
-    "url": "https://tools.ietf.org/html/draft-ietf-httpbis-client-hints"
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-client-hints"
   },
   {
     "ciuName": null,
@@ -833,7 +833,7 @@
     "mozPositionIssue": 260,
     "org": "Proposal",
     "title": "Incrementally Better Cookies",
-    "url": "https://tools.ietf.org/html/draft-west-cookie-incrementalism"
+    "url": "https://datatracker.ietf.org/doc/html/draft-west-cookie-incrementalism"
   },
   {
     "ciuName": null,
@@ -920,7 +920,7 @@
     "mozPositionIssue": 121,
     "org": "IETF",
     "title": "Let 'localhost' be localhost.",
-    "url": "https://tools.ietf.org/html/draft-ietf-dnsop-let-localhost-be-localhost"
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-let-localhost-be-localhost"
   },
   {
     "ciuName": null,
@@ -1318,7 +1318,7 @@
     "mozPositionIssue": 175,
     "org": "IETF",
     "title": "Secondary Certificate Authentication in HTTP/2",
-    "url": "https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs"
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-http2-secondary-certs"
   },
   {
     "ciuName": "mdn-api_serial",
@@ -1342,7 +1342,7 @@
     "mozPositionIssue": 208,
     "org": "IETF",
     "title": "Service binding and parameter specification via the DNS (DNS SVCB and HTTPSSVC)",
-    "url": "https://tools.ietf.org/html/draft-ietf-dnsop-svcb-httpssvc"
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-svcb-httpssvc"
   },
   {
     "ciuName": null,
@@ -1392,7 +1392,7 @@
     "mozPositionIssue": 29,
     "org": "Proposal",
     "title": "Signed HTTP Exchanges",
-    "url": "https://tools.ietf.org/html/draft-yasskin-http-origin-signed-responses"
+    "url": "https://datatracker.ietf.org/doc/html/draft-yasskin-http-origin-signed-responses"
   },
   {
     "ciuName": "",
@@ -1442,7 +1442,7 @@
     "mozPositionIssue": 256,
     "org": "IETF",
     "title": "Structured Headers for HTTP",
-    "url": "https://tools.ietf.org/html/draft-ietf-httpbis-header-structure"
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-header-structure"
   },
   {
     "ciuName": null,
@@ -1505,7 +1505,7 @@
     "mozPositionIssue": 261,
     "org": "Proposal",
     "title": "The Privacy Pass Protocol",
-    "url": "https://tools.ietf.org/html/draft-privacy-pass"
+    "url": "https://datatracker.ietf.org/doc/html/draft-privacy-pass"
   },
   {
     "ciuName": null,
@@ -1530,7 +1530,7 @@
     "mozPositionIssue": 167,
     "org": "Proposal",
     "title": "The WebTransport Protocol Framework",
-    "url": "https://tools.ietf.org/html/draft-ietf-webtrans-overview"
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview"
   },
   {
     "ciuName": "mdn-javascript_operators_await_top_level",
@@ -1554,7 +1554,7 @@
     "mozPositionIssue": 96,
     "org": "IETF",
     "title": "Transport Layer Security (TLS) Certificate Compression",
-    "url": "https://tools.ietf.org/html/draft-ietf-tls-certificate-compression"
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-tls-certificate-compression"
   },
   {
     "ciuName": null,
@@ -1930,7 +1930,7 @@
     "mozPositionIssue": 105,
     "org": "IETF",
     "title": "Zstandard Compression and the application/zstd Media Type",
-    "url": "https://tools.ietf.org/html/rfc8478"
+    "url": "https://datatracker.ietf.org/doc/html/rfc8478"
   },
   {
     "ciuName": "dialog",
