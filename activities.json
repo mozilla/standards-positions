@@ -1187,6 +1187,19 @@
   },
   {
     "ciuName": null,
+    "description": "Private Access Tokens is the name given to the <a href=https://developer.apple.com/news/?id=huqjyh7k>integration</a> of Privacy Pass mechanism into Apple's networking stack.",
+    "id": "private-access-tokens",
+    "mdnUrl": null,
+    "mozBugUrl": null,
+    "mozPosition": "negative",
+    "mozPositionDetail": "This application of Privacy Pass fairly closely follows the IETF specification, but the integration with the Web means that the effect is of a proprietary deployment. A number of considerations relevant to use on the Web have not been adequately addressed in the deployment.",
+    "mozPositionIssue": 954,
+    "org": "Proposal",
+    "title": "Private Access Tokens",
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-privacypass-auth-scheme"
+  },
+  {
+    "ciuName": null,
     "description": "This specification defines a privacy preserving way to attribute a conversion, such as a purchase or a sign-up, to a previous ad click.",
     "id": "private-click-measurement",
     "mozBugUrl": null,
@@ -1209,6 +1222,18 @@
     "org": "Proposal",
     "title": "Private Network Access",
     "url": "https://wicg.github.io/private-network-access/"
+  },
+  {
+    "ciuName": null,
+    "description": "The Private State Token API is a web platform API that allows propagating a limited amount of signals across sites, using the Privacy Pass protocol as an underlying primitive.",
+    "id": "private-state-token",
+    "mozBugUrl": null,
+    "mozPosition": "negative",
+    "mozPositionDetail": "Private State Tokens provides sites with the means to exchange information about visitors, using Privacy Pass to ensure that there are very tight bounds on the rate of information transfer. We conclude that the usage constraints in the design are insufficient to effectively safeguard privacy.",
+    "mozPositionIssue": 262,
+    "org": "Proposal",
+    "title": "Private State Token API",
+    "url": "https://github.com/WICG/trust-token-api/blob/master/README.md"
   },
   {
     "ciuName": null,
@@ -1497,18 +1522,6 @@
   },
   {
     "ciuName": null,
-    "description": "This document specifies the Privacy Pass protocol for anonymously authorizing clients with services on the Internet.  Note to Readers Source for this draft and an issue tracker can be found at https://github.com/grittygrease/draft-privacy-pass [1].",
-    "id": "privacy-pass",
-    "mozBugUrl": null,
-    "mozPosition": "defer",
-    "mozPositionDetail": "This protocol provides a way to achieve certain important goals, such as denial of service mitigation, without also creating tracking mechanisms.  As such, we are very supportive of the goal.  However, we will defer making a firm position until the protocol and the novel cryptographic primitives it relies on have had more thorough security analysis.",
-    "mozPositionIssue": 261,
-    "org": "Proposal",
-    "title": "The Privacy Pass Protocol",
-    "url": "https://datatracker.ietf.org/doc/html/draft-privacy-pass"
-  },
-  {
-    "ciuName": null,
     "description": "The goal of the Topics API is to provide callers with coarse-grained advertising topics that the page visitor might currently be interested in.",
     "id": "topics",
     "mdnUrl": null,
@@ -1555,18 +1568,6 @@
     "org": "IETF",
     "title": "Transport Layer Security (TLS) Certificate Compression",
     "url": "https://datatracker.ietf.org/doc/html/draft-ietf-tls-certificate-compression"
-  },
-  {
-    "ciuName": null,
-    "description": "This document is an explainer for a potential future web platform API that allows propagating trust across sites, using the Privacy Pass protocol as an underlying primitive.",
-    "id": "trust-token",
-    "mozBugUrl": null,
-    "mozPosition": "defer",
-    "mozPositionDetail": "This API depends on the Privacy Pass protocol, for which we have deferred our position statement.",
-    "mozPositionIssue": 262,
-    "org": "Proposal",
-    "title": "Trust Token API",
-    "url": "https://github.com/WICG/trust-token-api/blob/master/README.md"
   },
   {
     "ciuName": "trusted-types",
