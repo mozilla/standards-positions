@@ -1351,7 +1351,7 @@
     "id": "webserial",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=webserial",
     "mozPosition": "neutral",
-    "mozPositionDetail": "Devices that offer serial interfaces often expose powerful, low-level functions over the interface with little or no authentication. Exposing that sort of capability to the web without adequate safeguards presents a significant threat to those devices. A user deliberately installing a site-specific add-on may be adequate, given sufficiently understandable consent copy",
+    "mozPositionDetail": "Devices that offer serial interfaces often expose powerful, low-level functions over the interface with little or no authentication. Exposing that sort of capability to the web without adequate safeguards presents a significant threat to those devices. A user deliberately installing a site-specific add-on may be adequate, given sufficiently understandable consent copy.",
     "mozPositionIssue": 336,
     "org": "Proposal",
     "title": "Serial API (Add-On Gated)",
