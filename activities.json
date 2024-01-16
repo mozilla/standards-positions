@@ -139,7 +139,7 @@
     "mdnUrl": null,
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1839915",
     "mozPosition": "positive",
-    "mozPositionDetail": "With 3rd-party cookies being restricted by default in all major browsers navigational tracking plays an increasingly important role on the web. This spec describes an effective cross-browser mechanism to combat bounce tracking, which does not rely on tracker lists. It provides predictable detection heuristics for web developers and preserves legitimate uses of short-lived redirects where possible.",
+    "mozPositionDetail": "With 3rd-party cookies being restricted by default in all major browsers, navigational tracking plays an increasingly important role on the web. This spec describes an effective cross-browser mechanism to combat bounce tracking, which does not rely on tracker lists. It provides predictable detection heuristics for web developers and preserves legitimate uses of short-lived redirects where possible. While browsers already ship similar protections, e.g. Firefox's tracker purging, aligning on common behavior improves web compatibility and drives developers towards specialized APIs, rather than relying on top level redirects for functionality.",
     "mozPositionIssue": 835,
     "org": "Proposal",
     "title": "Bounce Tracking Mitigations",
