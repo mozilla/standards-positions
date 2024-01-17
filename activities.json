@@ -939,7 +939,7 @@
     "ciuName": null,
     "description": "This specification defines APIs for reporting information for frames that take a long time to render.",
     "id": "long-animation-frame-api",
-    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1734997",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1348405",
     "mozPosition": "positive",
     "mozPositionDetail": "This feature allows web developers to measure frame congestion and jank, and has a correlation with how user perceive this type of congestion. Web developers can use this API to improve the perceived performance of their pages.",
     "mozPositionIssue": 929,
