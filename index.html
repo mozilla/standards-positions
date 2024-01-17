@@ -103,7 +103,16 @@
           --bs-form-valid-border-color: #75b798;
           --bs-form-invalid-color: #ea868f;
           --bs-form-invalid-border-color: #ea868f;
+          --bs-highlight-bg: #d9b74b;
+          --bs-highlight-color: black;
         }
+        .mark a, mark a {
+          --bs-link-color: #0044a8;
+          --bs-link-color-rgb: 0, 68, 168;
+          --bs-link-hover-color: #002b6a;
+          --bs-link-hover-color-rgb: 0, 43, 106;
+        }
+        .btn-dark { --bs-btn-bg: black; }
 
         .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
           color: var(--bs-secondary-color);
@@ -165,7 +174,7 @@
 
       <dl class="dl-horizontal space">
         <dt><button class="btn btn-success btn-xs">positive</button></dt><dd>Mozilla regards this work as a potential improvement to the web.</dd>
-        <dt><button class="btn btn-default btn-xs">neutral</button></dt><dd>Mozilla is not convinced of the merits of this work, but does not see any significant negative potential.</dd>
+        <dt><button class="btn btn-light btn-xs">neutral</button></dt><dd>Mozilla is not convinced of the merits of this work, but does not see any significant negative potential.</dd>
         <dt><button class="btn btn-danger btn-xs">negative</button></dt><dd>Mozilla believes that pursuing this work in its current form would not be good for the web.</dd>
         <dt><button class="btn btn-warning btn-xs">defer</button></dt><dd>Mozilla takes no position on this work.</dd>
         <dt><button class="btn btn-dark btn-xs">under consideration</button></dt><dd>Mozilla has not taken a position on this work and is gathering more information.</dd>
@@ -421,7 +430,6 @@
           open_row(tr);
         });
     })
-    </script>
     </script>
   </body>
 </html>
