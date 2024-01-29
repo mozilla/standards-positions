@@ -208,7 +208,7 @@
     "url": "https://drafts.csswg.org/css-contain-3/#container-queries"
   },
   {
-    "ciuName": null,
+    "ciuName": "css-widows-orphans",
     "description": "These CSS properties provide control over typographic widows and orphans during fragmentation/pagination.",
     "id": "widows-orphans",
     "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/widows",
