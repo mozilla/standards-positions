@@ -215,7 +215,7 @@
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=137367",
     "mozPosition": "positive",
     "mozPositionDetail": null,
-    "mozPositionIssue": "https://github.com/mozilla/standards-positions/issues/972",
+    "mozPositionIssue": 972,
     "org": "W3C",
     "title": "CSS Fragmentation Module Level 3: 3.3 Breaks Between Lines: orphans, widows",
     "url": "https://drafts.csswg.org/css-break/#widows-orphans"
