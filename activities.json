@@ -208,6 +208,19 @@
     "url": "https://drafts.csswg.org/css-contain-3/#container-queries"
   },
   {
+    "ciuName": "css-widows-orphans",
+    "description": "These CSS properties provide control over typographic widows and orphans during fragmentation/pagination.",
+    "id": "widows-orphans",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/widows",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=137367",
+    "mozPosition": "positive",
+    "mozPositionDetail": null,
+    "mozPositionIssue": 972,
+    "org": "W3C",
+    "title": "CSS Fragmentation Module Level 3: 3.3 Breaks Between Lines: orphans, widows",
+    "url": "https://drafts.csswg.org/css-break/#widows-orphans"
+  },
+  {
     "ciuName": "css-subgrid",
     "description": "This draft defines additions to CSS Grid, primarily for the subgrid feature.",
     "id": "subgrid",
