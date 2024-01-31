@@ -1373,7 +1373,7 @@
   },
   {
     "ciuName": null,
-    "description": "Defines an API and markup for creating animations that are tied to the scroll offset of a scroll container.",
+    "description": "Defines CSS properties and an API for creating animations that are tied to the scroll offset of a scroll container.",
     "id": "scroll-animations",
     "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1676780",
