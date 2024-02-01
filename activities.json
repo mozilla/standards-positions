@@ -1373,6 +1373,19 @@
   },
   {
     "ciuName": null,
+    "description": "Defines CSS properties and an API for creating animations that are tied to the scroll offset of a scroll container.",
+    "id": "scroll-animations",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1676780",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Animations linked to scrolling is desired for some web applications or web sites. A declarative solution allows for better user control and should be easier to use for web developers.",
+    "mozPositionIssue": 347,
+    "org": "W3C",
+    "title": "Scroll-driven Animations",
+    "url": "https://drafts.csswg.org/scroll-animations-1/"
+  },
+  {
+    "ciuName": null,
     "description": "A use of TLS Exported Authenticators is described which enables HTTP/2 clients and servers to offer additional certificate-based credentials after the connection is established. The means by which these credentials are used with requests is defined.",
     "id": "http2-secondary-certs",
     "mozBugUrl": null,
