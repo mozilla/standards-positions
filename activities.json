@@ -2091,5 +2091,17 @@
     "org": "WHATWG",
     "title": "timezonechange event",
     "url": "https://github.com/whatwg/html/pull/3047"
+  },
+  {
+    "ciuName": null,
+    "description": "@scope rule allows targeting CSS rules to subtree or fragment of a document.",
+    "id": "at-scope",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=%40scope",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Scoped styles allow authors to precisely control upper- and lower-bounds of where CSS rules, without having to add many attributes on DOM elements. We hope to evaluate its performance impact by developing a working prototype.",
+    "mozPositionIssue": 472,
+    "org": "W3C",
+    "title": "CSS Scoped Styles",
+    "url": "https://drafts.csswg.org/css-cascade-6/#scoped-styles"
   }
 ]
