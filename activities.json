@@ -2098,7 +2098,7 @@
     "id": "at-scope",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=%40scope",
     "mozPosition": "positive",
-    "mozPositionDetail": "Scoped styles allow authors to precisely control upper- and lower-bounds of where CSS rules, without having to add many attributes on DOM elements. We hope to evaluate its performance impact by developing a working prototype.",
+    "mozPositionDetail": "Scoped styles allow authors to precisely control upper- and lower-bounds of where CSS rules, without having to add many attributes on DOM elements. However, there is a risk of performance degradation that will have to be answered with implementation experience.",
     "mozPositionIssue": 472,
     "org": "W3C",
     "title": "CSS Scoped Styles",
