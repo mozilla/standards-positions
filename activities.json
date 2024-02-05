@@ -2093,7 +2093,7 @@
     "url": "https://github.com/whatwg/html/pull/3047"
   },
   {
-    "ciuName": null,
+    "ciuName": "css-cascade-scope",
     "description": "@scope rule allows targeting CSS rules to subtree or fragment of a document.",
     "id": "at-scope",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=%40scope",
