@@ -295,6 +295,18 @@
     "url": "https://drafts.css-houdini.org/css-properties-values-api-1#at-property-rule"
   },
   {
+    "ciuName": "css-cascade-scope",
+    "description": "@scope rule allows targeting CSS rules to subtree or fragment of a document.",
+    "id": "at-scope",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=%40scope",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Scoped styles allow authors to precisely control upper- and lower-bounds of where CSS rules, without having to add many attributes on DOM elements. However, there is a risk of performance degradation that will have to be answered with implementation experience.",
+    "mozPositionIssue": 472,
+    "org": "W3C",
+    "title": "CSS Scoped Styles",
+    "url": "https://drafts.csswg.org/css-cascade-6/#scoped-styles"
+  },
+  {
     "ciuName": null,
     "description": "This specification defines the ::part() and ::theme() pseudo-elements on shadow hosts, allowing shadow hosts to selectively expose chosen elements from their shadow tree to the outside page for styling purposes.",
     "id": "css-shadow-parts",
@@ -2091,17 +2103,5 @@
     "org": "WHATWG",
     "title": "timezonechange event",
     "url": "https://github.com/whatwg/html/pull/3047"
-  },
-  {
-    "ciuName": "css-cascade-scope",
-    "description": "@scope rule allows targeting CSS rules to subtree or fragment of a document.",
-    "id": "at-scope",
-    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=%40scope",
-    "mozPosition": "positive",
-    "mozPositionDetail": "Scoped styles allow authors to precisely control upper- and lower-bounds of where CSS rules, without having to add many attributes on DOM elements. However, there is a risk of performance degradation that will have to be answered with implementation experience.",
-    "mozPositionIssue": 472,
-    "org": "W3C",
-    "title": "CSS Scoped Styles",
-    "url": "https://drafts.csswg.org/css-cascade-6/#scoped-styles"
   }
 ]
