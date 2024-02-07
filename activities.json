@@ -37,6 +37,18 @@
   },
   {
     "ciuName": null,
+    "description": "This will allow ARIA relationship attributes to be set more easily via JavaScript, and in particular will allow setting ARIA relationship attributes which work across Shadow DOM boundaries (with limitations).",
+    "id": "aria-element-reflection",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1769586",
+    "mozPosition": "positive",
+    "mozPositionDetail": "This is an important piece in making web components accessible. While this unfortunately does not address all of the use cases for ARIA references across shadow roots and it cannot be used declaratively, there is no other single alternative which solves these problems in a reasonable, ergonomic way.",
+    "mozPositionIssue": 200,
+    "org": "W3C",
+    "title": "ARIA Element Reflection",
+    "url": "https://w3c.github.io/aria/#ARIAMixin"
+  },
+  {
+    "ciuName": null,
     "description": "This document describes an API providing access to accelerated shape detectors (e.g. human faces) for still images and/or live image feeds.",
     "id": "shape-detection-api",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1553738",
