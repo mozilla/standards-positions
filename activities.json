@@ -974,6 +974,19 @@
   },
   {
     "ciuName": null,
+    "description": "Exposes to the Web user preferences for hour cycle, first day of week, temperature unit, numbering system, and calendar system overriding values implied by language-region pair",
+    "id": "locale-extensions",
+    "mdnUrl": null,
+    "mozBugUrl": null,
+    "mozPosition": "negative",
+    "mozPositionDetail": "Use cases have legitimacy, but they don't seem strong enough to justify the additional fingerprinting surface. Addressing fingerprinting, if even possible, would likely to involve disproportionate design, engineering, and UI surface relative to the utility.",
+    "mozPositionIssue": 844,
+    "org": "Proposal",
+    "title": "Locale Extensions",
+    "url": "https://github.com/ben-allen/locale-extensions/"
+  },
+  {
+    "ciuName": null,
     "description": "This specification defines APIs for reporting information for frames that take a long time to render.",
     "id": "long-animation-frame-api",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1348405",
