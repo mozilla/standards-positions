@@ -307,7 +307,7 @@
     "url": "https://drafts.css-houdini.org/css-properties-values-api-1#at-property-rule"
   },
   {
-    "ciuName": "css-has-selector",
+    "ciuName": "css-has",
     "description": ":has selector lets authors select elements that anchor at least one element that matches its inner relative selector.",
     "id": "css-has-selector",
     "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has",
