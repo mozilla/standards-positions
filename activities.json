@@ -319,6 +319,19 @@
     "url": "https://drafts.csswg.org/css-cascade-6/#scoped-styles"
   },
   {
+    "ciuName": "css-has-selector",
+    "description": ":has selector lets authors select elements that anchor at least one element that matches its inner relative selector.",
+    "id": "css-has-selector",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=has-pseudo",
+    "mozPosition": "positive",
+    "mozPositionDetail": "We acknowledge the developer demand for this selector, and the implementation is shipping as of 121. However, we are still concerned about the worst-case performance of DOM tree mutation when using the selector.",
+    "mozPositionIssue": 528,
+    "org": "W3C",
+    "title": "CSS Relational Pseudo-Class (:has())",
+    "url": "https://drafts.csswg.org/selectors/#relational"
+  },
+  {
     "ciuName": null,
     "description": "This specification defines the ::part() and ::theme() pseudo-elements on shadow hosts, allowing shadow hosts to selectively expose chosen elements from their shadow tree to the outside page for styling purposes.",
     "id": "css-shadow-parts",
