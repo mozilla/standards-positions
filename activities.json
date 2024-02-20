@@ -307,6 +307,19 @@
     "url": "https://drafts.css-houdini.org/css-properties-values-api-1#at-property-rule"
   },
   {
+    "ciuName": "css-has",
+    "description": ":has selector lets authors select elements that anchor at least one element that matches its inner relative selector.",
+    "id": "css-has-selector",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=has-pseudo",
+    "mozPosition": "positive",
+    "mozPositionDetail": "We recognize that :has is something that a lot of people want. That power does come with performance costs, like the potential for very poor performance when there is DOM tree mutation. Overall, the utility of the selector justifies this risk, but we might need to do more to help developers avoid the worst problems.",
+    "mozPositionIssue": 528,
+    "org": "W3C",
+    "title": "CSS Relational Pseudo-Class (:has())",
+    "url": "https://drafts.csswg.org/selectors/#relational"
+  },
+  {
     "ciuName": "css-cascade-scope",
     "description": "@scope rule allows targeting CSS rules to subtree or fragment of a document.",
     "id": "at-scope",
