@@ -313,7 +313,7 @@
     "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=has-pseudo",
     "mozPosition": "positive",
-    "mozPositionDetail": "We acknowledge the developer demand for this selector, and the implementation is shipping as of 121. However, we are still concerned about the worst-case performance of DOM tree mutation when using the selector.",
+    "mozPositionDetail": "We recognize that :has is something that a lot of people want. That power does come with performance costs, like the potential for very poor performance when there is DOM tree mutation. Overall, the utility of the selector justifies this risk, but we might need to do more to help developers avoid the worst problems.",
     "mozPositionIssue": 528,
     "org": "W3C",
     "title": "CSS Relational Pseudo-Class (:has())",
