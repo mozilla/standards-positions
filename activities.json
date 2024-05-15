@@ -576,6 +576,19 @@
     "url": "https://github.com/whatwg/html/pull/4658"
   },
   {
+    "ciuName": null,
+    "description": "The digital credentials API is an extension to the credential management API that enables access to identity documentation that might be held in the user agent or a wallet on the same device.",
+    "id": "digital-credentials",
+    "mdnUrl": null,
+    "mozBugUrl": null,
+    "mozPosition": "negative",
+    "mozPositionDetail": "This interface carries a significant risk of causing privacy problems and could lead to unjustified exclusion of web users. Any solution in this area needs to do more to manage these risks before it could be considered safe to deploy.",
+    "mozPositionIssue": 1003,
+    "org": "Proposal",
+    "title": "Digital Credentials",
+    "url": "https://wicg.github.io/digital-credentials/"
+  },
+  {
     "ciuName": "document-policy",
     "description": "Document policy allows content to define a policy that constrains embedded content.",
     "id": "document-policy",
