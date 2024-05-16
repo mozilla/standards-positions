@@ -913,6 +913,18 @@
   },
   {
     "ciuName": null,
+    "description": "IntersectionObserver extension for occlusion detection / clickjacking prevention.",
+    "id": "intersectionobserver-v2",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1896900",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Security positive, interop concerns are being addressed.",
+    "mozPositionIssue": 109,
+    "org": "W3C",
+    "title": "IntersectionObserver V2",
+    "url": "https://github.com/w3c/IntersectionObserver/pull/523"
+  },
+  {
+    "ciuName": null,
     "description": "Invokers allow authors to assign behaviour to buttons in a more accessible and declarative way.",
     "id": "invokers",
     "mdnUrl": null,
