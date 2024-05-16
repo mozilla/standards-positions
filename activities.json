@@ -913,7 +913,7 @@
   },
   {
     "ciuName": null,
-    "description": "IntersectionObserver extension for occlusion detection / clicjacking prevention.",
+    "description": "IntersectionObserver extension for occlusion detection / clickjacking prevention.",
     "id": "intersectionobserver-v2",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1896900",
     "mozPosition": "positive",
