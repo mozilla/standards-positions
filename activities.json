@@ -195,6 +195,18 @@
     "url": "https://github.com/googlefonts/colr-gradients-spec/"
   },
   {
+    "ciuName": "css-anchor-positioning",
+    "description": "Anchor Positioning allows positioned elements to size and position themselves relative to one or more 'anchor elements' elsewhere on the page.",
+    "id": "css-anchor-positioning",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=css-anchor-position-1",
+    "mozPosition": "positive",
+    "mozPositionDetail": "This is an important evolution of absolute positioning that addresses a common and much requested authoring use case that otherwise requires the use of JavaScript.",
+    "mozPositionIssue": 794,
+    "org": "W3C",
+    "title": "CSS Anchor Positioning",
+    "url": "https://drafts.csswg.org/css-anchor-position-1/"
+  },
+  {
     "ciuName": "",
     "description": "CSS Cascade Layers provides a structured way to organize related style rules within a single origin. Rules within a single cascade layer cascade together, without interleaving with style rules outside the layer.",
     "id": "css-cascade-layers",
