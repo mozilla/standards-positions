@@ -318,7 +318,7 @@
     "org": "W3C",
     "title": "CSS Relational Pseudo-Class (:has())",
     "url": "https://drafts.csswg.org/selectors/#relational",
-    "webFeaturesID": "has"
+    "webFeaturesId": "has"
   },
   {
     "ciuName": "css-cascade-scope",
@@ -331,7 +331,7 @@
     "org": "W3C",
     "title": "CSS Scoped Styles",
     "url": "https://drafts.csswg.org/css-cascade-6/#scoped-styles",
-    "webFeaturesID": "scope"
+    "webFeaturesId": "scope"
   },
   {
     "ciuName": null,
@@ -369,7 +369,7 @@
     "org": "W3C",
     "title": "CSS View Transitions Module Level 1",
     "url": "https://drafts.csswg.org/css-view-transitions/",
-    "webFeaturesID": "view-transitions"
+    "webFeaturesId": "view-transitions"
   },
   {
     "ciuName": "mdn-css_properties_overflow_clip",
@@ -420,7 +420,7 @@
     "org": "W3C",
     "title": "Clipboard API and events",
     "url": "https://w3c.github.io/clipboard-apis/",
-    "webFeaturesID": "async-clipboard"
+    "webFeaturesId": "async-clipboard"
   },
   {
     "ciuName": null,
@@ -829,7 +829,7 @@
     "org": "Proposal",
     "title": "HTMLVideoElement.requestVideoFrameCallback()",
     "url": "https://wicg.github.io/video-rvfc",
-    "webFeaturesID": "request-video-frame-callback"
+    "webFeaturesId": "request-video-frame-callback"
   },
   {
     "ciuName": null,
@@ -867,7 +867,7 @@
     "org": "Proposal",
     "title": "Idle Detection API",
     "url": "https://wicg.github.io/idle-detection/",
-    "webFeaturesID": "idle-detection"
+    "webFeaturesId": "idle-detection"
   },
   {
     "ciuName": null,
@@ -928,7 +928,7 @@
     "org": "W3C",
     "title": "IntersectionObserver V2",
     "url": "https://github.com/w3c/IntersectionObserver/pull/523",
-    "webFeaturesID": "intersection-observer-v2"
+    "webFeaturesId": "intersection-observer-v2"
   },
   {
     "ciuName": null,
@@ -955,7 +955,7 @@
     "org": "Other",
     "title": "JPEG-XL",
     "url": "https://www.iso.org/standard/77977.html?browse=tc",
-    "webFeaturesID": "jpegxl"
+    "webFeaturesId": "jpegxl"
   },
   {
     "ciuName": "mdn-api_keyboardlayoutmap",
@@ -1068,7 +1068,7 @@
     "org": "W3C",
     "title": "Managed Media Source",
     "url": "https://github.com/w3c/media-source/issues/320",
-    "webFeaturesID": "managed-media-source"
+    "webFeaturesId": "managed-media-source"
   },
   {
     "ciuName": null,
@@ -1095,7 +1095,7 @@
     "org": "W3C",
     "title": "Media Session Standard",
     "url": "https://w3c.github.io/mediasession/",
-    "webFeaturesID": "media-session"
+    "webFeaturesId": "media-session"
   },
   {
     "ciuName": "mdn-api_mediastreamtrack_contenthint",
@@ -1135,7 +1135,7 @@
     "org": "WHATWG",
     "title": "Navigation API",
     "url": "https://github.com/whatwg/html/pull/8502",
-    "webFeaturesID": "navigation"
+    "webFeaturesId": "navigation"
   },
   {
     "ciuName": null,
@@ -1271,7 +1271,7 @@
     "org": "Proposal",
     "title": "Picture-in-Picture",
     "url": "https://wicg.github.io/picture-in-picture/",
-    "webFeaturesID": "document-picture-in-picture"
+    "webFeaturesId": "document-picture-in-picture"
   },
   {
     "ciuName": "portals",
@@ -1296,7 +1296,7 @@
     "org": "Proposal",
     "title": "Prioritized Task Scheduling",
     "url": "https://wicg.github.io/scheduling-apis/",
-    "webFeaturesID": "scheduler"
+    "webFeaturesId": "scheduler"
   },
   {
     "ciuName": null,
@@ -1385,7 +1385,7 @@
     "org": "W3C",
     "title": "Relative color syntax (CSS Color Module Level 5)",
     "url": "https://drafts.csswg.org/css-color-5/#relative-colors",
-    "webFeaturesID": "relative-color"
+    "webFeaturesId": "relative-color"
   },
   {
     "ciuName": null,
@@ -1472,7 +1472,7 @@
     "org": "W3C",
     "title": "Scroll-driven Animations",
     "url": "https://drafts.csswg.org/scroll-animations-1/",
-    "webFeaturesID": "scroll-driven-animations"
+    "webFeaturesId": "scroll-driven-animations"
   },
   {
     "ciuName": null,
@@ -1584,7 +1584,7 @@
     "org": "Proposal",
     "title": "Storage Buckets API",
     "url": "https://wicg.github.io/storage-buckets/",
-    "webFeaturesID": "storage-buckets"
+    "webFeaturesId": "storage-buckets"
   },
   {
     "ciuName": "streams",
@@ -1648,7 +1648,7 @@
     "org": "Proposal",
     "title": "Text Fragments",
     "url": "https://wicg.github.io/scroll-to-text-fragment/",
-    "webFeaturesID": "scroll-to-text-fragment"
+    "webFeaturesId": "scroll-to-text-fragment"
   },
   {
     "ciuName": null,
@@ -1723,7 +1723,7 @@
     "org": "W3C",
     "title": "Trusted Types",
     "url": "https://w3c.github.io/trusted-types/dist/spec/",
-    "webFeaturesID": "trusted-types"
+    "webFeaturesId": "trusted-types"
   },
   {
     "ciuName": "mdn-api_urlpattern",
@@ -1813,7 +1813,7 @@
     "org": "Proposal",
     "title": "Web Bluetooth",
     "url": "https://webbluetoothcg.github.io/web-bluetooth/",
-    "webFeaturesID": "web-bluetooth"
+    "webFeaturesId": "web-bluetooth"
   },
   {
     "ciuName": null,
@@ -1838,7 +1838,7 @@
     "org": "Proposal",
     "title": "Web Codecs",
     "url": "https://github.com/WICG/web-codecs",
-    "webFeaturesID": "webcodecs"
+    "webFeaturesId": "webcodecs"
   },
   {
     "ciuName": "webgpu",
@@ -1877,7 +1877,7 @@
     "org": "W3C",
     "title": "Web MIDI API (Add-On Gated)",
     "url": "https://webaudio.github.io/web-midi-api/",
-    "webFeaturesID": "web-midi"
+    "webFeaturesId": "web-midi"
   },
   {
     "ciuName": "webnfc",
@@ -1890,7 +1890,7 @@
     "org": "Proposal",
     "title": "Web NFC",
     "url": "https://w3c.github.io/web-nfc/",
-    "webFeaturesID": "web-nfc"
+    "webFeaturesId": "web-nfc"
   },
   {
     "ciuName": "web-share",
@@ -1993,7 +1993,7 @@
     "org": "Proposal",
     "title": "WebHID API",
     "url": "https://wicg.github.io/webhid/",
-    "webFeaturesID": "webhid"
+    "webFeaturesId": "webhid"
   },
   {
     "ciuName": null,
@@ -2032,7 +2032,7 @@
     "org": "Proposal",
     "title": "WebUSB API",
     "url": "https://wicg.github.io/webusb/",
-    "webFeaturesID": "webusb"
+    "webFeaturesId": "webusb"
   },
   {
     "ciuName": "webxr",
