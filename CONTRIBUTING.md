@@ -168,5 +168,9 @@ and limit the discussion in the pull request
 to the details of making the change to `activities.json`,
 and accurately communicating the consensus in the issue.
 
+Similarly, when changes to a proposal warrant an updated position and 
+there is sufficient consensus in subsequent comments on the issue, 
+make a pull request to document that updated consensus by changing `activities.json`.
+
 Tips:
 * Specification URLs should link to a living standard or editor’s draft if available.
