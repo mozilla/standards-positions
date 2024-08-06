@@ -37,6 +37,18 @@
   },
   {
     "ciuName": null,
+    "description": "This will allow ARIA relationship attributes to be set more easily via JavaScript, and in particular will allow setting ARIA relationship attributes which work across Shadow DOM boundaries (with limitations).",
+    "id": "aria-element-reflection",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1769586",
+    "mozPosition": "positive",
+    "mozPositionDetail": "This is an important piece in making web components accessible. While this unfortunately does not address all of the use cases for ARIA references across shadow roots and it cannot be used declaratively, there is no other single alternative which solves these problems in a reasonable, ergonomic way.",
+    "mozPositionIssue": 200,
+    "org": "W3C",
+    "title": "ARIA Element Reflection",
+    "url": "https://w3c.github.io/aria/#ARIAMixin"
+  },
+  {
+    "ciuName": null,
     "description": "This document describes an API providing access to accelerated shape detectors (e.g. human faces) for still images and/or live image feeds.",
     "id": "shape-detection-api",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1553738",
@@ -57,7 +69,7 @@
     "mozPositionIssue": 134,
     "org": "IETF",
     "title": "An HTTP Status Code for Indicating Hints (103)",
-    "url": "https://tools.ietf.org/html/rfc8297"
+    "url": "https://datatracker.ietf.org/doc/html/rfc8297"
   },
   {
     "ciuName": null,
@@ -134,6 +146,19 @@
   },
   {
     "ciuName": null,
+    "description": "This specification defines navigational tracking and when and how browsers are required to prevent it from happening.",
+    "id": "bounce-tracking-mitigations",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1839915",
+    "mozPosition": "positive",
+    "mozPositionDetail": "With 3rd-party cookies being restricted by default in all major browsers, navigational tracking plays an increasingly important role on the web. This spec describes an effective cross-browser mechanism to combat bounce tracking, which does not rely on tracker lists. It provides predictable detection heuristics for web developers and preserves legitimate uses of short-lived redirects where possible. While browsers already ship similar protections, e.g. Firefox's tracker purging, aligning on common behavior improves web compatibility and encourages site developers to use specialized APIs, rather than relying on top level redirects for functionality.",
+    "mozPositionIssue": 835,
+    "org": "Proposal",
+    "title": "Bounce Tracking Mitigations",
+    "url": "https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-mitigations"
+  },
+  {
+    "ciuName": null,
     "description": "Bundled exchanges provide a way to bundle up groups of HTTP request+response pairs to transmit or store them together. They can include multiple top-level resources with one identified as the default by a manifest, provide random access to their component exchanges, and efficiently store 8-bit resources.",
     "id": "bundled-exchanges",
     "mozBugUrl": null,
@@ -142,7 +167,7 @@
     "mozPositionIssue": 264,
     "org": "Proposal",
     "title": "Bundled HTTP Exchanges",
-    "url": "https://tools.ietf.org/html/draft-yasskin-wpack-bundled-exchanges"
+    "url": "https://datatracker.ietf.org/doc/html/draft-yasskin-wpack-bundled-exchanges"
   },
   {
     "ciuName": "streams",
@@ -195,6 +220,19 @@
     "url": "https://drafts.csswg.org/css-contain-3/#container-queries"
   },
   {
+    "ciuName": "css-widows-orphans",
+    "description": "These CSS properties provide control over typographic widows and orphans during fragmentation/pagination.",
+    "id": "widows-orphans",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/widows",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=137367",
+    "mozPosition": "positive",
+    "mozPositionDetail": null,
+    "mozPositionIssue": 972,
+    "org": "W3C",
+    "title": "CSS Fragmentation Module Level 3: 3.3 Breaks Between Lines: orphans, widows",
+    "url": "https://drafts.csswg.org/css-break/#widows-orphans"
+  },
+  {
     "ciuName": "css-subgrid",
     "description": "This draft defines additions to CSS Grid, primarily for the subgrid feature.",
     "id": "subgrid",
@@ -217,6 +255,19 @@
     "org": "W3C",
     "title": "CSS Layout API",
     "url": "https://drafts.css-houdini.org/css-layout-api-1"
+  },
+  {
+    "ciuName": "css-nesting",
+    "description": "This module introduces the ability to nest one style rule inside another, with the selector of the child rule relative to the selector of the parent rule.  This increases the modularity and maintainability of CSS stylesheets.",
+    "id": "css-nesting",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1648037",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Nesting is a valuable tool for simplifying CSS authoring. Many authoring formats include the capability in some form, but native support will make the capability consistent and more widely available.",
+    "mozPositionIssue": 695,
+    "org": "W3C",
+    "title": "CSS Nesting",
+    "url": "https://drafts.csswg.org/css-nesting/"
   },
   {
     "ciuName": "css-paint-api",
@@ -247,7 +298,7 @@
     "ciuName": "mdn-css_at-rules_property",
     "description": "The @property rule represents a custom property registration directly in a stylesheet without having to run any JS.",
     "id": "at-property",
-    "mozBugUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1684605",
     "mozPosition": "positive",
     "mozPositionDetail": "Having a declarative registration mechanism for custom properties is a good addition to CSS Properties and Values API.",
     "mozPositionIssue": 331,
@@ -256,10 +307,35 @@
     "url": "https://drafts.css-houdini.org/css-properties-values-api-1#at-property-rule"
   },
   {
+    "ciuName": "css-has",
+    "description": ":has selector lets authors select elements that anchor at least one element that matches its inner relative selector.",
+    "id": "css-has-selector",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=has-pseudo",
+    "mozPosition": "positive",
+    "mozPositionDetail": "We recognize that :has is something that a lot of people want. That power does come with performance costs, like the potential for very poor performance when there is DOM tree mutation. Overall, the utility of the selector justifies this risk, but we might need to do more to help developers avoid the worst problems.",
+    "mozPositionIssue": 528,
+    "org": "W3C",
+    "title": "CSS Relational Pseudo-Class (:has())",
+    "url": "https://drafts.csswg.org/selectors/#relational"
+  },
+  {
+    "ciuName": "css-cascade-scope",
+    "description": "@scope rule allows targeting CSS rules to subtree or fragment of a document.",
+    "id": "at-scope",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=%40scope",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Scoped styles allow authors to precisely control upper- and lower-bounds of where CSS rules, without having to add many attributes on DOM elements. However, there is a risk of performance degradation that will have to be answered with implementation experience.",
+    "mozPositionIssue": 472,
+    "org": "W3C",
+    "title": "CSS Scoped Styles",
+    "url": "https://drafts.csswg.org/css-cascade-6/#scoped-styles"
+  },
+  {
     "ciuName": null,
     "description": "This specification defines the ::part() and ::theme() pseudo-elements on shadow hosts, allowing shadow hosts to selectively expose chosen elements from their shadow tree to the outside page for styling purposes.",
     "id": "css-shadow-parts",
-    "mozBugUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1619579",
     "mozPosition": "positive",
     "mozPositionDetail": null,
     "mozPositionIssue": 59,
@@ -278,6 +354,19 @@
     "org": "W3C",
     "title": "CSS Typed OM",
     "url": "https://drafts.css-houdini.org/css-typed-om-1"
+  },
+  {
+    "ciuName": "view-transitions",
+    "description": "The View Transitions API allows developers to create animated visual transitions representing changes in the document state.",
+    "id": "view-transitions",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1823896",
+    "mozPosition": "positive",
+    "mozPositionDetail": "View Transitions allows developers to create animated transitions between states within one document as well as transitions when navigating across documents. The latter is a new capability for the web. We think the API design should be consistent between these cases where possible. As of mid-2023, the specification and implementation experience for this feature for same-document transitions is further along than for cross-document transitions.",
+    "mozPositionIssue": 677,
+    "org": "W3C",
+    "title": "CSS View Transitions Module Level 1",
+    "url": "https://drafts.csswg.org/css-view-transitions/"
   },
   {
     "ciuName": "mdn-css_properties_overflow_clip",
@@ -302,7 +391,7 @@
     "mozPositionIssue": 131,
     "org": "IETF",
     "title": "Cache Digests for HTTP/2",
-    "url": "https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest"
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cache-digest"
   },
   {
     "ciuName": null,
@@ -345,7 +434,7 @@
     "ciuName": null,
     "description": "This draft defines additions to CSSOM to make CSSStyleSheet objects directly constructable, along with a way to use them in DocumentOrShadowRoots.",
     "id": "construct-stylesheets",
-    "mozBugUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1773147",
     "mozPosition": "positive",
     "mozPositionDetail": null,
     "mozPositionIssue": 103,
@@ -357,7 +446,7 @@
     "ciuName": null,
     "description": "This proposal adds an API for prompting and querying the user\u2019s contacts for one or more items with a handful of contact properties.",
     "id": "contact-picker",
-    "mozBugUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1756767",
     "mozPosition": "defer",
     "mozPositionDetail": "This API innovates in some ways beyond several previous Contacts APIs, though uses different properties than HTML autofill field names.",
     "mozPositionIssue": 153,
@@ -369,7 +458,7 @@
     "ciuName": null,
     "description": "This document defines a mechanism by which a web page can embed a nested browsing context if and only if it agrees to enforce a particular set of restrictions upon itself.",
     "id": "cspee",
-    "mozBugUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1391244",
     "mozPosition": "neutral",
     "mozPositionDetail": "This specification allows sites to specify minimum CSP policies for embedded content. The risk of problems arising from misalignment between different policies is managed well. The resulting complexity is not trivial, but it is balanced against the security improvements.",
     "mozPositionIssue": 326,
@@ -453,7 +542,7 @@
     "ciuName": "custom-elementsv1",
     "description": "A way to create new HTML elements implemented through JavaScript.",
     "id": "custom-elements",
-    "mozBugUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1438627",
     "mozPosition": "positive",
     "mozPositionDetail": "A welcome successor to XBL!",
     "mozPositionIssue": 60,
@@ -487,6 +576,19 @@
     "url": "https://github.com/whatwg/html/pull/4658"
   },
   {
+    "ciuName": null,
+    "description": "The digital credentials API is an extension to the credential management API that enables access to identity documentation that might be held in the user agent or a wallet on the same device.",
+    "id": "digital-credentials",
+    "mdnUrl": null,
+    "mozBugUrl": null,
+    "mozPosition": "negative",
+    "mozPositionDetail": "This interface carries a significant risk of causing privacy problems and could lead to unjustified exclusion of web users. Any solution in this area needs to do more to manage these risks before it could be considered safe to deploy.",
+    "mozPositionIssue": 1003,
+    "org": "Proposal",
+    "title": "Digital Credentials",
+    "url": "https://wicg.github.io/digital-credentials/"
+  },
+  {
     "ciuName": "document-policy",
     "description": "Document policy allows content to define a policy that constrains embedded content.",
     "id": "document-policy",
@@ -508,7 +610,7 @@
     "mozPositionIssue": 139,
     "org": "IETF",
     "title": "Encrypted Server Name Indication for TLS 1.3",
-    "url": "https://tools.ietf.org/html/draft-ietf-tls-esni"
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-tls-esni"
   },
   {
     "ciuName": null,
@@ -662,6 +764,21 @@
     "url": "https://wicg.github.io/get-installed-related-apps/spec"
   },
   {
+    "ciuName": null,
+    "description": "This spec defines a signal that conveys a person's request to websites and services to not sell or share their personal information with third parties.",
+    "id": "gpc",
+    "mdnUrl": [
+      "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/globalPrivacyControl"
+    ],
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1848951",
+    "mozPosition": "positive",
+    "mozPositionDetail": "This signal defined in this specification provides users with a way to opt-out of the disclosure of their information to third parties once per profile in a way that is legally enforced in some jurisdictions, and is being considered in future regulations.",
+    "mozPositionIssue": 867,
+    "org": "Proposal",
+    "title": "Global Privacy Control (GPC)",
+    "url": "https://privacycg.github.io/gpc-spec/"
+  },
+  {
     "ciuName": "imports",
     "description": "HTML Imports are a way to include and reuse HTML documents in other HTML documents.",
     "id": "html-imports",
@@ -701,7 +818,7 @@
     "ciuName": "mdn-api_htmlvideoelement_requestvideoframecallback",
     "description": "&lt;video>.requestVideoFrameCallback() allows web authors to be notified when a frame has been presented for composition.",
     "id": "requestVideoFrameCallback",
-    "mozBugUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1800882",
     "mozPosition": "positive",
     "mozPositionDetail": "This is intended to allow web authors to do efficient per-video-frame processing of video, such as video processing and painting to a canvas, video analysis, or synchronization with external audio sources.",
     "mozPositionIssue": 250,
@@ -719,7 +836,7 @@
     "mozPositionIssue": 144,
     "org": "Proposal",
     "title": "HTTP Cache-Control Extensions for Stale Content",
-    "url": "https://tools.ietf.org/html/rfc5861"
+    "url": "https://datatracker.ietf.org/doc/html/rfc5861"
   },
   {
     "ciuName": "client-hints-dpr-width-viewport",
@@ -732,7 +849,7 @@
     "mozPositionIssue": 79,
     "org": "IETF",
     "title": "HTTP Client Hints",
-    "url": "https://tools.ietf.org/html/draft-ietf-httpbis-client-hints"
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-client-hints"
   },
   {
     "ciuName": null,
@@ -792,7 +909,32 @@
     "mozPositionIssue": 260,
     "org": "Proposal",
     "title": "Incrementally Better Cookies",
-    "url": "https://tools.ietf.org/html/draft-west-cookie-incrementalism"
+    "url": "https://datatracker.ietf.org/doc/html/draft-west-cookie-incrementalism"
+  },
+  {
+    "ciuName": null,
+    "description": "IntersectionObserver extension for occlusion detection / clickjacking prevention.",
+    "id": "intersectionobserver-v2",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1896900",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Security positive, interop concerns are being addressed.",
+    "mozPositionIssue": 109,
+    "org": "W3C",
+    "title": "IntersectionObserver V2",
+    "url": "https://github.com/w3c/IntersectionObserver/pull/523"
+  },
+  {
+    "ciuName": null,
+    "description": "Invokers allow authors to assign behaviour to buttons in a more accessible and declarative way.",
+    "id": "invokers",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1856430",
+    "mozPosition": "positive",
+    "mozPositionDetail": "This proposal reduces the need for JavaScript for pages to build interactive elements. Using invokers is more likely to result in good accessibility and device-independence than existing methods.",
+    "mozPositionIssue": 902,
+    "org": "WHATWG",
+    "title": "Invokers",
+    "url": "https://github.com/whatwg/html/pull/9841"
   },
   {
     "ciuName": "jpegxl",
@@ -845,16 +987,16 @@
   },
   {
     "ciuName": "loading-lazy-attr",
-    "description": "Enabling images to be fetched at a later time, when the user is likely to look at them.",
+    "description": "Enabling images and iframes to be fetched at a later time, when the user is likely to look at them.",
     "id": "loading-lazy-attr",
-    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading#images_and_iframes",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1542784",
     "mozPosition": "positive",
-    "mozPositionDetail": "As currently scoped in the HTML pull request this is a reasonable addition to how images are fetched. (Note that the scope on Can I use is slightly bigger. Frames are likely a reasonable addition, but have their own set of design challenges.)",
+    "mozPositionDetail": "As currently specified in HTML this is a reasonable addition to how images and iframes are fetched. ",
     "mozPositionIssue": 151,
     "org": "WHATWG",
-    "title": "Lazy loading (of images)",
-    "url": "https://github.com/whatwg/html/pull/3752"
+    "title": "Lazy loading",
+    "url": "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#lazy-loading-attributes"
   },
   {
     "ciuName": null,
@@ -866,7 +1008,32 @@
     "mozPositionIssue": 121,
     "org": "IETF",
     "title": "Let 'localhost' be localhost.",
-    "url": "https://tools.ietf.org/html/draft-ietf-dnsop-let-localhost-be-localhost"
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-let-localhost-be-localhost"
+  },
+  {
+    "ciuName": null,
+    "description": "Exposes to the Web user preferences for hour cycle, first day of week, temperature unit, numbering system, and calendar system overriding values implied by language-region pair",
+    "id": "locale-extensions",
+    "mdnUrl": null,
+    "mozBugUrl": null,
+    "mozPosition": "negative",
+    "mozPositionDetail": "Use cases have legitimacy, but they don't seem strong enough to justify the additional fingerprinting surface. Addressing fingerprinting, if even possible, would likely to involve disproportionate design, engineering, and UI surface relative to the utility.",
+    "mozPositionIssue": 844,
+    "org": "Proposal",
+    "title": "Locale Extensions",
+    "url": "https://github.com/ben-allen/locale-extensions/"
+  },
+  {
+    "ciuName": null,
+    "description": "This specification defines APIs for reporting information for frames that take a long time to render.",
+    "id": "long-animation-frame-api",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1348405",
+    "mozPosition": "positive",
+    "mozPositionDetail": "This feature allows web developers to measure frame congestion and jank, and has a correlation with how user perceive this type of congestion. Web developers can use this API to improve the perceived performance of their pages.",
+    "mozPositionIssue": 929,
+    "org": "Proposal",
+    "title": "Long Animation Frame API",
+    "url": "https://w3c.github.io/longtasks/#sec-loaf-timing"
   },
   {
     "ciuName": null,
@@ -880,6 +1047,19 @@
     "org": "Proposal",
     "title": "Low-level (Raw) Sockets API",
     "url": "https://github.com/WICG/raw-sockets/blob/master/docs/explainer.md"
+  },
+  {
+    "ciuName": null,
+    "description": "This proposal extends Media Source Extension objects with a number of features that allow web applications to be more efficient in terms of power usage and memory.",
+    "id": "managed-media-source",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1844342",
+    "mozPosition": "positive",
+    "mozPositionDetail": "This opt-in feature of Media Source Extension allows implementations to reclaim memory when needed, and to allows scheduling download of media data when it's best to do so in terms of power usage. This is especialy important on mobile. This has the potential to improve the experience of media playback on low-power devices, but also generally allows web applications to use resources more efficiently.",
+    "mozPositionIssue": 845,
+    "org": "W3C",
+    "title": "Managed Media Source",
+    "url": "https://github.com/w3c/media-source/issues/320"
   },
   {
     "ciuName": null,
@@ -912,7 +1092,7 @@
     "description": "This specification extends MediaStreamTrack to let web applications provide an optional media-content hint attribute. This helps sinks like RTCPeerConnection or MediaRecorder select encoder parameters and processing algorithms appropriately based on a hint about the nature of the content being consumed without having to examine the actual content.",
     "id": "mst-content-hint",
     "mdnUrl": null,
-    "mozBugUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1831521",
     "mozPosition": "positive",
     "mozPositionDetail": "Content Hints is a welcome higher-level abstraction that does not require broad knowledge and tuning of video encoder, audio-processing, and congestion controls directly. Early concerns over lack of specificity around how hints interact with the lower-level controls they complement have been addressed.",
     "mozPositionIssue": 101,
@@ -934,6 +1114,32 @@
     "url": "https://w3c.github.io/webappsec-mixed-content/"
   },
   {
+    "ciuName": null,
+    "description": "The navigation API provides a web application-focused way of managing same-origin same-frame history entries and navigations.",
+    "id": "navigation-api",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Navigation_API",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1777171",
+    "mozPosition": "positive",
+    "mozPositionDetail": "This API is a good improvement for implementing SPAs over the status quo. There are various details that we're not sure about in the spec and we'd like to continue reviewing and submit feedback about issues we find.",
+    "mozPositionIssue": 543,
+    "org": "WHATWG",
+    "title": "Navigation API",
+    "url": "https://github.com/whatwg/html/pull/8502"
+  },
+  {
+    "ciuName": null,
+    "description": "The Network Error Logging spec enables website to declare a reporting policy that can be used to report encountered network errors that prevented it from successfully loading its requested resources.",
+    "id": "network-error-logging",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Network_Error_Logging",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1145235",
+    "mozPosition": "negative",
+    "mozPositionDetail": "The API enables the collection of user-specific information that sites might not otherwise be able to observe, which includes information that might be private under some circumstances. Furthermore, the specification does not seem to track changes to the Reporting API it builds upon and seems effectively unmaintained.",
+    "mozPositionIssue": 99,
+    "org": "W3C",
+    "title": "Network Error Logging",
+    "url": "https://w3c.github.io/network-error-logging/"
+  },
+  {
     "ciuName": "netinfo",
     "description": "The Network Information API enables web applications to access information about the network connection in use by the device.",
     "id": "netinfo",
@@ -945,6 +1151,18 @@
     "org": "Proposal",
     "title": "Network Information API",
     "url": "https://wicg.github.io/netinfo"
+  },
+  {
+    "ciuName": null,
+    "description": "Safelist certain opaque responses based on MIME type and block everything else.",
+    "id": "orb",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1532642",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Our preferred approach to handle opaque responses when defending against Spectre attacks.",
+    "mozPositionIssue": 860,
+    "org": "Proposal",
+    "title": "Opaque Response Blocking (ORB)",
+    "url": "https://github.com/annevk/orb"
   },
   {
     "ciuName": null,
@@ -998,7 +1216,7 @@
     "ciuName": "background-sync",
     "description": "This specification describes a method that enables web applications to synchronize data in the background.",
     "id": "periodic-background-sync",
-    "mozBugUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1547906",
     "mozPosition": "negative",
     "mozPositionDetail": "We're concerned that this feature would allow users to be tracked across networks (leaking private information about location and IP address and how they change over time), and that it would allow script execution and resource consumption when it isn't clear to the user that they're interacting with the site.  We might reconsider this position given evidence that these concerns can be safely addressed, however, addressing them for periodic background sync appears substantially harder than doing so for one-off background sync.",
     "mozPositionIssue": 214,
@@ -1011,7 +1229,7 @@
     "description": "The Permissions Standard defines common infrastructure for other specifications that need to interact with browser permissions. It also defines an API to allow web applications to query and request changes to the status of a given permission.",
     "id": "permissions",
     "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API",
-    "mozBugUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1105827",
     "mozPosition": "positive",
     "mozPositionDetail": "Mozilla believes that the ability to work with user permissions is critical for user agency. There are certain aspects of the API that are not suitable for the permissions model used in Firefox and so we would like to work on improving several aspects of the API. In particular, we think that the way that status of permissions needs to more accurately reflect the different states that exist or could exist. We also think that the interactions with Feature Policy need to be better clarified. We're committed to fixing this, because permissions has become critical in making the web a more capable platform and it is important to ensure that we preserve user control over their online experience.",
     "mozPositionIssue": 19,
@@ -1072,13 +1290,26 @@
     "description": "Specification of the Priority Hints feature.",
     "id": "priority-hints",
     "mdnUrl": null,
-    "mozBugUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1797715",
     "mozPosition": "positive",
     "mozPositionDetail": "Priority hints allow sites to provide information about how subresources on a page might be prioritized for fetching. This can allow the browser to override parts of the internal prioritization heuristics that are used for resource fetching, which could improve page load performance.",
     "mozPositionIssue": 606,
     "org": "Proposal",
     "title": "Priority Hints",
     "url": "https://wicg.github.io/priority-hints/"
+  },
+  {
+    "ciuName": null,
+    "description": "Private Access Tokens is the name given to the <a href=https://developer.apple.com/news/?id=huqjyh7k>integration</a> of Privacy Pass mechanism into Apple's networking stack.",
+    "id": "private-access-tokens",
+    "mdnUrl": null,
+    "mozBugUrl": null,
+    "mozPosition": "negative",
+    "mozPositionDetail": "This application of Privacy Pass fairly closely follows the IETF specification, but the integration with the Web means that the effect is of a proprietary deployment. A number of considerations relevant to use on the Web have not been adequately addressed in the deployment.",
+    "mozPositionIssue": 954,
+    "org": "Proposal",
+    "title": "Private Access Tokens",
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-privacypass-auth-scheme"
   },
   {
     "ciuName": null,
@@ -1107,6 +1338,18 @@
   },
   {
     "ciuName": null,
+    "description": "The Private State Token API is a web platform API that allows propagating a limited amount of signals across sites, using the Privacy Pass protocol as an underlying primitive.",
+    "id": "private-state-token",
+    "mozBugUrl": null,
+    "mozPosition": "negative",
+    "mozPositionDetail": "Private State Tokens provides sites with the means to exchange information about visitors, using Privacy Pass to ensure that there are very tight bounds on the rate of information transfer. We conclude that the usage constraints in the design are insufficient to effectively safeguard privacy.",
+    "mozPositionIssue": 262,
+    "org": "Proposal",
+    "title": "Private State Token API",
+    "url": "https://github.com/WICG/trust-token-api/blob/master/README.md"
+  },
+  {
+    "ciuName": null,
     "description": "Powerful web applications would like to exchange data with native applications via the OS clipboard (copy-paste). The existing Web Platform has a high-level API that supports the most popular standardized data types (text, image, rich text) across all platforms. However, this API does not scale to the long tail of specialized formats. In particular, non-web-standard formats like TIFF (a large image format), and proprietary formats like .docx (a document format), are not supported by the current Web Platform. Raw Clipboard Access aims to provide a low-level API solution to this problem, by implementing copying and pasting of data with any arbitrary Clipboard type, without encoding and decoding.",
     "id": "raw-clipboard-access",
     "mozBugUrl": null,
@@ -1116,6 +1359,19 @@
     "org": "Proposal",
     "title": "Raw Clipboard Access",
     "url": "https://github.com/WICG/raw-clipboard-access/"
+  },
+  {
+    "ciuName": null,
+    "description": "Relative color syntax (RCS) allows developers to create a range of dynamic colors, starting from a base color, that will change as the base color changes. Great for creating color palettes and schemes.",
+    "id": "css-relative-color-syntax",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1701488",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Enables more freedom for developers to make use of the new forms and spaces introduced in CSS Color Module Level 4.",
+    "mozPositionIssue": 841,
+    "org": "W3C",
+    "title": "Relative color syntax (CSS Color Module Level 5)",
+    "url": "https://drafts.csswg.org/css-color-5/#relative-colors"
   },
   {
     "ciuName": null,
@@ -1192,6 +1448,19 @@
   },
   {
     "ciuName": null,
+    "description": "Defines CSS properties and an API for creating animations that are tied to the scroll offset of a scroll container.",
+    "id": "scroll-animations",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1676780",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Animations linked to scrolling is desired for some web applications or web sites. A declarative solution allows for better user control and should be easier to use for web developers.",
+    "mozPositionIssue": 347,
+    "org": "W3C",
+    "title": "Scroll-driven Animations",
+    "url": "https://drafts.csswg.org/scroll-animations-1/"
+  },
+  {
+    "ciuName": null,
     "description": "A use of TLS Exported Authenticators is described which enables HTTP/2 clients and servers to offer additional certificate-based credentials after the connection is established. The means by which these credentials are used with requests is defined.",
     "id": "http2-secondary-certs",
     "mozBugUrl": null,
@@ -1200,18 +1469,18 @@
     "mozPositionIssue": 175,
     "org": "IETF",
     "title": "Secondary Certificate Authentication in HTTP/2",
-    "url": "https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs"
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-http2-secondary-certs"
   },
   {
     "ciuName": "mdn-api_serial",
     "description": "The Serial API provides a way for websites to read and write from a serial device through script. Such an API would bridge the web and the physical world, by allowing documents to communicate with devices such as microcontrollers, 3D printers, and other serial devices. There is also a companion explainer document.",
     "id": "webserial",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=webserial",
-    "mozPosition": "negative",
-    "mozPositionDetail": "Devices that offer serial interfaces often expose powerful, low-level functions over the interface with little or no authentication. Exposing that sort of capability to the web without adequate safeguards presents a significant threat to those devices.",
+    "mozPosition": "neutral",
+    "mozPositionDetail": "Devices that offer serial interfaces often expose powerful, low-level functions over the interface with little or no authentication. Exposing that sort of capability to the web without adequate safeguards presents a significant threat to those devices. A user deliberately installing a site-specific add-on may be adequate, given sufficiently understandable consent copy.",
     "mozPositionIssue": 336,
     "org": "Proposal",
-    "title": "Serial API",
+    "title": "Serial API (Add-On Gated)",
     "url": "https://wicg.github.io/serial"
   },
   {
@@ -1224,13 +1493,26 @@
     "mozPositionIssue": 208,
     "org": "IETF",
     "title": "Service binding and parameter specification via the DNS (DNS SVCB and HTTPSSVC)",
-    "url": "https://tools.ietf.org/html/draft-ietf-dnsop-svcb-httpssvc"
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-svcb-httpssvc"
+  },
+  {
+    "ciuName": null,
+    "description": "The initial proposal allows ServiceWorkers to define routes using URLPattern to bypass the ServiceWorker, avoiding spurious ServiceWorker wake-ups and avoiding the additional latency of sending requests to the ServiceWorker that it will not handle.  Longer term, the mechanism could also support consulting the Cache API without needing to wake up a ServiceWorker.",
+    "id": "service-worker-static-routing-api",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1855580",
+    "mozPosition": "positive",
+    "mozPositionDetail": "A longstanding performance concern for ServiceWorkers and the sites using them is that there is no way to skip going to a ServiceWorker for a controlled page when there is a \"fetch\" handler present.  The Static Routing API has been recognized as an ideal solution to address the problem versus other proposals like adding new attributes to HTML tags or arguments to the fetch API.  The static routing API had been discussed extensively in ServiceWorker WG meetings as a reasonable option but very complex to implement and specify, which is why it was not part of the original spec.  With the introduction of the URLPattern API, the Static Routing API is thankfully even easier to implement and specify.  The evolutionary approach where the Static Routing API will only start with a network source that bypasses the ServiceWorker is appropriately pragmatic.",
+    "mozPositionIssue": 828,
+    "org": "Proposal",
+    "title": "ServiceWorker Static Routing API",
+    "url": "https://github.com/WICG/service-worker-static-routing-api/"
   },
   {
     "ciuName": "shadowdomv1",
     "description": "A way to give a node in the DOM a hidden subtree in which the children of the node can be inserted.",
     "id": "shadow-trees",
-    "mozBugUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1438607",
     "mozPosition": "positive",
     "mozPositionDetail": "A welcome successor to XBL!",
     "mozPositionIssue": 60,
@@ -1261,7 +1543,7 @@
     "mozPositionIssue": 29,
     "org": "Proposal",
     "title": "Signed HTTP Exchanges",
-    "url": "https://tools.ietf.org/html/draft-yasskin-http-origin-signed-responses"
+    "url": "https://datatracker.ietf.org/doc/html/draft-yasskin-http-origin-signed-responses"
   },
   {
     "ciuName": "",
@@ -1274,6 +1556,19 @@
     "org": "Proposal",
     "title": "Storage Access API",
     "url": "https://github.com/privacycg/storage-access"
+  },
+  {
+    "ciuName": null,
+    "description": "The Storage Buckets API provides a way for sites to organize locally stored data into groupings called \"storage buckets\". This allows the user agent or sites to manage and delete buckets independently rather than applying the same treatment to all the data from a single origin.",
+    "id": "storage-buckets",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1594740",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Data clearing on storage pressure is fundamentally limited by the current single \"default\" storage bucket per origin and an all-or-nothing persistent flag for that bucket.  As use of ServiceWorkers continues to increase and sites store or cache more data, a primitive that makes it easier for sites to store their data more granularly and for browsers to clear it more granularly is essential, especially for devices with limited storage and/or heavy storage uses outside of the browser's own needs.",
+    "mozPositionIssue": 475,
+    "org": "Proposal",
+    "title": "Storage Buckets API",
+    "url": "https://wicg.github.io/storage-buckets/"
   },
   {
     "ciuName": "streams",
@@ -1298,7 +1593,7 @@
     "mozPositionIssue": 256,
     "org": "IETF",
     "title": "Structured Headers for HTTP",
-    "url": "https://tools.ietf.org/html/draft-ietf-httpbis-header-structure"
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-header-structure"
   },
   {
     "ciuName": null,
@@ -1329,6 +1624,7 @@
     "ciuName": "url-scroll-to-text-fragment",
     "description": "A proposal for extending URL fragment syntax with a list of text bits to highlight and scroll to.",
     "id": "scroll-to-text-fragment",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/Text_fragments",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1753933",
     "mozPosition": "positive",
     "mozPositionDetail": "This is an important use case to address and the proposal does a good job at mitigating the compatibility and security issues. As a result the syntax is a tad inelegant, but workable. (See also the <a href=\"#fragmention\">position on Fragmention</a>, which aims to address similar use cases.)",
@@ -1349,18 +1645,6 @@
     "org": "WHATWG",
     "title": "The Popover API",
     "url": "https://github.com/whatwg/html/pull/8221"
-  },
-  {
-    "ciuName": null,
-    "description": "This document specifies the Privacy Pass protocol for anonymously authorizing clients with services on the Internet.  Note to Readers Source for this draft and an issue tracker can be found at https://github.com/grittygrease/draft-privacy-pass [1].",
-    "id": "privacy-pass",
-    "mozBugUrl": null,
-    "mozPosition": "defer",
-    "mozPositionDetail": "This protocol provides a way to achieve certain important goals, such as denial of service mitigation, without also creating tracking mechanisms.  As such, we are very supportive of the goal.  However, we will defer making a firm position until the protocol and the novel cryptographic primitives it relies on have had more thorough security analysis.",
-    "mozPositionIssue": 261,
-    "org": "Proposal",
-    "title": "The Privacy Pass Protocol",
-    "url": "https://tools.ietf.org/html/draft-privacy-pass"
   },
   {
     "ciuName": null,
@@ -1385,7 +1669,7 @@
     "mozPositionIssue": 167,
     "org": "Proposal",
     "title": "The WebTransport Protocol Framework",
-    "url": "https://tools.ietf.org/html/draft-ietf-webtrans-overview"
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview"
   },
   {
     "ciuName": "mdn-javascript_operators_await_top_level",
@@ -1403,37 +1687,38 @@
     "ciuName": null,
     "description": "In Transport Layer Security (TLS) handshakes, certificate chains often take up the majority of the bytes transmitted. This document describes how certificate chains can be compressed to reduce the amount of data transmitted and avoid some round trips.",
     "id": "tls-certificate-compression",
-    "mozBugUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1548723",
     "mozPosition": "positive",
     "mozPositionDetail": "Compression of certificates should provide some performance advantages.",
     "mozPositionIssue": 96,
     "org": "IETF",
     "title": "Transport Layer Security (TLS) Certificate Compression",
-    "url": "https://tools.ietf.org/html/draft-ietf-tls-certificate-compression"
-  },
-  {
-    "ciuName": null,
-    "description": "This document is an explainer for a potential future web platform API that allows propagating trust across sites, using the Privacy Pass protocol as an underlying primitive.",
-    "id": "trust-token",
-    "mozBugUrl": null,
-    "mozPosition": "defer",
-    "mozPositionDetail": "This API depends on the Privacy Pass protocol, for which we have deferred our position statement.",
-    "mozPositionIssue": 262,
-    "org": "Proposal",
-    "title": "Trust Token API",
-    "url": "https://github.com/WICG/trust-token-api/blob/master/README.md"
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-tls-certificate-compression"
   },
   {
     "ciuName": "trusted-types",
     "description": "An API that allows applications to lock down powerful APIs to only accept non-spoofable, typed values in place of strings to prevent vulnerabilities caused by using these APIs with attacker-controlled inputs.",
     "id": "trusted-types",
     "mozBugUrl": null,
-    "mozPosition": "neutral",
-    "mozPositionDetail": "The API could be used to harden sites against certain cross-site scripting issues, but it is sufficiently complex that we are concerned that it will not be suitable for many sites.",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Mozilla believes that preventing DOM-based XSS is an important security goal. The track record of preventing DOM-based XSS is convincing. Dealing with inscrutable third-party dependencies or external JavaScript has been a major concern of security and enforcing reasonable boundaries is a promising approach. We have some reservations about some features in the Chromium implementation, which need to be validated and standardized or removed.",
     "mozPositionIssue": 20,
     "org": "W3C",
     "title": "Trusted Types",
     "url": "https://w3c.github.io/trusted-types/dist/spec/"
+  },
+  {
+    "ciuName": "mdn-api_urlpattern",
+    "description": "The URLPattern API provides a web platform primitive for matching URLs based on a convenient pattern syntax.",
+    "id": "urlpattern",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/URLPattern",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1731418",
+    "mozPosition": "positive",
+    "mozPositionDetail": "URLPattern is an important primitive for the evolution of ServiceWorkers through the introduction of the Static Routing API.  Similar to Web Locks which evolved out of the ServiceWorkers Cache API, it is appropriate that URLPattern be distinct from the Service Workers spec and WG as it is useful in other contexts as well.",
+    "mozPositionIssue": 566,
+    "org": "Proposal",
+    "title": "URLPattern API",
+    "url": "https://wicg.github.io/urlpattern/"
   },
   {
     "ciuName": null,
@@ -1458,6 +1743,19 @@
     "org": "Proposal",
     "title": "User Agent Client Hints",
     "url": "https://wicg.github.io/ua-client-hints/"
+  },
+  {
+    "ciuName": null,
+    "description": "The UserActivation API provides the ability to query whether the window currently has or has previously had real user interaction.",
+    "id": "user-activation",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/API/UserActivation",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1791079",
+    "mozPosition": "positive",
+    "mozPositionDetail": "This API exposes the sticky activation and transient activation concepts which browsers use internally for, e.g., allowing popups. These concepts are useful for web apps as well.",
+    "mozPositionIssue": 838,
+    "org": "WHATWG",
+    "title": "UserActivation",
+    "url": "https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface"
   },
   {
     "ciuName": "webauthn",
@@ -1624,6 +1922,19 @@
   },
   {
     "ciuName": null,
+    "description": "",
+    "id": "wasm-js-promise-integration",
+    "mdnUrl": null,
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1850627",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Addresses a major paint point for developers porting existing applications that assume synchronous I/O to the web.",
+    "mozPositionIssue": 944,
+    "org": "Proposal",
+    "title": "WebAssembly JS Promise Integration",
+    "url": "https://github.com/WebAssembly/js-promise-integration/"
+  },
+  {
+    "ciuName": null,
     "description": "128-bit vector data type and operations for webassembly",
     "id": "wasm-simd",
     "mdnUrl": null,
@@ -1663,16 +1974,16 @@
   },
   {
     "ciuName": null,
-    "description": "This API defines an API surface for manipulating the bits on MediaStreamTracks being sent via an RTCPeerConnection.",
-    "id": "webrtc-insertable-streams",
+    "description": "This API defines an API surface for manipulating the encoded bits of MediaStreamTracks being sent via an RTCPeerConnection.",
+    "id": "webrtc-encoded-transform",
     "mdnUrl": null,
     "mozBugUrl": null,
     "mozPosition": "positive",
     "mozPositionDetail": "This approach provides sites a way to offer a form of end-to-end protection for media, especially in those very common cases where media for group sessions is managed by a central service. The proposed API, together with the SFrame proposal, provides sites the ability to limit the information that is exposed to the central service. Mozilla would prefer to include better key management than this approach proposes, perhaps using <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-mls-architecture\">MLS</a>, which might guarantee certain security and privacy gains for users. However, we recognize that this is not yet feasible and this API can provide security and privacy gains if carefully applied by sites.",
     "mozPositionIssue": 330,
     "org": "W3C",
-    "title": "WebRTC Insertable Media using Streams",
-    "url": "https://w3c.github.io/webrtc-insertable-streams/"
+    "title": "WebRTC Encoded Transform",
+    "url": "https://w3c.github.io/webrtc-encoded-transform/"
   },
   {
     "ciuName": "",
@@ -1741,12 +2052,12 @@
     "description": "Zstandard, or \"zstd\" (pronounced \"zee standard\"), is a data compression mechanism. This document describes the mechanism and registers a media type and content encoding to be used when transporting zstd-compressed content via Multipurpose Internet Mail Extensions (MIME). Despite use of the word \"standard\" as part of its name, readers are advised that this document is not an Internet Standards Track specification; it is being published for informational purposes only.",
     "id": "zstd",
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1301878",
-    "mozPosition": "defer",
-    "mozPositionDetail": "While we believe zstd is a promising technology, its use in a general-purpose web browser (given the existing slate of compression algorithms) has not been demonstrated to provide compelling new utility, and does not clearly warrant the additional maintenance cost and attack surface of adding such code. We are deferring a final position pending a more comprehensive and quantitative analysis of the benefits zstd would unlock on the web today - either dictionary-less, with static dictionaries, or with dynamic dictionaries. For either of the latter two options, we'd also need a credible plan for generating and delivering those dictionaries that aligns with our values.",
-    "mozPositionIssue": 105,
+    "mozPosition": "positive",
+    "mozPositionDetail": "Zstandard/Zstd has been shown to be an effective compression scheme especially for dynamic content, by reducing load on servers to deliver the same level of compression.   It also enables improvements from future work on Compression Dictionaries.  Chrome shipped support for Zstd in early 2024, and Firefox followed soon after.  It has been judged to be worth the ongoing cost in maintenance and complexity to support for decompression, and is also useful for supporting TLS certificate decompression.",
+    "mozPositionIssue": 775,
     "org": "IETF",
     "title": "Zstandard Compression and the application/zstd Media Type",
-    "url": "https://tools.ietf.org/html/rfc8478"
+    "url": "https://datatracker.ietf.org/doc/html/rfc8478"
   },
   {
     "ciuName": "dialog",

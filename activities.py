@@ -484,16 +484,20 @@ class IETFParser(SpecParser):
 
         Takes a list of names that are tried in sequence; if none are present, None is returned.
         """
-        try:
-            name = names.pop(0)
-        except IndexError:
-            return None
-        try:
-            return spec.head.find("meta", attrs={"name": name})["content"].replace(
-                "\n", " "
-            )
-        except (TypeError, AttributeError):
-            return self.get_meta(spec, names)
+        for name in names:
+            try:
+                return spec.head.find("meta", attrs={"name": name})["content"].replace(
+                    "\n", " "
+                )
+            except (TypeError, AttributeError):
+                pass
+            try:
+                return spec.head.find("meta", attrs={"property": name})[
+                    "content"
+                ].replace("\n", " ")
+            except (TypeError, AttributeError):
+                pass
+        return None
 
     def parse(self, spec, url_string):
         url = urlsplit(url_string)
@@ -510,16 +514,15 @@ class IETFParser(SpecParser):
                             self.html_url("rfc%s" % identifier.rsplit(":", 1)[1])
                         )
                 draft_name, draft_number = self.parse_draft_name(path_components[-1])
-                if draft_number:
-                    raise BetterUrl(self.html_url(draft_name))
+                raise BetterUrl(self.html_url(draft_name))
             elif path_components[1] in ["id", "pdf"]:
                 raise BetterUrl(self.html_url(path_components[2]))
             else:
                 raise FetchError("I don't think that's a specification.")
         elif url.netloc.lower() == "www.ietf.org" and path_components[1] == "id":
-            if path_components[1] in ["id", "pdf"]:
+            if path_components[1] in ["archive", "id", "pdf"]:
                 try:
-                    draft_name = path_components[2].rsplit(".", 1)[0]
+                    draft_name = path_components[-1].rsplit(".", 1)[0]
                 except ValueError:
                     draft_name = path_components[2]
                 draft_name = self.parse_draft_name(draft_name)[0]
@@ -528,14 +531,26 @@ class IETFParser(SpecParser):
                 raise FetchError("I don't think that's a specification.")
         elif url.netloc.lower() == "datatracker.ietf.org":
             if path_components[1] == "doc":
-                raise BetterUrl(self.html_url(path_components[2]))
+                draft_name, draft_number = self.parse_draft_name(path_components[-1])
+                if draft_number or path_components[2] != "html":
+                    raise BetterUrl(self.html_url(draft_name))
+            elif path_components[1] in ["archive", "id", "pdf"]:
+                raise BetterUrl(self.html_url(path_components[-1]))
             else:
                 raise FetchError("I don't think that's a specification.")
         data = {}
-        data["title"] = self.get_meta(spec, ["DC.Title"]) or spec.head.title.string
+        data["title"] = self.get_meta(
+            spec, ["og:title", "DC.Title"]
+        ) or spec.head.title.string.replace("\n", " ")
         data["description"] = (
             self.get_meta(
-                spec, ["description", "dcterms.abstract", "DC.Description.Abstract"]
+                spec,
+                [
+                    "og:description",
+                    "description",
+                    "dcterms.abstract",
+                    "DC.Description.Abstract",
+                ],
             )
             or ""
         )
@@ -562,8 +577,8 @@ class IETFParser(SpecParser):
     @staticmethod
     def html_url(doc_name):
         "Return the canonical URL for a document name."
-        path = "/".join(["html", doc_name])
-        return urlunsplit(["https", "tools.ietf.org", path, "", ""])
+        path = "/".join(["doc", "html", doc_name])
+        return urlunsplit(["https", "datatracker.ietf.org", path, "", ""])
 
 
 # Map of URL hostnames to org-specific parsers.

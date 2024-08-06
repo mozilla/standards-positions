@@ -6,7 +6,7 @@ _See [the dashboard](https://mozilla.github.io/standards-positions/) for Mozilla
 
 This repo is where [Mozilla](https://mozilla.org/) decides and documents what it thinks about
 emerging technical specifications for the Web. Typically they're draft documents in the
-[IETF](https://ietf.org/), [W3C](https://w3.org/) (including the [WICG](https://wicg.github.io/)),
+[IETF](https://ietf.org/), [W3C](https://w3.org/) (including the [WICG](https://wicg.io/)),
 [WHATWG](https://whatwg.org/), and [Ecma TC39](https://github.com/tc39), but they could come from
 elsewhere too.
 
