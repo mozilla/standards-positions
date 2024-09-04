@@ -955,7 +955,7 @@
     "mdnUrl": null,
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1539075",
     "mozPosition": "neutral",
-    "mozPositionDetail": "JPEG-XL includes features and performance that might differentiate it from other formats, but the benefits it provides are not significant enough on their own to justify the cost of adding another C++ image decoder to Firefox. A memory-safe decoder would reduce these costs considerably, and we are open to shipping one that meets our requirements.",
+    "mozPositionDetail": "JPEG-XL includes features and performance that might differentiate it from other formats, but the benefits it provides are not significant enough on their own to justify the cost of adding another C++ image decoder to browsers. A memory-safe decoder would reduce these costs considerably, and we are open to shipping one that meets our requirements.",
     "mozPositionIssue": 522,
     "org": "Other",
     "title": "JPEG-XL",
