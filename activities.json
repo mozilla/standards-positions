@@ -269,6 +269,18 @@
     "url": "https://drafts.css-houdini.org/css-layout-api-1"
   },
   {
+    "ciuName": null,
+    "description": "Implicit rules created by nesting create a new kind of rule, not an style rule",
+    "id": "css-nest-rule",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1918408",
+    "mozPosition": "positive",
+    "mozPositionDetail": "Straight improvement to the status quo of CSS nesting",
+    "mozPositionIssue": 1048,
+    "org": "W3C",
+    "title": "CSS Nested Declarations Rule",
+    "url": "https://drafts.csswg.org/css-nesting-1/#the-cssnestrule"
+  },
+  {
     "ciuName": "css-nesting",
     "description": "This module introduces the ability to nest one style rule inside another, with the selector of the child rule relative to the selector of the parent rule.  This increases the modularity and maintainability of CSS stylesheets.",
     "id": "css-nesting",
