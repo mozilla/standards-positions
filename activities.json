@@ -263,7 +263,7 @@
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1302337",
     "mozPosition": "positive",
     "mozPositionDetail": "This specification allows developing prototypes of new CSS layout systems and provides an escape hatch for developers when the existing systems aren't good enough for a particular piece of a web page.",
-    "mozPositionIssue": 93,
+    "mozPositionIssue": 1088,
     "org": "W3C",
     "title": "CSS Layout API",
     "url": "https://drafts.css-houdini.org/css-layout-api-1"
@@ -289,7 +289,7 @@
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1302328",
     "mozPosition": "positive",
     "mozPositionDetail": "This specification allows developing prototypes of new graphical CSS features and provides an escape hatch for developers when the existing features aren't good enough for a particular piece of a web page.",
-    "mozPositionIssue": 93,
+    "mozPositionIssue": 1089,
     "org": "W3C",
     "title": "CSS Painting API",
     "url": "https://drafts.css-houdini.org/css-paint-api-1"
@@ -301,7 +301,7 @@
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1273706",
     "mozPosition": "positive",
     "mozPositionDetail": "This specification makes it significantly easier to use CSS custom properties in ways that are more like regular CSS properties.",
-    "mozPositionIssue": 93,
+    "mozPositionIssue": 1090,
     "org": "W3C",
     "title": "CSS Properties and Values API",
     "url": "https://drafts.css-houdini.org/css-properties-values-api-1"
@@ -362,7 +362,7 @@
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1278697",
     "mozPosition": "positive",
     "mozPositionDetail": "This specification provides an easier way to manipulate the CSS object model.",
-    "mozPositionIssue": 93,
+    "mozPositionIssue": 1091,
     "org": "W3C",
     "title": "CSS Typed OM",
     "url": "https://drafts.css-houdini.org/css-typed-om-1"
@@ -557,7 +557,7 @@
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1438627",
     "mozPosition": "positive",
     "mozPositionDetail": "A welcome successor to XBL!",
-    "mozPositionIssue": 60,
+    "mozPositionIssue": 1092,
     "org": "WHATWG",
     "title": "Custom elements",
     "url": "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements"
@@ -797,7 +797,7 @@
     "mozBugUrl": null,
     "mozPosition": "negative",
     "mozPositionDetail": "Mozilla anticipated that JavaScript modules would change the landscape here and would rather invest in evolving that, e.g., through HTML Modules. Having a single mechanism to deal with dependencies rather than several, potentially conflicting systems, seems preferable.",
-    "mozPositionIssue": 60,
+    "mozPositionIssue": 1093,
     "org": "W3C",
     "title": "HTML Imports",
     "url": "https://www.w3.org/TR/2016/WD-html-imports-20160225"
@@ -1527,7 +1527,7 @@
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1438607",
     "mozPosition": "positive",
     "mozPositionDetail": "A welcome successor to XBL!",
-    "mozPositionIssue": 60,
+    "mozPositionIssue": 1094,
     "org": "WHATWG",
     "title": "Shadow trees (formerly known as Shadow DOM)",
     "url": "https://dom.spec.whatwg.org/#shadow-trees"
@@ -1902,7 +1902,7 @@
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1476515",
     "mozPosition": "positive",
     "mozPositionDetail": "This specification affords web applications the ability to handle user-initiated 'share' actions (e.g., sharing a link, image, text, or other media) in contexts that have traditionally been the exclusive domain of native and/or system applications. We believe this API is worth prototyping because it enhances the utility of web applications to end-users, and allows us to explore ways that web applications can more effectively integrate with the underlying operating system.",
-    "mozPositionIssue": 27,
+    "mozPositionIssue": 176,
     "org": "Proposal",
     "title": "Web Share Target API",
     "url": "https://wicg.github.io/web-share-target/"
@@ -2054,7 +2054,7 @@
     "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1315239",
     "mozPosition": "positive",
     "mozPositionDetail": "This specification is essential for allowing features like the CSS Paint API and CSS Layout API to be implemented in a safe way.",
-    "mozPositionIssue": 93,
+    "mozPositionIssue": 1097,
     "org": "W3C",
     "title": "Worklets",
     "url": "https://drafts.css-houdini.org/worklets"
@@ -2162,7 +2162,7 @@
     "mozBugUrl": null,
     "mozPosition": "positive",
     "mozPositionDetail": "A reasonable addition to HTML (and XML), if not somewhat taxing on the parser.",
-    "mozPositionIssue": 60,
+    "mozPositionIssue": 1098,
     "org": "WHATWG",
     "title": "template element",
     "url": "https://html.spec.whatwg.org/multipage/scripting.html#the-template-element"
