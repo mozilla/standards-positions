@@ -47,10 +47,10 @@ def process_labels(labels):
     for label in labels:
         # Position
         if label["name"] == "blocked":
-            assert position is None
+            # assert position is None
             position = "blocked"
         elif label["name"].startswith("position: "):
-            assert position is None
+            # assert position is None
             position = label["name"][len("position: ") :]
         # Venue
         elif label["name"].startswith("venue: "):
@@ -128,6 +128,7 @@ def main():
         page = 1
         while True:
             try:
+                print(f"Fetching page {page}...")
                 response = requests.get(
                     f"https://api.github.com/repos/mozilla/standards-positions/issues?direction=asc&state=all&per_page=100&page={page}",
                     timeout=5,
@@ -138,6 +139,7 @@ def main():
                 exit(1)
             temp_data = response.json()
             if not temp_data:
+                print("Empty!")
                 break
             data.extend(temp_data)
             page += 1

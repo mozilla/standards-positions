@@ -107,7 +107,7 @@
   },
   {
     "issue": 19,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -137,7 +137,7 @@
   },
   {
     "issue": 21,
-    "position": null,
+    "position": "defer",
     "venues": [
       "W3C CG"
     ],
@@ -152,7 +152,7 @@
   },
   {
     "issue": 22,
-    "position": null,
+    "position": "defer",
     "venues": [
       "W3C"
     ],
@@ -167,7 +167,7 @@
   },
   {
     "issue": 23,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -182,7 +182,7 @@
   },
   {
     "issue": 24,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -228,7 +228,7 @@
   },
   {
     "issue": 27,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -243,7 +243,7 @@
   },
   {
     "issue": 28,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -258,7 +258,7 @@
   },
   {
     "issue": 29,
-    "position": null,
+    "position": "negative",
     "venues": [
       "IETF"
     ],
@@ -348,7 +348,7 @@
   },
   {
     "issue": 35,
-    "position": null,
+    "position": "negative",
     "venues": [
       "W3C"
     ],
@@ -363,7 +363,7 @@
   },
   {
     "issue": 36,
-    "position": null,
+    "position": "negative",
     "venues": [
       "W3C"
     ],
@@ -404,7 +404,7 @@
   },
   {
     "issue": 44,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -486,7 +486,7 @@
   },
   {
     "issue": 58,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -501,7 +501,7 @@
   },
   {
     "issue": 59,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -514,7 +514,7 @@
   },
   {
     "issue": 60,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C",
       "WHATWG"
@@ -530,7 +530,7 @@
   },
   {
     "issue": 61,
-    "position": null,
+    "position": "negative",
     "venues": [
       "WHATWG"
     ],
@@ -545,7 +545,7 @@
   },
   {
     "issue": 64,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -560,7 +560,7 @@
   },
   {
     "issue": 65,
-    "position": null,
+    "position": "neutral",
     "venues": [
       "Ecma"
     ],
@@ -575,7 +575,7 @@
   },
   {
     "issue": 68,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -590,7 +590,7 @@
   },
   {
     "issue": 70,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -605,7 +605,7 @@
   },
   {
     "issue": 72,
-    "position": null,
+    "position": "defer",
     "venues": [
       "W3C CG"
     ],
@@ -620,7 +620,7 @@
   },
   {
     "issue": 73,
-    "position": null,
+    "position": "neutral",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -674,7 +674,7 @@
   },
   {
     "issue": 79,
-    "position": null,
+    "position": "neutral",
     "venues": [
       "IETF"
     ],
@@ -702,7 +702,7 @@
   },
   {
     "issue": 81,
-    "position": null,
+    "position": "neutral",
     "venues": [
       "WHATWG"
     ],
@@ -792,7 +792,7 @@
   },
   {
     "issue": 88,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C",
       "WHATWG"
@@ -823,7 +823,7 @@
   },
   {
     "issue": 90,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -868,7 +868,7 @@
   },
   {
     "issue": 93,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -883,7 +883,7 @@
   },
   {
     "issue": 94,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -898,7 +898,7 @@
   },
   {
     "issue": 95,
-    "position": null,
+    "position": "negative",
     "venues": [
       "W3C CG"
     ],
@@ -913,7 +913,7 @@
   },
   {
     "issue": 96,
-    "position": null,
+    "position": "positive",
     "venues": [
       "IETF"
     ],
@@ -943,7 +943,7 @@
   },
   {
     "issue": 100,
-    "position": null,
+    "position": "negative",
     "venues": [
       "W3C CG"
     ],
@@ -958,7 +958,7 @@
   },
   {
     "issue": 101,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -986,7 +986,7 @@
   },
   {
     "issue": 103,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -1001,7 +1001,7 @@
   },
   {
     "issue": 104,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -1031,7 +1031,7 @@
   },
   {
     "issue": 106,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -1059,7 +1059,7 @@
   },
   {
     "issue": 108,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -1104,7 +1104,7 @@
   },
   {
     "issue": 117,
-    "position": null,
+    "position": "negative",
     "venues": [
       "W3C CG"
     ],
@@ -1119,7 +1119,7 @@
   },
   {
     "issue": 118,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -1134,7 +1134,7 @@
   },
   {
     "issue": 121,
-    "position": null,
+    "position": "positive",
     "venues": [
       "IETF"
     ],
@@ -1164,11 +1164,11 @@
   },
   {
     "issue": 125,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
-    "title": "RFP: CSS Grid Level 2: subgrid",
+    "title": "CSS Grid Level 2: subgrid",
     "url": null,
     "explainer": null,
     "caniuse": null,
@@ -1192,7 +1192,7 @@
   },
   {
     "issue": 130,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -1207,7 +1207,7 @@
   },
   {
     "issue": 131,
-    "position": null,
+    "position": "neutral",
     "venues": [
       "IETF"
     ],
@@ -1222,7 +1222,7 @@
   },
   {
     "issue": 134,
-    "position": null,
+    "position": "positive",
     "venues": [
       "IETF"
     ],
@@ -1265,7 +1265,7 @@
   },
   {
     "issue": 137,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C",
       "Ecma",
@@ -1282,7 +1282,7 @@
   },
   {
     "issue": 139,
-    "position": null,
+    "position": "positive",
     "venues": [
       "IETF"
     ],
@@ -1297,7 +1297,7 @@
   },
   {
     "issue": 143,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG",
       "WHATWG"
@@ -1313,7 +1313,7 @@
   },
   {
     "issue": 144,
-    "position": null,
+    "position": "positive",
     "venues": [
       "IETF",
       "WHATWG"
@@ -1345,7 +1345,7 @@
   },
   {
     "issue": 146,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG",
       "Ecma"
@@ -1389,7 +1389,7 @@
   },
   {
     "issue": 150,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -1434,7 +1434,7 @@
   },
   {
     "issue": 153,
-    "position": null,
+    "position": "defer",
     "venues": [
       "W3C CG"
     ],
@@ -1449,7 +1449,7 @@
   },
   {
     "issue": 154,
-    "position": null,
+    "position": "negative",
     "venues": [
       "W3C CG"
     ],
@@ -1479,7 +1479,7 @@
   },
   {
     "issue": 157,
-    "position": null,
+    "position": "defer",
     "venues": [
       "W3C CG"
     ],
@@ -1494,7 +1494,7 @@
   },
   {
     "issue": 158,
-    "position": null,
+    "position": "defer",
     "venues": [
       "W3C CG"
     ],
@@ -1524,7 +1524,7 @@
   },
   {
     "issue": 160,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -1539,7 +1539,7 @@
   },
   {
     "issue": 161,
-    "position": null,
+    "position": "defer",
     "venues": [
       "W3C CG"
     ],
@@ -1554,7 +1554,7 @@
   },
   {
     "issue": 163,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -1584,7 +1584,7 @@
   },
   {
     "issue": 165,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -1614,7 +1614,7 @@
   },
   {
     "issue": 167,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C",
       "IETF",
@@ -1691,7 +1691,7 @@
   },
   {
     "issue": 172,
-    "position": null,
+    "position": "defer",
     "venues": [
       "W3C"
     ],
@@ -1706,7 +1706,7 @@
   },
   {
     "issue": 173,
-    "position": null,
+    "position": "negative",
     "venues": [
       "W3C CG"
     ],
@@ -1721,7 +1721,7 @@
   },
   {
     "issue": 174,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -1736,7 +1736,7 @@
   },
   {
     "issue": 175,
-    "position": null,
+    "position": "negative",
     "venues": [
       "IETF"
     ],
@@ -1885,7 +1885,7 @@
   },
   {
     "issue": 191,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -1930,7 +1930,7 @@
   },
   {
     "issue": 195,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -1960,7 +1960,7 @@
   },
   {
     "issue": 197,
-    "position": null,
+    "position": "negative",
     "venues": [
       "WHATWG"
     ],
@@ -2005,7 +2005,7 @@
   },
   {
     "issue": 200,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -2020,7 +2020,7 @@
   },
   {
     "issue": 201,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -2035,7 +2035,7 @@
   },
   {
     "issue": 202,
-    "position": null,
+    "position": "neutral",
     "venues": [
       "IETF"
     ],
@@ -2050,7 +2050,7 @@
   },
   {
     "issue": 203,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -2065,7 +2065,7 @@
   },
   {
     "issue": 205,
-    "position": null,
+    "position": "negative",
     "venues": [
       "W3C"
     ],
@@ -2080,7 +2080,7 @@
   },
   {
     "issue": 206,
-    "position": null,
+    "position": "negative",
     "venues": [
       "W3C CG"
     ],
@@ -2095,7 +2095,7 @@
   },
   {
     "issue": 207,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -2110,7 +2110,7 @@
   },
   {
     "issue": 208,
-    "position": null,
+    "position": "positive",
     "venues": [
       "IETF"
     ],
@@ -2125,7 +2125,7 @@
   },
   {
     "issue": 209,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -2140,7 +2140,7 @@
   },
   {
     "issue": 210,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -2170,7 +2170,7 @@
   },
   {
     "issue": 213,
-    "position": null,
+    "position": "negative",
     "venues": [
       "W3C CG"
     ],
@@ -2185,7 +2185,7 @@
   },
   {
     "issue": 214,
-    "position": null,
+    "position": "negative",
     "venues": [
       "W3C CG"
     ],
@@ -2228,7 +2228,7 @@
   },
   {
     "issue": 218,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -2256,7 +2256,7 @@
   },
   {
     "issue": 233,
-    "position": null,
+    "position": "negative",
     "venues": [
       "Unicode"
     ],
@@ -2271,7 +2271,7 @@
   },
   {
     "issue": 234,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -2284,7 +2284,7 @@
   },
   {
     "issue": 237,
-    "position": null,
+    "position": "neutral",
     "venues": [
       "W3C CG"
     ],
@@ -2299,7 +2299,7 @@
   },
   {
     "issue": 238,
-    "position": null,
+    "position": "negative",
     "venues": [
       "W3C CG"
     ],
@@ -2314,7 +2314,7 @@
   },
   {
     "issue": 239,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -2329,7 +2329,7 @@
   },
   {
     "issue": 240,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -2344,7 +2344,7 @@
   },
   {
     "issue": 241,
-    "position": null,
+    "position": "defer",
     "venues": [
       "WHATWG"
     ],
@@ -2387,7 +2387,7 @@
   },
   {
     "issue": 244,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG",
       "WHATWG"
@@ -2429,7 +2429,7 @@
   },
   {
     "issue": 250,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -2457,7 +2457,7 @@
   },
   {
     "issue": 253,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -2501,7 +2501,7 @@
   },
   {
     "issue": 256,
-    "position": null,
+    "position": "positive",
     "venues": [
       "IETF"
     ],
@@ -2516,7 +2516,7 @@
   },
   {
     "issue": 259,
-    "position": null,
+    "position": "defer",
     "venues": [
       "W3C"
     ],
@@ -2531,7 +2531,7 @@
   },
   {
     "issue": 260,
-    "position": null,
+    "position": "positive",
     "venues": [
       "IETF"
     ],
@@ -2585,7 +2585,7 @@
   },
   {
     "issue": 264,
-    "position": null,
+    "position": "neutral",
     "venues": [
       "IETF"
     ],
@@ -2615,7 +2615,7 @@
   },
   {
     "issue": 271,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -2643,7 +2643,7 @@
   },
   {
     "issue": 280,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -2673,7 +2673,7 @@
   },
   {
     "issue": 283,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -2688,7 +2688,7 @@
   },
   {
     "issue": 288,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -2703,7 +2703,7 @@
   },
   {
     "issue": 298,
-    "position": null,
+    "position": "positive",
     "venues": [
       "IETF",
       "W3C CG"
@@ -2719,7 +2719,7 @@
   },
   {
     "issue": 300,
-    "position": null,
+    "position": "negative",
     "venues": [
       "W3C CG"
     ],
@@ -2760,7 +2760,7 @@
   },
   {
     "issue": 326,
-    "position": null,
+    "position": "neutral",
     "venues": [
       "W3C"
     ],
@@ -2775,7 +2775,7 @@
   },
   {
     "issue": 327,
-    "position": null,
+    "position": "neutral",
     "venues": [
       "W3C"
     ],
@@ -2790,7 +2790,7 @@
   },
   {
     "issue": 330,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C",
       "W3C CG"
@@ -2806,7 +2806,7 @@
   },
   {
     "issue": 331,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -2897,7 +2897,7 @@
   },
   {
     "issue": 346,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -2985,7 +2985,7 @@
   },
   {
     "issue": 370,
-    "position": null,
+    "position": "negative",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -2998,7 +2998,7 @@
   },
   {
     "issue": 372,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -3013,7 +3013,7 @@
   },
   {
     "issue": 373,
-    "position": null,
+    "position": "positive",
     "venues": [
       "Ecma"
     ],
@@ -3028,7 +3028,7 @@
   },
   {
     "issue": 374,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -3087,7 +3087,7 @@
   },
   {
     "issue": 388,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -3162,7 +3162,7 @@
   },
   {
     "issue": 409,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -3252,7 +3252,7 @@
   },
   {
     "issue": 418,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -3310,9 +3310,15 @@
   },
   {
     "issue": 431,
-    "position": null,
-    "venues": [],
-    "concerns": [],
+    "position": "negative",
+    "venues": [
+      "W3C CG"
+    ],
+    "concerns": [
+      "venue",
+      "security",
+      "use cases"
+    ],
     "topics": [],
     "title": "Raw Sockets API",
     "url": "https://github.com/WICG/raw-sockets/blob/master/docs/explainer.md",
@@ -3323,7 +3329,7 @@
   },
   {
     "issue": 433,
-    "position": null,
+    "position": "positive",
     "venues": [
       "Ecma"
     ],
@@ -3383,7 +3389,7 @@
   },
   {
     "issue": 444,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -3426,7 +3432,7 @@
   },
   {
     "issue": 453,
-    "position": null,
+    "position": "negative",
     "venues": [
       "W3C CG"
     ],
@@ -3471,7 +3477,7 @@
   },
   {
     "issue": 457,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -3486,7 +3492,7 @@
   },
   {
     "issue": 458,
-    "position": null,
+    "position": "positive",
     "venues": [
       "Ecma"
     ],
@@ -3501,7 +3507,7 @@
   },
   {
     "issue": 459,
-    "position": null,
+    "position": "negative",
     "venues": [
       "W3C CG"
     ],
@@ -3634,7 +3640,7 @@
   },
   {
     "issue": 471,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -3871,7 +3877,7 @@
   },
   {
     "issue": 491,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -3944,7 +3950,7 @@
   },
   {
     "issue": 497,
-    "position": null,
+    "position": "positive",
     "venues": [
       "Proposal"
     ],
@@ -4263,7 +4269,7 @@
   },
   {
     "issue": 522,
-    "position": null,
+    "position": "neutral",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -4302,7 +4308,7 @@
   },
   {
     "issue": 527,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -4513,7 +4519,7 @@
   },
   {
     "issue": 546,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -4677,7 +4683,7 @@
   },
   {
     "issue": 562,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG",
       "WHATWG"
@@ -4734,7 +4740,7 @@
   },
   {
     "issue": 566,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG",
       "Proposal"
@@ -4815,7 +4821,7 @@
   },
   {
     "issue": 573,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -5167,7 +5173,7 @@
   },
   {
     "issue": 606,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -5417,9 +5423,11 @@
     "issue": 628,
     "position": null,
     "venues": [],
-    "concerns": [],
+    "concerns": [
+      "venue"
+    ],
     "topics": [],
-    "title": "https://github.com/ArthurSonzogni/anonymous-iframe",
+    "title": "iframe credentialless",
     "url": "https://github.com/ArthurSonzogni/anonymous-iframe",
     "explainer": null,
     "caniuse": null,
@@ -5467,7 +5475,7 @@
   },
   {
     "issue": 632,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -5651,7 +5659,7 @@
   },
   {
     "issue": 646,
-    "position": null,
+    "position": "negative",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -5848,7 +5856,7 @@
   },
   {
     "issue": 668,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -5900,7 +5908,7 @@
   },
   {
     "issue": 674,
-    "position": "under consideration",
+    "position": "defer",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -5941,7 +5949,7 @@
   },
   {
     "issue": 678,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -6331,10 +6339,16 @@
   },
   {
     "issue": 717,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
+    "position": "positive",
+    "venues": [
+      "IETF"
+    ],
+    "concerns": [
+      "interoperability"
+    ],
+    "topics": [
+      "HTTP"
+    ],
     "title": "No-Vary-Search",
     "url": "https://wicg.github.io/nav-speculation/no-vary-search.html",
     "explainer": null,
@@ -6675,7 +6689,7 @@
     "venues": [],
     "concerns": [],
     "topics": [],
-    "title": "CSS Text Level 4",
+    "title": "CSS `text-wrap: balance`",
     "url": "https://w3c.github.io/csswg-drafts/css-text-4/#valdef-text-wrap-balance",
     "explainer": "https://docs.google.com/document/d/16-T9gqCagJxcST6hcnneSb7qGunxXa37_UHYqMqhPL0/edit?usp=sharing",
     "caniuse": null,
@@ -7152,9 +7166,15 @@
   },
   {
     "issue": 799,
-    "position": null,
-    "venues": [],
-    "concerns": [],
+    "position": "negative",
+    "venues": [
+      "W3C CG"
+    ],
+    "concerns": [
+      "venue",
+      "security",
+      "API design"
+    ],
     "topics": [],
     "title": "Isolated Web Apps",
     "url": null,
@@ -7373,7 +7393,7 @@
   },
   {
     "issue": 828,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -7438,7 +7458,7 @@
   },
   {
     "issue": 835,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -7568,7 +7588,7 @@
   },
   {
     "issue": 845,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -7789,7 +7809,7 @@
   },
   {
     "issue": 867,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -8935,9 +8955,12 @@
     "issue": 993,
     "position": "positive",
     "venues": [],
-    "concerns": [],
+    "concerns": [
+      "compatibility",
+      "complexity"
+    ],
     "topics": [],
-    "title": "CSS Text Module Level 4",
+    "title": "CSS `text-wrap-style: pretty`",
     "url": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-pretty",
     "explainer": null,
     "caniuse": "https://caniuse.com/mdn-css_properties_text-wrap_pretty",
@@ -9495,7 +9518,7 @@
   },
   {
     "issue": 1048,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -9578,7 +9601,7 @@
   },
   {
     "issue": 1053,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -9727,5 +9750,99 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/389"
+  },
+  {
+    "issue": 1065,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [
+      "API"
+    ],
+    "title": "FedCM as a trust signal for the Storage Access API",
+    "url": null,
+    "explainer": "https://github.com/explainers-by-googlers/storage-access-for-fedcm, https://github.com/privacycg/storage-access/pull/204",
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  {
+    "issue": 1066,
+    "position": "negative",
+    "venues": [
+      "W3C CG"
+    ],
+    "concerns": [
+      "venue",
+      "privacy",
+      "use cases"
+    ],
+    "topics": [],
+    "title": "Private State Token API Permissions Policy Default Allowlist Wildcard",
+    "url": "https://github.com/WICG/trust-token-api/pull/306",
+    "explainer": "https://github.com/WICG/trust-token-api/blob/main/README.md",
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/391"
+  },
+  {
+    "issue": 1067,
+    "position": null,
+    "venues": [
+      "W3C CG"
+    ],
+    "concerns": [],
+    "topics": [
+      "API"
+    ],
+    "title": "Writing Assistance APIs (Summarizer, Writer, Rewriter)",
+    "url": "not yet, hopefully soon!",
+    "explainer": "https://github.com/WICG/writing-assistance-apis/blob/main/README.md",
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/393"
+  },
+  {
+    "issue": 1068,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [
+      "API"
+    ],
+    "title": "highlightsFromPoint API",
+    "url": "https://github.com/w3c/csswg-drafts/issues/7513, Spec is In progress",
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/highlight/HighlightsFromPointsExplainer.md",
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1917991",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/394"
+  },
+  {
+    "issue": 1069,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [
+      "API"
+    ],
+    "title": "PerformanceEventTiming.interactionId",
+    "url": "https://w3c.github.io/event-timing/#dom-performanceeventtiming-interactionid",
+    "explainer": "https://github.com/w3c/event-timing/blob/main/interactionID-explainer.md",
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  {
+    "issue": 1070,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "WebXR Hand Input Module - Level 1",
+    "url": "https://immersive-web.github.io/webxr-hand-input",
+    "explainer": "https://github.com/immersive-web/webxr-hand-input/blob/main/explainer.md",
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 ]
