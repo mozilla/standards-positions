@@ -22,7 +22,7 @@ def process(issues):
         summary_item = {"issue": int(issue["html_url"][issue["html_url"].rfind("/") + 1 :])}
         summary_item.update(process_labels(issue["labels"]))
         summary_item.update(process_body(issue))
-        summary_item["title"] = re.sub(r"Request for [Pp]osition: ", "", issue["title"])
+        summary_item["title"] = re.sub(r"(request for (mozilla )?position|rfp)( ?:| on) ", "", issue["title"], flags=re.IGNORECASE)
 
         summary.append(summary_item)
     write_json("gh-data-summary.json", summary)
