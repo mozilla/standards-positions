@@ -22,8 +22,7 @@ def process(issues):
         summary_item = {"issue": int(issue["html_url"][issue["html_url"].rfind("/") + 1 :])}
         summary_item.update(process_labels(issue["labels"]))
         summary_item.update(process_body(issue))
-        if summary_item["title"] is None:
-            summary_item["title"] = re.sub(r"Request for [Pp]osition: ", "", issue["title"])
+        summary_item["title"] = re.sub(r"Request for [Pp]osition: ", "", issue["title"])
 
         summary.append(summary_item)
     write_json("gh-data-summary.json", summary)
@@ -83,7 +82,7 @@ def process_body(issue):
     }
 
     mapping = {
-        "specification title": "title",
+        # "specification title": "title",  # Always use the issue title
         "specification or proposal url (if available)": "url",
         "specification or proposal url": "url",
         "explainer url (if available)": "explainer",
