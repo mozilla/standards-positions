@@ -876,6 +876,18 @@
     "url": "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-client-hints"
   },
   {
+    "ciuName": "mdn-api_keyboard_lock",
+    "description": "This specification defines an API that allows websites to capture keys that are normally reserved by the underlying host operating system. It is intended to be used by web applications that provide a fullscreen immersive experience (like games or remote access apps).",
+    "id": "keyboard-lock",
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=700123",
+    "mozPosition": "harmful",
+    "mozPositionDetail": "This API is designed in a way that makes giving appropriate signals to the user more difficult than it should be.  It would be easier to do so if the API were more integrated into the fullscreen API and the keys to lock were less configurable.  Having the set of keys be less configurable also reduces the risk of content being broken in some browsers but not others.  The proposal also needs to address the security implications in the context of multiple screens (where fullscreen only covers one, and thus other windows are still visible).",
+    "mozPositionIssue": 196,
+    "org": "Proposal",
+    "title": "Keyboard Lock",
+    "url": "https://wicg.github.io/keyboard-lock/"
+  },
+  {
     "ciuName": null,
     "description": "This document defines a web platform API for observing system-wide user presence signals.",
     "id": "idle-detection-api",
