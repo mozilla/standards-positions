@@ -1,0 +1,2798 @@
+<link>'s imagesrcset and imagesizes attributes:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1515760
+  caniuse: null
+  description: Adds imagesrcset and imagesizes attributes to <link> which correspond
+    to the srcset and sizes attributes of <img> respectively, for the purposes of
+    preloading.
+  id: image-preload
+  issue: 130
+  position: positive
+  rationale: A relevant aspect of <link rel=preload> support.
+  url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset
+  venues:
+  - WHATWG
+A Well-Known URL for Changing Passwords:
+  bug: null
+  caniuse: null
+  description: This specification defines a well-known URL that sites can use to make
+    their change password forms discoverable by tools. This simple affordance provides
+    a way for software to help the user find the way to change their password.
+  id: change-password-url
+  issue: 372
+  position: positive
+  rationale: null
+  url: https://wicg.github.io/change-password-url/
+  venues:
+  - Proposal
+ARIA Annotations:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1608975
+  caniuse: null
+  description: ''
+  id: aria-annotations
+  issue: 253
+  position: positive
+  rationale: This contains changes needed to support screen reader accessibility of
+    comments, suggestions, and other annotations in published documents and online
+    word processing applications.
+  url: https://github.com/aleventhal/aria-annotations
+  venues:
+  - W3C
+ARIA Element Reflection:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1769586
+  caniuse: null
+  description: This will allow ARIA relationship attributes to be set more easily
+    via JavaScript, and in particular will allow setting ARIA relationship attributes
+    which work across Shadow DOM boundaries (with limitations).
+  id: aria-element-reflection
+  issue: 200
+  position: positive
+  rationale: This is an important piece in making web components accessible. While
+    this unfortunately does not address all of the use cases for ARIA references across
+    shadow roots and it cannot be used declaratively, there is no other single alternative
+    which solves these problems in a reasonable, ergonomic way.
+  url: https://w3c.github.io/aria/#ARIAMixin
+  venues:
+  - W3C
+Accelerated Shape Detection in Images:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1553738
+  caniuse: null
+  description: This document describes an API providing access to accelerated shape
+    detectors (e.g. human faces) for still images and/or live image feeds.
+  id: shape-detection-api
+  issue: 21
+  position: defer
+  rationale: We're concerned about possible complexity, variations in support between
+    operating systems, and possible fingerprinting surface, but we'd like to wait
+    and see how this proposal evolves.
+  url: https://wicg.github.io/shape-detection-api
+  venues:
+  - Proposal
+An HTTP Status Code for Indicating Hints (103):
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1407355
+  caniuse: null
+  description: This memo introduces an informational HTTP status code that can be
+    used to convey hints that help a client make preparations for processing the final
+    response.
+  id: http-early-hints
+  issue: 134
+  position: positive
+  rationale: We believe that experimentation with the 103 response code is worthwhile.
+    We do have some concerns about the lack of clear interaction with Fetch, which
+    we hope will be specified before the mechanism is put into widespread use.
+  url: https://datatracker.ietf.org/doc/html/rfc8297
+  venues:
+  - IETF
+Atomics.waitAsync:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1467846
+  caniuse: null
+  description: A proposal for an 'asynchronous atomic wait' for ECMAScript, primarily
+    for use in agents that are not allowed to block.
+  id: atomics-wait-async
+  issue: 433
+  position: positive
+  rationale: Represents a meaningful way for the main thread to interact with blocking
+    concurrent patterns in workers and other off-thread work.
+  url: https://tc39.es/proposal-atomics-wait-async/
+  venues:
+  - Ecma
+Audio Focus API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1579791
+  caniuse: null
+  description: This API will help by improving the audio-mixing of websites with native
+    apps, so they can play on top of each other, or play exclusively.
+  id: audio-focus
+  issue: 203
+  position: positive
+  rationale: This proposes a straightforward API for improving mixing of audio produced
+    by website.
+  url: https://wicg.github.io/audio-focus/explainer
+  venues:
+  - Proposal
+Auto-sizes for lazy-loaded images:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1816615
+  caniuse: null
+  description: Allow authors to omit the 'sizes' attribute, use the keyword 'auto',
+    for responsive lazy images in HTML to let the browser use the layout size from
+    CSS or width/height attributes.
+  id: img-auto-sizes
+  issue: 650
+  position: positive
+  rationale: This proposal makes it easier for web developers to use responsive images.
+    There is some risk that the behavior of cached images can cause flicker in some
+    cases.
+  url: https://github.com/whatwg/html/pull/8008
+  venues:
+  - WHATWG
+Autoplay Policy Detection:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1773551
+  caniuse: null
+  description: This specification provides web developers the ability to detect if
+    automatically starting the playback of a media file is allowed in different situations.
+  id: autoplay-policy-detection
+  issue: 675
+  position: positive
+  rationale: This API provides a convenient and synchronous answer to whether a particular
+    kind of media can autoplay, which is something web developers are currently detecting
+    either with various hacks or through UA detection. This doesn't expose new information
+    for fingerprinting (see w3c/autoplay#24) as media elements already expose through
+    events which media will autoplay by trying to autoplay.
+  url: https://w3c.github.io/autoplay/
+  venues:
+  - W3C
+Badging API:
+  bug: null
+  caniuse: null
+  description: This specification defines an API allowing web applications to set
+    an application-wide badge, shown in an operating-system-specific place associated
+    with the application (such as the shelf or home screen), for the purpose of notifying
+    the user when the state of the application has changed (e.g., when new messages
+    have arrived), without showing a more heavyweight notification.
+  id: badging
+  issue: 108
+  position: positive
+  rationale: null
+  url: https://wicg.github.io/badging/
+  venues:
+  - Proposal
+BigInt:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1366287
+  caniuse: bigint
+  description: This proposal adds arbitrary-precision integers to ECMAScript.
+  id: bigint
+  issue: 65
+  position: neutral
+  rationale: Shipping in Firefox.
+  url: https://tc39.github.io/proposal-bigint/
+  venues:
+  - Ecma
+Bounce Tracking Mitigations:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1839915
+  caniuse: null
+  description: This specification defines navigational tracking and when and how browsers
+    are required to prevent it from happening.
+  id: bounce-tracking-mitigations
+  issue: 835
+  position: positive
+  rationale: With 3rd-party cookies being restricted by default in all major browsers,
+    navigational tracking plays an increasingly important role on the web. This spec
+    describes an effective cross-browser mechanism to combat bounce tracking, which
+    does not rely on tracker lists. It provides predictable detection heuristics for
+    web developers and preserves legitimate uses of short-lived redirects where possible.
+    While browsers already ship similar protections, e.g. Firefox's tracker purging,
+    aligning on common behavior improves web compatibility and encourages site developers
+    to use specialized APIs, rather than relying on top level redirects for functionality.
+  url: https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-mitigations
+  venues:
+  - Proposal
+Bundled HTTP Exchanges:
+  bug: null
+  caniuse: null
+  description: Bundled exchanges provide a way to bundle up groups of HTTP request+response
+    pairs to transmit or store them together. They can include multiple top-level
+    resources with one identified as the default by a manifest, provide random access
+    to their component exchanges, and efficiently store 8-bit resources.
+  id: bundled-exchanges
+  issue: 264
+  position: neutral
+  rationale: The mechanism as currently sketched out seems to provide potentially
+    useful functionality for a number of use cases. This is a complex mechanism, and
+    substantial detail still needs to be filled in. We believe the general intent
+    of the feature is well-enough defined to designate as "non-harmful" at this time
+    (rather than "defer"), although we anticipate potentially revisiting this decision
+    as the mechanism is refined.
+  url: https://datatracker.ietf.org/doc/html/draft-yasskin-wpack-bundled-exchanges
+  venues:
+  - Proposal
+Byte Streams:
+  bug: null
+  caniuse: streams
+  description: Byte streams are a specialization of <a href="#streams">Streams</a>
+    that are designed to deal with raw bytes.
+  id: byte-streams
+  issue: 457
+  position: positive
+  rationale: Byte streams are a useful specialization of streams that is well suited
+    to performant I/O and they are well integrated with Typed Arrays.
+  url: https://streams.spec.whatwg.org/
+  venues:
+  - WHATWG
+COLR v1 Fonts:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1740525
+  caniuse: null
+  description: Extends the COLR table in OpenType fonts with a new format supporting
+    richer graphical capabilities for emoji (and similar) glyph design.
+  id: font-colrv1
+  issue: 497
+  position: positive
+  rationale: Provides comparable design capabilities to OpenType-SVG, but in a more
+    compact and lightweight form that integrates better into font rendering pipelines.
+    Has the potential to supersede OpenType-SVG fonts in web use.
+  url: https://github.com/googlefonts/colr-gradients-spec/
+  venues:
+  - Proposal
+CSS Anchor Positioning:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=css-anchor-position-1
+  caniuse: css-anchor-positioning
+  description: Anchor Positioning allows positioned elements to size and position
+    themselves relative to one or more 'anchor elements' elsewhere on the page.
+  id: css-anchor-positioning
+  issue: 794
+  position: positive
+  rationale: This is an important evolution of absolute positioning that addresses
+    a common and much requested authoring use case that otherwise requires the use
+    of JavaScript.
+  url: https://drafts.csswg.org/css-anchor-position-1/
+  venues:
+  - W3C
+CSS Cascade Layers:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1699214
+  caniuse: ''
+  description: CSS Cascade Layers provides a structured way to organize related style
+    rules within a single origin. Rules within a single cascade layer cascade together,
+    without interleaving with style rules outside the layer.
+  id: css-cascade-layers
+  issue: 471
+  position: positive
+  rationale: This feature provides a way to abstract CSS rules in style sheets, supported
+    in popular CSS frameworks/pre-processors, and a frequent web developer request.
+    Though the specification is in early stages, the goal is worth pursuing.
+  url: https://drafts.csswg.org/css-cascade-5/#layering
+  venues:
+  - W3C
+CSS Container Queries:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1744221
+  caniuse: css-container-queries
+  description: CSS container queries allow conditional CSS based on aspects of elements
+    within the document (such as box dimensions or computed styles).
+  id: css-container-queries
+  issue: 118
+  position: positive
+  rationale: This feature addresses a long-standing request from web developers. It
+    allows web content to be declaratively styled to make it context-aware and responsive,
+    to a much greater degree than would be possible otherwise.  We think this is a
+    challenge that's worth solving, and we think this feature is a good way to address
+    it.
+  url: https://drafts.csswg.org/css-contain-3/#container-queries
+  venues:
+  - W3C
+'CSS Fragmentation Module Level 3: 3.3 Breaks Between Lines: orphans, widows':
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=137367
+  caniuse: css-widows-orphans
+  description: These CSS properties provide control over typographic widows and orphans
+    during fragmentation/pagination.
+  id: widows-orphans
+  issue: 972
+  position: positive
+  rationale: null
+  url: https://drafts.csswg.org/css-break/#widows-orphans
+  venues:
+  - W3C
+CSS Grid Layout Module Level 2:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1349043
+  caniuse: css-subgrid
+  description: This draft defines additions to CSS Grid, primarily for the subgrid
+    feature.
+  id: subgrid
+  issue: 125
+  position: positive
+  rationale: Subgrid adds a critical enhancement to CSS Grid, in particular for many
+    CSS Grid use-cases that require alignment across nested semantic elements.
+  url: https://drafts.csswg.org/css-grid-2/
+  venues:
+  - W3C
+CSS Layout API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1302337
+  caniuse: null
+  description: An API for allowing web developers to define their own layout modes
+    with javascript.
+  id: css-layout-api
+  issue: 93
+  position: positive
+  rationale: This specification allows developing prototypes of new CSS layout systems
+    and provides an escape hatch for developers when the existing systems aren't good
+    enough for a particular piece of a web page.
+  url: https://drafts.css-houdini.org/css-layout-api-1
+  venues:
+  - W3C
+CSS Nesting:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1648037
+  caniuse: css-nesting
+  description: This module introduces the ability to nest one style rule inside another,
+    with the selector of the child rule relative to the selector of the parent rule.  This
+    increases the modularity and maintainability of CSS stylesheets.
+  id: css-nesting
+  issue: 695
+  position: positive
+  rationale: Nesting is a valuable tool for simplifying CSS authoring. Many authoring
+    formats include the capability in some form, but native support will make the
+    capability consistent and more widely available.
+  url: https://drafts.csswg.org/css-nesting/
+  venues:
+  - W3C
+CSS Painting API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1302328
+  caniuse: css-paint-api
+  description: An API for allowing web developers to define a custom CSS <image> with
+    javascript, which will respond to style and size changes.
+  id: css-paint-api
+  issue: 93
+  position: positive
+  rationale: This specification allows developing prototypes of new graphical CSS
+    features and provides an escape hatch for developers when the existing features
+    aren't good enough for a particular piece of a web page.
+  url: https://drafts.css-houdini.org/css-paint-api-1
+  venues:
+  - W3C
+CSS Properties and Values API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1273706
+  caniuse: null
+  description: This CSS module defines an API for registering new CSS properties.
+    Properties registered using this API are provided with a parse syntax that defines
+    a type, inheritance behaviour, and an initial value.
+  id: css-properties-and-values-api
+  issue: 93
+  position: positive
+  rationale: This specification makes it significantly easier to use CSS custom properties
+    in ways that are more like regular CSS properties.
+  url: https://drafts.css-houdini.org/css-properties-values-api-1
+  venues:
+  - W3C
+'CSS Properties and Values API: @property':
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1684605
+  caniuse: mdn-css_at-rules_property
+  description: The @property rule represents a custom property registration directly
+    in a stylesheet without having to run any JS.
+  id: at-property
+  issue: 331
+  position: positive
+  rationale: Having a declarative registration mechanism for custom properties is
+    a good addition to CSS Properties and Values API.
+  url: https://drafts.css-houdini.org/css-properties-values-api-1#at-property-rule
+  venues:
+  - W3C
+CSS Relational Pseudo-Class (:has()):
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=has-pseudo
+  caniuse: css-has
+  description: :has selector lets authors select elements that anchor at least one
+    element that matches its inner relative selector.
+  id: css-has-selector
+  issue: 528
+  position: positive
+  rationale: We recognize that :has is something that a lot of people want. That power
+    does come with performance costs, like the potential for very poor performance
+    when there is DOM tree mutation. Overall, the utility of the selector justifies
+    this risk, but we might need to do more to help developers avoid the worst problems.
+  url: https://drafts.csswg.org/selectors/#relational
+  venues:
+  - W3C
+CSS Scoped Styles:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=%40scope
+  caniuse: css-cascade-scope
+  description: '@scope rule allows targeting CSS rules to subtree or fragment of a
+    document.'
+  id: at-scope
+  issue: 472
+  position: positive
+  rationale: Scoped styles allow authors to precisely control upper- and lower-bounds
+    of where CSS rules, without having to add many attributes on DOM elements. However,
+    there is a risk of performance degradation that will have to be answered with
+    implementation experience.
+  url: https://drafts.csswg.org/css-cascade-6/#scoped-styles
+  venues:
+  - W3C
+CSS Shadow Parts:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1619579
+  caniuse: null
+  description: This specification defines the ::part() and ::theme() pseudo-elements
+    on shadow hosts, allowing shadow hosts to selectively expose chosen elements from
+    their shadow tree to the outside page for styling purposes.
+  id: css-shadow-parts
+  issue: 59
+  position: positive
+  rationale: null
+  url: https://drafts.csswg.org/css-shadow-parts
+  venues:
+  - W3C
+CSS Typed OM:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1278697
+  caniuse: null
+  description: Converting CSSOM value strings into meaningfully typed JavaScript representations
+    and back can incur a significant performance overhead. This specification exposes
+    CSS values as typed JavaScript objects to facilitate their performant manipulation.
+  id: css-typed-om
+  issue: 93
+  position: positive
+  rationale: This specification provides an easier way to manipulate the CSS object
+    model.
+  url: https://drafts.css-houdini.org/css-typed-om-1
+  venues:
+  - W3C
+CSS View Transitions Module Level 1:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1823896
+  caniuse: view-transitions
+  description: The View Transitions API allows developers to create animated visual
+    transitions representing changes in the document state.
+  id: view-transitions
+  issue: 677
+  position: positive
+  rationale: View Transitions allows developers to create animated transitions between
+    states within one document as well as transitions when navigating across documents.
+    The latter is a new capability for the web. We think the API design should be
+    consistent between these cases where possible. As of mid-2023, the specification
+    and implementation experience for this feature for same-document transitions is
+    further along than for cross-document transitions.
+  url: https://drafts.csswg.org/css-view-transitions/
+  venues:
+  - W3C
+CSS overflow clip:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1531609
+  caniuse: mdn-css_properties_overflow_clip
+  description: overflow:clip is a feature of CSS Overflow Module Level 3 that is similar
+    to overflow:hidden except without a formatting context or programmatic scrollability.
+  id: css-overflow-clip
+  issue: 418
+  position: positive
+  rationale: This feature is both a useful declarative presentational feature for
+    web developers and standardizes a non-standard -moz prefixed value.
+  url: https://drafts.csswg.org/css-overflow-3/#valdef-overflow-clip
+  venues:
+  - W3C
+Cache Digests for HTTP/2:
+  bug: null
+  caniuse: null
+  description: This specification defines a HTTP/2 frame type to allow clients to
+    inform the server of their cache's contents. Servers can then use this to inform
+    their choices of what to push to clients.
+  id: http-cache-digest
+  issue: 131
+  position: neutral
+  rationale: This is experimental technology that might improve the use of server
+    push by giving servers information about what is cached. It is still unclear how
+    much this might improve performance; more experimentation is likely necessary
+    to prove this out.
+  url: https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cache-digest
+  venues:
+  - IETF
+Clear Site Data:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1268889
+  caniuse: null
+  description: This document defines an imperative mechanism which allows web developers
+    to instruct a user agent to clear a site's locally stored data related to a host.
+  id: clear-site-data
+  issue: 90
+  position: positive
+  rationale: This feature is useful for sites to be able to recover from mistakes
+    in deployment of certain web technologies like Service Workers, and thus makes
+    them more confident about deploying such technology.
+  url: https://w3c.github.io/webappsec-clear-site-data/
+  venues:
+  - W3C
+Clipboard API and events:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1619251
+  caniuse: null
+  description: This document describes APIs for accessing data on the system clipboard.
+    It provides operations for overriding the default clipboard actions (cut, copy
+    and paste), and for directly accessing the clipboard contents.
+  id: clipboard-apis
+  issue: 89
+  position: positive
+  rationale: Async Clipboard API is an improvement over execCommand for accessing
+    the clipboard. Security concerns are addressed by gating on user activation and
+    a non-modal dialog.
+  url: https://w3c.github.io/clipboard-apis/
+  venues:
+  - W3C
+Compression Streams:
+  bug: null
+  caniuse: null
+  description: This document defines a set of JavaScript APIs to compress and decompress
+    streams of binary data.
+  id: compression-streams
+  issue: 207
+  position: positive
+  rationale: This provides a small API wrapper around compression formats implementations
+    already have to support and hopefully leads to more things being compressed due
+    to ease-of-use.
+  url: https://wicg.github.io/compression/
+  venues:
+  - Proposal
+Constructable Stylesheet Objects:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1773147
+  caniuse: null
+  description: This draft defines additions to CSSOM to make CSSStyleSheet objects
+    directly constructable, along with a way to use them in DocumentOrShadowRoots.
+  id: construct-stylesheets
+  issue: 103
+  position: positive
+  rationale: null
+  url: https://wicg.github.io/construct-stylesheets/
+  venues:
+  - Proposal
+Contact Picker API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1756767
+  caniuse: null
+  description: This proposal adds an API for prompting and querying the user’s contacts
+    for one or more items with a handful of contact properties.
+  id: contact-picker
+  issue: 153
+  position: defer
+  rationale: This API innovates in some ways beyond several previous Contacts APIs,
+    though uses different properties than HTML autofill field names.
+  url: https://wicg.github.io/contact-api/spec/
+  venues:
+  - Proposal
+'Content Security Policy: Embedded Enforcement':
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1391244
+  caniuse: null
+  description: This document defines a mechanism by which a web page can embed a nested
+    browsing context if and only if it agrees to enforce a particular set of restrictions
+    upon itself.
+  id: cspee
+  issue: 326
+  position: neutral
+  rationale: This specification allows sites to specify minimum CSP policies for embedded
+    content. The risk of problems arising from misalignment between different policies
+    is managed well. The resulting complexity is not trivial, but it is balanced against
+    the security improvements.
+  url: https://w3c.github.io/webappsec-cspee/
+  venues:
+  - W3C
+Cookie Store API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1475599
+  caniuse: cookie-store-api
+  description: An asynchronous Javascript cookies API for documents and workers
+  id: cookie-store
+  issue: 94
+  position: defer
+  rationale: This API provides better access to cookies. However, the improvements
+    also expand access to cookie metadata and the interactions with privacy features
+    like the Storage Access API are unclear. Work on improving cookie interoperability,
+    which is ongoing, might be needed before an assessment can be made.
+  url: https://wicg.github.io/cookie-store/
+  venues:
+  - Proposal
+Cookies Having Independent Partitioned State:
+  bug: null
+  caniuse: null
+  description: Defines the Partitioned cookie attribute. This attribute will indicate
+    to user agents that these cross-site cookies should only be available in the same
+    top-level context that the cookie was created in.
+  id: chips
+  issue: 678
+  position: positive
+  rationale: This spec provides an opt-in mechanism to enable partitioned cookies.
+    This allows more browsers to support partitioned cookies, and once adopted by
+    sites can facilitate the default blocking of third-party cookies.
+  url: https://github.com/privacycg/CHIPS
+  venues:
+  - W3C
+Crash Reporting:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1607364
+  caniuse: null
+  description: This document defines a mechanism for reporting browser crashes to
+    site owners through the use of the Reporting API.
+  id: crash-reporting
+  issue: 288
+  position: positive
+  rationale: This seems like it could be a useful addition to the reporting API.  We're
+    not yet confident what level of user consent is needed, but we can experiment
+    with that without changes to the specification.
+  url: https://wicg.github.io/crash-reporting/
+  venues:
+  - Proposal
+Credential Management Level 1:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1156047
+  caniuse: credential-management
+  description: This specification describes an imperative API enabling a website to
+    request a user’s credentials from a user agent, and to help the user agent correctly
+    store user credentials for future use.
+  id: credman
+  issue: 172
+  position: defer
+  rationale: Development of the specification seems to have stalled and it's also
+    not a priority for Mozilla.
+  url: https://w3c.github.io/webappsec-credential-management/
+  venues:
+  - W3C
+Cross-Origin Read Blocking (CORB):
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1459357
+  caniuse: null
+  description: Blocklist certain opaque responses based on MIME type and return an
+    'emptied' response instead.
+  id: corb
+  issue: 81
+  position: neutral
+  rationale: While this is an important aspect of a robust Spectre-defense, we would
+    like to see a safelist-based approach pursued, e.g., <a href="https://github.com/annevk/orb">Opaque
+    Response Blocking</a>.
+  url: https://chromium.googlesource.com/chromium/src/+/master/services/network/cross_origin_read_blocking_explainer.md
+  venues:
+  - Proposal
+Curve25519 in the Web Cryptography API:
+  bug: ''
+  caniuse: null
+  description: Add support for Curve25519 algorithms in the Web Cryptography API,
+    namely the signature algorithm Ed25519 and the key agreement algorithm X25519.
+  id: webcrypto-curve25519
+  issue: 271
+  position: positive
+  rationale: We are in favor of this work, but would like to see it have a path to
+    standardization.  When doing that, it may be worth reconsidering some of the "no
+    seatbelts" aspects of WebCrypto more generally, and perhaps adding other algorithms
+    as well.
+  url: https://github.com/tQsW/webcrypto-curve25519
+  venues:
+  - Proposal
+Custom elements:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1438627
+  caniuse: custom-elementsv1
+  description: A way to create new HTML elements implemented through JavaScript.
+  id: custom-elements
+  issue: 60
+  position: positive
+  rationale: A welcome successor to XBL!
+  url: https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements
+  venues:
+  - WHATWG
+Declarative Shadow DOM:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1712140
+  caniuse: null
+  description: Declarative creation of Shadow DOM is a new capability that allows
+    a webpage to be more fully constructed server side, without requiring JavaScript
+    to run.
+  id: declarative-shadow-dom
+  issue: 335
+  position: positive
+  rationale: This is a reasonable proposal which takes into account the various constraints
+    and security considerations that come with changing the HTML parser.
+  url: https://github.com/whatwg/html/pull/5465
+  venues:
+  - WHATWG
+Default Accessibility Semantics for Custom Elements:
+  bug: null
+  caniuse: null
+  description: This will allow custom elements to have "default" accessibility semantics,
+    analogous to how built-in elements have "implicit" or "native" semantics.
+  id: custom-elements-a11y
+  issue: 201
+  position: positive
+  rationale: This is an important addition to custom elements as otherwise they'd
+    have to publicly expose their internals in order to get accessibility correct.
+  url: https://github.com/whatwg/html/pull/4658
+  venues:
+  - WHATWG
+Digital Credentials:
+  bug: null
+  caniuse: null
+  description: The digital credentials API is an extension to the credential management
+    API that enables access to identity documentation that might be held in the user
+    agent or a wallet on the same device.
+  id: digital-credentials
+  issue: 1003
+  position: negative
+  rationale: This interface carries a significant risk of causing privacy problems
+    and could lead to unjustified exclusion of web users. Any solution in this area
+    needs to do more to manage these risks before it could be considered safe to deploy.
+  url: https://wicg.github.io/digital-credentials/
+  venues:
+  - Proposal
+Document Policy:
+  bug: null
+  caniuse: document-policy
+  description: Document policy allows content to define a policy that constrains embedded
+    content.
+  id: document-policy
+  issue: 327
+  position: neutral
+  rationale: The mechanism described provides sites greater control over embedded
+    content. Constraints are accepted by content or the browser does not load the
+    content. This ensures that policies are effective without risk of content breaking
+    in inexplicable ways due to those policies. The specification needs a lot more
+    work, but no significant problems are apparent or anticipated.
+  url: https://w3c.github.io/webappsec-feature-policy/document-policy.html
+  venues:
+  - W3C
+Encrypted Server Name Indication for TLS 1.3:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1494901
+  caniuse: null
+  description: This document defines a simple mechanism for encrypting the Server
+    Name Indication for TLS 1.3.
+  id: tls-esni
+  issue: 139
+  position: positive
+  rationale: This feature enables encryption of the server name in connection attempts.
+    It provides much-needed protection against attempts by network observers to see
+    what people are doing. This work is complementary with efforts to encrypt DNS
+    requests that we are also driving.
+  url: https://datatracker.ietf.org/doc/html/draft-ietf-tls-esni
+  venues:
+  - IETF
+Event Timing API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1667836
+  caniuse: null
+  description: This specification defines APIs for observing latency of certain events
+    triggered by user interaction.
+  id: event-timing-api
+  issue: 283
+  position: positive
+  rationale: This feature grants web authors insights about the latency of certain
+    events triggered by user interaction. This API reports the timestamp of when the
+    event was created, when the browser started to process the event, when the browser
+    finished to process the event and the next frame rendering time (which represented
+    when the content of the event was presented on screen). We believe this is useful
+    for web authors to learn more about user engagement.
+  url: https://wicg.github.io/event-timing/
+  venues:
+  - Proposal
+Federated Credential Management API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1782066
+  caniuse: null
+  description: A Web Platform API that allows users to login to websites with their
+    federated accounts in a privacy preserving manner.
+  id: fedcm
+  issue: 618
+  position: positive
+  rationale: 'Federated login is a widely-used feature on the web with significant
+    user benefits in usability and security.  Unfortunately, federated identity on
+    the web relies on the same techniques that are used to track web users.  The Federated
+    Credential Management API puts the browser in control of managing cross-site logins.  Browsers
+    can use this API as a way to give web users better ability to control and monitor
+    how their identity - and any information related to their identity - is exchanged
+    between sites.  Including the browser in a mediating role will adversely affect
+    some cross-site interactions, in some cases making them less efficient or even
+    less usable.  However, Mozilla considers it imperative that this change occur
+    so that users can be granted control - and awareness - of all instances where
+    their information is transferred between sites.  This proposal provides browsers
+    with the opportunity to provide these capabilities.  Note that Mozilla also wants
+    to acknowledge an important privacy compromise in the proposal: identity providers
+    learn when and where the identity they provide is used.  Though alternative designs
+    might be technically possible, this approach recognizes the security benefits
+    gained by allowing identity providers the ability to audit logins.  Furthermore,
+    though this design enables an authorized identity to track cross-site activity,
+    it only does so with the direct permission and knowledge of users.'
+  url: https://fedidcg.github.io/FedCM/
+  venues:
+  - Proposal
+Fetch Metadata Request Headers:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1508292
+  caniuse: null
+  description: This document defines a set of Fetch metadata request headers that
+    aim to provide servers with enough information to make a priori decisions about
+    whether or not to service a request based on the way it was made, and the context
+    in which it will be used.
+  id: fetch-metadata
+  issue: 88
+  position: positive
+  rationale: This gives servers useful context about requests that can be used to
+    mitigate various security issues. The existing setup for embed/object elements
+    gave some tough design challenges for this feature that were satisfactorily resolved.
+    (There's also a reasonable expectation to be able to simplify these elements going
+    forward.)
+  url: https://github.com/w3c/webappsec-fetch-metadata
+  venues:
+  - W3C
+File Handling:
+  bug: null
+  caniuse: null
+  description: This proposal gives web applications a way to register their ability
+    to handle (read, stream, edit) files with given MIME types and/or file extensions.
+  id: wicg-file-handling
+  issue: 158
+  position: defer
+  rationale: Not far enough along to properly evaluate.
+  url: https://github.com/WICG/file-handling/blob/master/explainer.md
+  venues:
+  - Proposal
+File System:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1748667
+  caniuse: null
+  description: File System defines infrastructure for file systems as well as their
+    API.
+  id: fs
+  issue: 562
+  position: positive
+  rationale: A storage endpoint with a POSIX-like file system API is a valuable addition
+    to the web platform.
+  url: https://fs.spec.whatwg.org/
+  venues:
+  - WHATWG
+File System Access:
+  bug: null
+  caniuse: native-filesystem-api
+  description: This document defines a web platform API that lets websites gain write
+    access to the local file system. It builds on File API, but adds lots of new functionality
+    on top.
+  id: native-file-system
+  issue: 154
+  position: negative
+  rationale: There's a subset of this API we're quite enthusiastic about (in particular
+    providing a read/write API for files and directories as alternative storage endpoint),
+    but it is wrapped together with aspects for which we do not think meaningful end
+    user consent is possible to obtain (in particular cross-site access to the end
+    user's local file system). Overall we consider this harmful therefore, but Mozilla
+    could be supportive of parts, provided this were segmented better.
+  url: https://wicg.github.io/file-system-access/
+  venues:
+  - Proposal
+First-Party Sets:
+  bug: null
+  caniuse: null
+  description: This document proposes a new web platform mechanism to declare a collection
+    of related domains as being in a First-Party Set.
+  id: first-party-sets
+  issue: 350
+  position: negative
+  rationale: We believe the definition of first party should be clear and understandable
+    to users, web developers, and publishers, and thus ideally it should be based
+    only on the top-level URL.  While we can't quite do that today because it isn't
+    compatible with all sites, we'd like to move towards doing that, rather than standardizing
+    a mechanism that moves away from that.  See <a href="https://github.com/privacycg/proposals/issues/17#issuecomment-641687052">more
+    details</a>.
+  url: https://github.com/WICG/first-party-sets
+  venues:
+  - Proposal
+Form Participation API:
+  bug:
+  - https://bugzilla.mozilla.org/show_bug.cgi?id=1518442
+  - https://bugzilla.mozilla.org/show_bug.cgi?id=1552327
+  caniuse: null
+  description: An API to enable objects other than built-in form control elements
+    to participate in form submission, form validation, and so on.
+  id: form-participation-api
+  issue: 150
+  position: positive
+  rationale: These propose what seems likely to be a useful addition to allow custom
+    controls to participate in form validation and submission.
+  url: https://github.com/whatwg/html/pull/4383
+  venues:
+  - WHATWG
+Fragmention:
+  bug: null
+  caniuse: null
+  description: A proposal for using URL fragments with spaces in them to select a
+    bit of text to highlight and scroll to
+  id: fragmention
+  issue: 234
+  position: positive
+  rationale: We feel that some of the use cases this proposal addresses are very important
+    to address, but worry about the lack of a clear processing model and about possible
+    compat constraints that may need implementation experience to fully understand.  More
+    details are in the position issue.  See also the <a href="#scroll-to-text-fragment">position
+    on Scroll to Text Fragment</a>, which aims to address similar use cases.
+  url: https://indieweb.org/fragmention
+  venues:
+  - Proposal
+Generic Sensor API:
+  bug: null
+  caniuse: null
+  description: This specification defines a framework for exposing sensor data to
+    the Open Web Platform in a consistent way. It does so by defining a blueprint
+    for writing specifications of concrete sensors along with an abstract Sensor interface
+    that can be extended to accommodate different sensor types.
+  id: generic-sensor
+  issue: 35
+  position: negative
+  rationale: The purpose of most sensors and their associated risks are incredibly
+    hard to convey to users, which means we cannot get informed consent. We are interested
+    in addressing the use cases websites need sensors for in ways that do not give
+    websites access to the sensors directly as that is rife with security and privacy
+    issues.
+  url: https://w3c.github.io/sensors/
+  venues:
+  - W3C
+Geolocation Sensor:
+  bug: null
+  caniuse: null
+  description: This specification defines the GeolocationSensor interface for obtaining
+    the geolocation of the hosting device.
+  id: geolocation-sensor
+  issue: 36
+  position: negative
+  rationale: Given that the web already has a geolocation API, any additional API
+    for the same purpose would have to meet a high bar as both will need to be maintained
+    forever. While the document claims to improve security and privacy, there is no
+    evidence that is the case. And as it can be largely polyfilled on top of the existing
+    API, it seems better to invest in web platform geolocation additions there, if
+    any.
+  url: https://w3c.github.io/geolocation-sensor/
+  venues:
+  - W3C
+Get Installed Related Apps API:
+  bug: null
+  caniuse: mdn-api_navigator_getinstalledrelatedapps
+  description: The Get Installed Related Apps API allows web apps to detect if related
+    apps are installed on the current device.
+  id: get-installed-related-apps
+  issue: 213
+  position: negative
+  rationale: This feature increases the fingerprinting surface of browsers without
+    sufficient safeguards.
+  url: https://wicg.github.io/get-installed-related-apps/spec
+  venues:
+  - Proposal
+Global Privacy Control (GPC):
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1848951
+  caniuse: null
+  description: This spec defines a signal that conveys a person's request to websites
+    and services to not sell or share their personal information with third parties.
+  id: gpc
+  issue: 867
+  position: positive
+  rationale: This signal defined in this specification provides users with a way to
+    opt-out of the disclosure of their information to third parties once per profile
+    in a way that is legally enforced in some jurisdictions, and is being considered
+    in future regulations.
+  url: https://privacycg.github.io/gpc-spec/
+  venues:
+  - Proposal
+HTML Imports:
+  bug: null
+  caniuse: imports
+  description: HTML Imports are a way to include and reuse HTML documents in other
+    HTML documents.
+  id: html-imports
+  issue: 60
+  position: negative
+  rationale: Mozilla anticipated that JavaScript modules would change the landscape
+    here and would rather invest in evolving that, e.g., through HTML Modules. Having
+    a single mechanism to deal with dependencies rather than several, potentially
+    conflicting systems, seems preferable.
+  url: https://www.w3.org/TR/2016/WD-html-imports-20160225
+  venues:
+  - W3C
+HTML Modules:
+  bug: null
+  caniuse: null
+  description: An extension of the ES6 Script Modules system to include HTML Modules.
+    These will allow web developers to package and access declarative content from
+    script in a way that allows for good componentization and reusability, and integrates
+    well into the existing ES6 Modules infrastructure.
+  id: html-modules
+  issue: 137
+  position: positive
+  rationale: null
+  url: https://github.com/w3c/webcomponents/blob/gh-pages/proposals/html-modules-explainer.md
+  venues:
+  - WHATWG
+HTML autofocus attribute overhaul:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1574435
+  caniuse: null
+  description: Overhaul the <code>autofocus</code> processing model to better match
+    browser behavior, fit better within the specification ecosystem, and avoid bad
+    results for users.
+  id: autofocus-overhaul
+  issue: 195
+  position: positive
+  rationale: null
+  url: https://github.com/whatwg/html/pull/4763
+  venues:
+  - WHATWG
+HTMLVideoElement.requestVideoFrameCallback():
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1800882
+  caniuse: mdn-api_htmlvideoelement_requestvideoframecallback
+  description: <video>.requestVideoFrameCallback() allows web authors to be notified
+    when a frame has been presented for composition.
+  id: requestVideoFrameCallback
+  issue: 250
+  position: positive
+  rationale: This is intended to allow web authors to do efficient per-video-frame
+    processing of video, such as video processing and painting to a canvas, video
+    analysis, or synchronization with external audio sources.
+  url: https://wicg.github.io/video-rvfc
+  venues:
+  - Proposal
+HTTP Cache-Control Extensions for Stale Content:
+  bug: null
+  caniuse: null
+  description: This document defines two independent HTTP Cache-Control extensions
+    that allow control over the use of stale responses by caches. This document is
+    not an Internet Standards Track specification; it is published for informational
+    purposes.
+  id: http-stale-controls
+  issue: 144
+  position: positive
+  rationale: The stale-while-revalidate cache control extension appears to provide
+    improved user experience with no obvious drawbacks. We take no position on the
+    other mechanisms in RFC 5861 at this time.
+  url: https://datatracker.ietf.org/doc/html/rfc5861
+  venues:
+  - Proposal
+HTTP Client Hints:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=935216
+  caniuse: client-hints-dpr-width-viewport
+  description: An increasing diversity of Web-connected devices and software capabilities
+    has created a need to deliver optimized content for each device. This specification
+    defines an extensible and configurable set of HTTP request header fields, colloquially
+    known as Client Hints, to address this. They are intended to be used as input
+    to proactive content negotiation; just as the Accept header field allows user
+    agents to indicate what formats they prefer, Client Hints allow user agents to
+    indicate device and agent specific preferences.
+  id: http-client-hints
+  issue: 79
+  position: neutral
+  rationale: 'Architecturally, Mozilla prefers client-side solutions for retrieving
+    alternate versions of content, such as the HTML <picture> tag. Despite these architectural
+    preferences, we find that Client-Hints do not present a concrete harm to the web
+    or to its users. '
+  url: https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-client-hints
+  venues:
+  - IETF
+Idle Detection API:
+  bug: ''
+  caniuse: null
+  description: This document defines a web platform API for observing system-wide
+    user presence signals.
+  id: idle-detection-api
+  issue: 453
+  position: negative
+  rationale: We are concerned about the user-surveillance, user-manipulation, and
+    abuse of user resources potential of this API, despite the required 60 second
+    mitigation. Additionally it seems to be an unnecessarily powerful approach for
+    the motivating use-cases, which themselves are not even clear they are worth solving,
+    as pointed out in <a href="https://lists.webkit.org/pipermail/webkit-dev/2020-October/031562.html">https://lists.webkit.org/pipermail/webkit-dev/2020-October/031562.html</a>
+  url: https://wicg.github.io/idle-detection/
+  venues:
+  - Proposal
+Imperative Shadow DOM Distribution API:
+  bug: null
+  caniuse: null
+  description: The imperative slotting API allows the developer to explicitly set
+    the assigned nodes for a slot element.
+  id: imperative-shadow-dom
+  issue: 409
+  position: positive
+  rationale: The proposal is a relatively small addition to the existing Shadow DOM
+    API and can make it easier to use Shadow DOM.
+  url: https://github.com/w3c/webcomponents/blob/gh-pages/proposals/Imperative-Shadow-DOM-Distribution-API.md
+  venues:
+  - WHATWG
+Import Assertions:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1648614
+  caniuse: null
+  description: The Import Assertions and JSON modules proposal adds an inline syntax
+    for module import statements to pass on more information alongside the module
+    specifier, and an initial application for such attributes in supporting JSON modules
+    in a common way across JavaScript environments.
+  id: import-attributes
+  issue: 373
+  position: positive
+  rationale: This proposal enables the importing of JSON content into a JS module.
+    This mechanism is a prerequisite for HTML/CSS/JSON modules.
+  url: https://tc39.es/proposal-import-assertions/
+  venues:
+  - Ecma
+Import Maps:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1688879
+  caniuse: import-maps
+  description: Import maps allow web pages to control the behavior of JavaScript imports.
+  id: import-maps
+  issue: 146
+  position: positive
+  rationale: We support the overall intent of the proposal and consider it worth prototyping.
+    There are a few technical details that may require some care, in particular the
+    relationship between speculative parsing and dynamic import maps.
+  url: https://wicg.github.io/import-maps/
+  venues:
+  - Proposal
+Incrementally Better Cookies:
+  bug: null
+  caniuse: null
+  description: This document proposes a few changes to cookies inspired by the properties
+    of the HTTP State Tokens mechanism.  First, cookies should be treated as "SameSite=Lax"
+    by default.  Second, cookies that explicitly assert "SameSite=None" in order to
+    enable cross-site delivery should also be marked as "Secure".  Third, same-site
+    should take the scheme of the sites into account.  Fourth, cookies should respect
+    schemes.  Fifth, cookies associated with non-secure schemes should be removed
+    at the end of a user's session.  Sixth, the definition of a session should be
+    tightened.
+  id: cookie-incrementalism
+  issue: 260
+  position: positive
+  rationale: Any approach that reduces the scope of cookie use is a security and privacy
+    win. Because some such changes can break websites that rely on the broader scope,
+    we would like to proceed with caution, but believe that the feature is worth experimenting
+    with and collecting data about.
+  url: https://datatracker.ietf.org/doc/html/draft-west-cookie-incrementalism
+  venues:
+  - Proposal
+IntersectionObserver V2:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1896900
+  caniuse: null
+  description: IntersectionObserver extension for occlusion detection / clickjacking
+    prevention.
+  id: intersectionobserver-v2
+  issue: 109
+  position: positive
+  rationale: Security positive, interop concerns are being addressed.
+  url: https://github.com/w3c/IntersectionObserver/pull/523
+  venues:
+  - W3C
+Invokers:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1856430
+  caniuse: null
+  description: Invokers allow authors to assign behaviour to buttons in a more accessible
+    and declarative way.
+  id: invokers
+  issue: 902
+  position: positive
+  rationale: This proposal reduces the need for JavaScript for pages to build interactive
+    elements. Using invokers is more likely to result in good accessibility and device-independence
+    than existing methods.
+  url: https://github.com/whatwg/html/pull/9841
+  venues:
+  - WHATWG
+JPEG-XL:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1539075
+  caniuse: jpegxl
+  description: The JPEG XL Image Coding System (ISO/IEC 18181) has a rich feature
+    set and is particularly optimised for responsive web environments, so that content
+    renders well on a wide range of devices. Moreover, it includes several features
+    that help transition from the legacy JPEG format.
+  id: jpegxl
+  issue: 522
+  position: neutral
+  rationale: JPEG-XL includes features and performance that might differentiate it
+    from other formats, but the benefits it provides are not significant enough on
+    their own to justify the cost of adding another raster image format to the Web.
+  url: https://www.iso.org/standard/77977.html?browse=tc
+  venues:
+  - Other
+Keyboard Map:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1469017
+  caniuse: mdn-api_keyboardlayoutmap
+  description: This specification defines an API that allows websites to convert from
+    a given code value to a valid key value that can be shown to the user to identify
+    the given key. The conversion from code to key is based on the user’s currently
+    selected keyboard layout. It is intended to be used by web applications that want
+    to treat the keyboard as a set of buttons and need to describe those buttons to
+    the user.
+  id: keyboard-map
+  issue: 300
+  position: negative
+  rationale: We're concerned that this exposes keyboard layouts, which seem likely
+    to be a significant source of fingerprinting data, in a way that does not require
+    any user interaction.
+  url: https://wicg.github.io/keyboard-map/
+  venues:
+  - Proposal
+Largest Contentful Paint API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1722322
+  caniuse: null
+  description: This specification defines an API that allows web page authors to monitor
+    the largest paint an element triggered on screen.
+  id: largest-contentful-paint
+  issue: 191
+  position: positive
+  rationale: We are aware the concerns about this API such as the heuristic isn't
+    perfect, however, we believe this is the area we should explore and there are
+    positive signs from this API such that it has the best correlation with SpeedIndex.
+  url: https://wicg.github.io/largest-contentful-paint/
+  venues:
+  - Proposal
+Layout Instability API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1651528
+  caniuse: null
+  description: This specification defines an API that provides web page authors with
+    insights into the stability of their pages based on movements of the elements
+    on the page.
+  id: layout-instability
+  issue: 374
+  position: positive
+  rationale: We're somewhat uneasy about the potential burden that this feature imposes
+    on sites that don't use it, due to the requirements of the "buffered" flag.  However,
+    setting that reservation aside, we think this sort of feature is worth exploring.  We've
+    filed spec issues on that reservation and on some other points that need clarity.
+  url: https://wicg.github.io/layout-instability/
+  venues:
+  - Proposal
+Lazy loading:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1542784
+  caniuse: loading-lazy-attr
+  description: Enabling images and iframes to be fetched at a later time, when the
+    user is likely to look at them.
+  id: loading-lazy-attr
+  issue: 151
+  position: positive
+  rationale: 'As currently specified in HTML this is a reasonable addition to how
+    images and iframes are fetched. '
+  url: https://html.spec.whatwg.org/multipage/urls-and-fetching.html#lazy-loading-attributes
+  venues:
+  - WHATWG
+Let 'localhost' be localhost.:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1220810
+  caniuse: null
+  description: This document updates RFC 6761 with the goal of ensuring that "localhost"
+    can be safely relied upon as a name for the local host's loopback interface. To
+    that end, stub resolvers are required to resolve localhost names to loopback addresses.
+    Recursive DNS servers are required to return "NXDOMAIN" when queried for localhost
+    names, making non-conformant stub resolvers more likely to fail and produce problem
+    reports that result in updates. Together, these requirements would allow applications
+    and specifications to join regular users in drawing the common-sense conclusions
+    that "localhost" means "localhost", and doesn't resolve to somewhere else on the
+    network.
+  id: let-localhost-be-localhost
+  issue: 121
+  position: positive
+  rationale: The proposal, to the extent it applies to browsers, is to hardcode localhost
+    to always resolve to a loopback address instead of invoking the resolver library
+    to perform such translation. Since browsers (including Firefox) treat files hosted
+    on localhost to be more privileged than remote content, this proposal seems to
+    be a good belt-and-suspenders approach to prevent certain exploits.
+  url: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-let-localhost-be-localhost
+  venues:
+  - IETF
+Locale Extensions:
+  bug: null
+  caniuse: null
+  description: Exposes to the Web user preferences for hour cycle, first day of week,
+    temperature unit, numbering system, and calendar system overriding values implied
+    by language-region pair
+  id: locale-extensions
+  issue: 844
+  position: negative
+  rationale: Use cases have legitimacy, but they don't seem strong enough to justify
+    the additional fingerprinting surface. Addressing fingerprinting, if even possible,
+    would likely to involve disproportionate design, engineering, and UI surface relative
+    to the utility.
+  url: https://github.com/ben-allen/locale-extensions/
+  venues:
+  - Proposal
+Long Animation Frame API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1348405
+  caniuse: null
+  description: This specification defines APIs for reporting information for frames
+    that take a long time to render.
+  id: long-animation-frame-api
+  issue: 929
+  position: positive
+  rationale: This feature allows web developers to measure frame congestion and jank,
+    and has a correlation with how user perceive this type of congestion. Web developers
+    can use this API to improve the perceived performance of their pages.
+  url: https://w3c.github.io/longtasks/#sec-loaf-timing
+  venues:
+  - Proposal
+Low-level (Raw) Sockets API:
+  bug: null
+  caniuse: null
+  description: This describes APIs for TCP and UDP communication with arbitrary hosts
+  id: low-level-sockets
+  issue: 431
+  position: negative
+  rationale: This API creates a way to circumvent protections, in particular the same-origin
+    policy, that have been developed to protect these services. The safeguards outlined
+    in the explainer are inadequate and incomplete. Relying on user consent is not
+    a sufficient safeguard if this capability were to be exposed to the web.
+  url: https://github.com/WICG/raw-sockets/blob/master/docs/explainer.md
+  venues:
+  - Proposal
+Managed Media Source:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1844342
+  caniuse: null
+  description: This proposal extends Media Source Extension objects with a number
+    of features that allow web applications to be more efficient in terms of power
+    usage and memory.
+  id: managed-media-source
+  issue: 845
+  position: positive
+  rationale: This opt-in feature of Media Source Extension allows implementations
+    to reclaim memory when needed, and to allows scheduling download of media data
+    when it's best to do so in terms of power usage. This is especialy important on
+    mobile. This has the potential to improve the experience of media playback on
+    low-power devices, but also generally allows web applications to use resources
+    more efficiently.
+  url: https://github.com/w3c/media-source/issues/320
+  venues:
+  - W3C
+Media Feeds:
+  bug: null
+  caniuse: null
+  description: This specification enables web developers to show personalized media
+    recommendations on the browser UI.
+  id: media-feeds
+  issue: 370
+  position: negative
+  rationale: Media feeds uses harmful technologies to amplify a harmful feature. Many
+    of the capabilities this enables are available to sites in other ways. For those
+    capabilities that are not, extensions to the <a href="https://w3c.github.io/mediasession/">Media
+    Session API</a> would be preferable.
+  url: https://wicg.github.io/media-feeds/
+  venues:
+  - Proposal
+Media Session Standard:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1112032
+  caniuse: null
+  description: This specification enables web developers to show customized media
+    metadata on platform UI, customize available platform media controls, and access
+    platform media keys such as hardware keys found on keyboards, headsets, remote
+    controls, and software keys found in notification areas and on lock screens of
+    mobile devices.
+  id: media-session
+  issue: 28
+  position: positive
+  rationale: This API allows sites to offer users common media controls, which improves
+    usability of media playback sites.
+  url: https://w3c.github.io/mediasession/
+  venues:
+  - W3C
+MediaStreamTrack Content Hints:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1831521
+  caniuse: mdn-api_mediastreamtrack_contenthint
+  description: This specification extends MediaStreamTrack to let web applications
+    provide an optional media-content hint attribute. This helps sinks like RTCPeerConnection
+    or MediaRecorder select encoder parameters and processing algorithms appropriately
+    based on a hint about the nature of the content being consumed without having
+    to examine the actual content.
+  id: mst-content-hint
+  issue: 101
+  position: positive
+  rationale: Content Hints is a welcome higher-level abstraction that does not require
+    broad knowledge and tuning of video encoder, audio-processing, and congestion
+    controls directly. Early concerns over lack of specificity around how hints interact
+    with the lower-level controls they complement have been addressed.
+  url: https://w3c.github.io/mst-content-hint/
+  venues:
+  - W3C
+Mixed Content:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1779757
+  caniuse: null
+  description: This specification describes how a user agent should handle fetching
+    of content over unencrypted or unauthenticated connections in the context of an
+    encrypted and authenticated document.
+  id: mixed-content
+  issue: 668
+  position: positive
+  rationale: Managing mixed content has been an important cornerstone of the migration
+    to more HTTPS. The level 2 spec is an important step towards more HTTPS adoption
+    and has the potential to also improve the user experience on sites with accidentally
+    mixed content.
+  url: https://w3c.github.io/webappsec-mixed-content/
+  venues:
+  - W3C
+Navigation API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1777171
+  caniuse: null
+  description: The navigation API provides a web application-focused way of managing
+    same-origin same-frame history entries and navigations.
+  id: navigation-api
+  issue: 543
+  position: positive
+  rationale: This API is a good improvement for implementing SPAs over the status
+    quo. There are various details that we're not sure about in the spec and we'd
+    like to continue reviewing and submit feedback about issues we find.
+  url: https://github.com/whatwg/html/pull/8502
+  venues:
+  - WHATWG
+Network Error Logging:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1145235
+  caniuse: null
+  description: The Network Error Logging spec enables website to declare a reporting
+    policy that can be used to report encountered network errors that prevented it
+    from successfully loading its requested resources.
+  id: network-error-logging
+  issue: 99
+  position: negative
+  rationale: The API enables the collection of user-specific information that sites
+    might not otherwise be able to observe, which includes information that might
+    be private under some circumstances. Furthermore, the specification does not seem
+    to track changes to the Reporting API it builds upon and seems effectively unmaintained.
+  url: https://w3c.github.io/network-error-logging/
+  venues:
+  - W3C
+Network Information API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1057169
+  caniuse: netinfo
+  description: The Network Information API enables web applications to access information
+    about the network connection in use by the device.
+  id: netinfo
+  issue: 117
+  position: negative
+  rationale: This API provides information about a client's network connection, which
+    allows sites to obtain additional information about clients and their environment.
+    It is better that sites use methods that dynamically adapt to available bandwidth,
+    as that is more accurate and likely to be applicable in the moment.
+  url: https://wicg.github.io/netinfo
+  venues:
+  - Proposal
+Opaque Response Blocking (ORB):
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1532642
+  caniuse: null
+  description: Safelist certain opaque responses based on MIME type and block everything
+    else.
+  id: orb
+  issue: 860
+  position: positive
+  rationale: Our preferred approach to handle opaque responses when defending against
+    Spectre attacks.
+  url: https://github.com/annevk/orb
+  venues:
+  - Proposal
+Origin Policy:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1508290
+  caniuse: null
+  description: This specification defines a delivery mechanism for a number of policies
+    which are to be applied to an entire origin. It compliments header-based delivery
+    mechanisms for existing policies (Content Security Policy, Referrer Policy, etc).
+  id: origin-policy
+  issue: 160
+  position: positive
+  rationale: Giving developers the ability to set policies for an entire origin is
+    a powerful new primitive that will benefit security of applications as well as
+    performance due to the ability to bypass CORS preflights. The renewed effort to
+    make this happen takes a strong anti-tracking stance that is in line with our
+    efforts around privacy in Fetch, such as isolating the HTTP cache. Given this,
+    it seems worth figuring out if this can be made viable.
+  url: https://wicg.github.io/origin-policy/
+  venues:
+  - Proposal
+Origin-Keyed Agent Clusters:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1665474
+  caniuse: null
+  description: This feature allows for an agent cluster to be keyed by origin rather
+    than site.
+  id: domenic-origin-isolation
+  issue: 244
+  position: positive
+  rationale: Letting developers opt out of document.domain and reduce the potential
+    size of their agent cluster allows user agents to balance security, performance,
+    and resource management.
+  url: https://html.spec.whatwg.org/multipage/origin.html#origin-isolation
+  venues:
+  - WHATWG
+Payment Handler API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1465682
+  caniuse: null
+  description: This specification defines capabilities that enable Web applications
+    to handle requests for payment.
+  id: payment-handler
+  issue: 23
+  position: positive
+  rationale: The Payment Handler API has the potential to enable an open and secure
+    payments ecosystem for the Web. At the same time, we remain concerned about some
+    of the user interface requirements, and by the privacy and security assumptions
+    made in the specification. We've raised our concerns at the W3C, and are working
+    with the Payments working group to address those concerns. We hope that by prototyping
+    the API we will actively address the privacy, security, and UI concerns; and fix
+    those in the specification too. Additionally, having a working prototype will
+    allow us to closely collaborate with the developer community and financial industry.
+    By doing so, we will gain a better understanding of how we can solve the challenges
+    we'll face, were we to eventually ship this API.
+  url: https://w3c.github.io/payment-handler
+  venues:
+  - W3C
+Payment Method Manifest:
+  bug: null
+  caniuse: null
+  description: This specification defines the machine-readable manifest file, known
+    as a payment method manifest, describing how a payment method participates in
+    the Web Payments ecosystem, and how such files are to be used.
+  id: payment-method-manifest
+  issue: 22
+  position: defer
+  rationale: We'd like to defer this for the same reasons as Payment Handler, given
+    that it is closely related.
+  url: https://w3c.github.io/payment-method-manifest
+  venues:
+  - W3C
+Periodic Background Synchronization:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1547906
+  caniuse: background-sync
+  description: This specification describes a method that enables web applications
+    to synchronize data in the background.
+  id: periodic-background-sync
+  issue: 214
+  position: negative
+  rationale: We're concerned that this feature would allow users to be tracked across
+    networks (leaking private information about location and IP address and how they
+    change over time), and that it would allow script execution and resource consumption
+    when it isn't clear to the user that they're interacting with the site.  We might
+    reconsider this position given evidence that these concerns can be safely addressed,
+    however, addressing them for periodic background sync appears substantially harder
+    than doing so for one-off background sync.
+  url: https://github.com/WICG/BackgroundSync/blob/master/explainers/periodicsync-explainer.md
+  venues:
+  - Proposal
+Permissions:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1105827
+  caniuse: permissions-api
+  description: The Permissions Standard defines common infrastructure for other specifications
+    that need to interact with browser permissions. It also defines an API to allow
+    web applications to query and request changes to the status of a given permission.
+  id: permissions
+  issue: 19
+  position: positive
+  rationale: Mozilla believes that the ability to work with user permissions is critical
+    for user agency. There are certain aspects of the API that are not suitable for
+    the permissions model used in Firefox and so we would like to work on improving
+    several aspects of the API. In particular, we think that the way that status of
+    permissions needs to more accurately reflect the different states that exist or
+    could exist. We also think that the interactions with Feature Policy need to be
+    better clarified. We're committed to fixing this, because permissions has become
+    critical in making the web a more capable platform and it is important to ensure
+    that we preserve user control over their online experience.
+  url: https://w3c.github.io/permissions/
+  venues:
+  - W3C
+Permissions Policy:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1390801
+  caniuse: permissions-policy
+  description: This specification defines a mechanism that allows developers to selectively
+    enable and disable use of various browser features and APIs.
+  id: feature-policy
+  issue: 24
+  position: positive
+  rationale: Mozilla's primary interest in this specification is in the delegation
+    of permissions to third-party contexts that are not granted there by default.
+    To that end we have shipped the allow attribute. The recently revised Permissions-Policy
+    header seems worth prototyping and would allow for sites to impose restrictions
+    on themselves. We hope that the JavaScript API can be folded into the Permissions
+    API and have not evaluated the reporting functionality as of yet.
+  url: https://w3c.github.io/webappsec-permissions-policy/
+  venues:
+  - W3C
+Picture-in-Picture:
+  bug: null
+  caniuse: picture-in-picture
+  description: This specification intends to provide APIs to allow websites to create
+    a floating video window always on top of other windows so that users may continue
+    consuming media while they interact with other content sites, or applications
+    on their device.
+  id: picture-in-picture
+  issue: 72
+  position: defer
+  rationale: We ship Picture-in-Picture (PiP) as a feature in Firefox, but without
+    exposing a JavaScript API. We are evaluating if our PiP UI affordances are sufficient
+    for users and web applications. In the future, we may reconsider exposing the
+    API, which is why we have chosen to 'defer'.
+  url: https://wicg.github.io/picture-in-picture/
+  venues:
+  - Proposal
+Portals:
+  bug: null
+  caniuse: portals
+  description: This specification defines a mechanism that allows for rendering of,
+    and seamless navigation to, embedded content.
+  id: portals
+  issue: 157
+  position: defer
+  rationale: While we are deferring evaluation of this proposal, because per <a href="https://github.com/mozilla/standards-positions/issues/157#issuecomment-636217042">Domenic's
+    comment</a> it is in the early stages of development and it is too early to evaluate
+    fully, there are concerns (serious enough to mark it as harmful) that we would
+    like to see addressed as it develops.  Most significantly, it needs to explain
+    its interaction with the Web's storage mechanisms in a way that doesn't contribute
+    to third-party tracking or reduce the effectiveness of proposals designed to mitigate
+    such tracking (such as those that partition storage based on toplevel origins).  It
+    also needs to justify the (still undetermined) amount of complexity that it adds
+    to the web platform with sufficiently valuable use cases to justify that complexity.
+  url: https://wicg.github.io/portals/
+  venues:
+  - Proposal
+Prioritized Task Scheduling:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1734997
+  caniuse: null
+  description: This specification defines APIs for scheduling and controlling prioritized
+    tasks.
+  id: scheduling-api
+  issue: 546
+  position: positive
+  rationale: This feature is useful for web developers to provide a more responsive
+    experience to users.
+  url: https://wicg.github.io/scheduling-apis/
+  venues:
+  - Proposal
+Priority Hints:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1797715
+  caniuse: null
+  description: Specification of the Priority Hints feature.
+  id: priority-hints
+  issue: 606
+  position: positive
+  rationale: Priority hints allow sites to provide information about how subresources
+    on a page might be prioritized for fetching. This can allow the browser to override
+    parts of the internal prioritization heuristics that are used for resource fetching,
+    which could improve page load performance.
+  url: https://wicg.github.io/priority-hints/
+  venues:
+  - Proposal
+Private Access Tokens:
+  bug: null
+  caniuse: null
+  description: Private Access Tokens is the name given to the <a href=https://developer.apple.com/news/?id=huqjyh7k>integration</a>
+    of Privacy Pass mechanism into Apple's networking stack.
+  id: private-access-tokens
+  issue: 954
+  position: negative
+  rationale: This application of Privacy Pass fairly closely follows the IETF specification,
+    but the integration with the Web means that the effect is of a proprietary deployment.
+    A number of considerations relevant to use on the Web have not been adequately
+    addressed in the deployment.
+  url: https://datatracker.ietf.org/doc/html/draft-ietf-privacypass-auth-scheme
+  venues:
+  - Proposal
+Private Click Measurement:
+  bug: null
+  caniuse: null
+  description: This specification defines a privacy preserving way to attribute a
+    conversion, such as a purchase or a sign-up, to a previous ad click.
+  id: private-click-measurement
+  issue: 161
+  position: defer
+  rationale: We're interested in this specification in order to support a way for
+    a click source to measure conversions as a result of the user clicking on an ad
+    without sharing user-identifying information with the click source in the third-party
+    context.  However, we are waiting to take a position until the fraud preventions
+    that it depends on are specified and we can understand their properties.
+  url: https://privacycg.github.io/private-click-measurement/
+  venues:
+  - Proposal
+Private Network Access:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1481298
+  caniuse: null
+  description: This document specifies modifications to Fetch which are intended to
+    mitigate the risks associated with unintentional exposure of devices and servers
+    on a client’s internal network to the web at large.
+  id: cors-and-rfc1918
+  issue: 143
+  position: positive
+  rationale: While imperfect and arguably at odds with Internet architecture, localhost
+    and local networks of end users are vulnerable to attacks that this protocol will
+    help mitigate.
+  url: https://wicg.github.io/private-network-access/
+  venues:
+  - Proposal
+Private State Token API:
+  bug: null
+  caniuse: null
+  description: The Private State Token API is a web platform API that allows propagating
+    a limited amount of signals across sites, using the Privacy Pass protocol as an
+    underlying primitive.
+  id: private-state-token
+  issue: 262
+  position: negative
+  rationale: Private State Tokens provides sites with the means to exchange information
+    about visitors, using Privacy Pass to ensure that there are very tight bounds
+    on the rate of information transfer. We conclude that the usage constraints in
+    the design are insufficient to effectively safeguard privacy.
+  url: https://github.com/WICG/trust-token-api/blob/master/README.md
+  venues:
+  - Proposal
+Raw Clipboard Access:
+  bug: null
+  caniuse: null
+  description: Powerful web applications would like to exchange data with native applications
+    via the OS clipboard (copy-paste). The existing Web Platform has a high-level
+    API that supports the most popular standardized data types (text, image, rich
+    text) across all platforms. However, this API does not scale to the long tail
+    of specialized formats. In particular, non-web-standard formats like TIFF (a large
+    image format), and proprietary formats like .docx (a document format), are not
+    supported by the current Web Platform. Raw Clipboard Access aims to provide a
+    low-level API solution to this problem, by implementing copying and pasting of
+    data with any arbitrary Clipboard type, without encoding and decoding.
+  id: raw-clipboard-access
+  issue: 206
+  position: negative
+  rationale: The current proposal has significant risks of attacks on native applications.  Some
+    of these attacks may be mitigated by pickling or other similar solutions.  If
+    such a solution is incorporated, we would be willing to reevaluate this proposal.
+  url: https://github.com/WICG/raw-clipboard-access/
+  venues:
+  - Proposal
+Relative color syntax (CSS Color Module Level 5):
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1701488
+  caniuse: null
+  description: Relative color syntax (RCS) allows developers to create a range of
+    dynamic colors, starting from a base color, that will change as the base color
+    changes. Great for creating color palettes and schemes.
+  id: css-relative-color-syntax
+  issue: 841
+  position: positive
+  rationale: Enables more freedom for developers to make use of the new forms and
+    spaces introduced in CSS Color Module Level 4.
+  url: https://drafts.csswg.org/css-color-5/#relative-colors
+  venues:
+  - W3C
+Relative indexing method:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1658308
+  caniuse: null
+  description: A TC39 proposal to add an .at() method to all the basic indexable classes
+    (Array, String, TypedArray) which allows relative indexing of collection.
+  id: relative-indexing-method
+  issue: 458
+  position: positive
+  rationale: Relative indexing is useful for typed arrays and arrays and will be a
+    quality of life improvement for developers.
+  url: https://github.com/tc39/proposal-relative-indexing-method
+  venues:
+  - Ecma
+Reporting API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1620573
+  caniuse: null
+  description: This document defines a generic reporting framework which allows web
+    developers to associate a set of named reporting endpoints with an origin. Various
+    platform features can use these endpoints to deliver feature-specific reports
+    in a consistent manner.
+  id: reporting
+  issue: 104
+  position: positive
+  rationale: This is a reasonable generalization of the CSP reporting mechanism that
+    allows more features to adopt it.
+  url: https://w3c.github.io/reporting/
+  venues:
+  - W3C
+Restricting Document Access of Same Origin Documents:
+  bug: null
+  caniuse: null
+  description: A way to force an embedded document and descendants (regardless of
+    origin) into each having their own agent/event loop.
+  id: documentaccess
+  issue: 197
+  position: negative
+  rationale: Changing control flow of cross-origin documents without their consent
+    is not something we should expand upon (i.e., beyond what sandboxing allows) as
+    it could enable attack vectors. Furthermore, forcing same-origin documents in
+    the same browsing context group to be in different agents is a major architectural
+    change and this does not offer enough advantages to make such a change.
+  url: https://github.com/dtapuska/documentaccess
+  venues:
+  - Proposal
+Sanitizer API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1650370
+  caniuse: mdn-api_sanitizer
+  description: The Sanitizer API allows turning supplied HTML into a safe HTML DOM
+    tree
+  id: sanitizer-api
+  issue: 106
+  position: positive
+  rationale: This could be useful, since libraries exists and the browser could do
+    it better.
+  url: https://wicg.github.io/sanitizer-api/
+  venues:
+  - Proposal
+Scheme-Bound Cookies:
+  bug: null
+  caniuse: null
+  description: Reducing the scope of cookies by including the URL scheme in their
+    keying material as well as reducing the lifetime of non-secure cookies.
+  id: scheming-cookies
+  issue: 298
+  position: positive
+  rationale: Reducing the scope of cookies along this axis is a major win.
+  url: https://github.com/mikewest/scheming-cookies
+  venues:
+  - Proposal
+Screen Wake Lock API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1589554
+  caniuse: wake-lock
+  description: This document specifies an API that allows web applications to request
+    a screen wake lock. Under the right conditions, and if allowed, the screen wake
+    lock prevents the system from turning off a device's screen.
+  id: screen-wake-lock
+  issue: 210
+  position: positive
+  rationale: 'As the scope of the specification has been reduced to screen wake locks,
+    it''s worth prototyping this API in a manner that restricts it to foreground first-party
+    content. Additionally, the API appears flexible enough that a permission grant
+    can be performed asynchronously, allowing us to evaluate the most appropriate
+    permission model should we choose to ship this API in the future. As the API allows
+    the capability to be revoked at any time, we can also prototype eagerly granting,
+    notifying the user what''s going on, and allowing users to disable the capability
+    entirely - either per origin, or globally through a browser setting. There is
+    a risk that sites could abuse the API for the sake of engagement, which could
+    unnecessarily drain a device''s battery. It could also be a nuisance or be used
+    for social engineering attacks: such as disabling the system''s ability to password-lock
+    a device when the screen doesn''t switch off if the user leaves their device unattended.
+    Prototyping this capability would allow us to further evaluate how to best mitigate
+    the aforementioned concerns.'
+  url: https://w3c.github.io/wake-lock/
+  venues:
+  - W3C
+Scroll-driven Animations:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1676780
+  caniuse: null
+  description: Defines CSS properties and an API for creating animations that are
+    tied to the scroll offset of a scroll container.
+  id: scroll-animations
+  issue: 347
+  position: positive
+  rationale: Animations linked to scrolling is desired for some web applications or
+    web sites. A declarative solution allows for better user control and should be
+    easier to use for web developers.
+  url: https://drafts.csswg.org/scroll-animations-1/
+  venues:
+  - W3C
+Secondary Certificate Authentication in HTTP/2:
+  bug: null
+  caniuse: null
+  description: A use of TLS Exported Authenticators is described which enables HTTP/2
+    clients and servers to offer additional certificate-based credentials after the
+    connection is established. The means by which these credentials are used with
+    requests is defined.
+  id: http2-secondary-certs
+  issue: 175
+  position: positive
+  rationale: This specification enables client authentication in HTTP/2, which is
+    of some benefit. However, it is the server authentication that is most interesting
+    from a privacy perspective. There are some challenges that would need to be worked
+    through before this could be deployed in anything other than an experiment.
+  url: https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-http2-secondary-certs
+  venues:
+  - IETF
+Serial API (Add-On Gated):
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=webserial
+  caniuse: mdn-api_serial
+  description: The Serial API provides a way for websites to read and write from a
+    serial device through script. Such an API would bridge the web and the physical
+    world, by allowing documents to communicate with devices such as microcontrollers,
+    3D printers, and other serial devices. There is also a companion explainer document.
+  id: webserial
+  issue: 336
+  position: neutral
+  rationale: Devices that offer serial interfaces often expose powerful, low-level
+    functions over the interface with little or no authentication. Exposing that sort
+    of capability to the web without adequate safeguards presents a significant threat
+    to those devices. A user deliberately installing a site-specific add-on may be
+    adequate, given sufficiently understandable consent copy.
+  url: https://wicg.github.io/serial
+  venues:
+  - Proposal
+Service binding and parameter specification via the DNS (DNS SVCB and HTTPSSVC):
+  bug: null
+  caniuse: null
+  description: This document specifies the "SVCB" and "HTTPSSVC" DNS resource record
+    types to facilitate the lookup of information needed to make connections for origin
+    resources, such as for HTTPS URLs. SVCB records allow an origin to be served from
+    multiple network locations, each with associated parameters (such as transport
+    protocol configuration and keying material for encrypting TLS SNI). They also
+    enable aliasing of apex domains, which is not possible with CNAME. The HTTPSSVC
+    DNS RR is a variation of SVCB for HTTPS and HTTP origins. By providing more information
+    to the client before it attempts to establish a connection, these records offer
+    potential benefits to both performance and privacy.
+  id: dnsop-svcb-httpssvc
+  issue: 208
+  position: positive
+  rationale: While there are some details of the proposal that may require refining,
+    we beleive that this is a promising approach to support Encrypted SNI, and may
+    help improve user experience with HTTP/3.
+  url: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-svcb-httpssvc
+  venues:
+  - IETF
+ServiceWorker Static Routing API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1855580
+  caniuse: null
+  description: The initial proposal allows ServiceWorkers to define routes using URLPattern
+    to bypass the ServiceWorker, avoiding spurious ServiceWorker wake-ups and avoiding
+    the additional latency of sending requests to the ServiceWorker that it will not
+    handle.  Longer term, the mechanism could also support consulting the Cache API
+    without needing to wake up a ServiceWorker.
+  id: service-worker-static-routing-api
+  issue: 828
+  position: positive
+  rationale: A longstanding performance concern for ServiceWorkers and the sites using
+    them is that there is no way to skip going to a ServiceWorker for a controlled
+    page when there is a "fetch" handler present.  The Static Routing API has been
+    recognized as an ideal solution to address the problem versus other proposals
+    like adding new attributes to HTML tags or arguments to the fetch API.  The static
+    routing API had been discussed extensively in ServiceWorker WG meetings as a reasonable
+    option but very complex to implement and specify, which is why it was not part
+    of the original spec.  With the introduction of the URLPattern API, the Static
+    Routing API is thankfully even easier to implement and specify.  The evolutionary
+    approach where the Static Routing API will only start with a network source that
+    bypasses the ServiceWorker is appropriately pragmatic.
+  url: https://github.com/WICG/service-worker-static-routing-api/
+  venues:
+  - Proposal
+Shadow trees (formerly known as Shadow DOM):
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1438607
+  caniuse: shadowdomv1
+  description: A way to give a node in the DOM a hidden subtree in which the children
+    of the node can be inserted.
+  id: shadow-trees
+  issue: 60
+  position: positive
+  rationale: A welcome successor to XBL!
+  url: https://dom.spec.whatwg.org/#shadow-trees
+  venues:
+  - WHATWG
+Shared Storage:
+  bug: null
+  caniuse: null
+  description: Shared storage is storage for an origin that is intentionally not partitioned
+    by top-frame site. Storage may only be read in a restricted environment that has
+    carefully constructed output gates.
+  id: shared-storage
+  issue: 646
+  position: negative
+  rationale: Mozilla has significant concerns about the viability of the isolation
+    components of this design. The use cases presented do not, at this time, justify
+    the complexity and privacy risks associated with this proposal.
+  url: https://github.com/WICG/shared-storage
+  venues:
+  - Proposal
+Signed HTTP Exchanges:
+  bug: null
+  caniuse: sxg
+  description: This document specifies how a server can send an HTTP request/ response
+    pair, known as an exchange, with signatures that vouch for that exchange's authenticity.
+    These signatures can be verified against an origin's certificate to establish
+    that the exchange is authoritative for an origin even if it was transferred over
+    a connection that isn't. The signatures can also be used in other ways described
+    in the appendices. These signatures contain countermeasures against downgrade
+    and protocol-confusion attacks.
+  id: http-origin-signed-responses
+  issue: 29
+  position: negative
+  rationale: Mozilla has concerns about the shift in the web security model required
+    for handling web-packaged information. Specifically, the ability for an origin
+    to act on behalf of another without a client ever contacting the authoritative
+    server is worrisome, as is the removal of a guarantee of confidentiality from
+    the web security model (the host serving the web package has access to plain text).
+    We recognise that the use cases satisfied by web packaging are useful, and would
+    be likely to support an approach that enabled such use cases so long as the foregoing
+    concerns could be addressed.
+  url: https://datatracker.ietf.org/doc/html/draft-yasskin-http-origin-signed-responses
+  venues:
+  - Proposal
+Storage Access API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1469714
+  caniuse: ''
+  description: The Storage Access API provides a means for authenticated cross-site
+    embeds to check their blocking status and request access to storage if they are
+    blocked.
+  id: storage-access-api
+  issue: 280
+  position: positive
+  rationale: In our current efforts to limit the impact of cross-site tracking there
+    are cases where we may unintentionally break parts of web pages that users depend
+    on. The storage access API provides a programmatic way for affected embedded content
+    to fix these types of broken experiences for the user.  Also, in our upcoming
+    efforts to limit the potential capabilities for unknown third-parties to track
+    the user, we would like to continue to restrict the storage capabilities of the
+    third-party context. The storage access API similarly provides a programmatic
+    path for the embedded widgets which cannot work correctly without access to their
+    data.  It isn't an ideal solution, for example our implementation falls back to
+    prompting the user if it cannot automatically determine whether access should
+    be granted or not, but it is a step in the right direction in the game of reversing
+    the current defaults of the web, that is granting permissive storage access rights
+    to all third-party contexts unconditionally.
+  url: https://github.com/privacycg/storage-access
+  venues:
+  - Proposal
+Storage Buckets API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1594740
+  caniuse: null
+  description: The Storage Buckets API provides a way for sites to organize locally
+    stored data into groupings called "storage buckets". This allows the user agent
+    or sites to manage and delete buckets independently rather than applying the same
+    treatment to all the data from a single origin.
+  id: storage-buckets
+  issue: 475
+  position: positive
+  rationale: Data clearing on storage pressure is fundamentally limited by the current
+    single "default" storage bucket per origin and an all-or-nothing persistent flag
+    for that bucket.  As use of ServiceWorkers continues to increase and sites store
+    or cache more data, a primitive that makes it easier for sites to store their
+    data more granularly and for browsers to clear it more granularly is essential,
+    especially for devices with limited storage and/or heavy storage uses outside
+    of the browser's own needs.
+  url: https://wicg.github.io/storage-buckets/
+  venues:
+  - Proposal
+Streams:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1128959
+  caniuse: streams
+  description: This specification provides APIs for creating, composing, and consuming
+    streams of data that map efficiently to low-level I/O primitives.
+  id: streams
+  issue: 70
+  position: positive
+  rationale: Streams are an important building block for many APIs, in particular
+    around networking and media.
+  url: https://streams.spec.whatwg.org
+  venues:
+  - WHATWG
+Structured Headers for HTTP:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1631722
+  caniuse: null
+  description: This document describes a set of data types and associated algorithms
+    that are intended to make it easier and safer to define and handle HTTP header
+    fields. It is intended for use by specifications of new HTTP header fields that
+    wish to use a common syntax that is more restrictive than traditional HTTP field
+    values.
+  id: structured-headers
+  issue: 256
+  position: positive
+  rationale: Use of structured headers promises to improve consistency and interoperability
+    of new HTTP header fields. Depending on further security analysis, we may upgrade
+    this feature to 'important' in the future.
+  url: https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-header-structure
+  venues:
+  - IETF
+Structured cloning of errors:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1556604
+  caniuse: null
+  description: Serializing and deserializing JavaScript Error objects.
+  id: errors-structured-cloning
+  issue: 165
+  position: positive
+  rationale: Good extension to the object serialization algorithm (StructuredSerializeInternal)
+    as currently there is no way to serialize errors.
+  url: https://github.com/whatwg/html/issues/4268
+  venues:
+  - WHATWG
+TC39 Stage 3 Proposals:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1435811
+  caniuse: null
+  description: Stage 3 proposals add new features to the JavaScript language. Stage
+    3 indicates that a proposal has been accepted by implementations and other delegates
+    as ready to implement, as per the TC39 staging process.
+  id: tc39-stage-3
+  issue: 527
+  position: positive
+  rationale: Due to the structure of TC39, stage 3 signifies that a proposal is ready
+    to implement. Stage 3 proposals have been reviewed by the SpiderMonkey team and
+    more broadly within Gecko. Stage 2 proposals which require security/privacy review
+    or host integration require their own Mozilla Standards Position.
+  url: https://github.com/tc39/proposals#stage-3
+  venues:
+  - Ecma
+Text Fragments:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1753933
+  caniuse: url-scroll-to-text-fragment
+  description: A proposal for extending URL fragment syntax with a list of text bits
+    to highlight and scroll to.
+  id: scroll-to-text-fragment
+  issue: 194
+  position: positive
+  rationale: This is an important use case to address and the proposal does a good
+    job at mitigating the compatibility and security issues. As a result the syntax
+    is a tad inelegant, but workable. (See also the <a href="#fragmention">position
+    on Fragmention</a>, which aims to address similar use cases.)
+  url: https://wicg.github.io/scroll-to-text-fragment/
+  venues:
+  - Proposal
+The Popover API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1808823
+  caniuse: null
+  description: Adds the global popover attribute to declaratively make an element
+    be rendered on top of all other content and allow closing by the user (light dismiss).
+  id: popover
+  issue: 698
+  position: positive
+  rationale: A common paradigm on the web which would be good for accessibility and
+    developer ergonomics to support as a feature in HTML.
+  url: https://github.com/whatwg/html/pull/8221
+  venues:
+  - WHATWG
+The Topics API:
+  bug: null
+  caniuse: null
+  description: The goal of the Topics API is to provide callers with coarse-grained
+    advertising topics that the page visitor might currently be interested in.
+  id: topics
+  issue: 622
+  position: negative
+  rationale: Mozilla is unable to see a way to make the Topics API work from a privacy
+    standpoint. Though the information the API provides is small, our belief is that
+    this is more likely to reduce the usefulness of the information for advertisers
+    than it provides meaningful protection for privacy.  Unfortunately, it is hard
+    to identify concrete ways in which this might be improved.
+  url: https://github.com/patcg-individual-drafts/topics
+  venues:
+  - Proposal
+The WebTransport Protocol Framework:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1709355
+  caniuse: webtransport
+  description: The WebTransport Protocol Framework enables clients constrained by
+    the Web security model to communicate with a remote server using a secure multiplexed
+    transport. It consists of a set of individual protocols that are safe to expose
+    to untrusted applications, combined with a model that allows them to be used interchangeably.
+    This document defines the overall requirements on the protocols used in WebTransport,
+    as well as the common features of the protocols, support for some of which may
+    be optional.
+  id: webtransport
+  issue: 167
+  position: positive
+  rationale: We are generally in support of a mechanism that addresses the use cases
+    implied by this solution document. While major questions remain open at this time
+    -- notably, multiplexing, the API surface, and available statistics -- we think
+    that prototyping the proposed solution as details become more firm would be worthwhile.
+    We would like see the new WebSocketStream and WebTransport stream APIs to be developed
+    in concert with each other, so as to share as much design as possible.
+  url: https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview
+  venues:
+  - Proposal
+Top-Level Await:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1519100
+  caniuse: mdn-javascript_operators_await_top_level
+  description: 'Top-level await enables modules to act as big async functions: With
+    top-level await, ECMAScript Modules (ESM) can await resources, causing other modules
+    who import them to wait before they start evaluating their body.'
+  id: top-level-await
+  issue: 444
+  position: positive
+  rationale: An ergonomic way of handling modules that contain top level asynchronous
+    work.
+  url: https://github.com/tc39/proposal-top-level-await
+  venues:
+  - Ecma
+Transport Layer Security (TLS) Certificate Compression:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1548723
+  caniuse: null
+  description: In Transport Layer Security (TLS) handshakes, certificate chains often
+    take up the majority of the bytes transmitted. This document describes how certificate
+    chains can be compressed to reduce the amount of data transmitted and avoid some
+    round trips.
+  id: tls-certificate-compression
+  issue: 96
+  position: positive
+  rationale: Compression of certificates should provide some performance advantages.
+  url: https://datatracker.ietf.org/doc/html/draft-ietf-tls-certificate-compression
+  venues:
+  - IETF
+Trusted Types:
+  bug: null
+  caniuse: trusted-types
+  description: An API that allows applications to lock down powerful APIs to only
+    accept non-spoofable, typed values in place of strings to prevent vulnerabilities
+    caused by using these APIs with attacker-controlled inputs.
+  id: trusted-types
+  issue: 20
+  position: positive
+  rationale: Mozilla believes that preventing DOM-based XSS is an important security
+    goal. The track record of preventing DOM-based XSS is convincing. Dealing with
+    inscrutable third-party dependencies or external JavaScript has been a major concern
+    of security and enforcing reasonable boundaries is a promising approach. We have
+    some reservations about some features in the Chromium implementation, which need
+    to be validated and standardized or removed.
+  url: https://w3c.github.io/trusted-types/dist/spec/
+  venues:
+  - W3C
+URLPattern API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1731418
+  caniuse: mdn-api_urlpattern
+  description: The URLPattern API provides a web platform primitive for matching URLs
+    based on a convenient pattern syntax.
+  id: urlpattern
+  issue: 566
+  position: positive
+  rationale: URLPattern is an important primitive for the evolution of ServiceWorkers
+    through the introduction of the Static Routing API.  Similar to Web Locks which
+    evolved out of the ServiceWorkers Cache API, it is appropriate that URLPattern
+    be distinct from the Service Workers spec and WG as it is useful in other contexts
+    as well.
+  url: https://wicg.github.io/urlpattern/
+  venues:
+  - Proposal
+Unicode Emoji QID:
+  bug: null
+  caniuse: null
+  description: The QID Emoji Tag Sequences (or QID emoji, for short) have been proposed
+    to provide a well-defined mechanism for implementations to support additional
+    valid emoji that are not representable by Unicode characters or emoji zwj sequences.
+    This mechanism allows for the interchange of emoji whose meaning is discoverable,
+    and which should be correctly parsed by all conformant implementations (although
+    only displayed by implementations that support it). The meaning of each of these
+    valid emoji is established by reference to a Wikidata QID.
+  id: unicode-emoji-qid
+  issue: 233
+  position: negative
+  rationale: 'Mozilla has a number of concerns about this proposal, including: (a)
+    the lack of reference glyphs is likely to increase miscommunication between users;
+    (b) having a formal, versioned approval process provides synchronization between
+    implementors for adding new glyphs, and this proposal removes that; (c) QID glyphs
+    that are later adopted into Unicode would result in duplicate encodings, perhaps
+    in perpetuity; (d) gathering telemetry about the popularity of specific emoji
+    for the purposes of more formal codepoint assignments may cause privacy issues
+    and provides incumbent implementors a competitive advantage; and (e) there are
+    no barriers to abuse of the QID system to create non-emoji characters as a general
+    end-run around the Unicode process.'
+  url: https://www.unicode.org/review/pri408/pri408-tr51-QID.html
+  venues:
+  - Unicode
+User Agent Client Hints:
+  bug: null
+  caniuse: null
+  description: This document defines a set of Client Hints that aim to provide developers
+    with the ability to perform agent-based content negotiation when necessary, while
+    avoiding the historical baggage and passive fingerprinting surface exposed by
+    the venerable "User-Agent" header.
+  id: ua-client-hints
+  issue: 202
+  position: neutral
+  rationale: UA Client Hints proposes that information derived from the User-Agent
+    header field be sent as new structured fields to HTTPS servers that opt into receiving
+    that information. The goal is to reduce the number of parties that can passively
+    fingerprint users using UA fields. However, three of the new headers are sent
+    unconditionally in every HTTPS request without explicit opt-in. We would prefer
+    to progressively freeze the value of User-Agent HTTP header without replacement.
+    We acknowledge the performance trade-offs this might introduce, but note that
+    the performance characteristics of the proposed design are unclear and optimized
+    almost exclusively for the very first connection to a site. The overheads involved
+    add further uncertainty about performance as three new header fields are sent
+    in every HTTPS request, plus fields for any information a site requests using
+    the Accept-CH mechanism. Adding fields makes it more likely that server-side limits
+    on fields are exceeded, which - even if it is not be a problem now - future specifications
+    might be affected. Any benefit to edge caches from the use of the Vary mechanism
+    on the new headers is not realized unless all clients send these new headers.
+    For caching, we would prefer to explore other options that do not rely on all
+    clients sending the new fields. The proposed NavigatorUAData interface JS API
+    is preferable to use of header fields as it would better allow for auditing of
+    the use of the information.
+  url: https://wicg.github.io/ua-client-hints/
+  venues:
+  - Proposal
+UserActivation:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1791079
+  caniuse: null
+  description: The UserActivation API provides the ability to query whether the window
+    currently has or has previously had real user interaction.
+  id: user-activation
+  issue: 838
+  position: positive
+  rationale: This API exposes the sticky activation and transient activation concepts
+    which browsers use internally for, e.g., allowing popups. These concepts are useful
+    for web apps as well.
+  url: https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface
+  venues:
+  - WHATWG
+'Web Authentication: An API for accessing Public Key Credentials':
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1294514
+  caniuse: webauthn
+  description: This specification defines an API enabling the creation and use of
+    strong, attested, scoped, public key-based credentials by web applications, for
+    the purpose of strongly authenticating users. Conceptually, one or more public
+    key credentials, each scoped to a given WebAuthn Relying Party, are created by
+    and bound to authenticators as requested by the web application. The user agent
+    mediates access to authenticators and their public key credentials in order to
+    preserve user privacy. Authenticators are responsible for ensuring that no operation
+    is performed without user consent. Authenticators provide cryptographic proof
+    of their properties to Relying Parties via attestation. This specification also
+    describes the functional model for WebAuthn conformant authenticators, including
+    their signature and attestation functionality.
+  id: webauthn
+  issue: 163
+  position: positive
+  rationale: Public key cryptographic authentication is a major improvement in the
+    fight against phishing, and we encourage all security-conscious web applications
+    to implement authentication flows utilizing Web Authentication in the future.
+  url: https://w3c.github.io/webauthn/
+  venues:
+  - W3C
+Web Background Synchronization:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1547906
+  caniuse: background-sync
+  description: This specification describes a method that enables web applications
+    to synchronize data in the background.
+  id: background-sync
+  issue: 173
+  position: negative
+  rationale: We're concerned that this feature would allow users to be tracked across
+    networks (leaking private information about location and IP address and how they
+    change over time), and that it would allow script execution and resource consumption
+    when it isn't clear to the user that they're interacting with the site.  We might
+    reconsider this position given evidence that these concerns can be safely addressed.
+  url: https://wicg.github.io/BackgroundSync/spec
+  venues:
+  - Proposal
+Web Bluetooth:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=674737
+  caniuse: mdn-api_bluetooth
+  description: This document describes an API to discover and communicate with devices
+    over the Bluetooth 4 wireless standard using the Generic Attribute Profile (GATT).
+  id: web-bluetooth
+  issue: 95
+  position: negative
+  rationale: This API provides access to the Generic Attribute Profile (GATT) of Bluetooth,
+    which is not the lowest level of access that the specifications allow, but its
+    generic nature makes it impossible to clearly evaluate. Like <a href="#webusb">WebUSB</a>
+    there is significant uncertainty regarding how well prepared devices are to receive
+    requests from arbitrary sites. The generic nature of the API means that this risk
+    is difficult to manage. The Web Bluetooth CG has opted to only rely on user consent,
+    which we believe is not sufficient protection. This proposal also uses a blocklist,
+    which will require constant and active maintenance so that vulnerable devices
+    aren't exploited. This model is unsustainable and presents a significant risk
+    to users and their devices.
+  url: https://webbluetoothcg.github.io/web-bluetooth/
+  venues:
+  - Proposal
+Web Budget API:
+  bug: null
+  caniuse: null
+  description: This specification describes an API that can be used to retrieve the
+    amount of budget an origin has available for resource consuming background operations,
+    as well as the cost associated with doing such an operation.
+  id: budget-api
+  issue: 73
+  position: neutral
+  rationale: This specification is being abandoned.
+  url: https://wicg.github.io/budget-api/
+  venues:
+  - Proposal
+Web Codecs:
+  bug: null
+  caniuse: null
+  description: An API that allows web applications to encode and decode audio and
+    video
+  id: web-codecs
+  issue: 209
+  position: positive
+  rationale: This proposes a coherent set of APIs to address encoding and decoding
+    of video and audio, which is designed to be extensible, composable, and address
+    real use cases with good performance.
+  url: https://github.com/WICG/web-codecs
+  venues:
+  - Proposal
+Web GPU API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1602129
+  caniuse: webgpu
+  description: This specification describes support for accessing modern 3D graphics
+    and GPU computation capabilities on the Web.
+  id: webgpu
+  issue: 239
+  position: positive
+  rationale: We believe that WebGPU is key to enable more interactive and content-rich
+    applications on the Web than currently possible with WebGL. WebGPU can scale better
+    to the capabilities of GPUs with less overhead for users because it's modelled
+    after the intersection of the modern native GPU APIs, so allows developers to
+    express the GPU workloads more explicitly.
+  url: https://gpuweb.github.io/gpuweb/
+  venues:
+  - Proposal
+Web Locks API:
+  bug: ''
+  caniuse: null
+  description: This document defines a web platform API that allows script to asynchronously
+    acquire a lock over a resource, hold it while work is performed, then release
+    it. While held, no other script in the origin can acquire a lock over the same
+    resource. This allows contexts (windows, workers) within a web application to
+    coordinate the usage of resources.
+  id: web-locks
+  issue: 64
+  position: positive
+  rationale: 'The specification provides important web platform primitives for same-global
+    and cross-global coordination and avoids requiring other APIs to grow their own
+    transaction abstractions (ex: the Service Worker spec''s Cache API).'
+  url: https://w3c.github.io/web-locks/
+  venues:
+  - W3C
+Web MIDI API (Add-On Gated):
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=836897
+  caniuse: midi
+  description: This specification defines an API supporting the MIDI (Musical Instrument
+    Digital Interface) protocol, enabling web applications to enumerate and select
+    MIDI input and output devices on the client system and send and receive MIDI messages.
+    It is intended to enable non-music MIDI applications as well as music ones, by
+    providing low-level access to the MIDI devices available on the users' systems.
+  id: webmidi
+  issue: 58
+  position: positive
+  rationale: This specification is a reasonable technical design for exposing MIDI
+    devices to JavaScript, which has some demonstrated use-cases in the market. MIDI
+    devices are not universally hardened against adversarial input (especially when
+    sysex is involved) so we don't believe this API is safe to expose in the casual
+    and low-trust context of ordinary websites. We therefore only expose it in Firefox
+    if the user has deliberately installed a site-specific add-on to enable the capability.
+  url: https://webaudio.github.io/web-midi-api/
+  venues:
+  - W3C
+Web NFC:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1308614
+  caniuse: webnfc
+  description: Near Field Communication (NFC) enables wireless communication between
+    two devices at close proximity, usually less than a few centimeters. This document
+    defines an API to enable selected use cases based on NFC technology. The current
+    scope of this specification is NDEF. Low-level I/O operations (e.g. ISO-DEP, NFC-A/B,
+    NFC-F) and Host-based Card Emulation (HCE) are not supported within the current
+    scope.
+  id: web-nfc
+  issue: 238
+  position: negative
+  rationale: We believe Web NFC poses risks to users security and privacy because
+    of the wide range of functionality of the existing NFC devices on which it would
+    be supported, because there is no system for ensuring that private information
+    is not accidentally exposed other than relying on user consent, and because of
+    the difficulty of meaningfully asking the user for permission to share or write
+    data when the browser cannot explain to the user what is being shared or written.
+  url: https://w3c.github.io/web-nfc/
+  venues:
+  - Proposal
+Web Share API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1312422
+  caniuse: web-share
+  description: This specification defines an API for sharing text, links and other
+    content to an arbitrary destination of the user's choice.The available share targets
+    are not specified here; they are provided by the user agent. They could, for example,
+    be apps, websites or contacts.
+  id: web-share
+  issue: 27
+  position: positive
+  rationale: This specification defines an API that invokes sharing features of the
+    operating system, for passing information to other applications.  One risk of
+    this is that having this as in-page user interface rather than in-browser user
+    interface may reduce the relevance to the user of the information shown in the
+    URL/location bar.  However, given the demand for this capability it seems like
+    it is likely worth exposing to the Web, and we support prototyping this feature.
+  url: https://w3c.github.io/web-share/
+  venues:
+  - W3C
+Web Share Target API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1476515
+  caniuse: null
+  description: This specification defines an API that allows websites to declare themselves
+    as web share targets, which can receive shared content from either the Web Share
+    API, or system events (e.g., shares from native apps). This is a similar mechanism
+    to navigator.registerProtocolHandler, in that it works by registering the website
+    with the user agent, to later be invoked from another site or native application
+    via the user agent (possibly at the discretion of the user). The difference is
+    that registerProtocolHandler registers the handler via a programmatic API, whereas
+    a Web Share Target is declared in the Web App Manifest, to be registered at a
+    time of the user agent or user's choosing.
+  id: web-share-target
+  issue: 27
+  position: positive
+  rationale: This specification affords web applications the ability to handle user-initiated
+    'share' actions (e.g., sharing a link, image, text, or other media) in contexts
+    that have traditionally been the exclusive domain of native and/or system applications.
+    We believe this API is worth prototyping because it enhances the utility of web
+    applications to end-users, and allows us to explore ways that web applications
+    can more effectively integrate with the underlying operating system.
+  url: https://wicg.github.io/web-share-target/
+  venues:
+  - Proposal
+Web Thing API:
+  bug: null
+  caniuse: null
+  description: This document describes a common data model and API for the Web of
+    Things. The Web Thing Description provides a vocabulary for describing physical
+    devices connected to the World Wide Web in a machine readable format with a default
+    JSON encoding. The Web Thing REST API and Web Thing WebSocket API allow a web
+    client to access the properties of devices, request the execution of actions and
+    subscribe to events representing a change in state. Some basic Web Thing Types
+    are provided and additional types can be defined using semantic extensions with
+    JSON-LD. In addition to this specification there is a note on Web Thing API Protocol
+    Bindings which proposes non-normative bindings of the Web Thing API to various
+    existing IoT protocols. There is also a document describing Web of Things Integration
+    Patterns which provides advice on different design patterns for integrating connected
+    devices with the Web of Things, and where each pattern is most appropriate.
+  id: web-thing-api
+  issue: 44
+  position: positive
+  rationale: null
+  url: https://iot.mozilla.org/wot/
+  venues:
+  - W3C
+WebAssembly Exception Handling:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1695715
+  caniuse: null
+  description: exception propagation and handling for webassembly
+  id: wasm-exceptions
+  issue: 573
+  position: positive
+  rationale: Exception handling is important to C++ programs targeting the web, and
+    to other languages in the future.
+  url: https://github.com/webassembly/exception-handling/
+  venues:
+  - Proposal
+WebAssembly JS Promise Integration:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1850627
+  caniuse: null
+  description: ''
+  id: wasm-js-promise-integration
+  issue: 944
+  position: positive
+  rationale: Addresses a major paint point for developers porting existing applications
+    that assume synchronous I/O to the web.
+  url: https://github.com/WebAssembly/js-promise-integration/
+  venues:
+  - Proposal
+WebAssembly SIMD:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1625130
+  caniuse: null
+  description: 128-bit vector data type and operations for webassembly
+  id: wasm-simd
+  issue: 491
+  position: positive
+  rationale: Supports common SIMD data type and operations important to C/C++/Rust
+    programs targeting the web within domains such as graphics, video/audio encoding/decoding,
+    and machine learning.
+  url: https://github.com/webassembly/simd/
+  venues:
+  - W3C
+WebDriver BiDi:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1690255
+  caniuse: null
+  description: The BiDirectional WebDriver Protocol, a mechanism for remote control
+    of user agents.
+  id: webdriver-bidi
+  issue: 632
+  position: positive
+  rationale: Automation is an important capability for the web platform - for example,
+    reliable automated testing makes it easier for websites to offer a functional
+    user experience. The current standard protocol for building these tools has fallen
+    behind demonstrated needs, which has in part led to new tools being built on Chrome
+    DevTools Protocol. This makes it harder to automate across multiple browsers and
+    versions of browsers - it’d be better for the standard protocol to support these
+    needs.
+  url: https://w3c.github.io/webdriver-bidi/
+  venues:
+  - W3C
+WebHID API:
+  bug: null
+  caniuse: https://caniuse.com/webhid
+  description: This document describes an API for providing access to devices that
+    support the Human Interface Device (HID) protocol.
+  id: webhid
+  issue: 459
+  position: negative
+  rationale: This API, like <a href=#webusb>WebUSB</a>, provides access to generic
+    devices. Though this API is limited to human interface devices (HID), the same
+    concerns apply as WebUSB, namely that devices are generally not designed with
+    access from arbitrary websites in their threat model.
+  url: https://wicg.github.io/webhid/
+  venues:
+  - Proposal
+WebRTC Encoded Transform:
+  bug: null
+  caniuse: null
+  description: This API defines an API surface for manipulating the encoded bits of
+    MediaStreamTracks being sent via an RTCPeerConnection.
+  id: webrtc-encoded-transform
+  issue: 330
+  position: positive
+  rationale: This approach provides sites a way to offer a form of end-to-end protection
+    for media, especially in those very common cases where media for group sessions
+    is managed by a central service. The proposed API, together with the SFrame proposal,
+    provides sites the ability to limit the information that is exposed to the central
+    service. Mozilla would prefer to include better key management than this approach
+    proposes, perhaps using <a href="https://datatracker.ietf.org/doc/html/draft-ietf-mls-architecture">MLS</a>,
+    which might guarantee certain security and privacy gains for users. However, we
+    recognize that this is not yet feasible and this API can provide security and
+    privacy gains if carefully applied by sites.
+  url: https://w3c.github.io/webrtc-encoded-transform/
+  venues:
+  - W3C
+'WebRTC Next Version Use Cases: Trusted JavaScript':
+  bug: null
+  caniuse: ''
+  description: Use cases about providing guarantees to users about the privacy of
+    their WebRTC videoconferencing when the servers are not trusted but the JavaScript
+    is.
+  id: webrtc-nv-use-cases-trusted-js
+  issue: 205
+  position: negative
+  rationale: We believe the "Untrusted JS" alternative would allow browsers to provide
+    useful guarantees to users about the security of their videoconferencing, but
+    the "Trusted JS" variant would not, and seems likely to add unnecessary complexity.
+  url: https://github.com/w3c/webrtc-nv-use-cases/pull/49/files
+  venues:
+  - Proposal
+WebUSB API:
+  bug: null
+  caniuse: webusb
+  description: This document describes an API for securely providing access to Universal
+    Serial Bus devices from web pages.
+  id: webusb
+  issue: 100
+  position: negative
+  rationale: Because many USB devices are not designed to handle potentially-malicious
+    interactions over the USB protocols and because those devices can have significant
+    effects on the computer they're connected to, we believe that the security risks
+    of exposing USB devices to the Web are too broad to risk exposing users to them
+    or to explain properly to end users to obtain meaningful informed consent. It
+    also poses risks that sites could use USB device identity or data stored on USB
+    devices as tracking identifiers.
+  url: https://wicg.github.io/webusb/
+  venues:
+  - Proposal
+WebXR Device API:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1419190
+  caniuse: webxr
+  description: This specification describes support for accessing virtual reality
+    (VR) and augmented reality (AR) devices, including sensors and head-mounted displays,
+    on the Web.
+  id: webxr
+  issue: 218
+  position: positive
+  rationale: The WebXR Device API is the basis for VR, MR, and AR on the web.  This
+    is a significant and large suite of features.  There is the potential for XR to
+    provide significant benefits, but also a number of risks to individual privacy
+    and security due to the way that XR relies on sensors and environmental data.  Developing
+    new interaction models also presents challenges and considerable work is required
+    before new norms are established.  Mozilla is actively working on WebXR and supportive
+    of its overall goals.  Our participation in and implementation of this API is
+    critical to understanding the feature and learning how to empower users in managing
+    the associated risks.
+  url: https://immersive-web.github.io/webxr/
+  venues:
+  - Proposal
+WebXR Hit Test Module:
+  bug: null
+  caniuse: null
+  description: Describes a method for performing hit tests against real world geometry
+    to be used with the WebXR Device API.
+  id: webxr-hit-test
+  issue: 259
+  position: defer
+  rationale: We believe that (as of February 2020) more iteration on the specification
+    draft is needed before we can establish a position.
+  url: https://immersive-web.github.io/hit-test/
+  venues:
+  - Proposal
+Worklets:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1315239
+  caniuse: null
+  description: This specification defines an API for running scripts in stages of
+    the rendering pipeline independent of the main javascript execution environment.
+  id: worklets
+  issue: 93
+  position: positive
+  rationale: This specification is essential for allowing features like the CSS Paint
+    API and CSS Layout API to be implemented in a safe way.
+  url: https://drafts.css-houdini.org/worklets
+  venues:
+  - W3C
+Zstandard Compression and the application/zstd Media Type:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1301878
+  caniuse: null
+  description: Zstandard, or "zstd" (pronounced "zee standard"), is a data compression
+    mechanism. This document describes the mechanism and registers a media type and
+    content encoding to be used when transporting zstd-compressed content via Multipurpose
+    Internet Mail Extensions (MIME). Despite use of the word "standard" as part of
+    its name, readers are advised that this document is not an Internet Standards
+    Track specification; it is being published for informational purposes only.
+  id: zstd
+  issue: 775
+  position: positive
+  rationale: Zstandard/Zstd has been shown to be an effective compression scheme especially
+    for dynamic content, by reducing load on servers to deliver the same level of
+    compression.   It also enables improvements from future work on Compression Dictionaries.  Chrome
+    shipped support for Zstd in early 2024, and Firefox followed soon after.  It has
+    been judged to be worth the ongoing cost in maintenance and complexity to support
+    for decompression, and is also useful for supporting TLS certificate decompression.
+  url: https://datatracker.ietf.org/doc/html/rfc8478
+  venues:
+  - IETF
+dialog element:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=840640
+  caniuse: dialog
+  description: The dialog element represents a part of an application that a user
+    interacts with to perform a task, for example a dialog box, inspector, or window.
+  id: dialog-element
+  issue: 388
+  position: positive
+  rationale: A high-level HTML feature for authors to achieve these use cases while
+    getting a11y right seems useful, and we have an implementation.
+  url: https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element
+  venues:
+  - WHATWG
+enterkeyhint attribute:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1490661
+  caniuse: mdn-html_global_attributes_enterkeyhint
+  description: The enterkeyhint attribute specifies what action label (or icon) to
+    present for the enter key on virtual keyboards.
+  id: enterkeyhint-attr
+  issue: 68
+  position: positive
+  rationale: null
+  url: https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint
+  venues:
+  - WHATWG
+inert attribute:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=921504
+  caniuse: mdn-api_htmlelement_inert
+  description: Allow arbitrary DOM subtrees to become inert
+  id: inert-attr
+  issue: 174
+  position: positive
+  rationale: A high-level tool for authors to achieve some of these use cases while
+    getting a11y right seems useful
+  url: https://github.com/whatwg/html/pull/4288
+  venues:
+  - WHATWG
+output attributes on <input type=file> element:
+  bug: null
+  caniuse: null
+  description: Proposal to add various output attributes on HTML's <input> elements
+    that would allow developers to declare some conversions the browser could do to,
+    for example, images and videos.
+  id: input-file-output-attributes
+  issue: 237
+  position: neutral
+  rationale: While this seems like it could be a useful capability to expose, we'd
+    rather see it exposed in a way that can be composed with other existing APIs,
+    and we're concerned that there's a risk of runaway complexity through adding more
+    and more features to it.
+  url: https://discourse.wicg.io/t/proposal-native-media-optimization-and-basic-editing-support/4068
+  venues:
+  - Proposal
+page-orientation descriptor:
+  bug: null
+  caniuse: mdn-css_at-rules_page_page-orientation
+  description: A descriptor for CSS @page rules that changes the orientation of the
+    page in generated PDF output (or similar) without otherwise affecting layout.
+  id: page-orientation-descriptor
+  issue: 346
+  position: positive
+  rationale: This is a simple addition (to a relatively complex existing feature,
+    <a href="https://drafts.csswg.org/css-page-3/#using-named-pages">named pages</a>)
+    that can improve the experience of producing printed PDF output from web-based
+    word processors or similar systems that largely do their own page layout.
+  url: https://drafts.csswg.org/css-page-3/#page-orientation-prop
+  venues:
+  - W3C
+passwordrules attribute:
+  bug: null
+  caniuse: null
+  description: An attribute that specifies the rules for generating acceptable passwords.
+  id: passwordrules-attribute
+  issue: 61
+  position: negative
+  rationale: We believe this proposal, as drafted, encourages bad practices around
+    passwords without encouraging good practices (such as minimum password length),
+    and further has ambiguous and conflicting overlap with existing input validity
+    attributes.  We believe the existing input validity attributes and API are sufficient
+    for expressing password requirements.
+  url: https://github.com/whatwg/html/issues/3518
+  venues:
+  - WHATWG
+scrollend and overscroll events:
+  bug: null
+  caniuse: null
+  description: The new scroll events introduced in this document provide web developers
+    a way to listen to the state of the scrolling and when their content is being
+    overscrolled or when the scrolling has finished. This information will be useful
+    for the effects such as pull to refresh or history swipe navigations in the web
+    apps.
+  id: scrollend-and-overscroll-events
+  issue: 240
+  position: positive
+  rationale: We believe these are likely to provide frequently-requested functionality
+    that is useful for many web applications.
+  url: https://github.com/w3c/csswg-drafts/pull/4537
+  venues:
+  - Proposal
+template element:
+  bug: null
+  caniuse: null
+  description: The template element is used to declare fragments of HTML that can
+    be cloned and inserted in the document by script.
+  id: template-element
+  issue: 60
+  position: positive
+  rationale: A reasonable addition to HTML (and XML), if not somewhat taxing on the
+    parser.
+  url: https://html.spec.whatwg.org/multipage/scripting.html#the-template-element
+  venues:
+  - WHATWG
+timezonechange event:
+  bug: null
+  caniuse: null
+  description: An event that fires when the user's timezone changes.
+  id: timezonechange-event
+  issue: 241
+  position: defer
+  rationale: The timing of the delivery of this event to sites might expose users
+    to cross-site tracking. How that risk is mitigated has not yet been decided, and
+    that decision is likely to influence our position.
+  url: https://github.com/whatwg/html/pull/3047
+  venues:
+  - WHATWG
