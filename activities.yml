@@ -817,28 +817,29 @@ Federated Credential Management API:
   id: fedcm
   issue: 618
   mdn: null
-  position: positive
-  rationale: 'Federated login is a widely-used feature on the web with significant
-    user benefits in usability and security.  Unfortunately, federated identity on
-    the web relies on the same techniques that are used to track web users.  The Federated
-    Credential Management API puts the browser in control of managing cross-site logins.  Browsers
-    can use this API as a way to give web users better ability to control and monitor
-    how their identity - and any information related to their identity - is exchanged
-    between sites.  Including the browser in a mediating role will adversely affect
-    some cross-site interactions, in some cases making them less efficient or even
-    less usable.  However, Mozilla considers it imperative that this change occur
-    so that users can be granted control - and awareness - of all instances where
-    their information is transferred between sites.  This proposal provides browsers
-    with the opportunity to provide these capabilities.  Note that Mozilla also wants
-    to acknowledge an important privacy compromise in the proposal: identity providers
-    learn when and where the identity they provide is used.  Though alternative designs
-    might be technically possible, this approach recognizes the security benefits
-    gained by allowing identity providers the ability to audit logins.  Furthermore,
-    though this design enables an authorized identity to track cross-site activity,
-    it only does so with the direct permission and knowledge of users.'
-  url: https://fedidcg.github.io/FedCM/
+  position: neutral
+  rationale: 'Federated login is a widely-used feature on the web with significant user
+    benefits in usability and security. Unfortunately, federated identity on the web
+    relies on the same techniques that are used to track web users. Federated Credential
+    Management API provides an opportunity to put the browser in control of managing
+    cross-site logins. However, FedCM currently gives too much power to the identity
+    providers it works for and fails to facilitate other identity providers’ flows. The
+    current FedCM API is designed with a lot of consideration for click-through rate
+    optimization, which is a chief concern of social-login providers. One key design
+    choice that has constrained subsequent decisions is that the initial UI rendered in
+    the browser must be able to show the accounts available from the identity provider,
+    facilitating single click account-linking. Mozilla would not render account
+    information across information contexts before the user makes the choice to link those
+    contexts. However, Google currently does, providing a browser-controlled UI that looks
+    very similar to Google Identity Services’ OneTap widget where third-party cookies are
+    already shared. This is evidence of a bug in the specification, not a feature of
+    “engine freedom” to develop innovative UI. We believe the reduced scope of the
+    Lightweight FedCM proposal is much closer to appropriately balancing the interests of
+    developers and users and is much more likely to reach a solution all browsers would
+    implement.'
+  url: https://w3c-fedid.github.io/FedCM/
   venues:
-  - Proposal
+  - W3C
 Fetch Metadata Request Headers:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1508292
   caniuse: null
