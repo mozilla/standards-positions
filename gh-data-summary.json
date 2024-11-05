@@ -78,19 +78,6 @@
     "webkit": null
   },
   {
-    "issue": 16,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Positions are not mutually exclusive?",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  {
     "issue": 17,
     "position": null,
     "venues": [
@@ -444,19 +431,6 @@
     "webkit": null
   },
   {
-    "issue": 51,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Set of possible positions seems too narrow",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  {
     "issue": 52,
     "position": null,
     "venues": [],
@@ -623,7 +597,7 @@
     ],
     "concerns": [],
     "topics": [],
-    "title": "Improving Ergonomics Of Events With Observable (WHATWG)",
+    "title": "Improving Ergonomics Of Events With Observable",
     "url": "https://github.com/whatwg/dom/issues/544",
     "explainer": null,
     "caniuse": null,
@@ -1220,19 +1194,6 @@
     "webkit": null
   },
   {
-    "issue": 136,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Ability to link to a single Position",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  {
     "issue": 137,
     "position": "positive",
     "venues": [
@@ -1705,7 +1666,7 @@
   },
   {
     "issue": 175,
-    "position": "negative",
+    "position": "positive",
     "venues": [
       "IETF"
     ],
@@ -1807,21 +1768,6 @@
     "explainer": null,
     "caniuse": "Not found",
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=889205",
-    "webkit": null
-  },
-  {
-    "issue": 186,
-    "position": null,
-    "venues": [
-      "W3C"
-    ],
-    "concerns": [],
-    "topics": [],
-    "title": "Autoplay Policy Detection",
-    "url": "https://github.com/wicg/autoplay/",
-    "explainer": null,
-    "caniuse": null,
-    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1506289",
     "webkit": null
   },
   {
@@ -2327,19 +2273,6 @@
     "webkit": null
   },
   {
-    "issue": 242,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Consider renaming worth prototyping (or adding a label)",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  {
     "issue": 243,
     "position": null,
     "venues": [
@@ -2702,19 +2635,6 @@
     "webkit": null
   },
   {
-    "issue": 320,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "[Meta] https://mozilla.github.io/standards-positions/asset/Other.svg missing",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  {
     "issue": 323,
     "position": null,
     "venues": [],
@@ -2850,7 +2770,7 @@
   },
   {
     "issue": 340,
-    "position": null,
+    "position": "defer",
     "venues": [
       "W3C",
       "W3C CG"
@@ -3005,19 +2925,6 @@
     "topics": [],
     "title": "Layout Instability API",
     "url": "https://wicg.github.io/layout-instability/",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  {
-    "issue": 378,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Positions on the standards Webkit considers to be vulnerable to fingerprinting",
-    "url": null,
     "explainer": null,
     "caniuse": null,
     "bug": null,
@@ -3377,7 +3284,7 @@
     ],
     "concerns": [],
     "topics": [],
-    "title": "Standards position request: display_override in WebManifest",
+    "title": "display_override in WebManifest",
     "url": "https://github.com/WICG/display-override/blob/master/explainer.md",
     "explainer": null,
     "caniuse": null,
@@ -3526,7 +3433,9 @@
       "W3C"
     ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "Forced Colors Mode",
     "url": "https://www.w3.org/TR/css-color-adjust-1/#forced",
     "explainer": null,
@@ -3738,19 +3647,6 @@
     "topics": [],
     "title": "Custom Highlight API",
     "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  {
-    "issue": 483,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "New html attribute indicating searchability in hidden content",
-    "url": "https://github.com/w3c/csswg-drafts/issues/5595#issuecomment-776914538",
     "explainer": null,
     "caniuse": null,
     "bug": null,
@@ -3978,19 +3874,6 @@
     "webkit": null
   },
   {
-    "issue": 501,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "ImportMap Support",
-    "url": "https://wicg.github.io/import-maps/",
-    "explainer": null,
-    "caniuse": "https://caniuse.com/?search=importmap",
-    "bug": null,
-    "webkit": null
-  },
-  {
     "issue": 502,
     "position": "positive",
     "venues": [
@@ -4111,7 +3994,7 @@
   },
   {
     "issue": 512,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -4305,28 +4188,12 @@
   },
   {
     "issue": 529,
-    "position": null,
+    "position": "defer",
     "venues": [],
     "concerns": [],
     "topics": [],
     "title": "Window Controls Overlay",
     "url": "https://github.com/WICG/window-controls-overlay/blob/main/explainer.md",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  {
-    "issue": 530,
-    "position": null,
-    "venues": [
-      "IETF",
-      "WHATWG"
-    ],
-    "concerns": [],
-    "topics": [],
-    "title": "HTTP 103 Early Hints",
-    "url": "https://datatracker.ietf.org/doc/html/rfc8297",
     "explainer": null,
     "caniuse": null,
     "bug": null,
@@ -4401,7 +4268,7 @@
   },
   {
     "issue": 539,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG",
       "Proposal"
@@ -4546,7 +4413,7 @@
   },
   {
     "issue": 550,
-    "position": null,
+    "position": "defer",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -4614,7 +4481,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS tree-scoped at-rule names and references (for @font-face, @keyframes, etc.)",
     "url": "https://drafts.csswg.org/css-scoping/#shadow-names",
     "explainer": null,
@@ -4637,19 +4506,6 @@
     ],
     "title": "EyeDropper API",
     "url": "https://wicg.github.io/eyedropper-api/",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  {
-    "issue": 559,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Unique ID for PWAs",
-    "url": null,
     "explainer": null,
     "caniuse": null,
     "bug": null,
@@ -4760,7 +4616,7 @@
     "venues": [],
     "concerns": [],
     "topics": [],
-    "title": "Network Information API reboot: request for early feedback",
+    "title": "Network Information API reboot",
     "url": null,
     "explainer": null,
     "caniuse": null,
@@ -4785,7 +4641,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "css-easing-2 linear() syntax",
     "url": "https://github.com/w3c/csswg-drafts/pull/6533 (currently a pull request with some draft text)",
     "explainer": null,
@@ -4823,7 +4681,7 @@
   },
   {
     "issue": 576,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -4836,7 +4694,7 @@
   },
   {
     "issue": 577,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -4866,11 +4724,11 @@
   },
   {
     "issue": 580,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
-    "title": "intent to ship CSP for WebAssembly",
+    "title": "CSP for WebAssembly",
     "url": "Minimal specification of 'wasm-eval' source directive w3c/webappsec-csp#293",
     "explainer": null,
     "caniuse": null,
@@ -4908,21 +4766,6 @@
     "webkit": null
   },
   {
-    "issue": 583,
-    "position": null,
-    "venues": [
-      "WHATWG"
-    ],
-    "concerns": [],
-    "topics": [],
-    "title": "Canvas 2D API extensions",
-    "url": "https://github.com/fserb/canvas2d, https://github.com/whatwg/html/issues/5613",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  {
     "issue": 584,
     "position": "positive",
     "venues": [
@@ -4935,19 +4778,6 @@
     "explainer": null,
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1702365",
-    "webkit": null
-  },
-  {
-    "issue": 585,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "WEBRTC-SVC",
-    "url": "https://w3c.github.io/webrtc-svc/",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
     "webkit": null
   },
   {
@@ -4991,7 +4821,7 @@
   },
   {
     "issue": 592,
-    "position": null,
+    "position": "positive",
     "venues": [
       "IETF"
     ],
@@ -5073,13 +4903,13 @@
   },
   {
     "issue": 601,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
     "concerns": [],
     "topics": [],
-    "title": "Changing the Origin-Agent-Cluster default, aka deprecating document.domain.",
+    "title": "Changing the Origin-Agent-Cluster default, aka deprecating document.domain",
     "url": "This would modify https://html.spec.whatwg.org/multipage/origin.html#origin-isolation.",
     "explainer": null,
     "caniuse": null,
@@ -5093,7 +4923,9 @@
       "W3C"
     ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "Allow infinity, -infinity and NaN in CSS calc()",
     "url": "https://www.w3.org/TR/css-values-4/#calc-error-constants",
     "explainer": null,
@@ -5103,11 +4935,11 @@
   },
   {
     "issue": 603,
-    "position": null,
+    "position": "defer",
     "venues": [],
     "concerns": [],
     "topics": [],
-    "title": "CBOR",
+    "title": "Concise Binary Object Representation (CBOR)",
     "url": "https://datatracker.ietf.org/doc/html/rfc8949",
     "explainer": null,
     "caniuse": "No, but https://github.com/Fyrd/caniuse/issues/6108",
@@ -5123,7 +4955,7 @@
     ],
     "concerns": [],
     "topics": [],
-    "title": "close watchers",
+    "title": "Close watchers",
     "url": "https://wicg.github.io/close-watcher/ (explainer: https://github.com/WICG/close-watcher)",
     "explainer": null,
     "caniuse": null,
@@ -5211,19 +5043,6 @@
     "topics": [],
     "title": "hidden=until-found HTML attribute and beforematch event",
     "url": "https://github.com/whatwg/html/pull/7475",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  {
-    "issue": 613,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "prerendering",
-    "url": "https://github.com/WICG/nav-speculation",
     "explainer": null,
     "caniuse": null,
     "bug": null,
@@ -5483,19 +5302,6 @@
     "url": "https://drafts.csswg.org/cssom-view/#dom-element-isvisible",
     "explainer": null,
     "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  {
-    "issue": 635,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Link type \"modulepreload\"",
-    "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload",
-    "explainer": null,
-    "caniuse": "https://caniuse.com/link-rel-modulepreload",
     "bug": null,
     "webkit": null
   },
@@ -5987,19 +5793,6 @@
     "webkit": null
   },
   {
-    "issue": 687,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Re-request for postion on Web Serial/Serial API",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  {
     "issue": 688,
     "position": "positive",
     "venues": [],
@@ -6357,19 +6150,6 @@
     "webkit": null
   },
   {
-    "issue": 721,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Request for re-opening the JPEG XL",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  {
     "issue": 722,
     "position": "positive",
     "venues": [],
@@ -6429,7 +6209,7 @@
     ],
     "concerns": [],
     "topics": [],
-    "title": "baseline-source CSS property.",
+    "title": "baseline-source CSS property",
     "url": "https://drafts.csswg.org/css-inline-3/#baseline-source",
     "explainer": null,
     "caniuse": null,
@@ -6438,11 +6218,15 @@
   },
   {
     "issue": 728,
-    "position": null,
-    "venues": [],
-    "concerns": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
+    "concerns": [
+      "power"
+    ],
     "topics": [],
-    "title": "programatically disabling hardware encoding/decoding in WebRTC",
+    "title": "Programatically disabling hardware encoding/decoding in WebRTC",
     "url": "https://w3c.github.io/webrtc-extensions/#disable-hardware",
     "explainer": null,
     "caniuse": null,
@@ -6481,7 +6265,7 @@
     "venues": [],
     "concerns": [],
     "topics": [],
-    "title": "new dialog initial focus algorithm",
+    "title": "New dialog initial focus algorithm",
     "url": "https://github.com/whatwg/html/pull/8199",
     "explainer": null,
     "caniuse": null,
@@ -6580,25 +6364,16 @@
     "webkit": null
   },
   {
-    "issue": 747,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Request for linear() easing function",
-    "url": "https://w3c.github.io/csswg-drafts/css-easing/#the-linear-easing-function",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  {
     "issue": 749,
-    "position": "defer",
-    "venues": [],
+    "position": null,
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
-    "title": "Position request for adding a meta tag `name` value of `subtitle` (Document Subtitle)",
+    "topics": [
+      "HTML"
+    ],
+    "title": "Document Subtitle",
     "url": null,
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DocumentSubtitle/explainer.md",
     "caniuse": null,
@@ -6763,10 +6538,12 @@
   },
   {
     "issue": 765,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "Scripting media feature",
     "url": "https://www.w3.org/TR/mediaqueries-5/#scripting",
     "explainer": null,
@@ -6828,11 +6605,26 @@
   },
   {
     "issue": 770,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "FLEDGE API",
+    "position": "negative",
+    "venues": [
+      "W3C CG"
+    ],
+    "concerns": [
+      "complexity",
+      "annoyance",
+      "venue",
+      "integration",
+      "performance",
+      "privacy",
+      "dependencies",
+      "API design",
+      "use cases"
+    ],
+    "topics": [
+      "API",
+      "HTML"
+    ],
+    "title": "Protected Audience API",
     "url": "Partial spec is https://wicg.github.io/turtledove/, but recommend deferring to the explainer.",
     "explainer": "https://github.com/WICG/turtledove/blob/main/FLEDGE.md",
     "caniuse": null,
@@ -6950,7 +6742,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "JavaScript"
+    ],
     "title": "Explicit compile hints",
     "url": "https://docs.google.com/document/d/19xTAM4A75tz0xUq_velMzGA4JHEgXpyflUxXTcuNiyE/edit?usp=sharing",
     "explainer": "-",
@@ -6973,7 +6767,7 @@
   },
   {
     "issue": 782,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -7058,19 +6852,6 @@
     "title": "Attribution Reporting API",
     "url": "https://wicg.github.io/attribution-reporting-api/",
     "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  {
-    "issue": 792,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Storage Buckets",
-    "url": "https://wicg.github.io/storage-buckets/",
-    "explainer": "https://github.com/WICG/storage-buckets/blob/main/explainer.md",
     "caniuse": null,
     "bug": null,
     "webkit": null
@@ -8074,19 +7855,6 @@
     "webkit": null
   },
   {
-    "issue": 900,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "User Activation API",
-    "url": "https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface",
-    "explainer": null,
-    "caniuse": "https://caniuse.com/mdn-api_useractivation",
-    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1791079",
-    "webkit": null
-  },
-  {
     "issue": 901,
     "position": "positive",
     "venues": [],
@@ -8147,19 +7915,6 @@
     "title": "View Transitions: list of types",
     "url": null,
     "explainer": "https://github.com/vmpstr/web-proposals/blob/main/explainers/view-transition-types.md",
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  {
-    "issue": 906,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Web Environment Integrity API",
-    "url": "https://rupertbenwiser.github.io/Web-Environment-Integrity/",
-    "explainer": "https://github.com/RupertBenWiser/Web-Environment-Integrity/blob/main/explainer.md",
     "caniuse": null,
     "bug": null,
     "webkit": null
@@ -8660,9 +8415,11 @@
   },
   {
     "issue": 965,
-    "position": null,
+    "position": "positive",
     "venues": [],
-    "concerns": [],
+    "concerns": [
+      "accessibility"
+    ],
     "topics": [],
     "title": "popover=hint",
     "url": "(slightly out of date as of 1/19/24) https://github.com/whatwg/html/pull/9778",
@@ -9062,19 +8819,6 @@
     "explainer": "https://github.com/whatwg/html/issues/8867",
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1886630",
-    "webkit": null
-  },
-  {
-    "issue": 1007,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "CSS `@starting-style`",
-    "url": "https://drafts.csswg.org/css-transitions-2/#defining-before-change-style",
-    "explainer": null,
-    "caniuse": "https://caniuse.com/mdn-css_at-rules_starting-style",
-    "bug": null,
     "webkit": null
   },
   {
@@ -10217,5 +9961,44 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1876762",
     "webkit": "https://github.com/WebKit/standards-positions/issues/418"
+  },
+  {
+    "issue": 1102,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Writing Assistance APIs",
+    "url": null,
+    "explainer": "https://github.com/WICG/writing-assistance-apis/blob/main/README.md",
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/393"
+  },
+  {
+    "issue": 1103,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[CSS Pseudo-4] CSS highlight pseudo ::search-text",
+    "url": "https://drafts.csswg.org/css-pseudo-4/#selectordef-search-text",
+    "explainer": "https://github.com/Igalia/explainers/blob/main/css/find-in-page/README.md",
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/421"
+  },
+  {
+    "issue": 1105,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[CSS] `text-box`, `text-box-trim`, `text-box-edge`",
+    "url": "https://www.w3.org/TR/css-inline-3/",
+    "explainer": null,
+    "caniuse": "https://caniuse.com/?search=text-box-trim",
+    "bug": null,
+    "webkit": null
   }
 ]
