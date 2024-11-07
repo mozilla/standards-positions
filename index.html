@@ -7,381 +7,437 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mozilla Specification Positions</title>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="node_modules/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet">
+    <meta name="color-scheme" content="light dark">
+    <title>Mozilla Standards Positions</title>
     <style>
-      @font-face {
-         font-family: "Zilla Slab";
-         font-weight: bold;
-         src: url("asset/ZillaSlab-Bold.woff2") format("woff2");
-      }
-      .jumbotron h1 {
-        font-weight: bold;
-        font-family: "Zilla Slab", serif;
-      }
-      /* align sizes with bootstrap's grid snapping of .container */
-      @media (min-width: 768px) { .jumbotron h1 { font-size: 42px; } }
-      @media (min-width: 992px) { .jumbotron h1 { font-size: 58px; } }
-      @media (min-width: 1200px) { .jumbotron h1 { font-size: 72px; } }
-      .space dt {
-        padding-bottom: 5px;
-      }
+     /* light scheme colors */
+     :root {
+       --root-color: #333;
+       --root-bg-color: #fff;
+       --header-bg-color: #eee;
+       --h1-color: black;
+       --highlight-bg-color: #ffffd7;
+       --highlight-color: inherit;
+       --link-color: #2268a4;
+       --row-hover-bg-color: #f5f5f5;
+       --positive-color: white;
+       --positive-bg-color: green;
+       --negative-color: white;
+       --negative-bg-color: maroon;
+       --neutral-color: inherit;
+       --neutral-bg-color: transparent;
+       --defer-color: white;
+       --defer-bg-color: #666;
+       --table-border-color: silver;
+       --position-border-color: gray;
+       /* under consideration uses the same colors as defer */
+     }
+     /* dark scheme colors */
+     @media (prefers-color-scheme: dark) {
+       :root {
+         --root-color: #eee;
+         --root-bg-color: #222;
+         --header-bg-color: black;
+         --highlight-bg-color: #440;
+         --h1-color: white;
+         --link-color: #6fb6f5;
+         --row-hover-bg-color: black;
+         --table-border-color: #444;
+         --position-border-color: black;
+         --positive-bg-color: #00a000;
+         --positive-color: black;
+         --negative-bg-color: #c65050;
+         --negative-color: black;
+         --defer-bg-color: #999;
+         --defer-color: black;
+       }
+       h1 img { filter: invert(1); }
+       table img { background-color: white; border-radius: 16px; }
 
-      table.dataTable > tbody > tr:target,
-      table.dataTable > tbody > tr.shown:target + tr {
-        background: #fd0;
-      }
+     }
 
-      tr:not(:hover):not(:focus-within) > .link-control > a {
-        visibility: hidden;
-      }
+     html { font-family: system-ui, sans-serif; color: var(--root-color); background-color: var(--root-bg-color); line-height: 1.5; scrollbar-gutter: stable; }
+     html.loading header ~ * { visibility: hidden; }
+     body { margin: 2em; }
+     header { background-color: var(--header-bg-color); margin: 0 auto 2em; padding: 3em; max-width: 60em; }
+     h1 { font-size: min(12vw, 4em); margin: 0; color: var(--h1-color); line-height: 1; }
+     h1 img { max-height: 0.83333333em; width: auto; }
+     mark { background-color: var(--highlight-bg-color); color: var(--highlight-color); padding: 0.5em; margin: -0.5em; line-height: 2; box-decoration-break: clone; }
+     :any-link { color: var(--link-color); text-decoration: none; }
+     :any-link:hover { text-decoration: underline; }
 
-      .clipicon {
-        width: 1em;
-        height: 1em;
-        background: currentColor;
-      }
+     input[name="search"] { width: calc(100% - 10em); }
 
-      .clipicon-MDN {
-        -webkit-mask: url(asset/MDN.svg) center no-repeat;
-        mask: url(asset/MDN.svg) center no-repeat;
-        width: 1.20833em;
-      }
+     td.more-info :any-link { text-decoration: none; }
+     table { border-collapse: collapse; width: 100%; }
+     tr[hidden] { display: table-row; visibility: collapse; }
+     th { text-align: left; }
+     th:first-child { text-align: right; }
+     th, td.venues, td.more-info { white-space: nowrap; }
+     th.specification { width: 100vw; }
+     td.venues, td.more-info { word-spacing: 8px; padding-top: 0.1em; padding-bottom: 0.1em; font-size: 1.5em; }
+     th.concerns { width: 5em; }
+     th, td { padding: 0.5em; }
+     td:first-child { padding-left: 6em; width: 0.5em; }
+     tr.details > td { padding-top: 0; padding-bottom: 0; border-top: none; }
+     summary { position: relative; top: -2em; left: -5em; width: 5em; cursor: default; user-select: none; }
+     details > dl { margin-top: -1em; }
+     details:not([open]) { height: 0; }
+     details dl { margin-left: -5.5em; grid-template-columns: 6em auto; }
+     details dt { font-weight: bold; }
+     dl { display: grid; grid-template-columns: max-content auto; row-gap: 1em; max-width: calc(100vw - 4em) }
+     dt { text-align: right; }
+     dd { margin-left: 1em; padding-left: 1px; }
 
-      #showall { display: none; }
+     td { border-top: 1px solid var(--table-border-color); vertical-align: top; }
+     tbody > tr:hover,
+     tbody > tr:hover + tr.details,
+     tbody > tr:has( + :where(tr.details:hover)) { background-color: var(--row-hover-bg-color); }
+     tbody > tr:target,
+     tbody > tr:target + tr.details { background-color: var(--highlight-bg-color); color: var(--highlight-color); }
+     table img { width: auto; height: 24px; }
+     span.position { border-radius: 0.6em; padding: 0.25em 0.5em; font-size: 0.75em; border: 1px solid var(--position-border-color); white-space: nowrap; }
+     span.positive { background-color: var(--positive-bg-color); color: var(--positive-color); }
+     span.negative { background-color: var(--negative-bg-color); color: var(--negative-color); }
+     span.neutral { border-color: currentColor; }
+     span.defer, span.under-consideration { background-color: var(--defer-bg-color); color: var(--defer-color); }
     </style>
+
+    <script>
+      // Avoid a flash of empty table (FOET)
+      document.documentElement.classList.add('loading');
+      setTimeout(() => {
+        document.documentElement.classList.remove('loading');
+      }, 1000);
+    </script>
+
   </head>
   <body>
+    <header>
+      <h1><img src="asset/Mozilla-2024.svg" alt="Mozilla" width="240" height="50"> Standards Positions</h1>
 
-    <div class="container">
-      <br>
-      <div class="jumbotron">
-        <h1><img src="asset/Mozilla.svg" style="height: 1.04em; vertical-align: -0.23em;" alt="Mozilla"> Specification Positions</h1>
+      <p>This page tracks Mozilla's positions on open Web and Web-related specifications submitted to standards
+      bodies like the <a href="https://www.ietf.org/">IETF</a>, <a href="https://w3.org/">W3C</a>,
+      and <a href="https://tc39.github.io/">Ecma TC39</a>.</p>
 
-        <p>This page tracks Mozilla's positions on open Web and Web-related specifications submitted to standards
-        bodies like the <a href="https://www.ietf.org/">IETF</a>, <a href="https://w3.org/">W3C</a>,
-        and <a href="https://tc39.github.io/">Ecma TC39</a>.</p>
-
-       <p>Please remember, this isn't a commitment to implement or participate;
-       <strong>it's just what we think right now</strong>. See <a
-       href="https://groups.google.com/a/mozilla.org/g/dev-platform/">dev-platform</a>
-       to find out what we're implementing.</p>
+      <p>Please remember, this isn't a commitment to implement or participate;
+      <strong>it's just what we think right now</strong>. See <a
+      href="https://groups.google.com/a/mozilla.org/g/dev-platform/">dev-platform</a>
+      to find out what we're implementing.</p>
 
       <p><mark>Want Mozilla's position on a specification? <a href="https://github.com/mozilla/standards-positions/">Find out more</a>.</mark></p>
 
-      </div>
+    </header>
 
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
+    <p class="noscript">Enable JavaScript to view the Mozilla standards positions, or see the <a href="https://github.com/mozilla/standards-positions/issues?q=is%3Aissue">issues in mozilla/standards-positions</a> on GitHub.</p>
 
-        <div>
-          <a class="btn btn-primary" href="javascript:open_all()">Expand All</a>
-          <a class="btn btn-primary" href="javascript:close_all()">Collapse All</a>
-          <a class="btn btn-primary" href="javascript:show_all()" id="showall">Show All</a>
-        </div>
+    <search>
+     <p><label>Search <input name="search"></label></p>
+    </search>
 
-        <table id="mozPositions" class="table table-hover dataTable">
-          <thead>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th class="sorting">Specification</th>
-              <th class="sorting">Mozilla Position</th>
-              <th>More Info</th>
-            </tr>
-          </thead>
-          <tbody>
+    <table>
+      <thead>
+        <tr>
+          <th class="link">Link</th>
+          <th class="specification">Specification</th>
+          <th class="concerns">Concerns</th>
+          <th class="position">Position</th>
+          <th class="topics">Topics</th>
+          <th class="venues">Venues</th>
+          <th class="more-info">More Info</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
 
-          </tbody>
-        </table>
-      </div>
-      <div class="col-sm-1"></div>
+    <h2>Legend</h2>
 
-      <div class="clearfix"></div>
-      <h3>legend</h3>
+    <p>The possible positions are:</p>
 
-      <p>The possible positions are:</p>
+    <dl>
+      <dt><span class="position positive">positive</span></dt><dd>Mozilla regards this work as a potential improvement to the web.</dd>
+      <dt><span class="position neutral">neutral</span></dt><dd>Mozilla is not convinced of the merits of this work, but does not see any significant negative potential.</dd>
+      <dt><span class="position negative">negative</span></dt><dd>Mozilla believes that pursuing this work in its current form would not be good for the web.</dd>
+      <dt><span class="position defer">defer</span></dt><dd>Mozilla takes no position on this work.</dd>
+      <dt><span class="position under-consideration">under consideration</span></dt><dd>Mozilla has not taken a position on this work and is gathering more information.</dd>
+    </dl>
 
-      <dl class="dl-horizontal space">
-        <dt><button class="btn btn-success btn-xs position">positive</button></dt><dd>Mozilla regards this work as a potential improvement to the web.</dd>
-        <dt><button class="btn btn-default btn-xs position">neutral</button></dt><dd>Mozilla is not convinced of the merits of this work, but does not see any significant negative potential.</dd>
-        <dt><button class="btn btn-danger btn-xs position">negative</button></dt><dd>Mozilla believes that pursuing this work in its current form would not be good for the web.</dd>
-        <dt><button class="btn btn-warning btn-xs position">defer</button></dt><dd>Mozilla takes no position on this work.</dd>
-        <dt><button class="btn btn-dark btn-xs position">under consideration</button></dt><dd>Mozilla has not taken a position on this work and is gathering more information.</dd>
-      </dl>
-
-    </div>
-
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
-    <script src="components/datatables-plugins/sorting/enum.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-    var gFirstTableRender = true;
+     function getData() {
+       // We need to delay the load event for URL fragments and text fragments to work reliably,
+       // so use <iframe> instead of fetch().
+       const iframe = document.createElement('iframe');
+       iframe.hidden = true;
+       iframe.src = "merged-data.json";
+       const p = new Promise(resolve => {
+         iframe.onload = e => {
+           const text = iframe.contentDocument.body.textContent;
+           const data = JSON.parse(text);
+           iframe.remove();
+           resolve(data);
+         };
+       });
+       document.body.append(iframe);
+       return p;
+     }
 
-    $(document).ready(function(){
-        var status_styles = {
-          "positive": "success",
-          "neutral": "default",
-          "negative": "danger",
-          "defer": "warning",
-          "under consideration": "dark",
-        }
+     function sanitizeHTML(value) {
+       // Only support links and code.
+       const template = document.createElement('template');
+       const div = template.content.ownerDocument.createElement('div');
+       template.content.append(div); // force parser context to "in body"
+       div.innerHTML = value;
+       const iterator = document.createNodeIterator(div);
+       let node = iterator.nextNode(); // This is the div
+       while (node = iterator.nextNode()) {
+         if (node.nodeType === Node.TEXT_NODE) {
+           continue;
+         }
+         if (node.nodeType === Node.ELEMENT_NODE) {
+           if (node instanceof HTMLAnchorElement) {
+             if (node.attributes.length === 1 && node.hasAttribute('href')) {
+               const href = node.getAttribute('href');
+               if (href[0] === '#' || href.startsWith("https://")) {
+                 continue;
+               }
+             }
+           } else if (node instanceof HTMLElement && node.localName === "code") {
+             if (node.attributes.length === 0) {
+               continue;
+             }
+           }
+         }
+         console.error("HTML Sanitization failed.", value);
+         return [value];
+       }
+       return div.childNodes;
+     }
 
-        var REPO_OWNER = "mozilla";
-        var REPO_NAME = "standards-positions";
+     function cell(nodes, className, colSpan) {
+       const td = document.createElement('td');
+       if (nodes) {
+         if (!Array.isArray(nodes)) {
+           nodes = [nodes];
+         }
+         td.append(...nodes);
+       }
+       if (className) {
+         td.className = className;
+       }
+       if (colSpan) {
+         td.colSpan = colSpan;
+       }
+       return td;
+     }
 
-        function iconLink(url, text, icon, options) {
-          var iconClasses;
-          if (options && options.custom) {
-            iconClasses = `glyphicon clipicon clipicon-${icon}`;
-          } else {
-            iconClasses = `glyphicon glyphicon-${icon}`;
-          }
-          /* glyphicons documented at https://getbootstrap.com/docs/3.3/components/#glyphicons */
-          return `<a href='${url || "javascript:void(0)"}' title='${text}'>`
-            + `<span class='${iconClasses}' aria-hidden='true'></span>`
-            + `<span class='sr-only'>${text}</span></a> `;
-        }
+     function link(href, child, helpText) {
+       const a = document.createElement('a');
+       a.setAttribute('href', href);
+       a.append(child);
+       if (helpText) {
+         a.setAttribute('aria-label', helpText);
+         a.title = helpText;
+       }
+       return a;
+     }
 
-        $.fn.dataTable.enum( [ "under consideration", "positive",
-                               "neutral", "negative", "defer" ] );
-        var ptable = $('#mozPositions').DataTable({
-          "paging": false,
-          "ajax": {
-              url: 'activities.json',
-              dataSrc: ''
-          },
-          dom: 'ilfrtip',
-          rowId: 'id',
-          "order": [[4, "asc"]],
-          "columns": [
-              {
-                "className":      'expand-control',
-                "orderable":      false,
-                "data":           null,
-                "defaultContent": '',
-                "render": function (data, type, row, meta) {
-                  if ((row.description && row.description !== "") ||
-                      (row.mozPositionDetail && row.mozPositionDetail !== "")) {
-                    if (row.shown) {
-                      return iconLink(`javascript:close_row(${meta.row})`, "Collapse", "triangle-bottom");
-                    } else {
-                      return iconLink(`javascript:open_row(${meta.row})`, 'Expand', 'triangle-right');
-                    }
-                  } else {
-                    return ""
-                  }
-                }
-              },
-              {
-                "className": 'link-control',
-                "data": null,
-                "defaultContent": '',
-                "render": function (data, type, row, meta) {
-                  var id = data.id;
-                  if (id != "") {
-                    return iconLink('#' + id, 'link', 'link');
-                  }
-                  return "";
-                },
-                "orderable": false,
-                "searchable": false
-              },
-              {
-                "className": "dt-body-center",
-                "data": "org",
-                "render": function (data, type, row, meta) {
-                  if (type !== "display") {
-                    return data;
-                  }
-                  if (data !== "") {
-                    var extension = ".svg"
-                    if (data === "Proposal") {
-                      return iconLink(null, 'Proposal', 'user');
-                    }
-                    if (data === "Ecma") {
-                      data = "JS"
-                    }
-                    return `<img src='asset/${data}${extension}' height='18px' alt='${data}'>`
-                  } else {
-                    return ""
-                  }
-                },
-                "orderable": true,
-                "searchable": false
-              },
-              {
-                "data": "title",
-                "render": function (data, type, row, meta) {
-                  if (type !== "display") {
-                    return data;
-                  }
-                  return "<a href='" + row.url + "'>" + data + "</a>"
-                },
-                "orderable": true,
-                "searchable": true
-              },
-              {
-                "name": "mozPosition",
-                "data": "mozPosition",
-                "type": "enum-0",
-                "render": function (data, type, row, meta) {
-                  if (type !== "display") {
-                    return data;
-                  }
-                  if (data !== "" && ! status_styles.hasOwnProperty(data)) {
-                    console.log("WARNING: unrecognised position '" + data + "' on " + row.name);
-                  }
-                  return "<button type='button' class='btn btn-xs position btn-" + status_styles[data] +
-                    "'>" + data + "</button>";
-                },
-                "orderable": true
-              },
-              {
-                "data": "null",
-                "render": function (data, type, row, meta) {
-                  var out = "";
-                  if (row.mozPositionIssue && row.mozPositionIssue !== "") {
-                    out += iconLink(`https://github.com/${REPO_OWNER}/${REPO_NAME}/issues/${row.mozPositionIssue}`, 'position discussion', 'comment');
-                  }
-                  if (row.mozBugUrl && row.mozBugUrl !== "") {
-                    // Allow either a string or an array of strings.
-                    var bugArray = row.mozBugUrl;
-                    if (!Array.isArray(bugArray)) {
-                      bugArray = [bugArray];
-                    }
-                    for (var bug of bugArray) {
-                      out += iconLink(bug, 'mozilla bug', 'wrench');
-                    }
-                  }
-                  if (row.mdnUrl && row.mdnUrl !== "") {
-                    // Allow either a string or an array of strings.
-                    var mdnArray = row.mdnUrl;
-                    if (!Array.isArray(mdnArray)) {
-                      mdnArray = [mdnArray];
-                    }
-                    for (var mdn of mdnArray) {
-                      out += iconLink(mdn, 'MDN', "MDN", { custom: true });
-                    }
-                  }
-                  if (row.ciuName && row.ciuName !== "") {
-                    out += iconLink(`https://caniuse.com/${row.ciuName}`, 'caniuse', 'tasks');
-                  }
-                  return out;
-                },
-                "orderable": false,
-                "searchable": false
-              }
-          ]
-        })
+     function img(src, width, height, alt, title) {
+       const img = document.createElement('img');
+       img.src = src;
+       img.width = width;
+       img.height = height;
+       img.alt = alt;
+       if (title) {
+         img.title = title;
+       }
+       return img;
+     }
 
-        function format ( d ) {
-          // `d` is the original data object for the row
-          var out = [];
-          if (d.description && d.description !== "") {
-            out.push('<dt>Description</dt>' +
-                     '<dd>' + d.description + '</dd>')
-          }
-          if (d.mozPositionDetail && d.mozPositionDetail !== "") {
-            out.push('<dt>Mozilla\'s Position</dt>' +
-                     '<dd>' + d.mozPositionDetail + '</dd>')
-          }
-          if (out.length > 0) {
-            return '<dl class="dl-horizontal">' + out.join("\n")+ '</dl>'
-          }
-        }
+     function positionSpan(position) {
+       if (!position) {
+         return null;
+       }
+       const span = document.createElement('span');
+       span.className = `position ${position.replace(/ /g, '-')}`;
+       span.textContent = position;
+       return span;
+     }
 
-        window.open_all = function() {
-          ptable.rows().every( function(rowIndex, tableLoop, rowLoop) {
-            open_row(rowIndex);
-          });
-        }
+     function dlItem(term, value) {
+       const dt = document.createElement('dt');
+       dt.textContent = term;
+       const dd = document.createElement('dd');
+       dd.append(...sanitizeHTML(value));
+       return [dt, dd];
+     }
 
-        window.open_row = function(row_selector) {
-          var row = ptable.row(row_selector);
-          var data = row.data();
-          var extra_data = format(data);
-          if (extra_data !== "") {
-            var tr = row.node();
-            data.shown = true;
-            ptable.cell(tr, 0).invalidate();
+     function details(description, rationale) {
+       if (!description && !rationale) {
+         return null;
+       }
+       const details = document.createElement('details');
+       const summary = document.createElement('summary');
+       summary.textContent = 'Details';
+       details.append(summary);
+       const dl = document.createElement('dl');
+       details.append(dl);
+       if (description) {
+         dl.append(...dlItem('Description', description));
+       }
+       if (rationale) {
+         dl.append(...dlItem('Rationale', rationale));
+       }
+       return details;
+     }
 
-            row.child( extra_data ).show();
-            tr.classList.add('shown');
-          }
-        }
+     const imageMapping = {
+       'WHATWG': ['WHATWG.svg', 32, 32],
+       'W3C': ['W3C.svg', 47, 32],
+       'W3C CG': ['W3C-CG.svg', 32, 32],
+       'IETF': ['IETF.svg', 60, 32],
+       'Ecma': ['Ecma.png', 32, 32],
+       'Unicode': ['Unicode.svg', 32, 32],
+       'Proposal': ['Proposal.svg', 32, 32],
+       'Other': ['Other.svg', 32, 32],
+     };
+     function venuesImages(venues) {
+       const rv = [];
 
-        window.close_all = function() {
-          ptable.rows().every( function(rowIndex, tableLoop, rowLoop) {
-            close_row(rowIndex);
-          });
-        }
+       for (const venue of venues) {
+         if (rv.length > 0) {
+           rv.push(" ");
+         }
+         const [filename, width, height] = imageMapping[venue];
+         rv.push(img(`asset/${filename}`, width, height, venue, venue));
+       }
+       return rv;
+     }
 
-        window.close_row = function(row_selector) {
-          var row = ptable.row(row_selector);
-          var data = row.data();
-          var tr = row.node();
+     function row(issueNum, { id, url, title, concerns, position, topics, venues, caniuse, bug, mdn, webkit, description, rationale }) {
+       const tr = document.createElement('tr');
+       const rv = [tr];
 
-          data.shown = false;
-          ptable.cell(tr, 0).invalidate();
+       // Link
+       let selfId = '';
+       if (id) {
+         selfId += id;
+       } else {
+         selfId += issueNum;
+       }
+       tr.id = selfId;
+       tr.append(cell(link(`#${selfId}`, '#', 'Self-link')));
 
-          row.child.hide();
-          tr.classList.remove('shown');
-        }
+       // Specification
+       tr.append(cell(link(url, title)));
 
-        window.filterPosition = function(e) {
-          e.preventDefault();
-          ptable.columns('mozPosition:name').search(e.target.innerText).draw();
-          // Calling .show() sets display to 'inline', which styles inconsistently.
-          $('#showall')[0].style.display = 'inline-block';
-        }
-        ptable.on('draw', function() {
-          $('button.position').click(window.filterPosition);
-        });
-        window.show_all = function(e) {
-          $('#mozPositions_filter input')[0].value = '';
-          // Reset both the global and per-column search.
-          ptable.search('').column('mozPosition:name').search('').draw();
-          $('#showall').hide();
-        }
+       // Concerns
+       tr.append(cell(concerns?.join(', '), 'concerns'));
 
-        // Work around bugs in both Chrome and Firefox relating to
-        // anchor scrolling and :target selection.
-        $('#mozPositions').on('order.dt', function() {
-          if (gFirstTableRender) {
-            gFirstTableRender = false;
-            setTimeout(function() {
-              var hash = location.hash;
-              if (hash != "") {
-                // just "location.hash = location.hash" would be enough for
-                // Firefox, but not Chrome.
-                location.hash = "";
-                location.hash = hash;
-              }
-            }, 0);
-          }
-        });
+       // Position
+       tr.append(cell(positionSpan(position), 'positions'));
+       tr.dataset.position = position;
 
-        window.addEventListener("hashchange", function (event) {
-          var hash = location.hash.slice(1);
-          if (hash == "") {
-            return;
-          }
+       // Topics
+       tr.append(cell(topics?.join(', '), 'topics'));
+       tr.dataset.topics = topics?.join(' ');
 
-          var tr = document.getElementById(hash);
-          if (!tr) {
-            return;
-          }
+       // Venues
+       tr.append(cell(venuesImages(venues), 'venues'));
+       tr.dataset.venues = venues?.join(' ');
 
-          // Open the row that is now the target.
-          open_row(tr);
-        });
-    })
+       // More info
+       const infoLinks = [];
+       infoLinks.push(link(`https://github.com/mozilla/standards-positions/issues/${issueNum}`, '💬', 'Discussion'));
+       if (bug) {
+         infoLinks.push(" ", link(bug, img('asset/bugzilla.png', 32, 32, 'bug'), 'Mozilla bug'));
+       }
+       if (mdn) {
+         infoLinks.push(" ", link(mdn, img('asset/MDN.svg', 32, 32, 'MDN'), 'MDN'));
+       }
+       if (caniuse) {
+         infoLinks.push(" ", link(caniuse, '📊', 'Can I use'));
+       }
+
+       tr.append(cell(infoLinks, 'more-info'));
+
+       // Details
+       if (description || rationale) {
+         const detailsTr = document.createElement('tr');
+         detailsTr.className = 'details';
+         detailsTr.append(cell(details(description, rationale), null, 7));
+         rv.push(detailsTr);
+       }
+
+       return rv;
+     }
+
+     // Expand details for :target
+     function expandDetailsForTarget(id) {
+       const tr = document.getElementById(id);
+       if (!tr) {
+         return;
+       }
+       if (tr.nextElementSibling.className === "details") {
+         const details = tr.nextElementSibling.firstChild.firstChild;
+         details.open = true;
+       }
+     }
+
+     // Filter/search
+     function filterTable(searchText) {
+       const tbody = document.querySelector('tbody');
+       for (const tr of tbody.children) {
+         if (tr.classList.contains('details')) {
+           continue;
+         }
+         const show = shouldShowRow(searchText, tr);
+         tr.hidden = !show;
+         const nextTr = tr.nextElementSibling;
+         if (nextTr.classList.contains('details')) {
+           nextTr.hidden = !show;
+         }
+       }
+     }
+     function shouldShowRow(searchText, tr) {
+       const specTitle = tr.firstChild.nextSibling.textContent;
+       return specTitle.toLowerCase().includes(searchText.toLowerCase());
+     }
+     function setupSearch() {
+       const searchInput = document.querySelector('input[name="search"]');
+       searchInput.oninput = e => filterTable(searchInput.value);
+       if (searchInput.value) {
+         filterTable(searchInput.value);
+       }
+     }
+
+     async function init() {
+       const data = await getData();
+       const tbody = document.querySelector('tbody');
+       for (const issueNum in data) {
+         const item = data[issueNum];
+         // Remove the below if check to include issues without a position.
+         if (item.position) {
+           // Newest issue first
+           tbody.prepend(...row(issueNum, item));
+         }
+       }
+
+       if (location.hash) {
+         expandDetailsForTarget(location.hash.substr(1));
+       }
+       onhashchange = e => {
+         expandDetailsForTarget(e.newURL.split('#')[1]);
+       };
+
+       setupSearch();
+
+       document.querySelector('.noscript').remove();
+       document.documentElement.classList.remove('loading');
+     }
+
+     init();
     </script>
   </body>
 </html>

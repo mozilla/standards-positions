@@ -107,6 +107,7 @@
     "webkit": null,
     "description": "The Permissions Standard defines common infrastructure for other specifications that need to interact with browser permissions. It also defines an API to allow web applications to query and request changes to the status of a given permission.",
     "id": "permissions",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API",
     "rationale": "Mozilla believes that the ability to work with user permissions is critical for user agency. There are certain aspects of the API that are not suitable for the permissions model used in Firefox and so we would like to work on improving several aspects of the API. In particular, we think that the way that status of permissions needs to more accurately reflect the different states that exist or could exist. We also think that the interactions with Feature Policy need to be better clarified. We're committed to fixing this, because permissions has become critical in making the web a more capable platform and it is important to ensure that we preserve user control over their online experience."
   },
   "20": {
@@ -240,6 +241,7 @@
     "webkit": null,
     "description": "This specification defines an API that allows websites to declare themselves as web share targets, which can receive shared content from either the Web Share API, or system events (e.g., shares from native apps). This is a similar mechanism to navigator.registerProtocolHandler, in that it works by registering the website with the user agent, to later be invoked from another site or native application via the user agent (possibly at the discretion of the user). The difference is that registerProtocolHandler registers the handler via a programmatic API, whereas a Web Share Target is declared in the Web App Manifest, to be registered at a time of the user agent or user's choosing.",
     "id": "web-share-target",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share",
     "rationale": "This specification affords web applications the ability to handle user-initiated 'share' actions (e.g., sharing a link, image, text, or other media) in contexts that have traditionally been the exclusive domain of native and/or system applications. We believe this API is worth prototyping because it enhances the utility of web applications to end-users, and allows us to explore ways that web applications can more effectively integrate with the underlying operating system."
   },
   "28": {
@@ -257,6 +259,7 @@
     "webkit": null,
     "description": "This specification enables web developers to show customized media metadata on platform UI, customize available platform media controls, and access platform media keys such as hardware keys found on keyboards, headsets, remote controls, and software keys found in notification areas and on lock screens of mobile devices.",
     "id": "media-session",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/Media_Session_API",
     "rationale": "This API allows sites to offer users common media controls, which improves usability of media playback sites."
   },
   "29": {
@@ -366,6 +369,7 @@
     "webkit": null,
     "description": "This specification defines a framework for exposing sensor data to the Open Web Platform in a consistent way. It does so by defining a blueprint for writing specifications of concrete sensors along with an abstract Sensor interface that can be extended to accommodate different sensor types.",
     "id": "generic-sensor",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs",
     "rationale": "The purpose of most sensors and their associated risks are incredibly hard to convey to users, which means we cannot get informed consent. We are interested in addressing the use cases websites need sensors for in ways that do not give websites access to the sensors directly as that is rife with security and privacy issues."
   },
   "36": {
@@ -498,6 +502,7 @@
     "webkit": null,
     "description": "This specification defines an API supporting the MIDI (Musical Instrument Digital Interface) protocol, enabling web applications to enumerate and select MIDI input and output devices on the client system and send and receive MIDI messages. It is intended to enable non-music MIDI applications as well as music ones, by providing low-level access to the MIDI devices available on the users' systems.",
     "id": "webmidi",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIAccess",
     "rationale": "This specification is a reasonable technical design for exposing MIDI devices to JavaScript, which has some demonstrated use-cases in the market. MIDI devices are not universally hardened against adversarial input (especially when sysex is involved) so we don't believe this API is safe to expose in the casual and low-trust context of ordinary websites. We therefore only expose it in Firefox if the user has deliberately installed a site-specific add-on to enable the capability."
   },
   "59": {
@@ -548,6 +553,7 @@
     "webkit": null,
     "description": "This document defines a web platform API that allows script to asynchronously acquire a lock over a resource, hold it while work is performed, then release it. While held, no other script in the origin can acquire a lock over the same resource. This allows contexts (windows, workers) within a web application to coordinate the usage of resources.",
     "id": "web-locks",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Locks_API",
     "rationale": "The specification provides important web platform primitives for same-global and cross-global coordination and avoids requiring other APIs to grow their own transaction abstractions (ex: the Service Worker spec's Cache API)."
   },
   "65": {
@@ -598,6 +604,7 @@
     "webkit": null,
     "description": "This specification provides APIs for creating, composing, and consuming streams of data that map efficiently to low-level I/O primitives.",
     "id": "streams",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/Streams_API",
     "rationale": "Streams are an important building block for many APIs, in particular around networking and media."
   },
   "72": {
@@ -690,7 +697,8 @@
     "webkit": null,
     "description": "An increasing diversity of Web-connected devices and software capabilities has created a need to deliver optimized content for each device. This specification defines an extensible and configurable set of HTTP request header fields, colloquially known as Client Hints, to address this. They are intended to be used as input to proactive content negotiation; just as the Accept header field allows user agents to indicate what formats they prefer, Client Hints allow user agents to indicate device and agent specific preferences.",
     "id": "http-client-hints",
-    "rationale": "Architecturally, Mozilla prefers client-side solutions for retrieving alternate versions of content, such as the HTML <picture> tag. Despite these architectural preferences, we find that Client-Hints do not present a concrete harm to the web or to its users. "
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#Client_hints",
+    "rationale": "Architecturally, Mozilla prefers client-side solutions for retrieving alternate versions of content, such as the HTML &lt;picture> tag. Despite these architectural preferences, we find that Client-Hints do not present a concrete harm to the web or to its users. "
   },
   "80": {
     "issue": 80,
@@ -829,6 +837,7 @@
     "webkit": null,
     "description": "This document describes APIs for accessing data on the system clipboard. It provides operations for overriding the default clipboard actions (cut, copy and paste), and for directly accessing the clipboard contents.",
     "id": "clipboard-apis",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard",
     "rationale": "Async Clipboard API is an improvement over execCommand for accessing the clipboard. Security concerns are addressed by gating on user activation and a non-modal dialog."
   },
   "90": {
@@ -910,6 +919,7 @@
     "webkit": null,
     "description": "This document describes an API to discover and communicate with devices over the Bluetooth 4 wireless standard using the Generic Attribute Profile (GATT).",
     "id": "web-bluetooth",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API",
     "rationale": "This API provides access to the Generic Attribute Profile (GATT) of Bluetooth, which is not the lowest level of access that the specifications allow, but its generic nature makes it impossible to clearly evaluate. Like <a href=\"#webusb\">WebUSB</a> there is significant uncertainty regarding how well prepared devices are to receive requests from arbitrary sites. The generic nature of the API means that this risk is difficult to manage. The Web Bluetooth CG has opted to only rely on user consent, which we believe is not sufficient protection. This proposal also uses a blocklist, which will require constant and active maintenance so that vulnerable devices aren't exploited. This model is unsustainable and presents a significant risk to users and their devices."
   },
   "96": {
@@ -944,6 +954,7 @@
     "webkit": null,
     "description": "The Network Error Logging spec enables website to declare a reporting policy that can be used to report encountered network errors that prevented it from successfully loading its requested resources.",
     "id": "network-error-logging",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Network_Error_Logging",
     "rationale": "The API enables the collection of user-specific information that sites might not otherwise be able to observe, which includes information that might be private under some circumstances. Furthermore, the specification does not seem to track changes to the Reporting API it builds upon and seems effectively unmaintained."
   },
   "100": {
@@ -961,6 +972,7 @@
     "webkit": null,
     "description": "This document describes an API for securely providing access to Universal Serial Bus devices from web pages.",
     "id": "webusb",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/USB",
     "rationale": "Because many USB devices are not designed to handle potentially-malicious interactions over the USB protocols and because those devices can have significant effects on the computer they're connected to, we believe that the security risks of exposing USB devices to the Web are too broad to risk exposing users to them or to explain properly to end users to obtain meaningful informed consent. It also poses risks that sites could use USB device identity or data stored on USB devices as tracking identifiers."
   },
   "101": {
@@ -1134,6 +1146,7 @@
     "webkit": null,
     "description": "The Network Information API enables web applications to access information about the network connection in use by the device.",
     "id": "netinfo",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API",
     "rationale": "This API provides information about a client's network connection, which allows sites to obtain additional information about clients and their environment. It is better that sites use methods that dynamically adapt to available bandwidth, as that is more accurate and likely to be applicable in the moment."
   },
   "118": {
@@ -1151,6 +1164,7 @@
     "webkit": null,
     "description": "CSS container queries allow conditional CSS based on aspects of elements within the document (such as box dimensions or computed styles).",
     "id": "css-container-queries",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries",
     "rationale": "This feature addresses a long-standing request from web developers. It allows web content to be declaratively styled to make it context-aware and responsive, to a much greater degree than would be possible otherwise.  We think this is a challenge that's worth solving, and we think this feature is a good way to address it."
   },
   "121": {
@@ -1230,9 +1244,9 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1515760",
     "webkit": null,
-    "description": "Adds imagesrcset and imagesizes attributes to <link> which correspond to the srcset and sizes attributes of <img> respectively, for the purposes of preloading.",
+    "description": "Adds imagesrcset and imagesizes attributes to &lt;link> which correspond to the srcset and sizes attributes of &lt;img> respectively, for the purposes of preloading.",
     "id": "image-preload",
-    "rationale": "A relevant aspect of <link rel=preload> support."
+    "rationale": "A relevant aspect of &lt;link rel=preload> support."
   },
   "131": {
     "position": "neutral",
@@ -1446,6 +1460,7 @@
     "webkit": null,
     "description": "Enabling images and iframes to be fetched at a later time, when the user is likely to look at them.",
     "id": "loading-lazy-attr",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading#images_and_iframes",
     "rationale": "As currently specified in HTML this is a reasonable addition to how images and iframes are fetched. "
   },
   "152": {
@@ -1610,6 +1625,7 @@
     "webkit": null,
     "description": "This specification defines an API enabling the creation and use of strong, attested, scoped, public key-based credentials by web applications, for the purpose of strongly authenticating users. Conceptually, one or more public key credentials, each scoped to a given WebAuthn Relying Party, are created by and bound to authenticators as requested by the web application. The user agent mediates access to authenticators and their public key credentials in order to preserve user privacy. Authenticators are responsible for ensuring that no operation is performed without user consent. Authenticators provide cryptographic proof of their properties to Relying Parties via attestation. This specification also describes the functional model for WebAuthn conformant authenticators, including their signature and attestation functionality.",
     "id": "webauthn",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Authentication_API",
     "rationale": "Public key cryptographic authentication is a major improvement in the fight against phishing, and we encourage all security-conscious web applications to implement authentication flows utilizing Web Authentication in the future."
   },
   "164": {
@@ -1768,6 +1784,7 @@
     "webkit": null,
     "description": "This specification describes a method that enables web applications to synchronize data in the background.",
     "id": "background-sync",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/SyncManager",
     "rationale": "We're concerned that this feature would allow users to be tracked across networks (leaking private information about location and IP address and how they change over time), and that it would allow script execution and resource consumption when it isn't clear to the user that they're interacting with the site.  We might reconsider this position given evidence that these concerns can be safely addressed."
   },
   "174": {
@@ -1970,6 +1987,7 @@
     "webkit": null,
     "description": "A proposal for extending URL fragment syntax with a list of text bits to highlight and scroll to.",
     "id": "scroll-to-text-fragment",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/Text_fragments",
     "rationale": "This is an important use case to address and the proposal does a good job at mitigating the compatibility and security issues. As a result the syntax is a tad inelegant, but workable. (See also the <a href=\"#fragmention\">position on Fragmention</a>, which aims to address similar use cases.)"
   },
   "195": {
@@ -2312,6 +2330,7 @@
     "webkit": null,
     "description": "This specification describes support for accessing virtual reality (VR) and augmented reality (AR) devices, including sensors and head-mounted displays, on the Web.",
     "id": "webxr",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API",
     "rationale": "The WebXR Device API is the basis for VR, MR, and AR on the web.  This is a significant and large suite of features.  There is the potential for XR to provide significant benefits, but also a number of risks to individual privacy and security due to the way that XR relies on sensors and environmental data.  Developing new interaction models also presents challenges and considerable work is required before new norms are established.  Mozilla is actively working on WebXR and supportive of its overall goals.  Our participation in and implementation of this API is critical to understanding the feature and learning how to empower users in managing the associated risks."
   },
   "230": {
@@ -2374,7 +2393,7 @@
     "caniuse": null,
     "bug": null,
     "webkit": null,
-    "description": "Proposal to add various output attributes on HTML's <input> elements that would allow developers to declare some conversions the browser could do to, for example, images and videos.",
+    "description": "Proposal to add various output attributes on HTML's &lt;input> elements that would allow developers to declare some conversions the browser could do to, for example, images and videos.",
     "id": "input-file-output-attributes",
     "rationale": "While this seems like it could be a useful capability to expose, we'd rather see it exposed in a way that can be composed with other existing APIs, and we're concerned that there's a risk of runaway complexity through adding more and more features to it."
   },
@@ -2517,7 +2536,7 @@
     "caniuse": "mdn-api_htmlvideoelement_requestvideoframecallback",
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1800882",
     "webkit": null,
-    "description": "<video>.requestVideoFrameCallback() allows web authors to be notified when a frame has been presented for composition.",
+    "description": "&lt;video>.requestVideoFrameCallback() allows web authors to be notified when a frame has been presented for composition.",
     "id": "requestVideoFrameCallback",
     "rationale": "This is intended to allow web authors to do efficient per-video-frame processing of video, such as video processing and painting to a canvas, video analysis, or synchronization with external audio sources."
   },
@@ -3028,6 +3047,7 @@
     "webkit": null,
     "description": "Defines CSS properties and an API for creating animations that are tied to the scroll offset of a scroll container.",
     "id": "scroll-animations",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations",
     "rationale": "Animations linked to scrolling is desired for some web applications or web sites. A declarative solution allows for better user control and should be easier to use for web developers."
   },
   "349": {
@@ -3372,6 +3392,7 @@
     "webkit": null,
     "description": "overflow:clip is a feature of CSS Overflow Module Level 3 that is similar to overflow:hidden except without a formatting context or programmatic scrollability.",
     "id": "css-overflow-clip",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
     "rationale": "This feature is both a useful declarative presentational feature for web developers and standardizes a non-standard -moz prefixed value."
   },
   "424": {
@@ -3609,6 +3630,7 @@
     "webkit": null,
     "description": "Byte streams are a specialization of <a href=\"#streams\">Streams</a> that are designed to deal with raw bytes.",
     "id": "byte-streams",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/Streams_API#ByteStream-related_interfaces",
     "rationale": "Byte streams are a useful specialization of streams that is well suited to performant I/O and they are well integrated with Typed Arrays."
   },
   "458": {
@@ -3643,6 +3665,7 @@
     "webkit": null,
     "description": "This document describes an API for providing access to devices that support the Human Interface Device (HID) protocol.",
     "id": "webhid",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/HID",
     "rationale": "This API, like <a href=#webusb>WebUSB</a>, provides access to generic devices. Though this API is limited to human interface devices (HID), the same concerns apply as WebUSB, namely that devices are generally not designed with access from arbitrary websites in their threat model."
   },
   "460": {
@@ -4455,6 +4478,7 @@
     "webkit": null,
     "description": ":has selector lets authors select elements that anchor at least one element that matches its inner relative selector.",
     "id": "css-has-selector",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has",
     "rationale": "We recognize that :has is something that a lot of people want. That power does come with performance costs, like the potential for very poor performance when there is DOM tree mutation. Overall, the utility of the selector justifies this risk, but we might need to do more to help developers avoid the worst problems."
   },
   "529": {
@@ -4611,6 +4635,7 @@
     "webkit": null,
     "description": "The navigation API provides a web application-focused way of managing same-origin same-frame history entries and navigations.",
     "id": "navigation-api",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/Navigation_API",
     "rationale": "This API is a good improvement for implementing SPAs over the status quo. There are various details that we're not sure about in the spec and we'd like to continue reviewing and submit feedback about issues we find."
   },
   "544": {
@@ -4859,6 +4884,7 @@
     "webkit": null,
     "description": "The URLPattern API provides a web platform primitive for matching URLs based on a convenient pattern syntax.",
     "id": "urlpattern",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/URLPattern",
     "rationale": "URLPattern is an important primitive for the evolution of ServiceWorkers through the introduction of the Static Routing API.  Similar to Web Locks which evolved out of the ServiceWorkers Cache API, it is appropriate that URLPattern be distinct from the Service Workers spec and WG as it is useful in other contexts as well."
   },
   "567": {
@@ -6019,6 +6045,7 @@
     "webkit": null,
     "description": "This specification provides web developers the ability to detect if automatically starting the playback of a media file is allowed in different situations.",
     "id": "autoplay-policy-detection",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/getAutoplayPolicy",
     "rationale": "This API provides a convenient and synchronous answer to whether a particular kind of media can autoplay, which is something web developers are currently detecting either with various hacks or through UA detection. This doesn't expose new information for fingerprinting (see w3c/autoplay#24) as media elements already expose through events which media will autoplay by trying to autoplay."
   },
   "677": {
@@ -6036,6 +6063,7 @@
     "webkit": null,
     "description": "The View Transitions API allows developers to create animated visual transitions representing changes in the document state.",
     "id": "view-transitions",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API",
     "rationale": "View Transitions allows developers to create animated transitions between states within one document as well as transitions when navigating across documents. The latter is a new capability for the web. We think the API design should be consistent between these cases where possible. As of mid-2023, the specification and implementation experience for this feature for same-document transitions is further along than for cross-document transitions."
   },
   "678": {
@@ -7608,6 +7636,7 @@
     "webkit": null,
     "description": "The UserActivation API provides the ability to query whether the window currently has or has previously had real user interaction.",
     "id": "user-activation",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/UserActivation",
     "rationale": "This API exposes the sticky activation and transient activation concepts which browsers use internally for, e.g., allowing popups. These concepts are useful for web apps as well."
   },
   "839": {
@@ -7942,6 +7971,9 @@
     "webkit": null,
     "description": "This spec defines a signal that conveys a person's request to websites and services to not sell or share their personal information with third parties.",
     "id": "gpc",
+    "mdn": [
+      "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/globalPrivacyControl"
+    ],
     "rationale": "This signal defined in this specification provides users with a way to opt-out of the disclosure of their information to third parties once per profile in a way that is legally enforced in some jurisdictions, and is being considered in future regulations."
   },
   "872": {
@@ -8898,7 +8930,8 @@
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=137367",
     "webkit": null,
     "description": "These CSS properties provide control over typographic widows and orphans during fragmentation/pagination.",
-    "id": "widows-orphans"
+    "id": "widows-orphans",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/widows"
   },
   "974": {
     "issue": 974,

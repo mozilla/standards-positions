@@ -2,3 +2,4 @@
 *.swp
 *~
 /venv/
+.DS_Store

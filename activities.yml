@@ -1,13 +1,14 @@
 <link>'s imagesrcset and imagesizes attributes:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1515760
   caniuse: null
-  description: Adds imagesrcset and imagesizes attributes to <link> which correspond
-    to the srcset and sizes attributes of <img> respectively, for the purposes of
-    preloading.
+  description: Adds imagesrcset and imagesizes attributes to &lt;link> which correspond
+    to the srcset and sizes attributes of &lt;img> respectively, for the purposes
+    of preloading.
   id: image-preload
   issue: 130
+  mdn: null
   position: positive
-  rationale: A relevant aspect of <link rel=preload> support.
+  rationale: A relevant aspect of &lt;link rel=preload> support.
   url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset
   venues:
   - WHATWG
@@ -19,6 +20,7 @@ A Well-Known URL for Changing Passwords:
     a way for software to help the user find the way to change their password.
   id: change-password-url
   issue: 372
+  mdn: null
   position: positive
   rationale: null
   url: https://wicg.github.io/change-password-url/
@@ -30,6 +32,7 @@ ARIA Annotations:
   description: ''
   id: aria-annotations
   issue: 253
+  mdn: null
   position: positive
   rationale: This contains changes needed to support screen reader accessibility of
     comments, suggestions, and other annotations in published documents and online
@@ -45,6 +48,7 @@ ARIA Element Reflection:
     which work across Shadow DOM boundaries (with limitations).
   id: aria-element-reflection
   issue: 200
+  mdn: null
   position: positive
   rationale: This is an important piece in making web components accessible. While
     this unfortunately does not address all of the use cases for ARIA references across
@@ -60,6 +64,7 @@ Accelerated Shape Detection in Images:
     detectors (e.g. human faces) for still images and/or live image feeds.
   id: shape-detection-api
   issue: 21
+  mdn: null
   position: defer
   rationale: We're concerned about possible complexity, variations in support between
     operating systems, and possible fingerprinting surface, but we'd like to wait
@@ -75,6 +80,7 @@ An HTTP Status Code for Indicating Hints (103):
     response.
   id: http-early-hints
   issue: 134
+  mdn: null
   position: positive
   rationale: We believe that experimentation with the 103 response code is worthwhile.
     We do have some concerns about the lack of clear interaction with Fetch, which
@@ -89,6 +95,7 @@ Atomics.waitAsync:
     for use in agents that are not allowed to block.
   id: atomics-wait-async
   issue: 433
+  mdn: null
   position: positive
   rationale: Represents a meaningful way for the main thread to interact with blocking
     concurrent patterns in workers and other off-thread work.
@@ -102,6 +109,7 @@ Audio Focus API:
     apps, so they can play on top of each other, or play exclusively.
   id: audio-focus
   issue: 203
+  mdn: null
   position: positive
   rationale: This proposes a straightforward API for improving mixing of audio produced
     by website.
@@ -116,6 +124,7 @@ Auto-sizes for lazy-loaded images:
     CSS or width/height attributes.
   id: img-auto-sizes
   issue: 650
+  mdn: null
   position: positive
   rationale: This proposal makes it easier for web developers to use responsive images.
     There is some risk that the behavior of cached images can cause flicker in some
@@ -130,6 +139,7 @@ Autoplay Policy Detection:
     automatically starting the playback of a media file is allowed in different situations.
   id: autoplay-policy-detection
   issue: 675
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/Navigator/getAutoplayPolicy
   position: positive
   rationale: This API provides a convenient and synchronous answer to whether a particular
     kind of media can autoplay, which is something web developers are currently detecting
@@ -149,6 +159,7 @@ Badging API:
     have arrived), without showing a more heavyweight notification.
   id: badging
   issue: 108
+  mdn: null
   position: positive
   rationale: null
   url: https://wicg.github.io/badging/
@@ -156,10 +167,11 @@ Badging API:
   - Proposal
 BigInt:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1366287
-  caniuse: bigint
+  caniuse: https://caniuse.com/bigint
   description: This proposal adds arbitrary-precision integers to ECMAScript.
   id: bigint
   issue: 65
+  mdn: null
   position: neutral
   rationale: Shipping in Firefox.
   url: https://tc39.github.io/proposal-bigint/
@@ -172,6 +184,7 @@ Bounce Tracking Mitigations:
     are required to prevent it from happening.
   id: bounce-tracking-mitigations
   issue: 835
+  mdn: null
   position: positive
   rationale: With 3rd-party cookies being restricted by default in all major browsers,
     navigational tracking plays an increasingly important role on the web. This spec
@@ -193,6 +206,7 @@ Bundled HTTP Exchanges:
     to their component exchanges, and efficiently store 8-bit resources.
   id: bundled-exchanges
   issue: 264
+  mdn: null
   position: neutral
   rationale: The mechanism as currently sketched out seems to provide potentially
     useful functionality for a number of use cases. This is a complex mechanism, and
@@ -205,11 +219,12 @@ Bundled HTTP Exchanges:
   - Proposal
 Byte Streams:
   bug: null
-  caniuse: streams
+  caniuse: https://caniuse.com/streams
   description: Byte streams are a specialization of <a href="#streams">Streams</a>
     that are designed to deal with raw bytes.
   id: byte-streams
   issue: 457
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/Streams_API#ByteStream-related_interfaces
   position: positive
   rationale: Byte streams are a useful specialization of streams that is well suited
     to performant I/O and they are well integrated with Typed Arrays.
@@ -223,6 +238,7 @@ COLR v1 Fonts:
     richer graphical capabilities for emoji (and similar) glyph design.
   id: font-colrv1
   issue: 497
+  mdn: null
   position: positive
   rationale: Provides comparable design capabilities to OpenType-SVG, but in a more
     compact and lightweight form that integrates better into font rendering pipelines.
@@ -232,11 +248,12 @@ COLR v1 Fonts:
   - Proposal
 CSS Anchor Positioning:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=css-anchor-position-1
-  caniuse: css-anchor-positioning
+  caniuse: https://caniuse.com/css-anchor-positioning
   description: Anchor Positioning allows positioned elements to size and position
     themselves relative to one or more 'anchor elements' elsewhere on the page.
   id: css-anchor-positioning
   issue: 794
+  mdn: null
   position: positive
   rationale: This is an important evolution of absolute positioning that addresses
     a common and much requested authoring use case that otherwise requires the use
@@ -252,6 +269,7 @@ CSS Cascade Layers:
     without interleaving with style rules outside the layer.
   id: css-cascade-layers
   issue: 471
+  mdn: null
   position: positive
   rationale: This feature provides a way to abstract CSS rules in style sheets, supported
     in popular CSS frameworks/pre-processors, and a frequent web developer request.
@@ -261,11 +279,12 @@ CSS Cascade Layers:
   - W3C
 CSS Container Queries:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1744221
-  caniuse: css-container-queries
+  caniuse: https://caniuse.com/css-container-queries
   description: CSS container queries allow conditional CSS based on aspects of elements
     within the document (such as box dimensions or computed styles).
   id: css-container-queries
   issue: 118
+  mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries
   position: positive
   rationale: This feature addresses a long-standing request from web developers. It
     allows web content to be declaratively styled to make it context-aware and responsive,
@@ -277,11 +296,12 @@ CSS Container Queries:
   - W3C
 'CSS Fragmentation Module Level 3: 3.3 Breaks Between Lines: orphans, widows':
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=137367
-  caniuse: css-widows-orphans
+  caniuse: https://caniuse.com/css-widows-orphans
   description: These CSS properties provide control over typographic widows and orphans
     during fragmentation/pagination.
   id: widows-orphans
   issue: 972
+  mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/widows
   position: positive
   rationale: null
   url: https://drafts.csswg.org/css-break/#widows-orphans
@@ -289,11 +309,12 @@ CSS Container Queries:
   - W3C
 CSS Grid Layout Module Level 2:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1349043
-  caniuse: css-subgrid
+  caniuse: https://caniuse.com/css-subgrid
   description: This draft defines additions to CSS Grid, primarily for the subgrid
     feature.
   id: subgrid
   issue: 125
+  mdn: null
   position: positive
   rationale: Subgrid adds a critical enhancement to CSS Grid, in particular for many
     CSS Grid use-cases that require alignment across nested semantic elements.
@@ -307,6 +328,7 @@ CSS Layout API:
     with javascript.
   id: css-layout-api
   issue: 93
+  mdn: null
   position: positive
   rationale: This specification allows developing prototypes of new CSS layout systems
     and provides an escape hatch for developers when the existing systems aren't good
@@ -316,12 +338,13 @@ CSS Layout API:
   - W3C
 CSS Nesting:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1648037
-  caniuse: css-nesting
+  caniuse: https://caniuse.com/css-nesting
   description: This module introduces the ability to nest one style rule inside another,
     with the selector of the child rule relative to the selector of the parent rule.  This
     increases the modularity and maintainability of CSS stylesheets.
   id: css-nesting
   issue: 695
+  mdn: null
   position: positive
   rationale: Nesting is a valuable tool for simplifying CSS authoring. Many authoring
     formats include the capability in some form, but native support will make the
@@ -331,11 +354,12 @@ CSS Nesting:
   - W3C
 CSS Painting API:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1302328
-  caniuse: css-paint-api
-  description: An API for allowing web developers to define a custom CSS <image> with
-    javascript, which will respond to style and size changes.
+  caniuse: https://caniuse.com/css-paint-api
+  description: An API for allowing web developers to define a custom CSS &lt;image>
+    with javascript, which will respond to style and size changes.
   id: css-paint-api
   issue: 93
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/CSS_Painting_API
   position: positive
   rationale: This specification allows developing prototypes of new graphical CSS
     features and provides an escape hatch for developers when the existing features
@@ -351,6 +375,7 @@ CSS Properties and Values API:
     a type, inheritance behaviour, and an initial value.
   id: css-properties-and-values-api
   issue: 93
+  mdn: null
   position: positive
   rationale: This specification makes it significantly easier to use CSS custom properties
     in ways that are more like regular CSS properties.
@@ -359,11 +384,12 @@ CSS Properties and Values API:
   - W3C
 'CSS Properties and Values API: @property':
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1684605
-  caniuse: mdn-css_at-rules_property
+  caniuse: https://caniuse.com/mdn-css_at-rules_property
   description: The @property rule represents a custom property registration directly
     in a stylesheet without having to run any JS.
   id: at-property
   issue: 331
+  mdn: null
   position: positive
   rationale: Having a declarative registration mechanism for custom properties is
     a good addition to CSS Properties and Values API.
@@ -372,11 +398,12 @@ CSS Properties and Values API:
   - W3C
 CSS Relational Pseudo-Class (:has()):
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=has-pseudo
-  caniuse: css-has
+  caniuse: https://caniuse.com/css-has
   description: :has selector lets authors select elements that anchor at least one
     element that matches its inner relative selector.
   id: css-has-selector
   issue: 528
+  mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/:has
   position: positive
   rationale: We recognize that :has is something that a lot of people want. That power
     does come with performance costs, like the potential for very poor performance
@@ -387,11 +414,12 @@ CSS Relational Pseudo-Class (:has()):
   - W3C
 CSS Scoped Styles:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=%40scope
-  caniuse: css-cascade-scope
+  caniuse: https://caniuse.com/css-cascade-scope
   description: '@scope rule allows targeting CSS rules to subtree or fragment of a
     document.'
   id: at-scope
   issue: 472
+  mdn: null
   position: positive
   rationale: Scoped styles allow authors to precisely control upper- and lower-bounds
     of where CSS rules, without having to add many attributes on DOM elements. However,
@@ -408,6 +436,7 @@ CSS Shadow Parts:
     their shadow tree to the outside page for styling purposes.
   id: css-shadow-parts
   issue: 59
+  mdn: null
   position: positive
   rationale: null
   url: https://drafts.csswg.org/css-shadow-parts
@@ -421,6 +450,7 @@ CSS Typed OM:
     CSS values as typed JavaScript objects to facilitate their performant manipulation.
   id: css-typed-om
   issue: 93
+  mdn: null
   position: positive
   rationale: This specification provides an easier way to manipulate the CSS object
     model.
@@ -429,11 +459,12 @@ CSS Typed OM:
   - W3C
 CSS View Transitions Module Level 1:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1823896
-  caniuse: view-transitions
+  caniuse: https://caniuse.com/view-transitions
   description: The View Transitions API allows developers to create animated visual
     transitions representing changes in the document state.
   id: view-transitions
   issue: 677
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API
   position: positive
   rationale: View Transitions allows developers to create animated transitions between
     states within one document as well as transitions when navigating across documents.
@@ -446,11 +477,12 @@ CSS View Transitions Module Level 1:
   - W3C
 CSS overflow clip:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1531609
-  caniuse: mdn-css_properties_overflow_clip
+  caniuse: https://caniuse.com/mdn-css_properties_overflow_clip
   description: overflow:clip is a feature of CSS Overflow Module Level 3 that is similar
     to overflow:hidden except without a formatting context or programmatic scrollability.
   id: css-overflow-clip
   issue: 418
+  mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
   position: positive
   rationale: This feature is both a useful declarative presentational feature for
     web developers and standardizes a non-standard -moz prefixed value.
@@ -465,6 +497,7 @@ Cache Digests for HTTP/2:
     their choices of what to push to clients.
   id: http-cache-digest
   issue: 131
+  mdn: null
   position: neutral
   rationale: This is experimental technology that might improve the use of server
     push by giving servers information about what is cached. It is still unclear how
@@ -480,6 +513,7 @@ Clear Site Data:
     to instruct a user agent to clear a site's locally stored data related to a host.
   id: clear-site-data
   issue: 90
+  mdn: null
   position: positive
   rationale: This feature is useful for sites to be able to recover from mistakes
     in deployment of certain web technologies like Service Workers, and thus makes
@@ -495,6 +529,7 @@ Clipboard API and events:
     and paste), and for directly accessing the clipboard contents.
   id: clipboard-apis
   issue: 89
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/Clipboard
   position: positive
   rationale: Async Clipboard API is an improvement over execCommand for accessing
     the clipboard. Security concerns are addressed by gating on user activation and
@@ -509,6 +544,7 @@ Compression Streams:
     streams of binary data.
   id: compression-streams
   issue: 207
+  mdn: null
   position: positive
   rationale: This provides a small API wrapper around compression formats implementations
     already have to support and hopefully leads to more things being compressed due
@@ -523,6 +559,7 @@ Constructable Stylesheet Objects:
     directly constructable, along with a way to use them in DocumentOrShadowRoots.
   id: construct-stylesheets
   issue: 103
+  mdn: null
   position: positive
   rationale: null
   url: https://wicg.github.io/construct-stylesheets/
@@ -535,6 +572,7 @@ Contact Picker API:
     for one or more items with a handful of contact properties.
   id: contact-picker
   issue: 153
+  mdn: null
   position: defer
   rationale: This API innovates in some ways beyond several previous Contacts APIs,
     though uses different properties than HTML autofill field names.
@@ -549,6 +587,7 @@ Contact Picker API:
     upon itself.
   id: cspee
   issue: 326
+  mdn: null
   position: neutral
   rationale: This specification allows sites to specify minimum CSP policies for embedded
     content. The risk of problems arising from misalignment between different policies
@@ -559,10 +598,11 @@ Contact Picker API:
   - W3C
 Cookie Store API:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1475599
-  caniuse: cookie-store-api
+  caniuse: https://caniuse.com/cookie-store-api
   description: An asynchronous Javascript cookies API for documents and workers
   id: cookie-store
   issue: 94
+  mdn: null
   position: defer
   rationale: This API provides better access to cookies. However, the improvements
     also expand access to cookie metadata and the interactions with privacy features
@@ -579,6 +619,7 @@ Cookies Having Independent Partitioned State:
     top-level context that the cookie was created in.
   id: chips
   issue: 678
+  mdn: null
   position: positive
   rationale: This spec provides an opt-in mechanism to enable partitioned cookies.
     This allows more browsers to support partitioned cookies, and once adopted by
@@ -593,6 +634,7 @@ Crash Reporting:
     site owners through the use of the Reporting API.
   id: crash-reporting
   issue: 288
+  mdn: null
   position: positive
   rationale: This seems like it could be a useful addition to the reporting API.  We're
     not yet confident what level of user consent is needed, but we can experiment
@@ -602,12 +644,13 @@ Crash Reporting:
   - Proposal
 Credential Management Level 1:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1156047
-  caniuse: credential-management
+  caniuse: https://caniuse.com/credential-management
   description: This specification describes an imperative API enabling a website to
     request a user’s credentials from a user agent, and to help the user agent correctly
     store user credentials for future use.
   id: credman
   issue: 172
+  mdn: null
   position: defer
   rationale: Development of the specification seems to have stalled and it's also
     not a priority for Mozilla.
@@ -621,6 +664,7 @@ Cross-Origin Read Blocking (CORB):
     'emptied' response instead.
   id: corb
   issue: 81
+  mdn: null
   position: neutral
   rationale: While this is an important aspect of a robust Spectre-defense, we would
     like to see a safelist-based approach pursued, e.g., <a href="https://github.com/annevk/orb">Opaque
@@ -635,6 +679,7 @@ Curve25519 in the Web Cryptography API:
     namely the signature algorithm Ed25519 and the key agreement algorithm X25519.
   id: webcrypto-curve25519
   issue: 271
+  mdn: null
   position: positive
   rationale: We are in favor of this work, but would like to see it have a path to
     standardization.  When doing that, it may be worth reconsidering some of the "no
@@ -645,10 +690,11 @@ Curve25519 in the Web Cryptography API:
   - Proposal
 Custom elements:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1438627
-  caniuse: custom-elementsv1
+  caniuse: https://caniuse.com/custom-elementsv1
   description: A way to create new HTML elements implemented through JavaScript.
   id: custom-elements
   issue: 60
+  mdn: null
   position: positive
   rationale: A welcome successor to XBL!
   url: https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements
@@ -662,6 +708,7 @@ Declarative Shadow DOM:
     to run.
   id: declarative-shadow-dom
   issue: 335
+  mdn: null
   position: positive
   rationale: This is a reasonable proposal which takes into account the various constraints
     and security considerations that come with changing the HTML parser.
@@ -675,6 +722,7 @@ Default Accessibility Semantics for Custom Elements:
     analogous to how built-in elements have "implicit" or "native" semantics.
   id: custom-elements-a11y
   issue: 201
+  mdn: null
   position: positive
   rationale: This is an important addition to custom elements as otherwise they'd
     have to publicly expose their internals in order to get accessibility correct.
@@ -689,6 +737,7 @@ Digital Credentials:
     agent or a wallet on the same device.
   id: digital-credentials
   issue: 1003
+  mdn: null
   position: negative
   rationale: This interface carries a significant risk of causing privacy problems
     and could lead to unjustified exclusion of web users. Any solution in this area
@@ -698,11 +747,12 @@ Digital Credentials:
   - Proposal
 Document Policy:
   bug: null
-  caniuse: document-policy
+  caniuse: https://caniuse.com/document-policy
   description: Document policy allows content to define a policy that constrains embedded
     content.
   id: document-policy
   issue: 327
+  mdn: null
   position: neutral
   rationale: The mechanism described provides sites greater control over embedded
     content. Constraints are accepted by content or the browser does not load the
@@ -719,6 +769,7 @@ Encrypted Server Name Indication for TLS 1.3:
     Name Indication for TLS 1.3.
   id: tls-esni
   issue: 139
+  mdn: null
   position: positive
   rationale: This feature enables encryption of the server name in connection attempts.
     It provides much-needed protection against attempts by network observers to see
@@ -734,6 +785,7 @@ Event Timing API:
     triggered by user interaction.
   id: event-timing-api
   issue: 283
+  mdn: null
   position: positive
   rationale: This feature grants web authors insights about the latency of certain
     events triggered by user interaction. This API reports the timestamp of when the
@@ -751,6 +803,7 @@ Federated Credential Management API:
     federated accounts in a privacy preserving manner.
   id: fedcm
   issue: 618
+  mdn: null
   position: positive
   rationale: 'Federated login is a widely-used feature on the web with significant
     user benefits in usability and security.  Unfortunately, federated identity on
@@ -782,6 +835,7 @@ Fetch Metadata Request Headers:
     in which it will be used.
   id: fetch-metadata
   issue: 88
+  mdn: null
   position: positive
   rationale: This gives servers useful context about requests that can be used to
     mitigate various security issues. The existing setup for embed/object elements
@@ -798,6 +852,7 @@ File Handling:
     to handle (read, stream, edit) files with given MIME types and/or file extensions.
   id: wicg-file-handling
   issue: 158
+  mdn: null
   position: defer
   rationale: Not far enough along to properly evaluate.
   url: https://github.com/WICG/file-handling/blob/master/explainer.md
@@ -810,6 +865,7 @@ File System:
     API.
   id: fs
   issue: 562
+  mdn: null
   position: positive
   rationale: A storage endpoint with a POSIX-like file system API is a valuable addition
     to the web platform.
@@ -818,12 +874,13 @@ File System:
   - WHATWG
 File System Access:
   bug: null
-  caniuse: native-filesystem-api
+  caniuse: https://caniuse.com/native-filesystem-api
   description: This document defines a web platform API that lets websites gain write
     access to the local file system. It builds on File API, but adds lots of new functionality
     on top.
   id: native-file-system
   issue: 154
+  mdn: null
   position: negative
   rationale: There's a subset of this API we're quite enthusiastic about (in particular
     providing a read/write API for files and directories as alternative storage endpoint),
@@ -841,6 +898,7 @@ First-Party Sets:
     of related domains as being in a First-Party Set.
   id: first-party-sets
   issue: 350
+  mdn: null
   position: negative
   rationale: We believe the definition of first party should be clear and understandable
     to users, web developers, and publishers, and thus ideally it should be based
@@ -860,6 +918,7 @@ Form Participation API:
     to participate in form submission, form validation, and so on.
   id: form-participation-api
   issue: 150
+  mdn: null
   position: positive
   rationale: These propose what seems likely to be a useful addition to allow custom
     controls to participate in form validation and submission.
@@ -873,6 +932,7 @@ Fragmention:
     bit of text to highlight and scroll to
   id: fragmention
   issue: 234
+  mdn: null
   position: positive
   rationale: We feel that some of the use cases this proposal addresses are very important
     to address, but worry about the lack of a clear processing model and about possible
@@ -891,6 +951,7 @@ Generic Sensor API:
     that can be extended to accommodate different sensor types.
   id: generic-sensor
   issue: 35
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs
   position: negative
   rationale: The purpose of most sensors and their associated risks are incredibly
     hard to convey to users, which means we cannot get informed consent. We are interested
@@ -907,6 +968,7 @@ Geolocation Sensor:
     the geolocation of the hosting device.
   id: geolocation-sensor
   issue: 36
+  mdn: ''
   position: negative
   rationale: Given that the web already has a geolocation API, any additional API
     for the same purpose would have to meet a high bar as both will need to be maintained
@@ -919,11 +981,12 @@ Geolocation Sensor:
   - W3C
 Get Installed Related Apps API:
   bug: null
-  caniuse: mdn-api_navigator_getinstalledrelatedapps
+  caniuse: https://caniuse.com/mdn-api_navigator_getinstalledrelatedapps
   description: The Get Installed Related Apps API allows web apps to detect if related
     apps are installed on the current device.
   id: get-installed-related-apps
   issue: 213
+  mdn: null
   position: negative
   rationale: This feature increases the fingerprinting surface of browsers without
     sufficient safeguards.
@@ -937,6 +1000,8 @@ Global Privacy Control (GPC):
     and services to not sell or share their personal information with third parties.
   id: gpc
   issue: 867
+  mdn:
+  - https://developer.mozilla.org/en-US/docs/Web/API/Navigator/globalPrivacyControl
   position: positive
   rationale: This signal defined in this specification provides users with a way to
     opt-out of the disclosure of their information to third parties once per profile
@@ -947,11 +1012,12 @@ Global Privacy Control (GPC):
   - Proposal
 HTML Imports:
   bug: null
-  caniuse: imports
+  caniuse: https://caniuse.com/imports
   description: HTML Imports are a way to include and reuse HTML documents in other
     HTML documents.
   id: html-imports
   issue: 60
+  mdn: null
   position: negative
   rationale: Mozilla anticipated that JavaScript modules would change the landscape
     here and would rather invest in evolving that, e.g., through HTML Modules. Having
@@ -969,6 +1035,7 @@ HTML Modules:
     well into the existing ES6 Modules infrastructure.
   id: html-modules
   issue: 137
+  mdn: null
   position: positive
   rationale: null
   url: https://github.com/w3c/webcomponents/blob/gh-pages/proposals/html-modules-explainer.md
@@ -982,6 +1049,7 @@ HTML autofocus attribute overhaul:
     results for users.
   id: autofocus-overhaul
   issue: 195
+  mdn: null
   position: positive
   rationale: null
   url: https://github.com/whatwg/html/pull/4763
@@ -989,11 +1057,12 @@ HTML autofocus attribute overhaul:
   - WHATWG
 HTMLVideoElement.requestVideoFrameCallback():
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1800882
-  caniuse: mdn-api_htmlvideoelement_requestvideoframecallback
-  description: <video>.requestVideoFrameCallback() allows web authors to be notified
-    when a frame has been presented for composition.
+  caniuse: https://caniuse.com/mdn-api_htmlvideoelement_requestvideoframecallback
+  description: '&lt;video>.requestVideoFrameCallback() allows web authors to be notified
+    when a frame has been presented for composition.'
   id: requestVideoFrameCallback
   issue: 250
+  mdn: null
   position: positive
   rationale: This is intended to allow web authors to do efficient per-video-frame
     processing of video, such as video processing and painting to a canvas, video
@@ -1010,6 +1079,7 @@ HTTP Cache-Control Extensions for Stale Content:
     purposes.
   id: http-stale-controls
   issue: 144
+  mdn: null
   position: positive
   rationale: The stale-while-revalidate cache control extension appears to provide
     improved user experience with no obvious drawbacks. We take no position on the
@@ -1019,7 +1089,7 @@ HTTP Cache-Control Extensions for Stale Content:
   - Proposal
 HTTP Client Hints:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=935216
-  caniuse: client-hints-dpr-width-viewport
+  caniuse: https://caniuse.com/client-hints-dpr-width-viewport
   description: An increasing diversity of Web-connected devices and software capabilities
     has created a need to deliver optimized content for each device. This specification
     defines an extensible and configurable set of HTTP request header fields, colloquially
@@ -1029,11 +1099,12 @@ HTTP Client Hints:
     indicate device and agent specific preferences.
   id: http-client-hints
   issue: 79
+  mdn: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#Client_hints
   position: neutral
   rationale: 'Architecturally, Mozilla prefers client-side solutions for retrieving
-    alternate versions of content, such as the HTML <picture> tag. Despite these architectural
-    preferences, we find that Client-Hints do not present a concrete harm to the web
-    or to its users. '
+    alternate versions of content, such as the HTML &lt;picture> tag. Despite these
+    architectural preferences, we find that Client-Hints do not present a concrete
+    harm to the web or to its users. '
   url: https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-client-hints
   venues:
   - IETF
@@ -1044,6 +1115,7 @@ Idle Detection API:
     user presence signals.
   id: idle-detection-api
   issue: 453
+  mdn: null
   position: negative
   rationale: We are concerned about the user-surveillance, user-manipulation, and
     abuse of user resources potential of this API, despite the required 60 second
@@ -1060,6 +1132,7 @@ Imperative Shadow DOM Distribution API:
     the assigned nodes for a slot element.
   id: imperative-shadow-dom
   issue: 409
+  mdn: null
   position: positive
   rationale: The proposal is a relatively small addition to the existing Shadow DOM
     API and can make it easier to use Shadow DOM.
@@ -1075,6 +1148,7 @@ Import Assertions:
     in a common way across JavaScript environments.
   id: import-attributes
   issue: 373
+  mdn: null
   position: positive
   rationale: This proposal enables the importing of JSON content into a JS module.
     This mechanism is a prerequisite for HTML/CSS/JSON modules.
@@ -1083,10 +1157,11 @@ Import Assertions:
   - Ecma
 Import Maps:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1688879
-  caniuse: import-maps
+  caniuse: https://caniuse.com/import-maps
   description: Import maps allow web pages to control the behavior of JavaScript imports.
   id: import-maps
   issue: 146
+  mdn: null
   position: positive
   rationale: We support the overall intent of the proposal and consider it worth prototyping.
     There are a few technical details that may require some care, in particular the
@@ -1107,6 +1182,7 @@ Incrementally Better Cookies:
     tightened.
   id: cookie-incrementalism
   issue: 260
+  mdn: null
   position: positive
   rationale: Any approach that reduces the scope of cookie use is a security and privacy
     win. Because some such changes can break websites that rely on the broader scope,
@@ -1122,6 +1198,7 @@ IntersectionObserver V2:
     prevention.
   id: intersectionobserver-v2
   issue: 109
+  mdn: null
   position: positive
   rationale: Security positive, interop concerns are being addressed.
   url: https://github.com/w3c/IntersectionObserver/pull/523
@@ -1134,6 +1211,7 @@ Invokers:
     and declarative way.
   id: invokers
   issue: 902
+  mdn: null
   position: positive
   rationale: This proposal reduces the need for JavaScript for pages to build interactive
     elements. Using invokers is more likely to result in good accessibility and device-independence
@@ -1143,13 +1221,14 @@ Invokers:
   - WHATWG
 JPEG-XL:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1539075
-  caniuse: jpegxl
+  caniuse: https://caniuse.com/jpegxl
   description: The JPEG XL Image Coding System (ISO/IEC 18181) has a rich feature
     set and is particularly optimised for responsive web environments, so that content
     renders well on a wide range of devices. Moreover, it includes several features
     that help transition from the legacy JPEG format.
   id: jpegxl
   issue: 522
+  mdn: null
   position: neutral
   rationale: JPEG-XL includes features and performance that might differentiate it
     from other formats, but the benefits it provides are not significant enough on
@@ -1159,7 +1238,7 @@ JPEG-XL:
   - Other
 Keyboard Map:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1469017
-  caniuse: mdn-api_keyboardlayoutmap
+  caniuse: https://caniuse.com/mdn-api_keyboardlayoutmap
   description: This specification defines an API that allows websites to convert from
     a given code value to a valid key value that can be shown to the user to identify
     the given key. The conversion from code to key is based on the user’s currently
@@ -1168,6 +1247,7 @@ Keyboard Map:
     the user.
   id: keyboard-map
   issue: 300
+  mdn: null
   position: negative
   rationale: We're concerned that this exposes keyboard layouts, which seem likely
     to be a significant source of fingerprinting data, in a way that does not require
@@ -1182,6 +1262,7 @@ Largest Contentful Paint API:
     the largest paint an element triggered on screen.
   id: largest-contentful-paint
   issue: 191
+  mdn: null
   position: positive
   rationale: We are aware the concerns about this API such as the heuristic isn't
     perfect, however, we believe this is the area we should explore and there are
@@ -1197,6 +1278,7 @@ Layout Instability API:
     on the page.
   id: layout-instability
   issue: 374
+  mdn: null
   position: positive
   rationale: We're somewhat uneasy about the potential burden that this feature imposes
     on sites that don't use it, due to the requirements of the "buffered" flag.  However,
@@ -1207,11 +1289,12 @@ Layout Instability API:
   - Proposal
 Lazy loading:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1542784
-  caniuse: loading-lazy-attr
+  caniuse: https://caniuse.com/loading-lazy-attr
   description: Enabling images and iframes to be fetched at a later time, when the
     user is likely to look at them.
   id: loading-lazy-attr
   issue: 151
+  mdn: https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading#images_and_iframes
   position: positive
   rationale: 'As currently specified in HTML this is a reasonable addition to how
     images and iframes are fetched. '
@@ -1232,6 +1315,7 @@ Let 'localhost' be localhost.:
     network.
   id: let-localhost-be-localhost
   issue: 121
+  mdn: null
   position: positive
   rationale: The proposal, to the extent it applies to browsers, is to hardcode localhost
     to always resolve to a loopback address instead of invoking the resolver library
@@ -1249,6 +1333,7 @@ Locale Extensions:
     by language-region pair
   id: locale-extensions
   issue: 844
+  mdn: null
   position: negative
   rationale: Use cases have legitimacy, but they don't seem strong enough to justify
     the additional fingerprinting surface. Addressing fingerprinting, if even possible,
@@ -1264,6 +1349,7 @@ Long Animation Frame API:
     that take a long time to render.
   id: long-animation-frame-api
   issue: 929
+  mdn: null
   position: positive
   rationale: This feature allows web developers to measure frame congestion and jank,
     and has a correlation with how user perceive this type of congestion. Web developers
@@ -1277,6 +1363,7 @@ Low-level (Raw) Sockets API:
   description: This describes APIs for TCP and UDP communication with arbitrary hosts
   id: low-level-sockets
   issue: 431
+  mdn: null
   position: negative
   rationale: This API creates a way to circumvent protections, in particular the same-origin
     policy, that have been developed to protect these services. The safeguards outlined
@@ -1293,6 +1380,7 @@ Managed Media Source:
     usage and memory.
   id: managed-media-source
   issue: 845
+  mdn: null
   position: positive
   rationale: This opt-in feature of Media Source Extension allows implementations
     to reclaim memory when needed, and to allows scheduling download of media data
@@ -1310,6 +1398,7 @@ Media Feeds:
     recommendations on the browser UI.
   id: media-feeds
   issue: 370
+  mdn: null
   position: negative
   rationale: Media feeds uses harmful technologies to amplify a harmful feature. Many
     of the capabilities this enables are available to sites in other ways. For those
@@ -1328,6 +1417,7 @@ Media Session Standard:
     mobile devices.
   id: media-session
   issue: 28
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/Media_Session_API
   position: positive
   rationale: This API allows sites to offer users common media controls, which improves
     usability of media playback sites.
@@ -1336,7 +1426,7 @@ Media Session Standard:
   - W3C
 MediaStreamTrack Content Hints:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1831521
-  caniuse: mdn-api_mediastreamtrack_contenthint
+  caniuse: https://caniuse.com/mdn-api_mediastreamtrack_contenthint
   description: This specification extends MediaStreamTrack to let web applications
     provide an optional media-content hint attribute. This helps sinks like RTCPeerConnection
     or MediaRecorder select encoder parameters and processing algorithms appropriately
@@ -1344,6 +1434,7 @@ MediaStreamTrack Content Hints:
     to examine the actual content.
   id: mst-content-hint
   issue: 101
+  mdn: null
   position: positive
   rationale: Content Hints is a welcome higher-level abstraction that does not require
     broad knowledge and tuning of video encoder, audio-processing, and congestion
@@ -1360,6 +1451,7 @@ Mixed Content:
     encrypted and authenticated document.
   id: mixed-content
   issue: 668
+  mdn: null
   position: positive
   rationale: Managing mixed content has been an important cornerstone of the migration
     to more HTTPS. The level 2 spec is an important step towards more HTTPS adoption
@@ -1375,6 +1467,7 @@ Navigation API:
     same-origin same-frame history entries and navigations.
   id: navigation-api
   issue: 543
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/Navigation_API
   position: positive
   rationale: This API is a good improvement for implementing SPAs over the status
     quo. There are various details that we're not sure about in the spec and we'd
@@ -1390,6 +1483,7 @@ Network Error Logging:
     from successfully loading its requested resources.
   id: network-error-logging
   issue: 99
+  mdn: https://developer.mozilla.org/en-US/docs/Web/HTTP/Network_Error_Logging
   position: negative
   rationale: The API enables the collection of user-specific information that sites
     might not otherwise be able to observe, which includes information that might
@@ -1400,11 +1494,12 @@ Network Error Logging:
   - W3C
 Network Information API:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1057169
-  caniuse: netinfo
+  caniuse: https://caniuse.com/netinfo
   description: The Network Information API enables web applications to access information
     about the network connection in use by the device.
   id: netinfo
   issue: 117
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API
   position: negative
   rationale: This API provides information about a client's network connection, which
     allows sites to obtain additional information about clients and their environment.
@@ -1420,6 +1515,7 @@ Opaque Response Blocking (ORB):
     else.
   id: orb
   issue: 860
+  mdn: null
   position: positive
   rationale: Our preferred approach to handle opaque responses when defending against
     Spectre attacks.
@@ -1434,6 +1530,7 @@ Origin Policy:
     mechanisms for existing policies (Content Security Policy, Referrer Policy, etc).
   id: origin-policy
   issue: 160
+  mdn: null
   position: positive
   rationale: Giving developers the ability to set policies for an entire origin is
     a powerful new primitive that will benefit security of applications as well as
@@ -1451,6 +1548,7 @@ Origin-Keyed Agent Clusters:
     than site.
   id: domenic-origin-isolation
   issue: 244
+  mdn: null
   position: positive
   rationale: Letting developers opt out of document.domain and reduce the potential
     size of their agent cluster allows user agents to balance security, performance,
@@ -1465,6 +1563,7 @@ Payment Handler API:
     to handle requests for payment.
   id: payment-handler
   issue: 23
+  mdn: null
   position: positive
   rationale: The Payment Handler API has the potential to enable an open and secure
     payments ecosystem for the Web. At the same time, we remain concerned about some
@@ -1487,6 +1586,7 @@ Payment Method Manifest:
     the Web Payments ecosystem, and how such files are to be used.
   id: payment-method-manifest
   issue: 22
+  mdn: null
   position: defer
   rationale: We'd like to defer this for the same reasons as Payment Handler, given
     that it is closely related.
@@ -1495,11 +1595,12 @@ Payment Method Manifest:
   - W3C
 Periodic Background Synchronization:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1547906
-  caniuse: background-sync
+  caniuse: https://caniuse.com/background-sync
   description: This specification describes a method that enables web applications
     to synchronize data in the background.
   id: periodic-background-sync
   issue: 214
+  mdn: null
   position: negative
   rationale: We're concerned that this feature would allow users to be tracked across
     networks (leaking private information about location and IP address and how they
@@ -1513,12 +1614,13 @@ Periodic Background Synchronization:
   - Proposal
 Permissions:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1105827
-  caniuse: permissions-api
+  caniuse: https://caniuse.com/permissions-api
   description: The Permissions Standard defines common infrastructure for other specifications
     that need to interact with browser permissions. It also defines an API to allow
     web applications to query and request changes to the status of a given permission.
   id: permissions
   issue: 19
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API
   position: positive
   rationale: Mozilla believes that the ability to work with user permissions is critical
     for user agency. There are certain aspects of the API that are not suitable for
@@ -1534,11 +1636,12 @@ Permissions:
   - W3C
 Permissions Policy:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1390801
-  caniuse: permissions-policy
+  caniuse: https://caniuse.com/permissions-policy
   description: This specification defines a mechanism that allows developers to selectively
     enable and disable use of various browser features and APIs.
   id: feature-policy
   issue: 24
+  mdn: null
   position: positive
   rationale: Mozilla's primary interest in this specification is in the delegation
     of permissions to third-party contexts that are not granted there by default.
@@ -1551,13 +1654,14 @@ Permissions Policy:
   - W3C
 Picture-in-Picture:
   bug: null
-  caniuse: picture-in-picture
+  caniuse: https://caniuse.com/picture-in-picture
   description: This specification intends to provide APIs to allow websites to create
     a floating video window always on top of other windows so that users may continue
     consuming media while they interact with other content sites, or applications
     on their device.
   id: picture-in-picture
   issue: 72
+  mdn: null
   position: defer
   rationale: We ship Picture-in-Picture (PiP) as a feature in Firefox, but without
     exposing a JavaScript API. We are evaluating if our PiP UI affordances are sufficient
@@ -1568,11 +1672,12 @@ Picture-in-Picture:
   - Proposal
 Portals:
   bug: null
-  caniuse: portals
+  caniuse: https://caniuse.com/portals
   description: This specification defines a mechanism that allows for rendering of,
     and seamless navigation to, embedded content.
   id: portals
   issue: 157
+  mdn: null
   position: defer
   rationale: While we are deferring evaluation of this proposal, because per <a href="https://github.com/mozilla/standards-positions/issues/157#issuecomment-636217042">Domenic's
     comment</a> it is in the early stages of development and it is too early to evaluate
@@ -1593,6 +1698,7 @@ Prioritized Task Scheduling:
     tasks.
   id: scheduling-api
   issue: 546
+  mdn: null
   position: positive
   rationale: This feature is useful for web developers to provide a more responsive
     experience to users.
@@ -1605,6 +1711,7 @@ Priority Hints:
   description: Specification of the Priority Hints feature.
   id: priority-hints
   issue: 606
+  mdn: null
   position: positive
   rationale: Priority hints allow sites to provide information about how subresources
     on a page might be prioritized for fetching. This can allow the browser to override
@@ -1620,6 +1727,7 @@ Private Access Tokens:
     of Privacy Pass mechanism into Apple's networking stack.
   id: private-access-tokens
   issue: 954
+  mdn: null
   position: negative
   rationale: This application of Privacy Pass fairly closely follows the IETF specification,
     but the integration with the Web means that the effect is of a proprietary deployment.
@@ -1635,6 +1743,7 @@ Private Click Measurement:
     conversion, such as a purchase or a sign-up, to a previous ad click.
   id: private-click-measurement
   issue: 161
+  mdn: null
   position: defer
   rationale: We're interested in this specification in order to support a way for
     a click source to measure conversions as a result of the user clicking on an ad
@@ -1652,6 +1761,7 @@ Private Network Access:
     on a client’s internal network to the web at large.
   id: cors-and-rfc1918
   issue: 143
+  mdn: null
   position: positive
   rationale: While imperfect and arguably at odds with Internet architecture, localhost
     and local networks of end users are vulnerable to attacks that this protocol will
@@ -1667,6 +1777,7 @@ Private State Token API:
     underlying primitive.
   id: private-state-token
   issue: 262
+  mdn: null
   position: negative
   rationale: Private State Tokens provides sites with the means to exchange information
     about visitors, using Privacy Pass to ensure that there are very tight bounds
@@ -1689,6 +1800,7 @@ Raw Clipboard Access:
     data with any arbitrary Clipboard type, without encoding and decoding.
   id: raw-clipboard-access
   issue: 206
+  mdn: null
   position: negative
   rationale: The current proposal has significant risks of attacks on native applications.  Some
     of these attacks may be mitigated by pickling or other similar solutions.  If
@@ -1704,6 +1816,7 @@ Relative color syntax (CSS Color Module Level 5):
     changes. Great for creating color palettes and schemes.
   id: css-relative-color-syntax
   issue: 841
+  mdn: null
   position: positive
   rationale: Enables more freedom for developers to make use of the new forms and
     spaces introduced in CSS Color Module Level 4.
@@ -1717,6 +1830,7 @@ Relative indexing method:
     (Array, String, TypedArray) which allows relative indexing of collection.
   id: relative-indexing-method
   issue: 458
+  mdn: null
   position: positive
   rationale: Relative indexing is useful for typed arrays and arrays and will be a
     quality of life improvement for developers.
@@ -1732,6 +1846,7 @@ Reporting API:
     in a consistent manner.
   id: reporting
   issue: 104
+  mdn: null
   position: positive
   rationale: This is a reasonable generalization of the CSP reporting mechanism that
     allows more features to adopt it.
@@ -1745,6 +1860,7 @@ Restricting Document Access of Same Origin Documents:
     origin) into each having their own agent/event loop.
   id: documentaccess
   issue: 197
+  mdn: null
   position: negative
   rationale: Changing control flow of cross-origin documents without their consent
     is not something we should expand upon (i.e., beyond what sandboxing allows) as
@@ -1756,11 +1872,12 @@ Restricting Document Access of Same Origin Documents:
   - Proposal
 Sanitizer API:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1650370
-  caniuse: mdn-api_sanitizer
+  caniuse: https://caniuse.com/mdn-api_sanitizer
   description: The Sanitizer API allows turning supplied HTML into a safe HTML DOM
     tree
   id: sanitizer-api
   issue: 106
+  mdn: null
   position: positive
   rationale: This could be useful, since libraries exists and the browser could do
     it better.
@@ -1774,6 +1891,7 @@ Scheme-Bound Cookies:
     keying material as well as reducing the lifetime of non-secure cookies.
   id: scheming-cookies
   issue: 298
+  mdn: null
   position: positive
   rationale: Reducing the scope of cookies along this axis is a major win.
   url: https://github.com/mikewest/scheming-cookies
@@ -1781,12 +1899,13 @@ Scheme-Bound Cookies:
   - Proposal
 Screen Wake Lock API:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1589554
-  caniuse: wake-lock
+  caniuse: https://caniuse.com/wake-lock
   description: This document specifies an API that allows web applications to request
     a screen wake lock. Under the right conditions, and if allowed, the screen wake
     lock prevents the system from turning off a device's screen.
   id: screen-wake-lock
   issue: 210
+  mdn: null
   position: positive
   rationale: 'As the scope of the specification has been reduced to screen wake locks,
     it''s worth prototyping this API in a manner that restricts it to foreground first-party
@@ -1812,6 +1931,7 @@ Scroll-driven Animations:
     tied to the scroll offset of a scroll container.
   id: scroll-animations
   issue: 347
+  mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations
   position: positive
   rationale: Animations linked to scrolling is desired for some web applications or
     web sites. A declarative solution allows for better user control and should be
@@ -1828,6 +1948,7 @@ Secondary Certificate Authentication in HTTP/2:
     requests is defined.
   id: http2-secondary-certs
   issue: 175
+  mdn: null
   position: positive
   rationale: This specification enables client authentication in HTTP/2, which is
     of some benefit. However, it is the server authentication that is most interesting
@@ -1838,13 +1959,14 @@ Secondary Certificate Authentication in HTTP/2:
   - IETF
 Serial API (Add-On Gated):
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=webserial
-  caniuse: mdn-api_serial
+  caniuse: https://caniuse.com/mdn-api_serial
   description: The Serial API provides a way for websites to read and write from a
     serial device through script. Such an API would bridge the web and the physical
     world, by allowing documents to communicate with devices such as microcontrollers,
     3D printers, and other serial devices. There is also a companion explainer document.
   id: webserial
   issue: 336
+  mdn: null
   position: neutral
   rationale: Devices that offer serial interfaces often expose powerful, low-level
     functions over the interface with little or no authentication. Exposing that sort
@@ -1868,6 +1990,7 @@ Service binding and parameter specification via the DNS (DNS SVCB and HTTPSSVC):
     potential benefits to both performance and privacy.
   id: dnsop-svcb-httpssvc
   issue: 208
+  mdn: null
   position: positive
   rationale: While there are some details of the proposal that may require refining,
     we beleive that this is a promising approach to support Encrypted SNI, and may
@@ -1885,6 +2008,7 @@ ServiceWorker Static Routing API:
     without needing to wake up a ServiceWorker.
   id: service-worker-static-routing-api
   issue: 828
+  mdn: null
   position: positive
   rationale: A longstanding performance concern for ServiceWorkers and the sites using
     them is that there is no way to skip going to a ServiceWorker for a controlled
@@ -1902,11 +2026,12 @@ ServiceWorker Static Routing API:
   - Proposal
 Shadow trees (formerly known as Shadow DOM):
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1438607
-  caniuse: shadowdomv1
+  caniuse: https://caniuse.com/shadowdomv1
   description: A way to give a node in the DOM a hidden subtree in which the children
     of the node can be inserted.
   id: shadow-trees
   issue: 60
+  mdn: null
   position: positive
   rationale: A welcome successor to XBL!
   url: https://dom.spec.whatwg.org/#shadow-trees
@@ -1920,6 +2045,7 @@ Shared Storage:
     carefully constructed output gates.
   id: shared-storage
   issue: 646
+  mdn: null
   position: negative
   rationale: Mozilla has significant concerns about the viability of the isolation
     components of this design. The use cases presented do not, at this time, justify
@@ -1929,7 +2055,7 @@ Shared Storage:
   - Proposal
 Signed HTTP Exchanges:
   bug: null
-  caniuse: sxg
+  caniuse: https://caniuse.com/sxg
   description: This document specifies how a server can send an HTTP request/ response
     pair, known as an exchange, with signatures that vouch for that exchange's authenticity.
     These signatures can be verified against an origin's certificate to establish
@@ -1939,6 +2065,7 @@ Signed HTTP Exchanges:
     and protocol-confusion attacks.
   id: http-origin-signed-responses
   issue: 29
+  mdn: null
   position: negative
   rationale: Mozilla has concerns about the shift in the web security model required
     for handling web-packaged information. Specifically, the ability for an origin
@@ -1959,6 +2086,7 @@ Storage Access API:
     blocked.
   id: storage-access-api
   issue: 280
+  mdn: null
   position: positive
   rationale: In our current efforts to limit the impact of cross-site tracking there
     are cases where we may unintentionally break parts of web pages that users depend
@@ -1985,6 +2113,7 @@ Storage Buckets API:
     treatment to all the data from a single origin.
   id: storage-buckets
   issue: 475
+  mdn: null
   position: positive
   rationale: Data clearing on storage pressure is fundamentally limited by the current
     single "default" storage bucket per origin and an all-or-nothing persistent flag
@@ -1998,11 +2127,12 @@ Storage Buckets API:
   - Proposal
 Streams:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1128959
-  caniuse: streams
+  caniuse: https://caniuse.com/streams
   description: This specification provides APIs for creating, composing, and consuming
     streams of data that map efficiently to low-level I/O primitives.
   id: streams
   issue: 70
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/Streams_API
   position: positive
   rationale: Streams are an important building block for many APIs, in particular
     around networking and media.
@@ -2019,6 +2149,7 @@ Structured Headers for HTTP:
     values.
   id: structured-headers
   issue: 256
+  mdn: null
   position: positive
   rationale: Use of structured headers promises to improve consistency and interoperability
     of new HTTP header fields. Depending on further security analysis, we may upgrade
@@ -2032,6 +2163,7 @@ Structured cloning of errors:
   description: Serializing and deserializing JavaScript Error objects.
   id: errors-structured-cloning
   issue: 165
+  mdn: null
   position: positive
   rationale: Good extension to the object serialization algorithm (StructuredSerializeInternal)
     as currently there is no way to serialize errors.
@@ -2046,6 +2178,7 @@ TC39 Stage 3 Proposals:
     as ready to implement, as per the TC39 staging process.
   id: tc39-stage-3
   issue: 527
+  mdn: null
   position: positive
   rationale: Due to the structure of TC39, stage 3 signifies that a proposal is ready
     to implement. Stage 3 proposals have been reviewed by the SpiderMonkey team and
@@ -2056,11 +2189,12 @@ TC39 Stage 3 Proposals:
   - Ecma
 Text Fragments:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1753933
-  caniuse: url-scroll-to-text-fragment
+  caniuse: https://caniuse.com/url-scroll-to-text-fragment
   description: A proposal for extending URL fragment syntax with a list of text bits
     to highlight and scroll to.
   id: scroll-to-text-fragment
   issue: 194
+  mdn: https://developer.mozilla.org/en-US/docs/Web/Text_fragments
   position: positive
   rationale: This is an important use case to address and the proposal does a good
     job at mitigating the compatibility and security issues. As a result the syntax
@@ -2076,6 +2210,7 @@ The Popover API:
     be rendered on top of all other content and allow closing by the user (light dismiss).
   id: popover
   issue: 698
+  mdn: null
   position: positive
   rationale: A common paradigm on the web which would be good for accessibility and
     developer ergonomics to support as a feature in HTML.
@@ -2089,6 +2224,7 @@ The Topics API:
     advertising topics that the page visitor might currently be interested in.
   id: topics
   issue: 622
+  mdn: null
   position: negative
   rationale: Mozilla is unable to see a way to make the Topics API work from a privacy
     standpoint. Though the information the API provides is small, our belief is that
@@ -2100,7 +2236,7 @@ The Topics API:
   - Proposal
 The WebTransport Protocol Framework:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1709355
-  caniuse: webtransport
+  caniuse: https://caniuse.com/webtransport
   description: The WebTransport Protocol Framework enables clients constrained by
     the Web security model to communicate with a remote server using a secure multiplexed
     transport. It consists of a set of individual protocols that are safe to expose
@@ -2110,6 +2246,7 @@ The WebTransport Protocol Framework:
     be optional.
   id: webtransport
   issue: 167
+  mdn: null
   position: positive
   rationale: We are generally in support of a mechanism that addresses the use cases
     implied by this solution document. While major questions remain open at this time
@@ -2122,12 +2259,13 @@ The WebTransport Protocol Framework:
   - Proposal
 Top-Level Await:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1519100
-  caniuse: mdn-javascript_operators_await_top_level
+  caniuse: https://caniuse.com/mdn-javascript_operators_await_top_level
   description: 'Top-level await enables modules to act as big async functions: With
     top-level await, ECMAScript Modules (ESM) can await resources, causing other modules
     who import them to wait before they start evaluating their body.'
   id: top-level-await
   issue: 444
+  mdn: null
   position: positive
   rationale: An ergonomic way of handling modules that contain top level asynchronous
     work.
@@ -2143,6 +2281,7 @@ Transport Layer Security (TLS) Certificate Compression:
     round trips.
   id: tls-certificate-compression
   issue: 96
+  mdn: null
   position: positive
   rationale: Compression of certificates should provide some performance advantages.
   url: https://datatracker.ietf.org/doc/html/draft-ietf-tls-certificate-compression
@@ -2150,12 +2289,13 @@ Transport Layer Security (TLS) Certificate Compression:
   - IETF
 Trusted Types:
   bug: null
-  caniuse: trusted-types
+  caniuse: https://caniuse.com/trusted-types
   description: An API that allows applications to lock down powerful APIs to only
     accept non-spoofable, typed values in place of strings to prevent vulnerabilities
     caused by using these APIs with attacker-controlled inputs.
   id: trusted-types
   issue: 20
+  mdn: null
   position: positive
   rationale: Mozilla believes that preventing DOM-based XSS is an important security
     goal. The track record of preventing DOM-based XSS is convincing. Dealing with
@@ -2168,11 +2308,12 @@ Trusted Types:
   - W3C
 URLPattern API:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1731418
-  caniuse: mdn-api_urlpattern
+  caniuse: https://caniuse.com/mdn-api_urlpattern
   description: The URLPattern API provides a web platform primitive for matching URLs
     based on a convenient pattern syntax.
   id: urlpattern
   issue: 566
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/URLPattern
   position: positive
   rationale: URLPattern is an important primitive for the evolution of ServiceWorkers
     through the introduction of the Static Routing API.  Similar to Web Locks which
@@ -2194,6 +2335,7 @@ Unicode Emoji QID:
     valid emoji is established by reference to a Wikidata QID.
   id: unicode-emoji-qid
   issue: 233
+  mdn: null
   position: negative
   rationale: 'Mozilla has a number of concerns about this proposal, including: (a)
     the lack of reference glyphs is likely to increase miscommunication between users;
@@ -2217,6 +2359,7 @@ User Agent Client Hints:
     the venerable "User-Agent" header.
   id: ua-client-hints
   issue: 202
+  mdn: null
   position: neutral
   rationale: UA Client Hints proposes that information derived from the User-Agent
     header field be sent as new structured fields to HTTPS servers that opt into receiving
@@ -2247,6 +2390,7 @@ UserActivation:
     currently has or has previously had real user interaction.
   id: user-activation
   issue: 838
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/UserActivation
   position: positive
   rationale: This API exposes the sticky activation and transient activation concepts
     which browsers use internally for, e.g., allowing popups. These concepts are useful
@@ -2256,7 +2400,7 @@ UserActivation:
   - WHATWG
 'Web Authentication: An API for accessing Public Key Credentials':
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1294514
-  caniuse: webauthn
+  caniuse: https://caniuse.com/webauthn
   description: This specification defines an API enabling the creation and use of
     strong, attested, scoped, public key-based credentials by web applications, for
     the purpose of strongly authenticating users. Conceptually, one or more public
@@ -2270,6 +2414,7 @@ UserActivation:
     their signature and attestation functionality.
   id: webauthn
   issue: 163
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/Web_Authentication_API
   position: positive
   rationale: Public key cryptographic authentication is a major improvement in the
     fight against phishing, and we encourage all security-conscious web applications
@@ -2279,11 +2424,12 @@ UserActivation:
   - W3C
 Web Background Synchronization:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1547906
-  caniuse: background-sync
+  caniuse: https://caniuse.com/background-sync
   description: This specification describes a method that enables web applications
     to synchronize data in the background.
   id: background-sync
   issue: 173
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/SyncManager
   position: negative
   rationale: We're concerned that this feature would allow users to be tracked across
     networks (leaking private information about location and IP address and how they
@@ -2295,11 +2441,12 @@ Web Background Synchronization:
   - Proposal
 Web Bluetooth:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=674737
-  caniuse: mdn-api_bluetooth
+  caniuse: https://caniuse.com/mdn-api_bluetooth
   description: This document describes an API to discover and communicate with devices
     over the Bluetooth 4 wireless standard using the Generic Attribute Profile (GATT).
   id: web-bluetooth
   issue: 95
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API
   position: negative
   rationale: This API provides access to the Generic Attribute Profile (GATT) of Bluetooth,
     which is not the lowest level of access that the specifications allow, but its
@@ -2322,6 +2469,7 @@ Web Budget API:
     as well as the cost associated with doing such an operation.
   id: budget-api
   issue: 73
+  mdn: null
   position: neutral
   rationale: This specification is being abandoned.
   url: https://wicg.github.io/budget-api/
@@ -2334,6 +2482,7 @@ Web Codecs:
     video
   id: web-codecs
   issue: 209
+  mdn: null
   position: positive
   rationale: This proposes a coherent set of APIs to address encoding and decoding
     of video and audio, which is designed to be extensible, composable, and address
@@ -2343,11 +2492,12 @@ Web Codecs:
   - Proposal
 Web GPU API:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1602129
-  caniuse: webgpu
+  caniuse: https://caniuse.com/webgpu
   description: This specification describes support for accessing modern 3D graphics
     and GPU computation capabilities on the Web.
   id: webgpu
   issue: 239
+  mdn: null
   position: positive
   rationale: We believe that WebGPU is key to enable more interactive and content-rich
     applications on the Web than currently possible with WebGL. WebGPU can scale better
@@ -2367,6 +2517,7 @@ Web Locks API:
     coordinate the usage of resources.
   id: web-locks
   issue: 64
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/Web_Locks_API
   position: positive
   rationale: 'The specification provides important web platform primitives for same-global
     and cross-global coordination and avoids requiring other APIs to grow their own
@@ -2376,7 +2527,7 @@ Web Locks API:
   - W3C
 Web MIDI API (Add-On Gated):
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=836897
-  caniuse: midi
+  caniuse: https://caniuse.com/midi
   description: This specification defines an API supporting the MIDI (Musical Instrument
     Digital Interface) protocol, enabling web applications to enumerate and select
     MIDI input and output devices on the client system and send and receive MIDI messages.
@@ -2384,6 +2535,7 @@ Web MIDI API (Add-On Gated):
     providing low-level access to the MIDI devices available on the users' systems.
   id: webmidi
   issue: 58
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/MIDIAccess
   position: positive
   rationale: This specification is a reasonable technical design for exposing MIDI
     devices to JavaScript, which has some demonstrated use-cases in the market. MIDI
@@ -2396,7 +2548,7 @@ Web MIDI API (Add-On Gated):
   - W3C
 Web NFC:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1308614
-  caniuse: webnfc
+  caniuse: https://caniuse.com/webnfc
   description: Near Field Communication (NFC) enables wireless communication between
     two devices at close proximity, usually less than a few centimeters. This document
     defines an API to enable selected use cases based on NFC technology. The current
@@ -2405,6 +2557,7 @@ Web NFC:
     scope.
   id: web-nfc
   issue: 238
+  mdn: null
   position: negative
   rationale: We believe Web NFC poses risks to users security and privacy because
     of the wide range of functionality of the existing NFC devices on which it would
@@ -2417,13 +2570,14 @@ Web NFC:
   - Proposal
 Web Share API:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1312422
-  caniuse: web-share
+  caniuse: https://caniuse.com/web-share
   description: This specification defines an API for sharing text, links and other
     content to an arbitrary destination of the user's choice.The available share targets
     are not specified here; they are provided by the user agent. They could, for example,
     be apps, websites or contacts.
   id: web-share
   issue: 27
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share
   position: positive
   rationale: This specification defines an API that invokes sharing features of the
     operating system, for passing information to other applications.  One risk of
@@ -2448,6 +2602,7 @@ Web Share Target API:
     time of the user agent or user's choosing.
   id: web-share-target
   issue: 27
+  mdn: null
   position: positive
   rationale: This specification affords web applications the ability to handle user-initiated
     'share' actions (e.g., sharing a link, image, text, or other media) in contexts
@@ -2475,6 +2630,7 @@ Web Thing API:
     devices with the Web of Things, and where each pattern is most appropriate.
   id: web-thing-api
   issue: 44
+  mdn: null
   position: positive
   rationale: null
   url: https://iot.mozilla.org/wot/
@@ -2486,6 +2642,7 @@ WebAssembly Exception Handling:
   description: exception propagation and handling for webassembly
   id: wasm-exceptions
   issue: 573
+  mdn: null
   position: positive
   rationale: Exception handling is important to C++ programs targeting the web, and
     to other languages in the future.
@@ -2498,6 +2655,7 @@ WebAssembly JS Promise Integration:
   description: ''
   id: wasm-js-promise-integration
   issue: 944
+  mdn: null
   position: positive
   rationale: Addresses a major paint point for developers porting existing applications
     that assume synchronous I/O to the web.
@@ -2510,6 +2668,7 @@ WebAssembly SIMD:
   description: 128-bit vector data type and operations for webassembly
   id: wasm-simd
   issue: 491
+  mdn: null
   position: positive
   rationale: Supports common SIMD data type and operations important to C/C++/Rust
     programs targeting the web within domains such as graphics, video/audio encoding/decoding,
@@ -2524,6 +2683,7 @@ WebDriver BiDi:
     of user agents.
   id: webdriver-bidi
   issue: 632
+  mdn: null
   position: positive
   rationale: Automation is an important capability for the web platform - for example,
     reliable automated testing makes it easier for websites to offer a functional
@@ -2542,6 +2702,7 @@ WebHID API:
     support the Human Interface Device (HID) protocol.
   id: webhid
   issue: 459
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/HID
   position: negative
   rationale: This API, like <a href=#webusb>WebUSB</a>, provides access to generic
     devices. Though this API is limited to human interface devices (HID), the same
@@ -2557,6 +2718,7 @@ WebRTC Encoded Transform:
     MediaStreamTracks being sent via an RTCPeerConnection.
   id: webrtc-encoded-transform
   issue: 330
+  mdn: null
   position: positive
   rationale: This approach provides sites a way to offer a form of end-to-end protection
     for media, especially in those very common cases where media for group sessions
@@ -2578,6 +2740,7 @@ WebRTC Encoded Transform:
     is.
   id: webrtc-nv-use-cases-trusted-js
   issue: 205
+  mdn: null
   position: negative
   rationale: We believe the "Untrusted JS" alternative would allow browsers to provide
     useful guarantees to users about the security of their videoconferencing, but
@@ -2587,11 +2750,12 @@ WebRTC Encoded Transform:
   - Proposal
 WebUSB API:
   bug: null
-  caniuse: webusb
+  caniuse: https://caniuse.com/webusb
   description: This document describes an API for securely providing access to Universal
     Serial Bus devices from web pages.
   id: webusb
   issue: 100
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/USB
   position: negative
   rationale: Because many USB devices are not designed to handle potentially-malicious
     interactions over the USB protocols and because those devices can have significant
@@ -2605,12 +2769,13 @@ WebUSB API:
   - Proposal
 WebXR Device API:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1419190
-  caniuse: webxr
+  caniuse: https://caniuse.com/webxr
   description: This specification describes support for accessing virtual reality
     (VR) and augmented reality (AR) devices, including sensors and head-mounted displays,
     on the Web.
   id: webxr
   issue: 218
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API
   position: positive
   rationale: The WebXR Device API is the basis for VR, MR, and AR on the web.  This
     is a significant and large suite of features.  There is the potential for XR to
@@ -2631,6 +2796,7 @@ WebXR Hit Test Module:
     to be used with the WebXR Device API.
   id: webxr-hit-test
   issue: 259
+  mdn: null
   position: defer
   rationale: We believe that (as of February 2020) more iteration on the specification
     draft is needed before we can establish a position.
@@ -2644,6 +2810,7 @@ Worklets:
     the rendering pipeline independent of the main javascript execution environment.
   id: worklets
   issue: 93
+  mdn: null
   position: positive
   rationale: This specification is essential for allowing features like the CSS Paint
     API and CSS Layout API to be implemented in a safe way.
@@ -2661,6 +2828,7 @@ Zstandard Compression and the application/zstd Media Type:
     Track specification; it is being published for informational purposes only.
   id: zstd
   issue: 775
+  mdn: null
   position: positive
   rationale: Zstandard/Zstd has been shown to be an effective compression scheme especially
     for dynamic content, by reducing load on servers to deliver the same level of
@@ -2673,11 +2841,12 @@ Zstandard Compression and the application/zstd Media Type:
   - IETF
 dialog element:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=840640
-  caniuse: dialog
+  caniuse: https://caniuse.com/dialog
   description: The dialog element represents a part of an application that a user
     interacts with to perform a task, for example a dialog box, inspector, or window.
   id: dialog-element
   issue: 388
+  mdn: null
   position: positive
   rationale: A high-level HTML feature for authors to achieve these use cases while
     getting a11y right seems useful, and we have an implementation.
@@ -2686,11 +2855,12 @@ dialog element:
   - WHATWG
 enterkeyhint attribute:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1490661
-  caniuse: mdn-html_global_attributes_enterkeyhint
+  caniuse: https://caniuse.com/mdn-html_global_attributes_enterkeyhint
   description: The enterkeyhint attribute specifies what action label (or icon) to
     present for the enter key on virtual keyboards.
   id: enterkeyhint-attr
   issue: 68
+  mdn: null
   position: positive
   rationale: null
   url: https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint
@@ -2698,10 +2868,11 @@ enterkeyhint attribute:
   - WHATWG
 inert attribute:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=921504
-  caniuse: mdn-api_htmlelement_inert
+  caniuse: https://caniuse.com/mdn-api_htmlelement_inert
   description: Allow arbitrary DOM subtrees to become inert
   id: inert-attr
   issue: 174
+  mdn: null
   position: positive
   rationale: A high-level tool for authors to achieve some of these use cases while
     getting a11y right seems useful
@@ -2711,11 +2882,12 @@ inert attribute:
 output attributes on <input type=file> element:
   bug: null
   caniuse: null
-  description: Proposal to add various output attributes on HTML's <input> elements
+  description: Proposal to add various output attributes on HTML's &lt;input> elements
     that would allow developers to declare some conversions the browser could do to,
     for example, images and videos.
   id: input-file-output-attributes
   issue: 237
+  mdn: null
   position: neutral
   rationale: While this seems like it could be a useful capability to expose, we'd
     rather see it exposed in a way that can be composed with other existing APIs,
@@ -2726,11 +2898,12 @@ output attributes on <input type=file> element:
   - Proposal
 page-orientation descriptor:
   bug: null
-  caniuse: mdn-css_at-rules_page_page-orientation
+  caniuse: https://caniuse.com/mdn-css_at-rules_page_page-orientation
   description: A descriptor for CSS @page rules that changes the orientation of the
     page in generated PDF output (or similar) without otherwise affecting layout.
   id: page-orientation-descriptor
   issue: 346
+  mdn: null
   position: positive
   rationale: This is a simple addition (to a relatively complex existing feature,
     <a href="https://drafts.csswg.org/css-page-3/#using-named-pages">named pages</a>)
@@ -2745,6 +2918,7 @@ passwordrules attribute:
   description: An attribute that specifies the rules for generating acceptable passwords.
   id: passwordrules-attribute
   issue: 61
+  mdn: null
   position: negative
   rationale: We believe this proposal, as drafted, encourages bad practices around
     passwords without encouraging good practices (such as minimum password length),
@@ -2764,6 +2938,7 @@ scrollend and overscroll events:
     apps.
   id: scrollend-and-overscroll-events
   issue: 240
+  mdn: null
   position: positive
   rationale: We believe these are likely to provide frequently-requested functionality
     that is useful for many web applications.
@@ -2777,6 +2952,7 @@ template element:
     be cloned and inserted in the document by script.
   id: template-element
   issue: 60
+  mdn: null
   position: positive
   rationale: A reasonable addition to HTML (and XML), if not somewhat taxing on the
     parser.
@@ -2789,6 +2965,7 @@ timezonechange event:
   description: An event that fires when the user's timezone changes.
   id: timezonechange-event
   issue: 241
+  mdn: null
   position: defer
   rationale: The timing of the delivery of this event to sites might expose users
     to cross-site tracking. How that risk is mitigated has not yet been decided, and
