@@ -57,7 +57,7 @@
 
      }
 
-     html { font-family: system-ui, sans-serif; color: var(--root-color); background-color: var(--root-bg-color); line-height: 1.5; scrollbar-gutter: stable; }
+     html { font-family: system-ui, sans-serif; color: var(--root-color); background-color: var(--root-bg-color); line-height: 1.5; scrollbar-gutter: stable; scroll-padding-top: calc(2.5em + 1px); }
      html.loading header ~ * { visibility: hidden; }
      body { margin: 2em; }
      header { background-color: var(--header-bg-color); margin: 0 auto 2em; padding: 3em; max-width: 60em; }
@@ -71,8 +71,9 @@
 
      td.more-info :any-link { text-decoration: none; }
      table { border-collapse: collapse; width: 100%; }
+     thead { position: sticky; top: 0; background-color: var(--root-bg-color); z-index: 2; }
      tr[hidden] { display: table-row; visibility: collapse; }
-     th { text-align: left; }
+     th { text-align: left; box-shadow: var(--table-border-color) 0 1px 0; }
      th:first-child { text-align: right; }
      th, td.venues, td.more-info { white-space: nowrap; }
      th.specification { width: 100vw; }
