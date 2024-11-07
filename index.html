@@ -82,7 +82,7 @@
      th, td { padding: 0.5em; }
      td:first-child { padding-left: 6em; width: 0.5em; }
      tr.details > td { padding-top: 0; padding-bottom: 0; border-top: none; }
-     summary { position: relative; top: -2em; left: -5em; width: 5em; cursor: default; user-select: none; }
+     summary { position: relative; top: calc(-2em - 1px); left: -5em; width: 5em; cursor: default; user-select: none; }
      details > dl { margin-top: -1em; }
      details:not([open]) { height: 0; }
      details dl { margin-left: -5.5em; grid-template-columns: 6em auto; }
@@ -97,8 +97,8 @@
      tbody > tr:has( + :where(tr.details:hover)) { background-color: var(--row-hover-bg-color); }
      tbody > tr:target,
      tbody > tr:target + tr.details { background-color: var(--highlight-bg-color); color: var(--highlight-color); }
-     table img { width: auto; height: 24px; }
-     span.position { border-radius: 0.6em; padding: 0.25em 0.5em; font-size: 0.75em; border: 1px solid var(--position-border-color); white-space: nowrap; }
+     table img { width: auto; height: 24px; vertical-align: -2px; }
+     span.position { border-radius: 0.6em; padding: 0.25em 0.5em; vertical-align: 1px; font-size: 0.75em; border: 1px solid var(--position-border-color); white-space: nowrap; }
      span.positive { background-color: var(--positive-bg-color); color: var(--positive-color); }
      span.negative { background-color: var(--negative-bg-color); color: var(--negative-color); }
      span.neutral { border-color: currentColor; }
@@ -146,7 +146,7 @@
           <th class="position">Position</th>
           <th class="topics">Topics</th>
           <th class="venues">Venues</th>
-          <th class="more-info">More Info</th>
+          <th class="more-info">More info</th>
         </tr>
       </thead>
       <tbody>
