@@ -875,7 +875,9 @@
     "venues": [
       "W3C"
     ],
-    "concerns": [],
+    "concerns": [
+      "privacy"
+    ],
     "topics": [],
     "title": "Network Error Logging (NEL)",
     "url": "https://w3c.github.io/network-error-logging/",
@@ -5584,7 +5586,7 @@
   },
   {
     "issue": 664,
-    "position": "under consideration",
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -6365,7 +6367,7 @@
   },
   {
     "issue": 749,
-    "position": null,
+    "position": "neutral",
     "venues": [
       "WHATWG"
     ],
@@ -6553,7 +6555,7 @@
   },
   {
     "issue": 766,
-    "position": "defer",
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -10000,5 +10002,44 @@
     "caniuse": "https://caniuse.com/?search=text-box-trim",
     "bug": null,
     "webkit": null
+  },
+  {
+    "issue": 1107,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "scroll-start-target",
+    "url": "https://drafts.csswg.org/css-scroll-snap-2/#scroll-start-target",
+    "explainer": "https://github.com/DavMila/explainer-scroll-start-target",
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  {
+    "issue": 1108,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Add `finalResponseHeadersStart` to resource timing",
+    "url": "https://w3c.github.io/resource-timing/",
+    "explainer": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  {
+    "issue": 1109,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Nested pseudo elements styling (::before::marker or ::after::marker)",
+    "url": "https://www.w3.org/TR/css-pseudo-4/#marker-pseudo",
+    "explainer": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/425"
   }
 ]

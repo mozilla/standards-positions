@@ -2,7 +2,7 @@
 
 # Based on https://github.com/WebKit/standards-positions/blob/main/summary.py
 
-import argparse, json, os, requests, re
+import argparse, json, os, requests, re, sys
 
 
 # Utilities
@@ -45,21 +45,17 @@ def process_labels(labels):
 
     for label in labels:
         # Position
-        if label["name"] == "blocked":
-            # assert position is None
-            position = "blocked"
-        elif label["name"].startswith("position: "):
-            # assert position is None
-            position = label["name"][len("position: ") :]
+        if label["name"].startswith("position: "):
+            position = label["name"].split(": ")[1]
         # Venue
         elif label["name"].startswith("venue: "):
-            venues.append(label["name"][len("venue: ") :])
+            venues.append(label["name"].split(": ")[1])
         # Concerns
         elif label["name"].startswith("concerns: "):
-            concerns.append(label["name"][len("concerns: ") :])
+            concerns.append(label["name"].split(": ")[1])
         # Topics
         elif label["name"].startswith("topic: "):
-            topics.append(label["name"][len("topic: ") :])
+            topics.append(label["name"].split(": ")[1])
 
     return {
         "position": position,
@@ -121,8 +117,12 @@ def main():
     parser.add_argument("-p", "--process", action="store_true", help="process the data")
     args = parser.parse_args()
 
+    # Show help message if no arguments are passed
+    if len(sys.argv) == 1:
+        parser.print_help()
+        exit(1)
+
     if args.update:
-        # GitHub allows us to read issues in increments of 100, called pages.
         data = []
         page = 1
         while True:
@@ -134,14 +134,22 @@ def main():
                 )
                 response.raise_for_status()
             except Exception:
-                print("Updated failed, network failure or request timed out.")
+                print("Update failed, network failure or request timed out.")
                 exit(1)
+
             temp_data = response.json()
             if not temp_data:
                 print("Empty!")
                 break
             data.extend(temp_data)
+
+            # Check for 'link' header and 'rel="next"'
+            link_header = response.headers.get("link", "")
+            if 'rel="next"' not in link_header:
+                break
+
             page += 1
+
         write_json("gh-data.json", data)
         print("Done updating.")
         exit(0)
@@ -154,7 +162,6 @@ def main():
         with open("gh-data.json", "rb") as f:
             data = json.load(f)
         process(data)
-
 
 if __name__ == "__main__":
     main()
