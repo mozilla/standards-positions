@@ -2,6 +2,7 @@ import yaml
 import re
 import sys
 import argparse
+import requests
 from typing import Any, Dict, List, Tuple
 
 class YAMLValidator:
@@ -22,7 +23,7 @@ class YAMLValidator:
         except yaml.YAMLError as e:
             raise ValueError("Failed to load YAML: Invalid YAML format") from e
 
-    def log_error(self, message: str, key: str = "", line: int = None, fixable = False):
+    def log_error(self, message: str, key: str = "", line: int = None, fixable=False):
         tofix = " (Use --fix to fix.)" if fixable else ""
         if line is not None:
             self.errors.append(f"Error at line {line} in key '{key}': {message}{tofix}")
@@ -46,7 +47,7 @@ class YAMLValidator:
                 data = dict(sorted(data.items()))
                 modified = True
             else:
-                self.log_error(f"Top-level keys must be in alphabetical order.", fixable = True)
+                self.log_error("Top-level keys must be in alphabetical order.", fixable=True)
 
         # Check for unique keys
         unique_keys = set(keys)
@@ -85,7 +86,7 @@ class YAMLValidator:
                         item.pop(legacy_key, None)
                         modified = True
                     else:
-                        self.log_error(f"Legacy key {legacy_key}. Please use GitHub issue labels instead.", key, line, fixable = True)
+                        self.log_error(f"Legacy key {legacy_key}. Please use GitHub issue labels instead.", key, line, fixable=True)
 
         # Optional fields validation
         if 'id' in item and (not isinstance(item['id'], str) or ' ' in item['id']):
@@ -142,13 +143,66 @@ class YAMLValidator:
                 self.save_fixes()
             # No success message on pass if not fixing
 
+    def add_issue(self, issue_num: int, description: str = None, rationale: str = None):
+        # Fetch issue data from GitHub
+        url = f"https://api.github.com/repos/mozilla/standards-positions/issues/{issue_num}"
+        response = requests.get(url)
+
+        if response.status_code != 200:
+            print(f"Failed to fetch issue {issue_num}: {response.status_code}")
+            sys.exit(1)
+
+        issue_data = response.json()
+        title = issue_data.get("title")
+
+        if not title:
+            print("No title found in the GitHub issue data.")
+            sys.exit(1)
+
+        # Load current YAML data
+        data, _ = self.load_yaml()
+
+        # Find if the issue already exists
+        issue_exists = False
+        for key, item in data.items():
+            if item.get('issue') == issue_num:
+                item['description'] = description if description is not None else item.get('description')
+                item['rationale'] = rationale if rationale is not None else item.get('rationale')
+                issue_exists = True
+                break
+
+        # Add new entry if the issue does not exist
+        if not issue_exists:
+            data[title] = {
+                "issue": issue_num,
+                "description": description,
+                "rationale": rationale
+            }
+
+        # Sort and save changes
+        data = dict(sorted(data.items()))
+        with open(self.file_path, 'w') as file:
+            yaml.dump(data, file, allow_unicode=True, default_flow_style=False)
+        print(f"Issue {issue_num} added or updated successfully.")
+
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Validate and optionally fix activities.yml.")
+    parser = argparse.ArgumentParser(description="Manage activities.yml.")
+    parser.add_argument("command", choices=["validate", "add"], help="Specify 'validate' to validate or 'add' to add or update an item.")
+    parser.add_argument("issue_num", nargs="?", type=int, help="Issue number for the 'add' command.")
     parser.add_argument("--fix", action="store_true", help="Automatically fix issues (sort and drop legacy keys)")
+    parser.add_argument("--description", type=str, help="Set the description for the issue.")
+    parser.add_argument("--rationale", type=str, help="Set the rationale for the issue.")
     args = parser.parse_args()
 
-    validator = YAMLValidator("activities.yml", fix=args.fix)
-    try:
-        validator.run()
-    except ValueError as e:
-        print(f"Validation failed: {e}")
+    if args.command == "validate":
+        validator = YAMLValidator("activities.yml", fix=args.fix)
+        try:
+            validator.run()
+        except ValueError as e:
+            print(f"Validation failed: {e}")
+    elif args.command == "add":
+        if args.issue_num is None:
+            print("Please provide an issue number for 'add'.")
+            sys.exit(1)
+        validator = YAMLValidator("activities.yml")
+        validator.add_issue(args.issue_num, description=args.description, rationale=args.rationale)
