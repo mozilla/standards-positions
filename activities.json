@@ -726,10 +726,7 @@
     "ciuName": null,
     "description": "An API to enable objects other than built-in form control elements to participate in form submission, form validation, and so on.",
     "id": "form-participation-api",
-    "mozBugUrl": [
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=1518442",
-      "https://bugzilla.mozilla.org/show_bug.cgi?id=1552327"
-    ],
+    "mozBugUrl": "https://bugzilla.mozilla.org/show_bug.cgi?id=1552327",
     "mozPosition": "positive",
     "mozPositionDetail": "These propose what seems likely to be a useful addition to allow custom controls to participate in form validation and submission.",
     "mozPositionIssue": 150,

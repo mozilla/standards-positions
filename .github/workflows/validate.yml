@@ -16,4 +16,4 @@ jobs:
       with:
         cache: pip
     - run: pip install -r requirements.txt
-    - run: python ./activities.py validate
+    - run: python ./validate-activities.py

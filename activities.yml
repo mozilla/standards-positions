@@ -327,13 +327,26 @@ CSS Layout API:
   description: An API for allowing web developers to define their own layout modes
     with javascript.
   id: css-layout-api
-  issue: 93
+  issue: 1088
   mdn: null
   position: positive
   rationale: This specification allows developing prototypes of new CSS layout systems
     and provides an escape hatch for developers when the existing systems aren't good
     enough for a particular piece of a web page.
   url: https://drafts.css-houdini.org/css-layout-api-1
+  venues:
+  - W3C
+CSS Nested Declarations Rule:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1918408
+  caniuse: null
+  description: Implicit rules created by nesting create a new kind of rule, not an
+    style rule
+  id: css-nest-rule
+  issue: 1048
+  mdn: null
+  position: positive
+  rationale: Straight improvement to the status quo of CSS nesting
+  url: https://drafts.csswg.org/css-nesting-1/#the-cssnestrule
   venues:
   - W3C
 CSS Nesting:
@@ -358,7 +371,7 @@ CSS Painting API:
   description: An API for allowing web developers to define a custom CSS &lt;image>
     with javascript, which will respond to style and size changes.
   id: css-paint-api
-  issue: 93
+  issue: 1089
   mdn: https://developer.mozilla.org/en-US/docs/Web/API/CSS_Painting_API
   position: positive
   rationale: This specification allows developing prototypes of new graphical CSS
@@ -374,7 +387,7 @@ CSS Properties and Values API:
     Properties registered using this API are provided with a parse syntax that defines
     a type, inheritance behaviour, and an initial value.
   id: css-properties-and-values-api
-  issue: 93
+  issue: 1090
   mdn: null
   position: positive
   rationale: This specification makes it significantly easier to use CSS custom properties
@@ -449,7 +462,7 @@ CSS Typed OM:
     and back can incur a significant performance overhead. This specification exposes
     CSS values as typed JavaScript objects to facilitate their performant manipulation.
   id: css-typed-om
-  issue: 93
+  issue: 1091
   mdn: null
   position: positive
   rationale: This specification provides an easier way to manipulate the CSS object
@@ -693,10 +706,10 @@ Custom elements:
   caniuse: https://caniuse.com/custom-elementsv1
   description: A way to create new HTML elements implemented through JavaScript.
   id: custom-elements
-  issue: 60
+  issue: 1092
   mdn: null
   position: positive
-  rationale: A welcome successor to XBL!
+  rationale: Standardized successor of XBL.
   url: https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements
   venues:
   - WHATWG
@@ -910,9 +923,7 @@ First-Party Sets:
   venues:
   - Proposal
 Form Participation API:
-  bug:
-  - https://bugzilla.mozilla.org/show_bug.cgi?id=1518442
-  - https://bugzilla.mozilla.org/show_bug.cgi?id=1552327
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1552327
   caniuse: null
   description: An API to enable objects other than built-in form control elements
     to participate in form submission, form validation, and so on.
@@ -1016,7 +1027,7 @@ HTML Imports:
   description: HTML Imports are a way to include and reuse HTML documents in other
     HTML documents.
   id: html-imports
-  issue: 60
+  issue: 1093
   mdn: null
   position: negative
   rationale: Mozilla anticipated that JavaScript modules would change the landscape
@@ -1232,7 +1243,9 @@ JPEG-XL:
   position: neutral
   rationale: JPEG-XL includes features and performance that might differentiate it
     from other formats, but the benefits it provides are not significant enough on
-    their own to justify the cost of adding another raster image format to the Web.
+    their own to justify the cost of adding another C++ image decoder to browsers.
+    A memory-safe decoder would reduce these costs considerably, and we are open to
+    shipping one that meets our requirements.
   url: https://www.iso.org/standard/77977.html?browse=tc
   venues:
   - Other
@@ -2030,10 +2043,10 @@ Shadow trees (formerly known as Shadow DOM):
   description: A way to give a node in the DOM a hidden subtree in which the children
     of the node can be inserted.
   id: shadow-trees
-  issue: 60
+  issue: 1094
   mdn: null
   position: positive
-  rationale: A welcome successor to XBL!
+  rationale: Standardized successor of XBL.
   url: https://dom.spec.whatwg.org/#shadow-trees
   venues:
   - WHATWG
@@ -2601,7 +2614,7 @@ Web Share Target API:
     a Web Share Target is declared in the Web App Manifest, to be registered at a
     time of the user agent or user's choosing.
   id: web-share-target
-  issue: 27
+  issue: 176
   mdn: null
   position: positive
   rationale: This specification affords web applications the ability to handle user-initiated
@@ -2809,7 +2822,7 @@ Worklets:
   description: This specification defines an API for running scripts in stages of
     the rendering pipeline independent of the main javascript execution environment.
   id: worklets
-  issue: 93
+  issue: 1097
   mdn: null
   position: positive
   rationale: This specification is essential for allowing features like the CSS Paint
@@ -2951,7 +2964,7 @@ template element:
   description: The template element is used to declare fragments of HTML that can
     be cloned and inserted in the document by script.
   id: template-element
-  issue: 60
+  issue: 1098
   mdn: null
   position: positive
   rationale: A reasonable addition to HTML (and XML), if not somewhat taxing on the

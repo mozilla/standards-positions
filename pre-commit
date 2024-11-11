@@ -45,7 +45,7 @@ exec 1>&2
 # Perform validation.
 trap 'git stash pop -q' EXIT
 git stash push -k -u -q -m "pre-commit stash from $(date '+%FT%T%z')"
-if ! "$python" activities.py validate; then
+if ! "$python" validate-activities.py; then
     echo "Validation failed; \`git commit --no-verify\` to suppress validation."
     exit 1
 fi
