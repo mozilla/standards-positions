@@ -1,13 +1,16 @@
 import yaml
 import re
-from typing import Any, Dict, List, Tuple
 import sys
+import argparse
+from typing import Any, Dict, List, Tuple
 
 class YAMLValidator:
-    def __init__(self, file_path: str):
+    def __init__(self, file_path: str, fix: bool = False):
         self.file_path = file_path
+        self.fix = fix
         self.issues = set()
         self.errors = []
+        self.modified_data = None
 
     def load_yaml(self) -> Tuple[Dict[str, Any], Dict[int, str]]:
         try:
@@ -19,14 +22,16 @@ class YAMLValidator:
         except yaml.YAMLError as e:
             raise ValueError("Failed to load YAML: Invalid YAML format") from e
 
-    def log_error(self, message: str, key: str = "", line: int = None):
+    def log_error(self, message: str, key: str = "", line: int = None, fixable = False):
+        tofix = " (Use --fix to fix.)" if fixable else ""
         if line is not None:
-            self.errors.append(f"Error at line {line} in key '{key}': {message}")
+            self.errors.append(f"Error at line {line} in key '{key}': {message}{tofix}")
         else:
-            self.errors.append(f"Error: {message}")
+            self.errors.append(f"Error: {message}{tofix}")
 
     def validate_top_level_keys(self, data: Dict[str, Any], line_map: Dict[int, str]):
         keys = list(data.keys())
+        modified = False
 
         # Check for non-string keys
         non_string_keys = [key for key in keys if not isinstance(key, str)]
@@ -37,10 +42,11 @@ class YAMLValidator:
 
         # Check alphabetical order
         if keys != sorted(keys):
-            for i, key in enumerate(keys):
-                if key != sorted(keys)[i]:
-                    line_num = next((line for line, content in line_map.items() if key in content), None)
-                    self.log_error("Top-level keys must be in alphabetical order", key, line_num)
+            if self.fix:
+                data = dict(sorted(data.items()))
+                modified = True
+            else:
+                self.log_error(f"Top-level keys must be in alphabetical order.", fixable = True)
 
         # Check for unique keys
         unique_keys = set(keys)
@@ -50,7 +56,12 @@ class YAMLValidator:
                 line_num = next((line for line, content in line_map.items() if key in content), None)
                 self.log_error("Top-level keys must be unique", key, line_num)
 
+        if self.fix and modified:
+            self.modified_data = data  # Track modified data for saving later
+
     def validate_item(self, item: Dict[str, Any], key: str, line: int):
+        modified = False
+
         # Validate issue (required and unique)
         if 'issue' not in item:
             self.log_error("Missing required 'issue' key", key, line)
@@ -68,10 +79,13 @@ class YAMLValidator:
 
         # Legacy item key restriction for issue numbers >= 1110
         if 'issue' in item and item['issue'] >= 1110:
-            if 'position' in item:
-                self.log_error("Please use GitHub issue labels instead.", key, line)
-            if 'venues' in item:
-                self.log_error("Please use GitHub issue labels instead.", key, line)
+            for legacy_key in ['position', 'venues']:
+                if legacy_key in item:
+                    if self.fix:
+                        item.pop(legacy_key, None)
+                        modified = True
+                    else:
+                        self.log_error(f"Legacy key {legacy_key}. Please use GitHub issue labels instead.", key, line, fixable = True)
 
         # Optional fields validation
         if 'id' in item and (not isinstance(item['id'], str) or ' ' in item['id']):
@@ -94,11 +108,24 @@ class YAMLValidator:
             if not isinstance(item['venues'], list) or not set(item['venues']).issubset(allowed_venues):
                 self.log_error(f"'venues' must be a list with allowed values, got {item['venues']}", key, line)
 
+        return modified
+
     def validate_data(self, data: Dict[str, Any], line_map: Dict[int, str]):
+        modified = False
         for key, item in data.items():
             start_line = next((line for line, content in line_map.items() if key in content), None)
             if start_line is not None:
-                self.validate_item(item, key, start_line)
+                if self.validate_item(item, key, start_line):
+                    modified = True
+
+        if self.fix and modified:
+            self.modified_data = data  # Track modified data for saving later
+
+    def save_fixes(self):
+        if self.modified_data:
+            with open(self.file_path, 'w') as file:
+                yaml.dump(self.modified_data, file, allow_unicode=True, default_flow_style=False)
+            print(f"Fixes applied and saved to {self.file_path}")
 
     def run(self):
         data, line_map = self.load_yaml()
@@ -111,11 +138,16 @@ class YAMLValidator:
                 print(error)
             sys.exit(1)
         else:
-            # No message on success.
-            pass
+            if self.fix:
+                self.save_fixes()
+            # No success message on pass if not fixing
 
 if __name__ == "__main__":
-    validator = YAMLValidator("activities.yml")
+    parser = argparse.ArgumentParser(description="Validate and optionally fix activities.yml.")
+    parser.add_argument("--fix", action="store_true", help="Automatically fix issues (sort and drop legacy keys)")
+    args = parser.parse_args()
+
+    validator = YAMLValidator("activities.yml", fix=args.fix)
     try:
         validator.run()
     except ValueError as e:
