@@ -67,7 +67,8 @@
      :any-link { color: var(--link-color); text-decoration: none; }
      :any-link:hover { text-decoration: underline; }
 
-     input[name="search"] { width: calc(100% - 10em); }
+     search label { display: flex; gap: 1em; }
+     input[name="search"] { width: 100%; margin-right: 5em; }
 
      td.more-info :any-link { text-decoration: none; }
      table { border-collapse: collapse; width: 100%; }
@@ -328,7 +329,7 @@
          selfId += issueNum;
        }
        tr.id = selfId;
-       tr.append(cell(link(`#${selfId}`, '#', 'Self-link')));
+       tr.append(cell(link(`#${selfId}`, '🔗', 'Self-link')));
 
        // Specification
        tr.append(cell(link(url, title)));
