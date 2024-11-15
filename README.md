@@ -42,3 +42,7 @@ specification in Firefox.
 ## Requesting a Position
 
 *See our [contribution guidelines](CONTRIBUTING.md) for information about how you can participate.*
+
+## Building locally
+
+See [DEVELOP.md](DEVELOP.md).

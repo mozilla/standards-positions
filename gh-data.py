@@ -2,7 +2,7 @@
 
 # Based on https://github.com/WebKit/standards-positions/blob/main/summary.py
 
-import argparse, json, os, requests, re, sys
+import json, os, requests, re, sys
 
 
 # Utilities
@@ -107,61 +107,46 @@ def process_body(issue):
 
 # Setup
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "-u",
-        "--update",
-        action="store_true",
-        help="get the latest issue data from GitHub",
-    )
-    parser.add_argument("-p", "--process", action="store_true", help="process the data")
-    args = parser.parse_args()
-
-    # Show help message if no arguments are passed
-    if len(sys.argv) == 1:
-        parser.print_help()
-        exit(1)
-
-    if args.update:
-        data = []
-        page = 1
-        while True:
-            try:
-                print(f"Fetching page {page}...")
-                response = requests.get(
-                    f"https://api.github.com/repos/mozilla/standards-positions/issues?direction=asc&state=all&per_page=100&page={page}",
-                    timeout=5,
-                )
-                response.raise_for_status()
-            except Exception:
-                print("Update failed, network failure or request timed out.")
-                exit(1)
-
-            temp_data = response.json()
-            if not temp_data:
-                print("Empty!")
-                break
-            data.extend(temp_data)
-
-            # Check for 'link' header and 'rel="next"'
-            link_header = response.headers.get("link", "")
-            if 'rel="next"' not in link_header:
-                break
-
-            page += 1
-
-        write_json("gh-data.json", data)
-        print("Done updating.")
-        exit(0)
-
-    if args.process:
-        if not os.path.exists("gh-data.json"):
-            print("Sorry, you have to update first.")
+    # update
+    data = []
+    page = 1
+    while True:
+        try:
+            print(f"Fetching page {page}...")
+            response = requests.get(
+                f"https://api.github.com/repos/mozilla/standards-positions/issues?direction=asc&state=all&per_page=100&page={page}",
+                timeout=5,
+            )
+            response.raise_for_status()
+        except Exception:
+            print("Update failed, network failure or request timed out.")
             exit(1)
 
-        with open("gh-data.json", "rb") as f:
-            data = json.load(f)
-        process(data)
+        temp_data = response.json()
+        if not temp_data:
+            print("Empty!")
+            break
+        data.extend(temp_data)
+
+        # Check for 'link' header and 'rel="next"'
+        link_header = response.headers.get("link", "")
+        if 'rel="next"' not in link_header:
+            break
+
+        page += 1
+
+    write_json("gh-data.json", data)
+    print("Done updating.")
+    exit(0)
+
+    # process
+    if not os.path.exists("gh-data.json"):
+        print("Sorry, you have to update first.")
+        exit(1)
+
+    with open("gh-data.json", "rb") as f:
+        data = json.load(f)
+    process(data)
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,12 @@
+name: Label Change Action
+
+on:
+  issues:
+    types: [labeled, unlabeled]
+
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+    - name: No operation
+      run: echo "Label changed. Detected by the scheduler."
