@@ -44,6 +44,8 @@
        --defer-bg-color: #666;
        --table-border-color: silver;
        --position-border-color: gray;
+       --input-bg-color: white;
+       --input-color: black;
        /* under consideration uses the same colors as defer */
      }
      /* dark scheme colors */
@@ -64,6 +66,8 @@
          --negative-color: black;
          --defer-bg-color: #999;
          --defer-color: black;
+         --input-bg-color: #171717;
+         --input-color: white;
        }
        h1 img { filter: invert(1); }
        table img { background-color: white; border-radius: 16px; }
@@ -82,7 +86,7 @@
      table :any-link:hover { text-decoration: underline; }
 
      search label { display: flex; gap: 1em; }
-     input[name="search"] { width: 100%; margin-right: 5em; }
+     input[name="search"] { width: 100%; margin-right: 5em; border: 1px solid gray; border-radius: 3px; background-color: var(--input-bg-color); color: var(--input-color); }
 
      td.more-info :any-link { text-decoration: none; }
      table { border-collapse: collapse; width: 100%; }
