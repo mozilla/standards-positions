@@ -26,6 +26,7 @@ def process(issues):
 
         summary.append(summary_item)
     write_json("gh-data-summary.json", summary)
+    print("Done: gh-data-summary.json.")
 
 
 def is_ignorable_issue(issue):
@@ -136,8 +137,7 @@ def main():
         page += 1
 
     write_json("gh-data.json", data)
-    print("Done updating.")
-    exit(0)
+    print("Done: gh-data.json.")
 
     # process
     if not os.path.exists("gh-data.json"):
