@@ -1,4 +1,6 @@
-# Building locally
+# Develop
+
+## Building locally
 
 The data for the dashboard website is sourced from:
 
@@ -29,15 +31,11 @@ python3 -m http.server 8000
 
 Then load http://localhost:8000/ in a web browser.
 
-## Publishing
+## GitHub Actions / Publishing
 
-The generated JSON files are not added in the `main` branch.
-However, the GitHub Actions workflow setup will build and push the generated files to the `gh-pages` branch,
-to make it possible to review the history of the GitHub issue data.
-That branch is then published using GitHub Pages.
+Publishing happens automatically when pushing to `main` or when changing labels in GitHub.
 
-The above happens on pushes to the `main` branch as well as when any labels are changed.
-The latter runs the `labels-change.yml` workflow directly and then the `schedule-labels-change.yml` checks the history of workflow jobs to determine if labels have changed,
+The latter runs the `labels-change.yml` workflow directly and then the `schedule-labels-change.yml` workflow periodically checks the history of workflow jobs to determine if labels have changed,
 and if so pushes an empty commit to the `trigger-build` branch,
 which causes the `build-and-deploy.yml` workflow to run.
 
