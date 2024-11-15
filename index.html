@@ -77,8 +77,9 @@
      h1 { font-size: min(12vw, 4em); margin: 0; color: var(--h1-color); line-height: 1; }
      h1 img { max-height: 0.83333333em; width: auto; }
      mark { background-color: var(--highlight-bg-color); color: var(--highlight-color); padding: 0.5em; margin: -0.5em; line-height: 2; box-decoration-break: clone; }
-     :any-link { color: var(--link-color); text-decoration: none; }
-     :any-link:hover { text-decoration: underline; }
+     :any-link { color: var(--link-color); padding: 0.25rem 0; }
+     table :any-link { text-decoration: none; }
+     table :any-link:hover { text-decoration: underline; }
 
      search label { display: flex; gap: 1em; }
      input[name="search"] { width: 100%; margin-right: 5em; }
@@ -92,11 +93,13 @@
      th, td.venues, td.more-info { white-space: nowrap; }
      th.specification { width: 100vw; }
      td.venues, td.more-info { word-spacing: 8px; padding-top: 0.1em; padding-bottom: 0.1em; font-size: 1.5em; }
+     td.venues :any-link, td.more-info :any-link { padding: 0; }
+     td.link :any-link { padding: 0.25rem; }
      th.concerns { width: 5em; }
      th, td { padding: 0.5em; }
      td:first-child { padding-left: 6em; width: 0.5em; }
      tr.details > td { padding-top: 0; padding-bottom: 0; border-top: none; }
-     summary { position: relative; top: calc(-2em - 1px); left: -5em; width: 5em; cursor: default; user-select: none; }
+     summary { position: relative; white-space: nowrap; top: calc(-2em - 1px); left: -5em; width: min-content; cursor: default; user-select: none; }
      details > dl { margin-top: -1em; }
      details:not([open]) { height: 0; }
      details dl { margin-left: -5.5em; grid-template-columns: 6em auto; }
@@ -126,15 +129,15 @@
         document.documentElement.classList.remove('loading');
       }, 1000);
     </script>
-
+    <meta name="description" content="This page tracks Mozilla's positions on open Web and Web-related specifications submitted to standards bodies like the IETF, W3C, WHATWG, and Ecma TC39.">
   </head>
   <body>
     <header>
       <h1><img src="asset/Mozilla-2024.svg" alt="Mozilla" width="240" height="50"> Standards Positions</h1>
 
       <p>This page tracks Mozilla's positions on open Web and Web-related specifications submitted to standards
-      bodies like the <a href="https://www.ietf.org/">IETF</a>, <a href="https://w3.org/">W3C</a>,
-      and <a href="https://tc39.github.io/">Ecma TC39</a>.</p>
+      bodies like the <a href="https://www.ietf.org/">IETF</a>, <a href="https://www.w3.org/">W3C</a>,
+      <a href="https://whatwg.org/">WHATWG</a>, and <a href="https://tc39.github.io/">Ecma TC39</a>.</p>
 
       <p>Please remember, this isn't a commitment to implement or participate;
       <strong>it's just what we think right now</strong>. See <a
@@ -342,10 +345,10 @@
          selfId += issueNum;
        }
        tr.id = selfId;
-       tr.append(cell(link(`#${selfId}`, '🔗', 'Self-link')));
+       tr.append(cell(link(`#${selfId}`, '🔗', 'Self-link'), 'link'));
 
        // Specification
-       tr.append(cell(link(url, title)));
+       tr.append(cell(link(url, title), 'specification'));
 
        // Concerns
        tr.append(cell(concerns?.join(', '), 'concerns'));
