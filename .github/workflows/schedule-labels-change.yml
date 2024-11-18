@@ -1,8 +1,8 @@
 name: Schedule Label Change Action
 
 on:
-  #schedule:
-  #  - cron: '*/60 * * * *' # Runs every 60 minutes
+  schedule:
+    - cron: '*/60 * * * *' # Runs every 60 minutes
   workflow_dispatch: # Allows manual trigger
 
 jobs:
