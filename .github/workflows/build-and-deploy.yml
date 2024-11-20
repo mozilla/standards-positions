@@ -1,9 +1,10 @@
 name: Build and Deploy
 
 on:
+  schedule:
+    - cron: '0 */6 * * *' # Runs every 6 hours
   push:
     branches:
-      - trigger-build
       - main
   workflow_dispatch: # Allows manual trigger
 
@@ -45,10 +46,9 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b gh-pages
-          git add -f gh-data.json
-          git add -f gh-data-summary.json
           git add -f merged-data.json
           git add .
+          # If there are no changes, no commit gets created, and nothing is pushed
           git commit -m "Update GitHub Pages with latest data"
           git remote set-url origin git@github.com:${{ github.repository }}.git
-          git push origin gh-pages --force
+          git push origin gh-pages

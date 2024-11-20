@@ -33,11 +33,8 @@ Then load http://localhost:8000/ in a web browser.
 
 ## GitHub Actions / Publishing
 
-Publishing happens automatically when pushing to `main` or when changing labels in GitHub.
-
-The latter runs the `labels-change.yml` workflow directly and then the `schedule-labels-change.yml` workflow periodically checks the history of workflow jobs to determine if labels have changed,
-and if so pushes an empty commit to the `trigger-build` branch,
-which causes the `build-and-deploy.yml` workflow to run.
-
-The GitHub Actions need a deploy key (Settings, Deploy keys),
-stored as an environment secret named SSH_PRIVATE_KEY (Settings, Secrets and variables, Actions).
+Publishing happens automatically when pushing to `main` as well as every 6 hours (to reflect any
+changes to labels in GitHub) with the `build-and-deploy.yml` workflow. It can also be triggered
+manually from the Actions page. This workflow needs a deploy key (Settings, Deploy keys), and the
+private key stored as an environment secret named SSH_PRIVATE_KEY (Settings, Secrets and variables,
+Actions).
