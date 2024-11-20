@@ -2,3 +2,7 @@
 *.swp
 *~
 /venv/
+.DS_Store
+/gh-data-summary.json
+/gh-data.json
+/merged-data.json

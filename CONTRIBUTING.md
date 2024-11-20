@@ -46,37 +46,7 @@ resources to it.
 
 ### Making a Position Request
 
-New specifications can be added by opening a new issue, or by making a pull request with the
-appropriate details in the `activities.json` file.
-
-If you decide to make a pull request, the `activities.py` script can help to fill in some of the
-relevant details:
-
-```
-    > ./activities.py add https://example.com/url_to_the_spec
-```
-
-If successful, it will modify `activities.json` with the new specification. Check the json file to make sure that the appropriate details are present:
-
-```
-{
-  "ciuName": "The short tagname from caniuse.com for the feature, if available",
-  "description": "A textual description; often, the spec's abstract",
-  "id": "A fragment identifier for the positions table",
-  "mdnUrl": "The URL of the MDN page documenting this specification or feature, if available",
-  "mozBugUrl": "The URL of the Mozilla bug tracking this specification, if available",
-  "mozPosition": "under consideration",
-  "mozPositionIssue": the number of the issue in this repo, if available,
-  "mozPositionDetail": "more information about Mozilla's position",
-  "org": one of ['IETF', 'W3C', 'WHATWG', 'Ecma', 'Unicode', 'Proposal', 'Other'],
-  "title": "The spec's title",
-  "url": "The canonical URL for the most recent version of the spec"
-}
-```
-`activities.json` is sorted by the title field. Once again, the `activities.py` script can help:
-```
-    > ./activities.py sort
-```
+New specifications can be added by opening a new issue.
 
 ### Asking Mozilla to Update a Position
 
@@ -118,7 +88,7 @@ reactions](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-an
 issue or a specific comment.
 
 If you want to ask about (or contribute to) Firefox support for a specification, please use
-the respective Bugzilla bug, linked with a wrench 🔧 icon in the standards-position dashboard entry.
+the respective Bugzilla bug, linked in the standards-position dashboard entry / the GitHub issue.
 
 If an issue becomes overwhelmed by excessive advocacy or other off-topic comments,
 comments might be hidden, edited, or deleted, and the issue might be locked.
@@ -157,20 +127,41 @@ by giving appropriate context when filing issues, such as:
 to help evaluate what Mozilla thinks of it,
 and while doing that I noticed ..."
 
-Members of the Mozilla community are
-welcome to judge that we've come to sufficient consensus in the issue,
-and make a pull request to document that consensus by changing `activities.json`.
-When this happens, we'd like to try to keep the technical discussion
+#### Propose a position
+
+Add a comment in the issue with a summary of any concerns, a proposed position, and rationale (as appropriate).
+
+If you have [permission to add labels](https://github.com/orgs/mozilla/teams/standards-contributor), you can add "topic:", "concerns:", "venue:" labels. These will show up in the dashboard.
+
+The maintainers of this repo will add the appropriate "position:" label to the issue after 7 days if there's no disagreement, and then either close the issue or ask for a PR to add detailed rationale to the dashboard (see below).
+
+#### Add a rationale to the dashboard
+
+Some standards positions should have a recorded rationale in the dashboard. This is recorded in the `activities.yml` file.
+
+To add an item to `activities.yml` or to update the rationale of an existing item, run:
+
+```
+python3 activities.py add 1234 --rationale "..."
+```
+
+...where 1234 is the GitHub issue number. Optionally also add `--description "..."` to add a description of the feature or specification.
+
+Alternatively, edit `activities.yml` directly.
+
+Then submit a pull request with the changes.
+
+We'd like to try to keep the technical discussion
 about the position
 in the issue itself
 (so that it stays in one place),
 and limit the discussion in the pull request
-to the details of making the change to `activities.json`,
+to the details of making the change to `activities.yml`,
 and accurately communicating the consensus in the issue.
 
-Similarly, when changes to a proposal warrant an updated position and 
-there is sufficient consensus in subsequent comments on the issue, 
-make a pull request to document that updated consensus by changing `activities.json`.
+Similarly, when changes to a proposal warrant an updated position and
+there is sufficient consensus in subsequent comments on the issue,
+make a pull request to document that updated consensus by changing `activities.yml`.
 
 Tips:
 * Specification URLs should link to a living standard or editor’s draft if available.

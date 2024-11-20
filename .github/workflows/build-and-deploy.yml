@@ -1,0 +1,54 @@
+name: Build and Deploy
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Runs every 6 hours
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up SSH for Git (deploy key)
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fetch GitHub data
+        run: |
+          python3 gh-data.py
+
+      - name: Merge data sources
+        run: |
+          python3 merge-data.py
+
+      - name: Commit and Push Changes to `gh-pages`
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b gh-pages
+          git add -f merged-data.json
+          git add .
+          # If there are no changes, no commit gets created, and nothing is pushed
+          git commit -m "Update GitHub Pages with latest data"
+          git remote set-url origin git@github.com:${{ github.repository }}.git
+          git push origin gh-pages
