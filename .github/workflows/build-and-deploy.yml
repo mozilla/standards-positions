@@ -35,42 +35,33 @@ jobs:
           python3 -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Generate Merged Data
-        run: |
-          python3 gh-data.py
-          python3 merge-data.py
-
-      - name: Switch to `gh-pages` and Preserve Changes
+      - name: Fetch and Check Out `gh-pages`
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Stash changes to preserve them
-          git stash --include-untracked
 
           # Fetch and switch to `gh-pages`
           git fetch origin gh-pages:gh-pages || git checkout --orphan gh-pages
           git checkout gh-pages
 
-          # Rebase `gh-pages` onto `main` to ensure a linear history
+      - name: Rebase `gh-pages` onto `main` (if triggered by push to main)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
           git rebase main
 
-          # Apply stashed changes
-          git stash pop || echo "No changes to apply."
+      - name: Generate Merged Data
+        run: |
+          python3 gh-data.py
+          python3 merge-data.py
 
       - name: Commit and Push Updates
         run: |
           # Add changes
           git add -f merged-data.json
-          git add .
 
           # Commit changes if there are any
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "Update GitHub Pages with latest data"
-          fi
+          git commit -m "Update GitHub Pages with latest data"
 
           # Push changes back to `gh-pages`
           git remote set-url origin git@github.com:${{ github.repository }}.git
-          git push origin gh-pages
+          git push origin gh-pages --force
