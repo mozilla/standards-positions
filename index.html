@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <title>Mozilla Standards Positions</title>
-    <link rel="preload" as="iframe" href="merged-data.json">
     <link rel="preload" as="image" href="asset/Mozilla-2024.svg">
     <link rel="preload" as="image" href="asset/WHATWG.svg">
     <link rel="preload" as="image" href="asset/W3C.svg">
@@ -77,38 +76,41 @@
      html { font-family: system-ui, sans-serif; color: var(--root-color); background-color: var(--root-bg-color); line-height: 1.5; scrollbar-gutter: stable; scroll-padding-top: calc(2.5em + 1px); }
      html.loading header ~ * { visibility: hidden; }
      body { margin: 2em; }
-     header { background-color: var(--header-bg-color); margin: 0 auto 2em; padding: 3em; max-width: 60em; }
+     header { background-color: var(--header-bg-color); margin: 0 auto 2em; padding: 3em; max-width: 66em; }
      h1 { font-size: min(12vw, 4em); margin: 0; color: var(--h1-color); line-height: 1; }
      h1 img { max-height: 0.83333333em; width: auto; }
      mark { background-color: var(--highlight-bg-color); color: var(--highlight-color); padding: 0.5em; margin: -0.5em; line-height: 2; box-decoration-break: clone; }
      :any-link { color: var(--link-color); padding: 0.25rem 0; }
-     table { margin: 0 auto 2em; padding: 3em; max-width: 60em;  }
      table :any-link { text-decoration: none; }
      table :any-link:hover { text-decoration: underline; }
-     search { margin: 0 auto 2em; padding: 3em; max-width: 60em;  }
+     search { margin: 0 auto 2em; padding: 3em; max-width: 66em; }
 
      search label { display: flex; gap: 1em; }
      input[name="search"] { width: 100%; margin-right: 5em; border: 1px solid gray; border-radius: 3px; background-color: var(--input-bg-color); color: var(--input-color); }
 
      td.more-info :any-link { text-decoration: none; }
-     table { border-collapse: collapse; width: 100%; }
+     table { border-collapse: collapse; table-layout: fixed; width: 100%; margin: 0 auto 2em; max-width: 72em; }
      thead { position: sticky; top: 0; background-color: var(--root-bg-color); z-index: 2; }
-     tr[hidden] { display: table-row; visibility: collapse; }
      th { text-align: left; box-shadow: var(--table-border-color) 0 1px 0; }
      th:first-child { text-align: right; }
      th, td.venues, td.more-info { white-space: nowrap; }
-     th.specification { width: 100vw; }
+     th.link { width: 6em; }
+     th.specification { width: 32.5em; }
      td.venues, td.more-info { word-spacing: 8px; padding-top: 0.1em; padding-bottom: 0.1em; font-size: 1.5em; }
      td.venues :any-link, td.more-info :any-link { padding: 0; }
      td.link :any-link { padding: 0.25rem; }
-     th.concerns { width: 5em; }
-     th, td { padding: 0.5em; }
-     td:first-child { padding-left: 6em; width: 0.5em; }
+     th.concerns { width: 7em; }
+     th.position { width: 4em; }
+     th.topics { width: 3.5em; }
+     th.venues { width: 3.5em; }
+     th.more-info { width: 8.5em; }
+     th, td { padding: 0.5rem; }
+     td:first-child { padding-left: 5.5em; width: 1em; }
      tr.details > td { padding-top: 0; padding-bottom: 0; border-top: none; }
-     summary { position: relative; white-space: nowrap; top: calc(-2em - 1px); left: -5em; width: min-content; cursor: default; user-select: none; }
+     summary { position: relative; white-space: nowrap; top: calc(-2em - 1px); left: -4.5em; width: min-content; cursor: default; user-select: none; }
      details > dl { margin-top: -1em; }
      details:not([open]) { height: 0; }
-     details dl { margin-left: -5.5em; grid-template-columns: 6em auto; }
+     details dl { margin-left: -5em; grid-template-columns: 6em auto; }
      details dt { font-weight: bold; }
      dl { display: grid; grid-template-columns: max-content auto; row-gap: 1em; max-width: calc(100vw - 4em) }
      dt { text-align: right; }
