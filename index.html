@@ -96,6 +96,7 @@
      th, td.venues, td.more-info { white-space: nowrap; }
      th.link { width: 6em; }
      th.specification { width: 32.5em; }
+     td.concerns, td.topics { font-size: 0.75em; padding-bottom: 0.85em; text-wrap: balance; }
      td.venues, td.more-info { word-spacing: 8px; padding-top: 0.1em; padding-bottom: 0.1em; font-size: 1.5em; }
      td.venues :any-link, td.more-info :any-link { padding: 0; }
      td.link :any-link { padding: 0.25rem; }
@@ -116,7 +117,7 @@
      dt { text-align: right; }
      dd { margin-left: 1em; padding-left: 1px; }
 
-     td { border-top: 1px solid var(--table-border-color); vertical-align: top; }
+     td { border-top: 1px solid var(--table-border-color); vertical-align: bottom; }
      tbody > tr:hover,
      tbody > tr:hover + tr.details,
      tbody > tr:has( + :where(tr.details:hover)) { background-color: var(--row-hover-bg-color); }
@@ -167,8 +168,8 @@
         <tr>
           <th class="link">Link</th>
           <th class="specification">Specification</th>
-          <th class="concerns">Concerns</th>
           <th class="position">Position</th>
+          <th class="concerns">Concerns</th>
           <th class="topics">Topics</th>
           <th class="venues">Venues</th>
           <th class="more-info">More info</th>
@@ -358,12 +359,12 @@
        // Specification
        tr.append(cell(link(url, title), 'specification'));
 
-       // Concerns
-       tr.append(cell(concerns?.join(', '), 'concerns'));
-
        // Position
        tr.append(cell(positionSpan(position), 'positions'));
        tr.dataset.position = position;
+
+       // Concerns
+       tr.append(cell(concerns?.join(', '), 'concerns'));
 
        // Topics
        tr.append(cell(topics?.join(', '), 'topics'));
