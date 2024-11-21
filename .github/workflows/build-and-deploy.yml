@@ -65,4 +65,4 @@ jobs:
 
           # Push changes back to `gh-pages`
           git remote set-url origin git@github.com:${{ github.repository }}.git
-          git push origin gh-pages --force
+          git push origin gh-pages --force-with-lease
