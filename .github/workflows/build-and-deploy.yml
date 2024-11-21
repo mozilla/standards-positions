@@ -35,13 +35,14 @@ jobs:
           python3 -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Fetch and Check Out `gh-pages`
+      - name: Configure Git User
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Fetch and switch to `gh-pages`
-          git fetch origin gh-pages:gh-pages || git checkout --orphan gh-pages
+      - name: Fetch and Check Out `gh-pages`
+        run: |
+          git fetch origin gh-pages:gh-pages
           git checkout gh-pages
 
       - name: Rebase `gh-pages` onto `main` (if triggered by push to main)
