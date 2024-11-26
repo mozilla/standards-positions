@@ -48,7 +48,7 @@ jobs:
       - name: Merge `main` into `gh-pages` with `-s theirs`
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
-          git merge main -s theirs --no-edit
+          git merge ${{ github.sha }} -s theirs --no-edit
 
       - name: Generate Merged Data
         run: |
