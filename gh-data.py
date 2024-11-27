@@ -67,7 +67,8 @@ def process_labels(labels):
 
 
 def get_url(text):
-    m = re.search(r"\b(https?://\S+)", text)
+    # get the first url (maybe in markdown link) and remove trailing comma
+    m = re.search(r"\b(https?://[^\)\s]+)", text)
     if m:
         url = m.group()
         if url.endswith(','):
