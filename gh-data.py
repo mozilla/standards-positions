@@ -66,6 +66,15 @@ def process_labels(labels):
     }
 
 
+def get_url(text):
+    m = re.search(r"\b(https?://\S+)", text)
+    if m:
+        url = m.group()
+        if url.endswith(','):
+            url = url[:-1]
+        return url
+    return ""
+
 def process_body(issue):
     lines = issue["body"].splitlines()
 
@@ -100,6 +109,8 @@ def process_body(issue):
             if line.lower().startswith(text_title):
                 value = line[len(text_title) :].strip()
                 value = re.sub(r"\[[^\]]+\]\(([^\)]+)\)", r"\1", value)
+                if key in ("url", "explainer", "caniuse", "bug", "webkit"):
+                    value = get_url(value)
                 if value != "" and value.lower() != "n/a":
                     body[key] = value
                 break
