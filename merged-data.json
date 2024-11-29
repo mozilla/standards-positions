@@ -6983,7 +6983,7 @@
       "HTML"
     ],
     "title": "Protected Audience API",
-    "url": "Partial spec is https://wicg.github.io/turtledove/, but recommend deferring to the explainer.",
+    "url": "https://wicg.github.io/turtledove/",
     "explainer": "https://github.com/WICG/turtledove/blob/main/FLEDGE.md",
     "caniuse": null,
     "bug": null,
@@ -10202,7 +10202,7 @@
     "topics": [
       "CSS"
     ],
-    "title": ":open and :closed pseudo-classes",
+    "title": ":open pseudo-class",
     "url": "https://drafts.csswg.org/selectors-4/#open-state",
     "explainer": null,
     "caniuse": null,
@@ -10564,6 +10564,32 @@
     "title": "Clipboardchange event API",
     "url": "https://www.w3.org/TR/clipboard-apis/#clipboard-event-clipboardchange",
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/ClipboardAPI/clipboard-change-event-explainer.md",
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1128": {
+    "issue": 1128,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Element timing/LCP: Replace `TAO` restriction with coarsening",
+    "url": "https://w3c.github.io/largest-contentful-paint/",
+    "explainer": "https://github.com/w3c/paint-timing/blob/main/presentation-timestamps.md and https://docs.google.com/document/d/1VxgMf1wlWzB4ViAW4ohkOe3AT0wQZKk7hC3IVq-cuw0/edit?tab=t.0#heading=h.fmic3y1ir4.",
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1129": {
+    "issue": 1129,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSP report-hash directive",
+    "url": "https://github.com/w3c/webappsec-csp/pull/693",
+    "explainer": "https://github.com/w3c/webappsec-csp/pull/693#issue-2692363906",
     "caniuse": null,
     "bug": null,
     "webkit": null
