@@ -49,10 +49,10 @@ jobs:
           git fetch origin gh-pages:gh-pages
           git checkout gh-pages
 
-      - name: Merge `main` into `gh-pages` with `-s theirs`
+      - name: Merge `main` into `gh-pages`
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
-          git merge ${{ github.sha }} -s theirs --no-edit
+          git merge ${{ github.sha }} --strategy recursive -X theirs --no-edit
 
       - name: Generate Merged Data
         run: |
