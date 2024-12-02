@@ -65,7 +65,11 @@ jobs:
           git add -f merged-data.json
 
           # Commit changes if there are any
-          git commit -m "Update GitHub Pages with latest data"
+          if ! git diff --cached --quiet; then
+            git commit -m "Update GitHub Pages with latest data"
+          else
+            echo "No changes to commit."
+          fi
 
           # Push changes back to `gh-pages`
           git remote set-url origin git@github.com:${{ github.repository }}.git
