@@ -8,6 +8,10 @@ on:
       - main
   workflow_dispatch: # Allows manual trigger
 
+concurrency:
+  group: build-and-deploy
+  cancel-in-progress: false
+
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
@@ -15,6 +19,8 @@ jobs:
     steps:
       - name: Check out the repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch full history for proper merging
 
       - name: Set up SSH for Git (deploy key)
         run: |
@@ -33,22 +39,38 @@ jobs:
           python3 -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Fetch GitHub data
-        run: |
-          python3 gh-data.py
-
-      - name: Merge data sources
-        run: |
-          python3 merge-data.py
-
-      - name: Commit and Push Changes to `gh-pages`
+      - name: Configure Git User
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -b gh-pages
+
+      - name: Fetch and Check Out `gh-pages`
+        run: |
+          git fetch origin gh-pages:gh-pages
+          git checkout gh-pages
+
+      - name: Merge `main` into `gh-pages`
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          git merge ${{ github.sha }} --strategy recursive -X theirs --no-edit
+
+      - name: Generate Merged Data
+        run: |
+          python3 gh-data.py
+          python3 merge-data.py
+
+      - name: Commit and Push Updates
+        run: |
+          # Add changes
           git add -f merged-data.json
-          git add .
-          # If there are no changes, no commit gets created, and nothing is pushed
-          git commit -m "Update GitHub Pages with latest data"
+
+          # Commit changes if there are any
+          if ! git diff --cached --quiet; then
+            git commit -m "Update GitHub Pages with latest data"
+          else
+            echo "No changes to commit."
+          fi
+
+          # Push changes back to `gh-pages`
           git remote set-url origin git@github.com:${{ github.repository }}.git
           git push origin gh-pages
