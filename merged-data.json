@@ -1286,14 +1286,14 @@
   },
   "135": {
     "issue": 135,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
     "concerns": [],
     "topics": [],
     "title": "content-visibility API",
-    "url": "https://github.com/WICG/display-locking~~",
+    "url": "https://drafts.csswg.org/css-contain-2/#content-visibility",
     "explainer": null,
     "caniuse": null,
     "bug": null,
@@ -1471,7 +1471,7 @@
     "concerns": [],
     "topics": [],
     "title": "SMS OTP Retriever / SMS verification / Sign up API",
-    "url": "https://www.chromestatus.com/feature/5873577578463232",
+    "url": "https://wicg.github.io/web-otp/",
     "explainer": null,
     "caniuse": null,
     "bug": null,
