@@ -10593,5 +10593,18 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1133": {
+    "issue": 1133,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Iterator Sequencing",
+    "url": "https://tc39.es/proposal-iterator-sequencing/",
+    "explainer": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
