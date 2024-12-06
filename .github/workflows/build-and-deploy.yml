@@ -17,6 +17,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Skip Workflow for Forks
+        if: ${{ github.repository != 'mozilla/standards-positions' }}
+        run: |
+          echo "Skipping job for fork repository."
+          exit 0
+
       - name: Check out the repository
         uses: actions/checkout@v4
         with:
