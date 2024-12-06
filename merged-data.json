@@ -10606,5 +10606,18 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1139": {
+    "issue": 1139,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Signature-based Integrity",
+    "url": "https://wicg.github.io/signature-based-sri/",
+    "explainer": "https://github.com/WICG/signature-based-sri",
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/434"
   }
 }
