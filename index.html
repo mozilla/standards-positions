@@ -300,13 +300,14 @@
        return [dt, dd];
      }
 
-     function details(description, rationale) {
+     function details(description, rationale, describedById) {
        if (!description && !rationale) {
          return null;
        }
        const details = document.createElement('details');
        const summary = document.createElement('summary');
        summary.textContent = 'Details';
+       summary.setAttribute('aria-describedby', describedById);
        details.append(summary);
        const dl = document.createElement('dl');
        details.append(dl);
@@ -357,7 +358,9 @@
        tr.append(cell(link(`#${selfId}`, '🔗', 'Self-link'), 'link'));
 
        // Specification
-       tr.append(cell(link(url, title), 'specification'));
+       const specLink = link(url, title);
+       specLink.id = `speclink-${selfId}`;
+       tr.append(cell(specLink, 'specification'));
 
        // Position
        tr.append(cell(positionSpan(position), 'positions'));
@@ -393,7 +396,7 @@
        if (description || rationale) {
          const detailsTr = document.createElement('tr');
          detailsTr.className = 'details';
-         detailsTr.append(cell(details(description, rationale), null, 7));
+         detailsTr.append(cell(details(description, rationale, specLink.id), null, 7));
          rv.push(detailsTr);
        }
 
