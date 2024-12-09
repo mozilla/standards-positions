@@ -83,19 +83,19 @@
      :any-link { color: var(--link-color); padding: 0.25rem 0; }
      table :any-link { text-decoration: none; }
      table :any-link:hover { text-decoration: underline; }
-     search { margin: 0 auto 2em; padding: 3em; max-width: 66em; }
+     search { margin: 0 auto 2em; padding-block: 3em; padding-inline: min(3%, 3em); max-width: 66em; }
 
      search label { display: flex; gap: 1em; }
-     input[name="search"] { width: 100%; margin-right: 5em; border: 1px solid gray; border-radius: 3px; background-color: var(--input-bg-color); color: var(--input-color); }
+     input[name="search"] { width: 100%; margin-right: min(5%, 5em); border: 1px solid gray; border-radius: 3px; background-color: var(--input-bg-color); color: var(--input-color); }
 
      td.more-info :any-link { text-decoration: none; }
-     table { border-collapse: collapse; table-layout: fixed; width: 100%; margin: 0 auto 2em; max-width: 72em; }
+     table { border-collapse: collapse; table-layout: fixed; width: 100%; margin: 0 auto 2em; max-width: 72em; min-width: 48em; }
      thead { position: sticky; top: 0; background-color: var(--root-bg-color); z-index: 2; }
      th { text-align: left; box-shadow: var(--table-border-color) 0 1px 0; }
      th:first-child { text-align: right; }
      th, td.venues, td.more-info { white-space: nowrap; }
      th.link { width: 6em; }
-     th.specification { width: 32.5em; }
+     td.specification { word-wrap: break-word; }
      td.concerns, td.topics { font-size: 0.75em; padding-bottom: 0.85em; text-wrap: balance; }
      td.venues, td.more-info { word-spacing: 8px; padding-top: 0.1em; padding-bottom: 0.1em; font-size: 1.5em; }
      td.venues :any-link, td.more-info :any-link { padding: 0; }
