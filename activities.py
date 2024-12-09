@@ -60,11 +60,8 @@ class YAMLValidator:
             self.log_error("Missing required 'issue' key.", key)
         elif not isinstance(item['issue'], int):
             self.log_error(f"'issue' must be an integer, got {item['issue']}.", key)
-        elif item['issue'] < 0:
-            self.log_error(f"'issue' must be a positive integer, got {item['issue']}.", key)
-
-        # Legacy item key restriction for issue numbers >= 1110
-        if 'issue' in item and item['issue'] >= 1110:
+        elif item['issue'] >= 1110:
+            # Legacy item key restriction for issue numbers >= 1110
             for legacy_key in ['position', 'venues']:
                 if legacy_key in item:
                     if self.fix:

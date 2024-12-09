@@ -19,11 +19,11 @@ output_dict = {item['issue']: item for item in gh_data_summary}
 def merge(dict1, dict2):
     """
     Merges data from dict1 into dict2. Keys in dict1 take precedence if not None.
-    Strips trailing newline from 'description' and 'rationale'.
+    Strips trailing newline from string values.
     """
     for key, value in dict1.items():
         if value is not None:
-            if key in ['description', 'rationale'] and isinstance(value, str):
+            if isinstance(value, str):
                 dict2[key] = value.rstrip("\n")  # Strip trailing newlines
             else:
                 dict2[key] = value
