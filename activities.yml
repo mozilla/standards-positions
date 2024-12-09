@@ -1498,11 +1498,9 @@ Network Error Logging:
   id: network-error-logging
   issue: 99
   mdn: https://developer.mozilla.org/en-US/docs/Web/HTTP/Network_Error_Logging
-  position: negative
-  rationale: The API enables the collection of user-specific information that sites
-    might not otherwise be able to observe, which includes information that might
-    be private under some circumstances. Furthermore, the specification does not seem
-    to track changes to the Reporting API it builds upon and seems effectively unmaintained.
+  position: positive
+  rationale: |
+    Network error logging can provide useful feedback to servers regarding network failures across different browsers. While there are certain privacy issues that need to be handled with care, implementing a subset of this specification should be enough to prove useful for both server side applications monitoring the logs, and ideally useful for the users who get their networking issues addressed.
   url: https://w3c.github.io/network-error-logging/
   venues:
   - W3C
