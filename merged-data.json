@@ -698,7 +698,7 @@
     "description": "An increasing diversity of Web-connected devices and software capabilities has created a need to deliver optimized content for each device. This specification defines an extensible and configurable set of HTTP request header fields, colloquially known as Client Hints, to address this. They are intended to be used as input to proactive content negotiation; just as the Accept header field allows user agents to indicate what formats they prefer, Client Hints allow user agents to indicate device and agent specific preferences.",
     "id": "http-client-hints",
     "mdn": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#Client_hints",
-    "rationale": "Architecturally, Mozilla prefers client-side solutions for retrieving alternate versions of content, such as the HTML &lt;picture> tag. Despite these architectural preferences, we find that Client-Hints do not present a concrete harm to the web or to its users. "
+    "rationale": "Architecturally, Mozilla prefers client-side solutions for retrieving alternate versions of content, such as the HTML &lt;picture> tag. Despite these architectural preferences, we find that Client-Hints do not present a concrete harm to the web or to its users."
   },
   "80": {
     "issue": 80,
@@ -1460,7 +1460,7 @@
     "description": "Enabling images and iframes to be fetched at a later time, when the user is likely to look at them.",
     "id": "loading-lazy-attr",
     "mdn": "https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading#images_and_iframes",
-    "rationale": "As currently specified in HTML this is a reasonable addition to how images and iframes are fetched. "
+    "rationale": "As currently specified in HTML this is a reasonable addition to how images and iframes are fetched."
   },
   "152": {
     "issue": 152,
@@ -2060,7 +2060,7 @@
   },
   "199": {
     "issue": 199,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -4376,7 +4376,9 @@
       "WHATWG"
     ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "CanvasRenderingContext2D API Improvements",
     "url": "https://github.com/fserb/canvas2d.",
     "explainer": null,
@@ -4402,7 +4404,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Compute Pressure API",
     "url": "https://oyiptong.github.io/compute-pressure/",
     "explainer": null,
@@ -4866,9 +4870,15 @@
   "565": {
     "issue": 565,
     "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
+    "venues": [
+      "W3C CG"
+    ],
+    "concerns": [
+      "venue"
+    ],
+    "topics": [
+      "API"
+    ],
     "title": "Capability Delegation",
     "url": "https://wicg.github.io/capability-delegation/spec.html",
     "explainer": null,
@@ -7978,9 +7988,7 @@
     "webkit": null,
     "description": "This spec defines a signal that conveys a person's request to websites and services to not sell or share their personal information with third parties.",
     "id": "gpc",
-    "mdn": [
-      "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/globalPrivacyControl"
-    ],
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/globalPrivacyControl",
     "rationale": "This signal defined in this specification provides users with a way to opt-out of the disclosure of their information to third parties once per profile in a way that is legally enforced in some jurisdictions, and is being considered in future regulations."
   },
   "872": {
@@ -8469,8 +8477,8 @@
     "url": "https://drafts.csswg.org/css-page-3/#margin-boxes",
     "explainer": "https://github.com/mstensho/page-margin-boxes",
     "caniuse": null,
-    "bug": null,
-    "webkit": null
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=856371",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/275"
   },
   "922": {
     "issue": 922,
@@ -9001,7 +9009,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS dynamic-range-limit property",
     "url": null,
     "explainer": "https://github.com/ccameron-chromium/hdr-headroom-limit/blob/main/EXPLAINER.md",
@@ -10211,7 +10221,7 @@
   },
   "1086": {
     "issue": 1086,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -10619,5 +10629,18 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/434"
+  },
+  "1142": {
+    "issue": 1142,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "HTML `selectedcontent` element",
+    "url": "https://github.com/whatwg/html/pull/10633",
+    "explainer": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
