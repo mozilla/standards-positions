@@ -6323,11 +6323,11 @@
     "concerns": [],
     "topics": [],
     "title": "fetchLater() API",
-    "url": "https://github.com/WICG/pending-beacon",
+    "url": "https://github.com/WICG/pending-beacon/blob/main/docs/fetch-later-api.md",
     "explainer": null,
     "caniuse": null,
-    "bug": null,
-    "webkit": null
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1936180",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/85"
   },
   "705": {
     "issue": 705,
