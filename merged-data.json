@@ -10642,5 +10642,18 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1143": {
+    "issue": 1143,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS advanced attr() function",
+    "url": "https://drafts.csswg.org/css-values-5/#attr-notation",
+    "explainer": "https://github.com/tursunova/web-platform-explainer/blob/main/advanced-attr-explainer.md",
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=435426",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/435"
   }
 }
