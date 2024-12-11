@@ -88,23 +88,23 @@
      search label { display: flex; gap: 1em; }
      input[name="search"] { width: 100%; margin-right: min(5%, 5em); border: 1px solid gray; border-radius: 3px; background-color: var(--input-bg-color); color: var(--input-color); }
 
-     td.more-info :any-link { text-decoration: none; }
      table { border-collapse: collapse; table-layout: fixed; width: 100%; margin: 0 auto 2em; max-width: 72em; min-width: 48em; }
      thead { position: sticky; top: 0; background-color: var(--root-bg-color); z-index: 2; }
      th { text-align: left; box-shadow: var(--table-border-color) 0 1px 0; }
      th:first-child { text-align: right; }
-     th, td.venues, td.more-info { white-space: nowrap; }
+     th { white-space: nowrap; }
      th.link { width: 6em; }
      td.specification { word-wrap: break-word; }
      td.concerns, td.topics { font-size: 0.75em; padding-bottom: 0.85em; text-wrap: balance; }
      td.venues, td.more-info { word-spacing: 8px; padding-top: 0.1em; padding-bottom: 0.1em; font-size: 1.5em; }
-     td.venues :any-link, td.more-info :any-link { padding: 0; }
+     td.more-info :any-link[title="Discussion"] { font-size: 0.75rem; vertical-align: 0.2rem; }
+     td.more-info :any-link:not([title="Discussion"]) { padding: 0; text-decoration: none; }
      td.link :any-link { padding: 0.25rem; }
      th.concerns { width: 7em; }
      th.position { width: 4em; }
      th.topics { width: 3.5em; }
      th.venues { width: 3.5em; }
-     th.more-info { width: 8.5em; }
+     th.more-info { width: 9.5em; }
      th, td { padding: 0.5rem; }
      td:first-child { padding-left: 5.5em; width: 1em; }
      tr.details > td { padding-top: 0; padding-bottom: 0; border-top: none; }
@@ -376,7 +376,7 @@
 
        // More info
        const infoLinks = [];
-       infoLinks.push(link(`https://github.com/mozilla/standards-positions/issues/${issueNum}`, '💬', 'Discussion'));
+       infoLinks.push(link(`https://github.com/mozilla/standards-positions/issues/${issueNum}`, `#${issueNum}`, 'Discussion'));
        if (bug) {
          infoLinks.push(" ", link(bug, img('asset/bugzilla.png', 32, 32, 'bug'), 'Mozilla bug'));
        }

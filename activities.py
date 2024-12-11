@@ -1,150 +1,133 @@
-import yaml
-import re
-import sys
+from ruamel.yaml import YAML
+from ruamel.yaml.comments import CommentedMap
+from ruamel.yaml.scalarstring import LiteralScalarString
 import argparse
 import requests
-from typing import Any, Dict, List, Tuple
+import sys
+from typing import Any, Dict
+
 
 class YAMLValidator:
     def __init__(self, file_path: str, fix: bool = False):
         self.file_path = file_path
         self.fix = fix
-        self.issues = set()
         self.errors = []
         self.modified_data = None
+        self.yaml = YAML()
+        self.yaml.preserve_quotes = True
 
-    def load_yaml(self) -> Tuple[Dict[str, Any], Dict[int, str]]:
+    def load_yaml(self) -> CommentedMap:
         try:
             with open(self.file_path, 'r') as file:
-                lines = file.readlines()
-                data = yaml.safe_load("".join(lines))
-                line_map = {i + 1: line.strip() for i, line in enumerate(lines)}
-                return data, line_map
-        except yaml.YAMLError as e:
-            raise ValueError("Failed to load YAML: Invalid YAML format") from e
+                data = self.yaml.load(file)
+                return data
+        except Exception as e:
+            raise ValueError(f"Failed to load YAML: {e}") from e
 
-    def log_error(self, message: str, key: str = "", line: int = None, fixable=False):
-        tofix = " (Use --fix to fix.)" if fixable else ""
-        if line is not None:
-            self.errors.append(f"Error at line {line} in key '{key}': {message}{tofix}")
-        else:
-            self.errors.append(f"Error: {message}{tofix}")
+    def log_error(self, message: str, key: str = ""):
+        self.errors.append(f"Error in key '{key}': {message}")
 
-    def validate_top_level_keys(self, data: Dict[str, Any], line_map: Dict[int, str]):
+    def validate_top_level_keys(self, data: CommentedMap):
         keys = list(data.keys())
-        modified = False
-
-        # Check for non-string keys
-        non_string_keys = [key for key in keys if not isinstance(key, str)]
-        if non_string_keys:
-            for key in non_string_keys:
-                line_num = next((line for line, content in line_map.items() if str(key) in content), None)
-                self.log_error("Top-level keys must be strings", key, line_num)
-
-        # Check alphabetical order
         if keys != sorted(keys):
             if self.fix:
-                data = dict(sorted(data.items()))
-                modified = True
+                self.modified_data = CommentedMap(sorted(data.items()))
             else:
-                self.log_error("Top-level keys must be in alphabetical order.", fixable=True)
+                self.log_error("Top-level keys must be in alphabetical order.")
 
-        # Check for unique keys
-        unique_keys = set(keys)
-        if len(keys) != len(unique_keys):
-            duplicates = [key for key in keys if keys.count(key) > 1]
-            for key in set(duplicates):
-                line_num = next((line for line, content in line_map.items() if key in content), None)
-                self.log_error("Top-level keys must be unique", key, line_num)
+    def validate_literal_block(self, data: CommentedMap, key: str, field: str):
+        value = data.get(key, {}).get(field)
+        if value is not None:
+            if not isinstance(value, LiteralScalarString):
+                if self.fix:
+                    data[key][field] = LiteralScalarString(value)
+                else:
+                    self.log_error(f"'{field}' must use literal block syntax (|).", key)
+            elif not value.endswith('\n'):
+                if self.fix:
+                    data[key][field] = LiteralScalarString(f"{value}\n")
+                else:
+                    self.log_error(f"'{field}' must end with a newline to use '|' syntax.", key)
 
-        if self.fix and modified:
-            self.modified_data = data  # Track modified data for saving later
+    def validate_item(self, data: CommentedMap, key: str):
+        item = data[key]
+        if not isinstance(item, dict):
+            self.log_error(f"Item '{key}' must be a dictionary.", key)
+            return
 
-    def validate_item(self, item: Dict[str, Any], key: str, line: int):
-        modified = False
-
-        # Validate issue (required and unique)
+        # Validate required fields
         if 'issue' not in item:
-            self.log_error("Missing required 'issue' key", key, line)
+            self.log_error("Missing required 'issue' key.", key)
         elif not isinstance(item['issue'], int):
-            self.log_error(f"'issue' must be a unique number, got {item['issue']}", key, line)
-        elif item['issue'] in self.issues:
-            self.log_error(f"'issue' {item['issue']} is not unique", key, line)
-        else:
-            self.issues.add(item['issue'])
-
-        # Validate rationale (optional but must be string if present)
-        if 'rationale' in item and item['rationale'] is not None:
-            if not isinstance(item['rationale'], str):
-                self.log_error(f"'rationale' must be a string, got {item['rationale']}", key, line)
-
-        # Legacy item key restriction for issue numbers >= 1110
-        if 'issue' in item and item['issue'] >= 1110:
+            self.log_error(f"'issue' must be an integer, got {item['issue']}.", key)
+        elif item['issue'] >= 1110:
+            # Legacy item key restriction for issue numbers >= 1110
             for legacy_key in ['position', 'venues']:
                 if legacy_key in item:
                     if self.fix:
-                        item.pop(legacy_key, None)
-                        modified = True
+                        del item[legacy_key]
                     else:
-                        self.log_error(f"Legacy key {legacy_key}. Please use GitHub issue labels instead.", key, line, fixable=True)
+                        self.log_error(f"Legacy key '{legacy_key}' is not allowed for issue numbers >= 1110.", key)
+
+        # Validate literal block fields
+        for field in ['description', 'rationale']:
+            self.validate_literal_block(data, key, field)
 
         # Optional fields validation
         if 'id' in item and (not isinstance(item['id'], str) or ' ' in item['id']):
-            self.log_error(f"'id' must be a string without whitespace, got {item['id']}", key, line)
-        if 'description' in item and item['description'] not in [None, '']:
-            if not isinstance(item['description'], str) or not item['description'].strip():
-                self.log_error(f"'description' must be a string or null, got {item['description']}", key, line)
+            self.log_error(f"'id' must be a string without whitespace, got {item['id']}.", key)
+
         if 'bug' in item and item['bug'] not in [None, '']:
             if not isinstance(item['bug'], str) or not item['bug'].startswith("https://bugzilla.mozilla.org/show_bug.cgi?id="):
-                self.log_error(f"'bug' must be a URL starting with 'https://bugzilla.mozilla.org/show_bug.cgi?id=', got {item['bug']}", key, line)
+                self.log_error(f"'bug' must be a URL starting with 'https://bugzilla.mozilla.org/show_bug.cgi?id=', got {item['bug']}.", key)
+
         if 'caniuse' in item and item['caniuse'] not in [None, '']:
             if not isinstance(item['caniuse'], str) or not item['caniuse'].startswith("https://caniuse.com/"):
-                self.log_error(f"'caniuse' must be a URL starting with 'https://caniuse.com/' or empty, got {item['caniuse']}", key, line)
+                self.log_error(f"'caniuse' must be a URL starting with 'https://caniuse.com/', got {item['caniuse']}.", key)
+
+        if 'mdn' in item and item['mdn'] not in [None, '']:
+            if not isinstance(item['mdn'], str) or not item['mdn'].startswith("https://developer.mozilla.org/en-US/"):
+                self.log_error(f"'mdn' must be a URL starting with 'https://developer.mozilla.org/en-US/', got {item['mdn']}.", key)
+
         if 'position' in item and item['position'] not in {"positive", "neutral", "negative", "defer", "under consideration"}:
-            self.log_error(f"'position' must be one of the allowed values, got {item['position']}", key, line)
+            self.log_error(f"'position' must be one of the allowed values, got {item['position']}.", key)
+
         if 'url' in item and not item['url'].startswith("https://"):
-            self.log_error(f"'url' must start with 'https://', got {item['url']}", key, line)
+            self.log_error(f"'url' must start with 'https://', got {item['url']}.", key)
+
         if 'venues' in item:
             allowed_venues = {"WHATWG", "W3C", "W3C CG", "IETF", "Ecma", "Unicode", "Proposal", "Other"}
             if not isinstance(item['venues'], list) or not set(item['venues']).issubset(allowed_venues):
-                self.log_error(f"'venues' must be a list with allowed values, got {item['venues']}", key, line)
+                self.log_error(f"'venues' must be a list with allowed values, got {item['venues']}.", key)
 
-        return modified
+    def validate_data(self, data: CommentedMap):
+        for key in data:
+            self.validate_item(data, key)
 
-    def validate_data(self, data: Dict[str, Any], line_map: Dict[int, str]):
-        modified = False
-        for key, item in data.items():
-            start_line = next((line for line, content in line_map.items() if key in content), None)
-            if start_line is not None:
-                if self.validate_item(item, key, start_line):
-                    modified = True
+        self.validate_top_level_keys(data)
 
-        if self.fix and modified:
-            self.modified_data = data  # Track modified data for saving later
+        if self.fix and self.modified_data is None:
+            self.modified_data = data
 
     def save_fixes(self):
         if self.modified_data:
             with open(self.file_path, 'w') as file:
-                yaml.dump(self.modified_data, file, allow_unicode=True, default_flow_style=False)
+                self.yaml.dump(self.modified_data, file)
             print(f"Fixes applied and saved to {self.file_path}")
 
     def run(self):
-        data, line_map = self.load_yaml()
-        self.validate_top_level_keys(data, line_map)
-        self.validate_data(data, line_map)
+        data = self.load_yaml()
+        self.validate_data(data)
 
         if self.errors:
             print("YAML validation failed with the following errors:")
             for error in self.errors:
                 print(error)
             sys.exit(1)
-        else:
-            if self.fix:
-                self.save_fixes()
-            # No success message on pass if not fixing
+        elif self.fix:
+            self.save_fixes()
 
     def add_issue(self, issue_num: int, description: str = None, rationale: str = None):
-        # Fetch issue data from GitHub
         url = f"https://api.github.com/repos/mozilla/standards-positions/issues/{issue_num}"
         response = requests.get(url)
 
@@ -159,43 +142,35 @@ class YAMLValidator:
             print("No title found in the GitHub issue data.")
             sys.exit(1)
 
-        # Load current YAML data
-        data, _ = self.load_yaml()
+        data = self.load_yaml()
 
-        # Find if the issue already exists
-        issue_exists = False
-        for key, item in data.items():
-            if item.get('issue') == issue_num:
-                item['description'] = description if description is not None else item.get('description')
-                item['rationale'] = rationale if rationale is not None else item.get('rationale')
-                issue_exists = True
-                break
+        if title not in data:
+            data[title] = {"issue": issue_num}
 
-        # Add new entry if the issue does not exist
-        if not issue_exists:
-            data[title] = {
-                "issue": issue_num,
-                "description": description,
-                "rationale": rationale
-            }
+        if description:
+            data[title]["description"] = LiteralScalarString(f"{description}\n")
+        if rationale:
+            data[title]["rationale"] = LiteralScalarString(f"{rationale}\n")
 
-        # Sort and save changes
-        data = dict(sorted(data.items()))
+        # Sort keys alphabetically
+        self.modified_data = CommentedMap(sorted(data.items()))
         with open(self.file_path, 'w') as file:
-            yaml.dump(data, file, allow_unicode=True, default_flow_style=False)
+            self.yaml.dump(self.modified_data, file)
         print(f"Issue {issue_num} added or updated successfully.")
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Manage activities.yml.")
     parser.add_argument("command", choices=["validate", "add"], help="Specify 'validate' to validate or 'add' to add or update an item.")
     parser.add_argument("issue_num", nargs="?", type=int, help="Issue number for the 'add' command.")
-    parser.add_argument("--fix", action="store_true", help="Automatically fix issues (sort and drop legacy keys)")
+    parser.add_argument("--fix", action="store_true", help="Automatically fix issues.")
     parser.add_argument("--description", type=str, help="Set the description for the issue.")
     parser.add_argument("--rationale", type=str, help="Set the rationale for the issue.")
     args = parser.parse_args()
 
+    validator = YAMLValidator("activities.yml", fix=args.fix)
+
     if args.command == "validate":
-        validator = YAMLValidator("activities.yml", fix=args.fix)
         try:
             validator.run()
         except ValueError as e:
@@ -204,5 +179,4 @@ if __name__ == "__main__":
         if args.issue_num is None:
             print("Please provide an issue number for 'add'.")
             sys.exit(1)
-        validator = YAMLValidator("activities.yml")
         validator.add_issue(args.issue_num, description=args.description, rationale=args.rationale)

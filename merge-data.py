@@ -1,9 +1,13 @@
-import yaml
+from ruamel.yaml import YAML
 import json
+
+# Initialize YAML parser
+yaml = YAML()
+yaml.preserve_quotes = True
 
 # Load activities.yml
 with open('activities.yml', 'r') as yml_file:
-    activities = yaml.safe_load(yml_file)
+    activities = yaml.load(yml_file)
 
 # Load gh-data-summary.json
 with open('gh-data-summary.json', 'r') as json_file:
@@ -13,11 +17,19 @@ with open('gh-data-summary.json', 'r') as json_file:
 output_dict = {item['issue']: item for item in gh_data_summary}
 
 def merge(dict1, dict2):
-    for key in dict1.keys():
-        if dict1[key]:
-            dict2[key] = dict1[key]
-    dict2.pop('issue', None)
+    """
+    Merges data from dict1 into dict2. Keys in dict1 take precedence if not None.
+    Strips trailing newline from string values.
+    """
+    for key, value in dict1.items():
+        if value is not None:
+            if isinstance(value, str):
+                dict2[key] = value.rstrip("\n")  # Strip trailing newlines
+            else:
+                dict2[key] = value
+    dict2.pop('issue', None)  # Remove the 'issue' key after merging
 
+# Merge data
 for activity_title, activity_data in activities.items():
     if 'issue' in activity_data:
         issue_number = activity_data['issue']
