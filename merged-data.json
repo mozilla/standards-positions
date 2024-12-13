@@ -10655,5 +10655,18 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=435426",
     "webkit": "https://github.com/WebKit/standards-positions/issues/435"
+  },
+  "1144": {
+    "issue": 1144,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[HTML Canvas] TextMetrics Additions",
+    "url": "https://github.com/whatwg/html/issues/10677",
+    "explainer": "https://github.com/Igalia/explainers/blob/main/canvas-formatted-text/text-metrics-additions.md",
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/436"
   }
 }
