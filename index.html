@@ -90,10 +90,7 @@
 
      table { border-collapse: collapse; table-layout: fixed; width: 100%; margin: 0 auto 2em; max-width: 72em; min-width: 48em; }
      thead { position: sticky; top: 0; background-color: var(--root-bg-color); z-index: 2; }
-     th { text-align: left; box-shadow: var(--table-border-color) 0 1px 0; }
-     th:first-child { text-align: right; }
-     th { white-space: nowrap; }
-     th.link { width: 6em; }
+     th { text-align: left; box-shadow: var(--table-border-color) 0 1px 0; white-space: nowrap; }
      td.specification { word-wrap: break-word; }
      td.concerns, td.topics { font-size: 0.75em; padding-bottom: 0.85em; text-wrap: balance; }
      td.venues, td.more-info { word-spacing: 8px; padding-top: 0.1em; padding-bottom: 0.1em; font-size: 1.5em; }
@@ -106,12 +103,12 @@
      th.venues { width: 3.5em; }
      th.more-info { width: 9.5em; }
      th, td { padding: 0.5rem; }
-     td:first-child { padding-left: 5.5em; width: 1em; }
+     th.link { width: 3em; text-align: center; }
+     td.link { padding-left: 2.5em; }
      tr.details > td { padding-top: 0; padding-bottom: 0; border-top: none; }
-     summary { position: relative; white-space: nowrap; top: calc(-2em - 1px); left: -4.5em; width: min-content; cursor: default; user-select: none; }
-     details > dl { margin-top: -1em; }
+     summary { position: relative; white-space: pre; top: calc(-2em - 1px); width: 0.9em; padding-left: 0.45em; overflow: hidden; cursor: default; user-select: none; }
      details:not([open]) { height: 0; }
-     details dl { margin-left: -5em; grid-template-columns: 6em auto; }
+     details dl { margin-top: -1em; grid-template-columns: 6em auto; }
      details dt { font-weight: bold; }
      dl { display: grid; grid-template-columns: max-content auto; row-gap: 1em; max-width: calc(100vw - 4em) }
      dt { text-align: right; }
