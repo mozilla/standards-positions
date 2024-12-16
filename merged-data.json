@@ -6655,7 +6655,7 @@
   },
   "736": {
     "issue": 736,
-    "position": null,
+    "position": "defer",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -8253,7 +8253,7 @@
   },
   "898": {
     "issue": 898,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -10421,19 +10421,6 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1876762",
     "webkit": "https://github.com/WebKit/standards-positions/issues/418"
-  },
-  "1102": {
-    "issue": 1102,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Writing Assistance APIs",
-    "url": null,
-    "explainer": "https://github.com/WICG/writing-assistance-apis/blob/main/README.md",
-    "caniuse": null,
-    "bug": null,
-    "webkit": "https://github.com/WebKit/standards-positions/issues/393"
   },
   "1103": {
     "issue": 1103,
