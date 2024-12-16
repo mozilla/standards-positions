@@ -83,6 +83,7 @@ def process_body(issue):
         "title": None,
         "url": None,
         "explainer": None,
+        "mdn": None,
         "caniuse": None,
         "bug": None,
         "webkit": None,
@@ -94,6 +95,7 @@ def process_body(issue):
         "specification or proposal url": "url",
         "explainer url (if available)": "explainer",
         "explainer url": "explainer",
+        "mdn url (optional)": "mdn",
         "caniuse.com url (optional)": "caniuse",
         "caniuse.com url": "caniuse",
         "bugzilla url (optional)": "bug",
@@ -110,7 +112,7 @@ def process_body(issue):
             if line.lower().startswith(text_title):
                 value = line[len(text_title) :].strip()
                 value = re.sub(r"\[[^\]]+\]\(([^\)]+)\)", r"\1", value)
-                if key in ("url", "explainer", "caniuse", "bug", "webkit"):
+                if key in ("url", "explainer", "mdn", "caniuse", "bug", "webkit"):
                     value = get_url(value)
                 if value != "" and value.lower() != "n/a":
                     body[key] = value

@@ -4,11 +4,12 @@
 
 * Specification title: 
 * Specification or proposal URL (if available): 
-* Explainer URL (if available):
+* Explainer URL (if available): 
 * Proposal author(s) (`@`-mention GitHub accounts): 
+* MDN URL (optional): 
 * Caniuse.com URL (optional): 
 * Bugzilla URL (optional): 
-* Mozillians who can provide input (optional):
+* Mozillians who can provide input (optional): 
 * WebKit standards-position: 
 
 ### Other information
