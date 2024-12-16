@@ -10659,9 +10659,13 @@
   "1144": {
     "issue": 1144,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "[HTML Canvas] TextMetrics Additions",
     "url": "https://github.com/whatwg/html/issues/10677",
     "explainer": "https://github.com/Igalia/explainers/blob/main/canvas-formatted-text/text-metrics-additions.md",
