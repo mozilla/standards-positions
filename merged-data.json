@@ -5436,9 +5436,11 @@
   },
   "620": {
     "issue": 620,
-    "position": null,
+    "position": "neutral",
     "venues": [],
-    "concerns": [],
+    "concerns": [
+      "complexity"
+    ],
     "topics": [],
     "title": "Speculation Rules - Navigational prefetching and prerendering",
     "url": null,
