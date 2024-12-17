@@ -3376,7 +3376,9 @@
       "W3C"
     ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS Images 4: cross-fade()",
     "url": null,
     "explainer": null,
@@ -8616,19 +8618,6 @@
     "bug": null,
     "webkit": null
   },
-  "937": {
-    "issue": 937,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "CSS Images Level 4: cross-fade()",
-    "url": "https://drafts.csswg.org/css-images-4/#cross-fade-function",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "938": {
     "issue": 938,
     "position": "defer",
@@ -9128,12 +9117,16 @@
   "993": {
     "issue": 993,
     "position": "positive",
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [
       "compatibility",
       "complexity"
     ],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS `text-wrap-style: pretty`",
     "url": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-pretty",
     "explainer": null,
@@ -9317,9 +9310,13 @@
   "1013": {
     "issue": 1013,
     "position": "positive",
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS Nesting: @nest",
     "url": "https://drafts.csswg.org/css-nesting/",
     "explainer": null,
@@ -10637,7 +10634,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS advanced attr() function",
     "url": "https://drafts.csswg.org/css-values-5/#attr-notation",
     "explainer": "https://github.com/tursunova/web-platform-explainer/blob/main/advanced-attr-explainer.md",
