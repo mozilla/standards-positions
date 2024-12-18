@@ -212,8 +212,8 @@
        // Create a document fragment to hold the parsed elements
        const fragment = document.createDocumentFragment();
 
-       // Regex for either code or link
-       const markdownPattern = enableLinks ? /(`([^`]+)`|\[([^\]]+)\]\(([^\)]+)\))/g : /(`([^`]+)`)/g;
+       // Regex for either code or link (only # or https://)
+       const markdownPattern = enableLinks ? /(`([^`]+)`|\[([^\]]+)\]\(((?:#|https:\/\/)[^\)]+)\))/g : /(`([^`]+)`)/g;
 
        let cursor = 0;
        let match;
@@ -233,15 +233,8 @@
            const linkElement = document.createElement('a');
            linkElement.href = match[4];
 
-           // Check if link text contains code
-           const codeMatch = /`([^`]+)`/.exec(match[3]);
-           if (codeMatch) {
-             const codeElement = document.createElement('code');
-             codeElement.textContent = codeMatch[1];
-             linkElement.appendChild(codeElement);
-           } else {
-             linkElement.textContent = match[3];
-           }
+           // Link text can contain code
+           linkElement.appendChild(parseMarkdown(match[3], false));
 
            fragment.appendChild(linkElement);
          }
