@@ -2394,7 +2394,7 @@
     ],
     "concerns": [],
     "topics": [],
-    "title": "output attributes on HTML's <input type=file> element",
+    "title": "output attributes on HTML's `<input type=file>` element",
     "url": "https://discourse.wicg.io/t/proposal-native-media-optimization-and-basic-editing-support/4068",
     "explainer": null,
     "caniuse": null,
@@ -10439,9 +10439,11 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
-    "title": "[CSS] `text-box`, `text-box-trim`, `text-box-edge`",
-    "url": "https://www.w3.org/TR/css-inline-3/",
+    "topics": [
+      "CSS"
+    ],
+    "title": "CSS `text-box`, `text-box-trim`, `text-box-edge`",
+    "url": "https://drafts.csswg.org/css-inline-3/",
     "explainer": null,
     "caniuse": "https://caniuse.com/?search=text-box-trim",
     "bug": null,
@@ -10462,10 +10464,14 @@
   },
   "1108": {
     "issue": 1108,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Add `finalResponseHeadersStart` to resource timing",
     "url": "https://w3c.github.io/resource-timing/",
     "explainer": null,
@@ -10621,7 +10627,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "HTML `selectedcontent` element",
     "url": "https://github.com/whatwg/html/pull/10633",
     "explainer": null,
