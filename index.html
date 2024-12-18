@@ -113,6 +113,7 @@
      dl { display: grid; grid-template-columns: max-content auto; row-gap: 1em; max-width: calc(100vw - 4em) }
      dt { text-align: right; }
      dd { margin-left: 1em; padding-left: 1px; }
+     code { font-family: monospace, monospace; font-size-adjust: 0.5; }
 
      td { border-top: 1px solid var(--table-border-color); vertical-align: bottom; }
      tbody > tr:hover,
@@ -207,36 +208,54 @@
        return p;
      }
 
-     function sanitizeHTML(value) {
-       // Only support links and code.
-       const template = document.createElement('template');
-       const div = template.content.ownerDocument.createElement('div');
-       template.content.append(div); // force parser context to "in body"
-       div.innerHTML = value;
-       const iterator = document.createNodeIterator(div);
-       let node = iterator.nextNode(); // This is the div
-       while (node = iterator.nextNode()) {
-         if (node.nodeType === Node.TEXT_NODE) {
-           continue;
+     function parseMarkdown(markdown, enableLinks = true) {
+       // Create a document fragment to hold the parsed elements
+       const fragment = document.createDocumentFragment();
+
+       // Regex for either code or link
+       const markdownPattern = enableLinks ? /(`([^`]+)`|\[([^\]]+)\]\(([^\)]+)\))/g : /(`([^`]+)`)/g;
+
+       let cursor = 0;
+       let match;
+
+       while ((match = markdownPattern.exec(markdown)) !== null) {
+         // Add text before the match as plain text
+         const textBefore = markdown.slice(cursor, match.index);
+         if (textBefore) {
+           fragment.appendChild(document.createTextNode(textBefore));
          }
-         if (node.nodeType === Node.ELEMENT_NODE) {
-           if (node instanceof HTMLAnchorElement) {
-             if (node.attributes.length === 1 && node.hasAttribute('href')) {
-               const href = node.getAttribute('href');
-               if (href[0] === '#' || href.startsWith("https://")) {
-                 continue;
-               }
-             }
-           } else if (node instanceof HTMLElement && node.localName === "code") {
-             if (node.attributes.length === 0) {
-               continue;
-             }
+
+         if (match[2]) { // Code
+           const codeElement = document.createElement('code');
+           codeElement.textContent = match[2];
+           fragment.appendChild(codeElement);
+         } else if (enableLinks && match[3] && match[4]) { // Link with optional code inside
+           const linkElement = document.createElement('a');
+           linkElement.href = match[4];
+
+           // Check if link text contains code
+           const codeMatch = /`([^`]+)`/.exec(match[3]);
+           if (codeMatch) {
+             const codeElement = document.createElement('code');
+             codeElement.textContent = codeMatch[1];
+             linkElement.appendChild(codeElement);
+           } else {
+             linkElement.textContent = match[3];
            }
+
+           fragment.appendChild(linkElement);
          }
-         console.error("HTML Sanitization failed.", value);
-         return [value];
+
+         cursor = match.index + match[0].length;
        }
-       return div.childNodes;
+
+       // Add any remaining text
+       const remainingText = markdown.slice(cursor);
+       if (remainingText) {
+         fragment.appendChild(document.createTextNode(remainingText));
+       }
+
+       return fragment;
      }
 
      function cell(nodes, className, colSpan) {
@@ -293,7 +312,7 @@
        const dt = document.createElement('dt');
        dt.textContent = term;
        const dd = document.createElement('dd');
-       dd.append(...sanitizeHTML(value));
+       dd.append(parseMarkdown(value));
        return [dt, dd];
      }
 
@@ -355,7 +374,7 @@
        tr.append(cell(link(`#${selfId}`, '🔗', 'Self-link'), 'link'));
 
        // Specification
-       const specLink = link(url, title);
+       const specLink = link(url, parseMarkdown(title, false));
        specLink.id = `speclink-${selfId}`;
        tr.append(cell(specLink, 'specification'));
 
