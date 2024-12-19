@@ -9917,14 +9917,31 @@
   "1150": {
     "issue": 1150,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "HTML Canvas: Add the lang IDL attribute to CanvasTextDrawingStyles",
     "url": "https://github.com/whatwg/html/pull/10873",
     "explainer": null,
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/439"
+  },
+  "1151": {
+    "issue": 1151,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Enforcing no-opener for cross-top-level-site blob URL top-level navigations",
+    "url": "https://github.com/whatwg/html/pull/10731",
+    "explainer": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1928383",
+    "webkit": null
   }
 }
