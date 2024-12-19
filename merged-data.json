@@ -9913,5 +9913,18 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/438"
+  },
+  "1150": {
+    "issue": 1150,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "HTML Canvas: Add the lang IDL attribute to CanvasTextDrawingStyles",
+    "url": "https://github.com/whatwg/html/pull/10873",
+    "explainer": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/439"
   }
 }
