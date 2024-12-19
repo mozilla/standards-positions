@@ -1,97 +1,4 @@
 {
-  "1": {
-    "issue": 1,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Publish",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "2": {
-    "issue": 2,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Please add a LICENSE to this repository.",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "9": {
-    "issue": 9,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Creating an issue will ultimately only require 'public_repo'",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "11": {
-    "issue": 11,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "WICG proposals don't usually have specs",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "14": {
-    "issue": 14,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Mozilla or Firefox?",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "15": {
-    "issue": 15,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "s/Public//",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "17": {
-    "issue": 17,
-    "position": null,
-    "venues": [
-      "WHATWG"
-    ],
-    "concerns": [],
-    "topics": [],
-    "title": "Restricting Notifications API to secure contexts",
-    "url": "https://github.com/whatwg/notifications/issues/93",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "19": {
     "position": "positive",
     "venues": [
@@ -389,32 +296,6 @@
     "id": "geolocation-sensor",
     "rationale": "Given that the web already has a geolocation API, any additional API for the same purpose would have to meet a high bar as both will need to be maintained forever. While the document claims to improve security and privacy, there is no evidence that is the case. And as it can be largely polyfilled on top of the existing API, it seems better to invest in web platform geolocation additions there, if any."
   },
-  "38": {
-    "issue": 38,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Testing in standards: from idea to full interop",
-    "url": "https://github.com/foolip/testing-in-standards/blob/master/lifecycle.md",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "39": {
-    "issue": 39,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "WHATWG Working Mode and test policy",
-    "url": "https://whatwg.org/working-mode",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "44": {
     "position": "positive",
     "venues": [
@@ -444,32 +325,6 @@
     "explainer": null,
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=680289",
-    "webkit": null
-  },
-  "50": {
-    "issue": 50,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Cookie Change Events",
-    "url": "https://patrickkettner.github.io/cookie-change-events",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "52": {
-    "issue": 52,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Admin: allow read-only access for some collaboration",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
     "webkit": null
   },
   "54": {
@@ -656,19 +511,6 @@
     "bug": null,
     "webkit": null
   },
-  "77": {
-    "issue": 77,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Link website from top of repository",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "78": {
     "issue": 78,
     "position": null,
@@ -700,19 +542,6 @@
     "mdn": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#Client_hints",
     "rationale": "Architecturally, Mozilla prefers client-side solutions for retrieving alternate versions of content, such as the HTML &lt;picture> tag. Despite these architectural preferences, we find that Client-Hints do not present a concrete harm to the web or to its users."
   },
-  "80": {
-    "issue": 80,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Fetch: From-Origin",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "81": {
     "position": "neutral",
     "venues": [
@@ -729,36 +558,6 @@
     "description": "Blocklist certain opaque responses based on MIME type and return an 'emptied' response instead.",
     "id": "corb",
     "rationale": "While this is an important aspect of a robust Spectre-defense, we would like to see a safelist-based approach pursued, e.g., <a href=\"https://github.com/annevk/orb\">Opaque Response Blocking</a>."
-  },
-  "82": {
-    "issue": 82,
-    "position": null,
-    "venues": [
-      "WHATWG"
-    ],
-    "concerns": [],
-    "topics": [],
-    "title": "Fetch: Token Binding",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "83": {
-    "issue": 83,
-    "position": null,
-    "venues": [
-      "WHATWG"
-    ],
-    "concerns": [],
-    "topics": [],
-    "title": "HTML: find in page API",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
   },
   "84": {
     "issue": 84,
@@ -872,21 +671,6 @@
     "bug": null,
     "webkit": null
   },
-  "92": {
-    "issue": 92,
-    "position": null,
-    "venues": [
-      "W3C CG"
-    ],
-    "concerns": [],
-    "topics": [],
-    "title": "JavaScript Self-Profiling API",
-    "url": "https://github.com/vdjeric/js-self-profiling",
-    "explainer": null,
-    "caniuse": null,
-    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1393617",
-    "webkit": null
-  },
   "94": {
     "position": "positive",
     "venues": [
@@ -994,19 +778,6 @@
     "id": "mst-content-hint",
     "rationale": "Content Hints is a welcome higher-level abstraction that does not require broad knowledge and tuning of video encoder, audio-processing, and congestion controls directly. Early concerns over lack of specificity around how hints interact with the lower-level controls they complement have been addressed."
   },
-  "102": {
-    "issue": 102,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Feature Policy",
-    "url": "https://wicg.github.io/feature-policy/",
-    "explainer": null,
-    "caniuse": "https://caniuse.com/#feat=feature-policy",
-    "bug": null,
-    "webkit": null
-  },
   "103": {
     "position": "positive",
     "venues": [
@@ -1071,19 +842,6 @@
     "description": "The Sanitizer API allows turning supplied HTML into a safe HTML DOM tree",
     "id": "sanitizer-api",
     "rationale": "This could be useful, since libraries exists and the browser could do it better."
-  },
-  "107": {
-    "issue": 107,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Background Fetch",
-    "url": "https://wicg.github.io/background-fetch/",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
   },
   "108": {
     "position": "positive",
@@ -1409,19 +1167,6 @@
     "topics": [],
     "title": "JavaScript Standard Library Proposal (Builtin Modules)",
     "url": "https://github.com/tc39/proposal-javascript-standard-library/",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "148": {
-    "issue": 148,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "CODE_OF_CONDUCT.md file missing",
-    "url": null,
     "explainer": null,
     "caniuse": null,
     "bug": null,
@@ -1913,19 +1658,6 @@
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=889205",
     "webkit": null
   },
-  "187": {
-    "issue": 187,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Picture-in-Picture",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "190": {
     "issue": 190,
     "position": null,
@@ -1960,18 +1692,16 @@
   },
   "192": {
     "issue": 192,
-    "position": null,
+    "position": "positive",
     "venues": [
-      "W3C CG"
+      "W3C"
     ],
-    "concerns": [
-      "venue"
-    ],
+    "concerns": [],
     "topics": [
       "API"
     ],
     "title": "Element Timing API",
-    "url": "https://wicg.github.io/element-timing/",
+    "url": "https://w3c.github.io/element-timing/",
     "explainer": null,
     "caniuse": null,
     "bug": null,
@@ -2294,19 +2024,6 @@
     "id": "periodic-background-sync",
     "rationale": "We're concerned that this feature would allow users to be tracked across networks (leaking private information about location and IP address and how they change over time), and that it would allow script execution and resource consumption when it isn't clear to the user that they're interacting with the site.  We might reconsider this position given evidence that these concerns can be safely addressed, however, addressing them for periodic background sync appears substantially harder than doing so for one-off background sync."
   },
-  "215": {
-    "issue": 215,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "new CSSStyleSheet - TypeError",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "216": {
     "issue": 216,
     "position": null,
@@ -2339,19 +2056,6 @@
     "id": "webxr",
     "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API",
     "rationale": "The WebXR Device API is the basis for VR, MR, and AR on the web.  This is a significant and large suite of features.  There is the potential for XR to provide significant benefits, but also a number of risks to individual privacy and security due to the way that XR relies on sensors and environmental data.  Developing new interaction models also presents challenges and considerable work is required before new norms are established.  Mozilla is actively working on WebXR and supportive of its overall goals.  Our participation in and implementation of this API is critical to understanding the feature and learning how to empower users in managing the associated risks."
-  },
-  "230": {
-    "issue": 230,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Permission Delegation",
-    "url": "https://groups.google.com/d/msg/mozilla.dev.platform/BdFOMAuCGW8/-fqk-MWIAQAJ",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
   },
   "233": {
     "position": "negative",
@@ -2504,32 +2208,6 @@
     "id": "domenic-origin-isolation",
     "rationale": "Letting developers opt out of document.domain and reduce the potential size of their agent cluster allows user agents to balance security, performance, and resource management."
   },
-  "245": {
-    "issue": 245,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Make the dashboard linkable?",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "249": {
-    "issue": 249,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Consider adding a `mixed` status",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "250": {
     "position": "positive",
     "venues": [
@@ -2546,19 +2224,6 @@
     "description": "&lt;video>.requestVideoFrameCallback() allows web authors to be notified when a frame has been presented for composition.",
     "id": "requestVideoFrameCallback",
     "rationale": "This is intended to allow web authors to do efficient per-video-frame processing of video, such as video processing and painting to a canvas, video analysis, or synchronization with external audio sources."
-  },
-  "251": {
-    "issue": 251,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "End pilot?",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
   },
   "253": {
     "position": "positive",
@@ -2586,19 +2251,6 @@
     "concerns": [],
     "topics": [],
     "title": "Multiple Storage Buckets : Durability in buckets and specific APIs.",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "255": {
-    "issue": 255,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "andtoidbundle; bookmessenger.firebase/welcome; maps",
     "url": null,
     "explainer": null,
     "caniuse": null,
@@ -2656,19 +2308,6 @@
     "id": "cookie-incrementalism",
     "rationale": "Any approach that reduces the scope of cookie use is a security and privacy win. Because some such changes can break websites that rely on the broader scope, we would like to proceed with caution, but believe that the feature is worth experimenting with and collecting data about."
   },
-  "261": {
-    "issue": 261,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Privacy Pass protocol",
-    "url": "https://datatracker.ietf.org/doc/draft-privacy-pass/",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "262": {
     "position": "negative",
     "venues": [
@@ -2685,19 +2324,6 @@
     "description": "The Private State Token API is a web platform API that allows propagating a limited amount of signals across sites, using the Privacy Pass protocol as an underlying primitive.",
     "id": "private-state-token",
     "rationale": "Private State Tokens provides sites with the means to exchange information about visitors, using Privacy Pass to ensure that there are very tight bounds on the rate of information transfer. We conclude that the usage constraints in the design are insufficient to effectively safeguard privacy."
-  },
-  "263": {
-    "issue": 263,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Specification maturity",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
   },
   "264": {
     "position": "neutral",
@@ -2747,19 +2373,6 @@
     "description": "Add support for Curve25519 algorithms in the Web Cryptography API, namely the signature algorithm Ed25519 and the key agreement algorithm X25519.",
     "id": "webcrypto-curve25519",
     "rationale": "We are in favor of this work, but would like to see it have a path to standardization.  When doing that, it may be worth reconsidering some of the \"no seatbelts\" aspects of WebCrypto more generally, and perhaps adding other algorithms as well."
-  },
-  "278": {
-    "issue": 278,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Distinguish community group (CG) documents (including WICG) from rest of W3C",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
   },
   "280": {
     "position": "positive",
@@ -2860,19 +2473,6 @@
     "description": "This specification defines an API that allows websites to convert from a given code value to a valid key value that can be shown to the user to identify the given key. The conversion from code to key is based on the user\u2019s currently selected keyboard layout. It is intended to be used by web applications that want to treat the keyboard as a set of buttons and need to describe those buttons to the user.",
     "id": "keyboard-map",
     "rationale": "We're concerned that this exposes keyboard layouts, which seem likely to be a significant source of fingerprinting data, in a way that does not require any user interaction."
-  },
-  "323": {
-    "issue": 323,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Fragment links should expand the details",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
   },
   "326": {
     "position": "neutral",
@@ -3419,19 +3019,6 @@
     "bug": null,
     "webkit": null
   },
-  "428": {
-    "issue": 428,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Rename branch to main",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "430": {
     "issue": 430,
     "position": "positive",
@@ -3594,21 +3181,6 @@
     "id": "idle-detection-api",
     "rationale": "We are concerned about the user-surveillance, user-manipulation, and abuse of user resources potential of this API, despite the required 60 second mitigation. Additionally it seems to be an unnecessarily powerful approach for the motivating use-cases, which themselves are not even clear they are worth solving, as pointed out in <a href=\"https://lists.webkit.org/pipermail/webkit-dev/2020-October/031562.html\">https://lists.webkit.org/pipermail/webkit-dev/2020-October/031562.html</a>"
   },
-  "455": {
-    "issue": 455,
-    "position": null,
-    "venues": [
-      "WHATWG"
-    ],
-    "concerns": [],
-    "topics": [],
-    "title": "Change click, auxclick, contextmenu to PointerEvent",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "456": {
     "issue": 456,
     "position": "positive",
@@ -3754,34 +3326,6 @@
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1610671",
     "webkit": null
   },
-  "468": {
-    "issue": 468,
-    "position": null,
-    "venues": [
-      "WHATWG"
-    ],
-    "concerns": [],
-    "topics": [],
-    "title": "allow sftp in safelisted schema for registerProtocolHandler()",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "469": {
-    "issue": 469,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Re-enable status checks",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "470": {
     "issue": 470,
     "position": null,
@@ -3869,28 +3413,18 @@
     "venues": [
       "W3C CG"
     ],
-    "concerns": [],
-    "topics": [],
+    "concerns": [
+      "security"
+    ],
+    "topics": [
+      "API",
+      "JavaScript"
+    ],
     "title": "JS Self-Profiling API",
     "url": null,
     "explainer": null,
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1393617",
-    "webkit": null
-  },
-  "478": {
-    "issue": 478,
-    "position": null,
-    "venues": [
-      "Ecma"
-    ],
-    "concerns": [],
-    "topics": [],
-    "title": "RegExp match indices",
-    "url": "https://tc39.es/proposal-regexp-match-indices/",
-    "explainer": null,
-    "caniuse": null,
-    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1519483",
     "webkit": null
   },
   "479": {
@@ -3904,21 +3438,6 @@
     "topics": [],
     "title": "Critical CH: Client Hints Reliability mechanism",
     "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "481": {
-    "issue": 481,
-    "position": null,
-    "venues": [
-      "Proposal"
-    ],
-    "concerns": [],
-    "topics": [],
-    "title": "Storage Foundation API",
-    "url": "https://github.com/fivedots/storage-foundation-api-explainer",
     "explainer": null,
     "caniuse": null,
     "bug": null,
@@ -4151,21 +3670,6 @@
     "bug": null,
     "webkit": null
   },
-  "500": {
-    "issue": 500,
-    "position": null,
-    "venues": [
-      "WHATWG"
-    ],
-    "concerns": [],
-    "topics": [],
-    "title": "Honor media HTML attribute for link manifest",
-    "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-manifest",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "502": {
     "issue": 502,
     "position": "positive",
@@ -4207,19 +3711,6 @@
     "bug": null,
     "webkit": null
   },
-  "506": {
-    "issue": 506,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Federated Learning of Cohorts",
-    "url": "https://wicg.github.io/floc/",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "507": {
     "issue": 507,
     "position": null,
@@ -4246,19 +3737,6 @@
     "bug": null,
     "webkit": null
   },
-  "509": {
-    "issue": 509,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Making Web Applications secure by default",
-    "url": "https://github.com/w3c/webappsec/issues/578",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "510": {
     "issue": 510,
     "position": null,
@@ -4267,19 +3745,6 @@
     "topics": [],
     "title": "ALPS + ACCEPT_CH HTTP/2 and HTTP/3 frames",
     "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "511": {
-    "issue": 511,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Cryptographically secure random UUIDs",
-    "url": "https://wicg.github.io/uuid/",
     "explainer": null,
     "caniuse": null,
     "bug": null,
@@ -4520,19 +3985,6 @@
     "bug": null,
     "webkit": null
   },
-  "533": {
-    "issue": 533,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "UA-CH API updates",
-    "url": "https://wicg.github.io/ua-client-hints/",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "534": {
     "issue": 534,
     "position": null,
@@ -4607,7 +4059,7 @@
   },
   "541": {
     "issue": 541,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -4745,19 +4197,6 @@
     "topics": [],
     "title": "CSS Color Module Level 4",
     "url": "https://www.w3.org/TR/css-color-4/",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "552": {
-    "issue": 552,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Downgrade User Agent Client Hints to 'harmful'",
-    "url": "https://wicg.github.io/ua-client-hints/",
     "explainer": null,
     "caniuse": null,
     "bug": null,
@@ -4917,19 +4356,6 @@
     "explainer": null,
     "caniuse": null,
     "bug": null,
-    "webkit": null
-  },
-  "568": {
-    "issue": 568,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Reject non-IPv4 hostnames that end in numbers.",
-    "url": "https://github.com/whatwg/url/pull/619",
-    "explainer": null,
-    "caniuse": null,
-    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1723456",
     "webkit": null
   },
   "569": {
@@ -5106,19 +4532,6 @@
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1702365",
     "webkit": null
   },
-  "587": {
-    "issue": 587,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Consider `HTTPA: HTTPS Attestable Protocol` as `harmful`",
-    "url": "https://arxiv.org/pdf/2110.07954.pdf",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "590": {
     "issue": 590,
     "position": null,
@@ -5194,34 +4607,6 @@
     "topics": [],
     "title": "Markup based Client Hints delegation for third-party content",
     "url": "https://groups.google.com/a/chromium.org/g/blink-dev/c/FTNrw03Xs9s/m/O74Mp6bmCAAJ",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "598": {
-    "issue": 598,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Link to Firefox Platform Status does not resolve",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "600": {
-    "issue": 600,
-    "position": null,
-    "venues": [
-      "WHATWG"
-    ],
-    "concerns": [],
-    "topics": [],
-    "title": "Canvas2D Layers",
-    "url": "https://github.com/whatwg/html/issues/7329",
     "explainer": null,
     "caniuse": null,
     "bug": null,
@@ -5507,19 +4892,6 @@
     "explainer": null,
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1761080",
-    "webkit": null
-  },
-  "625": {
-    "issue": 625,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "@scope",
-    "url": "https://drafts.csswg.org/css-cascade-6/#scope-atrule",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
     "webkit": null
   },
   "626": {
@@ -6012,19 +5384,6 @@
     "bug": null,
     "webkit": null
   },
-  "672": {
-    "issue": 672,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Delay and trackVisibility propery in Intersection Observer v2",
-    "url": null,
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "673": {
     "issue": 673,
     "position": "positive",
@@ -6294,19 +5653,6 @@
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1310170",
     "webkit": null
   },
-  "700": {
-    "issue": 700,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "ECMAScript Decorators",
-    "url": "https://github.com/tc39/proposal-decorators",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "701": {
     "issue": 701,
     "position": "positive",
@@ -6432,19 +5778,6 @@
     "topics": [],
     "title": "WebRTC RTP header extension control",
     "url": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-control",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "714": {
-    "issue": 714,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Fullscreen Popup Windows",
-    "url": "https://github.com/bradtriebwasser/fullscreen-popup/blob/main/EXPLAINER.md",
     "explainer": null,
     "caniuse": null,
     "bug": null,
@@ -6765,19 +6098,6 @@
     "bug": null,
     "webkit": null
   },
-  "751": {
-    "issue": 751,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "User Locale Preferences",
-    "url": null,
-    "explainer": "https://github.com/romulocintra/user-locale-client-hints#explainer--user-locale-preferences",
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "752": {
     "issue": 752,
     "position": null,
@@ -6891,19 +6211,6 @@
     "title": "Display and content-visibility animations",
     "url": "https://github.com/w3c/csswg-drafts/issues/6429",
     "explainer": "https://github.com/w3c/csswg-drafts/issues/6429#issuecomment-1318933547",
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "763": {
-    "issue": 763,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Transitions on specified discrete properties",
-    "url": "https://github.com/w3c/csswg-drafts/issues/4441",
-    "explainer": "https://github.com/w3c/csswg-drafts/issues/4441#issuecomment-1329749962",
     "caniuse": null,
     "bug": null,
     "webkit": null
@@ -7116,8 +6423,12 @@
   "780": {
     "issue": 780,
     "position": null,
-    "venues": [],
-    "concerns": [],
+    "venues": [
+      "Proposal"
+    ],
+    "concerns": [
+      "API design"
+    ],
     "topics": [
       "JavaScript"
     ],
@@ -7566,7 +6877,7 @@
     "venues": [],
     "concerns": [],
     "topics": [],
-    "title": "Exclusive accordions with <details name=\"\">",
+    "title": "Exclusive accordions with `<details name=\"\">`",
     "url": "https://github.com/whatwg/html/pull/9400",
     "explainer": "https://open-ui.org/components/accordion.explainer",
     "caniuse": null,
@@ -7624,19 +6935,6 @@
     "topics": [],
     "title": "HTML anchor attribute",
     "url": "https://github.com/whatwg/html/pull/9144",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "837": {
-    "issue": 837,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "WebCodecs AudioEncoder bitrateMode",
-    "url": "https://w3c.github.io/webcodecs/#dom-audioencoderconfig-bitratemode",
     "explainer": null,
     "caniuse": null,
     "bug": null,
@@ -7902,19 +7200,6 @@
     "title": "WebRTC RtpSender setParameter extensions for requesting keyframe generation",
     "url": "https://w3c.github.io/webrtc-extensions/#rtcrtpsender-setparameters-keyframe",
     "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "859": {
-    "issue": 859,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Origin Trials",
-    "url": null,
-    "explainer": "https://github.com/GoogleChrome/OriginTrials/blob/gh-pages/explainer.md",
     "caniuse": null,
     "bug": null,
     "webkit": null
@@ -8242,19 +7527,6 @@
     "bug": null,
     "webkit": null
   },
-  "897": {
-    "issue": 897,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Add `showPicker` to `<select>` elements",
-    "url": "https://github.com/whatwg/html/pull/9754",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "898": {
     "issue": 898,
     "position": "positive",
@@ -8419,19 +7691,6 @@
     "bug": null,
     "webkit": null
   },
-  "916": {
-    "issue": 916,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "WebCodecs support for AV1 screen content coding tools",
-    "url": "https://w3c.github.io/webcodecs/av1_codec_registration.html",
-    "explainer": "https://github.com/fippo/webrtc-explainers/blob/gh-pages/av1-screencontent/index.md",
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "918": {
     "issue": 918,
     "position": null,
@@ -8450,7 +7709,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "VideoEncoderConfig.contentHint",
     "url": "https://www.w3.org/TR/webcodecs/#dom-videoencoderconfig-contenthint",
     "explainer": "https://gist.github.com/Djuffin/c3742404b7c53ada227849c8b2b76b4c",
@@ -8806,19 +8067,6 @@
     "description": "Private Access Tokens is the name given to the <a href=https://developer.apple.com/news/?id=huqjyh7k>integration</a> of Privacy Pass mechanism into Apple's networking stack.",
     "id": "private-access-tokens",
     "rationale": "This application of Privacy Pass fairly closely follows the IETF specification, but the integration with the Web means that the effect is of a proprietary deployment. A number of considerations relevant to use on the Web have not been adequately addressed in the deployment."
-  },
-  "957": {
-    "issue": 957,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "<script blocking=render> on inline scripts",
-    "url": "https://github.com/whatwg/html/pull/10035",
-    "explainer": "https://github.com/whatwg/html/issues/10034",
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
   },
   "964": {
     "issue": 964,
@@ -9199,19 +8447,6 @@
     "bug": null,
     "webkit": null
   },
-  "999": {
-    "issue": 999,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "WebGPU: ServiceWorker and SharedWorker support",
-    "url": "https://gpuweb.github.io/gpuweb/#navigator-gpu",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "1002": {
     "issue": 1002,
     "position": "negative",
@@ -9376,19 +8611,6 @@
     "explainer": "https://gist.github.com/Djuffin/9e2f98025ead49998524510cfeed8d33",
     "caniuse": null,
     "bug": null,
-    "webkit": null
-  },
-  "1018": {
-    "issue": 1018,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Still on SerialPort API",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/API/SerialPort",
-    "explainer": "https://pyscript.com/@agiammarchi/micro-repl/latest",
-    "caniuse": null,
-    "bug": "https://github.com/mozilla/standards-positions/issues/336",
     "webkit": null
   },
   "1019": {
@@ -9674,9 +8896,15 @@
   "1045": {
     "issue": 1045,
     "position": null,
-    "venues": [],
+    "venues": [
+      "Ecma",
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API",
+      "JavaScript"
+    ],
     "title": "Temporal - structured clone",
     "url": "https://github.com/whatwg/html/pull/6284",
     "explainer": null,
@@ -10596,23 +9824,12 @@
     "bug": null,
     "webkit": null
   },
-  "1133": {
-    "issue": 1133,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Iterator Sequencing",
-    "url": "https://tc39.es/proposal-iterator-sequencing/",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "1139": {
     "issue": 1139,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C CG"
+    ],
     "concerns": [],
     "topics": [],
     "title": "Signature-based Integrity",
@@ -10668,5 +9885,33 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/436"
+  },
+  "1148": {
+    "issue": 1148,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [
+      "CSS"
+    ],
+    "title": "CSS Functions and Mixins 1 (@function)",
+    "url": "https://drafts.csswg.org/css-mixins-1/",
+    "explainer": "https://css.oddbird.net/sasslike/mixins-functions/",
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/437"
+  },
+  "1149": {
+    "issue": 1149,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Add MediaStreamTrack support to the Web Speech API",
+    "url": "https://github.com/WICG/speech-api/pull/118",
+    "explainer": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/438"
   }
 }
