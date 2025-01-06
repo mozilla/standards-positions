@@ -9943,5 +9943,31 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1928383",
     "webkit": null
+  },
+  "1153": {
+    "issue": 1153,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS `shape()` function",
+    "url": "https://drafts.csswg.org/css-shapes-2/#shape-function",
+    "explainer": "https://drafts.csswg.org/css-shapes-2/#shape-function",
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1154": {
+    "issue": 1154,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Navigation API: `sourceElement`",
+    "url": null,
+    "explainer": "https://github.com/WICG/navigation-api/blob/main/README.md#navigation-monitoring-and-interception",
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
