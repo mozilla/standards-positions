@@ -9969,5 +9969,18 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1155": {
+    "issue": 1155,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Container Timing API",
+    "url": "https://github.com/bloomberg/container-timing",
+    "explainer": "https://github.com/bloomberg/container-timing",
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1940240",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/442"
   }
 }
