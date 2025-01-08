@@ -8742,7 +8742,7 @@
     "url": "https://github.com/w3c/webappsec-csp/pull/665/commits/844456655493197e60e7657cc11f8dfcb505372f",
     "explainer": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1940493",
     "webkit": "https://github.com/WebKit/standards-positions/issues/355"
   },
   "1033": {
@@ -10014,5 +10014,18 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/444"
+  },
+  "1159": {
+    "issue": 1159,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "getContextAttributes for OffscreenCanvasRenderingContext2D",
+    "url": null,
+    "explainer": "https://github.com/ccameron-chromium/ColorWeb-CG/blob/canvas_cleanup/canvas2d_settings.md",
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1940414",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/445"
   }
 }
