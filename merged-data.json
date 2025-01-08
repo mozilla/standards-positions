@@ -9962,7 +9962,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Navigation API: `sourceElement`",
     "url": null,
     "explainer": "https://github.com/WICG/navigation-api/blob/main/README.md#navigation-monitoring-and-interception",
@@ -9982,5 +9984,35 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1940240",
     "webkit": "https://github.com/WebKit/standards-positions/issues/442"
+  },
+  "1157": {
+    "issue": 1157,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": " On-device Web Speech API",
+    "url": "https://github.com/WebAudio/web-speech-api/pull/122",
+    "explainer": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/443"
+  },
+  "1158": {
+    "issue": 1158,
+    "position": null,
+    "venues": [
+      "W3C"
+    ],
+    "concerns": [],
+    "topics": [
+      "CSS"
+    ],
+    "title": "CSS Gap Decorations",
+    "url": "https://drafts.csswg.org/css-gaps-1/",
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/CSSGapDecorations/explainer.md",
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/444"
   }
 }
