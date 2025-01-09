@@ -10027,5 +10027,18 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1940414",
     "webkit": "https://github.com/WebKit/standards-positions/issues/445"
+  },
+  "1160": {
+    "issue": 1160,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "WebGPU Subgroups",
+    "url": "https://github.com/gpuweb/gpuweb/pull/4963",
+    "explainer": "https://github.com/gpuweb/gpuweb/blob/main/proposals/subgroups.md",
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/446"
   }
 }
