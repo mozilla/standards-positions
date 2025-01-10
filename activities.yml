@@ -1885,6 +1885,15 @@ Web Share Target API:
   url: https://wicg.github.io/web-share-target/
   venues:
   - Proposal
+Web Speech API on-device:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=webspeechondevice
+  description: |
+    This is a set of improvements to the Web Speech API specification that aims at adding features for users to perform speech-to-text and text-to-speech using the device's capabilities, without relying on web services. This also allows using Web Speech API with `MediaStreamTrack`.
+  id: web-speech-api-on-device
+  issue: 1157
+  rationale: |
+    We believe this is a strong and welcome improvement to the API, on multiple aspects: added capabilities to the platform, in terms for feature and performance (e.g. being able to do high-quality low-latency recognition), but also accessibility and privacy.
+  url: https://webaudio.github.io/web-speech-api/
 Web Thing API:
   description: |
     This document describes a common data model and API for the Web of Things. The Web Thing Description provides a vocabulary for describing physical devices connected to the World Wide Web in a machine readable format with a default JSON encoding. The Web Thing REST API and Web Thing WebSocket API allow a web client to access the properties of devices, request the execution of actions and subscribe to events representing a change in state. Some basic Web Thing Types are provided and additional types can be defined using semantic extensions with JSON-LD. In addition to this specification there is a note on Web Thing API Protocol Bindings which proposes non-normative bindings of the Web Thing API to various existing IoT protocols. There is also a document describing Web of Things Integration Patterns which provides advice on different design patterns for integrating connected devices with the Web of Things, and where each pattern is most appropriate.
