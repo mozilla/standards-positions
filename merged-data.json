@@ -9990,7 +9990,9 @@
     "position": "positive",
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": " On-device Web Speech API",
     "url": "https://github.com/WebAudio/web-speech-api/pull/122",
     "explainer": null,
