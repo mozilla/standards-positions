@@ -1887,18 +1887,12 @@ Web Share Target API:
   - Proposal
 Web Speech API on-device:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=webspeechondevice
-  caniuse: null
-  description: This is a set of improvements to the Web Speech API specification that
-    aims at adding features for users to performe speech-to-text and text-to-speech
-    using the device's capabilities, without relying on web services. This also 
-    allows using Web Speech API with MediaStreamTrack.
+  description: |
+    This is a set of improvements to the Web Speech API specification that aims at adding features for users to perform speech-to-text and text-to-speech using the device's capabilities, without relying on web services. This also allows using Web Speech API with `MediaStreamTrack`.
   id: web-speech-api-on-device
   issue: 1157
-  mdn: null
-  rationale: 'We believe this is a strong and welcome improvement to the API, on multiple
-    aspects: added capabilities to the platform, in terms for feature and performance
-    (e.g. being able to do high-quality low-latency recognition), but also accessibility
-    and privacy.'
+  rationale: |
+    We believe this is a strong and welcome improvement to the API, on multiple aspects: added capabilities to the platform, in terms for feature and performance (e.g. being able to do high-quality low-latency recognition), but also accessibility and privacy.
   url: https://github.com/WebAudio/web-speech-api
 Web Thing API:
   description: |
