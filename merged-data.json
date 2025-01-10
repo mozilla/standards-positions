@@ -9901,21 +9901,6 @@
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/437"
   },
-  "1149": {
-    "issue": 1149,
-    "position": "positive",
-    "venues": [],
-    "concerns": [],
-    "topics": [
-      "API"
-    ],
-    "title": "Add MediaStreamTrack support to the Web Speech API",
-    "url": "https://github.com/WICG/speech-api/pull/118",
-    "explainer": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": "https://github.com/WebKit/standards-positions/issues/438"
-  },
   "1150": {
     "issue": 1150,
     "position": null,
@@ -9988,7 +9973,6 @@
     "webkit": "https://github.com/WebKit/standards-positions/issues/442"
   },
   "1157": {
-    "issue": 1157,
     "position": "positive",
     "venues": [],
     "concerns": [],
@@ -9996,11 +9980,14 @@
       "API"
     ],
     "title": " On-device Web Speech API",
-    "url": "https://github.com/WebAudio/web-speech-api/pull/122",
+    "url": "https://webaudio.github.io/web-speech-api/",
     "explainer": null,
     "caniuse": null,
-    "bug": null,
-    "webkit": "https://github.com/WebKit/standards-positions/issues/443"
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=webspeechondevice",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/443",
+    "description": "This is a set of improvements to the Web Speech API specification that aims at adding features for users to perform speech-to-text and text-to-speech using the device's capabilities, without relying on web services. This also allows using Web Speech API with `MediaStreamTrack`.",
+    "id": "web-speech-api-on-device",
+    "rationale": "We believe this is a strong and welcome improvement to the API, on multiple aspects: added capabilities to the platform, in terms for feature and performance (e.g. being able to do high-quality low-latency recognition), but also accessibility and privacy."
   },
   "1158": {
     "issue": 1158,
