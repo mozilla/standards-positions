@@ -3875,7 +3875,7 @@
       "API"
     ],
     "title": "Compute Pressure API",
-    "url": "https://oyiptong.github.io/compute-pressure/",
+    "url": "https://w3c.github.io/compute-pressure/",
     "explainer": null,
     "caniuse": null,
     "bug": null,
@@ -4393,7 +4393,7 @@
       "CSS"
     ],
     "title": "css-easing-2 linear() syntax",
-    "url": "https://github.com/w3c/csswg-drafts/pull/6533",
+    "url": "https://github.com/w3c/csswg-drafts/pull/7484",
     "explainer": null,
     "caniuse": null,
     "bug": null,
