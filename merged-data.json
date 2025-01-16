@@ -9683,9 +9683,9 @@
     "venues": [],
     "concerns": [],
     "topics": [],
-    "title": "scroll-start-target",
-    "url": "https://drafts.csswg.org/css-scroll-snap-2/#scroll-start-target",
-    "explainer": "https://github.com/DavMila/explainer-scroll-start-target",
+    "title": "scroll-initial-target",
+    "url": "https://drafts.csswg.org/css-scroll-snap-2/#scroll-initial-target",
+    "explainer": "https://github.com/DavMila/explainer-scroll-initial-target",
     "caniuse": null,
     "bug": null,
     "webkit": null
