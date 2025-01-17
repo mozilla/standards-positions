@@ -9682,7 +9682,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "scroll-initial-target",
     "url": "https://drafts.csswg.org/css-scroll-snap-2/#scroll-initial-target",
     "explainer": "https://github.com/DavMila/explainer-scroll-initial-target",
