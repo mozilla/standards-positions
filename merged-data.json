@@ -10057,5 +10057,18 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/448"
+  },
+  "1165": {
+    "issue": 1165,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Allowing SameSite=None Cookies in First-Party Sandboxed Contexts",
+    "url": "https://github.com/whatwg/html/pull/10915",
+    "explainer": "https://github.com/explainers-by-googlers/csp-sandbox-allow-same-site-none-cookies",
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/450"
   }
 }
