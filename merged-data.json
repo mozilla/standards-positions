@@ -10072,5 +10072,18 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/450"
+  },
+  "1167": {
+    "issue": 1167,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CS if() function",
+    "url": "https://drafts.csswg.org/css-values-5/#if-notation",
+    "explainer": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/453"
   }
 }
