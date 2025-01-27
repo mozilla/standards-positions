@@ -382,7 +382,9 @@
       "WHATWG"
     ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "HTML: passwordrules attribute",
     "url": "https://github.com/whatwg/html/issues/3518",
     "explainer": null,
@@ -10076,9 +10078,13 @@
   "1167": {
     "issue": 1167,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CS if() function",
     "url": "https://drafts.csswg.org/css-values-5/#if-notation",
     "explainer": null,
