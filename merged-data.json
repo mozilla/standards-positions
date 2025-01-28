@@ -10106,5 +10106,18 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1944244",
     "webkit": null
+  },
+  "1169": {
+    "issue": 1169,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Navigation API: deferred commit",
+    "url": null,
+    "explainer": "https://github.com/WICG/navigation-api/blob/main/README.md#deferred-commit",
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/webKit/standards-positions/issues/449"
   }
 }
