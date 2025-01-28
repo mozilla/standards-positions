@@ -32,7 +32,7 @@ body:
     id: bugzilla-url
     attributes:
       label: "Bugzilla URL"
-      placeholder: "https://bugzilla.mozilla.org/show_bug.cgi?id="
+      value: "https://bugzilla.mozilla.org/show_bug.cgi?id=NNNNNNN"
   - type: input        
     id: mozillians
     attributes:
@@ -42,8 +42,6 @@ body:
     id: webkit-standards-position
     attributes:
       label: "WebKit standards-position"
-      placeholder: "https://github.com/WebKit/standards-positions/issues"
-    validations:
-      required: true
+      value: "https://github.com/WebKit/standards-positions/issues/NNN"
 
 
