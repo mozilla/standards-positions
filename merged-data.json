@@ -8304,7 +8304,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "View Transition Classes",
     "url": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-class-prop",
     "explainer": "https://github.com/vmpstr/web-proposals/blob/main/explainers/view-transition-classes.md",
@@ -10091,5 +10093,18 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/453"
+  },
+  "1168": {
+    "issue": 1168,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSSOM Lift Restriction on CSS constructed flag for adoptedStylesheets",
+    "url": null,
+    "explainer": "https://github.com/w3c/csswg-drafts/issues/10013",
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1944244",
+    "webkit": null
   }
 }
