@@ -1352,6 +1352,15 @@ Raw Clipboard Access:
   url: https://github.com/WICG/raw-clipboard-access/
   venues:
   - Proposal
+Reduce Accept-Language:
+  description: |
+    Describes a technique to limit the languages sent in the Accept-Language header to a single language to reduce the passive fingerprint sent by a user.
+  id: reduce-accept-language
+  issue: 1014
+  position: defer
+  rationale: |
+    Mozilla is exploring anti-fingerprinting engineering proposals. While this is interesting to consider, until we know how much it would actually help our users and how much it would affect the web, we will defer an opinion.
+  url: https://github.com/Tanych/accept-language
 Relative color syntax (CSS Color Module Level 5):
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1701488
   description: |
