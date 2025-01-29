@@ -8645,7 +8645,7 @@
   },
   "1022": {
     "issue": 1022,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
