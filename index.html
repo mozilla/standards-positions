@@ -208,44 +208,78 @@
        return p;
      }
 
-     function parseMarkdown(markdown, enableLinks = true) {
-       // Create a document fragment to hold the parsed elements
+     function expandInline(markdown) {
        const fragment = document.createDocumentFragment();
-
-       // Regex for either code or link (only # or https://)
-       const markdownPattern = enableLinks ? /(`([^`]+)`|\[([^\]]+)\]\(((?:#|https:\/\/)[^\)]+)\))/g : /(`([^`]+)`)/g;
+       const codePattern = /`([^`]+)`/;
 
        let cursor = 0;
-       let match;
 
-       while ((match = markdownPattern.exec(markdown)) !== null) {
-         // Add text before the match as plain text
+       while (true) {
+         const match = codePattern.exec(markdown);
+         if (!match) {
+           // No more code segments, just append remaining text (if any)
+           if (markdown) {
+             fragment.appendChild(document.createTextNode(markdown));
+           }
+           break;
+         }
+
          const textBefore = markdown.slice(cursor, match.index);
          if (textBefore) {
            fragment.appendChild(document.createTextNode(textBefore));
          }
 
-         if (match[2]) { // Code
-           const codeElement = document.createElement('code');
-           codeElement.textContent = match[2];
-           fragment.appendChild(codeElement);
-         } else if (enableLinks && match[3] && match[4]) { // Link with optional code inside
-           const linkElement = document.createElement('a');
-           linkElement.href = match[4];
+         // Create a <code> element for the matched segment
+         const codeElement = document.createElement('code');
+         codeElement.textContent = match[1];
+         fragment.appendChild(codeElement);
 
-           // Link text can contain code
-           linkElement.appendChild(parseMarkdown(match[3], false));
-
-           fragment.appendChild(linkElement);
-         }
-
+         // Move our cursor beyond this match
          cursor = match.index + match[0].length;
+         // Slice off what we've already processed
+         markdown = markdown.slice(cursor);
+         // Reset cursor for next iteration
+         cursor = 0;
        }
 
-       // Add any remaining text
-       const remainingText = markdown.slice(cursor);
-       if (remainingText) {
-         fragment.appendChild(document.createTextNode(remainingText));
+       return fragment;
+     }
+
+     function expandLinks(markdown) {
+       const fragment = document.createDocumentFragment();
+       const linkPattern = /\[([^\]]+)\]\(((?:#|https:\/\/)[^\)]+)\)/;
+
+       let cursor = 0;
+
+       while (true) {
+         const match = linkPattern.exec(markdown);
+         if (!match) {
+           // No more links, parse the remaining text as inline
+           if (markdown) {
+             fragment.appendChild(expandInline(markdown));
+           }
+           break;
+         }
+
+         // Text before the link
+         const textBefore = markdown.slice(cursor, match.index);
+         if (textBefore) {
+           fragment.appendChild(expandInline(textBefore));
+         }
+
+         // Create the <a> element for the matched link
+         const linkElement = document.createElement('a');
+         linkElement.href = match[2];
+         // The link text itself can contain inline code
+         linkElement.appendChild(expandInline(match[1]));
+         fragment.appendChild(linkElement);
+
+         // Move cursor beyond the entire match
+         cursor = match.index + match[0].length;
+         // Slice the processed portion off
+         markdown = markdown.slice(cursor);
+         // Reset cursor
+         cursor = 0;
        }
 
        return fragment;
@@ -305,7 +339,7 @@
        const dt = document.createElement('dt');
        dt.textContent = term;
        const dd = document.createElement('dd');
-       dd.append(parseMarkdown(value));
+       dd.append(expandLinks(value));
        return [dt, dd];
      }
 
@@ -367,7 +401,7 @@
        tr.append(cell(link(`#${selfId}`, '🔗', 'Self-link'), 'link'));
 
        // Specification
-       const specLink = link(url, parseMarkdown(title, false));
+       const specLink = link(url, expandInline(title));
        specLink.id = `speclink-${selfId}`;
        tr.append(cell(specLink, 'specification'));
 
