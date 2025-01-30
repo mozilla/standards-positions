@@ -472,9 +472,9 @@
 
          button.onclick = () => {
            const sortAscending = header.getAttribute("aria-sort") !== "ascending";
-           sortTable(table, columnIndex, isAscending, sortNumerically);
+           sortTable(table, columnIndex, sortAscending, sortNumerically);
            headers.forEach((h) => h.removeAttribute("aria-sort"));
-           header.setAttribute("aria-sort", isAscending ? "ascending" : "descending");
+           header.setAttribute("aria-sort", sortAscending ? "ascending" : "descending");
          };
        });
      }
