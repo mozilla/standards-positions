@@ -9,7 +9,7 @@ emerging technical specifications for the Web. Typically such specs are standard
 [IETF](https://ietf.org/), [W3C](https://w3.org/),
 [WHATWG](https://whatwg.org/), and [Ecma TC39](https://github.com/tc39).
 We may also provide positions on documents located outside a standards process, 
-e.g. those in W3C Community Groups such as [WICG](https://wicg.github.io/) 
+e.g., those in W3C Community Groups such as [WICG](https://wicg.github.io/) 
 or other community incubation efforts with well-understood
 <abbr title="intellectual property rights">IPR</abbr> terms, 
 but as a general rule believe that any such work must be moved to a formal standards track 
