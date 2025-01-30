@@ -8522,9 +8522,13 @@
   },
   "1010": {
     "issue": 1010,
-    "position": null,
-    "venues": [],
-    "concerns": [],
+    "position": "neutral",
+    "venues": [
+      "W3C"
+    ],
+    "concerns": [
+      "security"
+    ],
     "topics": [],
     "title": "Importmap integrity",
     "url": "https://github.com/whatwg/html/pull/10269",
