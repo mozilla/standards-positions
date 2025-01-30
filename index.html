@@ -98,9 +98,9 @@
      td.more-info :any-link:not([title="Discussion"]) { padding: 0; text-decoration: none; }
      td.link :any-link { padding: 0.25rem; }
      th.concerns { width: 7em; }
-     th.position { width: 4em; }
+     th.position { width: 4.25em; }
      th.topics { width: 3.5em; }
-     th.venues { width: 3.5em; }
+     th.venues { width: 4em; }
      th.more-info { width: 9.5em; }
      th, td { padding: 0.5rem; }
      th.link { width: 3em; text-align: center; }
@@ -126,6 +126,14 @@
      span.negative { background-color: var(--negative-bg-color); color: var(--negative-color); }
      span.neutral { border-color: currentColor; }
      span.defer, span.under-consideration { background-color: var(--defer-bg-color); color: var(--defer-color); }
+
+     /* sorting */
+     th.sortable { padding-top: 0; padding-bottom: 0; }
+     th button { appearance: none; padding: 0.25em 0; font: inherit; display: inline; background-color: transparent; border: none; cursor: default; user-select: none; }
+     th button::after { font-size: 0.8125em; content: " ▼"; opacity: 0.3; }
+     th button:hover::after, th button:focus::after { opacity: 0.6 }
+     th[aria-sort] button::after { opacity: 1; }
+     th[aria-sort="descending"] button::after { content: " ▲"; }
     </style>
 
     <script>
@@ -164,12 +172,12 @@
       <thead>
         <tr>
           <th class="link">Link</th>
-          <th class="specification">Specification</th>
-          <th class="position">Position</th>
-          <th class="concerns">Concerns</th>
-          <th class="topics">Topics</th>
-          <th class="venues">Venues</th>
-          <th class="more-info">More info</th>
+          <th class="specification sortable">Specification</th>
+          <th class="position sortable">Position</th>
+          <th class="concerns sortable">Concerns</th>
+          <th class="topics sortable">Topics</th>
+          <th class="venues sortable">Venues</th>
+          <th class="more-info sortable">More info</th>
         </tr>
       </thead>
       <tbody>
@@ -439,6 +447,69 @@
        }
      }
 
+     // Sorting
+     function setupSorting() {
+       const table = document.querySelector("table");
+
+       const headers = table.querySelectorAll("th");
+
+       headers.forEach((header, columnIndex) => {
+         if (!header.classList.contains('sortable')) {
+           return;
+         }
+         const button = document.createElement("button");
+         // "more-info" is the column that starts out being sorted; in reverse order.
+         const isInitDescending = header.classList.contains("more-info");
+         const sortNumerically = isInitDescending;  // Coincidentally, this is the only numeric column.
+         button.setAttribute("aria-label", `Sort by ${header.textContent}`);
+         button.textContent = header.textContent;
+         header.setAttribute("aria-label", header.textContent);
+         header.textContent = '';
+         header.append(button);
+         if (isInitDescending) {
+           header.setAttribute("aria-sort", "descending");
+         }
+
+         button.onclick = () => {
+           const sortAscending = header.getAttribute("aria-sort") !== "ascending";
+           sortTable(table, columnIndex, sortAscending, sortNumerically);
+           headers.forEach((h) => h.removeAttribute("aria-sort"));
+           header.setAttribute("aria-sort", sortAscending ? "ascending" : "descending");
+         };
+       });
+     }
+
+     function sortTable(table, columnIndex, ascending, sortNumerically) {
+       const tbody = table.querySelector("tbody");
+       const rows = Array.from(tbody.querySelectorAll("tr[id]")); // Don't include .details rows
+
+       rows.sort((rowA, rowB) => {
+         const cellA = rowA.cells[columnIndex];
+         const cellB = rowB.cells[columnIndex];
+         let a = cellA.firstChild instanceof HTMLImageElement ? cellA.firstChild.alt : cellA.textContent;
+         let b = cellB.firstChild instanceof HTMLImageElement ? cellB.firstChild.alt : cellB.textContent;
+
+         // Handle empty cells: Always place them at the end
+         if (a === "" || b === "") {
+           if (a === "" && b === "") {
+             return 0;
+           }
+           return a === "" ? 1 : -1;
+         }
+
+         [a, b] = ascending ? [a, b] : [b, a];
+         return a.localeCompare(b, undefined, { numeric: sortNumerically });
+       });
+
+       for (const row of rows) {
+         const detailsRow = row.nextElementSibling?.className === 'details' ? row.nextElementSibling : null;
+         tbody.append(row);
+         if (detailsRow) {
+           tbody.append(detailsRow);
+         }
+       }
+     }
+
      async function init() {
        const data = await getData();
        const tbody = document.querySelector('tbody');
@@ -459,6 +530,7 @@
        };
 
        setupSearch();
+       setupSorting();
 
        document.querySelector('.noscript').remove();
        document.documentElement.classList.remove('loading');
