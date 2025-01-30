@@ -458,8 +458,9 @@
            return;
          }
          const button = document.createElement("button");
+         // "more-info" is the column that starts out being sorted; in reverse order.
          const isInitDescending = header.classList.contains("more-info");
-         const sortNumerically = isInitDescending;
+         const sortNumerically = isInitDescending;  // Coincidentally, this is the only numeric column.
          button.setAttribute("aria-label", `Sort by ${header.textContent}`);
          button.textContent = header.textContent;
          header.setAttribute("aria-label", header.textContent);
@@ -470,7 +471,7 @@
          }
 
          button.onclick = () => {
-           const isAscending = header.getAttribute("aria-sort") !== "ascending";
+           const sortAscending = header.getAttribute("aria-sort") !== "ascending";
            sortTable(table, columnIndex, isAscending, sortNumerically);
            headers.forEach((h) => h.removeAttribute("aria-sort"));
            header.setAttribute("aria-sort", isAscending ? "ascending" : "descending");
@@ -496,9 +497,8 @@
            return a === "" ? 1 : -1;
          }
 
-         return ascending
-           ? a.localeCompare(b, undefined, { numeric: sortNumerically })
-           : b.localeCompare(a, undefined, { numeric: sortNumerically });
+         [a, b] = ascending ? [a, b] : [b, a];
+         return a.localeCompare(b, undefined, { numeric: sortNumerically });
        });
 
        for (const row of rows) {
