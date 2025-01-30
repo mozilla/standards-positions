@@ -486,8 +486,8 @@
        rows.sort((rowA, rowB) => {
          const cellA = rowA.cells[columnIndex];
          const cellB = rowB.cells[columnIndex];
-         const a = cellA.firstChild instanceof HTMLImageElement ? cellA.firstChild.alt : cellA.textContent;
-         const b = cellB.firstChild instanceof HTMLImageElement ? cellB.firstChild.alt : cellB.textContent;
+         let a = cellA.firstChild instanceof HTMLImageElement ? cellA.firstChild.alt : cellA.textContent;
+         let b = cellB.firstChild instanceof HTMLImageElement ? cellB.firstChild.alt : cellB.textContent;
 
          // Handle empty cells: Always place them at the end
          if (a === "" || b === "") {
