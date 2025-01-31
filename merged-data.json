@@ -10773,5 +10773,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/webKit/standards-positions/issues/449"
+  },
+  "1171": {
+    "issue": 1171,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "safe-area-max-inset-* variables",
+    "url": null,
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
