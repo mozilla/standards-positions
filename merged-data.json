@@ -9114,7 +9114,6 @@
     "webkit": null
   },
   "1014": {
-    "issue": 1014,
     "position": "defer",
     "venues": [],
     "concerns": [],
@@ -9122,12 +9121,15 @@
       "HTTP"
     ],
     "title": "Reduce Accept-Language",
-    "url": null,
+    "url": "https://github.com/Tanych/accept-language",
     "explainer": "https://github.com/Tanych/accept-language",
     "mdn": null,
     "caniuse": null,
     "bug": null,
-    "webkit": null
+    "webkit": null,
+    "description": "Describes a technique to limit the languages sent in the Accept-Language header to a single language to reduce the passive fingerprint sent by a user.",
+    "id": "reduce-accept-language",
+    "rationale": "Mozilla is exploring anti-fingerprinting engineering proposals. While this is interesting to consider, until we know how much it would actually help our users and how much it would affect the web, we will defer an opinion."
   },
   "1015": {
     "issue": 1015,
