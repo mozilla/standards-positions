@@ -6836,10 +6836,19 @@
   },
   "781": {
     "issue": 781,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
+    "position": "negative",
+    "venues": [
+      "W3C CG"
+    ],
+    "concerns": [
+      "complexity",
+      "privacy",
+      "security",
+      "use cases"
+    ],
+    "topics": [
+      "HTML"
+    ],
     "title": "Fenced frames",
     "url": "https://wicg.github.io/fenced-frame/",
     "explainer": "https://github.com/WICG/fenced-frame/tree/master/explainer",
