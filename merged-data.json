@@ -8044,7 +8044,7 @@
     ],
     "concerns": [],
     "topics": [],
-    "title": "Invokers (`invoketarget` & `invokeaction`)",
+    "title": "Invokers (`command` & `commandfor`)",
     "url": "https://github.com/whatwg/html/pull/9841",
     "explainer": "https://open-ui.org/components/invokers.explainer/",
     "mdn": null,
