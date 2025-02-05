@@ -212,8 +212,6 @@
        const fragment = document.createDocumentFragment();
        const codePattern = /`([^`]+)`/;
 
-       let cursor = 0;
-
        while (true) {
          const match = codePattern.exec(markdown);
          if (!match) {
@@ -224,7 +222,7 @@
            break;
          }
 
-         const textBefore = markdown.slice(cursor, match.index);
+         const textBefore = markdown.slice(0, match.index);
          if (textBefore) {
            fragment.appendChild(document.createTextNode(textBefore));
          }
@@ -234,12 +232,8 @@
          codeElement.textContent = match[1];
          fragment.appendChild(codeElement);
 
-         // Move our cursor beyond this match
-         cursor = match.index + match[0].length;
          // Slice off what we've already processed
-         markdown = markdown.slice(cursor);
-         // Reset cursor for next iteration
-         cursor = 0;
+         markdown = markdown.slice(match.index + match[0].length);
        }
 
        return fragment;
@@ -248,8 +242,6 @@
      function expandLinks(markdown) {
        const fragment = document.createDocumentFragment();
        const linkPattern = /\[([^\]]+)\]\(((?:#|https:\/\/)[^\)]+)\)/;
-
-       let cursor = 0;
 
        while (true) {
          const match = linkPattern.exec(markdown);
@@ -262,7 +254,7 @@
          }
 
          // Text before the link
-         const textBefore = markdown.slice(cursor, match.index);
+         const textBefore = markdown.slice(0, match.index);
          if (textBefore) {
            fragment.appendChild(expandInline(textBefore));
          }
@@ -274,12 +266,8 @@
          linkElement.appendChild(expandInline(match[1]));
          fragment.appendChild(linkElement);
 
-         // Move cursor beyond the entire match
-         cursor = match.index + match[0].length;
          // Slice the processed portion off
-         markdown = markdown.slice(cursor);
-         // Reset cursor
-         cursor = 0;
+         markdown = markdown.slice(match.index + match[0].length);
        }
 
        return fragment;
