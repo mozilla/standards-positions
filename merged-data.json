@@ -567,7 +567,7 @@
     "webkit": null,
     "description": "An increasing diversity of Web-connected devices and software capabilities has created a need to deliver optimized content for each device. This specification defines an extensible and configurable set of HTTP request header fields, colloquially known as Client Hints, to address this. They are intended to be used as input to proactive content negotiation; just as the Accept header field allows user agents to indicate what formats they prefer, Client Hints allow user agents to indicate device and agent specific preferences.",
     "id": "http-client-hints",
-    "rationale": "Architecturally, Mozilla prefers client-side solutions for retrieving alternate versions of content, such as the HTML &lt;picture> tag. Despite these architectural preferences, we find that Client-Hints do not present a concrete harm to the web or to its users."
+    "rationale": "Architecturally, Mozilla prefers client-side solutions for retrieving alternate versions of content, such as the HTML `<picture>` tag. Despite these architectural preferences, we find that Client-Hints do not present a concrete harm to the web or to its users."
   },
   "81": {
     "position": "neutral",
@@ -585,7 +585,7 @@
     "webkit": null,
     "description": "Blocklist certain opaque responses based on MIME type and return an 'emptied' response instead.",
     "id": "corb",
-    "rationale": "While this is an important aspect of a robust Spectre-defense, we would like to see a safelist-based approach pursued, e.g., <a href=\"https://github.com/annevk/orb\">Opaque Response Blocking</a>."
+    "rationale": "While this is an important aspect of a robust Spectre-defense, we would like to see a safelist-based approach pursued, e.g., [Opaque Response Blocking](https://github.com/annevk/orb)."
   },
   "84": {
     "issue": 84,
@@ -721,7 +721,7 @@
     "webkit": null,
     "description": "An asynchronous Javascript cookies API for documents and workers",
     "id": "cookie-store",
-    "rationale": "This API provides better access to cookies. We are positive for a subset of this API which only exposes the same information available through document.cookie. At this time we're not ready to expose ServiceWorkerRegistration.cookies or implement the CookieStoreManager as proposed; we will discuss this along with the subset proposal in the appropriate standards group. See <a href=\"https://github.com/WICG/cookie-store/issues/241\">WICG/cookie-store issue #241</a>."
+    "rationale": "This API provides better access to cookies. We are positive for a subset of this API which only exposes the same information available through document.cookie. At this time we're not ready to expose ServiceWorkerRegistration.cookies or implement the CookieStoreManager as proposed; we will discuss this along with the subset proposal in the appropriate standards group. See [WICG/cookie-store issue #241](https://github.com/WICG/cookie-store/issues/241)."
   },
   "95": {
     "position": "negative",
@@ -739,7 +739,7 @@
     "webkit": null,
     "description": "This document describes an API to discover and communicate with devices over the Bluetooth 4 wireless standard using the Generic Attribute Profile (GATT).",
     "id": "web-bluetooth",
-    "rationale": "This API provides access to the Generic Attribute Profile (GATT) of Bluetooth, which is not the lowest level of access that the specifications allow, but its generic nature makes it impossible to clearly evaluate. Like <a href=\"#webusb\">WebUSB</a> there is significant uncertainty regarding how well prepared devices are to receive requests from arbitrary sites. The generic nature of the API means that this risk is difficult to manage. The Web Bluetooth CG has opted to only rely on user consent, which we believe is not sufficient protection. This proposal also uses a blocklist, which will require constant and active maintenance so that vulnerable devices aren't exploited. This model is unsustainable and presents a significant risk to users and their devices."
+    "rationale": "This API provides access to the Generic Attribute Profile (GATT) of Bluetooth, which is not the lowest level of access that the specifications allow, but its generic nature makes it impossible to clearly evaluate. Like [WebUSB](#webusb) there is significant uncertainty regarding how well prepared devices are to receive requests from arbitrary sites. The generic nature of the API means that this risk is difficult to manage. The Web Bluetooth CG has opted to only rely on user consent, which we believe is not sufficient protection. This proposal also uses a blocklist, which will require constant and active maintenance so that vulnerable devices aren't exploited. This model is unsustainable and presents a significant risk to users and their devices."
   },
   "96": {
     "position": "positive",
@@ -1053,9 +1053,9 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1515760",
     "webkit": null,
-    "description": "Adds imagesrcset and imagesizes attributes to &lt;link> which correspond to the srcset and sizes attributes of &lt;img> respectively, for the purposes of preloading.",
+    "description": "Adds `imagesrcset` and `imagesizes` attributes to `<link>` which correspond to the `srcset` and `sizes` attributes of `<img>` respectively, for the purposes of preloading.",
     "id": "image-preload",
-    "rationale": "A relevant aspect of &lt;link rel=preload> support."
+    "rationale": "A relevant aspect of `<link rel=preload>` support."
   },
   "131": {
     "position": "neutral",
@@ -1351,7 +1351,7 @@
     "webkit": null,
     "description": "This specification defines a mechanism that allows for rendering of, and seamless navigation to, embedded content.",
     "id": "portals",
-    "rationale": "While we are deferring evaluation of this proposal, because per <a href=\"https://github.com/mozilla/standards-positions/issues/157#issuecomment-636217042\">Domenic's comment</a> it is in the early stages of development and it is too early to evaluate fully, there are concerns (serious enough to mark it as harmful) that we would like to see addressed as it develops.  Most significantly, it needs to explain its interaction with the Web's storage mechanisms in a way that doesn't contribute to third-party tracking or reduce the effectiveness of proposals designed to mitigate such tracking (such as those that partition storage based on toplevel origins).  It also needs to justify the (still undetermined) amount of complexity that it adds to the web platform with sufficiently valuable use cases to justify that complexity."
+    "rationale": "While we are deferring evaluation of this proposal, because per [Domenic's comment](https://github.com/mozilla/standards-positions/issues/157#issuecomment-636217042) it is in the early stages of development and it is too early to evaluate fully, there are concerns (serious enough to mark it as harmful) that we would like to see addressed as it develops.  Most significantly, it needs to explain its interaction with the Web's storage mechanisms in a way that doesn't contribute to third-party tracking or reduce the effectiveness of proposals designed to mitigate such tracking (such as those that partition storage based on toplevel origins).  It also needs to justify the (still undetermined) amount of complexity that it adds to the web platform with sufficiently valuable use cases to justify that complexity."
   },
   "158": {
     "position": "defer",
@@ -1812,7 +1812,7 @@
     "webkit": null,
     "description": "A proposal for extending URL fragment syntax with a list of text bits to highlight and scroll to.",
     "id": "scroll-to-text-fragment",
-    "rationale": "This is an important use case to address and the proposal does a good job at mitigating the compatibility and security issues. As a result the syntax is a tad inelegant, but workable. (See also the <a href=\"#fragmention\">position on Fragmention</a>, which aims to address similar use cases.)"
+    "rationale": "This is an important use case to address and the proposal does a good job at mitigating the compatibility and security issues. As a result the syntax is a tad inelegant, but workable. (See also the [position on Fragmention](#fragmention), which aims to address similar use cases.)"
   },
   "195": {
     "position": "positive",
@@ -1828,7 +1828,7 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1574435",
     "webkit": null,
-    "description": "Overhaul the <code>autofocus</code> processing model to better match browser behavior, fit better within the specification ecosystem, and avoid bad results for users.",
+    "description": "Overhaul the `autofocus` processing model to better match browser behavior, fit better within the specification ecosystem, and avoid bad results for users.",
     "id": "autofocus-overhaul"
   },
   "196": {
@@ -2199,7 +2199,7 @@
     "webkit": null,
     "description": "A proposal for using URL fragments with spaces in them to select a bit of text to highlight and scroll to",
     "id": "fragmention",
-    "rationale": "We feel that some of the use cases this proposal addresses are very important to address, but worry about the lack of a clear processing model and about possible compat constraints that may need implementation experience to fully understand.  More details are in the position issue.  See also the <a href=\"#scroll-to-text-fragment\">position on Scroll to Text Fragment</a>, which aims to address similar use cases."
+    "rationale": "We feel that some of the use cases this proposal addresses are very important to address, but worry about the lack of a clear processing model and about possible compat constraints that may need implementation experience to fully understand.  More details are in the position issue.  See also the [position on Scroll to Text Fragment](#scroll-to-text-fragment), which aims to address similar use cases."
   },
   "237": {
     "position": "neutral",
@@ -2215,7 +2215,7 @@
     "caniuse": null,
     "bug": null,
     "webkit": null,
-    "description": "Proposal to add various output attributes on HTML's &lt;input> elements that would allow developers to declare some conversions the browser could do to, for example, images and videos.",
+    "description": "Proposal to add various output attributes on HTML's `<input>` elements that would allow developers to declare some conversions the browser could do to, for example, images and videos.",
     "id": "input-file-output-attributes",
     "rationale": "While this seems like it could be a useful capability to expose, we'd rather see it exposed in a way that can be composed with other existing APIs, and we're concerned that there's a risk of runaway complexity through adding more and more features to it."
   },
@@ -2339,7 +2339,7 @@
     "caniuse": "https://caniuse.com/mdn-api_htmlvideoelement_requestvideoframecallback",
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1800882",
     "webkit": null,
-    "description": "&lt;video>.requestVideoFrameCallback() allows web authors to be notified when a frame has been presented for composition.",
+    "description": "`<video>.requestVideoFrameCallback()` allows web authors to be notified when a frame has been presented for composition.",
     "id": "requestVideoFrameCallback",
     "rationale": "This is intended to allow web authors to do efficient per-video-frame processing of video, such as video processing and painting to a canvas, video analysis, or synchronization with external audio sources."
   },
@@ -2659,7 +2659,7 @@
     "webkit": null,
     "description": "This API defines an API surface for manipulating the encoded bits of MediaStreamTracks being sent via an RTCPeerConnection.",
     "id": "webrtc-encoded-transform",
-    "rationale": "This approach provides sites a way to offer a form of end-to-end protection for media, especially in those very common cases where media for group sessions is managed by a central service. The proposed API, together with the SFrame proposal, provides sites the ability to limit the information that is exposed to the central service. Mozilla would prefer to include better key management than this approach proposes, perhaps using <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-mls-architecture\">MLS</a>, which might guarantee certain security and privacy gains for users. However, we recognize that this is not yet feasible and this API can provide security and privacy gains if carefully applied by sites."
+    "rationale": "This approach provides sites a way to offer a form of end-to-end protection for media, especially in those very common cases where media for group sessions is managed by a central service. The proposed API, together with the SFrame proposal, provides sites the ability to limit the information that is exposed to the central service. Mozilla would prefer to include better key management than this approach proposes, perhaps using [MLS](https://datatracker.ietf.org/doc/html/draft-ietf-mls-architecture), which might guarantee certain security and privacy gains for users. However, we recognize that this is not yet feasible and this API can provide security and privacy gains if carefully applied by sites."
   },
   "331": {
     "position": "positive",
@@ -2780,7 +2780,7 @@
     "webkit": null,
     "description": "A descriptor for CSS @page rules that changes the orientation of the page in generated PDF output (or similar) without otherwise affecting layout.",
     "id": "page-orientation-descriptor",
-    "rationale": "This is a simple addition (to a relatively complex existing feature, <a href=\"https://drafts.csswg.org/css-page-3/#using-named-pages\">named pages</a>) that can improve the experience of producing printed PDF output from web-based word processors or similar systems that largely do their own page layout."
+    "rationale": "This is a simple addition (to a relatively complex existing feature, [named pages](https://drafts.csswg.org/css-page-3/#using-named-pages)) that can improve the experience of producing printed PDF output from web-based word processors or similar systems that largely do their own page layout."
   },
   "347": {
     "position": "positive",
@@ -2832,7 +2832,7 @@
     "webkit": null,
     "description": "This document proposes a new web platform mechanism to declare a collection of related domains as being in a First-Party Set.",
     "id": "first-party-sets",
-    "rationale": "We believe the definition of first party should be clear and understandable to users, web developers, and publishers, and thus ideally it should be based only on the top-level URL.  While we can't quite do that today because it isn't compatible with all sites, we'd like to move towards doing that, rather than standardizing a mechanism that moves away from that.  See <a href=\"https://github.com/privacycg/proposals/issues/17#issuecomment-641687052\">more details</a>."
+    "rationale": "We believe the definition of first party should be clear and understandable to users, web developers, and publishers, and thus ideally it should be based only on the top-level URL.  While we can't quite do that today because it isn't compatible with all sites, we'd like to move towards doing that, rather than standardizing a mechanism that moves away from that.  See [more details](https://github.com/privacycg/proposals/issues/17#issuecomment-641687052)."
   },
   "351": {
     "issue": 351,
@@ -2880,7 +2880,7 @@
     "webkit": null,
     "description": "This specification enables web developers to show personalized media recommendations on the browser UI.",
     "id": "media-feeds",
-    "rationale": "Media feeds uses harmful technologies to amplify a harmful feature. Many of the capabilities this enables are available to sites in other ways. For those capabilities that are not, extensions to the <a href=\"https://w3c.github.io/mediasession/\">Media Session API</a> would be preferable."
+    "rationale": "Media feeds uses harmful technologies to amplify a harmful feature. Many of the capabilities this enables are available to sites in other ways. For those capabilities that are not, extensions to the [Media Session API](https://w3c.github.io/mediasession/) would be preferable."
   },
   "372": {
     "position": "positive",
@@ -3354,7 +3354,7 @@
     "webkit": null,
     "description": "This document defines a web platform API for observing system-wide user presence signals.",
     "id": "idle-detection-api",
-    "rationale": "We are concerned about the user-surveillance, user-manipulation, and abuse of user resources potential of this API, despite the required 60 second mitigation. Additionally it seems to be an unnecessarily powerful approach for the motivating use-cases, which themselves are not even clear they are worth solving, as pointed out in <a href=\"https://lists.webkit.org/pipermail/webkit-dev/2020-October/031562.html\">https://lists.webkit.org/pipermail/webkit-dev/2020-October/031562.html</a>"
+    "rationale": "We are concerned about the user-surveillance, user-manipulation, and abuse of user resources potential of this API, despite the required 60 second mitigation. Additionally it seems to be an unnecessarily powerful approach for the motivating use-cases, which themselves are not even clear they are worth solving, as pointed out in [this message](https://lists.webkit.org/pipermail/webkit-dev/2020-October/031562.html)."
   },
   "456": {
     "issue": 456,
@@ -3386,7 +3386,7 @@
     "caniuse": "https://caniuse.com/streams",
     "bug": null,
     "webkit": null,
-    "description": "Byte streams are a specialization of <a href=\"#streams\">Streams</a> that are designed to deal with raw bytes.",
+    "description": "Byte streams are a specialization of [Streams](#streams) that are designed to deal with raw bytes.",
     "id": "byte-streams",
     "rationale": "Byte streams are a useful specialization of streams that is well suited to performant I/O and they are well integrated with Typed Arrays."
   },
@@ -3424,7 +3424,7 @@
     "webkit": null,
     "description": "This document describes an API for providing access to devices that support the Human Interface Device (HID) protocol.",
     "id": "webhid",
-    "rationale": "This API, like <a href=#webusb>WebUSB</a>, provides access to generic devices. Though this API is limited to human interface devices (HID), the same concerns apply as WebUSB, namely that devices are generally not designed with access from arbitrary websites in their threat model."
+    "rationale": "This API, like [WebUSB](#webusb), provides access to generic devices. Though this API is limited to human interface devices (HID), the same concerns apply as WebUSB, namely that devices are generally not designed with access from arbitrary websites in their threat model."
   },
   "460": {
     "issue": 460,
@@ -8586,7 +8586,7 @@
     "caniuse": null,
     "bug": null,
     "webkit": null,
-    "description": "Private Access Tokens is the name given to the <a href=https://developer.apple.com/news/?id=huqjyh7k>integration</a> of Privacy Pass mechanism into Apple's networking stack.",
+    "description": "Private Access Tokens is the name given to the [integration](https://developer.apple.com/news/?id=huqjyh7k) of Privacy Pass mechanism into Apple's networking stack.",
     "id": "private-access-tokens",
     "rationale": "This application of Privacy Pass fairly closely follows the IETF specification, but the integration with the Web means that the effect is of a proprietary deployment. A number of considerations relevant to use on the Web have not been adequately addressed in the deployment."
   },
@@ -10123,7 +10123,7 @@
     "caniuse": "https://caniuse.com/css-paint-api",
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1302328",
     "webkit": null,
-    "description": "An API for allowing web developers to define a custom CSS &lt;image> with javascript, which will respond to style and size changes.",
+    "description": "An API for allowing web developers to define a custom CSS `<image>` with javascript, which will respond to style and size changes.",
     "id": "css-paint-api",
     "rationale": "This specification allows developing prototypes of new graphical CSS features and provides an escape hatch for developers when the existing features aren't good enough for a particular piece of a web page."
   },
