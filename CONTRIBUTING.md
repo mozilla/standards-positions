@@ -147,7 +147,7 @@ python3 activities.py add 1234 --rationale "..."
 
 ...where 1234 is the GitHub issue number. Optionally also add `--description "..."` to add a description of the feature or specification.
 
-Alternatively, edit `activities.yml` directly.
+Alternatively, edit `activities.yml` directly. The `description` and `rationale` fields support a subset of markdown: inline code and links (URL must start with `#` or `https://`).
 
 Then submit a pull request with the changes.
 
