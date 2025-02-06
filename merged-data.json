@@ -10312,7 +10312,7 @@
     "explainer": null,
     "mdn": null,
     "caniuse": "https://caniuse.com/?search=text-box-trim",
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1816038",
     "webkit": null
   },
   "1107": {
