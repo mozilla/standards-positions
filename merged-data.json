@@ -10812,5 +10812,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/54#issuecomment-2635730709"
+  },
+  "1173": {
+    "issue": 1173,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "require-sri-for CSP directive",
+    "url": null,
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
