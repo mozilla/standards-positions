@@ -4556,7 +4556,7 @@
   },
   "565": {
     "issue": 565,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -5110,7 +5110,7 @@
     ],
     "topics": [],
     "title": "Speculation Rules - Navigational prefetching and prerendering",
-    "url": null,
+    "url": "https://wicg.github.io/nav-speculation/speculation-rules.html",
     "explainer": null,
     "mdn": null,
     "caniuse": null,
