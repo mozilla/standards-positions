@@ -9709,7 +9709,7 @@
   },
   "1060": {
     "issue": 1060,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C",
       "WHATWG"
@@ -10822,6 +10822,20 @@
     "concerns": [],
     "topics": [],
     "title": "require-sri-for CSP directive",
+    "url": null,
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1174": {
+    "issue": 1174,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "H26x Codec support updates for MediaRecorder",
     "url": null,
     "explainer": null,
     "mdn": null,
