@@ -5561,7 +5561,7 @@
   },
   "658": {
     "issue": 658,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -9668,7 +9668,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "JavaScript"
+    ],
     "title": "Call stacks in crash reports from unresponsive web pages",
     "url": "https://wicg.github.io/crash-reporting/",
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/CrashReporting/AddStackToCrashReports.md",
@@ -10749,7 +10751,7 @@
     "topics": [
       "CSS"
     ],
-    "title": "CS if() function",
+    "title": "CSS if() function",
     "url": "https://drafts.csswg.org/css-values-5/#if-notation",
     "explainer": null,
     "mdn": null,
