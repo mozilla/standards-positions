@@ -10792,14 +10792,16 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "safe-area-max-inset-* variables",
-    "url": null,
+    "url": "https://drafts.csswg.org/css-env-1/#safe-area-max-insets",
     "explainer": null,
     "mdn": null,
     "caniuse": null,
     "bug": null,
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/454"
   },
   "1172": {
     "issue": 1172,
@@ -10822,12 +10824,12 @@
     "concerns": [],
     "topics": [],
     "title": "require-sri-for CSP directive",
-    "url": null,
-    "explainer": null,
+    "url": "https://github.com/w3c/webappsec-subresource-integrity/pull/129",
+    "explainer": "https://github.com/WICG/navigation-api/blob/main/README.md#deferred-commit",
     "mdn": null,
     "caniuse": null,
     "bug": null,
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/458"
   },
   "1174": {
     "issue": 1174,
@@ -10836,8 +10838,8 @@
     "concerns": [],
     "topics": [],
     "title": "H26x Codec support updates for MediaRecorder",
-    "url": null,
-    "explainer": null,
+    "url": "https://docs.google.com/document/d/1YijhqWaeI118xqZV6Fd-UtqWpGDc-vFfFS6Dg4JEEqc/edit?tab=t.0",
+    "explainer": "https://docs.google.com/document/d/1YijhqWaeI118xqZV6Fd-UtqWpGDc-vFfFS6Dg4JEEqc/edit?tab=t.0",
     "mdn": null,
     "caniuse": null,
     "bug": null,
