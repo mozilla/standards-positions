@@ -10844,5 +10844,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1176": {
+    "issue": 1176,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[Push API] Declarative Web Push",
+    "url": "https://github.com/w3c/push-api/issues/360",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1946085",
+    "webkit": null
   }
 }
