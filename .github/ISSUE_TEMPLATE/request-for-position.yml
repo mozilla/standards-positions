@@ -1,0 +1,58 @@
+name: Request for Mozilla Position on an Emerging Web Specification
+description: If you're working on a spec and would like to know Mozilla's position on it.
+body:
+  - type: input
+    id: spec-title
+    attributes:
+      label: "Specification title"
+      description: "Please also use the specification title as the issue title."
+    validations:
+      required: true
+  - type: input
+    id: spec-url
+    attributes:
+      label: "Specification or proposal URL (if available)"
+      placeholder: "https://"
+  - type: input
+    id: spec-explainer
+    attributes:
+      label: "Explainer URL (if available)"
+      placeholder: "https://"
+  - type: input
+    id: spec-authors
+    attributes:
+      label: "Proposal author(s)"
+      placeholder: "@handle"
+  - type: input
+    id: mdn-url
+    attributes:
+      label: "MDN URL"
+      placeholder: "https://"
+  - type: input
+    id: caniuse-url
+    attributes:
+      label: "Caniuse.com URL"
+      placeholder: "https://"
+  - type: input
+    id: bugzilla-url
+    attributes:
+      label: "Bugzilla URL"
+      placeholder: "https://bugzilla.mozilla.org/show_bug.cgi?id=NNNNNNN"
+  - type: input
+    id: mozillians
+    attributes:
+      label: "Mozillians who can provide input"
+      placeholder: "@zcorpan @emilio"
+  - type: input
+    id: webkit-standards-position
+    attributes:
+      label: "WebKit standards-position"
+      placeholder: "https://github.com/WebKit/standards-positions/issues/NNN"
+  - type: textarea
+    id: other
+    attributes:
+      label: "Other information"
+      placeholder: |
+        Other information you think will aid us in coming to a position.
+
+
