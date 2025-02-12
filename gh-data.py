@@ -89,7 +89,7 @@ def process_body(issue):
         "webkit": None,
     }
 
-    mapping = {
+    legacy_mapping = {
         # "specification title": "title",  # Always use the issue title
         "specification or proposal url (if available)": "url",
         "specification or proposal url": "url",
@@ -103,20 +103,54 @@ def process_body(issue):
         "webkit standards-position": "webkit",
     }
 
+    yaml_mapping = {
+        # Specification title
+        "Specification or proposal URL (if available)": "url",
+        "Explainer URL (if available)": "explainer",
+        "MDN URL": "mdn",
+        "Caniuse.com URL": "caniuse",
+        "Bugzilla URL": "bug",
+        "WebKit standards-position": "webkit",
+    }
 
-    for line in lines:
-        if line == "### Other information":
-            break
-        for title, key in mapping.items():
-            text_title = f"* {title}: "
-            if line.lower().startswith(text_title):
-                value = line[len(text_title) :].strip()
-                value = re.sub(r"\[[^\]]+\]\(([^\)]+)\)", r"\1", value)
+    # Legacy issues using ISSUE_TEMPLATE.md
+    if issue["number"] < 1175:
+        for line in lines:
+            if line == "### Other information":
+                break
+            for title, key in legacy_mapping.items():
+                text_title = f"* {title}: "
+                if line.lower().startswith(text_title):
+                    value = line[len(text_title) :].strip()
+                    if key in ("url", "explainer", "mdn", "caniuse", "bug", "webkit"):
+                        value = get_url(value)
+                    if value != "" and value.lower() != "n/a":
+                        body[key] = value
+                    break
+    # Issues using YAML template
+    else:
+        expect_response = None
+        skip = False
+        for line in lines:
+            if line == "### Other information":
+                break
+            for title, key in yaml_mapping.items():
+                text_title = f"### {title}"
+                if line == text_title:
+                    expect_response = key
+                    skip = True
+                    break
+            if skip:
+                skip = False
+                continue
+            if expect_response:
+                value = line.strip()
                 if key in ("url", "explainer", "mdn", "caniuse", "bug", "webkit"):
                     value = get_url(value)
-                if value != "" and value.lower() != "n/a":
-                    body[key] = value
-                break
+                if value and value != "_No response_" and value.lower() != "n/a":
+                    body[expect_response] = value
+                    expect_response = None
+
     return body
 
 
