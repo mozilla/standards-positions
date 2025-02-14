@@ -10858,5 +10858,19 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1946085",
     "webkit": null
+  },
+  "1177": {
+    "issue": 1177,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Partitioning cross-site top-level navigations in the HTTP cache",
+    "url": null,
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
