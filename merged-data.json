@@ -10872,5 +10872,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1179": {
+    "issue": 1179,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Position statement on Web Install capability",
+    "url": null,
+    "explainer": "https://aka.ms/webinstall",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/463"
   }
 }
