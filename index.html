@@ -300,7 +300,9 @@
 
      function link(href, child, helpText) {
        const a = document.createElement('a');
-       a.setAttribute('href', href);
+       if (href) {
+         a.setAttribute('href', href);
+       }
        a.append(child);
        if (helpText) {
          a.setAttribute('aria-label', helpText);
@@ -382,7 +384,7 @@
        return rv;
      }
 
-     function row(issueNum, { id, url, title, concerns, position, topics, venues, caniuse, bug, mdn, webkit, description, rationale }) {
+     function row(issueNum, { id, url, explainer, title, concerns, position, topics, venues, caniuse, bug, mdn, webkit, description, rationale }) {
        const tr = document.createElement('tr');
        const rv = [tr];
 
@@ -397,6 +399,9 @@
        tr.append(cell(link(`#${selfId}`, '🔗', 'Self-link'), 'link'));
 
        // Specification
+       if (!url) {
+         url = explainer;
+       }
        const specLink = link(url, expandInline(title));
        specLink.id = `speclink-${selfId}`;
        tr.append(cell(specLink, 'specification'));
