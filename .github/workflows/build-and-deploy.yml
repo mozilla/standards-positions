@@ -61,6 +61,8 @@ jobs:
           git merge ${{ github.sha }} --strategy recursive -X theirs --no-edit
 
       - name: Generate Merged Data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 gh-data.py
           python3 merge-data.py

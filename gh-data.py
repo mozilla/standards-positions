@@ -5,6 +5,11 @@
 import json, os, requests, re, sys
 
 
+# Retrieve the token from environment variables
+token = os.getenv('GITHUB_TOKEN')
+headers = {"Authorization": f"token {token}"} if token else {}
+
+
 # Utilities
 def write_json(filename, data):
     with open(filename, "w") as f:
@@ -164,6 +169,7 @@ def main():
             print(f"Fetching page {page}...")
             response = requests.get(
                 f"https://api.github.com/repos/mozilla/standards-positions/issues?direction=asc&state=all&per_page=100&page={page}",
+                headers=headers,
                 timeout=5,
             )
             response.raise_for_status()
