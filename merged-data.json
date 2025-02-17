@@ -10848,9 +10848,13 @@
   "1176": {
     "issue": 1176,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "[Push API] Declarative Web Push",
     "url": "https://github.com/w3c/push-api/issues/360",
     "explainer": null,
@@ -10876,10 +10880,14 @@
   "1179": {
     "issue": 1179,
     "position": null,
-    "venues": [],
+    "venues": [
+      "Proposal"
+    ],
     "concerns": [],
-    "topics": [],
-    "title": "Position statement on Web Install capability",
+    "topics": [
+      "API"
+    ],
+    "title": "Web Install capability",
     "url": null,
     "explainer": "https://aka.ms/webinstall",
     "mdn": null,
