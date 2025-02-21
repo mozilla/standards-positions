@@ -10894,5 +10894,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/463"
+  },
+  "1181": {
+    "issue": 1181,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "The `interesttarget` attribute",
+    "url": "https://github.com/whatwg/html/pull/11006",
+    "explainer": "https://open-ui.org/components/interest-invokers.explainer/",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/464"
   }
 }
