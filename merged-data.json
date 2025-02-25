@@ -10908,5 +10908,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/464"
+  },
+  "1182": {
+    "issue": 1182,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Audio output default device supports:  setPreferredSinkId",
+    "url": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/SetPreferredSinkId/explainer.md",
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/SetPreferredSinkId/explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
