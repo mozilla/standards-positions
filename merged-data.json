@@ -10922,5 +10922,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1183": {
+    "issue": 1183,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS View Transitions - Nested View Transition Groups",
+    "url": "https://www.w3.org/TR/css-view-transitions-2/#view-transition-group-prop",
+    "explainer": "https://github.com/WICG/view-transitions/blob/main/nested-explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/466"
   }
 }
