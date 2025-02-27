@@ -6134,9 +6134,13 @@
   "715": {
     "issue": 715,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Extending the PointerEvent with Unique DeviceId Attribute",
     "url": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PointerEventDeviceId/explainer.md",
     "explainer": null,
