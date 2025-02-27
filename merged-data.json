@@ -10706,9 +10706,13 @@
   "1161": {
     "issue": 1161,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS Overflow Navigation Controls",
     "url": "https://drafts.csswg.org/css-overflow-5/#scroll-navigation",
     "explainer": "https://github.com/w3c/csswg-drafts/blob/main/css-overflow-5/carousel-explainer.md",
