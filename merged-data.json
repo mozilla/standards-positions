@@ -10944,5 +10944,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/466"
+  },
+  "1186": {
+    "issue": 1186,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Bounce Tracking Mitigations",
+    "url": "https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-mitigations",
+    "explainer": "https://github.com/privacycg/nav-tracking-mitigations/issues/41",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
