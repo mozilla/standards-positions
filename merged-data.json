@@ -10958,5 +10958,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1187": {
+    "issue": 1187,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "TC39 AsyncContext",
+    "url": "https://github.com/tc39/proposal-async-context",
+    "explainer": "https://github.com/tc39/proposal-async-context/blob/master/WEB-INTEGRATION.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
