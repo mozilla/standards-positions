@@ -10972,5 +10972,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1188": {
+    "issue": 1188,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "H265 (HEVC) codec support in WebRTC",
+    "url": "https://w3c.github.io/webrtc-pc/",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
