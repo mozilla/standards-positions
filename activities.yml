@@ -588,7 +588,6 @@ Declarative Web Push:
     Declarative Web Push introduces a JSON format that the user agent can recognize and parse without a Service Worker.
   id: declarative-web-push
   issue: 1176
-  position: positive
   rationale: |
     Mozilla is happy with the overall idea of Declarative Web Push. We believe having a declarative way to subscribe to push notifications will help users by reducing power usage on mobile devices and also help web authors by reducing required code size. We also believe that this introduces a way for browsers to suppress potentially unwanted push notifications from tracking users by conditionally removing its ability to use local state for mutable notifications.
 
@@ -599,8 +598,6 @@ Declarative Web Push:
 
     Each notification would be rendered purely from the declarative data in that case, thus achieving tracking protection without deactivating the whole push subscription.
   url: https://github.com/w3c/push-api/pull/385
-  venues:
-  - W3C
 Default Accessibility Semantics for Custom Elements:
   description: |
     This will allow custom elements to have "default" accessibility semantics, analogous to how built-in elements have "implicit" or "native" semantics.
