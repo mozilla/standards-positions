@@ -10964,7 +10964,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "JavaScript"
+    ],
     "title": "TC39 AsyncContext",
     "url": "https://github.com/tc39/proposal-async-context",
     "explainer": "https://github.com/tc39/proposal-async-context/blob/master/WEB-INTEGRATION.md",
@@ -10986,5 +10988,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1189": {
+    "issue": 1189,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Expose contentEncoding in resourceTiming",
+    "url": "https://github.com/whatwg/fetch/pull/1796",
+    "explainer": "https://github.com/guohuideng2024/resource-timing/blob/gh-pages/Explainers/Content_Encoding.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/467"
   }
 }
