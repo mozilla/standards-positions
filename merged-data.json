@@ -9987,7 +9987,7 @@
     "mdn": null,
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1921747",
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/404"
   },
   "1080": {
     "issue": 1080,
@@ -11002,5 +11002,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/467"
+  },
+  "1191": {
+    "issue": 1191,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Enabling Web Applications to understand bimodal performance timings",
+    "url": "https://github.com/w3c/navigation-timing/issues/202",
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PerformanceNavigationTiming%20for%20User%20Agent%20Launch/explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/469"
   }
 }
