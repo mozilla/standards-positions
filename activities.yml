@@ -589,14 +589,7 @@ Declarative Web Push:
   id: declarative-web-push
   issue: 1176
   rationale: |
-    Mozilla is happy with the overall idea of Declarative Web Push. We believe having a declarative way to subscribe to push notifications will help users by reducing power usage on mobile devices and also help web authors by reducing required code size. We also believe that this introduces a way for browsers to suppress potentially unwanted push notifications from tracking users by conditionally removing its ability to use local state for mutable notifications.
-
-    For example, the browser may limit the usage of site data for push notifications that haven’t been clicked for some time, by:
-
-    1. Stop firing onpush service worker event
-    2. Stop using cookies to fetch notification image
-
-    Each notification would be rendered purely from the declarative data in that case, thus achieving tracking protection without deactivating the whole push subscription.
+    We believe this proposal can reduce the required code size to subscribe push notifications, and it introduces a way for browsers to suppress potentially unwanted push notifications from tracking users.
   url: https://github.com/w3c/push-api/pull/385
 Default Accessibility Semantics for Custom Elements:
   description: |
