@@ -5253,12 +5253,14 @@
   },
   "631": {
     "issue": 631,
-    "position": null,
+    "position": "defer",
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "Focusgroup",
-    "url": "https://github.com/openui/open-ui/blob/main/research/src/pages/focusgroup/focusgroup.explainer.mdx",
+    "url": "https://open-ui.org/components/focusgroup.explainer/",
     "explainer": null,
     "mdn": null,
     "caniuse": null,
@@ -8755,10 +8757,12 @@
   },
   "976": {
     "issue": 976,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "WebRTC: RTCIceCandidate relayProtocol and url properties",
     "url": null,
     "explainer": null,
@@ -8841,7 +8845,7 @@
   },
   "988": {
     "issue": 988,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [
@@ -9867,7 +9871,7 @@
   },
   "1071": {
     "issue": 1071,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [
@@ -10307,7 +10311,7 @@
   },
   "1105": {
     "issue": 1105,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [
@@ -10876,7 +10880,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTTP"
+    ],
     "title": "Partitioning cross-site top-level navigations in the HTTP cache",
     "url": null,
     "explainer": null,
@@ -10936,7 +10942,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS View Transitions - Nested View Transition Groups",
     "url": "https://www.w3.org/TR/css-view-transitions-2/#view-transition-group-prop",
     "explainer": "https://github.com/WICG/view-transitions/blob/main/nested-explainer.md",
@@ -10963,7 +10971,10 @@
     "issue": 1187,
     "position": null,
     "venues": [],
-    "concerns": [],
+    "concerns": [
+      "complexity",
+      "use cases"
+    ],
     "topics": [
       "JavaScript"
     ],
