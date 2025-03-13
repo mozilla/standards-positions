@@ -11027,5 +11027,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/469"
+  },
+  "1192": {
+    "issue": 1192,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Happy Eyeballs Version 3",
+    "url": "https://datatracker.ietf.org/doc/draft-pauly-v6ops-happy-eyeballs-v3/",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
