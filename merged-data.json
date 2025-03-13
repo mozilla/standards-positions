@@ -11041,5 +11041,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1193": {
+    "issue": 1193,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Approximate geolocation",
+    "url": null,
+    "explainer": "https://github.com/explainers-by-googlers/approximate-geolocation",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/470"
   }
 }
