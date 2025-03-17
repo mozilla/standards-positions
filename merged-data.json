@@ -11055,5 +11055,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/470"
+  },
+  "1194": {
+    "issue": 1194,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS Values and Units: sibling-count() and sibling-index()",
+    "url": "https://drafts.csswg.org/css-values-5/#tree-counting",
+    "explainer": "https://github.com/w3c/csswg-drafts/blob/main/css-values-5/tree-counting-explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
