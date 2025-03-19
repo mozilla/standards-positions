@@ -11069,5 +11069,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1196": {
+    "issue": 1196,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Private Proof API",
+    "url": "https://github.com/explainers-by-googlers/private-proof",
+    "explainer": "https://explainers-by-googlers.github.io/private-proof/",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/473"
   }
 }
