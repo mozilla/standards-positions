@@ -10858,8 +10858,7 @@
     "webkit": null
   },
   "1176": {
-    "issue": 1176,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -10868,12 +10867,15 @@
       "API"
     ],
     "title": "[Push API] Declarative Web Push",
-    "url": "https://github.com/w3c/push-api/issues/360",
+    "url": "https://github.com/w3c/push-api/pull/385",
     "explainer": null,
     "mdn": null,
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1946085",
-    "webkit": null
+    "webkit": null,
+    "description": "Declarative Web Push introduces a JSON format that the user agent can recognize and parse without a Service Worker.",
+    "id": "declarative-web-push",
+    "rationale": "We believe this proposal can reduce the required code size to subscribe push notifications, and it introduces a way for browsers to suppress potentially unwanted push notifications from tracking users."
   },
   "1177": {
     "issue": 1177,
