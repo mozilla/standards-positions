@@ -29,13 +29,21 @@ feedback are not forthcoming (although they might sometimes be given).
 Specifications that are relevant to Web browsers like Mozilla are in-scope here; non-browser
 specifications (while great for the Web) are not, and will be marked `invalid`.
 
-To be considered, a specification needs to be published under well-understood IPR terms. This
-currently includes:
+To be considered, a specification needs to be published under well-understood IPR terms, 
+and should generally be on a standards track. 
+This currently includes:
 
 * Ecma TC39 proposals
 * IETF RFCs and Internet-Drafts
-* W3C drafts, Recommendations and Notes (including Community Group documents, e.g. WICG)
+* W3C Working Drafts and (Candidate) Recommendations
 * WHATWG Living Standards (typically we consider change proposals)
+
+We may also provide positions on documents located outside a standards process, 
+e.g. W3C Notes, or those in W3C Community Groups such as [WICG](https://wicg.github.io/) 
+or other community incubation efforts with well-understood
+<abbr title="intellectual property rights">IPR</abbr> terms. 
+As a general rule we believe that any such work must be moved to a formal standards track 
+before it’s appropriate for adoption as part of the web platform.
 
 If a specification has been abandoned, deprecated, or obsoleted by its publishing body, this generally
 indicates that it is not under consideration.
