@@ -721,7 +721,7 @@
     "webkit": null,
     "description": "An asynchronous Javascript cookies API for documents and workers",
     "id": "cookie-store",
-    "rationale": "This API provides better access to cookies. We are positive for a subset of this API which only exposes the same information available through document.cookie. At this time we're not ready to expose ServiceWorkerRegistration.cookies or implement the CookieStoreManager as proposed; we will discuss this along with the subset proposal in the appropriate standards group. See [WICG/cookie-store issue #241](https://github.com/WICG/cookie-store/issues/241)."
+    "rationale": "This API provides better access to cookies. We are positive for a subset of this API which only exposes the same information available through document.cookie. See [WICG/cookie-store issue #241](https://github.com/WICG/cookie-store/issues/241)."
   },
   "95": {
     "position": "negative",
