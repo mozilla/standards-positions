@@ -5521,10 +5521,14 @@
   },
   "651": {
     "issue": 651,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "WebAssembly"
+    ],
     "title": "WebAssembly Relaxed SIMD",
     "url": "https://github.com/WebAssembly/relaxed-simd/blob/main/proposals/relaxed-simd/Overview.md",
     "explainer": null,
