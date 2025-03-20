@@ -582,6 +582,15 @@ Declarative Shadow DOM:
   url: https://github.com/whatwg/html/pull/5465
   venues:
   - WHATWG
+Declarative Web Push:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1946085
+  description: |
+    Declarative Web Push introduces a JSON format that the user agent can recognize and parse without a Service Worker.
+  id: declarative-web-push
+  issue: 1176
+  rationale: |
+    We believe this proposal can reduce the required code size to subscribe push notifications, and it introduces a way for browsers to suppress potentially unwanted push notifications from tracking users.
+  url: https://github.com/w3c/push-api/pull/385
 Default Accessibility Semantics for Custom Elements:
   description: |
     This will allow custom elements to have "default" accessibility semantics, analogous to how built-in elements have "implicit" or "native" semantics.
