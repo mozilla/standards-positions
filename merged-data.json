@@ -11103,5 +11103,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/474"
+  },
+  "1198": {
+    "issue": 1198,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Generate CSS view-transition-name from element (CSS View Transitions 2)",
+    "url": "https://drafts.csswg.org/css-view-transitions-2/#auto-vt-name",
+    "explainer": "https://github.com/WICG/view-transitions/blob/main/auto-name-explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/408"
   }
 }
