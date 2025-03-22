@@ -11121,5 +11121,33 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/408"
+  },
+  "1199": {
+    "issue": 1199,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Remove auto-detection of ISO-2022-JP charset in HTML",
+    "url": "https://chromestatus.com/feature/6576566521561088",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1200": {
+    "issue": 1200,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Strict Same-Origin Policy for Storage Access API",
+    "url": "https://github.com/privacycg/storage-access/pull/213",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
