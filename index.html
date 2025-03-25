@@ -476,7 +476,15 @@
      }
      function shouldShowRow(searchText, tr) {
        const specTitle = tr.firstChild.nextSibling.textContent;
-       return specTitle.toLowerCase().includes(searchText.toLowerCase());
+       const position = tr.dataset.position;
+       const concerns = tr.firstChild.nextSibling.nextSibling.nextSibling.textContent;
+       const topics = tr.dataset.topics;
+       const venues = tr.dataset.venues;
+       const issueNum = tr.lastChild.firstChild.textContent;
+       const allText = [specTitle, position, concerns, topics, venues, issueNum].filter(Boolean).join(' ');
+       const links = tr.querySelectorAll('a[href]');
+       return allText.toLowerCase().includes(searchText.toLowerCase()) ||
+              [...links].find(a => a.getAttribute('href').includes(searchText));
      }
      function setupSearch() {
        const searchInput = document.querySelector('input[name="search"]');
