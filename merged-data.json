@@ -11149,5 +11149,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1201": {
+    "issue": 1201,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Column wrapping (multicol)",
+    "url": null,
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
