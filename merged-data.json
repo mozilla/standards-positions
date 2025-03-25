@@ -11125,7 +11125,9 @@
   "1199": {
     "issue": 1199,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
     "topics": [],
     "title": "Remove auto-detection of ISO-2022-JP charset in HTML",
@@ -11141,7 +11143,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Strict Same-Origin Policy for Storage Access API",
     "url": "https://github.com/privacycg/storage-access/pull/213",
     "explainer": null,
@@ -11153,12 +11157,16 @@
   "1201": {
     "issue": 1201,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "Column wrapping (multicol)",
-    "url": null,
-    "explainer": null,
+    "url": "https://drafts.csswg.org/css-multicol-2/#cwr",
+    "explainer": "https://github.com/mstensho/column-wrap/",
     "mdn": null,
     "caniuse": null,
     "bug": null,
