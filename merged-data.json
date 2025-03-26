@@ -11036,8 +11036,10 @@
   },
   "1192": {
     "issue": 1192,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "IETF"
+    ],
     "concerns": [],
     "topics": [],
     "title": "Happy Eyeballs Version 3",
