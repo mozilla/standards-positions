@@ -4124,9 +4124,9 @@
     "venues": [],
     "concerns": [],
     "topics": [],
-    "title": "Pickling for Async Clipboard API ",
-    "url": "https://github.com/w3c/editing/blob/gh-pages/docs/clipboard-pickling/explainer.md",
-    "explainer": null,
+    "title": "Web custom format for Async Clipboard API ",
+    "url": "https://w3c.github.io/clipboard-apis/#web-custom-format",
+    "explainer": "https://github.com/w3c/editing/blob/gh-pages/docs/clipboard-pickling/explainer.md",
     "mdn": null,
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=860857",
@@ -10849,9 +10849,11 @@
   },
   "1174": {
     "issue": 1174,
-    "position": null,
+    "position": "neutral",
     "venues": [],
-    "concerns": [],
+    "concerns": [
+      "interoperability"
+    ],
     "topics": [],
     "title": "H26x Codec support updates for MediaRecorder",
     "url": "https://docs.google.com/document/d/1YijhqWaeI118xqZV6Fd-UtqWpGDc-vFfFS6Dg4JEEqc/edit?tab=t.0",
