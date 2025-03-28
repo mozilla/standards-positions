@@ -11175,5 +11175,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1202": {
+    "issue": 1202,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[WebRTC] Align browsers on RTP stats lifetimes",
+    "url": "https://w3c.github.io/webrtc-stats/",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/478"
   }
 }
