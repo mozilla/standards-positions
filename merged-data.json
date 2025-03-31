@@ -10792,9 +10792,14 @@
   "1169": {
     "issue": 1169,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C CG",
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Navigation API: deferred commit",
     "url": null,
     "explainer": "https://github.com/WICG/navigation-api/blob/main/README.md#deferred-commit",
@@ -10997,9 +11002,13 @@
   "1188": {
     "issue": 1188,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "H265 (HEVC) codec support in WebRTC",
     "url": "https://w3c.github.io/webrtc-pc/",
     "explainer": null,
@@ -11055,9 +11064,13 @@
   "1193": {
     "issue": 1193,
     "position": null,
-    "venues": [],
+    "venues": [
+      "Proposal"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Approximate geolocation",
     "url": null,
     "explainer": "https://github.com/explainers-by-googlers/approximate-geolocation",
@@ -11069,9 +11082,13 @@
   "1194": {
     "issue": 1194,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS Values and Units: sibling-count() and sibling-index()",
     "url": "https://drafts.csswg.org/css-values-5/#tree-counting",
     "explainer": "https://github.com/w3c/csswg-drafts/blob/main/css-values-5/tree-counting-explainer.md",
@@ -11083,7 +11100,9 @@
   "1196": {
     "issue": 1196,
     "position": null,
-    "venues": [],
+    "venues": [
+      "Proposal"
+    ],
     "concerns": [],
     "topics": [],
     "title": "Private Proof API",
@@ -11097,9 +11116,13 @@
   "1197": {
     "issue": 1197,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS Shapes: vertex rounding for polygon()",
     "url": "https://drafts.csswg.org/css-shapes/#supported-basic-shapes",
     "explainer": null,
@@ -11179,9 +11202,13 @@
   "1202": {
     "issue": 1202,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "[WebRTC] Align browsers on RTP stats lifetimes",
     "url": "https://w3c.github.io/webrtc-stats/",
     "explainer": null,
