@@ -10824,20 +10824,6 @@
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/454"
   },
-  "1172": {
-    "issue": 1172,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Speculation rules: tag field",
-    "url": "https://wicg.github.io/nav-speculation/speculation-rules.html",
-    "explainer": "https://github.com/WICG/nav-speculation/blob/main/speculation-rules-tags.md",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/speculationrules",
-    "caniuse": null,
-    "bug": null,
-    "webkit": "https://github.com/WebKit/standards-positions/issues/54#issuecomment-2635730709"
-  },
   "1173": {
     "issue": 1173,
     "position": null,
