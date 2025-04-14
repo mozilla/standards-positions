@@ -2836,7 +2836,7 @@
   },
   "351": {
     "issue": 351,
-    "position": null,
+    "position": "defer",
     "venues": [
       "W3C CG"
     ],
@@ -3086,7 +3086,7 @@
   },
   "412": {
     "issue": 412,
-    "position": null,
+    "position": "defer",
     "venues": [
       "W3C"
     ],
@@ -3562,7 +3562,7 @@
   },
   "473": {
     "issue": 473,
-    "position": null,
+    "position": "defer",
     "venues": [
       "W3C"
     ],
@@ -3696,7 +3696,7 @@
   },
   "487": {
     "issue": 487,
-    "position": null,
+    "position": "defer",
     "venues": [
       "W3C"
     ],
@@ -5667,7 +5667,7 @@
   },
   "667": {
     "issue": 667,
-    "position": null,
+    "position": "defer",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -9696,13 +9696,15 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Multiple import maps",
     "url": "https://github.com/whatwg/html/pull/10528",
     "explainer": "https://github.com/whatwg/html/pull/10528#issue-2437162429",
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1916277",
     "webkit": "https://github.com/WebKit/standards-positions/issues/381"
   },
   "1059": {
@@ -9861,7 +9863,7 @@
   },
   "1070": {
     "issue": 1070,
-    "position": null,
+    "position": "defer",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -9933,7 +9935,7 @@
   },
   "1076": {
     "issue": 1076,
-    "position": null,
+    "position": "defer",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -11202,5 +11204,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/478"
+  },
+  "1203": {
+    "issue": 1203,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Browser support for MediaStreamTrackProcessor and MediaStreamTrackGenerator",
+    "url": null,
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
