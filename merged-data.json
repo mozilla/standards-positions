@@ -11218,5 +11218,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1204": {
+    "issue": 1204,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[SVG 2.0] Allow `use` to reference entire files",
+    "url": "https://svgwg.org/svg2-draft/struct.html#UseElement",
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/SVG/allow-use-to-reference-entire-files.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/480"
   }
 }
