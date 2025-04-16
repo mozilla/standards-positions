@@ -11246,5 +11246,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1206": {
+    "issue": 1206,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "FileSystemSubscriptionManager",
+    "url": null,
+    "explainer": "https://github.com/WICG/file-system-access/pull/457/files",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
