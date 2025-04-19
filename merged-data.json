@@ -11260,5 +11260,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1207": {
+    "issue": 1207,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Expose all speakers upon microphone use",
+    "url": "https://github.com/w3c/mediacapture-output/pull/150/files",
+    "explainer": null,
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/enumerateDevices",
+    "caniuse": "https://caniuse.com/?search=enumerateDevices",
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1958963",
+    "webkit": "https://bugs.webkit.org/show_bug.cgi?id=284045"
   }
 }
