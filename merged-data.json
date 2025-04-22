@@ -11274,5 +11274,19 @@
     "caniuse": "https://caniuse.com/?search=enumerateDevices",
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1958963",
     "webkit": "https://bugs.webkit.org/show_bug.cgi?id=284045"
+  },
+  "1208": {
+    "issue": 1208,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "System Status Icons for Installed desktop Web Apps",
+    "url": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/SystemStatusIcon/explainer.md",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/482"
   }
 }
