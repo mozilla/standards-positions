@@ -11297,7 +11297,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "Escape \"<\" and \">\" when serializing attribute values",
     "url": "https://github.com/whatwg/html/pull/6362",
     "explainer": null,
