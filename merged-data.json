@@ -8488,7 +8488,10 @@
     "issue": 945,
     "position": null,
     "venues": [],
-    "concerns": [],
+    "concerns": [
+      "complexity",
+      "venue"
+    ],
     "topics": [],
     "title": "Observable",
     "url": "https://wicg.github.io/observable/",
@@ -10832,9 +10835,9 @@
     "venues": [],
     "concerns": [],
     "topics": [],
-    "title": "require-sri-for CSP directive",
-    "url": "https://github.com/w3c/webappsec-subresource-integrity/pull/129",
-    "explainer": "https://github.com/WICG/navigation-api/blob/main/README.md#deferred-commit",
+    "title": "`Integrity-Policy` header for scripts",
+    "url": "https://github.com/w3c/webappsec-subresource-integrity/pull/133",
+    "explainer": "https://github.com/w3c/webappsec-subresource-integrity/pull/133",
     "mdn": null,
     "caniuse": null,
     "bug": null,
@@ -11288,5 +11291,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/482"
+  },
+  "1209": {
+    "issue": 1209,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Escape \"<\" and \">\" when serializing attribute values",
+    "url": "https://github.com/whatwg/html/pull/6362",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1941347",
+    "webkit": null
   }
 }
