@@ -9680,7 +9680,7 @@
   },
   "1057": {
     "issue": 1057,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [
@@ -9834,7 +9834,7 @@
   },
   "1068": {
     "issue": 1068,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [
@@ -10076,7 +10076,7 @@
   },
   "1085": {
     "issue": 1085,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [
@@ -10973,7 +10973,7 @@
   },
   "1187": {
     "issue": 1187,
-    "position": null,
+    "position": "negative",
     "venues": [],
     "concerns": [
       "complexity",
@@ -11226,8 +11226,12 @@
     "issue": 1204,
     "position": null,
     "venues": [],
-    "concerns": [],
-    "topics": [],
+    "concerns": [
+      "integration"
+    ],
+    "topics": [
+      "SVG"
+    ],
     "title": "[SVG 2.0] Allow `use` to reference entire files",
     "url": "https://svgwg.org/svg2-draft/struct.html#UseElement",
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/SVG/allow-use-to-reference-entire-files.md",
@@ -11294,7 +11298,7 @@
   },
   "1209": {
     "issue": 1209,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [
