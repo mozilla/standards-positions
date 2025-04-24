@@ -6632,7 +6632,7 @@
     "explainer": "https://github.com/rubberyuzu/bfcache-not-retored-reason/blob/main/NotRestoredReason.md",
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1962250",
     "webkit": null
   },
   "767": {
