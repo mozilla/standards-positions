@@ -11311,5 +11311,33 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1941347",
     "webkit": null
+  },
+  "1211": {
+    "issue": 1211,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[CSS UI-4] caret-shape property",
+    "url": "https://drafts.csswg.org/css-ui/#caret-shape",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": "https://github.com/Fyrd/caniuse/issues/5974",
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1715487",
+    "webkit": null
+  },
+  "1212": {
+    "issue": 1212,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "HTML <a> ping attribute",
+    "url": "https://html.spec.whatwg.org/#hyperlink-auditing",
+    "explainer": null,
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement/ping",
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=951104",
+    "webkit": null
   }
 }
