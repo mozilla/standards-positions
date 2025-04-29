@@ -11317,7 +11317,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "[CSS UI-4] caret-shape property",
     "url": "https://drafts.csswg.org/css-ui/#caret-shape",
     "explainer": null,
