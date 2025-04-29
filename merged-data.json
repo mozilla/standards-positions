@@ -11353,5 +11353,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1214": {
+    "issue": 1214,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Add prefetchCache and prerenderCache to Clear-Site-Data header",
+    "url": null,
+    "explainer": "https://github.com/WICG/nav-speculation/blob/main/clear-site-data-integration.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
