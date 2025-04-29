@@ -1943,6 +1943,12 @@ WebAssembly JS Promise Integration:
   url: https://github.com/WebAssembly/js-promise-integration/
   venues:
   - Proposal
+WebAssembly Relaxed SIMD:
+  description: |
+    New 'relaxed' SIMD instructions for WebAssembly that have local non-determinism that depends on the platform.
+  issue: 651
+  rationale: |
+    These new instructions can have greatly improved performance making compute heavy tasks feasible on the web.
 WebAssembly SIMD:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1625130
   description: |
