@@ -5520,10 +5520,9 @@
     "rationale": "This proposal makes it easier for web developers to use responsive images. There is some risk that the behavior of cached images can cause flicker in some cases."
   },
   "651": {
-    "issue": 651,
     "position": "positive",
     "venues": [
-      "W3C"
+      "W3C CG"
     ],
     "concerns": [],
     "topics": [
@@ -5535,7 +5534,9 @@
     "mdn": null,
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1748807",
-    "webkit": null
+    "webkit": null,
+    "description": "New 'relaxed' SIMD instructions for WebAssembly that have local non-determinism that depends on the platform.",
+    "rationale": "These new instructions can have greatly improved performance making compute heavy tasks feasible on the web."
   },
   "653": {
     "issue": 653,
@@ -11367,6 +11368,20 @@
     "explainer": "https://github.com/WICG/nav-speculation/blob/main/clear-site-data-integration.md",
     "mdn": null,
     "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1215": {
+    "issue": 1215,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Web Neural Network API",
+    "url": "https://www.w3.org/TR/webnn/",
+    "explainer": "https://github.com/webmachinelearning/webnn/blob/main/explainer.md",
+    "mdn": null,
+    "caniuse": "https://caniuse.com/?search=WebNN",
     "bug": null,
     "webkit": null
   }
