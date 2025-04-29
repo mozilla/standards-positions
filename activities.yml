@@ -145,8 +145,7 @@ Bounce Tracking Mitigations:
   position: positive
   rationale: |
     With 3rd-party cookies being restricted by default in all major browsers, navigational tracking plays an increasingly important role on the web. This spec describes an effective cross-browser mechanism to combat bounce tracking, which does not rely on tracker lists. It provides predictable detection heuristics for web developers and preserves legitimate uses of short-lived redirects where possible. While browsers already ship similar protections, e.g. Firefox's tracker purging, aligning on common behavior improves web compatibility and encourages site developers to use specialized APIs, rather than relying on top level redirects for functionality.
-  url:
-    https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-mitigations
+  url: https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-mitigations
   venues:
   - Proposal
 Bundled HTTP Exchanges:
@@ -166,8 +165,7 @@ Byte Streams:
     Byte streams are a specialization of [Streams](#streams) that are designed to deal with raw bytes.
   id: byte-streams
   issue: 457
-  mdn:
-    https://developer.mozilla.org/en-US/docs/Web/API/Streams_API#ByteStream-related_interfaces
+  mdn: https://developer.mozilla.org/en-US/docs/Web/API/Streams_API#ByteStream-related_interfaces
   position: positive
   rationale: |
     Byte streams are a useful specialization of streams that is well suited to performant I/O and they are well integrated with Typed Arrays.
@@ -542,8 +540,7 @@ Cross-Origin Read Blocking (CORB):
   position: neutral
   rationale: |
     While this is an important aspect of a robust Spectre-defense, we would like to see a safelist-based approach pursued, e.g., [Opaque Response Blocking](https://github.com/annevk/orb).
-  url:
-    https://chromium.googlesource.com/chromium/src/+/master/services/network/cross_origin_read_blocking_explainer.md
+  url: https://chromium.googlesource.com/chromium/src/+/master/services/network/cross_origin_read_blocking_explainer.md
   venues:
   - Proposal
 Curve25519 in the Web Cryptography API:
@@ -808,8 +805,7 @@ HTML Modules:
   id: html-modules
   issue: 137
   position: positive
-  url:
-    https://github.com/w3c/webcomponents/blob/gh-pages/proposals/html-modules-explainer.md
+  url: https://github.com/w3c/webcomponents/blob/gh-pages/proposals/html-modules-explainer.md
   venues:
   - WHATWG
 HTML autofocus attribute overhaul:
@@ -879,8 +875,7 @@ Imperative Shadow DOM Distribution API:
   position: positive
   rationale: |
     The proposal is a relatively small addition to the existing Shadow DOM API and can make it easier to use Shadow DOM.
-  url:
-    https://github.com/w3c/webcomponents/blob/gh-pages/proposals/Imperative-Shadow-DOM-Distribution-API.md
+  url: https://github.com/w3c/webcomponents/blob/gh-pages/proposals/Imperative-Shadow-DOM-Distribution-API.md
   venues:
   - WHATWG
 Import Assertions:
@@ -1000,13 +995,11 @@ Lazy loading:
     Enabling images and iframes to be fetched at a later time, when the user is likely to look at them.
   id: loading-lazy-attr
   issue: 151
-  mdn:
-    https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading#images_and_iframes
+  mdn: https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading#images_and_iframes
   position: positive
   rationale: |
     As currently specified in HTML this is a reasonable addition to how images and iframes are fetched.
-  url:
-    https://html.spec.whatwg.org/multipage/urls-and-fetching.html#lazy-loading-attributes
+  url: https://html.spec.whatwg.org/multipage/urls-and-fetching.html#lazy-loading-attributes
   venues:
   - WHATWG
 Let 'localhost' be localhost.:
@@ -1018,8 +1011,7 @@ Let 'localhost' be localhost.:
   position: positive
   rationale: |
     The proposal, to the extent it applies to browsers, is to hardcode localhost to always resolve to a loopback address instead of invoking the resolver library to perform such translation. Since browsers (including Firefox) treat files hosted on localhost to be more privileged than remote content, this proposal seems to be a good belt-and-suspenders approach to prevent certain exploits.
-  url:
-    https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-let-localhost-be-localhost
+  url: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-let-localhost-be-localhost
   venues:
   - IETF
 Locale Extensions:
@@ -1226,8 +1218,7 @@ Periodic Background Synchronization:
   position: negative
   rationale: |
     We're concerned that this feature would allow users to be tracked across networks (leaking private information about location and IP address and how they change over time), and that it would allow script execution and resource consumption when it isn't clear to the user that they're interacting with the site.  We might reconsider this position given evidence that these concerns can be safely addressed, however, addressing them for periodic background sync appears substantially harder than doing so for one-off background sync.
-  url:
-    https://github.com/WICG/BackgroundSync/blob/master/explainers/periodicsync-explainer.md
+  url: https://github.com/WICG/BackgroundSync/blob/master/explainers/periodicsync-explainer.md
   venues:
   - Proposal
 Permissions:
@@ -1757,8 +1748,7 @@ UserActivation:
   position: positive
   rationale: |
     This API exposes the sticky activation and transient activation concepts which browsers use internally for, e.g., allowing popups. These concepts are useful for web apps as well.
-  url:
-    https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface
+  url: https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface
   venues:
   - WHATWG
 'Web Authentication: An API for accessing Public Key Credentials':
@@ -2080,8 +2070,7 @@ dialog element:
   position: positive
   rationale: |
     A high-level HTML feature for authors to achieve these use cases while getting a11y right seems useful, and we have an implementation.
-  url:
-    https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element
+  url: https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element
   venues:
   - WHATWG
 enterkeyhint attribute:
@@ -2116,8 +2105,7 @@ output attributes on `<input type=file>` element:
   position: neutral
   rationale: |
     While this seems like it could be a useful capability to expose, we'd rather see it exposed in a way that can be composed with other existing APIs, and we're concerned that there's a risk of runaway complexity through adding more and more features to it.
-  url:
-    https://discourse.wicg.io/t/proposal-native-media-optimization-and-basic-editing-support/4068
+  url: https://discourse.wicg.io/t/proposal-native-media-optimization-and-basic-editing-support/4068
   venues:
   - Proposal
 page-orientation descriptor:

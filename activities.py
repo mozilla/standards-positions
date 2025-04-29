@@ -15,6 +15,7 @@ class YAMLValidator:
         self.modified_data = None
         self.yaml = YAML()
         self.yaml.preserve_quotes = True
+        self.yaml.width = float("inf")  # prevent line breaks between key and value
 
     def load_yaml(self) -> CommentedMap:
         try:
