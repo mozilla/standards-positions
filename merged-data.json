@@ -10918,7 +10918,9 @@
     "issue": 1181,
     "position": null,
     "venues": [],
-    "concerns": [],
+    "concerns": [
+      "use cases"
+    ],
     "topics": [],
     "title": "The `interesttarget` attribute",
     "url": "https://github.com/whatwg/html/pull/11006",
