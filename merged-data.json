@@ -11391,5 +11391,19 @@
     "caniuse": "https://caniuse.com/?search=WebNN",
     "bug": null,
     "webkit": null
+  },
+  "1219": {
+    "issue": 1219,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Language Detector API",
+    "url": "https://webmachinelearning.github.io/translation-api/#language-detector-api",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
