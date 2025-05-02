@@ -11405,5 +11405,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1220": {
+    "issue": 1220,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "ToggleEvent source attribute",
+    "url": "https://github.com/whatwg/html/pull/11186",
+    "explainer": "https://github.com/whatwg/html/issues/9111",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
