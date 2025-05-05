@@ -9697,7 +9697,7 @@
   },
   "1058": {
     "issue": 1058,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [
@@ -11436,6 +11436,20 @@
     "mdn": null,
     "caniuse": null,
     "bug": null,
+    "webkit": null
+  },
+  "1222": {
+    "issue": 1222,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Ignore Letter Spacing in Cursive Scripts",
+    "url": "https://www.w3.org/TR/css-text-3/#cursive-tracking",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1342835",
     "webkit": null
   }
 }
