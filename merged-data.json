@@ -11371,12 +11371,12 @@
     "concerns": [],
     "topics": [],
     "title": "Add prefetchCache and prerenderCache to Clear-Site-Data header",
-    "url": null,
+    "url": "https://wicg.github.io/nav-speculation/prefetch.html",
     "explainer": "https://github.com/WICG/nav-speculation/blob/main/clear-site-data-integration.md",
     "mdn": null,
     "caniuse": null,
     "bug": null,
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/488"
   },
   "1215": {
     "issue": 1215,
