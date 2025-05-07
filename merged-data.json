@@ -11465,5 +11465,19 @@
     "caniuse": "https://caniuse.com/mdn-api_domexception",
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/468"
+  },
+  "1224": {
+    "issue": 1224,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[css-variables-1] Short-circuiting var(), attr(), env()",
+    "url": "https://drafts.csswg.org/css-variables/#replace-a-var-function",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/489"
   }
 }
