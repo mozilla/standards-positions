@@ -11451,5 +11451,19 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1342835",
     "webkit": null
+  },
+  "1223": {
+    "issue": 1223,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Updating QuotaExceededError to a DOMException derived interface",
+    "url": null,
+    "explainer": null,
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/DOMException#quotaexceedederror",
+    "caniuse": "https://caniuse.com/mdn-api_domexception",
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/468"
   }
 }
