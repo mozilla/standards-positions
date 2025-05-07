@@ -11479,5 +11479,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/489"
+  },
+  "1225": {
+    "issue": 1225,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Add `is_top_level` and `visibility_state` fields to crash report bodies",
+    "url": "https://github.com/WICG/crash-reporting/pull/23",
+    "explainer": "https://github.com/WICG/crash-reporting/pull/23",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
