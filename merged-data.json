@@ -11509,5 +11509,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/491"
+  },
+  "1227": {
+    "issue": 1227,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Extended lifetime shared workers",
+    "url": "https://github.com/whatwg/html/issues/10997",
+    "explainer": "https://gist.github.com/domenic/c5bd38339f33b49120ae11b3b4af5b9b#file-1-explainer-md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/492"
   }
 }
