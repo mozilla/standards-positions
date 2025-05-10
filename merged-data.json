@@ -11537,5 +11537,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/493"
+  },
+  "1229": {
+    "issue": 1229,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "env(preferred-text-scale)",
+    "url": "https://drafts.csswg.org/css-env-1/#text-zoom",
+    "explainer": "https://docs.google.com/document/d/18S5Y7fWkJBooBLHamaUsSbb8grjRUSelHTT4eOcPyJY/edit?tab=t.0",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
