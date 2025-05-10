@@ -11523,5 +11523,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/492"
+  },
+  "1228": {
+    "issue": 1228,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Send Sec-Purpose header for link type prefetch (rel=prefetch)",
+    "url": "https://github.com/whatwg/html/issues/11294",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/493"
   }
 }
