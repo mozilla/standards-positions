@@ -4129,7 +4129,7 @@
     "explainer": "https://github.com/w3c/editing/blob/gh-pages/docs/clipboard-pickling/explainer.md",
     "mdn": null,
     "caniuse": null,
-    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=860857",
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1956304",
     "webkit": null
   },
   "526": {
@@ -7759,7 +7759,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "Incremental Font Transfer",
     "url": "https://www.w3.org/TR/IFT/",
     "explainer": null,
