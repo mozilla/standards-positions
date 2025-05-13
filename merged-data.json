@@ -11569,5 +11569,19 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1919718",
     "webkit": null
+  },
+  "1231": {
+    "issue": 1231,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Cache sharing for extremely-pervasive scripts",
+    "url": "https://chromestatus.com/feature/5202380930678784",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
