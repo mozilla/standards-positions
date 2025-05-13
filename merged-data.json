@@ -11553,5 +11553,21 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1230": {
+    "issue": 1230,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [
+      "HTML"
+    ],
+    "title": "`colorspace` and `alpha` attributes on `<input type=\"color\">`",
+    "url": "https://html.spec.whatwg.org/#color-state-(type=color",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1919718",
+    "webkit": null
   }
 }
