@@ -8027,7 +8027,9 @@
     "position": "positive",
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Extending Storage Access API (SAA) to non-cookie storage",
     "url": "https://privacycg.github.io/saa-non-cookie-storage/",
     "explainer": null,
@@ -9233,7 +9235,9 @@
     "position": "positive",
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS interpolate-size property and calc-size() function",
     "url": "https://drafts.csswg.org/css-values-5/#calc-size",
     "explainer": "https://github.com/w3c/csswg-drafts/blob/main/css-values-5/calc-size-explainer.md",
@@ -11371,9 +11375,13 @@
   "1214": {
     "issue": 1214,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C CG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTTP"
+    ],
     "title": "Add prefetchCache and prerenderCache to Clear-Site-Data header",
     "url": "https://wicg.github.io/nav-speculation/prefetch.html",
     "explainer": "https://github.com/WICG/nav-speculation/blob/main/clear-site-data-integration.md",
