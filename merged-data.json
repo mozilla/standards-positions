@@ -11605,5 +11605,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/496"
+  },
+  "1233": {
+    "issue": 1233,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "WebCodecs VideoFrame Metadata Registry \u2013 rtpTimestamp field",
+    "url": null,
+    "explainer": "https://github.com/GoogleChrome/chromium-dashboard/issues/5009",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
