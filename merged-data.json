@@ -10318,9 +10318,13 @@
   "1103": {
     "issue": 1103,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "[CSS Pseudo-4] CSS highlight pseudo ::search-text",
     "url": "https://drafts.csswg.org/css-pseudo-4/#selectordef-search-text",
     "explainer": "https://github.com/Igalia/explainers/blob/main/css/find-in-page/README.md",
