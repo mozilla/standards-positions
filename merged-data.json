@@ -3515,7 +3515,9 @@
       "W3C"
     ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS spelling and grammar features",
     "url": null,
     "explainer": null,
@@ -4390,7 +4392,9 @@
       "W3C"
     ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS highlight pseudo system",
     "url": "https://drafts.csswg.org/css-pseudo-4/#highlight-pseudos",
     "explainer": null,
