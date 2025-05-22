@@ -787,6 +787,10 @@ Global Privacy Control (GPC):
   url: https://privacycg.github.io/gpc-spec/
   venues:
   - Proposal
+HTML <a> ping attribute:
+  issue: 1212
+  rationale: |
+    The `ping` attribute provides a more efficient alternative to redirect-based hyperlink auditing. As a regular fetch request, similar to `sendBeacon()`, existing cross-site tracking protections apply, such as partitioned requests and third-party cookie blocking.
 HTML Imports:
   caniuse: https://caniuse.com/imports
   description: |
