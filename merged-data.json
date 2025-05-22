@@ -11627,5 +11627,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1234": {
+    "issue": 1234,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "getComputedStyle() returns true visited colors",
+    "url": null,
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/498"
   }
 }
