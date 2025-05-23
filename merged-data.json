@@ -11352,7 +11352,7 @@
   },
   "1212": {
     "issue": 1212,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [
@@ -11564,11 +11564,11 @@
     "topics": [],
     "title": "env(preferred-text-scale)",
     "url": "https://drafts.csswg.org/css-env-1/#text-zoom",
-    "explainer": "https://docs.google.com/document/d/18S5Y7fWkJBooBLHamaUsSbb8grjRUSelHTT4eOcPyJY/edit?tab=t.0",
+    "explainer": "https://davidsgrogan.github.io/env-explainer.html",
     "mdn": null,
     "caniuse": null,
     "bug": null,
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/499"
   },
   "1230": {
     "issue": 1230,
@@ -11633,7 +11633,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "getComputedStyle() returns true visited colors",
     "url": null,
     "explainer": null,
