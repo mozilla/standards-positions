@@ -9827,7 +9827,7 @@
   },
   "1067": {
     "issue": 1067,
-    "position": "defer",
+    "position": "negative",
     "venues": [
       "W3C CG"
     ],
