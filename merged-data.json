@@ -11564,7 +11564,7 @@
     "topics": [],
     "title": "env(preferred-text-scale)",
     "url": "https://drafts.csswg.org/css-env-1/#text-zoom",
-    "explainer": "https://davidsgrogan.github.io/env-explainer.html",
+    "explainer": "https://github.com/w3c/csswg-drafts/blob/main/css-env-1/explainers/env-preferred-text-scale.md",
     "mdn": null,
     "caniuse": null,
     "bug": null,
