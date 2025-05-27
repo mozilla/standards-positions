@@ -11572,7 +11572,7 @@
   },
   "1230": {
     "issue": 1230,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [
@@ -11630,7 +11630,7 @@
   },
   "1234": {
     "issue": 1234,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [
