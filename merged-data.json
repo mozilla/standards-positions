@@ -11643,5 +11643,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/498"
+  },
+  "1236": {
+    "issue": 1236,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS Anchored Fallback Container Queries",
+    "url": "https://github.com/w3c/csswg-drafts/issues/8171",
+    "explainer": "https://github.com/w3c/csswg-drafts/blob/main/css-anchor-position-1/anchored_container_query.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
