@@ -11657,5 +11657,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1237": {
+    "issue": 1237,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "ScrollIntoViewOptions container attribute",
+    "url": "https://drafts.csswg.org/cssom-view/#dictdef-scrollintoviewoptions",
+    "explainer": "https://github.com/w3c/csswg-drafts/issues/9452",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/502"
   }
 }
