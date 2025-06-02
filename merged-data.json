@@ -9371,8 +9371,8 @@
     "concerns": [],
     "topics": [],
     "title": "Reference Target for Cross-Root ARIA",
-    "url": "https://github.com/WICG/aom/blob/gh-pages/reference-target-explainer.md",
-    "explainer": "https://github.com/WICG/aom/blob/gh-pages/reference-target-explainer.md",
+    "url": null,
+    "explainer": "https://github.com/WICG/webcomponents/blob/gh-pages/proposals/reference-target-explainer.md",
     "mdn": null,
     "caniuse": null,
     "bug": null,
@@ -11663,7 +11663,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "ScrollIntoViewOptions container attribute",
     "url": "https://drafts.csswg.org/cssom-view/#dictdef-scrollintoviewoptions",
     "explainer": "https://github.com/w3c/csswg-drafts/issues/9452",
