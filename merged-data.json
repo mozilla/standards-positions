@@ -11673,5 +11673,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/502"
+  },
+  "1239": {
+    "issue": 1239,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Web Authentication Immediate Mediation",
+    "url": "https://github.com/w3c/webauthn/pull/2291",
+    "explainer": "https://github.com/w3c/webauthn/wiki/Explainer:-WebAuthn-immediate-mediation",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/504"
   }
 }
