@@ -11351,7 +11351,6 @@
     "webkit": null
   },
   "1212": {
-    "issue": 1212,
     "position": "positive",
     "venues": [],
     "concerns": [],
@@ -11364,7 +11363,8 @@
     "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement/ping",
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=951104",
-    "webkit": null
+    "webkit": null,
+    "rationale": "The `ping` attribute provides a more efficient and privacy-friendly alternative to redirect-based hyperlink auditing. As a regular fetch request, similar to `sendBeacon()`, existing cross-site tracking protections apply, such as partitioned requests and third-party cookie blocking."
   },
   "1213": {
     "issue": 1213,
