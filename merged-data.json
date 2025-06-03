@@ -10821,11 +10821,11 @@
       "API"
     ],
     "title": "Navigation API: deferred commit",
-    "url": null,
-    "explainer": "https://github.com/WICG/navigation-api/blob/main/README.md#deferred-commit",
+    "url": "https://github.com/whatwg/html/pull/10919",
+    "explainer": "https://github.com/WICG/navigation-api/blob/main/README.md#precommit-handlers",
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1970123",
     "webkit": "https://github.com/webKit/standards-positions/issues/449"
   },
   "1171": {
