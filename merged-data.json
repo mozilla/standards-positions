@@ -11687,5 +11687,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/504"
+  },
+  "1240": {
+    "issue": 1240,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CORS readability for no-cors requests",
+    "url": "https://github.com/whatwg/html/issues/8143#issuecomment-2920820484",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/505"
   }
 }
