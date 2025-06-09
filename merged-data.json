@@ -11701,5 +11701,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/505"
+  },
+  "1241": {
+    "issue": 1241,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "echo cancellation mode",
+    "url": "https://www.w3.org/TR/mediacapture-streams/#def-constraint-echoCancellation",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/507"
   }
 }
