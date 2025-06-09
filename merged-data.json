@@ -11348,7 +11348,7 @@
     "mdn": null,
     "caniuse": "https://github.com/Fyrd/caniuse/issues/5974",
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1715487",
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/484"
   },
   "1212": {
     "position": "positive",
@@ -11474,7 +11474,7 @@
   },
   "1223": {
     "issue": 1223,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -11649,7 +11649,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS Anchored Fallback Container Queries",
     "url": "https://github.com/w3c/csswg-drafts/issues/8171",
     "explainer": "https://github.com/w3c/csswg-drafts/blob/main/css-anchor-position-1/anchored_container_query.md",
