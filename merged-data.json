@@ -10941,7 +10941,7 @@
       "use cases"
     ],
     "topics": [],
-    "title": "The `interesttarget` attribute",
+    "title": "The `interestfor` attribute",
     "url": "https://github.com/whatwg/html/pull/11006",
     "explainer": "https://open-ui.org/components/interest-invokers.explainer/",
     "mdn": null,
