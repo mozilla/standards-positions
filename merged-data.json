@@ -11717,5 +11717,33 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/507"
+  },
+  "1242": {
+    "issue": 1242,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[SVG] Support width and height as presentation attributes on nested `svg` elements",
+    "url": null,
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1243": {
+    "issue": 1243,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[SVG] Support width and height as presentation attributes on nested svg elements",
+    "url": "https://svgwg.org/svg2-draft/geometry.html#Sizing",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/509"
   }
 }
