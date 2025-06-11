@@ -11745,5 +11745,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/509"
+  },
+  "1244": {
+    "issue": 1244,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "restrictOwnAudio for getDisplayMedia",
+    "url": "https://w3c.github.io/mediacapture-screen-share/#dfn-restrictownaudio",
+    "explainer": "https://github.com/guidou/mediacapture-screen-share/blob/gh-pages/explainer-restrictOwnAudio.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/511"
   }
 }
