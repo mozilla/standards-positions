@@ -11738,7 +11738,7 @@
     "venues": [],
     "concerns": [],
     "topics": [],
-    "title": "[SVG] Support width and height as presentation attributes on nested svg elements",
+    "title": "[SVG] Support width and height as presentation attributes on nested <svg> elements",
     "url": "https://svgwg.org/svg2-draft/geometry.html#Sizing",
     "explainer": null,
     "mdn": null,
