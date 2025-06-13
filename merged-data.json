@@ -3170,12 +3170,14 @@
   },
   "424": {
     "issue": 424,
-    "position": null,
+    "position": "positive",
     "venues": [
-      "Proposal"
+      "WHATWG"
     ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "Scoped Custom Elements Registries",
     "url": "https://github.com/WICG/webcomponents/blob/gh-pages/proposals/Scoped-Custom-Element-Registries.md",
     "explainer": null,
@@ -11773,5 +11775,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1249": {
+    "issue": 1249,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Add `getSelectionBoundingClientRect()` for `<textarea>` and `<input>` elements",
+    "url": "https://github.com/whatwg/html/issues/10614",
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/GetSelectionBoundingClientRect/explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/512"
   }
 }
