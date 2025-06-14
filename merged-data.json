@@ -11782,12 +11782,26 @@
     "venues": [],
     "concerns": [],
     "topics": [],
-    "title": "Add `getSelectionBoundingClientRect()` for `<textarea>` and `<input>` elements",
+    "title": "getSelectionBoundingClientRect()",
     "url": "https://github.com/whatwg/html/issues/10614",
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/GetSelectionBoundingClientRect/explainer.md",
     "mdn": null,
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/512"
+  },
+  "1250": {
+    "issue": 1250,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Customized built-in elements via elementInternals.type",
+    "url": "https://github.com/whatwg/html/issues/11061",
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/ElementInternalsType/explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/513"
   }
 }
