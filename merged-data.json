@@ -11831,5 +11831,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1253": {
+    "issue": 1253,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS counter() and counters() in alt text of `content` property",
+    "url": "https://drafts.csswg.org/css-content/#content-property",
+    "explainer": null,
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/content",
+    "caniuse": "https://caniuse.com/?search=content",
+    "bug": null,
+    "webkit": null
   }
 }
