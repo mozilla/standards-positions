@@ -11803,5 +11803,33 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/513"
+  },
+  "1251": {
+    "issue": 1251,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS scroll-target-group property",
+    "url": "https://drafts.csswg.org/css-overflow-5/#scroll-target-group",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1252": {
+    "issue": 1252,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS typed arithmetic",
+    "url": "https://www.w3.org/TR/css-values-4/#calc-type-checking",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
