@@ -11845,5 +11845,19 @@
     "caniuse": "https://caniuse.com/?search=content",
     "bug": null,
     "webkit": null
+  },
+  "1254": {
+    "issue": 1254,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "windowAudio option for getDisplayMedia()",
+    "url": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions-windowaudio",
+    "explainer": "https://github.com/drkron/explainers/blob/main/windowAudio_Explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/516"
   }
 }
