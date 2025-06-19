@@ -11859,5 +11859,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/516"
+  },
+  "1255": {
+    "issue": 1255,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Web Speech API Contextual Biasing",
+    "url": "https://webaudio.github.io/web-speech-api/#speechreco-phrase",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/517"
   }
 }
