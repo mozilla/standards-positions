@@ -11873,5 +11873,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/517"
+  },
+  "1256": {
+    "issue": 1256,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "__Http- and __HostHttp- cookie prefixes",
+    "url": "https://github.com/httpwg/http-extensions/pull/3110",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/518"
   }
 }
