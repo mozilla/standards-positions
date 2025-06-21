@@ -11887,5 +11887,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/518"
+  },
+  "1257": {
+    "issue": 1257,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS text-size-adjust property (un-prefixed)",
+    "url": null,
+    "explainer": null,
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust#specifications",
+    "caniuse": "https://caniuse.com/text-size-adjust",
+    "bug": null,
+    "webkit": null
   }
 }
