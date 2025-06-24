@@ -11901,5 +11901,19 @@
     "caniuse": "https://caniuse.com/text-size-adjust",
     "bug": null,
     "webkit": null
+  },
+  "1258": {
+    "issue": 1258,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Expose unprintable areas via CSS",
+    "url": "https://github.com/w3c/csswg-drafts/issues/11395",
+    "explainer": "https://github.com/mstensho/unprintable-areas",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/519"
   }
 }
