@@ -11893,7 +11893,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS text-size-adjust property (un-prefixed)",
     "url": null,
     "explainer": null,
@@ -11907,7 +11909,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "Expose unprintable areas via CSS",
     "url": "https://github.com/w3c/csswg-drafts/issues/11395",
     "explainer": "https://github.com/mstensho/unprintable-areas",
@@ -11921,7 +11925,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTTP"
+    ],
     "title": "Remove non-standard prefetch headers like X-Moz for Sec-Purpose for prefetches, prerenders, etc.",
     "url": "https://wicg.github.io/nav-speculation/prerendering.html#interaction-with-fetch",
     "explainer": null,
@@ -11929,5 +11935,33 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1260": {
+    "issue": 1260,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "an Emerging Web Specification: Local Network Access",
+    "url": null,
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1261": {
+    "issue": 1261,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Add IndexedDB getAllRecords() method and update getAll()/getAllKeys() to support direction option",
+    "url": "https://github.com/w3c/IndexedDB/pull/461",
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/IndexedDbGetAllEntries/explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/521"
   }
 }
