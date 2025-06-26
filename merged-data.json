@@ -11915,5 +11915,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/519"
+  },
+  "1259": {
+    "issue": 1259,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Remove non-standard prefetch headers like X-Moz for Sec-Purpose for prefetches, prerenders, etc.",
+    "url": "https://wicg.github.io/nav-speculation/prerendering.html#interaction-with-fetch",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
