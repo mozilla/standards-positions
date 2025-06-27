@@ -11922,7 +11922,7 @@
   },
   "1259": {
     "issue": 1259,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [
@@ -11977,5 +11977,21 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1263": {
+    "issue": 1263,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [
+      "HTML"
+    ],
+    "title": "Headingoffset & Headingreset attributes",
+    "url": "https://github.com/whatwg/html/pull/11086",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1974383",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/523"
   }
 }
