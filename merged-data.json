@@ -11963,5 +11963,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/521"
+  },
+  "1262": {
+    "issue": 1262,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[SVG] Support for width and height as css attributes on <use> element",
+    "url": "https://www.w3.org/TR/SVG2/struct.html#UseElement",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
