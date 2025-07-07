@@ -11993,5 +11993,19 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1974383",
     "webkit": "https://github.com/WebKit/standards-positions/issues/523"
+  },
+  "1267": {
+    "issue": 1267,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[css-borders-4] CSS Corner sizing side shorthands: `border-*-radius`",
+    "url": "https://drafts.csswg.org/css-borders-4/#corner-sizing-side-shorthands",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/524"
   }
 }
