@@ -12021,5 +12021,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/526"
+  },
+  "1269": {
+    "issue": 1269,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CONNECT-TCP",
+    "url": "https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
