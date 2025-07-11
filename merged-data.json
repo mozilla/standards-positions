@@ -12035,5 +12035,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1270": {
+    "issue": 1270,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Range syntax for style container queries and if()",
+    "url": "https://drafts.csswg.org/css-conditional-5/#typedef-style-range",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/527"
   }
 }
