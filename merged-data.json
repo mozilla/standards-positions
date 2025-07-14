@@ -11952,7 +11952,7 @@
   },
   "1261": {
     "issue": 1261,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -12049,5 +12049,47 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/527"
+  },
+  "1271": {
+    "issue": 1271,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "window.crashReport key-value API",
+    "url": null,
+    "explainer": "https://github.com/WICG/crash-reporting/blob/gh-pages/crashReport-explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1272": {
+    "issue": 1272,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CONNECT-UDP",
+    "url": "https://datatracker.ietf.org/doc/html/rfc9298",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1273": {
+    "issue": 1273,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Probabilistic Reveal Tokens",
+    "url": null,
+    "explainer": "https://github.com/GoogleChrome/ip-protection/blob/main/prt_explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
