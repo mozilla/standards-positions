@@ -12091,5 +12091,33 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1274": {
+    "issue": 1274,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Change definition of select element list box and drop-down box rendering",
+    "url": "https://github.com/whatwg/html/pull/11460",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/532"
+  },
+  "1275": {
+    "issue": 1275,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "@custom-media",
+    "url": "https://www.w3.org/TR/mediaqueries-5/#custom-mq",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/533"
   }
 }
