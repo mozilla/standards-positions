@@ -12126,7 +12126,7 @@
     "venues": [],
     "concerns": [],
     "topics": [],
-    "title": "Support \"write\"-only permission mode in FileSystemAccess API",
+    "title": "Support \"write\"-only permission mode in FileSystem/FileSystemAccess API",
     "url": null,
     "explainer": "https://github.com/WICG/file-system-access/pull/462/files",
     "mdn": "https://github.com/mdn/content/pull/40535",
