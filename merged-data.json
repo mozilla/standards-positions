@@ -12119,5 +12119,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/533"
+  },
+  "1276": {
+    "issue": 1276,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Support \"write\"-only permission mode in FileSystemAccess API",
+    "url": null,
+    "explainer": "https://github.com/WICG/file-system-access/pull/462/files",
+    "mdn": "https://github.com/mdn/content/pull/40535",
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/534"
   }
 }
