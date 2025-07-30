@@ -12147,5 +12147,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1278": {
+    "issue": 1278,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "css-view-transitions-2: adding document.activeViewTransition",
+    "url": "https://github.com/w3c/csswg-drafts/issues/12407",
+    "explainer": "https://github.com/WICG/view-transitions/blob/main/active-view-transition.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/536"
   }
 }
