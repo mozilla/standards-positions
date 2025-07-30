@@ -12133,5 +12133,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/534"
+  },
+  "1277": {
+    "issue": 1277,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Extend CSP script-src hashes",
+    "url": "https://github.com/w3c/webappsec-csp/compare/main...carlosjoan91:webappsec-csp:main",
+    "explainer": "https://github.com/explainers-by-googlers/script-src-v2/blob/main/README.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
