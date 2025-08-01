@@ -12161,5 +12161,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/536"
+  },
+  "1279": {
+    "issue": 1279,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Selective Clipboard Format Read",
+    "url": "https://www.w3.org/TR/clipboard-apis/#dom-clipboard-read",
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/ClipboardAPI/SelectiveClipboardFormatRead/explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
