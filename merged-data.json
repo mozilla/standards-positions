@@ -5708,7 +5708,9 @@
     "issue": 670,
     "position": null,
     "venues": [],
-    "concerns": [],
+    "concerns": [
+      "device independence"
+    ],
     "topics": [],
     "title": "Document Picture in Picture API",
     "url": null,
@@ -12175,5 +12177,33 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1280": {
+    "issue": 1280,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "An `Origin` Object",
+    "url": "https://mikewest.github.io/origin-api/",
+    "explainer": "https://github.com/mikewest/origin-api/",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/538"
+  },
+  "1281": {
+    "issue": 1281,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Origin-Bound Cookies",
+    "url": "https://mikewest.github.io/cookie-incrementalism/draft-west-cookie-incrementalism.html#name-origin-bound-cookies",
+    "explainer": "https://github.com/sbingler/Origin-Bound-Cookies",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/539"
   }
 }
