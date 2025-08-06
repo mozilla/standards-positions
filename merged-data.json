@@ -12205,5 +12205,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/539"
+  },
+  "1282": {
+    "issue": 1282,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Modern Algorithms in WebCrypto",
+    "url": "https://twiss.github.io/webcrypto-modern-algos/",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1981476",
+    "webkit": null
   }
 }
