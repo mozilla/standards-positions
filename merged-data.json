@@ -12077,7 +12077,7 @@
     "explainer": null,
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1835613",
     "webkit": null
   },
   "1273": {
