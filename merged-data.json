@@ -10632,7 +10632,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS `shape()` function",
     "url": "https://drafts.csswg.org/css-shapes-2/#shape-function",
     "explainer": "https://drafts.csswg.org/css-shapes-2/#shape-function",
@@ -10850,7 +10852,7 @@
   },
   "1173": {
     "issue": 1173,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -11506,7 +11508,7 @@
   },
   "1225": {
     "issue": 1225,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
