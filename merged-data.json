@@ -11100,13 +11100,14 @@
   },
   "1194": {
     "issue": 1194,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
     "concerns": [],
     "topics": [
-      "CSS"
+      "CSS",
+      "HTML"
     ],
     "title": "CSS Values and Units: sibling-count() and sibling-index()",
     "url": "https://drafts.csswg.org/css-values-5/#tree-counting",
