@@ -12222,5 +12222,19 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1981476",
     "webkit": null
+  },
+  "1283": {
+    "issue": 1283,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Inline Integrity",
+    "url": "https://mikewest.github.io/inline-integrity/",
+    "explainer": "https://github.com/mikewest/inline-integrity",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
