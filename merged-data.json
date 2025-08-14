@@ -12236,5 +12236,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1284": {
+    "issue": 1284,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "ui-serif, ui-sans-serif, ui-monospace and ui-rounded values for font-family",
+    "url": "https://drafts.csswg.org/css-fonts-4/",
+    "explainer": null,
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family",
+    "caniuse": "https://caniuse.com/extended-system-fonts",
+    "bug": null,
+    "webkit": null
   }
 }
