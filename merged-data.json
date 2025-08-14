@@ -12184,7 +12184,9 @@
   "1280": {
     "issue": 1280,
     "position": null,
-    "venues": [],
+    "venues": [
+      "Proposal"
+    ],
     "concerns": [],
     "topics": [],
     "title": "An `Origin` Object",
@@ -12198,7 +12200,9 @@
   "1281": {
     "issue": 1281,
     "position": null,
-    "venues": [],
+    "venues": [
+      "Proposal"
+    ],
     "concerns": [],
     "topics": [],
     "title": "Origin-Bound Cookies",
@@ -12211,12 +12215,21 @@
   },
   "1282": {
     "issue": 1282,
-    "position": null,
-    "venues": [],
-    "concerns": [],
+    "position": "neutral",
+    "venues": [
+      "W3C CG"
+    ],
+    "concerns": [
+      "compatibility",
+      "venue",
+      "interoperability",
+      "performance",
+      "usability",
+      "API design"
+    ],
     "topics": [],
     "title": "Modern Algorithms in WebCrypto",
-    "url": "https://twiss.github.io/webcrypto-modern-algos/",
+    "url": "https://wicg.github.io/webcrypto-modern-algos/",
     "explainer": null,
     "mdn": null,
     "caniuse": null,
@@ -12226,7 +12239,9 @@
   "1283": {
     "issue": 1283,
     "position": null,
-    "venues": [],
+    "venues": [
+      "Proposal"
+    ],
     "concerns": [],
     "topics": [],
     "title": "Inline Integrity",
@@ -12242,7 +12257,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "ui-serif, ui-sans-serif, ui-monospace and ui-rounded values for font-family",
     "url": "https://drafts.csswg.org/css-fonts-4/",
     "explainer": null,
