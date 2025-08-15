@@ -12169,8 +12169,10 @@
   },
   "1279": {
     "issue": 1279,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
     "topics": [],
     "title": "Selective Clipboard Format Read",
