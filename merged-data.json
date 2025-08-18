@@ -708,12 +708,12 @@
   "94": {
     "position": "positive",
     "venues": [
-      "Proposal"
+      "WHATWG"
     ],
     "concerns": [],
     "topics": [],
     "title": "Cookie-Store API",
-    "url": "https://wicg.github.io/cookie-store/",
+    "url": "https://cookiestore.spec.whatwg.org/",
     "explainer": null,
     "mdn": null,
     "caniuse": "https://caniuse.com/cookie-store-api",
