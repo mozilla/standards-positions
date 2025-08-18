@@ -11253,7 +11253,7 @@
   },
   "1204": {
     "issue": 1204,
-    "position": null,
+    "position": "neutral",
     "venues": [],
     "concerns": [
       "integration"
