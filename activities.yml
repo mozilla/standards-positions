@@ -482,6 +482,14 @@ Contact Picker API:
   url: https://w3c.github.io/webappsec-cspee/
   venues:
   - W3C
+Cookie Http- prefixes:
+  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1974979
+  description: |
+    __Http- and __Host-Http- cookie prefixes
+  id: cookie-http-prefixes
+  issue: 1256
+  rationale: |
+    This specification introduces two new cookie prefixes to improve the distinction of cookies set by the server.
 Cookie Store API:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1475599
   caniuse: https://caniuse.com/cookie-store-api
