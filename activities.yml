@@ -492,9 +492,9 @@ Cookie Store API:
   position: positive
   rationale: |
     This API provides better access to cookies. We are positive for a subset of this API which only exposes the same information available through document.cookie. See [WICG/cookie-store issue #241](https://github.com/WICG/cookie-store/issues/241).
-  url: https://wicg.github.io/cookie-store/
+  url: https://cookiestore.spec.whatwg.org/
   venues:
-  - Proposal
+  - WHATWG
 Cookies Having Independent Partitioned State:
   description: |
     Defines the Partitioned cookie attribute. This attribute will indicate to user agents that these cross-site cookies should only be available in the same top-level context that the cookie was created in.
