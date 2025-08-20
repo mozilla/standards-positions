@@ -12285,5 +12285,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1288": {
+    "issue": 1288,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "the \"Geolocation element\" (part of PEPC)",
+    "url": null,
+    "explainer": "https://github.com/WICG/PEPC/blob/main/geolocation_explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
