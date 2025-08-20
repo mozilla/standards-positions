@@ -12271,5 +12271,19 @@
     "caniuse": "https://caniuse.com/extended-system-fonts",
     "bug": null,
     "webkit": null
+  },
+  "1287": {
+    "issue": 1287,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Requesting Mozilla's position on removal of XSLT from HTML living standard",
+    "url": "https://github.com/whatwg/html/issues/11523",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
