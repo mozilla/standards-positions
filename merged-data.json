@@ -5706,7 +5706,7 @@
   },
   "670": {
     "issue": 670,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [
       "device independence"
