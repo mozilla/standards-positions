@@ -12299,5 +12299,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1289": {
+    "issue": 1289,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "FormControlRange - Live ranges for <input> and <textarea>",
+    "url": "https://github.com/whatwg/html/issues/11478",
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/FormControlRange/explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/541"
   }
 }
