@@ -12310,5 +12310,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/541"
+  },
+  "1290": {
+    "issue": 1290,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CanvasCompositing globalHDRHeadroom attribute",
+    "url": "https://github.com/ccameron-chromium/ColorWeb-CG/blob/master/canvas2d_hdr_headroom.md",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/542"
   }
 }
