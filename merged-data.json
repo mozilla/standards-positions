@@ -9554,14 +9554,11 @@
   },
   "1049": {
     "issue": 1049,
-    "position": "defer",
+    "position": null,
     "venues": [
       "W3C"
     ],
-    "concerns": [
-      "complexity",
-      "API design"
-    ],
+    "concerns": [],
     "topics": [
       "API"
     ],
