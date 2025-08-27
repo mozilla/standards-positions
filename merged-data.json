@@ -1888,7 +1888,8 @@
       "W3C"
     ],
     "concerns": [
-      "compatibility"
+      "compatibility",
+      "accessibility"
     ],
     "topics": [],
     "title": "EditContext",
@@ -12271,9 +12272,11 @@
   },
   "1287": {
     "issue": 1287,
-    "position": null,
+    "position": "positive",
     "venues": [],
-    "concerns": [],
+    "concerns": [
+      "compatibility"
+    ],
     "topics": [],
     "title": "Requesting Mozilla's position on removal of XSLT from HTML living standard",
     "url": "https://github.com/whatwg/html/issues/11523",
