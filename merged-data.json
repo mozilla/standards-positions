@@ -12327,5 +12327,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/542"
+  },
+  "1291": {
+    "issue": 1291,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": ":target-before and :target-after pseudo-classes",
+    "url": "https://drafts.csswg.org/css-overflow-5/#active-before-after-scroll-markers",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
