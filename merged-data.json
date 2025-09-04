@@ -12099,10 +12099,12 @@
   },
   "1274": {
     "issue": 1274,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "Change definition of select element list box and drop-down box rendering",
     "url": "https://github.com/whatwg/html/pull/11460",
     "explainer": null,
