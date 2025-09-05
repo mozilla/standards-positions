@@ -497,7 +497,7 @@
     "explainer": null,
     "mdn": null,
     "caniuse": "https://caniuse.com/picture-in-picture",
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1463402",
     "webkit": null,
     "description": "This specification intends to provide APIs to allow websites to create a floating video window always on top of other windows so that users may continue consuming media while they interact with other content sites, or applications on their device.",
     "id": "picture-in-picture",
