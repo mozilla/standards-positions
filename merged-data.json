@@ -12343,5 +12343,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1292": {
+    "issue": 1292,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Change focus delegate for dialog to use flat tree to find focusable descendant",
+    "url": "https://github.com/whatwg/html/pull/11088",
+    "explainer": "https://github.com/whatwg/html/pull/11088",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
