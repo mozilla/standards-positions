@@ -8286,24 +8286,12 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "Animating font-palette",
     "url": "https://drafts.csswg.org/css-fonts-4/#font-palette-prop",
     "explainer": "https://docs.google.com/document/d/1XMTrKH003KBOes6hxzI-3E7LTwp5YwFC-rnzoFpFrfw/edit?usp=sharing",
-    "mdn": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "926": {
-    "issue": 926,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Opener Protections",
-    "url": "https://arichiv.github.io/opener-storage-partitioning/",
-    "explainer": null,
     "mdn": null,
     "caniuse": null,
     "bug": null,
@@ -8346,7 +8334,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "WebDriver"
+    ],
     "title": "WebDriver-BiDi extension module: Browser Permissions API",
     "url": "https://github.com/w3c/permissions/pull/425",
     "explainer": "https://github.com/w3c/webdriver-bidi/issues/587",
@@ -8427,7 +8417,7 @@
   },
   "939": {
     "issue": 939,
-    "position": null,
+    "position": "defer",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -8469,10 +8459,12 @@
   },
   "943": {
     "issue": 943,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "WebGL drawingBufferStorage",
     "url": "https://github.com/KhronosGroup/WebGL/pull/3222",
     "explainer": null,
@@ -8520,7 +8512,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "WebGPU: Read-write storage textures",
     "url": null,
     "explainer": null,
@@ -8534,7 +8528,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "WGSL: Packed 4x8 Integer Dot Product (DP4)",
     "url": null,
     "explainer": null,
@@ -8548,7 +8544,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "WGSL: Pointer Composite Access",
     "url": null,
     "explainer": null,
@@ -8562,7 +8560,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "WGSL: Unrestricted Pointer Parameters",
     "url": null,
     "explainer": null,
@@ -8590,7 +8590,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "WebGPU: Separate Read-only Depth-stencil",
     "url": null,
     "explainer": null,
@@ -8719,10 +8721,12 @@
   },
   "971": {
     "issue": 971,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "WebGPU: ServiceWorker and SharedWorker support",
     "url": "https://gpuweb.github.io/gpuweb/#navigator-gpu",
     "explainer": "https://github.com/gpuweb/gpuweb/issues/4197",
@@ -9761,7 +9765,7 @@
   },
   "1061": {
     "issue": 1061,
-    "position": null,
+    "position": "negative",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -10075,10 +10079,12 @@
   },
   "1084": {
     "issue": 1084,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTTP"
+    ],
     "title": "Storage Access Headers",
     "url": "https://privacycg.github.io/storage-access-headers/",
     "explainer": "https://github.com/privacycg/storage-access-headers",
@@ -10691,7 +10697,7 @@
   },
   "1158": {
     "issue": 1158,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -11482,7 +11488,9 @@
     "position": "positive",
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Updating QuotaExceededError to a DOMException derived interface",
     "url": null,
     "explainer": null,
@@ -11493,10 +11501,12 @@
   },
   "1224": {
     "issue": 1224,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "[css-variables-1] Short-circuiting var(), attr(), env()",
     "url": "https://drafts.csswg.org/css-variables/#replace-a-var-function",
     "explainer": null,
@@ -11566,7 +11576,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "env(preferred-text-scale)",
     "url": "https://drafts.csswg.org/css-env-1/#text-zoom",
     "explainer": "https://github.com/w3c/csswg-drafts/blob/main/css-env-1/explainers/env-preferred-text-scale.md",
@@ -11667,7 +11679,7 @@
   },
   "1237": {
     "issue": 1237,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [
@@ -11985,7 +11997,7 @@
   },
   "1263": {
     "issue": 1263,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [
@@ -12160,7 +12172,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "css-view-transitions-2: adding document.activeViewTransition",
     "url": "https://github.com/w3c/csswg-drafts/issues/12407",
     "explainer": "https://github.com/WICG/view-transitions/blob/main/active-view-transition.md",
@@ -12335,7 +12349,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": ":target-before and :target-after pseudo-classes",
     "url": "https://drafts.csswg.org/css-overflow-5/#active-before-after-scroll-markers",
     "explainer": null,
@@ -12375,5 +12391,33 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/546"
+  },
+  "1295": {
+    "issue": 1295,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Sticky user activation across same-origin navigations",
+    "url": "https://github.com/whatwg/html/pull/11454",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/547"
+  },
+  "1296": {
+    "issue": 1296,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Direction feature for `scroll-state()` query",
+    "url": "https://drafts.csswg.org/css-conditional-5/#direction",
+    "explainer": "https://github.com/w3c/csswg-drafts/blob/main/css-conditional-5/scroll_state_explainer.md#direction",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/548"
   }
 }
