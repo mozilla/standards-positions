@@ -12347,9 +12347,13 @@
   "1292": {
     "issue": 1292,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "Change focus delegate for dialog to use flat tree to find focusable descendant",
     "url": "https://github.com/whatwg/html/pull/11088",
     "explainer": "https://github.com/whatwg/html/pull/11088",
@@ -12357,5 +12361,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1294": {
+    "issue": 1294,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Preventing User Dictionary Leaks via ::spelling-error and ::grammar-error CSS Pseudo-Elements",
+    "url": "https://github.com/explainers-by-googlers/user-dictionary-leaks",
+    "explainer": "https://explainers-by-googlers.github.io/user-dictionary-leaks/",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/546"
   }
 }
