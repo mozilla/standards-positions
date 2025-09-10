@@ -10052,15 +10052,18 @@
   "1082": {
     "issue": 1082,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C",
+      "WHATWG"
+    ],
     "concerns": [],
     "topics": [],
     "title": "\"media-playback-while-not-visible\" Permission Policy",
-    "url": null,
+    "url": "https://github.com/whatwg/html/issues/10208",
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/IframeMediaPause/iframe_media_pausing.md",
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1987898",
     "webkit": "https://github.com/WebKit/standards-positions/issues/409"
   },
   "1083": {
