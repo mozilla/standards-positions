@@ -12422,19 +12422,5 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/548"
-  },
-  "1298": {
-    "issue": 1298,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "https://www.facebook.com/help/1674717642789671/?helpref=uf_share",
-    "url": null,
-    "explainer": "https://www.facebook.com/help/1674717642789671/?helpref=uf_share",
-    "mdn": "https://www.facebook.com/help/1674717642789671/?helpref=uf_share",
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
   }
 }
