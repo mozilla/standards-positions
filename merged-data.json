@@ -12365,7 +12365,7 @@
   },
   "1292": {
     "issue": 1292,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
