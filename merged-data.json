@@ -12422,5 +12422,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/548"
+  },
+  "1299": {
+    "issue": 1299,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "TCP Socket Pool per-Top-Level-Site",
+    "url": null,
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://crbug.com/415691664",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/550"
   }
 }
