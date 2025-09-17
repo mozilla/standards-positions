@@ -797,6 +797,24 @@
     "id": "webusb",
     "rationale": "Because many USB devices are not designed to handle potentially-malicious interactions over the USB protocols and because those devices can have significant effects on the computer they're connected to, we believe that the security risks of exposing USB devices to the Web are too broad to risk exposing users to them or to explain properly to end users to obtain meaningful informed consent. It also poses risks that sites could use USB device identity or data stored on USB devices as tracking identifiers."
   },
+  "101": {
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
+    "concerns": [],
+    "topics": [],
+    "title": "MediaStreamTrack Content Hints",
+    "url": "https://w3c.github.io/mst-content-hint/",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": "https://caniuse.com/mdn-api_mediastreamtrack_contenthint",
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1831521",
+    "webkit": null,
+    "description": "This specification extends MediaStreamTrack to let web applications provide an optional media-content hint attribute. This helps sinks like RTCPeerConnection or MediaRecorder select encoder parameters and processing algorithms appropriately based on a hint about the nature of the content being consumed without having to examine the actual content.",
+    "id": "mst-content-hint",
+    "rationale": "Content Hints is a welcome higher-level abstraction that does not require broad knowledge and tuning of video encoder, audio-processing, and congestion controls directly. Early concerns over lack of specificity around how hints interact with the lower-level controls they complement have been addressed."
+  },
   "103": {
     "position": "positive",
     "venues": [
