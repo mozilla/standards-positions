@@ -12100,9 +12100,13 @@
   },
   "1273": {
     "issue": 1273,
-    "position": null,
+    "position": "negative",
     "venues": [],
-    "concerns": [],
+    "concerns": [
+      "venue",
+      "privacy",
+      "security"
+    ],
     "topics": [],
     "title": "Probabilistic Reveal Tokens",
     "url": null,
