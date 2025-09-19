@@ -4127,7 +4127,9 @@
     "issue": 525,
     "position": null,
     "venues": [],
-    "concerns": [],
+    "concerns": [
+      "privacy"
+    ],
     "topics": [],
     "title": "Web custom format for Async Clipboard API ",
     "url": "https://w3c.github.io/clipboard-apis/#web-custom-format",
