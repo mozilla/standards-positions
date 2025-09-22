@@ -9021,8 +9021,10 @@
   },
   "998": {
     "issue": 998,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
     "topics": [],
     "title": "Dialog light dismiss",
