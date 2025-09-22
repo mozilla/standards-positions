@@ -9781,7 +9781,7 @@
   },
   "1062": {
     "issue": 1062,
-    "position": null,
+    "position": "defer",
     "venues": [
       "W3C CG"
     ],
