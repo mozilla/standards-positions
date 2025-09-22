@@ -12442,5 +12442,19 @@
     "caniuse": null,
     "bug": "https://crbug.com/415691664",
     "webkit": "https://github.com/WebKit/standards-positions/issues/550"
+  },
+  "1300": {
+    "issue": 1300,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[SVG] Support width & height attributes on <use> and x, y, width & height on<symbol> elements as presentation attributes",
+    "url": "https://github.com/w3c/svgwg/wiki/SVG-2-new-features#geometric-attributes-that-can-now-be-specified-as-style-properties",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/552"
   }
 }
