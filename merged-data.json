@@ -12338,7 +12338,7 @@
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/FormControlRange/explainer.md",
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1990256",
     "webkit": "https://github.com/WebKit/standards-positions/issues/541"
   },
   "1290": {
