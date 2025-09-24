@@ -10947,14 +10947,9 @@
   },
   "1181": {
     "issue": 1181,
-    "position": "defer",
+    "position": "neutral",
     "venues": [],
     "concerns": [
-      "accessibility",
-      "annoyance",
-      "interoperability",
-      "usability",
-      "device independence",
       "use cases"
     ],
     "topics": [],
