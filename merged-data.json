@@ -12334,7 +12334,7 @@
     "concerns": [],
     "topics": [],
     "title": "FormControlRange - Live ranges for <input> and <textarea>",
-    "url": "https://github.com/whatwg/html/issues/11478",
+    "url": "https://github.com/whatwg/dom/pull/1404",
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/FormControlRange/explainer.md",
     "mdn": null,
     "caniuse": null,
