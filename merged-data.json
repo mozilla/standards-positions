@@ -12400,8 +12400,10 @@
   },
   "1295": {
     "issue": 1295,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
     "topics": [],
     "title": "Sticky user activation across same-origin navigations",
