@@ -12300,12 +12300,12 @@
       "compatibility"
     ],
     "topics": [],
-    "title": "Requesting Mozilla's position on removal of XSLT from HTML living standard",
+    "title": "Removal of XSLT from HTML living standard",
     "url": "https://github.com/whatwg/html/issues/11523",
     "explainer": null,
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1990759",
     "webkit": null
   },
   "1288": {
@@ -12455,5 +12455,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/552"
+  },
+  "1301": {
+    "issue": 1301,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[css-borders-4] `box-shadow-*` longhands",
+    "url": "https://drafts.csswg.org/css-borders-4/#drop-shadows",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1982770",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/555"
   }
 }
