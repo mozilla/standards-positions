@@ -8849,7 +8849,7 @@
     "concerns": [],
     "topics": [],
     "title": "`line-clamp` CSS property (collapse variant)",
-    "url": null,
+    "url": "https://drafts.csswg.org/css-overflow-4/#suppressing-excess",
     "explainer": "https://github.com/Igalia/explainers/blob/main/css/line-clamp/README.md",
     "mdn": null,
     "caniuse": null,
