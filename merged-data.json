@@ -9379,10 +9379,14 @@
   },
   "1035": {
     "issue": 1035,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C CG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Reference Target for Cross-Root ARIA",
     "url": null,
     "explainer": "https://github.com/WICG/webcomponents/blob/gh-pages/proposals/reference-target-explainer.md",
