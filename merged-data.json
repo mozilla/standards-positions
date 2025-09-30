@@ -12473,5 +12473,19 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1982770",
     "webkit": "https://github.com/WebKit/standards-positions/issues/555"
+  },
+  "1302": {
+    "issue": 1302,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS anchor positioning with transforms",
+    "url": "https://drafts.csswg.org/css-anchor-position-1/#anchor-position-size",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/558"
   }
 }
