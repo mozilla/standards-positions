@@ -10562,7 +10562,7 @@
   },
   "1143": {
     "issue": 1143,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [
