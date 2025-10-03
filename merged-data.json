@@ -12487,5 +12487,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/558"
+  },
+  "1303": {
+    "issue": 1303,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Manifest localization",
+    "url": "https://www.w3.org/TR/appmanifest/#x_localized-members",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
