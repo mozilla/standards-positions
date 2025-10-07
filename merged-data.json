@@ -1570,7 +1570,7 @@
     "explainer": null,
     "mdn": null,
     "caniuse": null,
-    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1348405",
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1463069",
     "webkit": null
   },
   "172": {
@@ -9963,13 +9963,15 @@
   },
   "1076": {
     "issue": 1076,
-    "position": "defer",
+    "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
-    "title": "[HTML] Canvas place element",
-    "url": "https://github.com/WICG/canvas-place-element",
-    "explainer": "https://github.com/WICG/canvas-place-element/blob/main/README.md",
+    "topics": [
+      "API"
+    ],
+    "title": "HTML-in-Canvas",
+    "url": "https://github.com/WICG/html-in-canvas",
+    "explainer": "https://github.com/WICG/html-in-canvas/blob/main/README.md",
     "mdn": null,
     "caniuse": null,
     "bug": null,
