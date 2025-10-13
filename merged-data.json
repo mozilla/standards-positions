@@ -6037,6 +6037,212 @@
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1936180",
     "webkit": "https://github.com/WebKit/standards-positions/issues/85"
   },
+  "705": {
+    "issue": 705,
+    "position": "positive",
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Content-type in Resource Timing",
+    "url": null,
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1800443",
+    "webkit": null
+  },
+  "706": {
+    "issue": 706,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Face Detection MediaStreamTrack constraints and VideoFrame metadata",
+    "url": "https://github.com/w3c/mediacapture-extensions/blob/main/face-detection-explainer.md",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "707": {
+    "issue": 707,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Notification API Incoming Call Extension",
+    "url": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/Notifications/notifications_actions_customization.md",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "708": {
+    "issue": 708,
+    "position": "positive",
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Canvas Floating Point Color Types",
+    "url": "https://github.com/w3c/ColorWeb-CG/blob/master/canvas_float.md",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "709": {
+    "issue": 709,
+    "position": "positive",
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "TLS ClientHello extension permutation",
+    "url": "https://github.com/dadrian/clienthello-randomization/blob/main/EXPLAINER.md",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1789436",
+    "webkit": null
+  },
+  "711": {
+    "issue": 711,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS `initial-letter` property ",
+    "url": "https://drafts.csswg.org/css-inline/#initial-letter-styling",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1273019",
+    "webkit": null
+  },
+  "712": {
+    "issue": 712,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Additional Windowing Controls",
+    "url": "https://github.com/ivansandrk/additional-windowing-controls/blob/main/awc-explainer.md",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "713": {
+    "issue": 713,
+    "position": "positive",
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "WebRTC RTP header extension control",
+    "url": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-control",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "715": {
+    "issue": 715,
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
+    "concerns": [],
+    "topics": [
+      "API"
+    ],
+    "title": "Extending the PointerEvent with Unique DeviceId Attribute",
+    "url": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PointerEventDeviceId/explainer.md",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "716": {
+    "issue": 716,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "FileSystemHandle Remove Self",
+    "url": null,
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "717": {
+    "issue": 717,
+    "position": "positive",
+    "venues": [
+      "IETF"
+    ],
+    "concerns": [
+      "interoperability"
+    ],
+    "topics": [
+      "HTTP"
+    ],
+    "title": "No-Vary-Search",
+    "url": "https://wicg.github.io/nav-speculation/no-vary-search.html",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "718": {
+    "issue": 718,
+    "position": "positive",
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Remove support for data: URL in SVGUseElement",
+    "url": "https://github.com/w3c/svgwg/pull/901",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "720": {
+    "issue": 720,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Revisiting negative positions through Add-On Gating",
+    "url": null,
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "722": {
+    "issue": 722,
+    "position": "positive",
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Interim response timings in resource timing",
+    "url": "https://github.com/w3c/resource-timing/pull/366",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
   "723": {
     "issue": 723,
     "position": "positive",
@@ -6650,6 +6856,29 @@
     "bug": null,
     "webkit": null
   },
+  "781": {
+    "issue": 781,
+    "position": "negative",
+    "venues": [
+      "W3C CG"
+    ],
+    "concerns": [
+      "complexity",
+      "privacy",
+      "security",
+      "use cases"
+    ],
+    "topics": [
+      "HTML"
+    ],
+    "title": "Fenced frames",
+    "url": "https://wicg.github.io/fenced-frame/",
+    "explainer": "https://github.com/WICG/fenced-frame/tree/master/explainer",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
   "782": {
     "issue": 782,
     "position": "positive",
@@ -6817,6 +7046,26 @@
     "title": "WebAuthn PRF extension",
     "url": "https://w3c.github.io/webauthn/#prf-extension",
     "explainer": "https://github.com/w3c/webauthn/wiki/Explainer:-PRF-extension",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "799": {
+    "issue": 799,
+    "position": "negative",
+    "venues": [
+      "W3C CG"
+    ],
+    "concerns": [
+      "venue",
+      "security",
+      "API design"
+    ],
+    "topics": [],
+    "title": "Isolated Web Apps",
+    "url": null,
+    "explainer": "https://github.com/WICG/isolated-web-apps/blob/main/README.md",
     "mdn": null,
     "caniuse": null,
     "bug": null,
@@ -7006,6 +7255,20 @@
     "bug": null,
     "webkit": null
   },
+  "823": {
+    "issue": 823,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS corner-shape",
+    "url": "https://drafts.csswg.org/css-backgrounds-4/#corner-shaping",
+    "explainer": "https://lea.verou.me/2013/03/preview-border-corner-shape-before-implementations/",
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1726232",
+    "webkit": null
+  },
   "824": {
     "issue": 824,
     "position": null,
@@ -7032,20 +7295,6 @@
     "mdn": null,
     "caniuse": null,
     "bug": null,
-    "webkit": null
-  },
-  "823": {
-    "issue": 823,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "CSS corner-shape",
-    "url": "https://drafts.csswg.org/css-backgrounds-4/#corner-shaping",
-    "explainer": "https://lea.verou.me/2013/03/preview-border-corner-shape-before-implementations/",
-    "mdn": null,
-    "caniuse": null,
-    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1726232",
     "webkit": null
   },
   "828": {
@@ -11513,7 +11762,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "SVG"
+    ],
     "title": "[SVG] Support width and height as presentation attributes on nested <svg> elements",
     "url": "https://svgwg.org/svg2-draft/geometry.html#Sizing",
     "explainer": null,
@@ -12204,7 +12455,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "SVG"
+    ],
     "title": "[SVG] Support width & height attributes on <use> and x, y, width & height on<symbol> elements as presentation attributes",
     "url": "https://svgwg.org/svg2-draft/styling.html#TermPresentationAttribute",
     "explainer": null,
@@ -12232,7 +12485,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS anchor positioning with transforms",
     "url": "https://drafts.csswg.org/css-anchor-position-1/#anchor-position-size",
     "explainer": null,
