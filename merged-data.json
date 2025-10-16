@@ -7872,7 +7872,7 @@
     "concerns": [],
     "topics": [],
     "title": "Web Preferences API",
-    "url": "https://wicg.github.io/web-preferences-api/",
+    "url": "https://drafts.csswg.org/mediaqueries-5/#script-control-user-prefs",
     "explainer": "https://github.com/WICG/web-preferences-api/blob/main/README.md",
     "mdn": null,
     "caniuse": null,
