@@ -1533,6 +1533,17 @@ Shared Storage:
   url: https://github.com/WICG/shared-storage
   venues:
   - Proposal
+Signature-based Integrity:
+  id: signature-based-integrity
+  issue: 1139
+  url: https://wicg.github.io/signature-based-sri/
+  description: |
+    Signature-based Integrity intends to extend Subrsource Integrity with a provenance check. The proposal adds support for ed25519 keys in integrity attributes such that the browser requires HTTP responses signed with RFC9421 HTTP Message Signatures.
+  rationale: |
+    Hash-based integrity provides second pre-image resistance and therefore allows authors to use a CDN without fully trusting it. Neither the CDN, the server or the storage can modify the content without it being noticed.
+    The proposed Signature-based SRI can not fully guarantee this split between serving infrastructure and authoring: There is no explicit guarantee as to who is providing the extra signature and who is holding the key material. It might as well be provided by the very same server.
+    Furthermore, the proposed mechanism introduces new issues arising from key management. Post-compromise (or differently motivated) key rotation can only happen at the risk of breaking all existing pages downstream, which may often not be directly affiliated with the provider, leading to wider organizational challenges.
+    Signature-based SRI essentially provides countersignatures, which are only useful when organizations can ensure that key material and serving infrastructure are really under different control. It is notable that this does not match the integrity guarantees of Subresource Integrity mechanisms, to an extent that it is questionable whether it should live in integrity attributes in the first place.
 Signed HTTP Exchanges:
   caniuse: https://caniuse.com/sxg
   description: |
