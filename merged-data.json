@@ -12537,5 +12537,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1306": {
+    "issue": 1306,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "WebUSB rejection + summary statement is written by someone who doesn't understand website browser permissions are per-site (nor that users can safely have informed consent) - Please seek external evaluation",
+    "url": null,
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
