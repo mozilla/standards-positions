@@ -12551,5 +12551,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1307": {
+    "issue": 1307,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Ignore \"duplicate\" navigations",
+    "url": "https://github.com/whatwg/html/issues/11743",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/563"
   }
 }
