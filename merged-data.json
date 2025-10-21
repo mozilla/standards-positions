@@ -11817,10 +11817,14 @@
   },
   "1250": {
     "issue": 1250,
-    "position": null,
-    "venues": [],
+    "position": "defer",
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "Button Activation Behaviors",
     "url": "https://github.com/whatwg/html/issues/11061",
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/ElementInternalsType/explainer.md",
