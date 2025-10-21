@@ -12583,5 +12583,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/564"
+  },
+  "1310": {
+    "issue": 1310,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS AtRule feature detection",
+    "url": null,
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/AtRuleFeatureDetection/explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/565"
   }
 }
