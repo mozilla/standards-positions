@@ -11821,7 +11821,7 @@
     "venues": [],
     "concerns": [],
     "topics": [],
-    "title": "Customized built-in elements via elementInternals.type",
+    "title": "Button Activation Behaviors",
     "url": "https://github.com/whatwg/html/issues/11061",
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/ElementInternalsType/explainer.md",
     "mdn": null,
@@ -12565,5 +12565,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/563"
+  },
+  "1309": {
+    "issue": 1309,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "ViewTransitions: waitUntil() method",
+    "url": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-waituntil",
+    "explainer": "https://github.com/vmpstr/htmldemos/blob/master/vt/waitUntil.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/564"
   }
 }
