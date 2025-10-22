@@ -12603,5 +12603,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/565"
+  },
+  "1311": {
+    "issue": 1311,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "display-p3-linear CSS color space",
+    "url": "https://drafts.csswg.org/css-color/#predefined-display-p3-linear",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
