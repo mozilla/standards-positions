@@ -11613,10 +11613,16 @@
   },
   "1231": {
     "issue": 1231,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
+    "position": "negative",
+    "venues": [
+      "Other"
+    ],
+    "concerns": [
+      "privacy"
+    ],
+    "topics": [
+      "HTTP"
+    ],
     "title": "Cache sharing for extremely-pervasive scripts",
     "url": "https://chromestatus.com/feature/5202380930678784",
     "explainer": null,
