@@ -12606,7 +12606,7 @@
   },
   "1311": {
     "issue": 1311,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
