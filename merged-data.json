@@ -11976,7 +11976,9 @@
   "1260": {
     "issue": 1260,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C CG"
+    ],
     "concerns": [],
     "topics": [],
     "title": "an Emerging Web Specification: Local Network Access",
