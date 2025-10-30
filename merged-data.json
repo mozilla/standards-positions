@@ -12633,5 +12633,19 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1997201",
     "webkit": "https://github.com/WebKit/standards-positions/issues/567"
+  },
+  "1313": {
+    "issue": 1313,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "PWA Origin Migration",
+    "url": null,
+    "explainer": "https://github.com/WICG/manifest-incubations/blob/gh-pages/pwa-migration-explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/568"
   }
 }
