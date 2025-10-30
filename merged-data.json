@@ -12619,5 +12619,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1312": {
+    "issue": 1312,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[css-conditional-5] @supports-condition",
+    "url": "https://drafts.csswg.org/css-conditional-5/#supports-condition-rule",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1997201",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/567"
   }
 }
