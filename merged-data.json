@@ -12406,9 +12406,13 @@
   },
   "1294": {
     "issue": 1294,
-    "position": null,
-    "venues": [],
-    "concerns": [],
+    "position": "positive",
+    "venues": [
+      "Proposal"
+    ],
+    "concerns": [
+      "venue"
+    ],
     "topics": [],
     "title": "Preventing User Dictionary Leaks via ::spelling-error and ::grammar-error CSS Pseudo-Elements",
     "url": "https://github.com/explainers-by-googlers/user-dictionary-leaks",
