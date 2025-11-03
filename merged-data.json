@@ -11981,13 +11981,13 @@
     ],
     "concerns": [],
     "topics": [],
-    "title": "an Emerging Web Specification: Local Network Access",
-    "url": null,
-    "explainer": null,
+    "title": "Local Network Access",
+    "url": "https://wicg.github.io/local-network-access/",
+    "explainer": "https://github.com/WICG/local-network-access/blob/master/explainer.md",
     "mdn": null,
     "caniuse": null,
-    "bug": null,
-    "webkit": null
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1481298",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/520"
   },
   "1261": {
     "issue": 1261,
