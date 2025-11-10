@@ -10060,8 +10060,7 @@
     "webkit": "https://github.com/WebKit/standards-positions/issues/407"
   },
   "1082": {
-    "issue": 1082,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C",
       "WHATWG"
@@ -10074,7 +10073,9 @@
     "mdn": null,
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1987898",
-    "webkit": "https://github.com/WebKit/standards-positions/issues/409"
+    "webkit": "https://github.com/WebKit/standards-positions/issues/409",
+    "description": "Allow automatically pausing media in iframes, when this iframe isn't being rendered, instead of forcing authors to unload the frame, or implementation to implement rather complex and imperfect heuristics to save power.",
+    "rationale": "Gecko currently has complex logic to achieve some of this, for power efficiency reasons, and this allows not depending on the heuristics of a particular implementation. This also implements something web pages have to manually do."
   },
   "1083": {
     "issue": 1083,
