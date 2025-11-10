@@ -12656,5 +12656,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/568"
+  },
+  "1315": {
+    "issue": 1315,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS Animations 2: timeline-trigger",
+    "url": "https://drafts.csswg.org/css-animations-2/#timeline-triggers",
+    "explainer": "https://github.com/explainers-by-googlers/scroll-triggered-animations/blob/main/README.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
