@@ -42,13 +42,36 @@ class YAMLValidator:
             if not isinstance(value, LiteralScalarString):
                 if self.fix:
                     data[key][field] = LiteralScalarString(value)
+                    value = data[key][field]
                 else:
                     self.log_error(f"'{field}' must use literal block syntax (|).", key)
-            elif not value.endswith('\n'):
+                    return
+            if not value.endswith('\n'):
                 if self.fix:
                     data[key][field] = LiteralScalarString(f"{value}\n")
+                    value = data[key][field]
                 else:
                     self.log_error(f"'{field}' must end with a newline to use '|' syntax.", key)
+                    return
+
+            smart_to_straight = {
+                '”': '"',
+                '“': '"',
+                '’': "'",
+                '‘': "'",
+            }
+            s = str(value)
+            replaced = s
+            for k, v in smart_to_straight.items():
+                replaced = replaced.replace(k, v)
+            if replaced != s:
+                if self.fix:
+                    data[key][field] = LiteralScalarString(replaced)
+                else:
+                    self.log_error(
+                        f"'{field}' contains smart quotes; replace them with straight quotes (\" or ').",
+                        key
+                    )
 
     def validate_item(self, data: CommentedMap, key: str):
         item = data[key]
