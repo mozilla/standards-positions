@@ -2101,6 +2101,12 @@ inert attribute:
   url: https://github.com/whatwg/html/pull/4288
   venues:
   - WHATWG
+media-playback-while-not-visible Permission Policy:
+  description: |
+    Allow automatically pausing media in iframes, when this iframe isn't being rendered, instead of forcing authors to unload the frame, or implementation to implement rather complex and imperfect heuristics to save power.
+  issue: 1082
+  rationale: |
+    Gecko currently has complex logic to achieve some of this, for power efficiency reasons, and this allows not depending on the heuristics of a particular implementation. This also implements something web pages have to manually do.
 output attributes on `<input type=file>` element:
   description: |
     Proposal to add various output attributes on HTML's `<input>` elements that would allow developers to declare some conversions the browser could do to, for example, images and videos.
