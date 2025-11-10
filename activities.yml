@@ -461,7 +461,7 @@ Constructable Stylesheet Objects:
 Contact Picker API:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1756767
   description: |
-    This proposal adds an API for prompting and querying the user’s contacts for one or more items with a handful of contact properties.
+    This proposal adds an API for prompting and querying the user's contacts for one or more items with a handful of contact properties.
   id: contact-picker
   issue: 153
   position: defer
@@ -522,7 +522,7 @@ Credential Management Level 1:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1156047
   caniuse: https://caniuse.com/credential-management
   description: |
-    This specification describes an imperative API enabling a website to request a user’s credentials from a user agent, and to help the user agent correctly store user credentials for future use.
+    This specification describes an imperative API enabling a website to request a user's credentials from a user agent, and to help the user agent correctly store user credentials for future use.
   id: credman
   issue: 172
   position: defer
@@ -654,7 +654,7 @@ Federated Credential Management API:
   issue: 618
   position: neutral
   rationale: |
-    Federated login is a widely-used feature on the web with significant user benefits in usability and security. Unfortunately, federated identity on the web relies on the same techniques that are used to track web users. Federated Credential Management API provides an opportunity to put the browser in control of managing cross-site logins. However, FedCM currently gives too much power to the identity providers it works for and fails to facilitate other identity providers’ flows. The current FedCM API is designed with a lot of consideration for click-through rate optimization, which is a chief concern of social-login providers. One key design choice that has constrained subsequent decisions is that the initial UI rendered in the browser must be able to show the accounts available from the identity provider, facilitating single click account-linking. Mozilla would not render account information across information contexts before the user makes the choice to link those contexts. However, Google currently does, providing a browser-controlled UI that looks very similar to Google Identity Services’ OneTap widget where third-party cookies are already shared. This is evidence of a bug in the specification, not a feature of “engine freedom” to develop innovative UI. We believe the reduced scope of the Lightweight FedCM proposal is much closer to appropriately balancing the interests of developers and users and is much more likely to reach a solution all browsers would implement.
+    Federated login is a widely-used feature on the web with significant user benefits in usability and security. Unfortunately, federated identity on the web relies on the same techniques that are used to track web users. Federated Credential Management API provides an opportunity to put the browser in control of managing cross-site logins. However, FedCM currently gives too much power to the identity providers it works for and fails to facilitate other identity providers' flows. The current FedCM API is designed with a lot of consideration for click-through rate optimization, which is a chief concern of social-login providers. One key design choice that has constrained subsequent decisions is that the initial UI rendered in the browser must be able to show the accounts available from the identity provider, facilitating single click account-linking. Mozilla would not render account information across information contexts before the user makes the choice to link those contexts. However, Google currently does, providing a browser-controlled UI that looks very similar to Google Identity Services' OneTap widget where third-party cookies are already shared. This is evidence of a bug in the specification, not a feature of "engine freedom" to develop innovative UI. We believe the reduced scope of the Lightweight FedCM proposal is much closer to appropriately balancing the interests of developers and users and is much more likely to reach a solution all browsers would implement.
   url: https://w3c-fedid.github.io/FedCM/
   venues:
   - W3C
@@ -959,7 +959,7 @@ Keyboard Map:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1469017
   caniuse: https://caniuse.com/mdn-api_keyboardlayoutmap
   description: |
-    This specification defines an API that allows websites to convert from a given code value to a valid key value that can be shown to the user to identify the given key. The conversion from code to key is based on the user’s currently selected keyboard layout. It is intended to be used by web applications that want to treat the keyboard as a set of buttons and need to describe those buttons to the user.
+    This specification defines an API that allows websites to convert from a given code value to a valid key value that can be shown to the user to identify the given key. The conversion from code to key is based on the user's currently selected keyboard layout. It is intended to be used by web applications that want to treat the keyboard as a set of buttons and need to describe those buttons to the user.
   id: keyboard-map
   issue: 300
   position: negative
@@ -1325,7 +1325,7 @@ Private Click Measurement:
 Private Network Access:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1481298
   description: |
-    This document specifies modifications to Fetch which are intended to mitigate the risks associated with unintentional exposure of devices and servers on a client’s internal network to the web at large.
+    This document specifies modifications to Fetch which are intended to mitigate the risks associated with unintentional exposure of devices and servers on a client's internal network to the web at large.
   id: cors-and-rfc1918
   issue: 143
   position: positive
@@ -1974,7 +1974,7 @@ WebDriver BiDi:
   issue: 632
   position: positive
   rationale: |
-    Automation is an important capability for the web platform - for example, reliable automated testing makes it easier for websites to offer a functional user experience. The current standard protocol for building these tools has fallen behind demonstrated needs, which has in part led to new tools being built on Chrome DevTools Protocol. This makes it harder to automate across multiple browsers and versions of browsers - it’d be better for the standard protocol to support these needs.
+    Automation is an important capability for the web platform - for example, reliable automated testing makes it easier for websites to offer a functional user experience. The current standard protocol for building these tools has fallen behind demonstrated needs, which has in part led to new tools being built on Chrome DevTools Protocol. This makes it harder to automate across multiple browsers and versions of browsers - it'd be better for the standard protocol to support these needs.
   url: https://w3c.github.io/webdriver-bidi/
   venues:
   - W3C
