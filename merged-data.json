@@ -12628,9 +12628,13 @@
   "1312": {
     "issue": 1312,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "[css-conditional-5] @supports-condition",
     "url": "https://drafts.csswg.org/css-conditional-5/#supports-condition-rule",
     "explainer": null,
