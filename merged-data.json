@@ -9205,6 +9205,48 @@
     "bug": null,
     "webkit": null
   },
+  "1017": {
+    "issue": 1017,
+    "position": "positive",
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Allow converting VideoFrame to RGB pixel formats by calling VideoFrame.copyTo()",
+    "url": "https://www.w3.org/TR/webcodecs/#dom-videoframe-copyto",
+    "explainer": "https://gist.github.com/Djuffin/9e2f98025ead49998524510cfeed8d33",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1019": {
+    "issue": 1019,
+    "position": "positive",
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "The ChapterInformation interface",
+    "url": "https://www.w3.org/TR/mediasession/#the-chapterinformation-interface",
+    "explainer": "https://github.com/w3c/mediasession/blob/main/explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1020": {
+    "issue": 1020,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "HTML Fullscreen Without A Gesture",
+    "url": "https://github.com/whatwg/fullscreen/pull/235",
+    "explainer": "https://github.com/explainers-by-googlers/html-fullscreen-without-a-gesture",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
   "1022": {
     "issue": 1022,
     "position": "positive",
@@ -9575,6 +9617,24 @@
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/372"
   },
+  "1052": {
+    "issue": 1052,
+    "position": null,
+    "venues": [
+      "W3C"
+    ],
+    "concerns": [],
+    "topics": [
+      "API"
+    ],
+    "title": "WebAuthn related origins",
+    "url": "https://w3c.github.io/webauthn/#sctn-related-origins",
+    "explainer": "https://github.com/w3c/webauthn/wiki/Explainer:-Related-origin-requests",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
   "1053": {
     "issue": 1053,
     "position": "positive",
@@ -9658,6 +9718,22 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/380"
+  },
+  "1058": {
+    "issue": 1058,
+    "position": "positive",
+    "venues": [],
+    "concerns": [],
+    "topics": [
+      "API"
+    ],
+    "title": "Multiple import maps",
+    "url": "https://github.com/whatwg/html/pull/10528",
+    "explainer": "https://github.com/whatwg/html/pull/10528#issue-2437162429",
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1916277",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/381"
   },
   "1059": {
     "issue": 1059,
@@ -9982,6 +10058,24 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/407"
+  },
+  "1082": {
+    "position": "positive",
+    "venues": [
+      "W3C",
+      "WHATWG"
+    ],
+    "concerns": [],
+    "topics": [],
+    "title": "\"media-playback-while-not-visible\" Permission Policy",
+    "url": "https://github.com/whatwg/html/issues/10208",
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/IframeMediaPause/iframe_media_pausing.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1987898",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/409",
+    "description": "Allow automatically pausing media in iframes, when this iframe isn't being rendered, instead of forcing authors to unload the frame, or implementation to implement rather complex and imperfect heuristics to save power.",
+    "rationale": "Gecko currently has complex logic to achieve some of this, for power efficiency reasons, and this allows not depending on the heuristics of a particular implementation. This also implements something web pages have to manually do."
   },
   "1083": {
     "issue": 1083,
