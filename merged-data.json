@@ -12688,5 +12688,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/578"
+  },
+  "1317": {
+    "issue": 1317,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Menu elements proposal",
+    "url": null,
+    "explainer": "https://open-ui.org/components/menu.explainer/",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/580"
   }
 }
