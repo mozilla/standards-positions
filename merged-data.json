@@ -12534,9 +12534,13 @@
   "1304": {
     "issue": 1304,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "Base appearance for list box select elements",
     "url": "https://github.com/whatwg/html/pull/11758",
     "explainer": null,
