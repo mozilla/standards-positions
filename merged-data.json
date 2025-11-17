@@ -12335,10 +12335,17 @@
   },
   "1288": {
     "issue": 1288,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
+    "position": "positive",
+    "venues": [
+      "W3C CG"
+    ],
+    "concerns": [
+      "venue",
+      "usability"
+    ],
+    "topics": [
+      "HTML"
+    ],
     "title": "the \"Geolocation element\" (part of PEPC)",
     "url": null,
     "explainer": "https://github.com/WICG/PEPC/blob/main/geolocation_explainer.md",
