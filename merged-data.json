@@ -12727,5 +12727,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1319": {
+    "issue": 1319,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Media element pseudo-classes",
+    "url": "https://drafts.csswg.org/selectors-4/#resource-pseudos",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": "https://caniuse.com/wf-media-pseudos",
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2000526",
+    "webkit": null
   }
 }
