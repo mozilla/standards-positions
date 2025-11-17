@@ -8,7 +8,7 @@ If there is a public, Web-related specification that you think Mozilla might be 
 please
 [open a new issue](https://github.com/mozilla/standards-positions/issues/new),
 filling out the auto-included template appropriately. (If posting via GitHub API, please copy the
-[template](https://github.com/mozilla/standards-positions/blob/main/ISSUE_TEMPLATE.md)
+[template](https://github.com/mozilla/standards-positions/blob/main/API_ISSUE_TEMPLATE.md)
 and fill it out).
 
 Normally, the appropriate granularity for an issue is a distinct web platform feature. This could
