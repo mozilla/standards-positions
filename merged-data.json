@@ -12725,22 +12725,6 @@
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/580"
   },
-  "1318": {
-    "issue": 1318,
-    "position": "positive",
-    "venues": [],
-    "concerns": [],
-    "topics": [
-      "API"
-    ],
-    "title": "Layout Instability API CSS pixel attribution",
-    "url": "https://wicg.github.io/layout-instability/",
-    "explainer": "https://github.com/WICG/layout-instability/pull/125",
-    "mdn": "https://developer.mozilla.org/...",
-    "caniuse": "https://caniuse.com/...",
-    "bug": "https://bugzil.la/NNNNNNN",
-    "webkit": "https://github.com/WebKit/standards-positions/issues/NNN"
-  },
   "1319": {
     "issue": 1319,
     "position": null,
