@@ -1158,7 +1158,7 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1481298",
     "webkit": null,
-    "description": "This document specifies modifications to Fetch which are intended to mitigate the risks associated with unintentional exposure of devices and servers on a client\u2019s internal network to the web at large.",
+    "description": "This document specifies modifications to Fetch which are intended to mitigate the risks associated with unintentional exposure of devices and servers on a client's internal network to the web at large.",
     "id": "cors-and-rfc1918",
     "rationale": "While imperfect and arguably at odds with Internet architecture, localhost and local networks of end users are vulnerable to attacks that this protocol will help mitigate."
   },
@@ -1297,7 +1297,7 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1756767",
     "webkit": null,
-    "description": "This proposal adds an API for prompting and querying the user\u2019s contacts for one or more items with a handful of contact properties.",
+    "description": "This proposal adds an API for prompting and querying the user's contacts for one or more items with a handful of contact properties.",
     "id": "contact-picker",
     "rationale": "This API innovates in some ways beyond several previous Contacts APIs, though uses different properties than HTML autofill field names."
   },
@@ -1587,7 +1587,7 @@
     "caniuse": "https://caniuse.com/credential-management",
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1156047",
     "webkit": null,
-    "description": "This specification describes an imperative API enabling a website to request a user\u2019s credentials from a user agent, and to help the user agent correctly store user credentials for future use.",
+    "description": "This specification describes an imperative API enabling a website to request a user's credentials from a user agent, and to help the user agent correctly store user credentials for future use.",
     "id": "credman",
     "rationale": "Development of the specification seems to have stalled and it's also not a priority for Mozilla."
   },
@@ -2604,7 +2604,7 @@
     "caniuse": "https://caniuse.com/mdn-api_keyboardlayoutmap",
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1469017",
     "webkit": null,
-    "description": "This specification defines an API that allows websites to convert from a given code value to a valid key value that can be shown to the user to identify the given key. The conversion from code to key is based on the user\u2019s currently selected keyboard layout. It is intended to be used by web applications that want to treat the keyboard as a set of buttons and need to describe those buttons to the user.",
+    "description": "This specification defines an API that allows websites to convert from a given code value to a valid key value that can be shown to the user to identify the given key. The conversion from code to key is based on the user's currently selected keyboard layout. It is intended to be used by web applications that want to treat the keyboard as a set of buttons and need to describe those buttons to the user.",
     "id": "keyboard-map",
     "rationale": "We're concerned that this exposes keyboard layouts, which seem likely to be a significant source of fingerprinting data, in a way that does not require any user interaction."
   },
@@ -5094,7 +5094,7 @@
     "webkit": null,
     "description": "A Web Platform API that allows users to login to websites with their federated accounts in a privacy preserving manner.",
     "id": "fedcm",
-    "rationale": "Federated login is a widely-used feature on the web with significant user benefits in usability and security. Unfortunately, federated identity on the web relies on the same techniques that are used to track web users. Federated Credential Management API provides an opportunity to put the browser in control of managing cross-site logins. However, FedCM currently gives too much power to the identity providers it works for and fails to facilitate other identity providers\u2019 flows. The current FedCM API is designed with a lot of consideration for click-through rate optimization, which is a chief concern of social-login providers. One key design choice that has constrained subsequent decisions is that the initial UI rendered in the browser must be able to show the accounts available from the identity provider, facilitating single click account-linking. Mozilla would not render account information across information contexts before the user makes the choice to link those contexts. However, Google currently does, providing a browser-controlled UI that looks very similar to Google Identity Services\u2019 OneTap widget where third-party cookies are already shared. This is evidence of a bug in the specification, not a feature of \u201cengine freedom\u201d to develop innovative UI. We believe the reduced scope of the Lightweight FedCM proposal is much closer to appropriately balancing the interests of developers and users and is much more likely to reach a solution all browsers would implement."
+    "rationale": "Federated login is a widely-used feature on the web with significant user benefits in usability and security. Unfortunately, federated identity on the web relies on the same techniques that are used to track web users. Federated Credential Management API provides an opportunity to put the browser in control of managing cross-site logins. However, FedCM currently gives too much power to the identity providers it works for and fails to facilitate other identity providers' flows. The current FedCM API is designed with a lot of consideration for click-through rate optimization, which is a chief concern of social-login providers. One key design choice that has constrained subsequent decisions is that the initial UI rendered in the browser must be able to show the accounts available from the identity provider, facilitating single click account-linking. Mozilla would not render account information across information contexts before the user makes the choice to link those contexts. However, Google currently does, providing a browser-controlled UI that looks very similar to Google Identity Services' OneTap widget where third-party cookies are already shared. This is evidence of a bug in the specification, not a feature of \"engine freedom\" to develop innovative UI. We believe the reduced scope of the Lightweight FedCM proposal is much closer to appropriately balancing the interests of developers and users and is much more likely to reach a solution all browsers would implement."
   },
   "619": {
     "issue": 619,
@@ -5292,7 +5292,7 @@
     "webkit": null,
     "description": "The BiDirectional WebDriver Protocol, a mechanism for remote control of user agents.",
     "id": "webdriver-bidi",
-    "rationale": "Automation is an important capability for the web platform - for example, reliable automated testing makes it easier for websites to offer a functional user experience. The current standard protocol for building these tools has fallen behind demonstrated needs, which has in part led to new tools being built on Chrome DevTools Protocol. This makes it harder to automate across multiple browsers and versions of browsers - it\u2019d be better for the standard protocol to support these needs."
+    "rationale": "Automation is an important capability for the web platform - for example, reliable automated testing makes it easier for websites to offer a functional user experience. The current standard protocol for building these tools has fallen behind demonstrated needs, which has in part led to new tools being built on Chrome DevTools Protocol. This makes it harder to automate across multiple browsers and versions of browsers - it'd be better for the standard protocol to support these needs."
   },
   "633": {
     "issue": 633,
@@ -12353,7 +12353,7 @@
     "topics": [
       "HTML"
     ],
-    "title": "the \"Geolocation element\" (part of PEPC)",
+    "title": "Geolocation element (part of PEPC)",
     "url": null,
     "explainer": "https://github.com/WICG/PEPC/blob/main/geolocation_explainer.md",
     "mdn": null,
@@ -12727,17 +12727,19 @@
   },
   "1318": {
     "issue": 1318,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Layout Instability API CSS pixel attribution",
-    "url": null,
-    "explainer": null,
-    "mdn": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
+    "url": "https://wicg.github.io/layout-instability/",
+    "explainer": "https://github.com/WICG/layout-instability/pull/125",
+    "mdn": "https://developer.mozilla.org/...",
+    "caniuse": "https://caniuse.com/...",
+    "bug": "https://bugzil.la/NNNNNNN",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/NNN"
   },
   "1319": {
     "issue": 1319,
