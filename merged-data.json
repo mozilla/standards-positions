@@ -10048,9 +10048,14 @@
   "1081": {
     "issue": 1081,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS",
+      "HTML"
+    ],
     "title": "Declarative CSS Modules and Declarative Shadow DOM `adoptedstylesheets` attribute",
     "url": null,
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/ShadowDOM/explainer.md",
