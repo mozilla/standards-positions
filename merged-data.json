@@ -12738,5 +12738,19 @@
     "caniuse": "https://caniuse.com/wf-media-pseudos",
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2000526",
     "webkit": null
+  },
+  "1322": {
+    "issue": 1322,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Connection Allowlists",
+    "url": "https://wicg.github.io/connection-allowlists/",
+    "explainer": "https://github.com/WICG/connection-allowlists",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/583"
   }
 }
