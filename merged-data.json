@@ -12752,5 +12752,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/583"
+  },
+  "1323": {
+    "issue": 1323,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Enable monochrome emoji rendering in forced colors mode",
+    "url": "https://drafts.csswg.org/css-color-adjust-1/#forced-colors-properties",
+    "explainer": "https://github.com/w3ctag/design-reviews/issues/1156",
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1992799",
+    "webkit": null
   }
 }
