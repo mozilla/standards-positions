@@ -12766,5 +12766,33 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1992799",
     "webkit": null
+  },
+  "1324": {
+    "issue": 1324,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Expose navigation destination in NavigationTransition (navigation.transition.to)",
+    "url": "https://html.spec.whatwg.org/#dom-navigationtransition-to",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1991959",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/585"
+  },
+  "1325": {
+    "issue": 1325,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Add support for video element lazy-loading via the loading attribute",
+    "url": "https://whatpr.org/html/11980/media.html#attr-video-loading",
+    "explainer": "https://github.com/whatwg/html/pull/11980",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
