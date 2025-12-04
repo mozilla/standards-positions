@@ -10440,7 +10440,7 @@
   },
   "1111": {
     "issue": 1111,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -12250,7 +12250,7 @@
     "explainer": "https://github.com/mikewest/origin-api/",
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2001139",
     "webkit": "https://github.com/WebKit/standards-positions/issues/538"
   },
   "1281": {
@@ -12797,7 +12797,7 @@
     "mdn": null,
     "caniuse": null,
     "bug": null,
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/586"
   },
   "1326": {
     "issue": 1326,
