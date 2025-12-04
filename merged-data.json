@@ -12784,9 +12784,13 @@
   "1325": {
     "issue": 1325,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "Add support for video element lazy-loading via the loading attribute",
     "url": "https://whatpr.org/html/11980/media.html#attr-video-loading",
     "explainer": "https://github.com/whatwg/html/pull/11980",
