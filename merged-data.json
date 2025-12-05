@@ -12812,5 +12812,19 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1976522",
     "webkit": null
+  },
+  "1327": {
+    "issue": 1327,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS Animations 2: trigger-scope",
+    "url": "https://drafts.csswg.org/css-animations-2/#trigger-scope",
+    "explainer": "https://github.com/explainers-by-googlers/scroll-triggered-animations/blob/main/TRIGGER_SCOPE.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
