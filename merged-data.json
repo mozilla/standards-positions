@@ -7258,9 +7258,13 @@
   "823": {
     "issue": 823,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS corner-shape",
     "url": "https://drafts.csswg.org/css-backgrounds-4/#corner-shaping",
     "explainer": "https://lea.verou.me/2013/03/preview-border-corner-shape-before-implementations/",
@@ -8084,9 +8088,15 @@
   "903": {
     "issue": 903,
     "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
+    "venues": [
+      "W3C"
+    ],
+    "concerns": [
+      "performance"
+    ],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS Text Level 4: the `text-spacing` property and its longhands",
     "url": "https://drafts.csswg.org/css-text-4/#text-spacing-property",
     "explainer": "https://docs.google.com/document/d/10G1uasooKpKjNeyr1wtLV85wFMlc_TK4-vb9LG_3Fzw/edit#heading=h.gvpvufxddzuy",
@@ -9337,10 +9347,16 @@
   },
   "1031": {
     "issue": 1031,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
+    "position": "positive",
+    "venues": [
+      "W3C CG"
+    ],
+    "concerns": [
+      "venue"
+    ],
+    "topics": [
+      "API"
+    ],
     "title": "Timing Info for ServiceWorker static routing API",
     "url": null,
     "explainer": "https://github.com/WICG/service-worker-static-routing-api/blob/main/resource-timing-api.md",
@@ -10313,16 +10329,20 @@
   "1100": {
     "issue": 1100,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "[CSS UI-4] caret-animation property",
     "url": "https://drafts.csswg.org/css-ui-4/#caret-animation",
     "explainer": "https://github.com/w3c/csswg-drafts/issues/9707",
     "mdn": null,
     "caniuse": null,
     "bug": null,
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/417"
   },
   "1101": {
     "issue": 1101,
@@ -10497,9 +10517,13 @@
   "1115": {
     "issue": 1115,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Clipboardchange event API",
     "url": "https://www.w3.org/TR/clipboard-apis/#clipboard-event-clipboardchange",
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/ClipboardAPI/clipboard-change-event-explainer.md",
@@ -10842,7 +10866,7 @@
   },
   "1169": {
     "issue": 1169,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG",
       "WHATWG"
@@ -11173,7 +11197,7 @@
   },
   "1198": {
     "issue": 1198,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -11181,7 +11205,7 @@
     "topics": [
       "CSS"
     ],
-    "title": "Generate CSS view-transition-name from element (CSS View Transitions 2)",
+    "title": "CSS view-transition-name: match-element",
     "url": "https://drafts.csswg.org/css-view-transitions-2/#auto-vt-name",
     "explainer": "https://github.com/WICG/view-transitions/blob/main/auto-name-explainer.md",
     "mdn": null,
@@ -11363,8 +11387,10 @@
   },
   "1211": {
     "issue": 1211,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
     "topics": [
       "CSS"
@@ -11409,7 +11435,7 @@
   },
   "1214": {
     "issue": 1214,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
@@ -11854,9 +11880,13 @@
   "1251": {
     "issue": 1251,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS scroll-target-group property",
     "url": "https://drafts.csswg.org/css-overflow-5/#scroll-target-group",
     "explainer": null,
@@ -11868,11 +11898,15 @@
   "1252": {
     "issue": 1252,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS typed arithmetic",
-    "url": "https://www.w3.org/TR/css-values-4/#calc-type-checking",
+    "url": "https://drafts.csswg.org/css-values-4/#calc-type-checking",
     "explainer": null,
     "mdn": null,
     "caniuse": null,
@@ -11882,9 +11916,13 @@
   "1253": {
     "issue": 1253,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS counter() and counters() in alt text of `content` property",
     "url": "https://drafts.csswg.org/css-content/#content-property",
     "explainer": null,
@@ -12239,7 +12277,7 @@
   },
   "1280": {
     "issue": 1280,
-    "position": null,
+    "position": "positive",
     "venues": [
       "Proposal"
     ],
@@ -12460,12 +12498,16 @@
   "1296": {
     "issue": 1296,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "Direction feature for `scroll-state()` query",
-    "url": "https://drafts.csswg.org/css-conditional-5/#direction",
-    "explainer": "https://github.com/w3c/csswg-drafts/blob/main/css-conditional-5/scroll_state_explainer.md#direction",
+    "url": "https://drafts.csswg.org/css-conditional-5/#scroll-state-container",
+    "explainer": "https://github.com/w3c/csswg-drafts/blob/main/css-conditional-5/scroll_state_explainer.md",
     "mdn": null,
     "caniuse": null,
     "bug": null,
@@ -12608,9 +12650,13 @@
   "1309": {
     "issue": 1309,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "ViewTransitions: waitUntil() method",
     "url": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-waituntil",
     "explainer": "https://github.com/vmpstr/htmldemos/blob/master/vt/waitUntil.md",
@@ -12682,9 +12728,13 @@
   "1315": {
     "issue": 1315,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS Animations 2: timeline-trigger",
     "url": "https://drafts.csswg.org/css-animations-2/#timeline-triggers",
     "explainer": "https://github.com/explainers-by-googlers/scroll-triggered-animations/blob/main/README.md",
@@ -12758,7 +12808,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "Enable monochrome emoji rendering in forced colors mode",
     "url": "https://drafts.csswg.org/css-color-adjust-1/#forced-colors-properties",
     "explainer": "https://github.com/w3ctag/design-reviews/issues/1156",
@@ -12770,9 +12822,13 @@
   "1324": {
     "issue": 1324,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Expose navigation destination in NavigationTransition (navigation.transition.to)",
     "url": "https://html.spec.whatwg.org/#dom-navigationtransition-to",
     "explainer": null,
@@ -12822,6 +12878,24 @@
     "title": "CSS Animations 2: trigger-scope",
     "url": "https://drafts.csswg.org/css-animations-2/#trigger-scope",
     "explainer": "https://github.com/explainers-by-googlers/scroll-triggered-animations/blob/main/TRIGGER_SCOPE.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1329": {
+    "issue": 1329,
+    "position": null,
+    "venues": [
+      "W3C"
+    ],
+    "concerns": [],
+    "topics": [
+      "CSS"
+    ],
+    "title": "CSS view-transition-name: auto",
+    "url": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-name-auto",
+    "explainer": null,
     "mdn": null,
     "caniuse": null,
     "bug": null,
