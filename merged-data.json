@@ -12839,7 +12839,7 @@
   },
   "1325": {
     "issue": 1325,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
