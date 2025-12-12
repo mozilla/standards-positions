@@ -9592,11 +9592,11 @@
       "API"
     ],
     "title": "ariaNotify API",
-    "url": "https://github.com/w3c/aria/pull/2211",
+    "url": "https://github.com/w3c/aria/pull/2577",
     "explainer": "https://github.com/WICG/accessible-notifications",
     "mdn": null,
-    "caniuse": null,
-    "bug": null,
+    "caniuse": "https://caniuse.com/mdn-api_document_arianotify",
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2005588",
     "webkit": "https://github.com/WebKit/standards-positions/issues/370"
   },
   "1050": {
