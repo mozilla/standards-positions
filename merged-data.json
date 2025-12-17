@@ -12900,5 +12900,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1330": {
+    "issue": 1330,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Predictable updating for PWAs",
+    "url": "https://www.w3.org/TR/appmanifest/#updating",
+    "explainer": "https://github.com/WICG/manifest-incubations/blob/gh-pages/predictable-app-updating.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/593"
   }
 }
