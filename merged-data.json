@@ -12914,5 +12914,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/593"
+  },
+  "1331": {
+    "issue": 1331,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Canvas Text Writing Mode Support",
+    "url": null,
+    "explainer": "https://github.com/Igalia/explainers/tree/main/canvas-writing-mode",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/594"
   }
 }
