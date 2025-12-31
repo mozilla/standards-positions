@@ -12846,7 +12846,7 @@
     "concerns": [],
     "topics": [],
     "title": "Text-Scale <meta> element",
-    "url": "https://davidsgrogan.github.io/css-fonts-5/Overview.html#text-scale-meta",
+    "url": "https://drafts.csswg.org/css-fonts-5/#text-scale-meta",
     "explainer": "https://github.com/w3c/csswg-drafts/blob/main/css-env-1/explainers/meta-text-scale.md",
     "mdn": null,
     "caniuse": null,
