@@ -12912,5 +12912,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/594"
+  },
+  "1333": {
+    "issue": 1333,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Filter Effects 2: progressive blur via `linear-blur()`",
+    "url": "https://github.com/w3c/csswg-drafts/issues/13285",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/595"
   }
 }
