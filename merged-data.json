@@ -12926,5 +12926,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/595"
+  },
+  "1334": {
+    "issue": 1334,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Support maxAge in the Cookie Store API",
+    "url": "https://github.com/whatwg/cookiestore/pull/292",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2004058",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/597"
   }
 }
