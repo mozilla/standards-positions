@@ -12929,10 +12929,14 @@
   },
   "1334": {
     "issue": 1334,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Support maxAge in the Cookie Store API",
     "url": "https://github.com/whatwg/cookiestore/pull/292",
     "explainer": null,
