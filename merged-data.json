@@ -12944,5 +12944,19 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2004058",
     "webkit": "https://github.com/WebKit/standards-positions/issues/597"
+  },
+  "1335": {
+    "issue": 1335,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "WebRTC: Always negotiating data channels",
+    "url": "https://w3c.github.io/webrtc-extensions/#always-negotiating-datachannels",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
