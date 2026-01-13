@@ -12782,7 +12782,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTTP"
+    ],
     "title": "Connection Allowlists",
     "url": "https://wicg.github.io/connection-allowlists/",
     "explainer": "https://github.com/WICG/connection-allowlists",
