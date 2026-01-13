@@ -4043,7 +4043,7 @@
   },
   "519": {
     "issue": 519,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -4052,7 +4052,7 @@
       "API"
     ],
     "title": "CanvasRenderingContext2D API Improvements",
-    "url": "https://github.com/fserb/canvas2d.",
+    "url": "https://github.com/fserb/canvas2d",
     "explainer": null,
     "mdn": null,
     "caniuse": null,
@@ -9173,7 +9173,7 @@
   },
   "1015": {
     "issue": 1015,
-    "position": null,
+    "position": "negative",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -9397,7 +9397,7 @@
   },
   "1036": {
     "issue": 1036,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -11231,7 +11231,7 @@
   },
   "1201": {
     "issue": 1201,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -11437,10 +11437,14 @@
   },
   "1215": {
     "issue": 1215,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Web Neural Network API",
     "url": "https://www.w3.org/TR/webnn/",
     "explainer": "https://github.com/webmachinelearning/webnn/blob/main/explainer.md",
@@ -12729,7 +12733,7 @@
   },
   "1316": {
     "issue": 1316,
-    "position": null,
+    "position": "defer",
     "venues": [
       "W3C CG"
     ],
@@ -12805,7 +12809,7 @@
   },
   "1324": {
     "issue": 1324,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -12869,7 +12873,7 @@
   },
   "1329": {
     "issue": 1329,
-    "position": null,
+    "position": "negative",
     "venues": [
       "W3C"
     ],
@@ -12958,5 +12962,41 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/599"
+  },
+  "1336": {
+    "issue": 1336,
+    "position": "negative",
+    "venues": [
+      "Proposal"
+    ],
+    "concerns": [],
+    "topics": [
+      "API"
+    ],
+    "title": "CanvasRenderingContext2D: 4x4 transforms",
+    "url": null,
+    "explainer": "https://github.com/fserb/canvas2D/blob/master/spec/perspective-transforms.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1337": {
+    "issue": 1337,
+    "position": "negative",
+    "venues": [
+      "Proposal"
+    ],
+    "concerns": [],
+    "topics": [
+      "API"
+    ],
+    "title": "CanvasRenderingContext2D: Improved SVG filter interface",
+    "url": null,
+    "explainer": "https://github.com/fserb/canvas2D/blob/master/spec/filters.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
