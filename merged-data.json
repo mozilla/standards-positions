@@ -13000,5 +13000,33 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1338": {
+    "issue": 1338,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "HyStart++",
+    "url": "https://datatracker.ietf.org/doc/html/rfc9406",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1339": {
+    "issue": 1339,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "SEARCH -- a New Slow Start Algorithm for TCP and QUIC",
+    "url": "https://datatracker.ietf.org/doc/html/draft-chung-ccwg-search-07",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
