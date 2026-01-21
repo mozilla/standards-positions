@@ -7856,9 +7856,14 @@
   "879": {
     "issue": 879,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API",
+      "CSS"
+    ],
     "title": "Web Preferences API",
     "url": "https://drafts.csswg.org/mediaqueries-5/#script-control-user-prefs",
     "explainer": "https://github.com/WICG/web-preferences-api/blob/main/README.md",
@@ -13042,5 +13047,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/600"
+  },
+  "1341": {
+    "issue": 1341,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Scroll-driven Animations: Timeline Named Range \"scroll\"",
+    "url": "https://drafts.csswg.org/scroll-animations-1/#valdef-animation-timeline-range-scroll",
+    "explainer": "https://github.com/explainers-by-googlers/scroll-triggered-animations/blob/main/ANIMATION_TIMELINE_RANGE_SCROLL.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/602"
   }
 }
