@@ -4206,7 +4206,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "HTMLMediaElement controlsList",
     "url": "https://github.com/whatwg/html/pull/6715](https://github.com/whatwg/html/pull/6715",
     "explainer": null,
@@ -12773,7 +12775,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "Media element pseudo-classes",
     "url": "https://drafts.csswg.org/selectors-4/#resource-pseudos",
     "explainer": null,
@@ -12855,7 +12859,10 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS",
+      "HTML"
+    ],
     "title": "Text-Scale <meta> element",
     "url": "https://drafts.csswg.org/css-fonts-5/#text-scale-meta",
     "explainer": "https://github.com/w3c/csswg-drafts/blob/main/css-env-1/explainers/meta-text-scale.md",
