@@ -13068,5 +13068,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/602"
+  },
+  "1342": {
+    "issue": 1342,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Support style and JSON as modulepreload destinations",
+    "url": "https://github.com/whatwg/html/pull/11981",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2004751",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/603"
   }
 }
