@@ -13082,5 +13082,33 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2004751",
     "webkit": "https://github.com/WebKit/standards-positions/issues/603"
+  },
+  "1343": {
+    "issue": 1343,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Support external <script type=speculationrules>",
+    "url": "https://github.com/whatwg/html/pull/11697/changes",
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/pull/1234/files?short_path=4ea9c7d#diff-4ea9c7d62d8211b8185537d822ee3e156b7ecd6c932461ce8656ff0a0f580619",
+    "mdn": "https://github.com/mdn/mdn/issues/789",
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2008350",
+    "webkit": null
+  },
+  "1344": {
+    "issue": 1344,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "AI Content Disclosure for HTML",
+    "url": "https://github.com/WICG/proposals/issues/261",
+    "explainer": "https://github.com/dweekly/ai-content-disclosure",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
