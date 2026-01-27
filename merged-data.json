@@ -13110,5 +13110,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/605"
+  },
+  "1345": {
+    "issue": 1345,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSSPseudoElement interface",
+    "url": "https://drafts.csswg.org/css-pseudo/#CSSPseudoElement-interface",
+    "explainer": null,
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/CSSPseudoElement",
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
