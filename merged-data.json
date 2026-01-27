@@ -13095,7 +13095,7 @@
     "mdn": "https://github.com/mdn/mdn/issues/789",
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2008350",
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/604"
   },
   "1344": {
     "issue": 1344,
@@ -13109,6 +13109,6 @@
     "mdn": null,
     "caniuse": null,
     "bug": null,
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/605"
   }
 }
