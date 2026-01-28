@@ -13114,9 +13114,13 @@
   "1345": {
     "issue": 1345,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "CSSPseudoElement interface",
     "url": "https://drafts.csswg.org/css-pseudo/#CSSPseudoElement-interface",
     "explainer": null,
