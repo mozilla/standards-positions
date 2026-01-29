@@ -13126,5 +13126,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1346": {
+    "issue": 1346,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "WebXR Plane Detection Module",
+    "url": "https://immersive-web.github.io/plane-detection/",
+    "explainer": "https://github.com/immersive-web/plane-detection/blob/main/explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
