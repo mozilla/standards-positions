@@ -1934,6 +1934,10 @@ WebAssembly JS Promise Integration:
   url: https://github.com/WebAssembly/js-promise-integration/
   venues:
   - Proposal
+WebAssembly Phase 3 Proposals:
+  issue: 1350
+  rationale: |
+    Due to the structure of the WebAssembly CG, Phase 3 signifies that a proposal is ready to implement. Phase 3 proposals have been reviewed by the SpiderMonkey team and more broadly within Gecko. Phase 2 proposals which require security/privacy review or host integration require their own Mozilla Standards Position.
 WebAssembly Relaxed SIMD:
   description: |
     New 'relaxed' SIMD instructions for WebAssembly that have local non-determinism that depends on the platform.
