@@ -13168,5 +13168,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/609"
+  },
+  "1350": {
+    "issue": 1350,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "WebAssembly Phase 3 Proposals",
+    "url": "https://webassembly.github.io/spec",
+    "explainer": null,
+    "mdn": "https://developer.mozilla.org/en-US/docs/WebAssembly",
+    "caniuse": "https://caniuse.com/wasm",
+    "bug": null,
+    "webkit": null
   }
 }
