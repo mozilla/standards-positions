@@ -13140,5 +13140,33 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1348": {
+    "issue": 1348,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Focusgroup",
+    "url": "https://open-ui.org/components/scoped-focusgroup.explainer/",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/171"
+  },
+  "1349": {
+    "issue": 1349,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Base appearance for select multiple drop-down",
+    "url": "https://github.com/whatwg/html/pull/12069",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/609"
   }
 }
