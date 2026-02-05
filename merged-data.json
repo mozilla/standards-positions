@@ -13182,5 +13182,33 @@
     "caniuse": "https://caniuse.com/wasm",
     "bug": null,
     "webkit": null
+  },
+  "1351": {
+    "issue": 1351,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Playback Statistics API for WebAudio",
+    "url": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats",
+    "explainer": "https://github.com/WICG/audio-context-playout-stats",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1352": {
+    "issue": 1352,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[css-view-transitions-2] Scoped View Transitions",
+    "url": "https://drafts.csswg.org/css-view-transitions-2/",
+    "explainer": "https://github.com/WICG/view-transitions/blob/main/scoped-transitions.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
