@@ -1937,7 +1937,7 @@ WebAssembly JS Promise Integration:
 WebAssembly Phase 3 Proposals:
   issue: 1350
   rationale: |
-    Due to the structure of the WebAssembly CG, Phase 3 signifies that a proposal is ready to implement. Phase 3 proposals have been reviewed by the SpiderMonkey team and more broadly within Gecko. Phase 2 proposals which require security/privacy review or host integration require their own Mozilla Standards Position.
+    Due to our high level of engagement in the WebAssembly standards process and the maturity phases used, we do not provide positions for proposals at Phase 3 if the scope of the proposal is limited to the WebAssembly language. Proposals that might affect other parts of the platform, have security- or privacy-relevant aspects, and less mature proposals should all request a position.
 WebAssembly Relaxed SIMD:
   description: |
     New 'relaxed' SIMD instructions for WebAssembly that have local non-determinism that depends on the platform.
