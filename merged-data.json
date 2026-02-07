@@ -13210,5 +13210,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1354": {
+    "issue": 1354,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "In web app scoping for `accent-color: auto` using system accent colors",
+    "url": "https://drafts.csswg.org/css-ui-4/#widget-accent",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/613"
   }
 }
