@@ -13256,5 +13256,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/614"
+  },
+  "1356": {
+    "issue": 1356,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Deprecate inline XSLT for production of SVG",
+    "url": "https://www.w3.org/TR/xslt/",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/615"
   }
 }
