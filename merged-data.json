@@ -8201,7 +8201,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Add a close event to MessagePort",
     "url": null,
     "explainer": null,
@@ -8213,9 +8215,13 @@
   "918": {
     "issue": 918,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "WebGPU timestamp queries",
     "url": "https://gpuweb.github.io/gpuweb/#timestamp",
     "explainer": "https://github.com/gpuweb/gpuweb/issues/614",
@@ -8242,10 +8248,14 @@
   },
   "920": {
     "issue": 920,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "[cssom-view-1] checkVisibility: contentVisibilityAuto, opacityProperty, and visibilityProperty",
     "url": "https://github.com/w3c/csswg-drafts/pull/9549",
     "explainer": "https://github.com/w3c/csswg-drafts/issues/9487",
@@ -8270,8 +8280,10 @@
   },
   "922": {
     "issue": 922,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
     "topics": [],
     "title": "Coding Independent Code Points (CICP) and PNG `cICP`",
@@ -10699,9 +10711,11 @@
   },
   "1155": {
     "issue": 1155,
-    "position": null,
+    "position": "positive",
     "venues": [],
-    "concerns": [],
+    "concerns": [
+      "venue"
+    ],
     "topics": [],
     "title": "Container Timing API",
     "url": "https://github.com/bloomberg/container-timing",
@@ -12398,9 +12412,9 @@
     "venues": [],
     "concerns": [],
     "topics": [],
-    "title": "FormControlRange - Live ranges for <input> and <textarea>",
-    "url": "https://github.com/whatwg/dom/pull/1404",
-    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/FormControlRange/explainer.md",
+    "title": "OpaqueRange: AbstractRange subtype for encapsulated content (<input>, <textarea>)",
+    "url": "https://github.com/whatwg/html/issues/11478",
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/OpaqueRange/explainer.md",
     "mdn": null,
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1990256",
@@ -13084,9 +13098,13 @@
   "1343": {
     "issue": 1343,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Support external <script type=speculationrules>",
     "url": "https://github.com/whatwg/html/pull/11697/changes",
     "explainer": "https://docs.google.com/document/d/10-K0musUNrRJISRl7cNS4cXJGnhjEapwRf_m_ci2qFg/edit?usp=sharing",
