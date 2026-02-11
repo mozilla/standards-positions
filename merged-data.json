@@ -13270,5 +13270,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/615"
+  },
+  "1357": {
+    "issue": 1357,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Selective Permissions Intervention",
+    "url": null,
+    "explainer": "https://github.com/explainers-by-googlers/selective-permissions-intervention/",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
