@@ -13284,5 +13284,33 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1358": {
+    "issue": 1358,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[css-cascade-5] The 'revert-rule' Keyword",
+    "url": "https://drafts.csswg.org/css-cascade-5/#revert-rule-keyword",
+    "explainer": "https://github.com/w3c/csswg-drafts/blob/main/css-cascade-5/revert-rule-explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1359": {
+    "issue": 1359,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "HDR interactions with 2D canvas, WebGL and WebGPU",
+    "url": "https://github.com/w3c/ColorWeb-CG/blob/main/hdr-big-picture.md",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/618"
   }
 }
