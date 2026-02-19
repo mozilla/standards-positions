@@ -1934,6 +1934,10 @@ WebAssembly JS Promise Integration:
   url: https://github.com/WebAssembly/js-promise-integration/
   venues:
   - Proposal
+WebAssembly Phase 3 Proposals:
+  issue: 1350
+  rationale: |
+    Due to our high level of engagement in the WebAssembly standards process and the maturity phases used, we do not provide positions for proposals at Phase 3 if the scope of the proposal is limited to the WebAssembly language. Proposals that might affect other parts of the platform, have security- or privacy-relevant aspects, and less mature proposals should all request a position.
 WebAssembly Relaxed SIMD:
   description: |
     New 'relaxed' SIMD instructions for WebAssembly that have local non-determinism that depends on the platform.
