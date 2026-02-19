@@ -13188,7 +13188,6 @@
     "webkit": "https://github.com/WebKit/standards-positions/issues/609"
   },
   "1350": {
-    "issue": 1350,
     "position": null,
     "venues": [],
     "concerns": [],
@@ -13199,7 +13198,8 @@
     "mdn": "https://developer.mozilla.org/en-US/docs/WebAssembly",
     "caniuse": "https://caniuse.com/wasm",
     "bug": null,
-    "webkit": null
+    "webkit": null,
+    "rationale": "Due to our high level of engagement in the WebAssembly standards process and the maturity phases used, we do not provide positions for proposals at Phase 3 if the scope of the proposal is limited to the WebAssembly language. Proposals that might affect other parts of the platform, have security- or privacy-relevant aspects, and less mature proposals should all request a position."
   },
   "1351": {
     "issue": 1351,
