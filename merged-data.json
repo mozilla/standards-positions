@@ -13259,11 +13259,16 @@
   },
   "1356": {
     "issue": 1356,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
-    "title": "Deprecate inline XSLT for production of SVG",
+    "topics": [
+      "HTML",
+      "SVG"
+    ],
+    "title": "Disable inline XSLT for production of SVG",
     "url": "https://www.w3.org/TR/xslt/",
     "explainer": null,
     "mdn": null,
@@ -13312,5 +13317,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/618"
+  },
+  "1360": {
+    "issue": 1360,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Request.isReloadNavigation",
+    "url": "https://fetch.spec.whatwg.org/#dom-request-isreloadnavigation",
+    "explainer": null,
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/Request/isReloadNavigation",
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/620"
   }
 }
