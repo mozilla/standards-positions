@@ -13331,5 +13331,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/620"
+  },
+  "1361": {
+    "issue": 1361,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Autofill Event",
+    "url": "https://wicg.github.io/autofill-event/",
+    "explainer": "https://github.com/WICG/autofill-event?tab=readme-ov-file#autofill-event",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/431"
   }
 }
