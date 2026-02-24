@@ -13345,5 +13345,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/431"
+  },
+  "1362": {
+    "issue": 1362,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Suppressing Interactive HTTP Auth Prompts for Subresources",
+    "url": "https://github.com/whatwg/fetch/issues/1910",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2018814",
+    "webkit": null
   }
 }
