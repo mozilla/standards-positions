@@ -13373,5 +13373,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1364": {
+    "issue": 1364,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CPU Performance API",
+    "url": "https://wicg.github.io/cpu-performance/",
+    "explainer": "https://github.com/WICG/cpu-performance",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
