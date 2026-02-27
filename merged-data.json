@@ -13176,9 +13176,14 @@
   "1349": {
     "issue": 1349,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS",
+      "HTML"
+    ],
     "title": "Base appearance for select multiple drop-down",
     "url": "https://github.com/whatwg/html/pull/12069",
     "explainer": null,
