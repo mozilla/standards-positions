@@ -13326,9 +13326,13 @@
   "1360": {
     "issue": 1360,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Request.isReloadNavigation",
     "url": "https://fetch.spec.whatwg.org/#dom-request-isreloadnavigation",
     "explainer": null,
@@ -13388,6 +13392,24 @@
     "title": "CPU Performance API",
     "url": "https://wicg.github.io/cpu-performance/",
     "explainer": "https://github.com/WICG/cpu-performance",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1365": {
+    "issue": 1365,
+    "position": null,
+    "venues": [
+      "W3C"
+    ],
+    "concerns": [],
+    "topics": [
+      "CSS"
+    ],
+    "title": "[css-borders-4] border-shape property",
+    "url": "https://drafts.csswg.org/css-borders-4/#border-shape",
+    "explainer": "https://github.com/noamr/explainers/blob/main/border-shape-explainer.md",
     "mdn": null,
     "caniuse": null,
     "bug": null,
