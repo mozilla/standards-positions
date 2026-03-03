@@ -13414,5 +13414,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1366": {
+    "issue": 1366,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Manifest Localization",
+    "url": "https://www.w3.org/TR/appmanifest/#x_localized-members",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
