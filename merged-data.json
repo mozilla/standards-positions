@@ -13428,5 +13428,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1367": {
+    "issue": 1367,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Import Bytes",
+    "url": "https://github.com/tc39/proposal-import-bytes",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/626"
   }
 }
