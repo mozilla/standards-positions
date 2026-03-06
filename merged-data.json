@@ -13442,5 +13442,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/626"
+  },
+  "1368": {
+    "issue": 1368,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "`controls` attribute for `<img>` element",
+    "url": "https://github.com/whatwg/html/pull/12151",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2016875",
+    "webkit": null
   }
 }
