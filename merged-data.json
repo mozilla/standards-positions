@@ -13470,5 +13470,33 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/628"
+  },
+  "1370": {
+    "issue": 1370,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "HTML streaming & revamped DOM parsing",
+    "url": null,
+    "explainer": "https://github.com/WICG/declarative-partial-updates/blob/main/dynamic-markup-revamped-explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/629"
+  },
+  "1371": {
+    "issue": 1371,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Web Application Manifest - `BeforeInstallPromptEvent`",
+    "url": "https://pr-preview.s3.amazonaws.com/w3c/manifest/pull/1206.html#installation-events",
+    "explainer": null,
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/BeforeInstallPromptEvent",
+    "caniuse": "https://caniuse.com/mdn-api_beforeinstallpromptevent_prompt",
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1967146",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/619"
   }
 }
