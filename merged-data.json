@@ -13456,5 +13456,19 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2016875",
     "webkit": null
+  },
+  "1369": {
+    "issue": 1369,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Out of order streaming",
+    "url": "https://github.com/whatwg/html/issues/11542#issuecomment-4026131872",
+    "explainer": "https://github.com/WICG/declarative-partial-updates/blob/main/patching-explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/628"
   }
 }
