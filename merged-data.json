@@ -8214,7 +8214,7 @@
   },
   "918": {
     "issue": 918,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -13175,7 +13175,7 @@
   },
   "1349": {
     "issue": 1349,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
