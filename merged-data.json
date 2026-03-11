@@ -13116,7 +13116,9 @@
   "1344": {
     "issue": 1344,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C CG"
+    ],
     "concerns": [],
     "topics": [],
     "title": "AI Content Disclosure for HTML",
