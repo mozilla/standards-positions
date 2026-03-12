@@ -9636,11 +9636,14 @@
   },
   "1052": {
     "issue": 1052,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
-    "concerns": [],
+    "concerns": [
+      "privacy",
+      "usability"
+    ],
     "topics": [
       "API"
     ],
