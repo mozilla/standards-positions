@@ -4889,7 +4889,7 @@
   },
   "602": {
     "issue": 602,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -13503,5 +13503,61 @@
     "caniuse": "https://caniuse.com/mdn-api_beforeinstallpromptevent_prompt",
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1967146",
     "webkit": "https://github.com/WebKit/standards-positions/issues/619"
+  },
+  "1372": {
+    "issue": 1372,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS ruby-overhang",
+    "url": "https://drafts.csswg.org/css-ruby-1/#ruby-overhang",
+    "explainer": "https://github.com/w3c/csswg-drafts/issues/4492",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/ruby-overhang",
+    "caniuse": "https://caniuse.com/mdn-css_properties_ruby-overhang",
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1611410",
+    "webkit": "https://bugs.webkit.org/show_bug.cgi?id=114678"
+  },
+  "1373": {
+    "issue": 1373,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[scroll-animations-1] Global timeline scope",
+    "url": "https://drafts.csswg.org/scroll-animations-1/#timeline-scoping",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1374": {
+    "issue": 1374,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[scroll-animations-1] The 'all' keyword for timeline-scope",
+    "url": "https://drafts.csswg.org/scroll-animations-1/#valdef-timeline-scope-all",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
+  },
+  "1375": {
+    "issue": 1375,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Add quality constraint to SpeechRecognitionOptions for on-device recognition",
+    "url": "https://github.com/WebAudio/web-speech-api/issues/182",
+    "explainer": "https://github.com/WebAudio/web-speech-api/blob/main/explainers/quality-levels.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/634"
   }
 }
