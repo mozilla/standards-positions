@@ -13559,5 +13559,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/634"
+  },
+  "1376": {
+    "issue": 1376,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Prerendering cross-origin iframes",
+    "url": "https://wicg.github.io/nav-speculation/prerendering.html",
+    "explainer": "https://github.com/WICG/nav-speculation/blob/main/prerendering-cross-origin-iframes.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
