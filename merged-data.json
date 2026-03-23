@@ -13572,6 +13572,20 @@
     "mdn": null,
     "caniuse": null,
     "bug": null,
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/636"
+  },
+  "1377": {
+    "issue": 1377,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[css-text] `text-fit` property",
+    "url": "https://github.com/w3c/csswg-drafts/pull/13616",
+    "explainer": "https://github.com/explainers-by-googlers/css-fit-text/blob/main/README.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/637"
   }
 }
