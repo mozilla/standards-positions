@@ -13587,5 +13587,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/637"
+  },
+  "1378": {
+    "issue": 1378,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[css-sizing] fit-content(<length-percentage>) value of width/min-width/max-width property",
+    "url": "https://drafts.csswg.org/css-sizing-3/#valdef-width-fit-content-length-percentage",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": "https://caniuse.com/?search=fit-content%28%29",
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1312588",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/638"
   }
 }
