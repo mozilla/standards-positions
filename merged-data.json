@@ -13601,5 +13601,19 @@
     "caniuse": "https://caniuse.com/?search=fit-content%28%29",
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1312588",
     "webkit": "https://github.com/WebKit/standards-positions/issues/638"
+  },
+  "1379": {
+    "issue": 1379,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Programmatic scroll promise",
+    "url": "https://drafts.csswg.org/cssom-view/#extension-to-the-element-interface",
+    "explainer": "https://github.com/explainers-by-googlers/promisify-scroll/blob/main/README.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/639"
   }
 }
