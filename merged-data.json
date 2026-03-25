@@ -9544,7 +9544,7 @@
   },
   "1045": {
     "issue": 1045,
-    "position": null,
+    "position": "positive",
     "venues": [
       "Ecma",
       "WHATWG"
