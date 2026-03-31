@@ -13629,5 +13629,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/642"
+  },
+  "1381": {
+    "issue": 1381,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Compression Dictionary support for cross-origin no-cors requests",
+    "url": "https://github.com/whatwg/fetch/pull/1854",
+    "explainer": null,
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Compression_dictionary_transport",
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/644"
   }
 }
