@@ -13615,5 +13615,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/639"
+  },
+  "1380": {
+    "issue": 1380,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Platform-provided behaviors for custom elements",
+    "url": "https://github.com/whatwg/html/issues/12150",
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PlatformProvidedBehaviors/explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/642"
   }
 }
