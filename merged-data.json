@@ -13644,5 +13644,23 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/644"
+  },
+  "1382": {
+    "issue": 1382,
+    "position": null,
+    "venues": [
+      "W3C CG"
+    ],
+    "concerns": [],
+    "topics": [
+      "HTML"
+    ],
+    "title": "idscope",
+    "url": null,
+    "explainer": "https://github.com/WICG/idrefs/blob/main/idscope-explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
