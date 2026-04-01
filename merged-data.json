@@ -8509,7 +8509,8 @@
     "venues": [],
     "concerns": [
       "complexity",
-      "venue"
+      "venue",
+      "API design"
     ],
     "topics": [],
     "title": "Observable",
