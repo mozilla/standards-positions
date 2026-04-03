@@ -13662,5 +13662,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1384": {
+    "issue": 1384,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "SpellCheckCustomDictionary",
+    "url": null,
+    "explainer": "https://github.com/Igalia/explainers/tree/main/spell-check-dictionary",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/646"
   }
 }
