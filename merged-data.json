@@ -13676,5 +13676,23 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/646"
+  },
+  "1385": {
+    "issue": 1385,
+    "position": null,
+    "venues": [
+      "WHATWG"
+    ],
+    "concerns": [],
+    "topics": [
+      "API"
+    ],
+    "title": "Fullscreen keyboard lock",
+    "url": "https://github.com/whatwg/fullscreen/pull/232",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=700123",
+    "webkit": null
   }
 }
