@@ -13736,5 +13736,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1389": {
+    "issue": 1389,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Gamepad Event-Driven Input API",
+    "url": null,
+    "explainer": "https://microsoftedge.github.io/MSEdgeExplainers/GamepadEventDrivenInputAPI/explainer.html",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/647"
   }
 }
