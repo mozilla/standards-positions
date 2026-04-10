@@ -13451,10 +13451,14 @@
   },
   "1368": {
     "issue": 1368,
-    "position": null,
-    "venues": [],
+    "position": "neutral",
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "`controls` attribute for `<img>` element",
     "url": "https://github.com/whatwg/html/pull/12151",
     "explainer": null,
