@@ -13708,7 +13708,7 @@
     "title": "[css-values-5] Request URL Modifiers",
     "url": "https://drafts.csswg.org/css-values-5/#request-url-modifiers",
     "explainer": null,
-    "mdn": null,
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/url_function#url-modifier",
     "caniuse": "https://caniuse.com/?search=url%28%29+modifier",
     "bug": null,
     "webkit": "https://developer.apple.com/documentation/safari-release-notes/safari-26_2-release-notes#:~:text=Added%20support%20for%20cross%2Dorigin%28%29%20and%20referrer%2Dpolicy%28%29%20CSS%20URL%20modifiers%2E%20%28155625162"
