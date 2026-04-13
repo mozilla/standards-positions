@@ -11098,7 +11098,7 @@
     "explainer": "https://github.com/guohuideng2024/resource-timing/blob/gh-pages/Explainers/Content_Encoding.md",
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2019923",
     "webkit": "https://github.com/WebKit/standards-positions/issues/467"
   },
   "1191": {
@@ -13257,9 +13257,13 @@
   "1355": {
     "issue": 1355,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C CG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Speculation rules: `form_submission` field",
     "url": null,
     "explainer": "https://github.com/WICG/nav-speculation/blob/main/prerendering-form-submission.md",
@@ -13746,7 +13750,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Gamepad Event-Driven Input API",
     "url": null,
     "explainer": "https://microsoftedge.github.io/MSEdgeExplainers/GamepadEventDrivenInputAPI/explainer.html",
