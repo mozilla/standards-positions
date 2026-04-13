@@ -329,17 +329,19 @@
     "issue": 49,
     "position": null,
     "venues": [
-      "W3C CG"
+      "W3C"
     ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Gamepad Haptics",
     "url": null,
     "explainer": null,
     "mdn": null,
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=680289",
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/1"
   },
   "54": {
     "issue": 54,
@@ -689,7 +691,7 @@
   },
   "91": {
     "issue": 91,
-    "position": null,
+    "position": "defer",
     "venues": [
       "WHATWG"
     ],
@@ -2785,7 +2787,7 @@
   },
   "349": {
     "issue": 349,
-    "position": null,
+    "position": "defer",
     "venues": [
       "W3C CG"
     ],
@@ -4107,7 +4109,7 @@
   },
   "525": {
     "issue": 525,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [
       "privacy"
@@ -5238,22 +5240,6 @@
     "topics": [],
     "title": "Web App Dark Mode",
     "url": "https://github.com/WICG/manifest-incubations/blob/gh-pages/user-preferences-explainer.md",
-    "explainer": null,
-    "mdn": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
-  "631": {
-    "issue": 631,
-    "position": "defer",
-    "venues": [],
-    "concerns": [],
-    "topics": [
-      "HTML"
-    ],
-    "title": "Focusgroup",
-    "url": "https://open-ui.org/components/focusgroup.explainer/",
     "explainer": null,
     "mdn": null,
     "caniuse": null,
@@ -8505,7 +8491,7 @@
   },
   "945": {
     "issue": 945,
-    "position": null,
+    "position": "negative",
     "venues": [],
     "concerns": [
       "complexity",
@@ -10830,7 +10816,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTTP"
+    ],
     "title": "Allowing SameSite=None Cookies in First-Party Sandboxed Contexts",
     "url": "https://github.com/whatwg/html/pull/10915",
     "explainer": "https://github.com/explainers-by-googlers/csp-sandbox-allow-same-site-none-cookies",
@@ -12004,7 +11992,7 @@
   },
   "1258": {
     "issue": 1258,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [
@@ -13167,13 +13155,17 @@
   },
   "1348": {
     "issue": 1348,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "Focusgroup",
-    "url": "https://open-ui.org/components/scoped-focusgroup.explainer/",
-    "explainer": null,
+    "url": "https://github.com/whatwg/html/pull/11723",
+    "explainer": "https://open-ui.org/components/scoped-focusgroup.explainer/",
     "mdn": null,
     "caniuse": null,
     "bug": null,
@@ -13474,9 +13466,13 @@
   "1369": {
     "issue": 1369,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Out of order streaming",
     "url": "https://github.com/whatwg/html/issues/11542#issuecomment-4026131872",
     "explainer": "https://github.com/WICG/declarative-partial-updates/blob/main/patching-explainer.md",
@@ -13588,7 +13584,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "[css-text] `text-fit` property",
     "url": "https://github.com/w3c/csswg-drafts/pull/13616",
     "explainer": "https://github.com/explainers-by-googlers/css-fit-text/blob/main/README.md",
