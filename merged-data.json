@@ -1833,11 +1833,13 @@
   },
   "196": {
     "issue": 196,
-    "position": null,
+    "position": "negative",
     "venues": [
       "W3C CG"
     ],
-    "concerns": [],
+    "concerns": [
+      "API design"
+    ],
     "topics": [],
     "title": "Keyboard Lock",
     "url": "https://github.com/WICG/keyboard-lock/",
