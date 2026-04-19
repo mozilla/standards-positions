@@ -13774,5 +13774,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/648"
+  },
+  "1391": {
+    "issue": 1391,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Request for WebMCP",
+    "url": "https://github.com/webmachinelearning/webmcp",
+    "explainer": "https://github.com/webmachinelearning/webmcp/blob/main/declarative-api-explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/649"
   }
 }
