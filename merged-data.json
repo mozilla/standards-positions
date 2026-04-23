@@ -12269,7 +12269,7 @@
     "concerns": [],
     "topics": [],
     "title": "Selective Clipboard Format Read",
-    "url": "https://www.w3.org/TR/clipboard-apis/#dom-clipboard-read",
+    "url": "https://github.com/w3c/clipboard-apis/pull/248",
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/ClipboardAPI/SelectiveClipboardFormatRead/explainer.md",
     "mdn": null,
     "caniuse": null,
@@ -13788,5 +13788,33 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/649"
+  },
+  "1392": {
+    "issue": 1392,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Capability Element - <usermedia> (former PEPC)",
+    "url": "https://github.com/w3c/mediacapture-extensions/pull/168",
+    "explainer": "https://github.com/w3c/mediacapture-extensions/pull/168",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/651"
+  },
+  "1393": {
+    "issue": 1393,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Request support for path() and shape() basic shape functions in shape-outside property",
+    "url": "https://drafts.csswg.org/css-shapes/#shape-outside-property",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": "https://caniuse.com/mdn-css_properties_shape-outside_path",
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1983188",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/650"
   }
 }
