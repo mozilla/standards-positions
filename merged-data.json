@@ -3318,13 +3318,15 @@
       "W3C"
     ],
     "concerns": [],
-    "topics": [],
-    "title": "Pointer Lock Unadjusted Movement Option.",
-    "url": "https://github.com/w3c/pointerlock/pull/49",
+    "topics": [
+      "API"
+    ],
+    "title": "Pointer Lock Unadjusted Movement",
+    "url": "https://w3c.github.io/pointerlock/#pointerlockoptions-dictionary",
     "explainer": null,
     "mdn": null,
-    "caniuse": null,
-    "bug": null,
+    "caniuse": "https://caniuse.com/mdn-api_element_requestpointerlock_options_unadjustedmovement_parameter",
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1829401",
     "webkit": null
   },
   "453": {
