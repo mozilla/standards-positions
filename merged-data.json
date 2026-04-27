@@ -13818,5 +13818,19 @@
     "caniuse": "https://caniuse.com/mdn-css_properties_shape-outside_path",
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1983188",
     "webkit": "https://github.com/WebKit/standards-positions/issues/650"
+  },
+  "1394": {
+    "issue": 1394,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Responsively-sized iframes",
+    "url": "https://drafts.csswg.org/css-sizing-4/#responsive-iframes",
+    "explainer": "https://github.com/w3c/csswg-drafts/blob/main/css-sizing-4/responsive-iframes-explainer.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/653"
   }
 }
