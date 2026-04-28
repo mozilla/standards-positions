@@ -13832,5 +13832,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/653"
+  },
+  "1395": {
+    "issue": 1395,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Disable SVG filters on plugins and cross-origin/restricted iframes",
+    "url": "https://github.com/w3c/csswg-drafts/pull/13846",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://crbug.com/476646486",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/654"
   }
 }
