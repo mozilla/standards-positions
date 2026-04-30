@@ -13846,5 +13846,33 @@
     "caniuse": null,
     "bug": "https://crbug.com/476646486",
     "webkit": "https://github.com/WebKit/standards-positions/issues/654"
+  },
+  "1396": {
+    "issue": 1396,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Relative Alpha Colors",
+    "url": "https://drafts.csswg.org/css-color-5/#relative-alpha",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/657"
+  },
+  "1397": {
+    "issue": 1397,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Support background-clip: border-area",
+    "url": "https://drafts.csswg.org/css-backgrounds-4/#valdef-background-clip-border-area",
+    "explainer": null,
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-clip",
+    "caniuse": "https://caniuse.com/wf-background-clip-border-area",
+    "bug": null,
+    "webkit": "https://webkit.org/blog/16214/background-clip-border-area"
   }
 }
