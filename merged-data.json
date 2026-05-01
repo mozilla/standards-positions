@@ -13874,5 +13874,19 @@
     "caniuse": "https://caniuse.com/wf-background-clip-border-area",
     "bug": null,
     "webkit": "https://webkit.org/blog/16214/background-clip-border-area"
+  },
+  "1398": {
+    "issue": 1398,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Approximate Geolocation: permissions",
+    "url": "https://github.com/w3c/geolocation/pull/195",
+    "explainer": "https://github.com/w3c/geolocation/wiki/Approximate-Geolocation:-Permissions-Model-Comparison",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
