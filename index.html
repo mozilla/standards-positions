@@ -570,7 +570,7 @@
        }
 
        if (location.hash) {
-         expandDetailsForTarget(location.hash.substr(1));
+         expandDetailsForTarget(location.hash.substring(1));
        }
        onhashchange = e => {
          expandDetailsForTarget(e.newURL.split('#')[1]);
