@@ -12404,10 +12404,14 @@
   },
   "1289": {
     "issue": 1289,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "OpaqueRange: AbstractRange subtype for encapsulated content (<input>, <textarea>)",
     "url": "https://github.com/whatwg/html/issues/11478",
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/OpaqueRange/explainer.md",
