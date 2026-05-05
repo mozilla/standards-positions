@@ -150,7 +150,7 @@ def process_body(issue):
                 continue
             if expect_response:
                 value = line.strip()
-                if key in ("url", "explainer", "mdn", "caniuse", "bug", "webkit"):
+                if expect_response in ("url", "explainer", "mdn", "caniuse", "bug", "webkit"):
                     value = get_url(value)
                 if value and value != "_No response_" and value.lower() != "n/a":
                     body[expect_response] = value
