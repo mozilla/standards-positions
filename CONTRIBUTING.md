@@ -76,7 +76,7 @@ We welcome discussion from members of the wider Mozilla community -- including t
 that it be on-topic, and that it follow [Mozilla's Community Participation
 Guidelines](https://www.mozilla.org/about/governance/policies/participation/).
 
-Specifically, the primary purpose of this repository is to determine Mozilla's postions on
+Specifically, the primary purpose of this repository is to determine Mozilla's positions on
 specifications. That is distinct from the larger Web community's position; the best place to
 advocate for a specification is using the appropriate standards body's discussion mechanisms, not
 here.
@@ -91,7 +91,7 @@ Issues should only provide a high-level summary of this information in a couple 
 
 Please focus your comments on bringing new information about a specification.
 
-If you want to express support for a specification, the best way to do that is using [Github
+If you want to express support for a specification, the best way to do that is using [GitHub
 reactions](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments) on the
 issue or a specific comment.
 
