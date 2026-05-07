@@ -4877,22 +4877,6 @@
     "bug": null,
     "webkit": null
   },
-  "601": {
-    "issue": 601,
-    "position": "positive",
-    "venues": [
-      "WHATWG"
-    ],
-    "concerns": [],
-    "topics": [],
-    "title": "Changing the Origin-Agent-Cluster default, aka deprecating document.domain",
-    "url": "https://html.spec.whatwg.org/multipage/origin.html#origin-isolation.",
-    "explainer": null,
-    "mdn": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "602": {
     "issue": 602,
     "position": "positive",
