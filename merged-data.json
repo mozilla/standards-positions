@@ -13777,7 +13777,7 @@
     "venues": [],
     "concerns": [],
     "topics": [],
-    "title": "Request for WebMCP",
+    "title": "WebMCP",
     "url": "https://github.com/webmachinelearning/webmcp",
     "explainer": "https://github.com/webmachinelearning/webmcp/blob/main/declarative-api-explainer.md",
     "mdn": null,
