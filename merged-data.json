@@ -13882,5 +13882,33 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1405": {
+    "issue": 1405,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "flex-wrap: balance",
+    "url": "https://drafts.csswg.org/css-flexbox-2/",
+    "explainer": "https://github.com/bfgeek/flex-wrap-balance/blob/main/README.md#flex-wrapbalance-explainer",
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2013454",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/660"
+  },
+  "1406": {
+    "issue": 1406,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "overscroll-behavior: chain",
+    "url": "https://drafts.csswg.org/css-overscroll-1/#propdef-overscroll-behavior",
+    "explainer": "https://github.com/vmpstr/htmldemos/blob/master/gestures/overscroll-behavior-chain.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/661"
   }
 }
