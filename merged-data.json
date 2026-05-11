@@ -13780,9 +13780,13 @@
   "1390": {
     "issue": 1390,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "WebSocket BFCache integration (Disconnect on entry)",
     "url": "https://github.com/whatwg/html/issues/12085",
     "explainer": null,
@@ -13958,5 +13962,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/661"
+  },
+  "1407": {
+    "issue": 1407,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "WebAudio Configurable Render Quantum",
+    "url": "https://webaudio.github.io/web-audio-api/#render-quantum-sizes",
+    "explainer": "https://github.com/WebAudio/web-audio-api/blob/main/explainer/user-selectable-render-size.md",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/662"
   }
 }
