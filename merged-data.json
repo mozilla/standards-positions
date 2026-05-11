@@ -327,7 +327,7 @@
   },
   "49": {
     "issue": 49,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -3313,7 +3313,7 @@
   },
   "448": {
     "issue": 448,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -8131,9 +8131,13 @@
   "909": {
     "issue": 909,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Permissions Policy Reporting and Report-Only mode",
     "url": "https://w3c.github.io/webappsec-permissions-policy/#reporting",
     "explainer": "https://github.com/w3c/webappsec-permissions-policy/blob/main/reporting.md",
@@ -8145,9 +8149,13 @@
   "910": {
     "issue": 910,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Media Capabilities (hdrMetadataType)",
     "url": "https://www.w3.org/TR/media-capabilities/#dom-videoconfiguration-hdrmetadatatype",
     "explainer": "https://github.com/w3c/media-capabilities/blob/main/explainer.md#decode-capabilities",
@@ -13552,9 +13560,13 @@
   "1375": {
     "issue": 1375,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C CG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Add quality constraint to SpeechRecognitionOptions for on-device recognition",
     "url": "https://github.com/WebAudio/web-speech-api/issues/182",
     "explainer": "https://github.com/WebAudio/web-speech-api/blob/main/explainers/quality-levels.md",
@@ -13590,15 +13602,19 @@
     "explainer": "https://github.com/explainers-by-googlers/css-fit-text/blob/main/README.md",
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2038425",
     "webkit": "https://github.com/WebKit/standards-positions/issues/637"
   },
   "1378": {
     "issue": 1378,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "[css-sizing] fit-content(<length-percentage>) value of width/min-width/max-width property",
     "url": "https://drafts.csswg.org/css-sizing-3/#valdef-width-fit-content-length-percentage",
     "explainer": null,
@@ -13702,9 +13718,13 @@
   "1386": {
     "issue": 1386,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "[css-values-5] Request URL Modifiers",
     "url": "https://drafts.csswg.org/css-values-5/#request-url-modifiers",
     "explainer": null,
@@ -13788,9 +13808,13 @@
   "1392": {
     "issue": 1392,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "Capability Element - <usermedia> (former PEPC)",
     "url": "https://github.com/w3c/mediacapture-extensions/pull/168",
     "explainer": "https://github.com/w3c/mediacapture-extensions/pull/168",
@@ -13802,10 +13826,14 @@
   "1393": {
     "issue": 1393,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
-    "title": "Request support for path() and shape() basic shape functions in shape-outside property",
+    "topics": [
+      "CSS"
+    ],
+    "title": "CSS path() and shape() basic shape functions in shape-outside property",
     "url": "https://drafts.csswg.org/css-shapes/#shape-outside-property",
     "explainer": null,
     "mdn": null,
@@ -13830,9 +13858,13 @@
   "1395": {
     "issue": 1395,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "SVG"
+    ],
     "title": "Disable SVG filters on plugins and cross-origin/restricted iframes",
     "url": "https://github.com/w3c/csswg-drafts/pull/13846",
     "explainer": null,
@@ -13844,9 +13876,13 @@
   "1396": {
     "issue": 1396,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "Relative Alpha Colors",
     "url": "https://drafts.csswg.org/css-color-5/#relative-alpha",
     "explainer": null,
@@ -13858,9 +13894,13 @@
   "1397": {
     "issue": 1397,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "Support background-clip: border-area",
     "url": "https://drafts.csswg.org/css-backgrounds-4/#valdef-background-clip-border-area",
     "explainer": null,
@@ -13886,9 +13926,13 @@
   "1405": {
     "issue": 1405,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "flex-wrap: balance",
     "url": "https://drafts.csswg.org/css-flexbox-2/",
     "explainer": "https://github.com/bfgeek/flex-wrap-balance/blob/main/README.md#flex-wrapbalance-explainer",
@@ -13900,9 +13944,13 @@
   "1406": {
     "issue": 1406,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "overscroll-behavior: chain",
     "url": "https://drafts.csswg.org/css-overscroll-1/#propdef-overscroll-behavior",
     "explainer": "https://github.com/vmpstr/htmldemos/blob/master/gestures/overscroll-behavior-chain.md",
