@@ -13976,5 +13976,25 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/662"
+  },
+  "1408": {
+    "issue": 1408,
+    "position": null,
+    "venues": [
+      "W3C"
+    ],
+    "concerns": [
+      "privacy"
+    ],
+    "topics": [
+      "API"
+    ],
+    "title": "Attribution",
+    "url": "https://w3c.github.io/attribution/",
+    "explainer": "https://w3c.github.io/attribution/",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/666"
   }
 }
