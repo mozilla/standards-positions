@@ -13996,5 +13996,19 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/666"
+  },
+  "1409": {
+    "issue": 1409,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "window-drag",
+    "url": "https://drafts.csswg.org/css-ui-4/#window-drag",
+    "explainer": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/668"
   }
 }
