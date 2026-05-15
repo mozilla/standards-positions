@@ -84,6 +84,24 @@ def get_url(text: str) -> str:
         return url
     return ""
 
+
+def get_feature_id(text: str) -> Optional[str]:
+    if "https://" in text:
+        url = get_url(text)
+        url_prefixes = ["https://webstatus.dev/features/",
+                         "https://web-platform-dx.github.io/web-features-explorer/"]
+        for prefix in url_prefixes:
+            if url.startswith(prefix):
+                url = url.split("#", 1)[0].split("?", 1)[0]
+                text = url[len(prefix):].split("/", 1)[0]
+                break
+
+    m = re.search("[a-z][a-zA-Z\-]+", text)
+    if m:
+        return m.group()
+    return None
+
+
 def process_body(issue: Mapping[str, Any]) -> Mapping[str, Optional[str]]:
     lines = issue["body"].splitlines()
 
@@ -91,6 +109,7 @@ def process_body(issue: Mapping[str, Any]) -> Mapping[str, Optional[str]]:
         "title": None,
         "url": None,
         "explainer": None,
+        "web-feature": None,
         "mdn": None,
         "caniuse": None,
         "bug": None,
@@ -115,6 +134,7 @@ def process_body(issue: Mapping[str, Any]) -> Mapping[str, Optional[str]]:
         # Specification title
         "Specification or proposal URL (if available)": "url",
         "Explainer URL (if available)": "explainer",
+        "web-feature id": "web-feature",
         "MDN URL": "mdn",
         "Caniuse.com URL": "caniuse",
         "Bugzilla URL": "bug",
@@ -155,6 +175,8 @@ def process_body(issue: Mapping[str, Any]) -> Mapping[str, Optional[str]]:
                 value = line.strip()
                 if response_field in ("url", "explainer", "mdn", "caniuse", "bug", "webkit"):
                     value = get_url(value)
+                elif response_field == "web-feature":
+                    value = get_feature_id(value)
                 if value and value != "_No response_" and value.lower() != "n/a":
                     body[response_field] = value
                     response_field = None

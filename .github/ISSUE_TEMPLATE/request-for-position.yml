@@ -24,6 +24,11 @@ body:
       label: "Proposal author(s)"
       placeholder: "@handle"
   - type: input
+    id: web-feature
+    attributes:
+      label: "web-feature id"
+      description: "See https://web-platform-dx.github.io/web-features-explorer/"
+  - type: input
     id: mdn-url
     attributes:
       label: "MDN URL"
