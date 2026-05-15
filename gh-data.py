@@ -1,30 +1,33 @@
 #!/usr/bin/env python
 
 # Based on https://github.com/WebKit/standards-positions/blob/main/summary.py
+import json, os, re
+from collections.abc import Mapping, Sequence
+from typing import Optional, Any
 
-import json, os, requests, re, sys
-
+import requests
 
 # Retrieve the token from environment variables
 token = os.getenv('GITHUB_TOKEN')
 headers = {"Authorization": f"token {token}"} if token else {}
 
+Json = None | str | int | float | Sequence["Json"] | Mapping[str, "Json"]
 
 # Utilities
-def write_json(filename, data):
+def write_json(filename: str, data: Json) -> None:
     with open(filename, "w") as f:
         json.dump(data, f, indent=2, separators=(",", ": "))
         f.write("\n")
 
 
 # General processing
-def process(issues):
+def process(issues: list[Mapping[str, Any]]) -> None:
     summary = []
     for issue in issues:
         if is_ignorable_issue(issue):
             continue
 
-        summary_item = {"issue": int(issue["html_url"][issue["html_url"].rfind("/") + 1 :])}
+        summary_item: dict[str, Any] = {"issue": int(issue["html_url"][issue["html_url"].rfind("/") + 1 :])}
         summary_item.update(process_labels(issue["labels"]))
         summary_item.update(process_body(issue))
         summary_item["title"] = re.sub(r"(request for (mozilla )?position|rfp)( ?:| on) ", "", issue["title"], flags=re.IGNORECASE)
@@ -34,7 +37,7 @@ def process(issues):
     print("Done: gh-data-summary.json.")
 
 
-def is_ignorable_issue(issue):
+def is_ignorable_issue(issue: Mapping[str, Any]) -> bool:
     if "pull_request" in issue:
         return True
     for label in issue["labels"]:
@@ -43,7 +46,7 @@ def is_ignorable_issue(issue):
     return False
 
 
-def process_labels(labels):
+def process_labels(labels: list[Mapping[str, Any]]) -> Mapping[str, Optional[list[str]]]:
     position = None
     venues = []
     concerns = []
@@ -71,7 +74,7 @@ def process_labels(labels):
     }
 
 
-def get_url(text):
+def get_url(text: str) -> str:
     # get the first url (maybe in markdown link) and remove trailing comma
     m = re.search(r"\b(https?://[^\)\s]+)", text)
     if m:
@@ -81,10 +84,10 @@ def get_url(text):
         return url
     return ""
 
-def process_body(issue):
+def process_body(issue: Mapping[str, Any]) -> Mapping[str, Optional[str]]:
     lines = issue["body"].splitlines()
 
-    body = {
+    body: dict[str, Optional[str]] = {
         "title": None,
         "url": None,
         "explainer": None,
@@ -134,7 +137,7 @@ def process_body(issue):
                     break
     # Issues using YAML template
     else:
-        expect_response = None
+        response_field = None
         skip = False
         for line in lines:
             if line == "### Other information":
@@ -142,25 +145,25 @@ def process_body(issue):
             for title, key in yaml_mapping.items():
                 text_title = f"### {title}"
                 if line == text_title:
-                    expect_response = key
+                    response_field = key
                     skip = True
                     break
             if skip:
                 skip = False
                 continue
-            if expect_response:
+            if response_field:
                 value = line.strip()
-                if key in ("url", "explainer", "mdn", "caniuse", "bug", "webkit"):
+                if response_field in ("url", "explainer", "mdn", "caniuse", "bug", "webkit"):
                     value = get_url(value)
                 if value and value != "_No response_" and value.lower() != "n/a":
-                    body[expect_response] = value
-                    expect_response = None
+                    body[response_field] = value
+                    response_field = None
 
     return body
 
 
 # Setup
-def main():
+def main() -> None:
     # update
     data = []
     page = 1
@@ -201,6 +204,7 @@ def main():
     with open("gh-data.json", "rb") as f:
         data = json.load(f)
     process(data)
+
 
 if __name__ == "__main__":
     main()
