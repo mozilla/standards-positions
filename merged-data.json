@@ -933,7 +933,7 @@
     "webkit": null,
     "description": "The Sanitizer API allows turning supplied HTML into a safe HTML DOM tree",
     "id": "sanitizer-api",
-    "rationale": "This could be useful, since libraries exists and the browser could do it better."
+    "rationale": "This could be useful, since libraries exist and the browser could do it better."
   },
   "108": {
     "position": "positive",
@@ -1482,7 +1482,7 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1508290",
     "webkit": null,
-    "description": "This specification defines a delivery mechanism for a number of policies which are to be applied to an entire origin. It compliments header-based delivery mechanisms for existing policies (Content Security Policy, Referrer Policy, etc).",
+    "description": "This specification defines a delivery mechanism for a number of policies which are to be applied to an entire origin. It complements header-based delivery mechanisms for existing policies (Content Security Policy, Referrer Policy, etc).",
     "id": "origin-policy",
     "rationale": "Giving developers the ability to set policies for an entire origin is a powerful new primitive that will benefit security of applications as well as performance due to the ability to bypass CORS preflights. The renewed effort to make this happen takes a strong anti-tracking stance that is in line with our efforts around privacy in Fetch, such as isolating the HTTP cache. Given this, it seems worth figuring out if this can be made viable."
   },
@@ -1594,7 +1594,7 @@
     "webkit": null,
     "description": "The WebTransport Protocol Framework enables clients constrained by the Web security model to communicate with a remote server using a secure multiplexed transport. It consists of a set of individual protocols that are safe to expose to untrusted applications, combined with a model that allows them to be used interchangeably. This document defines the overall requirements on the protocols used in WebTransport, as well as the common features of the protocols, support for some of which may be optional.",
     "id": "webtransport",
-    "rationale": "We are generally in support of a mechanism that addresses the use cases implied by this solution document. While major questions remain open at this time -- notably, multiplexing, the API surface, and available statistics -- we think that prototyping the proposed solution as details become more firm would be worthwhile. We would like see the new WebSocketStream and WebTransport stream APIs to be developed in concert with each other, so as to share as much design as possible."
+    "rationale": "We are generally in support of a mechanism that addresses the use cases implied by this solution document. While major questions remain open at this time -- notably, multiplexing, the API surface, and available statistics -- we think that prototyping the proposed solution as details become more firm would be worthwhile. We would like to see the new WebSocketStream and WebTransport stream APIs to be developed in concert with each other, so as to share as much design as possible."
   },
   "168": {
     "issue": 168,
@@ -7954,7 +7954,7 @@
     "webkit": null,
     "description": "This proposal extends Media Source Extension objects with a number of features that allow web applications to be more efficient in terms of power usage and memory.",
     "id": "managed-media-source",
-    "rationale": "This opt-in feature of Media Source Extension allows implementations to reclaim memory when needed, and to allows scheduling download of media data when it's best to do so in terms of power usage. This is especially important on mobile. This has the potential to improve the experience of media playback on low-power devices, but also generally allows web applications to use resources more efficiently."
+    "rationale": "This opt-in feature of Media Source Extension allows implementations to reclaim memory when needed, and to allow scheduling download of media data when it's best to do so in terms of power usage. This is especially important on mobile. This has the potential to improve the experience of media playback on low-power devices, but also generally allows web applications to use resources more efficiently."
   },
   "848": {
     "issue": 848,
@@ -11396,7 +11396,7 @@
     "webkit": "https://github.com/WebKit/standards-positions/issues/443",
     "description": "This is a set of improvements to the Web Speech API specification that aims at adding features for users to perform speech-to-text and text-to-speech using the device's capabilities, without relying on web services. This also allows using Web Speech API with `MediaStreamTrack`.",
     "id": "web-speech-api-on-device",
-    "rationale": "We believe this is a strong and welcome improvement to the API, on multiple aspects: added capabilities to the platform, in terms for feature and performance (e.g. being able to do high-quality low-latency recognition), but also accessibility and privacy."
+    "rationale": "We believe this is a strong and welcome improvement to the API, on multiple aspects: added capabilities to the platform, in terms of feature and performance (e.g. being able to do high-quality low-latency recognition), but also accessibility and privacy."
   },
   "1158": {
     "issue": 1158,
