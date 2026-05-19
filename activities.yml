@@ -1060,7 +1060,7 @@ Managed Media Source:
   issue: 845
   position: positive
   rationale: |
-    This opt-in feature of Media Source Extension allows implementations to reclaim memory when needed, and to allows scheduling download of media data when it's best to do so in terms of power usage. This is especially important on mobile. This has the potential to improve the experience of media playback on low-power devices, but also generally allows web applications to use resources more efficiently.
+    This opt-in feature of Media Source Extension allows implementations to reclaim memory when needed, and to allow scheduling download of media data when it's best to do so in terms of power usage. This is especially important on mobile. This has the potential to improve the experience of media playback on low-power devices, but also generally allows web applications to use resources more efficiently.
   url: https://github.com/w3c/media-source/issues/320
   venues:
   - W3C
@@ -1168,7 +1168,7 @@ Opaque Response Blocking (ORB):
 Origin Policy:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1508290
   description: |
-    This specification defines a delivery mechanism for a number of policies which are to be applied to an entire origin. It compliments header-based delivery mechanisms for existing policies (Content Security Policy, Referrer Policy, etc).
+    This specification defines a delivery mechanism for a number of policies which are to be applied to an entire origin. It complements header-based delivery mechanisms for existing policies (Content Security Policy, Referrer Policy, etc).
   id: origin-policy
   issue: 160
   position: positive
@@ -1421,7 +1421,7 @@ Sanitizer API:
   issue: 106
   position: positive
   rationale: |
-    This could be useful, since libraries exists and the browser could do it better.
+    This could be useful, since libraries exist and the browser could do it better.
   url: https://wicg.github.io/sanitizer-api/
   venues:
   - Proposal
@@ -1676,7 +1676,7 @@ The WebTransport Protocol Framework:
   issue: 167
   position: positive
   rationale: |
-    We are generally in support of a mechanism that addresses the use cases implied by this solution document. While major questions remain open at this time -- notably, multiplexing, the API surface, and available statistics -- we think that prototyping the proposed solution as details become more firm would be worthwhile. We would like see the new WebSocketStream and WebTransport stream APIs to be developed in concert with each other, so as to share as much design as possible.
+    We are generally in support of a mechanism that addresses the use cases implied by this solution document. While major questions remain open at this time -- notably, multiplexing, the API surface, and available statistics -- we think that prototyping the proposed solution as details become more firm would be worthwhile. We would like to see the new WebSocketStream and WebTransport stream APIs to be developed in concert with each other, so as to share as much design as possible.
   url: https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview
   venues:
   - Proposal
@@ -1901,7 +1901,7 @@ Web Speech API on-device:
   id: web-speech-api-on-device
   issue: 1157
   rationale: |
-    We believe this is a strong and welcome improvement to the API, on multiple aspects: added capabilities to the platform, in terms for feature and performance (e.g. being able to do high-quality low-latency recognition), but also accessibility and privacy.
+    We believe this is a strong and welcome improvement to the API, on multiple aspects: added capabilities to the platform, in terms of feature and performance (e.g. being able to do high-quality low-latency recognition), but also accessibility and privacy.
   url: https://webaudio.github.io/web-speech-api/
 Web Thing API:
   description: |
