@@ -2,9 +2,9 @@
 # This is a pre-commit hook that validates code formatting.
 #
 # Install this by running the script with an argument of "install",
-# which adds a symlink at .git/hooks/precommit; or run the equivalent:
+# which adds a symlink at .git/hooks/pre-commit; or run the equivalent:
 #
-# $ ln -s ../../hooks/pre-commit .git/pre-commit
+# $ ln -s ../../pre-commit .git/hooks/pre-commit
 
 root="$(git rev-parse --show-toplevel 2>/dev/null)"
 venv="$root/venv"
