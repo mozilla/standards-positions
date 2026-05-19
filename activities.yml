@@ -1060,7 +1060,7 @@ Managed Media Source:
   issue: 845
   position: positive
   rationale: |
-    This opt-in feature of Media Source Extension allows implementations to reclaim memory when needed, and to allows scheduling download of media data when it's best to do so in terms of power usage. This is especialy important on mobile. This has the potential to improve the experience of media playback on low-power devices, but also generally allows web applications to use resources more efficiently.
+    This opt-in feature of Media Source Extension allows implementations to reclaim memory when needed, and to allows scheduling download of media data when it's best to do so in terms of power usage. This is especially important on mobile. This has the potential to improve the experience of media playback on low-power devices, but also generally allows web applications to use resources more efficiently.
   url: https://github.com/w3c/media-source/issues/320
   venues:
   - W3C
@@ -1493,7 +1493,7 @@ Service binding and parameter specification via the DNS (DNS SVCB and HTTPSSVC):
   issue: 208
   position: positive
   rationale: |
-    While there are some details of the proposal that may require refining, we beleive that this is a promising approach to support Encrypted SNI, and may help improve user experience with HTTP/3.
+    While there are some details of the proposal that may require refining, we believe that this is a promising approach to support Encrypted SNI, and may help improve user experience with HTTP/3.
   url: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-svcb-httpssvc
   venues:
   - IETF
@@ -1538,7 +1538,7 @@ Signature-based Integrity:
   issue: 1139
   url: https://wicg.github.io/signature-based-sri/
   description: |
-    Signature-based Integrity intends to extend Subrsource Integrity with a provenance check. The proposal adds support for ed25519 keys in integrity attributes such that the browser requires HTTP responses signed with RFC9421 HTTP Message Signatures.
+    Signature-based Integrity intends to extend Subresource Integrity with a provenance check. The proposal adds support for ed25519 keys in integrity attributes such that the browser requires HTTP responses signed with RFC9421 HTTP Message Signatures.
   rationale: |
     Hash-based integrity provides second pre-image resistance and therefore allows authors to use a CDN without fully trusting it. Neither the CDN, the server or the storage can modify the content without it being noticed.
     The proposed Signature-based SRI can not fully guarantee this split between serving infrastructure and authoring: There is no explicit guarantee as to who is providing the extra signature and who is holding the key material. It might as well be provided by the very same server.
@@ -1930,7 +1930,7 @@ WebAssembly JS Promise Integration:
   issue: 944
   position: positive
   rationale: |
-    Addresses a major paint point for developers porting existing applications that assume synchronous I/O to the web.
+    Addresses a major pain point for developers porting existing applications that assume synchronous I/O to the web.
   url: https://github.com/WebAssembly/js-promise-integration/
   venues:
   - Proposal
