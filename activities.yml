@@ -1260,7 +1260,7 @@ Picture-in-Picture:
   issue: 72
   position: positive
   rationale: |
-    Picture-in-Picture fills a real need: it lets users continue watching video while interacting with other content, and standardizing the JavaScript entry point gives sites a consistent way to participate in a behavior browsers already implement ad-hoc.
+    Picture-in-Picture fills a real need: it lets users continue watching video while interacting with other content, and standardizing the JavaScript entry point allows websites to provide their own controls.
   url: https://wicg.github.io/picture-in-picture/
   venues:
   - Proposal
