@@ -7346,21 +7346,6 @@
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1646270",
     "webkit": null
   },
-  "791": {
-    "issue": 791,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Attribution Reporting API",
-    "url": "https://wicg.github.io/attribution-reporting-api/",
-    "explainer": null,
-    "web-feature": null,
-    "mdn": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "794": {
     "position": "positive",
     "venues": [
