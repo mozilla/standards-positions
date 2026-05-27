@@ -14076,7 +14076,7 @@
       "API"
     ],
     "title": "Speculation rules: `form_submission` field",
-    "url": null,
+    "url": "https://github.com/WICG/nav-speculation/pull/426",
     "explainer": "https://github.com/WICG/nav-speculation/blob/main/prerendering-form-submission.md",
     "web-feature": null,
     "mdn": null,
