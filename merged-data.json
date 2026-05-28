@@ -14871,5 +14871,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/668"
+  },
+  "1412": {
+    "issue": 1412,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "WebMCP",
+    "url": "https://webmachinelearning.github.io/webmcp/",
+    "explainer": "https://github.com/webmachinelearning/webmcp/blob/main/README.md",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/670"
   }
 }
