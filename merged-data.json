@@ -14886,5 +14886,35 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/670"
+  },
+  "1413": {
+    "issue": 1413,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "WebRTC: RTP Header Extension Encryption",
+    "url": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-encryption",
+    "explainer": "https://datatracker.ietf.org/doc/rfc9335/",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/671"
+  },
+  "1414": {
+    "issue": 1414,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "MLS Web API",
+    "url": "https://...",
+    "explainer": "https://github.com/mozilla/explainers/blob/main/MessagingLayerSecurity.md",
+    "web-feature": null,
+    "mdn": "https://developer.mozilla.org/...",
+    "caniuse": "https://caniuse.com/...",
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1876002",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/NNN"
   }
 }
