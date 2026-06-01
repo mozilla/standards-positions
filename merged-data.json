@@ -11211,8 +11211,10 @@
   },
   "1142": {
     "issue": 1142,
-    "position": null,
-    "venues": [],
+    "position": "neutral",
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
     "topics": [
       "HTML"
@@ -14298,7 +14300,7 @@
   },
   "1369": {
     "issue": 1369,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
