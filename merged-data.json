@@ -14933,5 +14933,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/678"
+  },
+  "1417": {
+    "issue": 1417,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "MediaStreamTrackProcessor frame counters",
+    "url": "https://github.com/w3c/mediacapture-transform/pull/125/changes",
+    "explainer": "https://w3c.github.io/mediacapture-transform/#ref-for-dom-mediastreamtrackprocessor-discardedframes",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/679"
   }
 }
