@@ -14918,5 +14918,20 @@
     "caniuse": "https://caniuse.com/...",
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1876002",
     "webkit": "https://github.com/WebKit/standards-positions/issues/NNN"
+  },
+  "1416": {
+    "issue": 1416,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Web Speech API: Unspoken Punctuation",
+    "url": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-unspokenpunctuation",
+    "explainer": "https://github.com/WebAudio/web-speech-api/blob/main/explainers/unspoken-punctuation.md",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/678"
   }
 }
