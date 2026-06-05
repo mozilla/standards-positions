@@ -14948,5 +14948,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/679"
+  },
+  "1418": {
+    "issue": 1418,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Single-axis scroll containers",
+    "url": "https://github.com/w3c/csswg-drafts/pull/13903",
+    "explainer": "https://github.com/explainers-by-googlers/single-axis-scroll-containers",
+    "web-feature": "overflow",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/680"
   }
 }
