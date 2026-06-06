@@ -13670,7 +13670,7 @@
     "mdn": null,
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1976522",
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/587"
   },
   "1327": {
     "issue": 1327,
