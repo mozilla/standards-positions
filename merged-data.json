@@ -8321,9 +8321,13 @@
   "881": {
     "issue": 881,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "MediaTrackSupportedConstraints.faceFraming",
     "url": "https://w3c.github.io/mediacapture-extensions/#exposing-mediastreamtrack-source-automatic-face-framing-support",
     "explainer": "https://github.com/riju/faceFraming/blob/main/explainer.md",
@@ -8436,21 +8440,6 @@
     "mdn": null,
     "caniuse": null,
     "bug": null,
-    "webkit": null
-  },
-  "891": {
-    "issue": 891,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "TextTrackCue enhancements for programmatic subtitle and caption presentation",
-    "url": "http://github.com/whatwg/html/pull/9771",
-    "explainer": "https://github.com/WebKit/explainers/tree/main/texttracks",
-    "web-feature": null,
-    "mdn": null,
-    "caniuse": null,
-    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1855236",
     "webkit": null
   },
   "895": {
@@ -9375,10 +9364,14 @@
   },
   "984": {
     "issue": 984,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "`line-clamp` CSS property (collapse variant)",
     "url": "https://drafts.csswg.org/css-overflow-4/#suppressing-excess",
     "explainer": "https://github.com/Igalia/explainers/blob/main/css/line-clamp/README.md",
@@ -13656,8 +13649,11 @@
   },
   "1326": {
     "issue": 1326,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C",
+      "WHATWG"
+    ],
     "concerns": [],
     "topics": [
       "CSS",
@@ -13855,10 +13851,14 @@
   },
   "1340": {
     "issue": 1340,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "named-feature() function for CSS @supports",
     "url": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-named-feature-fn",
     "explainer": "https://github.com/w3c/csswg-drafts/blob/main/css-conditional-5/named-feature-explainer.md",
@@ -14220,7 +14220,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "CPU Performance API",
     "url": "https://wicg.github.io/cpu-performance/",
     "explainer": "https://github.com/WICG/cpu-performance",
@@ -14228,7 +14230,7 @@
     "mdn": null,
     "caniuse": null,
     "bug": null,
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/622"
   },
   "1365": {
     "issue": 1365,
@@ -14445,7 +14447,7 @@
   },
   "1378": {
     "issue": 1378,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -14806,7 +14808,7 @@
   },
   "1406": {
     "issue": 1406,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -14826,9 +14828,13 @@
   "1407": {
     "issue": 1407,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "WebAudio Configurable Render Quantum",
     "url": "https://webaudio.github.io/web-audio-api/#render-quantum-sizes",
     "explainer": "https://github.com/WebAudio/web-audio-api/blob/main/explainer/user-selectable-render-size.md",
@@ -14862,9 +14868,13 @@
   "1409": {
     "issue": 1409,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "window-drag",
     "url": "https://drafts.csswg.org/css-ui-4/#window-drag",
     "explainer": null,
@@ -14894,7 +14904,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "WebRTC: RTP Header Extension Encryption",
     "url": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-encryption",
     "explainer": "https://datatracker.ietf.org/doc/rfc9335/",
@@ -14909,7 +14921,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "MLS Web API",
     "url": "https://...",
     "explainer": "https://github.com/mozilla/explainers/blob/main/MessagingLayerSecurity.md",
@@ -14922,9 +14936,13 @@
   "1416": {
     "issue": 1416,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Web Speech API: Unspoken Punctuation",
     "url": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-unspokenpunctuation",
     "explainer": "https://github.com/WebAudio/web-speech-api/blob/main/explainers/unspoken-punctuation.md",
@@ -14937,9 +14955,13 @@
   "1417": {
     "issue": 1417,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "MediaStreamTrackProcessor frame counters",
     "url": "https://github.com/w3c/mediacapture-transform/pull/125/changes",
     "explainer": "https://w3c.github.io/mediacapture-transform/#ref-for-dom-mediastreamtrackprocessor-discardedframes",
@@ -14952,9 +14974,13 @@
   "1418": {
     "issue": 1418,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "Single-axis scroll containers",
     "url": "https://github.com/w3c/csswg-drafts/pull/13903",
     "explainer": "https://github.com/explainers-by-googlers/single-axis-scroll-containers",
@@ -14963,5 +14989,24 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/680"
+  },
+  "1419": {
+    "issue": 1419,
+    "position": null,
+    "venues": [
+      "WHATWG"
+    ],
+    "concerns": [],
+    "topics": [
+      "API"
+    ],
+    "title": "Blob/Response textStream()",
+    "url": "https://fetch.spec.whatwg.org/#dom-body-textstream",
+    "explainer": null,
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2044628",
+    "webkit": null
   }
 }
