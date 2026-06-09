@@ -14219,7 +14219,11 @@
     "issue": 1364,
     "position": null,
     "venues": [],
-    "concerns": [],
+    "concerns": [
+      "interoperability",
+      "privacy",
+      "API design"
+    ],
     "topics": [
       "API"
     ],
