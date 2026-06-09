@@ -14930,7 +14930,7 @@
     ],
     "title": "MLS Web API",
     "url": "https://...",
-    "explainer": "https://github.com/mozilla/explainers/blob/main/MessagingLayerSecurity.md",
+    "explainer": "https://github.com/mozilla/mls-webapi-explainer/tree/main/MessagingLayerSecurity.md",
     "web-feature": null,
     "mdn": "https://developer.mozilla.org/...",
     "caniuse": "https://caniuse.com/...",
