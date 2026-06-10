@@ -15012,5 +15012,20 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2044628",
     "webkit": null
+  },
+  "1420": {
+    "issue": 1420,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Selectedcontent in select multiple",
+    "url": "https://github.com/whatwg/html/pull/12430",
+    "explainer": null,
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/684"
   }
 }
