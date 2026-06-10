@@ -15027,5 +15027,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/684"
+  },
+  "1421": {
+    "issue": 1421,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS Image Animation",
+    "url": "https://drafts.csswg.org/css-image-animation-1/",
+    "explainer": "https://drafts.csswg.org/css-image-animation-1/explainer",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/685"
   }
 }
