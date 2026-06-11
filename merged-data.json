@@ -10665,7 +10665,7 @@
       "CSS",
       "HTML"
     ],
-    "title": "Declarative CSS Modules and Declarative Shadow DOM `adoptedstylesheets` attribute",
+    "title": "Declarative Shadow DOM `adoptedstylesheets` attribute",
     "url": null,
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/ShadowDOM/explainer.md",
     "web-feature": null,
@@ -15042,5 +15042,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/685"
+  },
+  "1422": {
+    "issue": 1422,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "aria-actions attribute",
+    "url": "https://github.com/w3c/aria/pull/1805",
+    "explainer": null,
+    "web-feature": "one",
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1992029",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/686"
   }
 }
