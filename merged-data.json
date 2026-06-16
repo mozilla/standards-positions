@@ -15074,5 +15074,20 @@
     "caniuse": null,
     "bug": "https://github.com/WebKit/standards-positions/issues/687",
     "webkit": null
+  },
+  "1424": {
+    "issue": 1424,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[html] <input type=\"color\"> alpha and colorspace attributes",
+    "url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-colorspace,https://html.spec.whatwg.org/multipage/input.html#dom-input-alpha",
+    "explainer": null,
+    "web-feature": "input-color",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/color#html.elements.input.alpha,https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/color#html.elements.input.colorspace",
+    "caniuse": "https://caniuse.com/wf-input-color-alpha",
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2047120",
+    "webkit": "https://github.com/WebKit/WebKit/pull/35427"
   }
 }
