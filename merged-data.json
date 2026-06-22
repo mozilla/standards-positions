@@ -15119,5 +15119,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/689"
+  },
+  "1427": {
+    "issue": 1427,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Cross-Origin Storage (COS)",
+    "url": null,
+    "explainer": "https://github.com/WICG/cross-origin-storage/",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
