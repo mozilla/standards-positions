@@ -14326,9 +14326,13 @@
   "1370": {
     "issue": 1370,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "HTML streaming & revamped DOM parsing",
     "url": null,
     "explainer": "https://github.com/WICG/declarative-partial-updates/blob/main/dynamic-markup-revamped-explainer.md",
@@ -15077,10 +15081,14 @@
   },
   "1424": {
     "issue": 1424,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "[html] <input type=\"color\"> alpha and colorspace attributes",
     "url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-colorspace,https://html.spec.whatwg.org/multipage/input.html#dom-input-alpha",
     "explainer": null,
@@ -15123,9 +15131,13 @@
   "1427": {
     "issue": 1427,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C CG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Cross-Origin Storage (COS)",
     "url": null,
     "explainer": "https://github.com/WICG/cross-origin-storage/",
