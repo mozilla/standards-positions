@@ -15146,5 +15146,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1428": {
+    "issue": 1428,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Device{Motion,Orientation}Event.requestPermission()",
+    "url": "https://w3c.github.io/deviceorientation/#ref-for-dom-deviceorientationevent-requestpermission",
+    "explainer": null,
+    "web-feature": "device-orientation-events",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/requestPermission_static",
+    "caniuse": "https://caniuse.com/deviceorientation",
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1536382",
+    "webkit": null
   }
 }
