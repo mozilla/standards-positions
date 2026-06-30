@@ -15161,5 +15161,20 @@
     "caniuse": "https://caniuse.com/deviceorientation",
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1536382",
     "webkit": null
+  },
+  "1429": {
+    "issue": 1429,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Linking <a>",
+    "url": "https://w3c.github.io/mathml-core/#the-a-element",
+    "explainer": null,
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/691"
   }
 }
