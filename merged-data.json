@@ -15176,5 +15176,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/691"
+  },
+  "1430": {
+    "issue": 1430,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "The HTTP QUERY Method (RFC 10008)",
+    "url": null,
+    "explainer": null,
+    "web-feature": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
