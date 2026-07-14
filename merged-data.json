@@ -15191,5 +15191,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1432": {
+    "issue": 1432,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "remoteClientDataJSON WebAuthn extension",
+    "url": "https://w3c.github.io/webauthn/#sctn-remote-client-data-json-extension",
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/WebAuthnRemoteClientDataJSON/explainer.md",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2054802",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/695"
   }
 }
