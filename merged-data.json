@@ -15206,5 +15206,35 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2054802",
     "webkit": "https://github.com/WebKit/standards-positions/issues/695"
+  },
+  "1433": {
+    "issue": 1433,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Audio Selection Preference for getDisplayMedia",
+    "url": "https://w3c.github.io/mediacapture-screen-share/#dom-audioselectionpreferenceenum",
+    "explainer": null,
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/696"
+  },
+  "1434": {
+    "issue": 1434,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Automatic enterpictureinpicture for video conferencing web apps",
+    "url": "https://pr-preview.s3.amazonaws.com/bpkeen/picture-in-picture/pull/241.html#permissions-policy",
+    "explainer": "https://developer.chrome.com/blog/automatic-picture-in-picture#enter_picture-in-picture_automatically",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2055873",
+    "webkit": null
   }
 }
