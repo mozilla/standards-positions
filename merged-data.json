@@ -15236,5 +15236,20 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2055873",
     "webkit": null
+  },
+  "1435": {
+    "issue": 1435,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS scroll-axis-lock",
+    "url": "https://drafts.csswg.org/css-overflow-5/",
+    "explainer": "https://github.com/explainers-by-googlers/scroll-axis-lock",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/698"
   }
 }
