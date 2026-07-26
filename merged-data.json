@@ -15170,7 +15170,7 @@
     "topics": [],
     "title": "Linking <a>",
     "url": "https://w3c.github.io/mathml-core/#the-a-element",
-    "explainer": null,
+    "explainer": "https://people.igalia.com/fwang/mathml-a-href/",
     "web-feature": "response",
     "mdn": null,
     "caniuse": null,
