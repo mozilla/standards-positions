@@ -15251,5 +15251,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/698"
+  },
+  "1436": {
+    "issue": 1436,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "WebRTC Diagnostic Logging",
+    "url": "https://wicg.github.io/webrtc-diagnostic-logging/",
+    "explainer": "https://github.com/WICG/webrtc-diagnostic-logging/blob/main/explainer.md",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
