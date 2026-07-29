@@ -15266,5 +15266,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1437": {
+    "issue": 1437,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "IAMF Audio Decoding support",
+    "url": "https://aomediacodec.github.io/iamf/latest-approved.html",
+    "explainer": "https://github.com/SyedAbuTalib/iamf-explainer/blob/main/explainer.md",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
