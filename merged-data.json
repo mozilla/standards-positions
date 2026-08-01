@@ -15281,5 +15281,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1438": {
+    "issue": 1438,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[CSS Color Module Level 4] AccentColor takes its value from accent-color",
+    "url": "https://www.w3.org/TR/css-color-4/#css-system-colors",
+    "explainer": null,
+    "web-feature": "accent-color",
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1929716",
+    "webkit": null
   }
 }
