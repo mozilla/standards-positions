@@ -14895,7 +14895,9 @@
   "1412": {
     "issue": 1412,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C CG"
+    ],
     "concerns": [],
     "topics": [],
     "title": "WebMCP",
@@ -15049,7 +15051,7 @@
   },
   "1422": {
     "issue": 1422,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -15100,10 +15102,14 @@
   },
   "1425": {
     "issue": 1425,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Wheel event momentum",
     "url": "https://w3c.github.io/pointerevents/#dom-wheelevent-momentum",
     "explainer": null,
@@ -15296,5 +15302,20 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1929716",
     "webkit": null
+  },
+  "1439": {
+    "issue": 1439,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Permissions policy for workers",
+    "url": null,
+    "explainer": "https://github.com/explainers-by-googlers/workers-permissions-policy/blob/main/README.md",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/701"
   }
 }
