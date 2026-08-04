@@ -15317,5 +15317,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/701"
+  },
+  "1440": {
+    "issue": 1440,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS Navigation Matching",
+    "url": "https://drafts.csswg.org/css-navigation-1/",
+    "explainer": "https://github.com/WICG/declarative-partial-updates/blob/main/route-matching-explainer.md",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/702"
   }
 }
