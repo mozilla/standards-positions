@@ -8648,13 +8648,15 @@
   },
   "912": {
     "issue": 912,
-    "position": null,
-    "venues": [],
+    "position": "negative",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
     "topics": [],
     "title": "Device Bound Session Credentials",
-    "url": null,
-    "explainer": "https://github.com/WICG/dbsc/blob/main/README.md",
+    "url": "https://w3c.github.io/webappsec-dbsc/",
+    "explainer": "https://github.com/w3c/webappsec-dbsc/blob/main/DBSCE/Overview.md",
     "web-feature": null,
     "mdn": null,
     "caniuse": null,
@@ -10538,7 +10540,9 @@
   "1074": {
     "issue": 1074,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C CG"
+    ],
     "concerns": [],
     "topics": [],
     "title": "Document-Isolation-Policy",
@@ -14325,7 +14329,7 @@
   },
   "1370": {
     "issue": 1370,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -14894,7 +14898,7 @@
   },
   "1412": {
     "issue": 1412,
-    "position": null,
+    "position": "neutral",
     "venues": [
       "W3C CG"
     ],
