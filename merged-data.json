@@ -13580,8 +13580,7 @@
     "webkit": null
   },
   "1322": {
-    "issue": 1322,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [
@@ -13594,7 +13593,9 @@
     "mdn": null,
     "caniuse": null,
     "bug": null,
-    "webkit": "https://github.com/WebKit/standards-positions/issues/583"
+    "webkit": "https://github.com/WebKit/standards-positions/issues/583",
+    "description": "Connection Allowlists can be used to mitigate data exfiltration attacks on websites running untrusted content. The specification introduces a new HTTP header that enables developers to explicitly define permitted URL patterns for connections. Beyond standard fetch requests, this also covers other connection types such as WebRTC, ServiceWorkers etc.",
+    "rationale": "Although this functionality has some overlap with Content-Security-Policy (CSP), CSP was not originally intended for this use case, and prior efforts to expand it in this direction (see e.g. navigate-to) have been unsuccessful. Furthermore, relying on host-based allowlists within a CSP is generally discouraged for script sources. Thus the combination of CSP and a connection allowlist makes it easier to follow best practices.\nProviding developers with a more straightforward, dedicated tool is therefore a prudent approach, while also reinforcing that the responsibility for preventing data leaks lies with the browser engine."
   },
   "1323": {
     "issue": 1323,
