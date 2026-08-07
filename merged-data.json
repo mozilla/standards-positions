@@ -15336,5 +15336,35 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/702"
+  },
+  "1441": {
+    "issue": 1441,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Web Crypto: Hybrid KEMs",
+    "url": "https://github.com/WICG/webcrypto-modern-algos/pull/67",
+    "explainer": null,
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/704"
+  },
+  "1442": {
+    "issue": 1442,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Web Crypto: streaming hashing",
+    "url": "https://github.com/w3c/webcrypto/pull/390",
+    "explainer": null,
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/705"
   }
 }
