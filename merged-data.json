@@ -11794,7 +11794,7 @@
   },
   "1193": {
     "issue": 1193,
-    "position": null,
+    "position": "negative",
     "venues": [
       "Proposal"
     ],
