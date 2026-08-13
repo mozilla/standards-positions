@@ -15392,20 +15392,5 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/705"
-  },
-  "1443": {
-    "issue": 1443,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Sanitize while Parsing",
-    "url": "https://github.com/whatwg/html/pull/12756",
-    "explainer": "https://github.com/whatwg/html/pull/12756",
-    "web-feature": "response",
-    "mdn": null,
-    "caniuse": null,
-    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2062652",
-    "webkit": null
   }
 }
