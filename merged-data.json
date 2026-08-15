@@ -15392,5 +15392,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/705"
+  },
+  "1444": {
+    "issue": 1444,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Supporting options bag in WebSocket constructor",
+    "url": "https://github.com/whatwg/websockets/pull/76",
+    "explainer": null,
+    "web-feature": "websockets",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/708"
   }
 }
