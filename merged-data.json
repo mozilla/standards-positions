@@ -15407,5 +15407,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/708"
+  },
+  "1445": {
+    "issue": 1445,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[css-scroll-snap-1] Support scroll snap for single-axis scroll containers",
+    "url": "https://github.com/w3c/csswg-drafts/pull/14354",
+    "explainer": "https://github.com/explainers-by-googlers/single-axis-scroll-snap",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
