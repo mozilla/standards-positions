@@ -10669,7 +10669,7 @@
       "CSS",
       "HTML"
     ],
-    "title": "Declarative Shadow DOM `adoptedstylesheets` attribute",
+    "title": "Style Module Imports via <link> Elements",
     "url": null,
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/ShadowDOM/explainer.md",
     "web-feature": null,
