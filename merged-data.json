@@ -15452,5 +15452,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/715"
+  },
+  "1448": {
+    "issue": 1448,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[css-scroll-snap-1] Use scroll-snap-type: pair to snap to a single element",
+    "url": "https://github.com/w3c/csswg-drafts/pull/14386",
+    "explainer": "https://github.com/explainers-by-googlers/scroll-snap-type-pair",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
