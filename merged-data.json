@@ -15437,5 +15437,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1447": {
+    "issue": 1447,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS `:navigation-source` pseudo-class",
+    "url": "https://drafts.csswg.org/css-navigation-1/#navigation-source-pseudo-class",
+    "explainer": "https://github.com/WICG/declarative-partial-updates/blob/main/route-matching-explainer.md#link-matching",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/715"
   }
 }
