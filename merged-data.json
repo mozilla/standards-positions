@@ -15421,7 +15421,7 @@
     "mdn": null,
     "caniuse": null,
     "bug": null,
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/712"
   },
   "1446": {
     "issue": 1446,
@@ -15466,6 +15466,6 @@
     "mdn": null,
     "caniuse": null,
     "bug": null,
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/716"
   }
 }
