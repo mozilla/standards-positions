@@ -15467,5 +15467,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/716"
+  },
+  "1449": {
+    "issue": 1449,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS generic() function",
+    "url": "https://drafts.csswg.org/css-fonts-4/#generic-font-families",
+    "explainer": null,
+    "web-feature": "font-family",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-family",
+    "caniuse": "https://caniuse.com/wf-font-family",
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1868500",
+    "webkit": null
   }
 }
