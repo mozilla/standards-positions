@@ -14802,7 +14802,7 @@
   },
   "1405": {
     "issue": 1405,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -14816,7 +14816,7 @@
     "web-feature": null,
     "mdn": null,
     "caniuse": null,
-    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2013454",
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1990050",
     "webkit": "https://github.com/WebKit/standards-positions/issues/660"
   },
   "1406": {
