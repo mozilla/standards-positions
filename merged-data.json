@@ -15467,5 +15467,20 @@
     "caniuse": "https://caniuse.com/wf-font-family",
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1868500",
     "webkit": null
+  },
+  "1450": {
+    "issue": 1450,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS Shapes: `closest-corner` and `farthest-corner` radii for `circle()` and `ellipse()`",
+    "url": "https://drafts.csswg.org/css-shapes-1/#basic-shape-functions",
+    "explainer": "https://static.januschka.com/i-361617757/",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2040681",
+    "webkit": null
   }
 }
