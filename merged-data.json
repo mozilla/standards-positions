@@ -15497,5 +15497,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1452": {
+    "issue": 1452,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "HTML: Allow activation of a checked radio button to clear it",
+    "url": "https://github.com/whatwg/html/pull/12480",
+    "explainer": "https://github.com/whatwg/html/pull/12480",
+    "web-feature": "one",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/721"
   }
 }
