@@ -11050,10 +11050,14 @@
   },
   "1109": {
     "issue": 1109,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "Nested pseudo elements styling (::before::marker or ::after::marker)",
     "url": "https://www.w3.org/TR/css-pseudo-4/#marker-pseudo",
     "explainer": null,
