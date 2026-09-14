@@ -11542,7 +11542,7 @@
   },
   "1171": {
     "issue": 1171,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [
@@ -15297,7 +15297,7 @@
   },
   "1438": {
     "issue": 1438,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -15369,10 +15369,14 @@
   },
   "1442": {
     "issue": 1442,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Web Crypto: streaming hashing",
     "url": "https://github.com/w3c/webcrypto/pull/390",
     "explainer": null,
@@ -15475,9 +15479,13 @@
   "1450": {
     "issue": 1450,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS Shapes: `closest-corner` and `farthest-corner` radii for `circle()` and `ellipse()`",
     "url": "https://drafts.csswg.org/css-shapes-1/#basic-shape-functions",
     "explainer": "https://static.januschka.com/i-361617757/",
