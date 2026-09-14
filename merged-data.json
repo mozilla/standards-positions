@@ -15033,7 +15033,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS Image Animation",
     "url": "https://drafts.csswg.org/css-image-animation-1/",
     "explainer": "https://drafts.csswg.org/css-image-animation-1/explainer",
@@ -15229,9 +15231,15 @@
   "1434": {
     "issue": 1434,
     "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
+    "venues": [
+      "Proposal"
+    ],
+    "concerns": [
+      "venue"
+    ],
+    "topics": [
+      "API"
+    ],
     "title": "Automatic enterpictureinpicture for video conferencing web apps",
     "url": "https://pr-preview.s3.amazonaws.com/bpkeen/picture-in-picture/pull/241.html#permissions-policy",
     "explainer": "https://developer.chrome.com/blog/automatic-picture-in-picture#enter_picture-in-picture_automatically",
@@ -15244,9 +15252,13 @@
   "1435": {
     "issue": 1435,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS scroll-axis-lock",
     "url": "https://drafts.csswg.org/css-overflow-5/",
     "explainer": "https://github.com/explainers-by-googlers/scroll-axis-lock",
@@ -15389,9 +15401,13 @@
   "1444": {
     "issue": 1444,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Supporting options bag in WebSocket constructor",
     "url": "https://github.com/whatwg/websockets/pull/76",
     "explainer": null,
@@ -15436,7 +15452,9 @@
     "position": null,
     "venues": [],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS `:navigation-source` pseudo-class",
     "url": "https://drafts.csswg.org/css-navigation-1/#navigation-source-pseudo-class",
     "explainer": "https://github.com/WICG/declarative-partial-updates/blob/main/route-matching-explainer.md#link-matching",
@@ -15449,9 +15467,13 @@
   "1448": {
     "issue": 1448,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "[css-scroll-snap-1] Use scroll-snap-type: pair to snap to a single element",
     "url": "https://github.com/w3c/csswg-drafts/pull/14386",
     "explainer": "https://github.com/explainers-by-googlers/scroll-snap-type-pair",
@@ -15463,11 +15485,15 @@
   },
   "1449": {
     "issue": 1449,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
-    "title": "CSS generic() function",
+    "topics": [
+      "CSS"
+    ],
+    "title": "CSS generic() function (generic font families)",
     "url": "https://drafts.csswg.org/css-fonts-4/#generic-font-families",
     "explainer": null,
     "web-feature": "font-family",
@@ -15513,9 +15539,13 @@
   "1452": {
     "issue": 1452,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "HTML: Allow activation of a checked radio button to clear it",
     "url": "https://github.com/whatwg/html/pull/12480",
     "explainer": "https://github.com/whatwg/html/pull/12480",
