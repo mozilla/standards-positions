@@ -1632,7 +1632,7 @@
   },
   "170": {
     "issue": 170,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C CG"
     ],
