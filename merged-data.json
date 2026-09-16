@@ -15118,9 +15118,13 @@
   "1426": {
     "issue": 1426,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "Enable Responsive Images and Alternative Text for HTML Video Poster Images",
     "url": "https://github.com/whatwg/html/pull/12585",
     "explainer": "https://github.com/whatwg/html/issues/10378",
