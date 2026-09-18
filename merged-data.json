@@ -14002,7 +14002,7 @@
     "webkit": "https://github.com/WebKit/standards-positions/issues/609"
   },
   "1350": {
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -15572,6 +15572,25 @@
     "mdn": "https://github.com/mdn/content/issues/42050",
     "caniuse": null,
     "bug": null,
+    "webkit": null
+  },
+  "1454": {
+    "issue": 1454,
+    "position": null,
+    "venues": [
+      "W3C"
+    ],
+    "concerns": [],
+    "topics": [
+      "WebAssembly"
+    ],
+    "title": "WebAssembly: Component Model",
+    "url": "https://github.com/webassembly/component-model",
+    "explainer": "https://github.com/WebAssembly/component-model/blob/main/design/mvp/Explainer.md",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=wasm-components",
     "webkit": null
   }
 }
