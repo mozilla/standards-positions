@@ -15236,11 +15236,9 @@
     "issue": 1434,
     "position": null,
     "venues": [
-      "Proposal"
+      "W3C"
     ],
-    "concerns": [
-      "venue"
-    ],
+    "concerns": [],
     "topics": [
       "API"
     ],
