@@ -15590,5 +15590,20 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=wasm-components",
     "webkit": null
+  },
+  "1455": {
+    "issue": 1455,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS Align: `flow-start` and `flow-end` as alignment keywords to indicate the start and end of content placement",
+    "url": "https://github.com/w3c/csswg-drafts/issues/14052",
+    "explainer": null,
+    "web-feature": "https",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
