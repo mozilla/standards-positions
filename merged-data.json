@@ -15605,5 +15605,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1456": {
+    "issue": 1456,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "OfflineAudioContext Incremental Rendering",
+    "url": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-startrendering",
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/OfflineAudioContext/explainer.md",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/724"
   }
 }
