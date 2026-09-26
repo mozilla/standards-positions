@@ -15593,7 +15593,7 @@
   },
   "1455": {
     "issue": 1455,
-    "position": null,
+    "position": "positive",
     "venues": [],
     "concerns": [],
     "topics": [],
@@ -15620,5 +15620,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/724"
+  },
+  "1457": {
+    "issue": 1457,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "`position-visibility: anchor-valid`",
+    "url": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-anchor-valid",
+    "explainer": null,
+    "web-feature": "anchor-positioning",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position-visibility",
+    "caniuse": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-anchor-valid",
+    "bug": null,
+    "webkit": null
   }
 }
