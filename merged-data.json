@@ -15635,5 +15635,20 @@
     "caniuse": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-anchor-valid",
     "bug": null,
     "webkit": null
+  },
+  "1458": {
+    "issue": 1458,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Declarative Performance Observer",
+    "url": null,
+    "explainer": "https://github.com/explainers-by-googlers/declarative-performance-observer",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/725"
   }
 }
