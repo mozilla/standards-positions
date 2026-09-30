@@ -15650,5 +15650,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/725"
+  },
+  "1459": {
+    "issue": 1459,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS-Mixins-1",
+    "url": "https://www.w3.org/TR/css-mixins-1/",
+    "explainer": "https://css.oddbird.net/sasslike/mixins-functions/",
+    "web-feature": "mixin",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Custom_functions_and_mixins",
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1950366",
+    "webkit": null
   }
 }
