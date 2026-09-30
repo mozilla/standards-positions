@@ -14680,7 +14680,7 @@
     "web-feature": null,
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2076789",
     "webkit": "https://github.com/WebKit/standards-positions/issues/651"
   },
   "1393": {
@@ -15680,5 +15680,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/728"
+  },
+  "1461": {
+    "issue": 1461,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Capability Element - <camera> and <microphone>",
+    "url": "https://w3c.github.io/mediacapture-extensions/#media-capture-html-elements",
+    "explainer": null,
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2076789",
+    "webkit": null
   }
 }
