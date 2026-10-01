@@ -13144,7 +13144,7 @@
     "web-feature": null,
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2076738",
     "webkit": null
   },
   "1289": {
@@ -15603,7 +15603,7 @@
     "web-feature": "https",
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2073732",
     "webkit": null
   },
   "1456": {
