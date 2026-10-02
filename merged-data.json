@@ -13519,11 +13519,14 @@
   },
   "1316": {
     "issue": 1316,
-    "position": "defer",
+    "position": "neutral",
     "venues": [
       "W3C CG"
     ],
-    "concerns": [],
+    "concerns": [
+      "complexity",
+      "security"
+    ],
     "topics": [
       "HTML"
     ],
@@ -15117,7 +15120,7 @@
   },
   "1426": {
     "issue": 1426,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -15184,7 +15187,7 @@
     "web-feature": "response",
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2059312",
     "webkit": "https://github.com/WebKit/standards-positions/issues/691"
   },
   "1430": {
