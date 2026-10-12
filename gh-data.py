@@ -189,17 +189,14 @@ def main() -> None:
     # update
     data = []
     page = 1
+    url = "https://api.github.com/repos/mozilla/standards-positions/issues?direction=asc&state=all&per_page=100"
     while True:
         try:
             print(f"Fetching page {page}...")
-            response = requests.get(
-                f"https://api.github.com/repos/mozilla/standards-positions/issues?direction=asc&state=all&per_page=100&page={page}",
-                headers=headers,
-                timeout=5,
-            )
+            response = requests.get(url, headers=headers, timeout=5)
             response.raise_for_status()
-        except Exception:
-            print("Update failed, network failure or request timed out.")
+        except Exception as e:
+            print(f"Update failed: {e}")
             exit(1)
 
         temp_data = response.json()
@@ -208,9 +205,10 @@ def main() -> None:
             break
         data.extend(temp_data)
 
-        # Check for 'link' header and 'rel="next"'
-        link_header = response.headers.get("link", "")
-        if 'rel="next"' not in link_header:
+        # Follow the 'next' link; it uses cursor-based pagination, which GitHub
+        # requires beyond page 10 for unauthenticated requests
+        url = response.links.get("next", {}).get("url")
+        if not url:
             break
 
         page += 1
