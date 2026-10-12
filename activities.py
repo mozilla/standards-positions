@@ -2,9 +2,32 @@ from ruamel.yaml import YAML
 from ruamel.yaml.comments import CommentedMap
 from ruamel.yaml.scalarstring import LiteralScalarString
 import argparse
+import os
+import re
 import requests
 import sys
 from typing import Any, Dict
+
+# Retrieve the token from environment variables
+token = os.getenv('GITHUB_TOKEN')
+headers = {"Authorization": f"token {token}"} if token else {}
+
+SMART_TO_STRAIGHT = {
+    '”': '"',
+    '“': '"',
+    '’': "'",
+    '‘': "'",
+}
+
+# Same as linkPattern and codePattern in index.html, minus the URL restriction
+LINK_PATTERN = re.compile(r"\[([^\]]+)\]\(([^\)]+)\)")
+CODE_PATTERN = re.compile(r"`([^`]+)`")
+
+
+def straighten(s: str) -> str:
+    for k, v in SMART_TO_STRAIGHT.items():
+        s = s.replace(k, v)
+    return s
 
 
 class YAMLValidator:
@@ -54,16 +77,8 @@ class YAMLValidator:
                     self.log_error(f"'{field}' must end with a newline to use '|' syntax.", key)
                     return
 
-            smart_to_straight = {
-                '”': '"',
-                '“': '"',
-                '’': "'",
-                '‘': "'",
-            }
             s = str(value)
-            replaced = s
-            for k, v in smart_to_straight.items():
-                replaced = replaced.replace(k, v)
+            replaced = straighten(s)
             if replaced != s:
                 if self.fix:
                     data[key][field] = LiteralScalarString(replaced)
@@ -72,6 +87,10 @@ class YAMLValidator:
                         f"'{field}' contains smart quotes; replace them with straight quotes (\" or ').",
                         key
                     )
+
+            for match in LINK_PATTERN.finditer(CODE_PATTERN.sub("code", s)):
+                if not match.group(2).startswith(("#", "https://")):
+                    self.log_error(f"'{field}' link URL must start with '#' or 'https://', got {match.group(2)}.", key)
 
     def validate_item(self, data: CommentedMap, key: str):
         item = data[key]
@@ -98,7 +117,7 @@ class YAMLValidator:
             self.validate_literal_block(data, key, field)
 
         # Optional fields validation
-        if 'id' in item and (not isinstance(item['id'], str) or ' ' in item['id']):
+        if 'id' in item and (not isinstance(item['id'], str) or any(c.isspace() for c in item['id'])):
             self.log_error(f"'id' must be a string without whitespace, got {item['id']}.", key)
 
         if 'bug' in item and item['bug'] not in [None, '']:
@@ -116,8 +135,9 @@ class YAMLValidator:
         if 'position' in item and item['position'] not in {"positive", "neutral", "negative", "defer", "under consideration"}:
             self.log_error(f"'position' must be one of the allowed values, got {item['position']}.", key)
 
-        if 'url' in item and not item['url'].startswith("https://"):
-            self.log_error(f"'url' must start with 'https://', got {item['url']}.", key)
+        if 'url' in item and item['url'] not in [None, '']:
+            if not isinstance(item['url'], str) or not item['url'].startswith("https://"):
+                self.log_error(f"'url' must start with 'https://', got {item['url']}.", key)
 
         if 'venues' in item:
             allowed_venues = {"WHATWG", "W3C", "W3C CG", "IETF", "Ecma", "Unicode", "Proposal", "Other"}
@@ -125,8 +145,16 @@ class YAMLValidator:
                 self.log_error(f"'venues' must be a list with allowed values, got {item['venues']}.", key)
 
     def validate_data(self, data: CommentedMap):
+        keys_by_issue = {}
         for key in data:
             self.validate_item(data, key)
+            issue = data[key].get('issue') if isinstance(data[key], dict) else None
+            if isinstance(issue, int):
+                keys_by_issue.setdefault(issue, []).append(key)
+
+        for issue, keys in keys_by_issue.items():
+            for key in keys[1:]:
+                self.log_error(f"Duplicate 'issue' {issue}, also used by '{keys[0]}'.", key)
 
         self.validate_top_level_keys(data)
 
@@ -143,17 +171,18 @@ class YAMLValidator:
         data = self.load_yaml()
         self.validate_data(data)
 
+        if self.fix:
+            self.save_fixes()
+
         if self.errors:
             print("YAML validation failed with the following errors:")
             for error in self.errors:
                 print(error)
             sys.exit(1)
-        elif self.fix:
-            self.save_fixes()
 
     def add_issue(self, issue_num: int, description: str = None, rationale: str = None):
         url = f"https://api.github.com/repos/mozilla/standards-positions/issues/{issue_num}"
-        response = requests.get(url)
+        response = requests.get(url, headers=headers, timeout=10)
 
         if response.status_code != 200:
             print(f"Failed to fetch issue {issue_num}: {response.status_code}")
@@ -168,13 +197,18 @@ class YAMLValidator:
 
         data = self.load_yaml()
 
-        if title not in data:
-            data[title] = {"issue": issue_num}
+        # Reuse an existing entry for this issue, even if the issue title has changed
+        key = next((k for k, v in data.items() if isinstance(v, dict) and v.get("issue") == issue_num), title)
+        if key not in data:
+            data[key] = {"issue": issue_num}
+        elif data[key].get("issue") != issue_num:
+            print(f"Key '{key}' is already used by issue {data[key].get('issue')}.")
+            sys.exit(1)
 
         if description:
-            data[title]["description"] = LiteralScalarString(f"{description}\n")
+            data[key]["description"] = LiteralScalarString(f"{straighten(description)}\n")
         if rationale:
-            data[title]["rationale"] = LiteralScalarString(f"{rationale}\n")
+            data[key]["rationale"] = LiteralScalarString(f"{straighten(rationale)}\n")
 
         # Sort keys alphabetically
         self.modified_data = CommentedMap(sorted(data.items()))
@@ -199,6 +233,7 @@ if __name__ == "__main__":
             validator.run()
         except ValueError as e:
             print(f"Validation failed: {e}")
+            sys.exit(1)
     elif args.command == "add":
         if args.issue_num is None:
             print("Please provide an issue number for 'add'.")
