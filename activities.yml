@@ -455,7 +455,6 @@ Connection Allowlists:
   rationale: |
     Although this functionality has some overlap with Content-Security-Policy (CSP), CSP was not originally intended for this use case, and prior efforts to expand it in this direction (see e.g. navigate-to) have been unsuccessful. Furthermore, relying on host-based allowlists within a CSP is generally discouraged for script sources. Thus the combination of CSP and a connection allowlist makes it easier to follow best practices.
     Providing developers with a more straightforward, dedicated tool is therefore a prudent approach, while also reinforcing that the responsibility for preventing data leaks lies with the browser engine.
-  url: https://wicg.github.io/connection-allowlists/
 Constructable Stylesheet Objects:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1773147
   description: |
@@ -588,14 +587,12 @@ Declarative Shadow DOM:
   venues:
   - WHATWG
 Declarative Web Push:
-  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1946085
   description: |
     Declarative Web Push introduces a JSON format that the user agent can recognize and parse without a Service Worker.
   id: declarative-web-push
   issue: 1176
   rationale: |
     We believe this proposal can reduce the required code size to subscribe push notifications, and it introduces a way for browsers to suppress potentially unwanted push notifications from tracking users.
-  url: https://github.com/w3c/push-api/pull/385
 Default Accessibility Semantics for Custom Elements:
   description: |
     This will allow custom elements to have "default" accessibility semantics, analogous to how built-in elements have "implicit" or "native" semantics.
@@ -1544,7 +1541,6 @@ Shared Storage:
 Signature-based Integrity:
   id: signature-based-integrity
   issue: 1139
-  url: https://wicg.github.io/signature-based-sri/
   description: |
     Signature-based Integrity intends to extend Subresource Integrity with a provenance check. The proposal adds support for ed25519 keys in integrity attributes such that the browser requires HTTP responses signed with RFC9421 HTTP Message Signatures.
   rationale: |
@@ -1903,14 +1899,12 @@ Web Share Target API:
   venues:
   - Proposal
 Web Speech API on-device:
-  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=webspeechondevice
   description: |
     This is a set of improvements to the Web Speech API specification that aims at adding features for users to perform speech-to-text and text-to-speech using the device's capabilities, without relying on web services. This also allows using Web Speech API with `MediaStreamTrack`.
   id: web-speech-api-on-device
   issue: 1157
   rationale: |
     We believe this is a strong and welcome improvement to the API, on multiple aspects: added capabilities to the platform, in terms of feature and performance (e.g. being able to do high-quality low-latency recognition), but also accessibility and privacy.
-  url: https://webaudio.github.io/web-speech-api/
 Web Thing API:
   description: |
     This document describes a common data model and API for the Web of Things. The Web Thing Description provides a vocabulary for describing physical devices connected to the World Wide Web in a machine readable format with a default JSON encoding. The Web Thing REST API and Web Thing WebSocket API allow a web client to access the properties of devices, request the execution of actions and subscribe to events representing a change in state. Some basic Web Thing Types are provided and additional types can be defined using semantic extensions with JSON-LD. In addition to this specification there is a note on Web Thing API Protocol Bindings which proposes non-normative bindings of the Web Thing API to various existing IoT protocols. There is also a document describing Web of Things Integration Patterns which provides advice on different design patterns for integrating connected devices with the Web of Things, and where each pattern is most appropriate.
