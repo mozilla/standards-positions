@@ -1,3 +1,4 @@
+# Keep in sync with API_ISSUE_TEMPLATE.md
 name: Request for Mozilla Position on an Emerging Web Specification
 description: If you're working on a spec and would like to know Mozilla's position on it.
 body:
