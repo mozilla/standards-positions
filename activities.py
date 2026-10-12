@@ -86,7 +86,7 @@ class YAMLValidator:
             self.log_error(f"'issue' must be an integer, got {item['issue']}.", key)
         elif item['issue'] >= 1110:
             # Legacy item key restriction for issue numbers >= 1110
-            for legacy_key in ['position', 'venues']:
+            for legacy_key in ['position', 'venues', 'bug', 'url']:
                 if legacy_key in item:
                     if self.fix:
                         del item[legacy_key]
