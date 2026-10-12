@@ -2,6 +2,7 @@ from ruamel.yaml import YAML
 from ruamel.yaml.comments import CommentedMap
 from ruamel.yaml.scalarstring import LiteralScalarString
 import argparse
+import io
 import os
 import re
 import requests
@@ -163,8 +164,13 @@ class YAMLValidator:
 
     def save_fixes(self):
         if self.modified_data:
+            output = io.StringIO()
+            self.yaml.dump(self.modified_data, output)
+            with open(self.file_path, 'r') as file:
+                if file.read() == output.getvalue():
+                    return
             with open(self.file_path, 'w') as file:
-                self.yaml.dump(self.modified_data, file)
+                file.write(output.getvalue())
             print(f"Fixes applied and saved to {self.file_path}")
 
     def run(self):
