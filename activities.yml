@@ -2151,14 +2151,12 @@ passwordrules attribute:
   venues:
   - WHATWG
 remoteClientDataJSON WebAuthn extension:
-  bug: https://bugzilla.mozilla.org/show_bug.cgi?id=2054802
   description: |
     Web Authentication API extension to allow a web-based remote desktop client to authenticate on behalf of arbitrary origins.
   id: remote-client-data-json
   issue: 1432
   rationale: |
     While being useful for a web-based remote desktop client, allowing a web application to set an arbitrary client data JSON "fundamentally alters the (WebAuthn) trust model" in a way that is difficult-to-impossible to apply effective controls against malicious web applications, while still being usable for a web-based remote desktop client. The extension's specification does not adequately describe the issues or controls needed to implement this securely, and needs more work before it can be safely adopted by a web browser. This could only be available to an enterprise-managed Firefox, where the value of a web-based remote desktop client over a native one is lower. The extension's explainers do not make a compelling argument for the extension over alternative user authentication flows in managed environments.
-  url: https://www.w3.org/TR/webauthn-4/#remoteclientdatajson
 scrollend and overscroll events:
   description: |
     The new scroll events introduced in this document provide web developers a way to listen to the state of the scrolling and when their content is being overscrolled or when the scrolling has finished. This information will be useful for the effects such as pull to refresh or history swipe navigations in the web apps.
