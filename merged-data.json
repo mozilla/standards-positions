@@ -15735,5 +15735,20 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2076789",
     "webkit": null
+  },
+  "1468": {
+    "issue": 1468,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Sealed form fields (`<sealedinput>` and the `sealed-fields` CSP directive)",
+    "url": "https://github.com/WICG/proposals/issues/307",
+    "explainer": "https://github.com/madeit-build/koschei/blob/main/docs/specs/explainer.md",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/730"
   }
 }
