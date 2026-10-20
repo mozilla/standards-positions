@@ -15750,5 +15750,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/730"
+  },
+  "1469": {
+    "issue": 1469,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "The focusreset event",
+    "url": "https://github.com/whatwg/html/pull/13050",
+    "explainer": "https://github.com/noamr/explainers/blob/main/focusreset-explainer.md",
+    "web-feature": "response",
+    "mdn": "https://github.com/mdn/mdn/issues/876",
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2081188",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/732"
   }
 }
