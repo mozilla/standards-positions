@@ -15765,5 +15765,35 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2081188",
     "webkit": "https://github.com/WebKit/standards-positions/issues/732"
+  },
+  "1470": {
+    "issue": 1470,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "document.advanceFocus() and beforefocus",
+    "url": "https://open-ui.org/components/beforefocus.explainer/",
+    "explainer": "https://open-ui.org/components/beforefocus.explainer/",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2084212",
+    "webkit": null
+  },
+  "1471": {
+    "issue": 1471,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "display-mode: application",
+    "url": "https://drafts.csswg.org/mediaqueries-5/#display-modes",
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DisplayModeApplication/explainer.md",
+    "web-feature": "response",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/733"
   }
 }
