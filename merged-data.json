@@ -15214,7 +15214,6 @@
     "webkit": null
   },
   "1432": {
-    "issue": 1432,
     "position": "negative",
     "venues": [],
     "concerns": [
@@ -15230,7 +15229,10 @@
     "mdn": null,
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2054802",
-    "webkit": "https://github.com/WebKit/standards-positions/issues/695"
+    "webkit": "https://github.com/WebKit/standards-positions/issues/695",
+    "description": "Web Authentication API extension to allow a web-based remote desktop client to authenticate on behalf of arbitrary origins.",
+    "id": "remote-client-data-json",
+    "rationale": "While being useful for a web-based remote desktop client, allowing a web application to set an arbitrary client data JSON \"fundamentally alters the (WebAuthn) trust model\" in a way that is difficult-to-impossible to apply effective controls against malicious web applications, while still being usable for a web-based remote desktop client. The extension's specification does not adequately describe the issues or controls needed to implement this securely, and needs more work before it can be safely adopted by a web browser. This could only be available to an enterprise-managed Firefox, where the value of a web-based remote desktop client over a native one is lower. The extension's explainers do not make a compelling argument for the extension over alternative user authentication flows in managed environments."
   },
   "1433": {
     "issue": 1433,
