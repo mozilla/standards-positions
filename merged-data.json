@@ -11375,7 +11375,7 @@
       "API"
     ],
     "title": " On-device Web Speech API",
-    "url": "https://webaudio.github.io/web-speech-api/",
+    "url": "https://github.com/WebAudio/web-speech-api/pull/122",
     "explainer": null,
     "web-feature": null,
     "mdn": null,
