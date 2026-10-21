@@ -15797,5 +15797,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/733"
+  },
+  "1472": {
+    "issue": 1472,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "WebTransport congestion control option and attribute",
+    "url": "https://w3c.github.io/webtransport/#dom-webtransportoptions-congestioncontrol",
+    "explainer": "https://github.com/w3c/webtransport/blob/main/explainer.md",
+    "web-feature": "webtransport",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/WebTransport/congestionControl",
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
