@@ -173,11 +173,15 @@ def process_body(issue: Mapping[str, Any]) -> Mapping[str, Optional[str]]:
                 continue
             if response_field:
                 value = line.strip()
+                # Empty field, possibly followed by an API_ISSUE_TEMPLATE.md comment
+                if value.startswith("_No response_"):
+                    response_field = None
+                    continue
                 if response_field in ("url", "explainer", "mdn", "caniuse", "bug", "webkit"):
                     value = get_url(value)
                 elif response_field == "web-feature":
                     value = get_feature_id(value)
-                if value and value != "_No response_" and value.lower() != "n/a":
+                if value and value.lower() != "n/a":
                     body[response_field] = value
                     response_field = None
 
