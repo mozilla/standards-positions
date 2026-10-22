@@ -15812,5 +15812,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1473": {
+    "issue": 1473,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Web Bluetooth: BluetoothRemoteGATTServer.maxWriteWithoutResponseSize",
+    "url": null,
+    "explainer": null,
+    "web-feature": "web-bluetooth",
+    "mdn": null,
+    "caniuse": "https://caniuse.com/web-bluetooth",
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1204396",
+    "webkit": null
   }
 }
