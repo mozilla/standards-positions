@@ -11728,7 +11728,7 @@
     "mdn": null,
     "caniuse": null,
     "bug": null,
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/569"
   },
   "1188": {
     "issue": 1188,
