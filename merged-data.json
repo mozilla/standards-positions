@@ -15827,5 +15827,35 @@
     "caniuse": "https://caniuse.com/web-bluetooth",
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1204396",
     "webkit": null
+  },
+  "1474": {
+    "issue": 1474,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Service Worker Capability Delegation for Pop-ups",
+    "url": "https://htmlpreview.github.io/?https://github.com/dmurph/capability-delegation/blob/popup-delegation-spec/spec.html",
+    "explainer": "https://github.com/WICG/capability-delegation/blob/main/explainers/popup-delegation.md",
+    "web-feature": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/735"
+  },
+  "1475": {
+    "issue": 1475,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Web Authentication: Conditional UI without Autofill",
+    "url": "https://github.com/w3c/webauthn/pull/2485",
+    "explainer": "https://github.com/w3c/webauthn/blob/main/explainers/conditional-ui-without-autofill.md",
+    "web-feature": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/729"
   }
 }
