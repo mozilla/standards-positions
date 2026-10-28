@@ -15857,5 +15857,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/729"
+  },
+  "1476": {
+    "issue": 1476,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "The `<agecheck>` element",
+    "url": "https://github.com/WebKit/explainers/tree/main/agecheck#processing-model",
+    "explainer": "https://github.com/WebKit/explainers/tree/main/agecheck",
+    "web-feature": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
