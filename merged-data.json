@@ -15872,5 +15872,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1477": {
+    "issue": 1477,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Incubation: Responsive Image Fine-Tuning Knobs",
+    "url": "https://github.com/whatwg/html/pull/13053",
+    "explainer": "https://github.com/noamr/explainers/blob/main/responsive-images-explainer.md",
+    "web-feature": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/736"
   }
 }
