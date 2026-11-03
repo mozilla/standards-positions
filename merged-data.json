@@ -15887,5 +15887,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/736"
+  },
+  "1478": {
+    "issue": 1478,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Creating Always-On-Top Windows (Window Management)",
+    "url": "https://github.com/w3c/window-management/pull/170",
+    "explainer": "https://github.com/w3c/window-management/blob/main/EXPLAINER_always_on_top.md",
+    "web-feature": "window-management",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
