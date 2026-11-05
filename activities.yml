@@ -53,6 +53,10 @@ Accelerated Shape Detection in Images:
   url: https://wicg.github.io/shape-detection-api
   venues:
   - Proposal
+Add quality constraint to SpeechRecognitionOptions for on-device recognition:
+  issue: 1375
+  rationale: |
+    We do not anticipate needing this in the long run and will probably never implement it. This is a dictionary member, so implementations can simply ignore it. Model quality at a given compute budget keeps improving, which makes an explicit quality constraint unnecessary.
 An HTTP Status Code for Indicating Hints (103):
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1407355
   description: |
@@ -89,6 +93,10 @@ Audio Focus API:
   url: https://wicg.github.io/audio-focus/explainer
   venues:
   - Proposal
+AudioContext "interrupted" state:
+  issue: 1083
+  rationale: |
+    Tracking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=2089652
 Auto-sizes for lazy-loaded images:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1816615
   description: |
@@ -1057,6 +1065,10 @@ Low-level (Raw) Sockets API:
   url: https://github.com/WICG/raw-sockets/blob/master/docs/explainer.md
   venues:
   - Proposal
+MSE in Workers:
+  issue: 547
+  rationale: |
+    We plan to implement this. Tracking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=2089656
 Managed Media Source:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1844342
   description: |
@@ -1069,6 +1081,14 @@ Managed Media Source:
   url: https://github.com/w3c/media-source/issues/320
   venues:
   - W3C
+Media Capabilities:
+  issue: 184
+  rationale: |
+    We implemented this some time ago.
+Media Capabilities (hdrMetadataType):
+  issue: 910
+  rationale: |
+    We are working on HDR at the moment. Tracking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=2089648
 Media Feeds:
   description: |
     This specification enables web developers to show personalized media recommendations on the browser UI.
@@ -1093,6 +1113,10 @@ Media Session Standard:
   url: https://w3c.github.io/mediasession/
   venues:
   - W3C
+MediaCapabilities API extended to WebRTC:
+  issue: 619
+  rationale: |
+    We have implemented this. MediaDecodingType and MediaEncodingType "webrtc" are shipping. Bug: https://bugzilla.mozilla.org/show_bug.cgi?id=2032075
 MediaStreamTrack Content Hints:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1831521
   caniuse: https://caniuse.com/mdn-api_mediastreamtrack_contenthint
@@ -1158,6 +1182,10 @@ Network Information API:
   url: https://wicg.github.io/netinfo
   venues:
   - Proposal
+OfflineAudioContext Incremental Rendering:
+  issue: 1456
+  rationale: |
+    We plan to implement this. Tracking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=2089657
 Opaque Response Blocking (ORB):
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1532642
   description: |
@@ -1269,6 +1297,10 @@ Picture-in-Picture:
   url: https://wicg.github.io/picture-in-picture/
   venues:
   - Proposal
+Playback Statistics API for WebAudio:
+  issue: 1351
+  rationale: |
+    Tracking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=2089650
 Portals:
   caniuse: https://caniuse.com/portals
   description: |
@@ -1770,6 +1802,18 @@ UserActivation:
   url: https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface
   venues:
   - WHATWG
+VideoEncoderConfig.contentHint:
+  issue: 919
+  rationale: |
+    Tracking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=2085891
+VoiceIsolation constraint:
+  issue: 982
+  rationale: |
+    We are implementing this on macOS. Tracking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=2089653
+Web Audio API - RenderCapacity:
+  issue: 820
+  rationale: |
+    This was removed from the spec because of privacy concerns.
 'Web Authentication: An API for accessing Public Key Credentials':
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1294514
   caniuse: https://caniuse.com/webauthn
@@ -1898,6 +1942,10 @@ Web Share Target API:
   url: https://wicg.github.io/web-share-target/
   venues:
   - Proposal
+Web Speech API Contextual Biasing:
+  issue: 1255
+  rationale: |
+    We plan to implement this. Tracking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=2072244
 Web Speech API on-device:
   description: |
     This is a set of improvements to the Web Speech API specification that aims at adding features for users to perform speech-to-text and text-to-speech using the device's capabilities, without relying on web services. This also allows using Web Speech API with `MediaStreamTrack`.
@@ -1905,6 +1953,10 @@ Web Speech API on-device:
   issue: 1157
   rationale: |
     We believe this is a strong and welcome improvement to the API, on multiple aspects: added capabilities to the platform, in terms of feature and performance (e.g. being able to do high-quality low-latency recognition), but also accessibility and privacy.
+'Web Speech API: Unspoken Punctuation':
+  issue: 1416
+  rationale: |
+    We plan to implement this. Tracking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=2089649
 Web Thing API:
   description: |
     This document describes a common data model and API for the Web of Things. The Web Thing Description provides a vocabulary for describing physical devices connected to the World Wide Web in a machine readable format with a default JSON encoding. The Web Thing REST API and Web Thing WebSocket API allow a web client to access the properties of devices, request the execution of actions and subscribe to events representing a change in state. Some basic Web Thing Types are provided and additional types can be defined using semantic extensions with JSON-LD. In addition to this specification there is a note on Web Thing API Protocol Bindings which proposes non-normative bindings of the Web Thing API to various existing IoT protocols. There is also a document describing Web of Things Integration Patterns which provides advice on different design patterns for integrating connected devices with the Web of Things, and where each pattern is most appropriate.
@@ -1958,6 +2010,10 @@ WebAssembly SIMD:
   url: https://github.com/webassembly/simd/
   venues:
   - W3C
+WebAudio Configurable Render Quantum:
+  issue: 1407
+  rationale: |
+    We plan to implement this. Tracking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=2034508
 WebDriver BiDi:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1690255
   description: |
@@ -2080,6 +2136,10 @@ dialog element:
   url: https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element
   venues:
   - WHATWG
+echo cancellation mode:
+  issue: 1241
+  rationale: |
+    Tracking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=2089651
 enterkeyhint attribute:
   bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1490661
   caniuse: https://caniuse.com/mdn-html_global_attributes_enterkeyhint
