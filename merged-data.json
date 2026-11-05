@@ -9956,7 +9956,7 @@
       "API"
     ],
     "title": "Reference Target for Cross-Root ARIA",
-    "url": null,
+    "url": "https://github.com/whatwg/html/pull/10995",
     "explainer": "https://github.com/WICG/webcomponents/blob/gh-pages/proposals/reference-target-explainer.md",
     "web-feature": null,
     "mdn": null,
