@@ -15902,5 +15902,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1480": {
+    "issue": 1480,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Custom Highlight API Extensions",
+    "url": "https://github.com/w3c/csswg-drafts/issues/14613",
+    "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/highlight-v2/explainer.md",
+    "web-feature": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/740"
   }
 }
