@@ -155,14 +155,16 @@
       "W3C"
     ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Web Share API",
     "url": "https://wicg.github.io/web-share/",
     "explainer": null,
     "web-feature": null,
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1312422",
     "webkit": null
   },
   "28": {
@@ -2876,12 +2878,14 @@
   },
   "339": {
     "issue": 339,
-    "position": null,
+    "position": "defer",
     "venues": [
       "WHATWG"
     ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "Add new safelisted schemes for registerProtocolHandler()",
     "url": null,
     "explainer": null,
@@ -4110,17 +4114,21 @@
   },
   "504": {
     "issue": 504,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Add video conferencing actions to the Media Session API spec",
     "url": "https://github.com/w3c/mediasession/issues/264",
     "explainer": null,
     "web-feature": null,
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1874041",
     "webkit": null
   },
   "505": {
@@ -7213,7 +7221,7 @@
   },
   "780": {
     "issue": 780,
-    "position": null,
+    "position": "defer",
     "venues": [
       "Proposal"
     ],
@@ -8610,7 +8618,7 @@
   },
   "909": {
     "issue": 909,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -8624,8 +8632,8 @@
     "web-feature": null,
     "mdn": null,
     "caniuse": null,
-    "bug": null,
-    "webkit": null
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2053699",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/269"
   },
   "910": {
     "issue": 910,
@@ -9545,9 +9553,13 @@
   "997": {
     "issue": 997,
     "position": null,
-    "venues": [],
+    "venues": [
+      "Ecma"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "ShadowRealm API",
     "url": "https://tc39.es/proposal-shadowrealm/",
     "explainer": "https://github.com/tc39/proposal-shadowrealm/blob/main/explainer.md",
@@ -9555,7 +9567,7 @@
     "mdn": null,
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1566145",
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/433"
   },
   "998": {
     "issue": 998,
@@ -11471,8 +11483,10 @@
   },
   "1165": {
     "issue": 1165,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
     "topics": [
       "HTTP"
@@ -12283,8 +12297,10 @@
   },
   "1226": {
     "issue": 1226,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C CG"
+    ],
     "concerns": [],
     "topics": [],
     "title": "Renaming Storage Access Handle methods for non-cookie Storage Access API",
@@ -14214,8 +14230,10 @@
   },
   "1364": {
     "issue": 1364,
-    "position": null,
-    "venues": [],
+    "position": "neutral",
+    "venues": [
+      "W3C CG"
+    ],
     "concerns": [
       "interoperability",
       "privacy",
@@ -14639,7 +14657,7 @@
   },
   "1390": {
     "issue": 1390,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -14712,9 +14730,13 @@
   "1394": {
     "issue": 1394,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "Responsively-sized iframes",
     "url": "https://drafts.csswg.org/css-sizing-4/#responsive-iframes",
     "explainer": "https://github.com/w3c/csswg-drafts/blob/main/css-sizing-4/responsive-iframes-explainer.md",
@@ -14745,7 +14767,7 @@
   },
   "1396": {
     "issue": 1396,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -14756,29 +14778,31 @@
     "title": "Relative Alpha Colors",
     "url": "https://drafts.csswg.org/css-color-5/#relative-alpha",
     "explainer": null,
-    "web-feature": null,
+    "web-feature": "alpha",
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2047437",
     "webkit": "https://github.com/WebKit/standards-positions/issues/657"
   },
   "1397": {
     "issue": 1397,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
-    "concerns": [],
+    "concerns": [
+      "complexity"
+    ],
     "topics": [
       "CSS"
     ],
     "title": "Support background-clip: border-area",
     "url": "https://drafts.csswg.org/css-backgrounds-4/#valdef-background-clip-border-area",
     "explainer": null,
-    "web-feature": null,
+    "web-feature": "background-clip-border-area",
     "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-clip",
     "caniuse": "https://caniuse.com/wf-background-clip-border-area",
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1880365",
     "webkit": "https://webkit.org/blog/16214/background-clip-border-area"
   },
   "1398": {
@@ -14876,7 +14900,7 @@
   },
   "1409": {
     "issue": 1409,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -15003,7 +15027,7 @@
   },
   "1419": {
     "issue": 1419,
-    "position": null,
+    "position": "positive",
     "venues": [
       "WHATWG"
     ],
@@ -15162,8 +15186,10 @@
   },
   "1428": {
     "issue": 1428,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
     "topics": [
       "API"
@@ -15236,7 +15262,7 @@
   },
   "1433": {
     "issue": 1433,
-    "position": null,
+    "position": "neutral",
     "venues": [
       "W3C"
     ],
@@ -15246,20 +15272,22 @@
     ],
     "title": "Audio Selection Preference for getDisplayMedia",
     "url": "https://w3c.github.io/mediacapture-screen-share/#dom-audioselectionpreferenceenum",
-    "explainer": null,
+    "explainer": "https://github.com/palak8669/mediacapture-screen-share-audio-capture/blob/palak8669-patch-1/audio_selection_explainer.md",
     "web-feature": null,
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2058656",
     "webkit": "https://github.com/WebKit/standards-positions/issues/696"
   },
   "1434": {
     "issue": 1434,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
-    "concerns": [],
+    "concerns": [
+      "annoyance"
+    ],
     "topics": [
       "API"
     ],
@@ -15531,7 +15559,7 @@
   },
   "1450": {
     "issue": 1450,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -15546,7 +15574,7 @@
     "mdn": null,
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2040681",
-    "webkit": null
+    "webkit": "https://github.com/WebKit/standards-positions/issues/719"
   },
   "1451": {
     "issue": 1451,
@@ -15565,7 +15593,7 @@
   },
   "1452": {
     "issue": 1452,
-    "position": null,
+    "position": "negative",
     "venues": [
       "WHATWG"
     ],
@@ -15655,8 +15683,10 @@
   },
   "1457": {
     "issue": 1457,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
     "topics": [
       "CSS"
@@ -15706,8 +15736,10 @@
   },
   "1460": {
     "issue": 1460,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
     "topics": [
       "CSS"
@@ -15723,9 +15755,13 @@
   },
   "1461": {
     "issue": 1461,
-    "position": null,
-    "venues": [],
-    "concerns": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
+    "concerns": [
+      "API design"
+    ],
     "topics": [
       "HTML"
     ],
