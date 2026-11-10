@@ -15957,5 +15957,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/740"
+  },
+  "1481": {
+    "issue": 1481,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Extend window.open() to split tabs, and add declarative equivalents for window.open() generally",
+    "url": null,
+    "explainer": "https://github.com/mfreed7/split-tabs",
+    "web-feature": "one",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/741"
   }
 }
