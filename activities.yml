@@ -1485,9 +1485,9 @@ Serial API (Add-On Gated):
     The Serial API provides a way for websites to read and write from a serial device through script. Such an API would bridge the web and the physical world, by allowing documents to communicate with devices such as microcontrollers, 3D printers, and other serial devices. There is also a companion explainer document.
   id: webserial
   issue: 336
-  position: neutral
+  position: positive
   rationale: |
-    Devices that offer serial interfaces often expose powerful, low-level functions over the interface with little or no authentication. Exposing that sort of capability to the web without adequate safeguards presents a significant threat to those devices. A user deliberately installing a site-specific add-on may be adequate, given sufficiently understandable consent copy.
+    Devices that offer serial interfaces often expose powerful, low-level functions over the interface with little or no authentication, so exposing them to the web needs adequate safeguards. Gating the API behind a site-specific add-on that the user deliberately installs, with understandable consent copy and browser controls such as limiting which devices a site can access, makes useful functionality possible, such as configuring and operating developer-focused devices like ESP32 boards.
   url: https://wicg.github.io/serial
   venues:
   - Proposal
