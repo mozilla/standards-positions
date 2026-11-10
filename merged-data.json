@@ -15972,5 +15972,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/741"
+  },
+  "1483": {
+    "issue": 1483,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "Web Speech API: SpeechRecognitionResult Timestamps",
+    "url": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionresult-speechstarttime",
+    "explainer": "https://github.com/WebAudio/web-speech-api/blob/main/explainers/speech-recognition-result-timestamps.md",
+    "web-feature": "speech-recognition",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognitionResult",
+    "caniuse": "https://caniuse.com/speech-recognition",
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/742"
   }
 }
