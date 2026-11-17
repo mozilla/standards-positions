@@ -15987,5 +15987,20 @@
     "caniuse": "https://caniuse.com/speech-recognition",
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/742"
+  },
+  "1484": {
+    "issue": 1484,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "fegerald",
+    "url": null,
+    "explainer": null,
+    "web-feature": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
