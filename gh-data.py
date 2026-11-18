@@ -122,6 +122,7 @@ def process_body(issue: Mapping[str, Any]) -> Mapping[str, Optional[str]]:
         "specification or proposal url": "url",
         "explainer url (if available)": "explainer",
         "explainer url": "explainer",
+        "web-feature id": "web-feature",
         "mdn url (optional)": "mdn",
         "caniuse.com url (optional)": "caniuse",
         "caniuse.com url": "caniuse",
@@ -152,7 +153,9 @@ def process_body(issue: Mapping[str, Any]) -> Mapping[str, Optional[str]]:
                     value = line[len(text_title) :].strip()
                     if key in ("url", "explainer", "mdn", "caniuse", "bug", "webkit"):
                         value = get_url(value)
-                    if value != "" and value.lower() != "n/a":
+                    elif key == "web-feature":
+                        value = get_feature_id(value)
+                    if value and value.lower() != "n/a":
                         body[key] = value
                     break
     # Issues using YAML template
