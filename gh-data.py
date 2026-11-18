@@ -89,6 +89,7 @@ def get_feature_id(text: str) -> Optional[str]:
     if "https://" in text:
         url = get_url(text)
         url_prefixes = ["https://webstatus.dev/features/",
+                         "https://web-platform-dx.github.io/web-features-explorer/features/",
                          "https://web-platform-dx.github.io/web-features-explorer/"]
         for prefix in url_prefixes:
             if url.startswith(prefix):
