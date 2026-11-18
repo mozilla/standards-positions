@@ -96,9 +96,10 @@ def get_feature_id(text: str) -> Optional[str]:
                 text = url[len(prefix):].split("/", 1)[0]
                 break
 
-    m = re.search("[a-z][a-zA-Z\-]+", text)
+    # The whole value is the id (maybe in backticks), so "None yet" isn't one.
+    m = re.fullmatch(r"`?([a-z][a-z0-9-]*)`?", text.strip())
     if m:
-        return m.group()
+        return m.group(1)
     return None
 
 
