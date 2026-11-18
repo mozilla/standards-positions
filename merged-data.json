@@ -1815,12 +1815,14 @@
   },
   "184": {
     "issue": 184,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Media Capabilities",
     "url": "https://wicg.github.io/media-capabilities/",
     "explainer": null,
@@ -4630,20 +4632,22 @@
   },
   "547": {
     "issue": 547,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "MSE in Workers",
     "url": "https://github.com/w3c/media-source/pull/282",
-    "explainer": null,
+    "explainer": "https://github.com/wicg/media-source/blob/mse-in-workers-using-handle/mse-in-workers-using-handle-explainer.md",
     "web-feature": null,
     "mdn": null,
     "caniuse": null,
-    "bug": null,
-    "webkit": null
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2089656",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/40"
   },
   "548": {
     "issue": 548,
@@ -5381,17 +5385,23 @@
   },
   "619": {
     "issue": 619,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
+    "concerns": [
+      "privacy"
+    ],
+    "topics": [
+      "API"
+    ],
     "title": "MediaCapabilities API extended to WebRTC",
     "url": "https://w3c.github.io/media-capabilities/",
     "explainer": null,
     "web-feature": null,
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2032075",
     "webkit": null
   },
   "620": {
@@ -7636,21 +7646,6 @@
     "bug": null,
     "webkit": null
   },
-  "820": {
-    "issue": 820,
-    "position": null,
-    "venues": [],
-    "concerns": [],
-    "topics": [],
-    "title": "Web Audio API - RenderCapacity",
-    "url": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacity",
-    "explainer": "https://bit.ly/render-capacity-explainer",
-    "web-feature": null,
-    "mdn": null,
-    "caniuse": null,
-    "bug": null,
-    "webkit": null
-  },
   "823": {
     "issue": 823,
     "position": "positive",
@@ -8637,7 +8632,7 @@
   },
   "910": {
     "issue": 910,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -8646,12 +8641,12 @@
       "API"
     ],
     "title": "Media Capabilities (hdrMetadataType)",
-    "url": "https://www.w3.org/TR/media-capabilities/#dom-videoconfiguration-hdrmetadatatype",
+    "url": "https://w3c.github.io/media-capabilities/#dom-videoconfiguration-hdrmetadatatype",
     "explainer": "https://github.com/w3c/media-capabilities/blob/main/explainer.md#decode-capabilities",
     "web-feature": null,
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2089648",
     "webkit": null
   },
   "912": {
@@ -8709,8 +8704,10 @@
   },
   "919": {
     "issue": 919,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
     "topics": [
       "API"
@@ -8721,8 +8718,8 @@
     "web-feature": null,
     "mdn": null,
     "caniuse": null,
-    "bug": null,
-    "webkit": null
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2085891",
+    "webkit": "https://github.com/WebKit/standards-positions/issues/274"
   },
   "920": {
     "issue": 920,
@@ -9359,17 +9356,21 @@
   },
   "982": {
     "issue": 982,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "VoiceIsolation constraint",
-    "url": null,
+    "url": "https://w3c.github.io/mediacapture-extensions/#voiceisolation-constraint",
     "explainer": null,
     "web-feature": null,
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2089653",
     "webkit": null
   },
   "984": {
@@ -10711,17 +10712,21 @@
   },
   "1083": {
     "issue": 1083,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "AudioContext \"interrupted\" state",
-    "url": null,
+    "url": "https://webaudio.github.io/web-audio-api/#interruption-handling",
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/AudioContextInterruptedState/explainer.md",
     "web-feature": null,
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2089652",
     "webkit": "https://github.com/WebKit/standards-positions/issues/410"
   },
   "1084": {
@@ -12514,17 +12519,21 @@
   },
   "1241": {
     "issue": 1241,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "echo cancellation mode",
     "url": "https://www.w3.org/TR/mediacapture-streams/#def-constraint-echoCancellation",
-    "explainer": null,
-    "web-feature": null,
+    "explainer": "https://github.com/guidou/mediacapture-main/blob/master/explainer-echo-cancellation-mode.md",
+    "web-feature": "media-capture",
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2089651",
     "webkit": "https://github.com/WebKit/standards-positions/issues/507"
   },
   "1242": {
@@ -12682,17 +12691,21 @@
   },
   "1255": {
     "issue": 1255,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Web Speech API Contextual Biasing",
     "url": "https://webaudio.github.io/web-speech-api/#speechreco-phrase",
-    "explainer": null,
-    "web-feature": null,
+    "explainer": "https://github.com/WebAudio/web-speech-api/blob/main/explainers/contextual-biasing.md",
+    "web-feature": "speech-recognition",
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2072244",
     "webkit": "https://github.com/WebKit/standards-positions/issues/517"
   },
   "1256": {
@@ -14037,17 +14050,21 @@
   },
   "1351": {
     "issue": 1351,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Playback Statistics API for WebAudio",
     "url": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats",
     "explainer": "https://github.com/WICG/audio-context-playout-stats",
     "web-feature": null,
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2089650",
     "webkit": null
   },
   "1352": {
@@ -14419,7 +14436,7 @@
   },
   "1375": {
     "issue": 1375,
-    "position": null,
+    "position": "neutral",
     "venues": [
       "W3C CG"
     ],
@@ -14860,7 +14877,7 @@
   },
   "1407": {
     "issue": 1407,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -14871,10 +14888,10 @@
     "title": "WebAudio Configurable Render Quantum",
     "url": "https://webaudio.github.io/web-audio-api/#render-quantum-sizes",
     "explainer": "https://github.com/WebAudio/web-audio-api/blob/main/explainer/user-selectable-render-size.md",
-    "web-feature": null,
+    "web-feature": "web-audio",
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2034508",
     "webkit": "https://github.com/WebKit/standards-positions/issues/662"
   },
   "1408": {
@@ -14970,7 +14987,7 @@
   },
   "1416": {
     "issue": 1416,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -14981,10 +14998,10 @@
     "title": "Web Speech API: Unspoken Punctuation",
     "url": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-unspokenpunctuation",
     "explainer": "https://github.com/WebAudio/web-speech-api/blob/main/explainers/unspoken-punctuation.md",
-    "web-feature": null,
+    "web-feature": "speech-recognition",
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2089649",
     "webkit": "https://github.com/WebKit/standards-positions/issues/678"
   },
   "1417": {
@@ -15668,17 +15685,21 @@
   },
   "1456": {
     "issue": 1456,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "OfflineAudioContext Incremental Rendering",
     "url": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-startrendering",
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/OfflineAudioContext/explainer.md",
     "web-feature": null,
     "mdn": null,
     "caniuse": null,
-    "bug": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=2089657",
     "webkit": "https://github.com/WebKit/standards-positions/issues/724"
   },
   "1457": {
