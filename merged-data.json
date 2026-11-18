@@ -12354,7 +12354,9 @@
   "1229": {
     "issue": 1229,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
     "topics": [
       "CSS"
@@ -14084,14 +14086,18 @@
   },
   "1354": {
     "issue": 1354,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "In web app scoping for `accent-color: auto` using system accent colors",
     "url": "https://drafts.csswg.org/css-ui-4/#widget-accent",
     "explainer": null,
-    "web-feature": null,
+    "web-feature": "accent-color",
     "mdn": null,
     "caniuse": null,
     "bug": null,
@@ -14232,10 +14238,14 @@
   },
   "1363": {
     "issue": 1363,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "SVG"
+    ],
     "title": "Support path-length CSS property for SVG path elements",
     "url": null,
     "explainer": null,
@@ -14825,9 +14835,13 @@
   "1398": {
     "issue": 1398,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Approximate Geolocation: permissions",
     "url": "https://github.com/w3c/geolocation/pull/195",
     "explainer": "https://github.com/w3c/geolocation/wiki/Approximate-Geolocation:-Permissions-Model-Comparison",
@@ -15319,7 +15333,7 @@
   },
   "1435": {
     "issue": 1435,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -15538,7 +15552,7 @@
   },
   "1448": {
     "issue": 1448,
-    "position": null,
+    "position": "positive",
     "venues": [
       "W3C"
     ],
@@ -15549,7 +15563,7 @@
     "title": "[css-scroll-snap-1] Use scroll-snap-type: pair to snap to a single element",
     "url": "https://github.com/w3c/csswg-drafts/pull/14386",
     "explainer": "https://github.com/explainers-by-googlers/scroll-snap-type-pair",
-    "web-feature": null,
+    "web-feature": "scroll-snap",
     "mdn": null,
     "caniuse": null,
     "bug": null,
@@ -15813,9 +15827,13 @@
   "1469": {
     "issue": 1469,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "The focusreset event",
     "url": "https://github.com/whatwg/html/pull/13050",
     "explainer": "https://github.com/noamr/explainers/blob/main/focusreset-explainer.md",
@@ -15828,9 +15846,13 @@
   "1470": {
     "issue": 1470,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C CG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "document.advanceFocus() and beforefocus",
     "url": "https://open-ui.org/components/beforefocus.explainer/",
     "explainer": "https://open-ui.org/components/beforefocus.explainer/",
@@ -15843,9 +15865,13 @@
   "1471": {
     "issue": 1471,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "display-mode: application",
     "url": "https://drafts.csswg.org/mediaqueries-5/#display-modes",
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DisplayModeApplication/explainer.md",
@@ -15877,9 +15903,13 @@
   "1473": {
     "issue": 1473,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C CG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Web Bluetooth: BluetoothRemoteGATTServer.maxWriteWithoutResponseSize",
     "url": null,
     "explainer": null,
@@ -15892,9 +15922,13 @@
   "1474": {
     "issue": 1474,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C CG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Service Worker Capability Delegation for Pop-ups",
     "url": "https://htmlpreview.github.io/?https://github.com/dmurph/capability-delegation/blob/popup-delegation-spec/spec.html",
     "explainer": "https://github.com/WICG/capability-delegation/blob/main/explainers/popup-delegation.md",
@@ -15907,9 +15941,13 @@
   "1475": {
     "issue": 1475,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Web Authentication: Conditional UI without Autofill",
     "url": "https://github.com/w3c/webauthn/pull/2485",
     "explainer": "https://github.com/w3c/webauthn/blob/main/explainers/conditional-ui-without-autofill.md",
@@ -15922,9 +15960,13 @@
   "1476": {
     "issue": 1476,
     "position": null,
-    "venues": [],
+    "venues": [
+      "Proposal"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "The `<agecheck>` element",
     "url": "https://github.com/online-safety/agecheck#processing-model",
     "explainer": "https://github.com/online-safety/agecheck",
@@ -15937,9 +15979,13 @@
   "1477": {
     "issue": 1477,
     "position": null,
-    "venues": [],
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "Incubation: Responsive Image Fine-Tuning Knobs",
     "url": "https://github.com/whatwg/html/pull/13053",
     "explainer": "https://github.com/noamr/explainers/blob/main/responsive-images-explainer.md",
@@ -15952,9 +15998,13 @@
   "1478": {
     "issue": 1478,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "API"
+    ],
     "title": "Creating Always-On-Top Windows (Window Management)",
     "url": "https://github.com/w3c/window-management/pull/170",
     "explainer": "https://github.com/w3c/window-management/blob/main/EXPLAINER_always_on_top.md",
@@ -15967,9 +16017,13 @@
   "1480": {
     "issue": 1480,
     "position": null,
-    "venues": [],
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "Custom Highlight API Extensions",
     "url": "https://github.com/w3c/csswg-drafts/issues/14613",
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/highlight-v2/explainer.md",
@@ -15982,9 +16036,13 @@
   "1481": {
     "issue": 1481,
     "position": null,
-    "venues": [],
+    "venues": [
+      "Proposal"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "Extend window.open() to split tabs, and add declarative equivalents for window.open() generally",
     "url": null,
     "explainer": "https://github.com/mfreed7/split-tabs",
