@@ -16081,5 +16081,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1488": {
+    "issue": 1488,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[css-view-transitions-2] shadowRoots option in StartViewTransitionOptions",
+    "url": "https://github.com/w3c/csswg-drafts/pull/14826",
+    "explainer": "https://github.com/w3c/csswg-drafts/issues/12953",
+    "web-feature": "view-transitions",
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/743"
   }
 }
