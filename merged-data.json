@@ -16096,5 +16096,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/743"
+  },
+  "1489": {
+    "issue": 1489,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "[css-pseudo] CSSPseudoElement.selectorText",
+    "url": "https://drafts.csswg.org/css-pseudo-4/#dom-csspseudoelement-selectortext",
+    "explainer": "https://github.com/vmpstr/htmldemos/blob/master/csspseudo/README.md",
+    "web-feature": "css-object-model-csspseudoelement",
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/CSSPseudoElement",
+    "caniuse": "https://caniuse.com/wf-css-object-model-csspseudoelement",
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/744"
   }
 }
