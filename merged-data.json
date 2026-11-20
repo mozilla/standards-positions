@@ -16111,5 +16111,24 @@
     "caniuse": "https://caniuse.com/wf-css-object-model-csspseudoelement",
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/744"
+  },
+  "1490": {
+    "issue": 1490,
+    "position": null,
+    "venues": [
+      "WHATWG"
+    ],
+    "concerns": [],
+    "topics": [
+      "HTML"
+    ],
+    "title": "Allow input in select in HTML parser",
+    "url": "https://github.com/whatwg/html/pull/13243",
+    "explainer": null,
+    "web-feature": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
