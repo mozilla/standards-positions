@@ -15077,10 +15077,14 @@
   },
   "1420": {
     "issue": 1420,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "WHATWG"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "HTML"
+    ],
     "title": "Selectedcontent in select multiple",
     "url": "https://github.com/whatwg/html/pull/12430",
     "explainer": null,
@@ -16130,5 +16134,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": null
+  },
+  "1491": {
+    "issue": 1491,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS block-step-size",
+    "url": "https://drafts.csswg.org/css-rhythm-1/#block-step-size",
+    "explainer": "https://drafts.csswg.org/css-rhythm-1/#block-step-size",
+    "web-feature": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": null,
+    "webkit": "https://github.com/WebKit/standards-positions/issues/746"
   }
 }
