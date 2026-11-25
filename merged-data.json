@@ -16149,5 +16149,20 @@
     "caniuse": null,
     "bug": null,
     "webkit": "https://github.com/WebKit/standards-positions/issues/746"
+  },
+  "1492": {
+    "issue": 1492,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "CSS Values 5: calc-mix()",
+    "url": "https://drafts.csswg.org/css-values-5/#calc-mix",
+    "explainer": "https://github.com/w3c/csswg-drafts/issues/9658",
+    "web-feature": null,
+    "mdn": null,
+    "caniuse": null,
+    "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1836589.",
+    "webkit": "https://bugs.webkit.org/show_bug.cgi?id=313461"
   }
 }
