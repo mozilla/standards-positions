@@ -13467,10 +13467,14 @@
   },
   "1310": {
     "issue": 1310,
-    "position": null,
-    "venues": [],
+    "position": "positive",
+    "venues": [
+      "W3C"
+    ],
     "concerns": [],
-    "topics": [],
+    "topics": [
+      "CSS"
+    ],
     "title": "CSS AtRule feature detection",
     "url": null,
     "explainer": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/AtRuleFeatureDetection/explainer.md",
