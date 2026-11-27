@@ -16168,5 +16168,20 @@
     "caniuse": null,
     "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1836589.",
     "webkit": "https://bugs.webkit.org/show_bug.cgi?id=313461"
+  },
+  "1493": {
+    "issue": 1493,
+    "position": null,
+    "venues": [],
+    "concerns": [],
+    "topics": [],
+    "title": "PaymentRequest API",
+    "url": "https://w3c.github.io/payment-request/",
+    "explainer": null,
+    "web-feature": null,
+    "mdn": "https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API",
+    "caniuse": null,
+    "bug": null,
+    "webkit": null
   }
 }
